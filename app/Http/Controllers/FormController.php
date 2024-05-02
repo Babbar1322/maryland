@@ -126,4 +126,10 @@ class FormController extends Controller
 
 
 
+    public function form5(){
+        return view('form5');
+    }
+
+
+
 }
