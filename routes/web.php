@@ -23,3 +23,5 @@ Route::get('form2', [FormController::class, 'form2'])->name('pdf_form2');
 Route::get('form3', [FormController::class, 'form3'])->name('pdf_form3');
 Route::get('form4', [FormController::class, 'form4'])->name('pdf_form4');
 Route::post('form2_post', [FormController::class, 'form2_post'])->name('form2.submit');
+Route::post('form3_post', [FormController::class, 'form3_post'])->name('form3.submit');
+Route::post('form4_post', [FormController::class, 'form4_post'])->name('form4.submit');

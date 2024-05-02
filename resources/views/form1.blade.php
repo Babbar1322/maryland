@@ -215,7 +215,7 @@
                                     <div>Case Number</div>
                                 </div>
                                 <div class="col-md-3">
-                                    <input type="number" name="case_no" class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none" style="min-width: 195px;">
+                                    <input type="number" min="0" name="case_no" class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none" style="min-width: 195px;">
                                 </div>
                             </div>
                         </div>
@@ -272,7 +272,7 @@
                             <div class="col-lg-1 col-sm-4">
                                 <div  style="max-width:119px;">Case Number</div></div>
                             <div class="col-lg-5 col-sm-8 p-lg-0" >
-                                <input type="number" name="case_no" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
+                                <input type="number" min="0" name="case_no" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
                             </div>
                         </div>
                     </div> --}}
@@ -280,7 +280,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-sm-5">
                                 <div class="col-lg-12  ">
-                                    <input type="number" name="plaintiff" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="number" min="0" name="plaintiff" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="">Plaintiff</div>
                                 </div>
                             </div>
@@ -324,7 +324,7 @@
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="number" name="plaintiff_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="number" min="0" name="plaintiff_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
 
                                     </div>
@@ -338,7 +338,7 @@
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="number" name="defendant_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="number" min="0" name="defendant_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
                                     </div>
                                 </div>
@@ -392,23 +392,23 @@
                                     <tr>
                                         <td colspan="8"><input type="text" name="child1"
                                                 class="form-control border-0"></td>
-                                        <td><input type="number" name="age1" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age1" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="8"><input type="text" name="child2" class="form-control border-0"></td>
-                                        <td><input type="number" name="age2" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age2" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="8"><input type="text" name="child3" class="form-control border-0"></td>
-                                        <td><input type="number" name="age3" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age3" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="8"><input type="text" name="child4" class="form-control border-0"></td>
-                                        <td><input type="number" name="age4" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age4" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="8"><input type="text" name="child5" class="form-control border-0"></td>
-                                        <td><input type="number" name="age5" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age5" class="form-control border-0"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -435,85 +435,85 @@
                                     </tr>
                                     <tr>
                                         <td class="w-50">Mortgage</td>
-                                        <td><input type="number" name="p_mortgage_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_mortgage_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_mortgage_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_mortgage_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_mortgage_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_mortgage_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Insurance (homeowners)</td>
-                                        <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_insurance_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_insurance_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_insurance_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_insurance_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Rent/Ground Rent</td>
-                                        <td><input type="number" name="p_rent_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_rent_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_rent_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_rent_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_rent_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_rent_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Taxes</td>
-                                        <td><input type="number" name="p_taxes_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_taxes_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_taxes_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_taxes_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_taxes_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_taxes_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Gas & Electric</td>
-                                        <td><input type="number" name="p_gas_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_gas_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_gas_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_gas_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_gas_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_gas_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Electric Only</td>
-                                        <td><input type="number" name="p_electric_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_electric_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_electric_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_electric_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_electric_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_electric_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Heat (oil)</td>
-                                        <td><input type="number" name="p_heat_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_heat_self" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_heat_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_heat_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_heat_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_heat_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Telephone</td>
-                                        <td><input type="number" name="p_tel_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_tel_self" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_tel_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_tel_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_tel_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_tel_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Trash Removal</td>
-                                        <td><input type="number" name="p_trash_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_trash_self" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_trash_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_trash_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_trash_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_trash_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Water Bill</td>
-                                        <td><input type="number" name="p_water_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_water_self" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_water_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_water_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_water_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_water_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Cell Phone/Pager</td>
-                                        <td><input type="number" name="p_pager_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_pager_self" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_pager_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_pager_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_pager_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_pager_total" class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Repairs</td>
-                                        <td><input type="number" name="p_repairs_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_repairs_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_repairs_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_repairs_self" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_repairs_child" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_repairs_total" class="form-control border-0" value='0'></td>
                                     </tr>
 
                                 </tbody>
@@ -528,7 +528,7 @@
                 <div class="row   ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
-                        <input type="number"
+                        <input type="number" min="0"
                             class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
@@ -536,91 +536,91 @@
                         <table class="table-bordered mt-3 border-black table ">
                             <tr>
                                 <td>Lawn & Yard Care (snow removal)</td>
-                                <td><input type="number" name="p_lawn_self"
+                                <td><input type="number" min="0" name="p_lawn_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_lawn_child"
+                                <td><input type="number" min="0" name="p_lawn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_lawn_total"
+                                <td><input type="number" min="0" name="p_lawn_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Replacement Furnishings/Appliances</td>
-                                <td><input type="number" name="p_furnishings_self"
+                                <td><input type="number" min="0" name="p_furnishings_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_furnishings_child"
+                                <td><input type="number" min="0" name="p_furnishings_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_furnishings_total"
+                                <td><input type="number" min="0" name="p_furnishings_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Condominium Fee (not included elsewhere)</td>
-                                <td><input type="number" name="p_condominium_self"
+                                <td><input type="number" min="0" name="p_condominium_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_condominium_child"
+                                <td><input type="number" min="0" name="p_condominium_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_condominium_total"
+                                <td><input type="number" min="0" name="p_condominium_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Painting/Wallpapering</td>
-                                <td><input type="number" name="p_painting_self"
+                                <td><input type="number" min="0" name="p_painting_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_painting_child"
+                                <td><input type="number" min="0" name="p_painting_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_painting_total"
+                                <td><input type="number" min="0" name="p_painting_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Carpet Cleaning</td>
-                                <td><input type="number" name="p_carpt_self"
+                                <td><input type="number" min="0" name="p_carpt_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_carpt_child"
+                                <td><input type="number" min="0" name="p_carpt_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_carpt_total"
+                                <td><input type="number" min="0" name="p_carpt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Domestic Assistance/Housekeeper</td>
-                                <td><input type="number" name="p_assistance_self"
+                                <td><input type="number" min="0" name="p_assistance_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_assistance_child"
+                                <td><input type="number" min="0" name="p_assistance_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_assistance_total"
+                                <td><input type="number" min="0" name="p_assistance_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Pool</td>
-                                <td><input type="number" name="p_pool_self"
+                                <td><input type="number" min="0" name="p_pool_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_pool_child"
+                                <td><input type="number" min="0" name="p_pool_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_pool_total"
+                                <td><input type="number" min="0" name="p_pool_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -630,13 +630,13 @@
                                             class="border-0 bg-transparent w-50">
                                     </span>
                                 </td>
-                                <td><input type="number" name="p_other_self"
+                                <td><input type="number" min="0" name="p_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_other_child"
+                                <td><input type="number" min="0" name="p_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_other_total"
+                                <td><input type="number" min="0" name="p_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -645,15 +645,15 @@
                                 <td class="">
                                     <h5 class="pt-3">SUB TOTAL</h5>
                                 </td>
-                                <td><input type="number" name="p_subtotal_self"
+                                <td><input type="number" min="0" name="p_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="p_subtotal_child"
+                                <td><input type="number" min="0" name="p_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="p_subtotal_total"
+                                <td><input type="number" min="0" name="p_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -669,247 +669,247 @@
                             </tr>
                             <tr>
                                 <td>Mortgage</td>
-                                <td><input type="number" name="s_mortgage_self"
+                                <td><input type="number" min="0" name="s_mortgage_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_mortgage_child"
+                                <td><input type="number" min="0" name="s_mortgage_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_mortgage_total"
+                                <td><input type="number" min="0" name="s_mortgage_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Insurance (homeowners)</td>
-                                <td><input type="number" name="s_insurance_self"
+                                <td><input type="number" min="0" name="s_insurance_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_insurance_child"
+                                <td><input type="number" min="0" name="s_insurance_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_insurance_total"
+                                <td><input type="number" min="0" name="s_insurance_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Rent/Ground Rent</td>
-                                <td><input type="number" name="s_rent_self"
+                                <td><input type="number" min="0" name="s_rent_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_rent_child"
+                                <td><input type="number" min="0" name="s_rent_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_rent_total"
+                                <td><input type="number" min="0" name="s_rent_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Taxes</td>
-                                <td><input type="number" name="s_taxes_self"
+                                <td><input type="number" min="0" name="s_taxes_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_taxes_child"
+                                <td><input type="number" min="0" name="s_taxes_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_taxes_total"
+                                <td><input type="number" min="0" name="s_taxes_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Gas & Electric</td>
-                                <td><input type="number" name="s_gas_self"
+                                <td><input type="number" min="0" name="s_gas_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_gas_child"
+                                <td><input type="number" min="0" name="s_gas_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_gas_total"
+                                <td><input type="number" min="0" name="s_gas_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Electric Only</td>
-                                <td><input type="number" name="s_electric_self"
+                                <td><input type="number" min="0" name="s_electric_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_electric_child"
+                                <td><input type="number" min="0" name="s_electric_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_electric_total"
+                                <td><input type="number" min="0" name="s_electric_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Heat (oil)</td>
-                                <td><input type="number" name="s_heat_self"
+                                <td><input type="number" min="0" name="s_heat_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_heat_child"
+                                <td><input type="number" min="0" name="s_heat_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_heat_total"
+                                <td><input type="number" min="0" name="s_heat_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Telephone</td>
-                                <td><input type="number" name="s_tel_self"
+                                <td><input type="number" min="0" name="s_tel_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_tel_child"
+                                <td><input type="number" min="0" name="s_tel_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_tel_total"
+                                <td><input type="number" min="0" name="s_tel_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Trash Removal</td>
-                                <td><input type="number" name="s_trash_self"
+                                <td><input type="number" min="0" name="s_trash_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_trash_child"
+                                <td><input type="number" min="0" name="s_trash_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_trash_total"
+                                <td><input type="number" min="0" name="s_trash_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Water Bill</td>
-                                <td><input type="number" name="s_water_self"
+                                <td><input type="number" min="0" name="s_water_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_water_child"
+                                <td><input type="number" min="0" name="s_water_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_water_total"
+                                <td><input type="number" min="0" name="s_water_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Cell Phone/Pager</td>
-                                <td><input type="number" name="s_pager_self"
+                                <td><input type="number" min="0" name="s_pager_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_pager_child"
+                                <td><input type="number" min="0" name="s_pager_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_pager_total"
+                                <td><input type="number" min="0" name="s_pager_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Repairs</td>
-                                <td><input type="number" name="s_repairs_self"
+                                <td><input type="number" min="0" name="s_repairs_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_repairs_child"
+                                <td><input type="number" min="0" name="s_repairs_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_repairs_total"
+                                <td><input type="number" min="0" name="s_repairs_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Lawn & Yard Care (snow removal)</td>
-                                <td><input type="number" name="s_lawn_self"
+                                <td><input type="number" min="0" name="s_lawn_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_lawn_child"
+                                <td><input type="number" min="0" name="s_lawn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_lawn_total"
+                                <td><input type="number" min="0" name="s_lawn_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Replacement Furnishings/Appliances</td>
-                                <td><input type="number" name="s_furnishings_self"
+                                <td><input type="number" min="0" name="s_furnishings_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_furnishings_child"
+                                <td><input type="number" min="0" name="s_furnishings_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_furnishings_total"
+                                <td><input type="number" min="0" name="s_furnishings_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Condominium Fee (not included elsewhere)</td>
-                                <td><input type="number" name="s_condominium_self"
+                                <td><input type="number" min="0" name="s_condominium_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_condominium_child"
+                                <td><input type="number" min="0" name="s_condominium_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_condominium_total"
+                                <td><input type="number" min="0" name="s_condominium_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Painting/Wallpapering</td>
-                                <td><input type="number" name="s_painting_self"
+                                <td><input type="number" min="0" name="s_painting_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_painting_child"
+                                <td><input type="number" min="0" name="s_painting_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_painting_total"
+                                <td><input type="number" min="0" name="s_painting_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Carpet Cleaning</td>
-                                <td><input type="number" name="s_carpt_self"
+                                <td><input type="number" min="0" name="s_carpt_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_carpt_child"
+                                <td><input type="number" min="0" name="s_carpt_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_carpt_total"
+                                <td><input type="number" min="0" name="s_carpt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Domestic Assistance/Housekeeper</td>
-                                <td><input type="number" name="s_assistance_self"
+                                <td><input type="number" min="0" name="s_assistance_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_assistance_child"
+                                <td><input type="number" min="0" name="s_assistance_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_assistance_total"
+                                <td><input type="number" min="0" name="s_assistance_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Pool</td>
-                                <td><input type="number" name="s_pool_self"
+                                <td><input type="number" min="0" name="s_pool_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_pool_child"
+                                <td><input type="number" min="0" name="s_pool_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_pool_total"
+                                <td><input type="number" min="0" name="s_pool_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -918,13 +918,13 @@
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="s_others"
                                         class="  w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="number" name="s_other_self"
+                                <td><input type="number" min="0" name="s_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_other_child"
+                                <td><input type="number" min="0" name="s_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="s_other_total"
+                                <td><input type="number" min="0" name="s_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -933,15 +933,15 @@
                                 <td>
                                     <h5 class="pt-3">SUB TOTAL</h5>
                                 </td>
-                                <td><input type="number" name="s_subtotal_self"
+                                <td><input type="number" min="0" name="s_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="s_subtotal_child"
+                                <td><input type="number" min="0" name="s_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="s_subtotal_total"
+                                <td><input type="number" min="0" name="s_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -958,13 +958,13 @@
                                 <td>
                                     <div>Food</div>
                                 </td>
-                                <td><input type="number" name="c_food_self"
+                                <td><input type="number" min="0" name="c_food_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_food_child"
+                                <td><input type="number" min="0" name="c_food_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_food_total"
+                                <td><input type="number" min="0" name="c_food_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -981,7 +981,7 @@
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
-                        <input type="number" name="case_no"
+                        <input type="number" min="0" name="case_no"
                             class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
@@ -989,26 +989,26 @@
                         <table class="table-bordered mt-3 border-black table ">
                             <tr>
                                 <td>Drug Store Items</td>
-                                <td><input type="number" name="c_dsi_self"
+                                <td><input type="number" min="0" name="c_dsi_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_dsi_child"
+                                <td><input type="number" min="0" name="c_dsi_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_dsi_total"
+                                <td><input type="number" min="0" name="c_dsi_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Household Supplies</td>
-                                <td><input type="number" name="c_hs_self"
+                                <td><input type="number" min="0" name="c_hs_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_hs_child"
+                                <td><input type="number" min="0" name="c_hs_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_hs_total"
+                                <td><input type="number" min="0" name="c_hs_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1018,13 +1018,13 @@
                                         class="border-0 bg-transparent w-50"></span>
                                 </td>
 
-                                <td><input type="number" name="c_other_self"
+                                <td><input type="number" min="0" name="c_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_other_child"
+                                <td><input type="number" min="0" name="c_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="c_other_total"
+                                <td><input type="number" min="0" name="c_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1035,15 +1035,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="c_subtotal_self"
+                                <td><input type="number" min="0" name="c_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="c_subtotal_child"
+                                <td><input type="number" min="0" name="c_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="c_subtotal_total"
+                                <td><input type="number" min="0" name="c_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1059,65 +1059,65 @@
                             </tr>
                             <tr>
                                 <td>Health Insurance</td>
-                                <td><input type="number" name="d_hi_self"
+                                <td><input type="number" min="0" name="d_hi_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_hi_child"
+                                <td><input type="number" min="0" name="d_hi_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_hi_total"
+                                <td><input type="number" min="0" name="d_hi_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Therapist/Counselor</td>
-                                <td><input type="number" name="d_tc_self"
+                                <td><input type="number" min="0" name="d_tc_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_tc_child"
+                                <td><input type="number" min="0" name="d_tc_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_tc_total"
+                                <td><input type="number" min="0" name="d_tc_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Extraordinary Medical</td>
-                                <td><input type="number" name="d_em_self"
+                                <td><input type="number" min="0" name="d_em_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_em_child"
+                                <td><input type="number" min="0" name="d_em_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_em_total"
+                                <td><input type="number" min="0" name="d_em_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Dental/Orthodontia</td>
-                                <td><input type="number" name="d_do_self"
+                                <td><input type="number" min="0" name="d_do_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_do_child"
+                                <td><input type="number" min="0" name="d_do_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_do_total"
+                                <td><input type="number" min="0" name="d_do_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Ophthalmologist/Glasses</td>
-                                <td><input type="number" name="d_og_self"
+                                <td><input type="number" min="0" name="d_og_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_og_child"
+                                <td><input type="number" min="0" name="d_og_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_og_total"
+                                <td><input type="number" min="0" name="d_og_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1127,13 +1127,13 @@
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="d_others"
                                         class="  w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="number" name="d_other_self"
+                                <td><input type="number" min="0" name="d_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_other_child"
+                                <td><input type="number" min="0" name="d_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="d_other_total"
+                                <td><input type="number" min="0" name="d_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1142,15 +1142,15 @@
                                 <td>
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="d_subtotal_self"
+                                <td><input type="number" min="0" name="d_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="d_subtotal_child"
+                                <td><input type="number" min="0" name="d_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="d_subtotal_total"
+                                <td><input type="number" min="0" name="d_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1167,13 +1167,13 @@
                                 <td>
                                     <div>Tuition/Books</div>
                                 </td>
-                                <td><input type="number" name="e_tb_self"
+                                <td><input type="number" min="0" name="e_tb_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_tb_child"
+                                <td><input type="number" min="0" name="e_tb_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_tb_total"
+                                <td><input type="number" min="0" name="e_tb_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1182,13 +1182,13 @@
                                 <td>
                                     <div>School lunch</div>
                                 </td>
-                                <td><input type="number" name="e_sl_self"
+                                <td><input type="number" min="0" name="e_sl_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_sl_child"
+                                <td><input type="number" min="0" name="e_sl_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_sl_total"
+                                <td><input type="number" min="0" name="e_sl_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1197,13 +1197,13 @@
                                 <td>
                                     <div>Extracurricular activities</div>
                                 </td>
-                                <td><input type="number" name="e_ea_self"
+                                <td><input type="number" min="0" name="e_ea_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_ea_child"
+                                <td><input type="number" min="0" name="e_ea_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_ea_total"
+                                <td><input type="number" min="0" name="e_ea_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1212,13 +1212,13 @@
                                 <td>
                                     <div>Clothing/Uniforms</div>
                                 </td>
-                                <td><input type="number" name="e_cu_self"
+                                <td><input type="number" min="0" name="e_cu_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_cu_child"
+                                <td><input type="number" min="0" name="e_cu_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_cu_total"
+                                <td><input type="number" min="0" name="e_cu_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1227,13 +1227,13 @@
                                 <td>
                                     <div>Room & Board</div>
                                 </td>
-                                <td><input type="number" name="e_rb_self"
+                                <td><input type="number" min="0" name="e_rb_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_rb_child"
+                                <td><input type="number" min="0" name="e_rb_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_rb_total"
+                                <td><input type="number" min="0" name="e_rb_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1242,13 +1242,13 @@
                                 <td>
                                     <div>Daycare/Nursery School</div>
                                 </td>
-                                <td><input type="number" name="e_dn_self"
+                                <td><input type="number" min="0" name="e_dn_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_dn_child"
+                                <td><input type="number" min="0" name="e_dn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_dn_total"
+                                <td><input type="number" min="0" name="e_dn_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1257,13 +1257,13 @@
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="e_others"
                                         class="border-0 bg-transparent w-50"></span>
                                 </td>
-                                <td><input type="number" name="e_other_self"
+                                <td><input type="number" min="0" name="e_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_other_child"
+                                <td><input type="number" min="0" name="e_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="e_other_total"
+                                <td><input type="number" min="0" name="e_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1272,15 +1272,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="e_subtotal_self"
+                                <td><input type="number" min="0" name="e_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="e_subtotal_child"
+                                <td><input type="number" min="0" name="e_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="e_subtotal_total"
+                                <td><input type="number" min="0" name="e_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1297,13 +1297,13 @@
                                 <td>
                                     <div>Vacations</div>
                                 </td>
-                                <td><input type="number" name="f_vac_self"
+                                <td><input type="number" min="0" name="f_vac_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_vac_child"
+                                <td><input type="number" min="0" name="f_vac_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_vac_total"
+                                <td><input type="number" min="0" name="f_vac_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1312,13 +1312,13 @@
                                 <td>
                                     <div>Videos/Theater</div>
                                 </td>
-                                <td><input type="number" name="f_vt_self"
+                                <td><input type="number" min="0" name="f_vt_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_vt_child"
+                                <td><input type="number" min="0" name="f_vt_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_vt_total"
+                                <td><input type="number" min="0" name="f_vt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1327,13 +1327,13 @@
                                 <td>
                                     <div>Dining Out</div>
                                 </td>
-                                <td><input type="number" name="f_do_self"
+                                <td><input type="number" min="0" name="f_do_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_do_child"
+                                <td><input type="number" min="0" name="f_do_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_do_total"
+                                <td><input type="number" min="0" name="f_do_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1342,13 +1342,13 @@
                                 <td>
                                     <div>Cable TV/Internet</div>
                                 </td>
-                                <td><input type="number" name="f_ci_self"
+                                <td><input type="number" min="0" name="f_ci_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_ci_child"
+                                <td><input type="number" min="0" name="f_ci_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_ci_total"
+                                <td><input type="number" min="0" name="f_ci_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1357,13 +1357,13 @@
                                 <td>
                                     <div>Allowance</div>
                                 </td>
-                                <td><input type="number" name="f_allow_self"
+                                <td><input type="number" min="0" name="f_allow_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_allow_child"
+                                <td><input type="number" min="0" name="f_allow_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_allow_total"
+                                <td><input type="number" min="0" name="f_allow_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1372,13 +1372,13 @@
                                 <td>
                                     <div>Camp</div>
                                 </td>
-                                <td><input type="number" name="f_camp_self"
+                                <td><input type="number" min="0" name="f_camp_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_camp_child"
+                                <td><input type="number" min="0" name="f_camp_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_camp_total"
+                                <td><input type="number" min="0" name="f_camp_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1387,13 +1387,13 @@
                                 <td>
                                     <div>Memberships</div>
                                 </td>
-                                <td><input type="number" name="f_ms_self"
+                                <td><input type="number" min="0" name="f_ms_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_ms_child"
+                                <td><input type="number" min="0" name="f_ms_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_ms_total"
+                                <td><input type="number" min="0" name="f_ms_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1402,13 +1402,13 @@
                                 <td>
                                     <div>Dance/Music Lessons etc.</div>
                                 </td>
-                                <td><input type="number" name="f_dm_self"
+                                <td><input type="number" min="0" name="f_dm_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_dm_child"
+                                <td><input type="number" min="0" name="f_dm_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_dm_total"
+                                <td><input type="number" min="0" name="f_dm_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1417,13 +1417,13 @@
                                 <td>
                                     <div>Horseback Riding</div>
                                 </td>
-                                <td><input type="number" name="f_hr_self"
+                                <td><input type="number" min="0" name="f_hr_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_hr_child"
+                                <td><input type="number" min="0" name="f_hr_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_hr_total"
+                                <td><input type="number" min="0" name="f_hr_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1433,13 +1433,13 @@
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="f_others"
                                         class="border-0 bg-transparent w-50"></span>
                                 </td>
-                                <td><input type="number" name="f_other_self"
+                                <td><input type="number" min="0" name="f_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_other_child"
+                                <td><input type="number" min="0" name="f_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="f_other_total"
+                                <td><input type="number" min="0" name="f_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1448,15 +1448,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="f_subtotal_self"
+                                <td><input type="number" min="0" name="f_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="f_subtotal_child"
+                                <td><input type="number" min="0" name="f_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="f_subtotal_total"
+                                <td><input type="number" min="0" name="f_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1479,7 +1479,7 @@
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
-                        <input type="number" name="case_no"
+                        <input type="number" min="0" name="case_no"
                             class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
@@ -1492,91 +1492,91 @@
                             </tr>
                             <tr>
                                 <td class="w-50">Automobile Payment</td>
-                                <td><input type="number" name="g_ap_self"
+                                <td><input type="number" min="0" name="g_ap_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ap_child"
+                                <td><input type="number" min="0" name="g_ap_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ap_total"
+                                <td><input type="number" min="0" name="g_ap_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Automobile Repairs</td>
-                                <td><input type="number" name="g_ar_self"
+                                <td><input type="number" min="0" name="g_ar_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ar_child"
+                                <td><input type="number" min="0" name="g_ar_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ar_total"
+                                <td><input type="number" min="0" name="g_ar_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Maintenance/Tags/Tires/etc.</td>
-                                <td><input type="number" name="g_mtt_self"
+                                <td><input type="number" min="0" name="g_mtt_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_mtt_child"
+                                <td><input type="number" min="0" name="g_mtt_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_mtt_total"
+                                <td><input type="number" min="0" name="g_mtt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Oil/Gas</td>
-                                <td><input type="number" name="g_og_self"
+                                <td><input type="number" min="0" name="g_og_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_og_child"
+                                <td><input type="number" min="0" name="g_og_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_og_total"
+                                <td><input type="number" min="0" name="g_og_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Automobile Insurance</td>
-                                <td><input type="number" name="g_ai_self"
+                                <td><input type="number" min="0" name="g_ai_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ai_child"
+                                <td><input type="number" min="0" name="g_ai_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_ai_total"
+                                <td><input type="number" min="0" name="g_ai_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Parking Fees</td>
-                                <td><input type="number" name="g_pf_self"
+                                <td><input type="number" min="0" name="g_pf_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_pf_child"
+                                <td><input type="number" min="0" name="g_pf_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_pf_total"
+                                <td><input type="number" min="0" name="g_pf_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Bus/Taxi</td>
-                                <td><input type="number" name="g_bt_self"
+                                <td><input type="number" min="0" name="g_bt_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_bt_child"
+                                <td><input type="number" min="0" name="g_bt_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_bt_total"
+                                <td><input type="number" min="0" name="g_bt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1586,13 +1586,13 @@
                                         class="border-0 bg-transparent w-50"><span class="  border-dashed border-bottom outline-none">
                                 </td>
 
-                                <td><input type="number" name="g_other_self"
+                                <td><input type="number" min="0" name="g_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_other_child"
+                                <td><input type="number" min="0" name="g_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="g_other_total"
+                                <td><input type="number" min="0" name="g_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1603,15 +1603,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="g_subtotal_self"
+                                <td><input type="number" min="0" name="g_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="g_subtotal_child"
+                                <td><input type="number" min="0" name="g_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="g_subtotal_total"
+                                <td><input type="number" min="0" name="g_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1626,52 +1626,52 @@
                             </tr>
                             <tr>
                                 <td>Holiday Gifts</td>
-                                <td><input type="number" name="h_hg_self"
+                                <td><input type="number" min="0" name="h_hg_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_hg_child"
+                                <td><input type="number" min="0" name="h_hg_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_hg_total"
+                                <td><input type="number" min="0" name="h_hg_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Birthdays</td>
-                                <td><input type="number" name="h_bdy_self"
+                                <td><input type="number" min="0" name="h_bdy_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_bdy_child"
+                                <td><input type="number" min="0" name="h_bdy_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_bdy_total"
+                                <td><input type="number" min="0" name="h_bdy_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Gifts to Others</td>
-                                <td><input type="number" name="h_gto_self"
+                                <td><input type="number" min="0" name="h_gto_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_gto_child"
+                                <td><input type="number" min="0" name="h_gto_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_gto_total"
+                                <td><input type="number" min="0" name="h_gto_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td>Charities</td>
-                                <td><input type="number" name="h_char_self"
+                                <td><input type="number" min="0" name="h_char_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_char_child"
+                                <td><input type="number" min="0" name="h_char_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_char_total"
+                                <td><input type="number" min="0" name="h_char_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1682,13 +1682,13 @@
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="h_others"
                                         class="  w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="number" name="h_other_self"
+                                <td><input type="number" min="0" name="h_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_other_child"
+                                <td><input type="number" min="0" name="h_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="h_other_total"
+                                <td><input type="number" min="0" name="h_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1697,15 +1697,15 @@
                                 <td>
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="h_subtotal_self"
+                                <td><input type="number" min="0" name="h_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="h_subtotal_child"
+                                <td><input type="number" min="0" name="h_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="h_subtotal_total"
+                                <td><input type="number" min="0" name="h_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1722,13 +1722,13 @@
                                 <td>
                                     <div>Purchasing</div>
                                 </td>
-                                <td><input type="number" name="i_pur_self"
+                                <td><input type="number" min="0" name="i_pur_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_pur_child"
+                                <td><input type="number" min="0" name="i_pur_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_pur_total"
+                                <td><input type="number" min="0" name="i_pur_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1737,13 +1737,13 @@
                                 <td>
                                     <div>Laundry</div>
                                 </td>
-                                <td><input type="number" name="i_lau_self"
+                                <td><input type="number" min="0" name="i_lau_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_lau_child"
+                                <td><input type="number" min="0" name="i_lau_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_lau_total"
+                                <td><input type="number" min="0" name="i_lau_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1752,13 +1752,13 @@
                                 <td>
                                     <div>Extracurricular activities</div>
                                 </td>
-                                <td><input type="number" name="i_ea_self"
+                                <td><input type="number" min="0" name="i_ea_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_ea_child"
+                                <td><input type="number" min="0" name="i_ea_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_ea_total"
+                                <td><input type="number" min="0" name="i_ea_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1767,13 +1767,13 @@
                                 <td>
                                     <div>Alterations/Dry Cleaning</div>
                                 </td>
-                                <td><input type="number" name="i_ad_self"
+                                <td><input type="number" min="0" name="i_ad_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_ad_child"
+                                <td><input type="number" min="0" name="i_ad_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_ad_total"
+                                <td><input type="number" min="0" name="i_ad_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1782,13 +1782,13 @@
                             <tr class="w-50">
                                 <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="i_others" class="w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="number" name="i_other_self"
+                                <td><input type="number" min="0" name="i_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_other_child"
+                                <td><input type="number" min="0" name="i_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="i_other_total"
+                                <td><input type="number" min="0" name="i_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1797,15 +1797,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="i_subtotal_self"
+                                <td><input type="number" min="0" name="i_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="i_subtotal_child"
+                                <td><input type="number" min="0" name="i_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="i_subtotal_total"
+                                <td><input type="number" min="0" name="i_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1822,13 +1822,13 @@
                                 <td>
                                     <div>Books & Magazines</div>
                                 </td>
-                                <td><input type="number" name="j_bn_self"
+                                <td><input type="number" min="0" name="j_bn_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_bn_child"
+                                <td><input type="number" min="0" name="j_bn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_bn_total"
+                                <td><input type="number" min="0" name="j_bn_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1837,13 +1837,13 @@
                                 <td>
                                     <div>Newspapers</div>
                                 </td>
-                                <td><input type="number" name="j_np_self"
+                                <td><input type="number" min="0" name="j_np_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_np_child"
+                                <td><input type="number" min="0" name="j_np_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_np_total"
+                                <td><input type="number" min="0" name="j_np_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1852,13 +1852,13 @@
                                 <td>
                                     <div>Stamps/Stationery</div>
                                 </td>
-                                <td><input type="number" name="j_ss_self"
+                                <td><input type="number" min="0" name="j_ss_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_ss_child"
+                                <td><input type="number" min="0" name="j_ss_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_ss_total"
+                                <td><input type="number" min="0" name="j_ss_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1867,13 +1867,13 @@
                                 <td>
                                     <div>Banking Expense</div>
                                 </td>
-                                <td><input type="number" name="j_be_self"
+                                <td><input type="number" min="0" name="j_be_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_be_child"
+                                <td><input type="number" min="0" name="j_be_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_be_total"
+                                <td><input type="number" min="0" name="j_be_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1883,13 +1883,13 @@
                                 <td>Other:<span class="  border-dashed border-bottom outline-none"> <input type="text" name="j_others"
                                         class="border-0 bg-transparent w-50"></span>
                                 </td>
-                                <td><input type="number" name="j_other_self"
+                                <td><input type="number" min="0" name="j_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_other_child"
+                                <td><input type="number" min="0" name="j_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="j_other_total"
+                                <td><input type="number" min="0" name="j_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1898,15 +1898,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="j_subtotal_self"
+                                <td><input type="number" min="0" name="j_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="j_subtotal_child"
+                                <td><input type="number" min="0" name="j_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="j_subtotal_total"
+                                <td><input type="number" min="0" name="j_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -1925,7 +1925,7 @@
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
-                        <input type="number" name="case_no"
+                        <input type="number" min="0" name="case_no"
                             class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
@@ -1938,78 +1938,78 @@
                             </tr>
                             <tr>
                                 <td class="w-50">Alimony/Child Support (from a previous Order)</td>
-                                <td><input type="number" name="k_ac_self"
+                                <td><input type="number" min="0" name="k_ac_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_ac_child"
+                                <td><input type="number" min="0" name="k_ac_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_ac_total"
+                                <td><input type="number" min="0" name="k_ac_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Religious Contributions</td>
-                                <td><input type="number" name="k_rc_self"
+                                <td><input type="number" min="0" name="k_rc_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_rc_child"
+                                <td><input type="number" min="0" name="k_rc_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_rc_total"
+                                <td><input type="number" min="0" name="k_rc_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Hairdresser/Haircuts</td>
-                                <td><input type="number" name="k_hh_self"
+                                <td><input type="number" min="0" name="k_hh_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_hh_child"
+                                <td><input type="number" min="0" name="k_hh_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_hh_total"
+                                <td><input type="number" min="0" name="k_hh_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Manicure/Pedicure</td>
-                                <td><input type="number" name="k_mp_self"
+                                <td><input type="number" min="0" name="k_mp_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_mp_child"
+                                <td><input type="number" min="0" name="k_mp_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_mp_total"
+                                <td><input type="number" min="0" name="k_mp_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Pets/Boarding</td>
-                                <td><input type="number" name="k_pb_self"
+                                <td><input type="number" min="0" name="k_pb_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_pb_child"
+                                <td><input type="number" min="0" name="k_pb_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_pb_total"
+                                <td><input type="number" min="0" name="k_pb_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Life Insurance</td>
-                                <td><input type="number" name="k_li_self"
+                                <td><input type="number" min="0" name="k_li_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_li_child"
+                                <td><input type="number" min="0" name="k_li_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_li_total"
+                                <td><input type="number" min="0" name="k_li_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2021,13 +2021,13 @@
                                         </span>
                                 </td>
 
-                                <td><input type="number" name="k_other_self"
+                                <td><input type="number" min="0" name="k_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_other_child"
+                                <td><input type="number" min="0" name="k_other_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="k_other_total"
+                                <td><input type="number" min="0" name="k_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2038,15 +2038,15 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" name="k_subtotal_self"
+                                <td><input type="number" min="0" name="k_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="k_subtotal_child"
+                                <td><input type="number" min="0" name="k_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="k_subtotal_total"
+                                <td><input type="number" min="0" name="k_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2059,15 +2059,15 @@
                                 <td class="">
                                     <div>TOTAL MONTHLY EXPENSES:</div>
                                 </td>
-                                <td><input type="number" name="tme_self"
+                                <td><input type="number" min="0" name="tme_self"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="tme_child"
+                                <td><input type="number" min="0" name="tme_child"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
-                                <td><input type="number" name="tme_total"
+                                <td><input type="number" min="0" name="tme_total"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2076,7 +2076,7 @@
                         <div>Number of dependent children, including children who have not attained the age of 19 years,
                             are
                             not
-                            married or self-supporting, and are enrolled in secondary school: <input type="number"
+                            married or self-supporting, and are enrolled in secondary school: <input type="number" min="0"
                                 name="ss"
                                 class="border-0 bg-transparent border border-dashed border-bottom outline-none"></div>
                         <h4 class="text-center fw-bold pt-3"><span class="border_bottom">INCOME STATEMENT</span>
@@ -2089,7 +2089,7 @@
                                 </td>
                                 <td class="bg-secondary">
                                 </td>
-                                <td><input type="number" name="gmw"
+                                <td><input type="number" min="0" name="gmw"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
@@ -2104,7 +2104,7 @@
                                 <td colspan="2">
                                     <div class="">Federal</div>
                                 </td>
-                                <td><input type="number" name="federal"
+                                <td><input type="number" min="0" name="federal"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 <td rowspan="6" class="bg-secondary">
@@ -2114,7 +2114,7 @@
                                 <td colspan="2">
                                     <div class="">State</div>
                                 </td>
-                                <td><input type="number" name="state"
+                                <td><input type="number" min="0" name="state"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
@@ -2122,7 +2122,7 @@
                                 <td colspan="2">
                                     <div class="">Medicare</div>
                                 </td>
-                                <td><input type="number" name="medicare"
+                                <td><input type="number" min="0" name="medicare"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
@@ -2130,7 +2130,7 @@
                                 <td colspan="2">
                                     <div class="">F.I.C.A.</div>
                                 </td>
-                                <td><input type="number" name="fica"
+                                <td><input type="number" min="0" name="fica"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
 
@@ -2139,7 +2139,7 @@
                                 <td colspan="2">
                                     <div class="">Retirement</div>
                                 </td>
-                                <td><input type="number" name="retirement"
+                                <td><input type="number" min="0" name="retirement"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
 
@@ -2148,7 +2148,7 @@
                                 <td colspan="2">
                                     <div class="">Total Deductions:</div>
                                 </td>
-                                <td><input type="number" name="niw"
+                                <td><input type="number" min="0" name="niw"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2159,7 +2159,7 @@
                                 </td>
                                 <td class="bg-secondary">
                                 </td>
-                                <td><input type="number" name=""
+                                <td><input type="number" min="0" name=""
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2186,11 +2186,11 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">a.</div>
                                 </td>
-                                <td> <input type="number" name="da1"
+                                <td> <input type="number" min="0" name="da1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
                                 <td class="py-0">
-                                    <input type="number" name="da2"
+                                    <input type="number" min="0" name="da2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 <td class="py-0 bg-secondary" rowspan="4">
@@ -2200,10 +2200,10 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">b.</div>
                                 </td>
-                                <td> <input type="number" name="db1"
+                                <td> <input type="number" min="0" name="db1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" name="db2"
+                                <td class="py-0"><input type="number" min="0" name="db2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
 
@@ -2212,10 +2212,10 @@
                                 <td class="" style="width:1px;">
                                     <div class="px-2">c.</div>
                                 </td>
-                                <td> <input type="number" name="dc1"
+                                <td> <input type="number" min="0" name="dc1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" name="dc2"
+                                <td class="py-0"><input type="number" min="0" name="dc2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
@@ -2227,7 +2227,7 @@
                                 <td colspan="2">Total deductions from Other income:
                                 </td>
 
-                                <td><input type="number" name="tdoi"
+                                <td><input type="number" min="0" name="tdoi"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2240,7 +2240,7 @@
 
                                 <td class="bg-secondary">
                                 </td>
-                                <td><input type="number" name="noi"
+                                <td><input type="number" min="0" name="noi"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2252,7 +2252,7 @@
 
                                 <td class="bg-secondary">
                                 </td>
-                                <td><input type="number" name="tmi"
+                                <td><input type="number" min="0" name="tmi"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2269,7 +2269,7 @@
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div class=>Case Number</div>
-                        <input type="number"
+                        <input type="number" min="0"
                             class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
@@ -2286,7 +2286,7 @@
                                 <td colspan="2">
                                     <div class="">Real Estate:</div>
                                 </td>
-                                <td><input type="number" name="as_real_estate"
+                                <td><input type="number" min="0" name="as_real_estate"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td rowspan="10" class="bg-secondary w-25"></td>
                             </tr>
@@ -2294,7 +2294,7 @@
                                 <td colspan="2">
                                     <div class="">Furniture (in the marital house)</div>
                                 </td>
-                                <td><input type="number" name="as_furt"
+                                <td><input type="number" min="0" name="as_furt"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
                             </tr>
@@ -2302,28 +2302,28 @@
                                 <td colspan="2">
                                     <div class="">Bank Accounts/Savings</div>
                                 </td>
-                                <td><input type="number" name="as_bs"
+                                <td><input type="number" min="0" name="as_bs"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                                 </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">U.S. Bonds</div>
                                 </td>
-                                <td><input type="number" name="as_usb"
+                                <td><input type="number" min="0" name="as_usb"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Stocks/Investments</div>
                                 </td>
-                                <td><input type="number" name="as_si"
+                                <td><input type="number" min="0" name="as_si"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Personal Property</div>
                                 </td>
-                                <td><input type="number" name="as_pp"
+                                <td><input type="number" min="0" name="as_pp"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
 
@@ -2331,21 +2331,21 @@
                                 <td colspan="2">
                                     <div class="">Jewelry</div>
                                 </td>
-                                <td><input type="number" name="as_jew"
+                                <td><input type="number" min="0" name="as_jew"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Automobiles</div>
                                 </td>
-                                <td><input type="number" name="as_am"
+                                <td><input type="number" min="0" name="as_am"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Boats</div>
                                 </td>
-                                <td><input type="number" name="as_boats"
+                                <td><input type="number" min="0" name="as_boats"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr class="w-50">
@@ -2354,7 +2354,7 @@
                                     </span>
                                 </td>
 
-                                <td><input type="number" name="as_other"
+                                <td><input type="number" min="0" name="as_other"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2364,7 +2364,7 @@
                                     <div>TOTAL ASSETS:</div>
                                 </td>
 
-                                <td><input type="number" name="as_te"
+                                <td><input type="number" min="0" name="as_te"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2393,7 +2393,7 @@
                                 <td colspan="2">
                                     <div class="">Mortgage</div>
                                 </td>
-                                <td><input type="number" name="mortgage"
+                                <td><input type="number" min="0" name="mortgage"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td rowspan="10" class=" bg-secondary" > </td>
                             </tr>
@@ -2401,28 +2401,28 @@
                                 <td colspan="2">
                                     <div class="">Automobiles</div>
                                 </td>
-                                <td><input type="number" name="lb_am"
+                                <td><input type="number" min="0" name="lb_am"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Notes payable to relatives</div>
                                 </td>
-                                <td><input type="number" name="lb_np"
+                                <td><input type="number" min="0" name="lb_np"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Bank Loans</div>
                                 </td>
-                                <td><input type="number" name="lb_bl"
+                                <td><input type="number" min="0" name="lb_bl"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Accrued Taxes</div>
                                 </td>
-                                <td><input type="number" name="lb_at"
+                                <td><input type="number" min="0" name="lb_at"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
 
@@ -2430,7 +2430,7 @@
                                 <td colspan="2">
                                     <div class="">Balance of Credit Card Accounts</div>
                                 </td>
-                                <td><input type="number" name="lb_bcca"
+                                <td><input type="number" min="0" name="lb_bcca"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
 
@@ -2438,11 +2438,11 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">a.</div>
                                 </td>
-                                <td> <input type="number" name="da1"
+                                <td> <input type="number" min="0" name="da1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
                                 <td class="py-0">
-                                    <input type="number" name="da2"
+                                    <input type="number" min="0" name="da2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 {{-- <td class="py-0 bg-secondary" rowspan="4">
@@ -2452,10 +2452,10 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">b.</div>
                                 </td>
-                                <td> <input type="number" name="db1"
+                                <td> <input type="number" min="0" name="db1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" name="db2"
+                                <td class="py-0"><input type="number" min="0" name="db2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
 
@@ -2464,10 +2464,10 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">c.</div>
                                 </td>
-                                <td> <input type="number" name="dc1"
+                                <td> <input type="number" min="0" name="dc1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" name="dc2"
+                                <td class="py-0"><input type="number" min="0" name="dc2"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
@@ -2488,7 +2488,7 @@
                                 </td>
 
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" name="lb_te"
+                                <td><input type="number" min="0" name="lb_te"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2498,7 +2498,7 @@
                                     <div>TOTAL NET WORTH:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" name="lb_tnw"
+                                <td><input type="number" min="0" name="lb_tnw"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2518,7 +2518,7 @@
                                 </td>
                                 <td class="bg-secondary"></td>
 
-                                <td><input type="number" name="lb_ti"
+                                <td><input type="number" min="0" name="lb_ti"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2529,7 +2529,7 @@
                                 </td>
                                 <td class="bg-secondary"></td>
 
-                                <td><input type="number" name="lb_ti"
+                                <td><input type="number" min="0" name="lb_ti"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
@@ -2540,7 +2540,7 @@
                                 </td>
 
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" name="eod"
+                                <td><input type="number" min="0" name="eod"
                                         class="border-0 bg-transparent border outline-none form-control"
                                         value="0">
                                 </td>
