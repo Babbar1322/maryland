@@ -108,4 +108,18 @@ class FormController extends Controller
     public function form4() {
         return view('form4');
     }
+    public function form4_post(Request $request) {
+        form4::create($request->all());
+
+        return  redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+
+    public function form5(){
+        return view('form5');
+    }
+
+
+
 }
