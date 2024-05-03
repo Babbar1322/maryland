@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\form2;
+use App\Models\form3;
+use App\Models\form4;
 use App\Models\judicial;
 use Illuminate\Http\Request;
 
@@ -93,17 +95,25 @@ class FormController extends Controller
     public function form2() {
         return view('form2');
     }
-
-
     public function form2_post(Request $request) {
         form2::create($request->all());
 
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
+
     public function form3() {
         return view('form3');
     }
+
+    public function form3_post(Request $request){
+        form3::create($request->all());
+
+        return  redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+
 
     public function form4() {
         return view('form4');
@@ -113,7 +123,6 @@ class FormController extends Controller
 
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
-
 
 
     public function form5(){

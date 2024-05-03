@@ -151,19 +151,16 @@
                      <div class="card-body p-5 ">
                       <h5 class="text-decoration-none text-dark">Form 1</h5>
                       <span>MD.pdf</span>
-
                     </div>
                   </div>
                 </a>
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
                 <a href="{{route('pdf_form2')}}" class="text-decoration-none">
-
                 <div class="card">
                      <div class="card-body p-5 ">
                       <h5 class="text-decoration-none text-dark">Form 2</h5>
                       <span>MD partially filled out to check formulas.pdf</span>
-
                     </div>
                   </div>
                 </a>
@@ -182,12 +179,10 @@
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
                 <a href="{{route('pdf_form4')}}" class="text-decoration-none">
-
                 <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 4</h5>
                       <span>rev-488 PA.pdf</span>
-
                     </div>
                   </div>
                 </a>
