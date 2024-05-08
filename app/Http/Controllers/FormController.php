@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\form2;
-
 use App\Models\form3;
 use App\Models\form4;
-use App\Models\form5;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
@@ -113,6 +111,12 @@ class FormController extends Controller
         return view('form3');
     }
 
+    public function form3_post(Request $request){
+        form3::create($request->all());
+
+        return  redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+    
     public function form4() {
         return view('form4');
     }
