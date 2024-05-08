@@ -5,14 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\form2;
-<<<<<<< Updated upstream
-=======
+
 use App\Models\form3;
 use App\Models\form4;
 use App\Models\form5;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
->>>>>>> Stashed changes
 use App\Models\judicial;
 use Illuminate\Http\Request;
 
@@ -118,8 +116,7 @@ class FormController extends Controller
     public function form4() {
         return view('form4');
     }
-<<<<<<< Updated upstream
-=======
+
     public function form4_post(Request $request) {
         form4::create($request->all());
 
@@ -171,6 +168,5 @@ class FormController extends Controller
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
 
     }
->>>>>>> Stashed changes
 }
 
