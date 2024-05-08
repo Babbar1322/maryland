@@ -144,7 +144,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row mx-auto text-center mt-5">
+        <div class="row mx-auto text-center my-5">
             <div class="col-lg-4 mt-4 mt-lg-0">
                 <a href="{{route('form.index')}}" class="text-decoration-none">
                 <div class="card">
@@ -188,6 +188,26 @@
                       <h5 class="text-decoration-none text-dark">Form 4</h5>
                       <span>rev-488 PA.pdf</span>
 
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <a href="{{route('pdf_form5')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 5</h5>
+                      <span>10482_fam_cis NJ.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <a href="{{route('pdf_form6')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 6</h5>
+                      <span>cc320.pdf</span>
                     </div>
                   </div>
                 </a>
