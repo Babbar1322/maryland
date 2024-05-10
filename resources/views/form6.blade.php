@@ -359,7 +359,7 @@
 
                             <div class="col-md-6 pt-2">
                                 <div class="d-flex">
-                                    <div class="my-auto" style="width:650px;">Driver’s license number and state:</div>
+                                    <div class="my-auto" style="width:650px;">Driver's license number and state:</div>
                                     <input type="text" name="dns"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
