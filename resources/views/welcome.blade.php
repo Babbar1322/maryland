@@ -145,7 +145,7 @@
 <body>
     <div class="container">
         <div class="row mx-auto text-center my-5">
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="col-lg-4 mt-4 ">
                 <a href="{{route('form.index')}}" class="text-decoration-none">
                 <div class="card">
                      <div class="card-body p-5 ">
@@ -156,7 +156,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="col-lg-4 mt-4 ">
                 <a href="{{route('pdf_form2')}}" class="text-decoration-none">
 
                 <div class="card">
@@ -168,7 +168,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="col-lg-4 mt-4 ">
                 <a href="{{route('pdf_form3')}}" class="text-decoration-none">
 
                 <div class="card">
@@ -180,7 +180,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="col-lg-4 mt-4 ">
                 <a href="{{route('pdf_form4')}}" class="text-decoration-none">
 
                 <div class="card">
@@ -192,7 +192,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="col-lg-4 mt-4 ">
                 <a href="{{route('pdf_form5')}}" class="text-decoration-none">
                  <div class="card">
                      <div class="card-body p-5">
@@ -202,12 +202,22 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
-                <a href="{{route('pdf_form6')}}" class="text-decoration-none">
+            <div class="col-lg-4 mt-4 ">
+                <a href="{{route('pdf_form7')}}" class="text-decoration-none">
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 6</h5>
-                      <span>cc320.pdf</span>
+                      <span>fm006-short  CT.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4 ">
+                <a href="{{route('pdf_form8')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 7</h5>
+                      <span>fm006-long  CT.pdf</span>
                     </div>
                   </div>
                 </a>

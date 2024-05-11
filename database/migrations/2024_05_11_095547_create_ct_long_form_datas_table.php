@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCtShortsTable extends Migration
+class CreateCtLongFormDatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateCtShortsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ct_shorts', function (Blueprint $table) {
+        Schema::create('ct_long_form_datas', function (Blueprint $table) {
             $table->id();
-             $table->timestamp('created_at')->useCurrent();
+            $table->bigInteger("cslong_form_id");
+            $table->string("keyss");
+            $table->string("valuess")->nullable();
+            $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
@@ -27,6 +30,6 @@ class CreateCtShortsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ct_shorts');
+        Schema::dropIfExists('ct_long_form_datas');
     }
 }

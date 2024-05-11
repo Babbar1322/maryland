@@ -15,7 +15,7 @@ class CreateCc320FormDatasTable extends Migration
     {
         Schema::create('cc320_form_datas', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger("form_id");
+            $table->bigInteger("cshort_form_id");
             $table->string("keyss");
             $table->string("valuess")->nullable();
             $table->timestamp('created_at')->useCurrent();

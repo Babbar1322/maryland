@@ -9,6 +9,6 @@ class nj_form extends Model
 {
     use HasFactory;
     protected $table = "nj_form";
-    
+
     protected $guarded = [];
 }

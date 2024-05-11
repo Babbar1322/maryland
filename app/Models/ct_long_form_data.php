@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cc320_form extends Model
+class ct_long_form_data extends Model
 {
     use HasFactory;
-    protected $table = "cc320_forms";
+    protected $table = "ct_long_form_datas";
 
     protected $guarded = [];
 }

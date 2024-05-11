@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\cc320_form;
 use App\Models\cc320_form_data;
+use App\Models\ct_long_form;
+use App\Models\ct_long_form_data;
 use App\Models\form2;
 use App\Models\form3;
 use App\Models\form4;
@@ -14,7 +16,7 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    
+
     public function index()
     {
         //
@@ -22,13 +24,13 @@ class FormController extends Controller
         return view('form1');
     }
 
-   
+
     public function create()
     {
         //
     }
 
- 
+
     public function store(Request $request)
     {
         //
@@ -38,25 +40,25 @@ class FormController extends Controller
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
-   
+
     public function show($id)
     {
         //
     }
 
-    
+
     public function edit($id)
     {
         //
     }
 
-   
+
     public function update(Request $request, $id)
     {
         //
     }
 
- 
+
     public function destroy($id)
     {
         //
@@ -82,7 +84,7 @@ class FormController extends Controller
 
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
-    
+
     public function form4() {
         return view('form4');
     }
@@ -103,7 +105,7 @@ class FormController extends Controller
     public function form5_post(Request $request) {
         $nj = new nj_form();
         $nj->save();
-       
+
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
@@ -140,6 +142,47 @@ class FormController extends Controller
 
     public function form7(){
         return view('form7');
+    }
+
+    public function form7_post(Request $request) {
+        $cshort = new cc320_form();
+        $cshort->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $cshort_data = new cc320_form_data();
+            $cshort_data->cshort_form_id = $cshort->id;
+            $cshort_data->keyss = $key;
+            $cshort_data->valuess= $req;
+            $cshort_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form8(){
+        return view('form8');
+    }
+
+
+
+    public function form8_post(Request $request) {
+        $cshort = new ct_long_form();
+        $cshort->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $cshort_data = new ct_long_form_data();
+            $cshort_data->cslong_form_id = $cshort->id;
+            $cshort_data->keyss = $key;
+            $cshort_data->valuess= $req;
+            $cshort_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 }
 

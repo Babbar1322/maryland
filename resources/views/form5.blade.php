@@ -69,10 +69,6 @@
 
         }
 
-        .top:focus{
-            border-bottom: none !important;
-        }
-
         input:focus-visible {
             outline: none !important;
             border-bottom: 2px solid black !important;
@@ -224,23 +220,23 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            @if(session('success'))
-            <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            @endif
-
             <form action="{{route('form5.submit')}}" method="post">
                 @csrf
+                @if(session('success'))
+                <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
                     <div class="col-lg-10 mx-auto">
                         <div class="fw-bold text-center">Appendix V</div>
                         <div class="fw-bold text-center">Family Part Case Information Statement</div>
                         <div class="fw-bold text-center">This form and attachments are confidential pursuant to Rules
                             1:38-3(d)(1) and 5:5-2(f)</div>
-                        <div class="small_text">Attorney(s): <input class="border-none border-0 top" name="attorneies"></div>
-                        <div class="small_text">Office Address: <input class="border-none border-0 top" name="office_address"></div>
-                        <div class="small_text">Tel. No./Fax No . <input class="border-none border-0 top" name="tel_no"></div>
-                        <div class="small_text">Attorney(s) for: <input class="border-none border-0 top" name="attorney_for"></div>
+                        <div class="small_text">Attorney(s):</div>
+                        <div class="small_text">Office Address:</div>
+                        <div class="small_text">Tel. No./Fax No.</div>
+                        <div class="small_text">Attorney(s) for:</div>
 
                         <div class="row">
                             <div class="col-lg-6 border border-dark py-3">
