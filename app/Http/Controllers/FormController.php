@@ -6,6 +6,10 @@ use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
+use App\Models\fl140_ca_form;
+use App\Models\fl140_ca_form_data;
+use App\Models\fl161_ca_form;
+use App\Models\fl161_ca_form_data;
 use App\Models\form2;
 use App\Models\form3;
 use App\Models\form4;
@@ -132,7 +136,7 @@ class FormController extends Controller
                 continue;
             }
             $form_data = new cc320_form_data();
-            $form_data->form_id = $form->id;
+            $form_data->cshort_form_id = $form->id;
             $form_data->keyss = $key;
             $form_data->valuess= $req;
             $form_data->save();
@@ -183,6 +187,59 @@ class FormController extends Controller
             $cshort_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+
+    public function form9() {
+
+        return view('form9');
+    }
+
+
+
+
+
+    public function form9_post(Request $request) {
+        $fl140_ca = new fl140_ca_form();
+        $fl140_ca->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fl140_data = new fl140_ca_form_data();
+            $fl140_data->fl140_form_id = $fl140_ca->id;
+            $fl140_data->keyss = $key;
+            $fl140_data->valuess= $req;
+            $fl140_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form10(){
+        return  view('form10');
+    }
+
+
+    public function form10_post(Request $request) {
+        $fl161_ca = new fl161_ca_form();
+        $fl161_ca->save();
+
+        foreach($request->all() as $key=>$req){
+            $fl161_ca_data = new fl161_ca_form_data();
+            $fl161_ca_data->fl161_form_id = $fl161_ca->id;
+            $fl161_ca_data->keyss = $key;
+            $fl161_ca_data->valuess= $req;
+            $fl161_ca_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function from11() {
+        return view('form11');
     }
 }
 

@@ -897,18 +897,14 @@
                          <div class="col-md-12 pt-3 px-0 ">
                             <div class="d-flex d_sm_block">
                                 <div class="d-flex d_sm_block col-md-9 ">
-                                    <h5 class="fw-bold col">(q) Total Gross Weekly Income/Monies and Benefits From All
-                                        Sources
+                                    <h5 class="fw-bold col">(q) Total Gross Weekly Income/Monies and Benefits From All  Sources
                                     </h5><span>(Add items a through p)</span>
                                 </div>
                                 <div class="col-md-3  ps-lg-5"><span>$</span>
-                                    <input type="text" name="total_weekly_gross"
-                                        class="border-0 border-bottom text-end fw-bold">
+                                    <input type="text" name="total_weekly_gross" class="border-0 border-bottom text-end fw-bold">
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="col-md-12">
                             <div class="ps-lg-3 d-flex d_sm_block">
                                 <div>Hours worked per week</div>
@@ -927,9 +923,7 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div>List here and explain any other income including but not limited to: non-reported
-                                income; and support provided by relatives,
-                                friends, and others:</div>
+                            <div>List here and explain any other income including but not limited to: non-reported  income; and support provided by relatives, friends, and others:</div>
                         </div>
                         @include('layouts.footer5', ['page' => 1])
                     </div>
@@ -2239,7 +2233,7 @@
                                                 <input type="radio" name="RP_rp1" value="Yes">
                                                 <label for="">Yes</label>
                                             </div>
-                                            <div class="d-flex gap-2">
+                                            <div class="d-flex gap-2 ps-lg-3">
                                                 <input type="radio" name="RP_rp1" value="No">
                                                 <label for="">No</label>
                                             </div>
@@ -2257,7 +2251,7 @@
                                                 <input type="radio" name="RP_rp2" value="Yes">
                                                 <label for="">Yes</label>
                                             </div>
-                                            <div class="d-flex gap-2">
+                                            <div class="d-flex gap-2 ps-lg-3">
                                                 <input type="radio" name="RP_rp2" value="No">
                                                 <label for="">No</label>
                                             </div>
