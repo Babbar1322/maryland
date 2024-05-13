@@ -132,7 +132,7 @@ class FormController extends Controller
                 continue;
             }
             $form_data = new cc320_form_data();
-            $form_data->form_id = $form->id;
+            $form_data->cshort_form_id = $form->id;
             $form_data->keyss = $key;
             $form_data->valuess= $req;
             $form_data->save();
