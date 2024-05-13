@@ -2538,12 +2538,12 @@
                         <div class="col-md-12 py-5">
                             <div>I declare that the statements above are true to the best of my information, knowledge, and belief.</div>
                         </div>
-                        
+
                         <div class="col-md-7">
                             <div>
                                 <input type="text" name="date"
                                 class="border-none border-0 border-bottom  shadow-none ">
-                                <div class="fs-6">Date</div>  
+                                <div class="fs-6">Date</div>
                             </div>
                         </div>
 
@@ -2551,17 +2551,17 @@
                             <div >
                                 <input type="text" name="sign"
                                 class="border-none border-0 border-bottom  shadow-none w-100">
-                                <div class="fs-6">Signature</div>  
+                                <div class="fs-6">Signature</div>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-12 pt-5">
                             <div class="d-flex ps-3">
                                 <div style="width:430px;">Subscribed and sworn to before me on</div>
                                 <div class="w-100">
                                     <input type="text" name="subs_date"
                                     class="border-none border-0 border-bottom  shadow-none w-100">
-                                    <div class="fs-6">Date</div>  
+                                    <div class="fs-6">Date</div>
                                 </div>
                             </div>
                         </div>
@@ -2570,7 +2570,7 @@
                                 <div class="w-100 ">
                                     <input type="text" name="subs_date"
                                     class="border-none border-0 border-bottom  shadow-none w-100">
-                                    <div class="fs-6">Deputy clerk/Notary public signature</div>  
+                                    <div class="fs-6">Deputy clerk/Notary public signature</div>
                                 </div>
                         </div>
 
@@ -2585,11 +2585,11 @@
                             <div>
                                 <input type="text" name="print_name"
                                 class="border-none border-0 border-bottom  shadow-none ">
-                                <div class="fs-6">Name (type or print)</div>  
+                                <div class="fs-6">Name (type or print)</div>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="ps-3">Notary public, State of Michigan, County of 
+                            <div class="ps-3">Notary public, State of Michigan, County of
                                 <input type="text" name="notary"
                                 class="border-none border-0 border-bottom  shadow-none ">
                                 <span>.</span>
