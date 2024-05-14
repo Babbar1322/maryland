@@ -1640,64 +1640,34 @@
                                     under "Assets."
                                 </div>
                                 <div class="table-responsive">
-                                <table class="table-bordered border border-1 border-dark w-100">
+                                <table class="w-100">
                                     <tr>
-                                        <td class="py-2 text-center"  colspan="5" >Creditor Name /Type of Debt</td>
-                                        <td class="py-2 text-center"  >Balance Due</td>
-                                        <td class="p-2 text-center" > Date Debt Incurred/Revolving</td>
-                                        <td class="py-2 text-center"  >Weekly Payment</td>
+                                        <td class="py-2 text-center border border-dark" style="width: 700px;" >Creditor Name /Type of Debt</td>
+                                        <td class="py-2 text-center border border-dark" style="">Balance Due</td>
+                                        <td class="p-2 text-center border border-dark" style="width: 50px;" >Date Debt Incurred/Revolving</td>
+                                        <td class="py-2 text-center border border-dark" style="width: 100px;">Weekly Payment</td>
                                     </tr>
                                     <tr>
-                                        <td  class="py-2" colspan="4" >Credit Card, Consumer, Tax, Health Care, Other Debt</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="3" >
-                                            <input type="text" name="L_cn1" class="border-0 w-100">
+                                        <td class="border border-dark">
+                                            <div>Credit Card, Consumer, Tax, Health Care, Other Debt</div>
                                         </td>
-                                        <td class=" text-center"  colspan="2"  >
-                                              <div class="d-flex gap-2">
-                                                <div>
-                                                    <input type="radio" name="L_cntype1" value="Sole">
-                                                    <label for="">Sole</label>
-                                                </div>
-                                                <div>
-                                                    <input type="radio" name="L_cntype1" value="Joint">
-                                                    <label for="">Joint</label>
-                                                </div>
-                                        </div></td>
-                                        <td class="  " >
-                                             <div class="d-flex tdata">$ <input type="text" name="L_blcdue1" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                        <td><div class="  tdata"> <input type="text" name="L_ddi1" class="text-center border-0 w-100"></div></td>
-                                        <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="L_wp1" class="border-0 w-100 text-end"></div>
-
+                                        <td colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-dark">
+                                            
                                         </td>
                                     </tr>
-
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="3" >
-                                            <input type="text" name="L_cn2" class="border-0 w-100">
-                                        </td>
-                                        <td class=" text-center"  colspan="2"  >
-                                              <div class="d-flex gap-2">
-                                                <div>
-                                                    <input type="radio" name="L_cntype2" value="Sole">
-                                                    <label for="">Sole</label>
-                                                </div>
-                                                <div>
-                                                    <input type="radio" name="L_cntype2" value="Joint">
-                                                    <label for="">Joint</label>
-                                                </div>
-                                        </div></td>
-                                        <td class="  " >
-                                             <div class="d-flex tdata">$ <input type="text" name="L_blcdue2" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                        <td><div class="  tdata"> <input type="text" name="L_ddi2" class="text-center border-0 w-100"></div></td>
+                                    <tr>
+                                        <td class="border border-dark py-2"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="L_wp2" class="border-0 w-100 text-end"></div>
-
+                                            <div>
+                                                <input type="text" name="child_oth"
+                                                class="border-0 border-bottom w-100">
+                                                <label for=""></label>
+                                            </div>
                                         </td>
+                                        <td></td>
                                     </tr>
                                 </table>
                                 </div>
