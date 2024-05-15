@@ -239,6 +239,9 @@
         td[rowspan] {
             vertical-align: top;
         }
+        .table_input:hover {
+             background-color: #e4eaf9 !important;
+        }
     </style>
 </head>
 
@@ -255,7 +258,7 @@
                         </div>
                     @endif
                     <div class="row  px-lg-5 px-2   pt-2">
-                        <div class="small_text text-end fw-bold">FL-161</div>
+                        <div class="small_text text-end fw-bold">FL-160</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="row">
                                 <div class="col">
@@ -265,7 +268,7 @@
                                 <div class="col">
                                     <div class="d-flex">
                                         <div class="small_text">STATE BAR NUMBER:</div>
-                                        <div> <input type="text" name="name" class="border-0 "></div>
+                                        <div> <input type="text" name="name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -274,45 +277,45 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">Name:</div>
-                                        <div> <input type="text" name="name" class="border-0 "></div>
+                                        <div> <input type="text" name="name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">First Name:</div>
-                                        <div> <input type="text" name="f_name" class="border-0 "></div>
+                                        <div> <input type="text" name="f_name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">STREET ADDRESS:</div>
-                                        <div> <input type="text" name="s_address" class="border-0 "></div>
+                                        <div> <input type="text" name="s_address" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">CITY :</div>
-                                        <div> <input type="text" name="city" class="border-0 "></div>
+                                        <div> <input type="text" name="city" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">TELEPHONE NO :</div>
-                                        <div> <input type="text" name="phone" class="border-0 "></div>
+                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">EMAIL ADDRESS NO :</div>
-                                        <div> <input type="text" name="phone" class="border-0 "></div>
+                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">ATTORNEY FOR (name):</div>
-                                        <div> <input type="text" name="phone" class="border-0 "></div>
+                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -321,31 +324,31 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class=" ">SUPERIOR COURT OF CALIFORNIA, COUNTY OF</div>
-                                        <div> <input type="text" name="county_of" class="border-0 "></div>
+                                        <div> <input type="text" name="county_of" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">STREET ADDRESS:</div>
-                                        <div> <input type="text" name="street_address" class="border-0 "></div>
+                                        <div> <input type="text" name="street_address" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">MAILING ADDRESS:</div>
-                                        <div> <input type="text" name="mailing_address" class="border-0 "></div>
+                                        <div> <input type="text" name="mailing_address" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">CITY AND ZIP CODE:</div>
-                                        <div> <input type="text" name="zip_code" class="border-0 "></div>
+                                        <div> <input type="text" name="zip_code" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">BRANCH NAME:</div>
-                                        <div> <input type="text" name="branch_name" class="border-0 "></div>
+                                        <div> <input type="text" name="branch_name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -354,19 +357,19 @@
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">PETITIONER:</div>
-                                        <div> <input type="text" name="petitioner" class="border-0 "></div>
+                                        <div> <input type="text" name="petitioner" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">RESPONDENT:</div>
-                                        <div> <input type="text" name="respondent" class="border-0 "></div>
+                                        <div> <input type="text" name="respondent" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">OTHER PARENT/PARTY:</div>
-                                        <div> <input type="text" name="other_party" class="border-0 "></div>
+                                        <div> <input type="text" name="other_party" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +379,6 @@
                         <div class="col-lg-4 border border-dark"></div>
                     </div>
                     <div class="row px-lg-5 px-2 py-2 pt-0">
-
                         <div class="col-lg-8 border border-dark">
                             <div class="d-flex  pt-3 ">
 
@@ -403,7 +405,7 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number" class="border-0 w-100">
+                            <input type="text" name="case_number" class="border-0 table_input w-100">
                         </div>
                     </div>
 
@@ -411,8 +413,8 @@
                         <div class="p-2">
                             <div class="lh-1"> See Instructions on page 5 for information about completing this form.
                                 For additional space , use Continuation of Property Declaration</div>
-                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl161.pdf">form
-                                    FL-161</a> )</div>
+                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl160.pdf">form
+                                    FL-160</a> )</div>
                         </div>
 
                         <div class="table-responsive">
@@ -428,18 +430,17 @@
                                         <td colspan="2" class="text-center">F</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center small_text d-flex gap-3 border-0">
+                                        <td class="text-center small_text d-flex gap-3 border-0 table_input">
                                             <div>ITEM NO</div>
                                             <div> BRIEF DESCRIPTION</div>
                                         </td>
-                                        {{-- <td class="text-center small_text">BRIEF DESCRIPTION</td> --}}
                                         <td class="text-center small_text">DATE ACQUIRED (mm/dd/yyyy)</td>
                                         <td class="text-center small_text">GROSS FAIR MARKET VALUE</td>
                                         <td class="text-center small_text">AMOUNT OF DEBT</td>
                                         <td class="text-center small_text">NET FAIR MARKET VALUE</td>
                                         <td class="text-center small_text" colspan="2">
                                             <div>PROPOSAL FOR DIVISION</div>
-                                            <div> Award or Confirm to</div>
+                                            <div> Award or Confirm to:</div>
                                             <div class="d-flex gap-3 justify-content-center">
                                                 <span> PETITIONER</span>
                                                 <span>RESPONDENT</span>
@@ -451,194 +452,310 @@
                                         <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>1.REAL ESTATE</div>
-                                                <div><input type="text" name="brif_desc1" class="w-100  border-0">
+                                                <div><input type="text" name="brif_desc1" class="w-100  border-0 table_input">
                                                 </div>
-                                                <div><input type="text" name="brif_desc2" class="w-100  border-0">
+                                                <div><input type="text" name="brif_desc2" class="w-100  border-0 table_input">
                                                 </div>
                                             </div>
                                             <div>
                                                 <div>
                                                     2.HOUSEHOLD FURNITURE, FURNISHINGS, APPLIANCES
                                                 </div>
-                                                <input type="text" name="applince1" class="w-100  border-0">
-                                                <input type="text" name="applince2" class="w-100  border-0">
-                                                <input type="text" name="applince3" class="w-100  border-0">
-                                                <input type="text" name="applince4" class="w-100  border-0">
-                                                <input type="text" name="applince5" class="w-100  border-0">
+                                                <input type="text" name="applince1" class="w-100  border-0 table_input">
+                                                <input type="text" name="applince2" class="w-100  border-0 table_input">
+                                                <input type="text" name="applince3" class="w-100  border-0 table_input">
+                                                <input type="text" name="applince4" class="w-100  border-0 table_input">
+                                                <input type="text" name="applince5" class="w-100  border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>
                                                     3. JEWELRY, ANTIQUES, ART, COIN COLLECTIONS, ETC
                                                 </div>
-                                                <input type="text" name="jewel1" class="w-100  border-0">
-                                                <input type="text" name="jewel2" class="w-100  border-0">
-                                                <input type="text" name="jewel3" class="w-100  border-0">
+                                                <input type="text" name="jewel1" class="w-100  border-0 table_input">
+                                                <input type="text" name="jewel2" class="w-100  border-0 table_input">
+                                                <input type="text" name="jewel3" class="w-100  border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>4. VEHICLES, BOATS, TRAILERS</div>
-                                                <input type="text" name="vehicles1" class="w-100  border-0">
-                                                <input type="text" name="vehicles2" class="w-100  border-0">
-                                                <input type="text" name="vehicles3" class="w-100  border-0">
+                                                <input type="text" name="vehicles1" class="w-100  border-0 table_input">
+                                                <input type="text" name="vehicles2" class="w-100  border-0 table_input">
+                                                <input type="text" name="vehicles3" class="w-100  border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>5. SAVINGS ACCOUNTS</div>
-                                                <input type="text" name="sav_acc1" class="w-100  border-0">
-                                                <input type="text" name="sav_acc2" class="w-100  border-0">
-                                                <input type="text" name="sav_acc3" class="w-100  border-0">
+                                                <input type="text" name="sav_acc1" class="w-100  border-0 table_input">
+                                                <input type="text" name="sav_acc2" class="w-100  border-0 table_input">
+                                                <input type="text" name="sav_acc3" class="w-100  border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>6. CHECKING ACCOUNTS</div>
-                                                <input type="text" name="check_acc1" class="w-100  border-0">
-                                                <input type="text" name="check_acc2" class="w-100  border-0">
-                                                <input type="text" name="check_acc3" class="w-100  border-0">
+                                                <input type="text" name="check_acc1" class="w-100  border-0 table_input">
+                                                <input type="text" name="check_acc2" class="w-100  border-0 table_input">
+                                                <input type="text" name="check_acc3" class="w-100  border-0 table_input">
                                             </div>
                                         </td>
                                         <td rowspan="8" class="small_text">
                                             <div>
                                                 <br>
-                                                <div><input type="text" name="re_date_a1" class=" border-0"></div>
-                                                <div><input type="text" name="re_date_a2" class=" border-0"></div>
+                                                <div><input type="text" name="re_date_a1" class=" border-0 table_input"></div>
+                                                <div><input type="text" name="re_date_a2" class=" border-0 table_input"></div>
                                             </div>
                                             <br>
                                             <br>
                                             <div>
-                                                <input type="text" name="app_date1" class="w-100 border-0">
-                                                <input type="text" name="app_date2" class="w-100  border-0">
-                                                <input type="text" name="app_date3" class="w-100 border-0">
-                                                <input type="text" name="app_date4" class="w-100  border-0">
-                                                <input type="text" name="app_date5" class=" w-100 border-0">
+                                                <input type="text" name="app_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="app_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="app_date3" class="w-100 border-0 table_input">
+                                                <input type="text" name="app_date4" class="w-100  border-0 table_input">
+                                                <input type="text" name="app_date5" class=" w-100 border-0 table_input">
                                             </div>
                                             <br>
                                             <br>
                                             <div>
-                                                <input type="text" name="jew_date1" class="w-100 border-0">
-                                                <input type="text" name="jew_date2" class="w-100  border-0">
-                                                <input type="text" name="jew_date3" class="w-100 border-0">
+                                                <input type="text" name="jew_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="jew_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="jew_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="vech_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="vech_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="vech_date3" class="w-100 border-0 table_input">
                                             </div>
                                             <br>
                                             <div>
-                                                <input type="text" name="vech_date1" class="w-100 border-0">
-                                                <input type="text" name="vech_date2" class="w-100  border-0">
-                                                <input type="text" name="vech_date3" class="w-100 border-0">
+                                                <input type="text" name="sav_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="sav_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="sav_date3" class="w-100 border-0 table_input">
                                             </div>
                                             <br>
                                             <div>
-                                                <input type="text" name="sav_date1" class="w-100 border-0">
-                                                <input type="text" name="sav_date2" class="w-100  border-0">
-                                                <input type="text" name="sav_date3" class="w-100 border-0">
+                                                <input type="text" name="ca_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="ca_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ca_date3" class="w-100 border-0 table_input">
                                             </div>
-                                            <br>
-                                            <div>
-                                                <input type="text" name="ca_date1" class="w-100 border-0">
-                                                <input type="text" name="ca_date2" class="w-100  border-0">
-                                                <input type="text" name="ca_date3" class="w-100 border-0">
-                                            </div>
-                                            
                                         </td>
-                                        <td rowspan="8">
+                                        <td rowspan="8" class="small_text">
+                                            <div>
                                             <div>$</div>
                                             <div class="small_text">
-                                                <div><input type="text" name="re_gross_val1" class="w-100  border-0 text-end"></div>
-                                                <div><input type="text" name="re_gross_val2" class="w-100  border-0 text-end"></div>
+                                                <div><input type="text" name="re_gross_val1" class="w-100  border-0 table_input text-end"></div>
+                                                <div><input type="text" name="re_gross_val2" class="w-100  border-0 table_input text-end"></div>
                                             </div>
-                                        </td>
-                                        <td rowspan="8" > 
-                                            <div>$</div>
+                                            </div>
+                                            <br>
+                                            <br>
                                             <div class="small_text">
-                                                <div><input type="text" name="re_debt_amt1" class="w-100  border-0 text-end"></div>
-                                                <div><input type="text" name="re_debt_amt2" class="w-100  border-0 text-end"></div>
+                                                <input type="text" name="app_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_gross_val3" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_gross_val4" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_gross_val5" class=" w-100 border-0 table_input text-end">
                                             </div>
-                                        </td>
-                                        <td rowspan="8" >  
-                                             <div>$</div>
+                                            <br>
+                                            <br>
                                             <div class="small_text">
-                                                <div><input type="text" name="re_mark_val1" class="w-100  border-0 text-end"></div>
-                                                <div><input type="text" name="re_mark_val2" class="w-100  border-0 text-end"></div>
+                                                <input type="text" name="jew_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="jew_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="jew_gross_val3" class="w-100 border-0 table_input text-end">
                                             </div>
-                                        </td>
-                                        <td rowspan="8" > 
-                                            <div>$</div>
+                                            <br>
+                                            <br>
                                             <div class="small_text">
-                                                <div><input type="text" name="re_pio1" class="w-100  border-0 text-end"></div>
-                                                <div><input type="text" name="re_pio2" class="w-100  border-0 text-end"></div>
+                                                <input type="text" name="vech_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="vech_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="vech_gross_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="sav_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="sav_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="sav_gross_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="ca_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="ca_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="ca_gross_val3" class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
-                                        <td rowspan="8" > 
+                                        <td rowspan="8" class="small_text"> 
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_resp1" class="w-100  border-0 text-end"></div>
-                                                    <div><input type="text" name="re_resp1" class="w-100  border-0 text-end"></div>
+                                                    <div><input type="text" name="re_debt_amt1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="re_debt_amt2" class="w-100  border-0 table_input text-end"></div>
                                                 </div>
                                             </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="app_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_debt_amt3" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_debt_amt4" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_debt_amt5" class=" w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="jew_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="jew_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="jew_debt_amt3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="vech_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="vech_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="vech_debt_amt3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="sav_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="sav_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="sav_debt_amt3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="ca_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="ca_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="ca_debt_amt3" class="w-100 border-0 table_input text-end">
+                                            </div>
                                         </td>
-                                    </tr>
-
-                                    <tr>
-                                        
-                                        {{-- <td> <input type="text" name="date_a1" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair1" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit1" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit1" class="w-100  border-0">
+                                        <td rowspan="8" class="small_text">  
+                                            <div>
+                                                <div>$</div>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="re_mark_val1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="re_mark_val2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="app_mark_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_mark_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_mark_val3" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_mark_val4" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_mark_val5" class=" w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="jew_mark_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="jew_mark_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="jew_mark_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="vech_mark_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="vech_mark_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="vech_mark_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="sav_mark_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="sav_mark_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="sav_mark_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="ca_mark_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="ca_mark_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="ca_mark_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
                                         </td>
-                                        <td> <input type="text" name="proposal_division1" class="w-100  border-0">
-                                        </td> --}}
-                                    </tr>
-
-                                    <tr>
-                                 
-                                            {{-- </td>
-                                        <td> <input type="text" name="date_a2" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair2" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit2" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit2" class="w-100  border-0">
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="re_pio1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="re_pio2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="app_pio1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_pio2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_pio3" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_pio4" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_pio5" class=" w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="jew_pio1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="jew_pio2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="jew_pio3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="vech_pio1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="vech_pio2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="vech_pio3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="sav_pio1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="sav_pio2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="sav_pio3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="ca_pio1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="ca_pio2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="ca_pio3" class="w-100 border-0 table_input text-end">
+                                            </div>
                                         </td>
-                                        <td> <input type="text" name="proposal_division2" class="w-100  border-0">
-                                        </td> --}}
-                                    </tr>
-
-                                    <tr>
-                                       
-                                        {{-- <td> <input type="text" name="date_a3" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair3" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit3" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit3" class="w-100  border-0">
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="re_resp1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="re_resp2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="app_resp1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_resp2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_resp3" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="app_resp4" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="app_resp5" class=" w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="jew_resp1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="jew_resp2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="jew_resp3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="vech_resp1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="vech_resp2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="vech_resp3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="sav_resp1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="sav_resp2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="sav_resp3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="ca_resp1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="ca_resp2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="ca_resp3" class="w-100 border-0 table_input text-end">
+                                            </div>
                                         </td>
-                                        <td> <input type="text" name="proposal_division3" class="w-100  border-0">
-                                        </td> --}}
-                                    </tr>
-
-                                    <tr>
-                                        
-                                        {{-- <td> <input type="text" name="date_a4" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair4" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit4" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit4" class="w-100  border-0">
-                                        </td>
-                                        <td> <input type="text" name="proposal_division4" class="w-100  border-0">
-                                        </td> --}}
-                                    </tr>
-
-                                    <tr>
-                                       
-                                        {{-- <td> <input type="text" name="date_a5" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair5" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit5" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit5" class="w-100  border-0">
-                                        </td>
-                                        <td> <input type="text" name="proposal_division5" class="w-100  border-0">
-                                        </td> --}}
-                                    </tr>
-
-                                    <tr>
-                                        
-                                        {{-- <td> <input type="text" name="date_a6" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="gross_fair6" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="amount_debit6" class="w-100  border-0"></td>
-                                        <td> <input type="text" name="net_fairmarkit6" class="w-100  border-0">
-                                        </td>
-                                        <td> <input type="text" name="proposal_division6" class="w-100  border-0">
-                                        </td> --}}
                                     </tr>
                                 </thead>
                             </table>
@@ -653,192 +770,571 @@
 
                 <section class="section_area  px-lg-5 px-2 ">
                     <div class="table-responsive pt-5">
-                        <table class="table-bordered border border-2 border-dark">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td>A</td>
-                                    <td>B</td>
-                                    <td colspan="3"> C - D = E</td>
-                                    <td colspan="3">F</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center small_text">ITEM NO</td>
-                                    <td class="text-center small_text">BRIEF DESCRIPTION</td>
-                                    <td class="text-center small_text">DATE ACQUIRED (mm/dd/yyyy)</td>
-                                    <td class="text-center small_text">GROSS FAIR MARKET VALUE</td>
-                                    <td class="text-center small_text">AMOUNT OF DEBT</td>
-                                    <td class="text-center small_text">NET FAIR MARKET VALUE</td>
-                                    <td class="text-center small_text">PROPOSAL FOR DIVISION Award or Confirm to
-                                        PETITIONER
-                                        RESPONDENT</td>
-                                </tr>
+                            <table class="table-bordered border border-2 border-dark">
+                                <thead>
+                                    <tr>
+                                        <td class="text-center">A</td>
+                                        <td class="text-center">B</td>
+                                        <td colspan="3">
+                                            <div class="d-flex gap-5 justify-content-center"> <span>C </span> - <span>
+                                                    D </span> = <span> E </span></div>
+                                        </td>
+                                        <td colspan="2" class="text-center">F</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center small_text d-flex gap-3 border-0 table_input">
+                                            <div>ITEM NO</div>
+                                            <div> BRIEF DESCRIPTION</div>
+                                        </td>
+                                        <td class="text-center small_text">DATE ACQUIRED (mm/dd/yyyy)</td>
+                                        <td class="text-center small_text">GROSS FAIR MARKET VALUE</td>
+                                        <td class="text-center small_text">AMOUNT OF DEBT</td>
+                                        <td class="text-center small_text">NET FAIR MARKET VALUE</td>
+                                        <td class="text-center small_text" colspan="2">
+                                            <div>PROPOSAL FOR DIVISION</div>
+                                            <div> Award or Confirm to:</div>
+                                            <div class="d-flex gap-3 justify-content-center">
+                                                <span> PETITIONER</span>
+                                                <span>RESPONDENT</span>
+                                            </div>
+                                            </td>
+                                    </tr>
 
-                                <tr>
-                                    <td> </td>
-                                    <td></td>
-                                    <td> $</td>
-                                    <td> $</td>
-                                    <td> $</td>
-                                    <td> $</td>
-                                    <td> $</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text">7.</td>
-                                    <td class="small_text"> CREDIT UNION, OTHER DEPOSITORY ACCOUNTS
-
-
-                                        <input type="text" name="brif_desc7" class="w-100  border-0">
-
-                                    </td>
-                                    <td> <input type="text" name="date_a7" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair7" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit7" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit7" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division7" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text">8.</td>
-                                    <td class="small_text"> CASH
-                                        <input type="text" name="brif_desc8" class="w-100  border-0">
-
-                                    </td>
-                                    <td> <input type="text" name="date_a8" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair8" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit8" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit8" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division8" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text"> 9.</td>
-                                    <td class="small_text">TAX REFUND
-
-                                        <input type="text" name="brif_desc9" class="w-100  border-0">
-
-                                    </td>
-                                    <td> <input type="text" name="date_a9" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair9" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit9" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit9" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division9" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text">10.</td>
-                                    <td class="small_text"> LIFT INSURANCE WITH CASH SURRNDER OR LOAN VALUE
-                                        <input type="text" name="brif_desc10" class="w-100  border-0">
-
-                                    </td>
-                                    <td> <input type="text" name="date_a10" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair10" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit10" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit10" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division10" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text"> 11.</td>
-                                    <td class="small_text">STOCKS, BONDS, SECURED,NOTES, MUTUAL FUNDS
-                                        <input type="text" name="brif_desc11" class="w-100  border-0">
-
-                                    </td>
-                                    <td> <input type="text" name="date_a11" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair11" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit11" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit11" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division11" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text">12.</td>
-                                    <td class="small_text">RETIREMENT AND PENSIONS
-                                        <input type="text" name="brif_desc12" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_a12" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair12" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit12" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit12" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division12" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">13.</td>
-                                    <td class="small_text">PROFIT-SHARING, IRAS, DEFERRED COMPENSATION, ANNUITIES
-                                        <input type="text" name="brif_desc13" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_a13" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair13" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit13" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit13" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division13" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">14.</td>
-                                    <td class="small_text">ACCOUNTS RECEIVABLE, UNSECURED NOTES
-                                        <input type="text" name="brif_desc14" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_a14" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair14" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit14" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit14" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division14" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">15.</td>
-                                    <td class="small_text">PARTNERSHIP, OTHER BUSINESS INTERESTS
-                                        <input type="text" name="brif_desc15" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_a15" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair15" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit15" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit15" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division15" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">16.</td>
-                                    <td class="small_text">OTHER ASSETS
-                                        <input type="text" name="brif_desc16" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_a16" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair16" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit16" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit16" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division16" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">17.</td>
-                                    <td class="small_text">ASSETS FROM CONTINUATION SHEET</td>
-                                    <td> <input type="text" name="date_a17" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair17" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit17" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit17" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division17" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text">18.</td>
-                                    <td class="small_text">TOTAL ASSETS</td>
-                                    <td> <input type="text" name="date_a18" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="gross_fair18" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit18" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="net_fairmarkit18" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="proposal_division18" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                            </thead>
-                        </table>
+                                    <tr>
+                                        <td rowspan="8" class="small_text">
+                                            <div>
+                                                <div>7. CREDIT UNION, OTHER DEPOSITORY ACCOUNTS</div>
+                                                <div><input type="text" name="credit_acc1" class="w-100  border-0 table_input"></div>
+                                                <div><input type="text" name="credit_acc2" class="w-100  border-0 table_input"> </div>
+                                                <div><input type="text" name="credit_acc3" class="w-100  border-0 table_input"> </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    8.CASH
+                                                </div>
+                                                <input type="text" name="cash1" class="w-100  border-0 table_input">
+                                                <input type="text" name="cash2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    9. TAX REFUND
+                                                </div>
+                                                <input type="text" name="tax_refund1" class="w-100  border-0 table_input">
+                                                <input type="text" name="tax_refund2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>10. LIFT INSURANCE WITH CASH SURRNDER OR LOAN VALUE</div>
+                                                <input type="text" name="loan_val1" class="w-100  border-0 table_input">
+                                                <input type="text" name="loan_val2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>11. STOCKS, BONDS, SECURED,NOTES, MUTUAL FUNDS</div>
+                                                <input type="text" name="mut_funds1" class="w-100  border-0 table_input">
+                                                <input type="text" name="mut_funds2" class="w-100  border-0 table_input">
+                                                <input type="text" name="mut_funds3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>12. RETIREMENT AND PENSIONS</div>
+                                                <input type="text" name="pensions1" class="w-100  border-0 table_input">
+                                                <input type="text" name="pensions2" class="w-100  border-0 table_input">
+                                                <input type="text" name="pensions3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>13. PROFIT-SHARING,IRAS,DEFERRED COMPENSATION ANNUTIES</div>
+                                                <input type="text" name="profit_sharing1" class="w-100  border-0 table_input">
+                                                <input type="text" name="profit_sharing2" class="w-100  border-0 table_input">
+                                                <input type="text" name="profit_sharing3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>14. ACCOUNT RECIEVABLE,UNSECURED NOTES</div>
+                                                <input type="text" name="acc_rec1" class="w-100  border-0 table_input">
+                                                <input type="text" name="acc_rec2" class="w-100  border-0 table_input">
+                                                <input type="text" name="acc_rec3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>15. PARTERSHIP ,OTHER BUSINESS INTEREST</div>
+                                                <input type="text" name="bus_int1" class="w-100  border-0 table_input">
+                                                <input type="text" name="bus_int2" class="w-100  border-0 table_input">
+                                                <input type="text" name="bus_int3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>16. OTHER ASSETS</div>
+                                                <input type="text" name="other_ass1" class="w-100  border-0 table_input">
+                                                <input type="text" name="other_ass2" class="w-100  border-0 table_input">
+                                                <input type="text" name="other_ass3" class="w-100  border-0 table_input">
+                                            </div>
+                                            <div>
+                                                <div>17. ASSETS FROM CONTINUATION SHEET</div>
+                                            </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text">
+                                            <div>
+                                                <br>
+                                                <br>
+                                                <div><input type="text" name="ca_date_a1" class=" border-0 table_input"></div>
+                                                <div><input type="text" name="ca_date_a2" class=" border-0 table_input"></div>
+                                                <div><input type="text" name="ca_date_a2" class=" border-0 table_input"></div>
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="cash_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="cash_date2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="tr_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="tr_date2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="lv_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="lv_date2" class="w-100  border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="mf_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="mf_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="mf_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="rp_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="rp_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="rp_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="ps_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="ps_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ps_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="ar_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="ar_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ar_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="bi_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="bi_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="bi_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="oa_date1" class="w-100 border-0 table_input">
+                                                <input type="text" name="oa_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="oa_date3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="cs_date1" class="w-100 border-0 table_input">
+                                            </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text">
+                                            <div>
+                                            <div>$</div>
+                                            <br>
+                                            <div class="small_text">
+                                                <div><input type="text" name="ca_gross_val1" class="w-100  border-0 table_input text-end"></div>
+                                                <div><input type="text" name="ca_gross_val2" class="w-100  border-0 table_input text-end"></div>
+                                                <div><input type="text" name="ca_gross_val2" class="w-100  border-0 table_input text-end"></div>
+                                            </div>
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="cash_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="cash_gross_val2" class="w-100  border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="tr_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="tr_gross_val2" class="w-100  border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="lv_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="lv_gross_val2" class="w-100  border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="mf_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="mf_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="mf_gross_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="small_text">
+                                                <input type="text" name="rp_gross_val1" class="w-100 border-0 table_input text-end">
+                                                <input type="text" name="rp_gross_val2" class="w-100  border-0 table_input text-end">
+                                                <input type="text" name="rp_gross_val3" class="w-100 border-0 table_input text-end">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="ps_gross1" class="w-100 border-0 table_input">
+                                                <input type="text" name="ps_gross2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ps_gross3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="ar_gross1" class="w-100 border-0 table_input">
+                                                <input type="text" name="ar_gross2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ar_gross3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="bi_gross1" class="w-100 border-0 table_input">
+                                                <input type="text" name="bi_gross2" class="w-100  border-0 table_input">
+                                                <input type="text" name="bi_gross3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="oa_gross1" class="w-100 border-0 table_input">
+                                                <input type="text" name="oa_gross2" class="w-100  border-0 table_input">
+                                                <input type="text" name="oa_gross3" class="w-100 border-0 table_input">
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="text" name="cs_gross1" class="w-100 border-0 table_input">
+                                            </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="ca_debt_amt1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_debt_amt2" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_debt_amt2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="cash_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="cash_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="tr_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="tr_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="lv_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="lv_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="mf_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="mf_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="mf_debt_amt3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="rp_debt_amt1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="rp_debt_amt2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="rp_debt_amt3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ps_debt_amt1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ps_debt_amt2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ps_debt_amt3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ar_debt_amt1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ar_debt_amt2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ar_debt_amt3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="bi_debt_amt1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="bi_debt_amt2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="bi_debt_amt3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="oa_debt_amt1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="oa_debt_amt2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="oa_debt_amt3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="cs_debt_amt1" class="w-100 border-0 table_input">
+                                                </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="ca_mark_val1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_mark_val2" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_mark_val2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="cash_mark_val1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="cash_mark_val2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="tr_mark_val1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="tr_mark_val2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="lv_mark_val1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="lv_mark_val2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="mf_mark_val1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="mf_mark_val2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="mf_mark_val3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="rp_mark_val1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="rp_mark_val2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="rp_mark_val3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ps_mark_val1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ps_mark_val2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ps_mark_val3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ar_mark_val1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ar_mark_val2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ar_mark_val3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="bi_mark_val1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="bi_mark_val2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="bi_mark_val3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="oa_mark_val1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="oa_mark_val2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="oa_mark_val3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="cs_mark_val1" class="w-100 border-0 table_input">
+                                                </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="ca_pio1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_pio2" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_pio2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="cash_pio1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="cash_pio2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="tr_pio1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="tr_pio2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="lv_pio1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="lv_pio2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="mf_pio1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="mf_pio2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="mf_pio3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="rp_pio1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="rp_pio2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="rp_pio3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ps_pio1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ps_pio2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ps_pio3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ar_pio1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ar_pio2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ar_pio3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="bi_pio1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="bi_pio2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="bi_pio3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="oa_pio1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="oa_pio2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="oa_pio3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="cs_pio1" class="w-100 border-0 table_input">
+                                                </div>
+                                        </td>
+                                        <td rowspan="8" class="small_text"> 
+                                            <div>
+                                                <div>$</div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <div><input type="text" name="ca_resp1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_resp2" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="ca_resp2" class="w-100  border-0 table_input text-end"></div>
+                                                </div>
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="cash_resp1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="cash_resp2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="tr_resp1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="tr_resp2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="lv_resp1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="lv_resp2" class="w-100  border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="mf_resp1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="mf_resp2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="mf_resp3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="small_text">
+                                                    <input type="text" name="rp_resp1" class="w-100 border-0 table_input text-end">
+                                                    <input type="text" name="rp_resp2" class="w-100  border-0 table_input text-end">
+                                                    <input type="text" name="rp_resp3" class="w-100 border-0 table_input text-end">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ps_resp1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ps_resp2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ps_resp3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="ar_resp1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="ar_resp2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="ar_resp3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="bi_resp1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="bi_resp2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="bi_resp3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="oa_resp1" class="w-100 border-0 table_input">
+                                                    <input type="text" name="oa_resp2" class="w-100  border-0 table_input">
+                                                    <input type="text" name="oa_resp3" class="w-100 border-0 table_input">
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <input type="text" name="cs_resp1" class="w-100 border-0 table_input">
+                                                </div>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="small_text"><div>18. TOTAL ASSETS</div></td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_date" class="w-100 border-0 table_input">
+                                        </td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_mark_val" class="w-100 border-0 table_input">
+                                        </td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_debt_amt" class="w-100 border-0 table_input">
+                                        </td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_nf" class="w-100 border-0 table_input">
+                                        </td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_pip" class="w-100 border-0 table_input">
+                                        </td>
+                                        <td class="small_text">
+                                            <input type="text" name="ta_res" class="w-100 border-0 table_input">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
                     @include('layouts.footer7', ['page' => 2])
                 </section>
@@ -849,129 +1345,330 @@
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
                                 <tr>
-                                    <td></td>
-                                    <td>A</td>
-                                    <td>B</td>
-                                    <td> C </td>
-                                    <td colspan="2">D</td>
+                                    <td class="text-center">A</td>
+                                    <td class="text-center">B</td>
+                                    <td class="text-center">C</td>
+                                    <td colspan="2" class="text-center">D</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center small_text">ITEM NO</td>
-                                    <td class="text-center small_text">DEBTS— SHOW TO WHOM OWED</td>
+                                    <td class="text-center small_text d-flex gap-3 border-0 table_input">
+                                        <div>ITEM NO</div>
+                                        <div> DEBTS— SHOW TO WHOM OWED</div>
+                                    </td>
                                     <td class="text-center small_text">DATE INCURRED</td>
-                                    <td class="text-center small_text">AMOUNT OF DEBT</td>
-                                    {{-- <td>NET FAIR MARKET VALUE</td> --}}
-                                    <td class="text-center small_text">PROPOSAL FOR DIVISION Award or Confirm to
-                                        PETITIONER
-                                        RESPONDENT</td>
-                                </tr>
-
-                                <tr>
-                                    <td> </td>
-                                    <td> </td>
-                                    <td> $</td>
-                                    <td> $</td>
-                                    {{-- <td> $</td> --}}
-                                    <td> $</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="small_text"> 19</td>
-                                    <td class="small_text"> STUDENT LOANS
-                                        <input type="text" name="debts_show19" class="w-100  border-0">
-                                    </td>
-
-                                    <td> <input type="text" name="date_i19" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit19" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair21" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division19" class="w-100  border-0">
-                                    </td>
+                                    <td class="text-center small_text">TOTAL OWING</td>
+                                    <td class="text-center small_text" colspan="2">
+                                        <div>PROPOSAL FOR DIVISION</div>
+                                        <div> Award or Confirm to:</div>
+                                        <div class="d-flex gap-3 justify-content-center">
+                                            <span> PETITIONER</span>
+                                            <span>RESPONDENT</span>
+                                        </div>
+                                        </td>
                                 </tr>
                                 <tr>
-                                    <td class="small_text">20 </td>
-                                    <td class="small_text">
-                                        TAXES
-                                        <input type="text" name="debts_show20" class="w-100  border-0">
+                                    <td rowspan="8" class="small_text">
+                                        <div>
+                                            <div>19. STUDENT LOANS</div>
+                                            <div><input type="text" name="sl1" class="w-100  border-0 table_input"></div>
+                                            <div><input type="text" name="sl2" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl3" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl4" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl5" class="w-100  border-0 table_input"> </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                20.TAXES
+                                            </div>
+                                            <input type="text" name="tax1" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax2" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax3" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                21. SUPPORT ARREARAGES
+                                            </div>
+                                            <input type="text" name="sa1" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa2" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa3" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <div>22. LOANS—UNSECURED</div>
+                                            <input type="text" name="lous1" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous2" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous3" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <div>23. CREDIT CARDS</div>
+                                            <input type="text" name="credit_card1" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card2" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card3" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card4" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card5" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card6" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <div>24. OTHER DEBTS</div>
+                                            <input type="text" name="other_debt1" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt2" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt3" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt4" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt5" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt6" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt7" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt8" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <div>25. OTHER DEBTS FROM CONTINUATION SHEET</div>
+                                        </div>
                                     </td>
-                                    <td> <input type="text" name="date_i20" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit20" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair22" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division20" class="w-100  border-0">
+                                    <td rowspan="8" class="small_text">
+                                        <div>
+                                            <br>
+                                             <div><input type="text" name="sl_date_incured1" class="w-100  border-0 table_input"></div>
+                                             <div><input type="text" name="sl_date_incured2" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_date_incured3" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_date_incured4" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_date_incured5" class="w-100  border-0 table_input"> </div>
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="tax_date_incured1" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_date_incured2" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_date_incured3" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_date_incured4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                             <br>
+                                             <input type="text" name="sa_date_incured1" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_date_incured2" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_date_incured3" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_date_incured4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="lous_date_incured1" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_date_incured2" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_date_incured3" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_date_incured4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="credit_card_date_incured1" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_date_incured2" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_date_incured3" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_date_incured4" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_date_incured5" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_date_incured6" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="other_debt_date_incured1" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured2" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured3" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured4" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured5" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured6" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured7" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_date_incured8" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="other_detb_sheet_date_incured" class="w-100  border-0 table_input">
+                                         </div>
+                                    </td>
+                                    <td rowspan="8" class="small_text"> 
+                                        <div>
+                                            <br>
+                                             <div><input type="text" name="sl_total_owing1" class="w-100  border-0 table_input"></div>
+                                             <div><input type="text" name="sl_total_owing2" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_total_owing3" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_total_owing4" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_total_owing5" class="w-100  border-0 table_input"> </div>
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="tax_total_owing1" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_total_owing2" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_total_owing3" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_total_owing4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                             <br>
+                                             <input type="text" name="sa_total_owing1" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_total_owing2" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_total_owing3" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_total_owing4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="lous_total_owing1" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_total_owing2" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_total_owing3" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_total_owing4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="credit_card_total_owing1" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_total_owing2" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_total_owing3" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_total_owing4" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_total_owing5" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_total_owing6" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="other_debt_total_owing1" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing2" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing3" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing4" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing5" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing6" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing7" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_total_owing8" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="other_detb_sheet_total_owing" class="w-100  border-0 table_input">
+                                         </div>
+                                    </td>
+                                    <td rowspan="8" class="small_text"> 
+                                        <div>
+                                            <br>
+                                             <div><input type="text" name="sl_pio1" class="w-100  border-0 table_input"></div>
+                                             <div><input type="text" name="sl_pio2" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_pio3" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_pio4" class="w-100  border-0 table_input"> </div>
+                                             <div><input type="text" name="sl_pio5" class="w-100  border-0 table_input"> </div>
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="tax_pio1" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_pio2" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_pio3" class="w-100  border-0 table_input">
+                                             <input type="text" name="tax_pio4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                             <br>
+                                             <input type="text" name="sa_pio1" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_pio2" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_pio3" class="w-100  border-0 table_input">
+                                             <input type="text" name="sa_pio4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="lous_pio1" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_pio2" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_pio3" class="w-100  border-0 table_input">
+                                             <input type="text" name="lous_pio4" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="credit_card_pio1" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_pio2" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_pio3" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_pio4" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_pio5" class="w-100  border-0 table_input">
+                                             <input type="text" name="credit_card_pio6" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                            <br>
+                                             <input type="text" name="other_debt_pio1" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio2" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio3" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio4" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio5" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio6" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio7" class="w-100  border-0 table_input">
+                                             <input type="text" name="other_debt_pio8" class="w-100  border-0 table_input">
+                                         </div>
+                                         <div>
+                                           <br>
+                                             <input type="text" name="other_detb_sheet_pio" class="w-100  border-0 table_input">
+                                         </div>
+                                    </td>
+                                     <td rowspan="8" class="small_text">
+                                        <div>
+                                           <br>
+                                            <div><input type="text" name="sl_resp1" class="w-100  border-0 table_input"></div>
+                                            <div><input type="text" name="sl_resp2" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl_resp3" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl_resp4" class="w-100  border-0 table_input"> </div>
+                                            <div><input type="text" name="sl_resp5" class="w-100  border-0 table_input"> </div>
+                                        </div>
+                                        <div>
+                                           <br>
+                                            <input type="text" name="tax_resp1" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax_resp2" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax_resp3" class="w-100  border-0 table_input">
+                                            <input type="text" name="tax_resp4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <br>
+                                            <input type="text" name="sa_resp1" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa_resp2" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa_resp3" class="w-100  border-0 table_input">
+                                            <input type="text" name="sa_resp4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                          <br>
+                                            <input type="text" name="lous_resp1" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous_resp2" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous_resp3" class="w-100  border-0 table_input">
+                                            <input type="text" name="lous_resp4" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                           <br>
+                                            <input type="text" name="credit_card_resp1" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card_resp2" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card_resp3" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card_resp4" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card_resp5" class="w-100  border-0 table_input">
+                                            <input type="text" name="credit_card_resp6" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                           <br>
+                                            <input type="text" name="other_debt_resp1" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp2" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp3" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp4" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp5" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp6" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp7" class="w-100  border-0 table_input">
+                                            <input type="text" name="other_debt_resp8" class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                          <br>
+                                            <input type="text" name="other_detb_sheet" class="w-100  border-0 table_input">
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="small_text">21</td>
-                                    <td class="small_text">SUPPORT ARREARAGES
-                                        <input type="text" name="debts_show21" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_i21" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit21" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair23" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division21" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text"> 22</td>
-                                    <td class="small_text">
-                                        LOANS—UNSECURED
-                                        <input type="text" name="debts_show22" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_i22" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit22" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair24" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division22" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text"> 23</td>
-                                    <td class="small_text">
-                                        CREDIT CARDS
-                                        <input type="text" name="debts_show23" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_i23" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit23" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair25" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division23" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text"> 24</td>
-                                    <td class="small_text">
-                                        OTHER DEBTS
-                                        <input type="text" name="debts_show24" class="w-100  border-0">
-                                    </td>
-                                    <td> <input type="text" name="date_i24" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit24" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair25" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division24" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text"> 25</td>
-                                    <td class="small_text">
-                                        OTHER DEBTS FROM CONTINUATION SHEET
-                                    <td> <input type="text" name="date_i24" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit24" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair25" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division24" class="w-100  border-0">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="small_text"> 25</td>
-                                    <td class="small_text">
-                                        TOTAL DEBTS
-                                    <td> <input type="text" name="date_i25" class="w-100  border-0"></td>
-                                    <td> <input type="text" name="amount_debit25" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair25" class="w-100  border-0"></td> --}}
-                                    <td> <input type="text" name="proposal_division25" class="w-100  border-0">
-                                    </td>
-                                </tr>
-
-
-
-
                             </thead>
+                            <tr>
+                                <td class="small_text"><div>18. TOTAL DEBTS</div></td>
+                                <td class="small_text">
+                                    <input type="text" name="tb_di" class="w-100 border-0 table_input">
+                                </td>
+                                <td class="small_text">
+                                    <input type="text" name="tb_to" class="w-100 border-0 table_input">
+                                </td>
+                                <td class="small_text">
+                                    <input type="text" name="tb_pio" class="w-100 border-0 table_input">
+                                </td>
+                                <td class="small_text">
+                                    <input type="text" name="tb_resp" class="w-100 border-0 table_input">
+                                </td>
+                            </tr>
+                        </tbody>
                         </table>
+                        <div class="px-3">
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
                     </div>
                     @include('layouts.footer7', ['page' => 3])
                 </section>
