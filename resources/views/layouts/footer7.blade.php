@@ -3,17 +3,17 @@
 
                     <div class="row pb-5">
                         <div class="col-md-4 lh-1 py-2">
-                            <h4 class="fs-6">Form Adopted for Mandatory Use</h4>
+                            <h4 class="fs-6 m-0">Form Adopted for Mandatory Use</h4>
                             <div class="fs-6">Judicial Council of California</div>
                             <div class="fs-6">FL-161 [Rev. July 1, 2013]</div>
                         </div>
                         <div class="col-md-4 text-center">
-                            <h4 class="mb-0 fw-bold">DECLARATION OF DISCLOSURE</h4>
+                            <h4 class="mb-0 fw-bold">PROPERTY DECLARATION</h4>
                             <h4 class="mb-0 ">(Family Law)</h4>
                         </div>
-                        <div class="col-md-4 text-end">
-                            <h4 class="mb-0 fs-6">Family Code, §§ 2102, 2104,</h4>
-                            <h4 class="mb-0 fs-6">2105, 2106, 2112</h4>
+                        <div class="col-md-4 text-end lh-1">
+                            <h4 class="mb-0 fs-6 ">Family Code, §§ 2102, 2104,2105, 2106, 2112</h4>
+                            {{-- <h4 class="mb-0 fs-6">2105, 2106, 2112</h4> --}}
                             <a href="https://www.courts.ca.gov/" target="_blank" class="text-decoration-none text-dark fs-6">
                                 www.courts.ca.gov</a>
                         </div>
