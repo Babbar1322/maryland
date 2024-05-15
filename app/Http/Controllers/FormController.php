@@ -8,6 +8,8 @@ use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
 use App\Models\fl140_ca_form;
 use App\Models\fl140_ca_form_data;
+use App\Models\fl160_ca_form;
+use App\Models\fl160_ca_form_data;
 use App\Models\fl161_ca_form;
 use App\Models\fl161_ca_form_data;
 use App\Models\form2;
@@ -238,8 +240,28 @@ class FormController extends Controller
     }
 
 
-    public function from11() {
+    public function form11() {
         return view('form11');
+    }
+
+
+    public function form11_post(Request $request) {
+        $fl160_ca = new fl160_ca_form();
+        $fl160_ca->save();
+
+        foreach($request->all() as $key=>$req){
+            $fl160_ca_data = new fl160_ca_form_data();
+            $fl160_ca_data->fl160_form_id = $fl160_ca->id;
+            $fl160_ca_data->keyss = $key;
+            $fl160_ca_data->valuess= $req;
+            $fl160_ca_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form12() {
+        return view('form12');
     }
 }
 
