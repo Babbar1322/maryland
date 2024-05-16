@@ -252,6 +252,16 @@
                   </div>
                 </a>
             </div>
+            <div class="col-lg-4 mt-4 ">
+                <a href="{{route('pdf_form12')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 11</h5>
+                      <span>FAM108_Current.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

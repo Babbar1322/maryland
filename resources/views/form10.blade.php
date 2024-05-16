@@ -812,9 +812,8 @@
                         </div>
                     </div>
                     <div class="row pb-4">
-                        <div class="col-lg-4  mt-3 mt-lg-0 small_text text-danger fw-bold "
-                            style="background-color:#99CCFF">For your protection and privacy, please press the Clear
-                            This Form button after you have printed the form.</div>
+                        <div class="col-lg-4  mt-3 mt-lg-0 small_text text-danger fw-bold "> <div style="background-color:#99CCFF"> For your protection and privacy, please press the Clear
+                            This Form button after you have printed the form. </div></div>
                         <div class="col-lg-4  mt-3 mt-lg-0 text-center mx-auto">
                             <button class="  btn-success" onclick="window.print()"
                                 style="background-color: #91FF90">Print this form</button>

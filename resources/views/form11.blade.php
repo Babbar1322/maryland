@@ -85,6 +85,10 @@
             outline: none !important;
             /* border-bottom: 2px solid black !important; */
         }
+        .footer_field:focus-visible {
+            outline: none !important;
+            border-bottom: 2px solid black !important;
+        }
 
         .children_table {
             min-width: 30rem !important;
@@ -249,7 +253,7 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="{{ route('form9.submit') }}" method="post">
+            <form action="{{ route('form11.submit') }}" method="post">
                 @csrf
                 <section class="section_area">
                     @if (session('success'))
@@ -276,14 +280,14 @@
                             <div class="p-2 border-bottom border-dark">
                                 <div class="">
                                     <div class="d-flex">
-                                        <div class="small_text">Name:</div>
+                                        <div class="small_text">NAME:</div>
                                         <div> <input type="text" name="name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex">
-                                        <div class="small_text">First Name:</div>
+                                        <div class="small_text">FIRM NAME:</div>
                                         <div> <input type="text" name="f_name" class="border-0 table_input "></div>
                                     </div>
                                 </div>
@@ -580,7 +584,7 @@
                                                 <input type="text" name="ca_gross_val3" class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
@@ -624,7 +628,7 @@
                                                 <input type="text" name="ca_debt_amt3" class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
-                                        <td rowspan="8" class="small_text">  
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
@@ -668,7 +672,7 @@
                                                 <input type="text" name="ca_mark_val3" class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
@@ -712,7 +716,7 @@
                                                 <input type="text" name="ca_pio3" class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
@@ -1013,7 +1017,7 @@
                                                 <input type="text" name="cs_gross1" class="w-100 border-0 table_input">
                                             </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <br>
@@ -1087,7 +1091,7 @@
                                                     <input type="text" name="cs_debt_amt1" class="w-100 border-0 table_input">
                                                 </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <br>
@@ -1161,7 +1165,7 @@
                                                     <input type="text" name="cs_mark_val1" class="w-100 border-0 table_input">
                                                 </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <br>
@@ -1235,7 +1239,7 @@
                                                     <input type="text" name="cs_pio1" class="w-100 border-0 table_input">
                                                 </div>
                                         </td>
-                                        <td rowspan="8" class="small_text"> 
+                                        <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>$</div>
                                                 <br>
@@ -1480,7 +1484,7 @@
                                              <input type="text" name="other_detb_sheet_date_incured" class="w-100  border-0 table_input">
                                          </div>
                                     </td>
-                                    <td rowspan="8" class="small_text"> 
+                                    <td rowspan="8" class="small_text">
                                         <div>
                                             <br>
                                              <div><input type="text" name="sl_total_owing1" class="w-100  border-0 table_input"></div>
@@ -1535,7 +1539,7 @@
                                              <input type="text" name="other_detb_sheet_total_owing" class="w-100  border-0 table_input">
                                          </div>
                                     </td>
-                                    <td rowspan="8" class="small_text"> 
+                                    <td rowspan="8" class="small_text">
                                         <div>
                                             <br>
                                              <div><input type="text" name="sl_pio1" class="w-100  border-0 table_input"></div>
@@ -1648,7 +1652,7 @@
                                 </tr>
                             </thead>
                             <tr>
-                                <td class="small_text"><div>18. TOTAL DEBTS</div></td>
+                                <td class="small_text"><div>26. TOTAL DEBTS</div></td>
                                 <td class="small_text">
                                     <input type="text" name="tb_di" class="w-100 border-0 table_input">
                                 </td>
@@ -1665,13 +1669,40 @@
                         </tbody>
                         </table>
                         <div class="px-3">
-                            <div>
-                                <input type="checkbox">
+                            <div class="d-flex">
+                                <input type="checkbox" class="me-2" name="continuation_declaration" value="Yes"> A Continuation of Property Declaration (<div class="lh-1">(<a href="https://www.courts.ca.gov/documents/fl161.pdf" target="_blank">form
+                                    FL-161</a> )</div>) is attached and incorported by reference
                             </div>
+                            <div class="small_text">I declare under penalty of perjury under the laws of the State of California that, to the best of my knowledge, the foregoing is a true and correct listing of assets and obligations and the amounts shown are correct</div>
+                            <div class="d-flex">
+                                <div class="small_text me-2">Date</div>
+                                <div> <input type="text" name="date" class="border-0 "></div>
+                            </div>
+<div class="row  ">
+    <div class="col-lg-6">
+              <div> <input type="text" name="topn" class="border-0 border-bottom form-control footer_field "></div>
+              <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+            </div>
+            <div class="col-lg-6">
+                <div> <input type="text" name="signature" class="border-0 border-bottom form-control footer_field "></div>
+                <div class="small_text text-center">SIGNATURE</div>
+     </div>
+</div>
+
                         </div>
                     </div>
                     @include('layouts.footer7', ['page' => 3])
                 </section>
+
+                {{-- <section class="section_area  px-lg-5 px-2 pt-5 ">
+                    <h5 class="text-center fw-bold">INFORMATION AND INSTRUCTIONS FOR COMPLETING FORM FL-160</h5>
+                    <div class="">
+                        Property Declaration (form FL-160) is a multipurpose form, which may be filed with the court as as attachment to a Petition or Response or served on the other party to comply with disclosure requirements in place of a Schedule of Assets and Debts (form FL-142). Courts may also require a party to a file a Property Declarationas an attachment to a Request to Enter Default (form FL-165) or Judgment (form FL-180).
+                    </div>
+                    <div class="fw-bold text-center">when filliing a Property Declatation with the court, do not include private financial documents listed below.</div>
+                    <div class="fw-bold">Identify the type of declatation completed</div>
+                    <ul></ul>
+                </section> --}}
             </form>
         </div>
     </div>

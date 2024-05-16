@@ -19,22 +19,20 @@
                         </div>
                     </div>
 
+@if($page == 3)
+<div class="row pb-4">
+    <div class="col-lg-4  mt-3 mt-lg-0 small_text text-dark fw-bold " >
+        <div class="" style="background-color:#C0C0C0">For your protection and privacy, please press the Clear This Form button after you have printed the form.</div>
+        </div>
+    <div class="col-lg-4  mt-3 mt-lg-0 text-center mx-auto">
+        <button class="  btn-success" onclick="window.print()"
+            style="background-color: #91FF90">Print this form</button>
+        <button type="submit" class="  btn-warning" style="background-color: #FEFE98">Save this
+            form</button>
+    </div>
+    <div class="col-lg-4 my-3 my-lg-0 text-center mx-auto">
+        <button type="reset" style="background-color: #F59292 ">Clear this form</button>
+    </div>
+</div>
 
-
-                    {{-- <div class="row py-5">
-
-                        <h6 class="{{$page == 6 ? ' col':' col-lg-3 col-6'}}"><span class="fw-bold h5">JD-FM-6-LONG Rev. 2-16</h6>
-                           <div class="{{$page == 6 ? ' col':' col-lg-3 col-6'}}">
-                              <button  onclick="window.print()" class="bg-body-secondary">Print Form</button>
-                          </div>
-                         <div class="{{$page == 6 ? ' text-center col':' col-lg-3 col-6'}}"> Page {{$page}} of 6</div>
-
-                       @if($page == 6 )
-                       <div class="col">
-                           <button type="submit" class=" bg-body-secondary">Submit</button>
-                       </div>
-                      @endif
-                       <div class="{{$page == 6 ? ' col':' col-lg-3 col-6'}}  ">
-                           <button type="reset" class=" px-4 bg-body-secondary">Reset Form</button>
-                       </div>
-                   </div> --}}
+                   @endif
