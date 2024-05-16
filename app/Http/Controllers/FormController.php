@@ -6,8 +6,12 @@ use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
+use App\Models\fam108_current_form;
+use App\Models\fam108_current_form_data;
 use App\Models\fl140_ca_form;
 use App\Models\fl140_ca_form_data;
+use App\Models\fl142_ca_form;
+use App\Models\fl142_ca_form_data;
 use App\Models\fl160_ca_form;
 use App\Models\fl160_ca_form_data;
 use App\Models\fl161_ca_form;
@@ -263,5 +267,50 @@ class FormController extends Controller
     public function form12() {
         return view('form12');
     }
+
+
+    public function form12_post(Request $request) {
+        $fam108_current = new fam108_current_form();
+        $fam108_current->save();
+
+        foreach($request->all() as $key=>$req){
+            $fam108_current_data = new fam108_current_form_data();
+            $fam108_current_data->fam108_current_form_id = $fam108_current->id;
+            $fam108_current_data->keyss = $key;
+            $fam108_current_data->valuess= $req;
+            $fam108_current_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form13(){
+        return view('form13');
+    }
+
+
+    public function form13_post(Request $request) {
+        $fl140_ca = new fl142_ca_form();
+        $fl140_ca->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fl140_data = new fl142_ca_form_data();
+            $fl140_data->fl142_form_id = $fl140_ca->id;
+            $fl140_data->keyss = $key;
+            $fl140_data->valuess= $req;
+            $fl140_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form14(){
+        return view('form14');
+    }
+
+
 }
 

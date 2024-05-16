@@ -34,6 +34,9 @@
         input[type='radio'] {
             accent-color: black !important;
         }
+        input[type='checkbox'] {
+            accent-color: black !important;
+        }
 
         body {
             font-family: "unset";
@@ -252,10 +255,10 @@
 </head>
 
 <body>
-    <div class="container-fluid   py-1 py-lg-3">
+    <div class="container-fluid   py-1 py-lg-3 ">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="{{ route('form11.submit') }}" method="post">
+            <form action="{{ route('form12.submit') }}" method="post" class=" ">
                 @csrf
 
                 <section class="section_area p-5">
@@ -272,25 +275,19 @@
 
                     </div>
                     {{-- <div> --}}
-
                     <div class="row border">
                         <div class="col-lg-6">County of:
-                            <input type="text" name="extord_trav_exp_val"
-                                    class="border-0 border-bottom  footer_field ms-4 w-50"> </div>
+                            <input type="text" name="county_of"
+                                    class="border-0     ms-4 w-50"> </div>
                         <div class="col-lg-6 border">
-                            <div>Judicial District: <input type="text" name="extord_trav_exp_val"
-                                    class="border-0 border-bottom footer_field ms-4 w-50"></div>
-                            <div>Court File Number: <input type="text" name="extord_trav_exp_val"
-                                    class="border-0 border-bottom footer_field w-50"> </div>
-                            <div class="d-flex"><div class="me-5">Case Type:</div> <input type="text" name=" ms-5 extord_trav_exp_val"
-                                    class="border-0  footer_field w-50"> </div>
+                            <div>Judicial District: <input type="text" name="judicial_district" class="border-0 border-bottom footer_field ms-4 w-50"></div>
+                            <div>Court File Number: <input type="text" name="court_file_number" class="border-0 border-bottom footer_field w-50"> </div>
+                            <div class="d-flex"><div class="me-5">Case Type:</div> <input type="text" name="case_type"  class="border-0    w-50 ms-3 "> </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-lg-6">
-                            <div><input type="checkbox" name="oth_alimin_pay" value="oth_alimin_pay"> In Re the
-                                Marriage of:</div>
+                            <div><input type="checkbox" name="re_marriage" value="oth_alimin_pay"> In Re the  Marriage of:</div>
                         </div>
                         <div class="col-lg-6 ">
                             <div class="d-flex">
@@ -308,12 +305,12 @@
 
                         </div>
                     </div>
-                    <div><input type="checkbox" name="oth_alimin_pay" value="oth_alimin_pay"> In Re the Custody of:
+                    <div><input type="checkbox" name="re_custody" value="oth_alimin_pay"> In Re the Custody of:
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" name="mer1" class="border-0 border-bottom w-100 footer_field">
+                            <input type="text" name="peritioner_name" class="border-0 border-bottom w-100 footer_field">
                             <label for="">Name of Petitioner (first, middle, last)</label>
                             <div>and</div>
                         </div>
@@ -322,7 +319,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" name="mer1" class="border-0 border-bottom w-100 footer_field">
+                            <input type="text" name="respondent_name" class="border-0 border-bottom w-100 footer_field">
                             <label for="">Name of Respondent (first, middle, last)</label>
                         </div>
 
@@ -359,20 +356,13 @@
 
                         <div class="col-lg-4 ">
                             <div class="text-center fw-bold">Respondent</div>
-                            <div class=""> <input type="text" name="full_name2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="age2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="year_of_marriage2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="separation_date2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="pm_address2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="pm_address4"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
-                            <div class=""> <input type="text" name="pm_address6"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="full_name2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="age2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="year_of_marriage2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="separation_date2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="pm_address2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="pm_address4" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="pm_address6" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                     </div>
 
@@ -382,18 +372,21 @@
                         </div>
                         <div class="px-lg-5">
                             <div class="d-flex  pe-4">
-                                <input type="checkbox" name="petitioner" value="Petitioner" class="me-1">
+                                <input type="checkbox" name="harassment_restraining_order" value="Petitioner" class="me-1">
                                 <div> Harassment Restraining Order (HRO)</div>
                             </div>
                             <div class="d-flex  pe-4">
-                                <input type="checkbox" name="petitioner" value="Petitioner" class="me-1">
+                                <input type="checkbox" name="domestic_abuse_order_protection" value="Petitioner" class="me-1">
                                 <div> Domestic Abuse Order for Protection (OFP)</div>
                             </div>
                             <div class="d-flex  pe-4">
-                                <input type="checkbox" name="petitioner" value="Petitioner" class="me-1">
+                                <input type="checkbox" name="no_contact_order" value="Petitioner" class="me-1">
+                                <div>No Contact Order</div>
+                            </div>
+                            <div class="d-flex  pe-4">
+                                <input type="checkbox" name="other_count_order_prohibiting" value="Yes" class="me-1">
                                 <div><span>Other court order prohibiting contact with the other party: </span><input
-                                        type="text" name="pm_address6"
-                                        class="border-0 border-bottom w-25 footer_field"> </div>
+                                        type="text" name="other_count_order_prohibiting_val"  class="border-0 border-bottom w-25 footer_field"> </div>
                             </div>
 
                         </div>
@@ -401,21 +394,19 @@
 
                             <span class="d-flex ps-3">
                                 <div class="d-flex  pe-4">
-                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <input type="radio" name="afraid_other_party" value="Yes" class="me-1">
                                     <div>Yes</div>
 
                                 </div>
                                 <div class="d-flex  ">
-                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <input type="radio" name="afraid_other_party" value="No" class="me-1">
                                     <div>No</div>
 
                                 </div>
                             </span>
                         </div>
                         <div class="ps-lg-5">
-
-                            <div class=""> <input type="text" name="pm_address6"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="afraid_other_party_val1" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         @include('layouts.footer8', ['page' => 1])
 
@@ -425,17 +416,17 @@
                     <div class="pt-5">
                         <div class="ps-lg-5  ">
 
-                            <div class=""> <input type="text" name="pm_address6"
+                            <div class=""> <input type="text" name="afraid_other_party_val2"
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="ps-lg-5  ">
 
-                            <div class=""> <input type="text" name="pm_address6"
+                            <div class=""> <input type="text" name="afraid_other_party_val3"
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="ps-lg-5 pb-3  ">
 
-                            <div class=""> <input type="text" name="pm_address6"
+                            <div class=""> <input type="text" name="afraid_other_party_val4"
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
 
@@ -447,75 +438,62 @@
                             <div class="row  ">
                                 <div class="col-lg-6">
                                     <div class="text-center">Full Name of Child</div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="full_name1"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="full_name2"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="full_name3"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="full_name4"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="full_name5"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="text-center">Birth Date</div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="birth_date1"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="birth_date2"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="birth_date3"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="birth_date4"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
+                                    <div class=""> <input type="text" name="birth_date5"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
 
                                 </div>
                                 <div class="col-lg-1">
                                     <div class="text-center">Age</div>
-                                    <div class=""> <input type="text" name="pm_address6"
-                                            class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
-                                            class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
-                                            class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
-                                            class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="pm_address6"
-                                            class="border-0 border-bottom w-100 footer_field"> </div>
-
+                                    <div class=""> <input type="text" name="age1" class="border-0 border-bottom w-100 footer_field"> </div>
+                                    <div class=""> <input type="text" name="age2" class="border-0 border-bottom w-100 footer_field"> </div>
+                                    <div class=""> <input type="text" name="age3" class="border-0 border-bottom w-100 footer_field"> </div>
+                                    <div class=""> <input type="text" name="age4" class="border-0 border-bottom w-100 footer_field"> </div>
+                                    <div class=""> <input type="text" name="age5" class="border-0 border-bottom w-100 footer_field"> </div>
                                 </div>
                             </div>
-                            <div class="d-flex">a. Do any of the minor joint children have special needs?
-
+                            <div class="d-flex pt-3">a. Do any of the minor joint children have special needs?
                                 <span class="d-flex ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                        <input type="radio" name="minor_joint_children" value="Yes" class="me-1">
                                         <div>Yes</div>
-
                                     </div>
-                                    <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <div class="d-flex">
+                                        <input type="radio" name="minor_joint_children" value="No" class="me-1">
                                         <div>No</div>
-
                                     </div>
                                 </span>
                             </div>
-
                             <div class="d-flex">b. Is there an agreement regarding parenting time?
-
                                 <span class="d-flex ps-3">
-                                    <div class="d-flex  pe-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <div class="d-flex pe-4">
+                                        <input type="radio" name="agreement_regarding_parenting" value="Yes" class="me-1">
                                         <div>Yes</div>
-
                                     </div>
-                                    <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <div class="d-flex">
+                                        <input type="radio" name="agreement_regarding_parenting" value="No" class="me-1">
                                         <div>No</div>
-
                                     </div>
                                 </span>
                             </div>
@@ -523,12 +501,12 @@
 
                                 <span class="d-flex ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                        <input type="radio" name="other_party_created" value="Yes" class="me-1">
                                         <div>Yes</div>
 
                                     </div>
                                     <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                        <input type="radio" name="other_party_created" value="No" class="me-1">
                                         <div>No</div>
 
                                     </div>
@@ -541,12 +519,12 @@
 
                                 <span class="d-flex ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                        <input type="radio" name="agreement_regarding_legal" value="Yes" class="me-1">
                                         <div>Yes</div>
 
                                     </div>
                                     <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                        <input type="radio" name="agreement_regarding_legal" value="No" class="me-1">
                                         <div>No</div>
 
                                     </div>
@@ -558,13 +536,13 @@
 
 
                                 <span class="d-flex ps-3">
-                                    <div class="d-flex  pe-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <div class="d-flex pe-4">
+                                        <input type="radio" name="agreement_regarding_physical" value="Yes" class="me-1">
                                         <div>Yes</div>
 
                                     </div>
-                                    <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <div class="d-flex">
+                                        <input type="radio" name="agreement_regarding_physical" value="No" class="me-1">
                                         <div>No</div>
 
                                     </div>
@@ -575,7 +553,7 @@
 
                             <div class=" ">f. If you have other non-joint children, list first and last initials
                                 of each non-joint child's name, age and date of birth:
-                                <div class=""> <input type="text" name="pm_address6"
+                                <div class=""> <input type="text" name="other_non_joint_children"
                                         class="border-0 border-bottom w-100 footer_field"> </div>
 
                             </div>
@@ -585,25 +563,25 @@
 
                                 <span class="d-flex ps-3">
                                     <div class="d-flex  ">
-                                        <input type="radio" name="pub_trans" value="No" class="me-1">
+                                        <input type="radio" name="wift_pregnant" value="No" class="me-1">
                                         <div>No</div>
 
                                     </div>
                                     <div class="d-flex  px-4">
-                                        <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                        <input type="radio" name="wift_pregnant" value="Yes" class="me-1">
                                         <div>Yes</div>
 
                                     </div>
                                 </span>
                                 <span> the due date is:</span>
-                                <span><input type="text" name="pm_address6"
+                                <span><input type="text" name="pregnant_due_date"
                                         class="border-0 border-bottom w-100 footer_field"></span>
                             </div>
 
                             <div class=" ">h. Please indicate the name of the agency used for complying with the
                                 education requirement
                                 and the date scheduled or attended:
-                                <div class=""> <input type="text" name="pm_address6"
+                                <div class=""> <input type="text" name="agency_name"
                                         class="border-0 border-bottom w-100 footer_field"> </div>
 
                             </div>
@@ -615,12 +593,12 @@
 
                             <span class="d-flex ps-3 pb-5">
                                 <div class="d-flex  ">
-                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <input type="radio" name="employed" value="No" class="me-1">
                                     <div>No</div>
 
                                 </div>
                                 <div class="d-flex  px-4">
-                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <input type="radio" name="employed" value="Yes" class="me-1">
                                     <div>Yes</div>
 
                                 </div>
@@ -633,11 +611,11 @@
                 <section class="section_area  px-lg-5 px-2 ">
                     <div class="table-responsive pt-5">
                         <div class="d-flex ps-lg-5">If yes, where?
-                            <div class=""> <input type="text" name="pm_address6"
+                            <div class=""> <input type="text" name="employed_where"
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="d-flex ps-lg-5">Length of employment?
-                            <div class=""> <input type="text" name="pm_address6"
+                            <div class=""> <input type="text" name="employed_length"
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <table class="table-bordered mt-1 border-black table  my-lg-1">
@@ -652,69 +630,69 @@
                                     <td class="small_text">Salary and Wages (before deductions) </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer1" class="border-0 w-100">
+                                        <input type="text" name="salary_and_wages" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Social Security Received (social security disability,
                                         retirement, survivors' benefit) </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer2" class="border-0 w-100">
+                                        <input type="text" name="social_security_received" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Self-Employment</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer3" class="border-0 w-100">
+                                        <input type="text" name="self_employment" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Child's Derivative Social Security or Veteran's Benefits
                                     </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer4" class="border-0 w-100">
+                                        <input type="text" name="child_derivative_social" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Unemployment Benefits</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer5" class="border-0 w-100">
+                                        <input type="text" name="unemployment_benefits" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Workers' Compensation</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer6" class="border-0 w-100">
+                                        <input type="text" name="workers_compensation" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Commissions - Average</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer7" class="border-0 w-100">
+                                        <input type="text" name="commissions_average" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Pension or Annuity Payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer8" class="border-0 w-100">
+                                        <input type="text" name="pension_annuity_payments" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Spousal Maintenance Received</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer9" class="border-0 w-100">
+                                        <input type="text" name="spousal_maintenance_received" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Military and Naval Retirement </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer10" class="border-0 w-100">
+                                        <input type="text" name="military_and_naval_Retirement" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Bonus income - Average</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer11" class="border-0 w-100">
+                                        <input type="text" name="bonus_income_average" class="border-0 w-100">
                                     </td>
                                     <td colspan="2" class="small_text">Other source of income (list source below)
                                     </td>
@@ -723,20 +701,20 @@
                                     <td class="small_text">Supplemental Security (SSI) </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="mer12" class="border-0 w-100">
+                                        <input type="text" name="supplemental_security" class="border-0 w-100">
                                     </td>
-                                    <td class="small_text"><input type="text" name="mer13"
+                                    <td class="small_text"><input type="text" name="other_source1"
                                             class="border-0 w-100"> </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer14" class="border-0 w-100">
+                                        <input type="text" name="other_source2" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="fw-bold">Total monthly income received:</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer14" class="border-0 w-100">
+                                        <input type="text" name="total_monthly_income" class="border-0 w-100">
                                     </td>
                                 </tr>
                             </tbody>
@@ -746,16 +724,79 @@
                         <div>b. Do you or the other party receive any child support for non-joint children?</div>
                         <div class="d-flex">
                             <div class="d-flex  pe-4">
-                                <input type="radio" name="pub_trans" value="Yes">
+                                <input type="radio" name="non_joint_children" value="Yes" class="me-1">
                                 <div>Yes</div>
 
                             </div>
                             <div class="d-flex">
-                                <input type="radio" name="pub_trans" value="No">
+                                <input type="radio" name="non_joint_children" value="No" class="me-1">
                                 <div>No</div>
                             </div>
                         </div>
                         <div>c. Are you or the joint children currently receiving any form of public assistance?</div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="d-flex">
+                                    <div class="d-flex  pe-4">
+                                        <input type="radio" name="joint_children_currently" value="Yes" class="me-1">
+                                        <div>Yes (check all that apply)</div>
+
+                                    </div>
+                                    <div class="d-flex">
+                                        <input type="radio" name="joint_children_currently" value="No" class="me-1">
+                                        <div>No</div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="cash_public_assistance" value="Yes" class="me-1">
+                                    <div>Cash public assistance (MFIP)</div>
+                                </div>
+
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="medical_assistance" value="Yes" class="me-1">
+                                    <div>Medical Assistance</div>
+                                </div>
+
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="diversionary_work_program" value="Yes" class="me-1">
+                                    <div>Diversionary Work Program (DWP)</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 pt-lg-4">
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="food_stamps" value="Yes" class="me-1">
+                                    <div>Food Stamps</div>
+                                </div>
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="minnesota_care" value="Yes" class="me-1">
+                                    <div>MinnesotaCare</div>
+                                </div>
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="tefra" value="Yes" class="me-1">
+                                    <div>TEFRA</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 pt-lg-4">
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="general_assistance" value="Yes" class="me-1">
+                                    <div>General Assistance</div>
+                                </div>
+                                <div class="d-flex  pe-4">
+                                    <input type="radio" name="child_care_subsidy" value="Yes" class="me-1">
+                                    <div>Child Care Subsidy</div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex  pe-4">
+
+                                <input type="radio" name="others" value="Yes" class="me-1">
+                                <div>Other:</div>
+                                <input type="text" name="others_val" class="border-0 border-bottom w-75 footer_field">
+
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-lg-9">
                                 <div>d. If you checked any boxes above in 4c above, did you serve the County Attorney's
@@ -765,17 +806,19 @@
                             <div class="col-lg-3">
                                 <div class="d-flex">
                                     <div class="d-flex pe-4">
-                                        <input type="radio" name="pub_trans" value="trash">
+                                        <input type="radio" name="4c_above" value="Yes">
                                         <div>Yes</div>
                                     </div>
                                     <div class="d-flex">
-                                        <input type="radio" name="pub_trans" value="trash">
+                                        <input type="radio" name="4c_above" value="No">
                                         <div>No</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="border-bottom border-dark pb-2 "></div>
+                        {{-- <div class="border-bottom border-dark pb-2 "></div> --}}
+                        <input type="text" name="source_of_income" class="border-0 border-bottom  w-100 footer_field">
+
                         <div class="pt-5"></div>
                     </div>
                     @include('layouts.footer8', ['page' => 3])
@@ -795,103 +838,103 @@
                                     <td class="small_text">Rent / Mortgage Payment </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et1" class="border-0 w-100">
+                                        <input type="text" name="rent_mortgage_payment" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Transportation (car payment, gasoline, bus, taxi)</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et2" class="border-0 w-100">
+                                        <input type="text" name="transportation" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Contract for Deed / 2nd Mortgage</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et3" class="border-0 w-100">
+                                        <input type="text" name="contract_for_deed" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Medical and Dental Expenses (not covered by insurance)</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et4" class="border-0 w-100">
+                                        <input type="text" name="medical_and_dental_expenses" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Homeowner's / Rental Insurance</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et5" class="border-0 w-100">
+                                        <input type="text" name="homeowner_rental_insurance" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Cable TV / Internet</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et6" class="border-0 w-100">
+                                        <input type="text" name="cable_tv_internet" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Property Taxes (if not included in mortgage payment)</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et7" class="border-0 w-100">
+                                        <input type="text" name="property_taxes" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Car Insurance</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et8" class="border-0 w-100">
+                                        <input type="text" name="car_insurance" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Heating & Electric</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et9" class="border-0 w-100">
+                                        <input type="text" name="heating_electric" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Clothing</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et10" class="border-0 w-100">
+                                        <input type="text" name="clothing" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Food</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et11" class="border-0 w-100">
+                                        <input type="text" name="food" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Spousal Maintenance payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et12" class="border-0 w-100">
+                                        <input type="text" name="other_spousal_maintenance_payments" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Telephone / Cell Phone</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et13" class="border-0 w-100">
+                                        <input type="text" name="telephone_cell_phone" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Child support payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et14" class="border-0 w-100">
+                                        <input type="text" name="other_child_support_payments" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Child Care Payments</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="et15" class="border-0 w-100">
+                                        <input type="text" name="child_care_payments" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Miscellaneous payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="et16" class="border-0 w-100">
+                                        <input type="text" name="other_miscellaneous_payments" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="fw-bold">Total monthly expenses:</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="mer17" class="border-0 w-100">
+                                        <input type="text" name="total_monthly_expenses" class="border-0 w-100">
                                     </td>
                                 </tr>
                             </tbody>
@@ -950,8 +993,7 @@
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="other_paycheck3"
-                                        class="border-0 border-bottom footer_field">
+                                    <input type="text" name="other_paycheck3"  class="border-0 border-bottom footer_field">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
@@ -965,7 +1007,7 @@
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="subtotal_deductions"
+                                    <input type="text" name="net_take_home_pay"
                                         class="border-0 border-bottom footer_field">
                                 </div>
                             </div>
@@ -974,14 +1016,14 @@
                     </div>
                 </section>
 
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2 pt-5">
 
-                    <div class="row">
+                    <div class="row pt-lg-5">
                         <div class="col-lg-4 mx-auto">f. Tax withholding figures above are based on Married/Single
                             taxpayer status with what number of deductions?
                             (Example: M-4 or S-2)</div>
                         <div class="col-lg-4 mx-auto">
-                            <input type="text" name="subtotal_deductions"
+                            <input type="text" name="tax_withholding_figures"
                                 class="border-0 w-100 border-bottom footer_field">
 
                         </div>
@@ -989,12 +1031,12 @@
                     <div class="d-flex ps-lg-5">g. Do you have medical and dental insurance coverage in place?
                         <span class="d-flex ps-3">
                             <div class="d-flex  pe-4">
-                                <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                <input type="radio" name="medical_and_dental" value="Yes" class="me-1">
                                 <div>Yes</div>
 
                             </div>
                             <div class="d-flex  ">
-                                <input type="radio" name="pub_trans" value="No" class="me-1">
+                                <input type="radio" name="medical_and_dental" value="No" class="me-1">
                                 <div>No</div>
 
                             </div>
@@ -1017,25 +1059,24 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="text-center fw-bold">Homestead</div>
-                                <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                <div><input type="text" name="date_acquired1"  class="border-0 w-100 border-bottom footer_field"></div>
                                 {{-- <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div> --}}
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="purchase_price1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_new_value1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="rental_income1"  class="border-0 w-100 border-bottom footer_field">   </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="text-center fw-bold">Other Property</div>
-                                <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                <div class="d-flex pt-1">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-
+                                <div><input type="text" name="date_acquired2"  class="border-0 w-100 border-bottom footer_field"></div>
+                                <div class="d-flex pt-1">$<input type="text" name="purchase_price2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                <div class="d-flex pt-1">$<input type="text" name="rental_income2"  class="border-0 w-100 border-bottom footer_field">   </div>
                             </div>
                         </div>
                     </div>
@@ -1045,20 +1086,20 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-5">
                                 <div class="col-lg-6">
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts5"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts7"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts9"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="chacking_saving_accounts11"  class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts8"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts10"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts12"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1067,16 +1108,16 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-5">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="inverstment_accounts1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="inverstment_accounts3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="inverstment_accounts5"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="inverstment_accounts7"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="inverstment_accounts2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="inverstment_accounts4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="inverstment_accounts6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="inverstment_accounts8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1095,16 +1136,16 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="iras_profit_sharing1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="iras_profit_sharing3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="iras_profit_sharing5"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="iras_profit_sharing7"  class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1113,12 +1154,12 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="annuities1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="annuities3"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="annuities2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="annuities4"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1127,16 +1168,16 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="household_goods1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="household_goods3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="household_goods5"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="household_goods7"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="household_goods2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="household_goods4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="household_goods6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="household_goods8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1145,18 +1186,18 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="vehicles_boats_campers1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="vehicles_boats_campers3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="vehicles_boats_campers5"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="vehicles_boats_campers7"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="vehicles_boats_campers9"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers8"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers10"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1165,14 +1206,14 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="farm_machinery_equipment1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="farm_machinery_equipment3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="farm_machinery_equipment5"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment6"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1181,14 +1222,14 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="business_partnership_interests1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="business_partnership_interests3"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="business_partnership_interests5"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="business_partnership_interests2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="business_partnership_interests4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="business_partnership_interests6"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1197,10 +1238,10 @@
                         <div class="ps-lg-5">
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="intellectual_property1"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="intellectual_property2"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1217,10 +1258,10 @@
                         <div class="ps-lg-5">
                             <div class="row pb-3">
                                 <div class="col-lg-6">
-                                      <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div><input type="text" name="other1"  class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="other2"  class="border-0 w-100 border-bottom footer_field">   </div>
                                 </div>
                             </div>
                         </div>
@@ -1231,12 +1272,12 @@
                         <div class="d-flex  ">Are you making any claim for non-marital property?
                             <span class="d-flex ps-3">
                                 <div class="d-flex  pe-4">
-                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <input type="radio" name="non_marital_claims" value="Yes" class="me-1">
                                     <div>Yes</div>
 
                                 </div>
                                 <div class="d-flex  ">
-                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <input type="radio" name="non_marital_claims" value="No" class="me-1">
                                     <div>No</div>
 
                                 </div>
@@ -1246,15 +1287,15 @@
                             <div class="row    pb-3">
                                 <div class="col-lg-6">
                                     <div>If yes, list item claimed as non-marital below:</div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
-                                      <div ><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="non_marital1"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="non_marital2"  class="border-0 w-100 border-bottom footer_field"></div>
+                                      <div ><input type="text" name="non_marital3"  class="border-0 w-100 border-bottom footer_field"></div>
                                   </div>
                                 <div class="col-lg-4">
                                     <div class="text-center">Amount Claimed</div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="amount_claimed1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="amount_claimed2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="amount_claimed3"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1264,13 +1305,13 @@
                     <div class="ps-lg-5">
 
                         <div class=" ">
-                            <div class="row    pb-3">
+                            <div class="row pb-3">
                                 <div class="col-lg-3">
                                     <div></div>
                                       <div class="pt-5">Company</div>
-                                      <div >Type (Whole or Term)</div>
-                                      <div >Death Benefit</div>
-                                      <div >Cash Value</div>
+                                      <div>Type (Whole or Term)</div>
+                                      <div>Death Benefit</div>
+                                      <div>Cash Value</div>
                                         <div>Loan Balance</div>
                                         <div>Insured under the policy</div>
                                         <div>Beneficiary</div>
@@ -1279,38 +1320,38 @@
                                   </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 1</div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="company1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="type1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="death_benefit1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="cash_value1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="loan_balance1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="insured_under_policy1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="beneficiary1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="owner_of_policy1"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 2</div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="company2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="type2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="death_benefit2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="cash_value2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="loan_balance2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="insured_under_policy2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="beneficiary2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="owner_of_policy2"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 3</div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="company3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="type3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="death_benefit3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="cash_value3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="loan_balance3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="insured_under_policy3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="beneficiary3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="beneficiary3"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1323,51 +1364,51 @@
                             <div class="row    pb-3">
                                 <div class="col-lg-3">
                                     <div>Type of Debt (credit care, bank loan, etc.)</div>
-                                    <div class=""><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class=""><input type="text" name="type_of_debit1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit5"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit7"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="type_of_debit8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
 
                                   </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Debt Owed To</div>
-                                    <div class="pt-4"><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div><input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="pt-4"><input type="text" name="debt_owed_at1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at5"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at7"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div><input type="text" name="debt_owed_at8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Minimum Monthly Payment</div>
-                                    <div class="d-flex pt-4">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex pt-4">$<input type="text" name="minimun_monthly_payment1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment5"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment7"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Balance Due</div>
-                                    <div class="d-flex pt-4">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
-                                    <div class="d-flex">$<input type="text" name="nmi"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex pt-4">$<input type="text" name="balance_due1"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due2"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due3"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due4"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due5"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due6"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due7"  class="border-0 w-100 border-bottom footer_field">   </div>
+                                    <div class="d-flex">$<input type="text" name="balance_due8"  class="border-0 w-100 border-bottom footer_field">   </div>
 
                                 </div>
                             </div>
@@ -1385,12 +1426,12 @@
                         <div class="d-flex ps-lg-5">Are you involved in bankruptcy proceedings?
                             <span class="d-flex ps-3">
                                 <div class="d-flex  pe-4">
-                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <input type="radio" name="involved_in_bankruptcy" value="Yes" class="me-1">
                                     <div>Yes</div>
 
                                 </div>
                                 <div class="d-flex  ">
-                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <input type="radio" name="involved_in_bankruptcy" value="No" class="me-1">
                                     <div>No</div>
 
                                 </div>
@@ -1399,12 +1440,12 @@
                         <div class="d-flex ps-lg-5">Do you intend to file bankruptcy?
                             <span class="d-flex ps-3">
                                 <div class="d-flex  pe-4">
-                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                    <input type="radio" name="file_bankruptcy" value="Yes" class="me-1">
                                     <div>Yes</div>
 
                                 </div>
                                 <div class="d-flex  ">
-                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                    <input type="radio" name="file_bankruptcy" value="No" class="me-1">
                                     <div>No</div>
 
                                 </div>
@@ -1430,7 +1471,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">Date:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="date"
                                         class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
@@ -1438,19 +1479,19 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="sign"
+                                    <input type="text" name="signature"
                                         class="form-control  border-none  border-0 border-bottom footer_field shadow-none">
 
                                         <div class="d-flex">Signature of
 
                                             <span class="d-flex ps-3">
                                                 <div class="d-flex  pe-4">
-                                                    <input type="radio" name="pub_trans" value="Yes" class="me-1">
+                                                    <input type="radio" name="signature_of" value="Petitioner" class="me-1">
                                                     <div>Petitioner</div>
 
                                                 </div>
                                                 <div class="d-flex  ">
-                                                    <input type="radio" name="pub_trans" value="No" class="me-1">
+                                                    <input type="radio" name="signature_of" value="Respondent" class="me-1">
                                                     <div>Respondent</div>
 
                                                 </div>
@@ -1470,7 +1511,7 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="pr_name"
+                                    <input type="text" name="signature_of_attorney"
                                         class="form-control  border-none  border-0 border-bottom footer_field shadow-none">
                                     <div class="">Signature of Attorney (if any)</div>
                                 </div>
@@ -1487,7 +1528,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">Attorney ID:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="attorney_id"
                                         class="form-control  ms-auto border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
@@ -1504,7 +1545,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">Name:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="name"
                                         class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
@@ -1538,7 +1579,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">City/State/Zip:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="zip"
                                         class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
@@ -1555,7 +1596,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">Telephone:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="telephone"
                                         class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
@@ -1570,7 +1611,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                     <label for="">E-mail address:</label>
-                                    <input type="text" name="address"
+                                    <input type="text" name="mail_address"
                                         class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                  </div>
