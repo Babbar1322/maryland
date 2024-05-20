@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+        a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -207,7 +212,7 @@
 
             <form action="#" class="" method="post">
                 @csrf
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area   pt-5 ">
                             @if (session('success'))
@@ -472,11 +477,30 @@
 
                                         @include('layouts.footer2', ['page' => 1])
                                     </div>
+                                    <div class="d-flex gap-3 py-auto mb-2  ">
+                                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                        <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i> </div>
+                                        <div>
+                                            <select class="form-select w-100 sectionSelect">
+                                                <option value="#first_section" selected>1</option>
+                                                <option value="#summary_of_affiants">2</option>
+                                                <option value="#workers_compensation_benefits">3</option>
+                                                <option value="#retirement_pensions">4</option>
+                                                <option value="#average_monthly_expenses">5</option>
+                                                <option value="#gasoline_and_oil">6</option>
+                                                <option value="#dry_cleaning_laundry">7</option>
+                                                <option value="#affiants_oter_expenses">8</option>
+                                                <option value="#last_section">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="my-auto"><a href="#summary_of_affiants" > <i class="fas fa-chevron-right"></i> </a> </div>
+                                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                                    </div>
                                 </div>
                             </div>
                 </section>
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="summary_of_affiants">
 
                     {{-- <section
                     class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"> --}}
@@ -670,12 +694,30 @@
                         <div class="pt-lg-2 pt-2">
                             @include('layouts.footer2', ['page' => 2])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#summary_of_affiants" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#summary_of_affiants" selected>2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#workers_compensation_benefits" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
 
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="workers_compensation_benefits">
                     <div class="col-lg-10 mx-auto">
 
 
@@ -945,11 +987,29 @@
                         <div class=" ">
                             @include('layouts.footer2', ['page' => 3])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#workers_compensation_benefits" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits" selected>3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"><a href="#retirement_pensions" > <i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="retirement_pensions">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class="row">
@@ -1406,12 +1466,30 @@
                         <div>
                             @include('layouts.footer2', ['page' => 4])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#workers_compensation_benefits" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section"  >1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions" selected>4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#average_monthly_expenses" ><i class="fas fa-chevron-right"></i></a> </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
 
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="average_monthly_expenses">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class=""> <span class="pe-lg-4">5</span> <span
@@ -1641,13 +1719,32 @@
                         <div>
                             @include('layouts.footer2', ['page' => 5])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#retirement_pensions" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses" selected>5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#gasoline_and_oil" ><i class="fas fa-chevron-right"></i></a> </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
 
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="gasoline_and_oil">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
 
@@ -1873,6 +1970,26 @@
                         </div>
                         <div>
                             @include('layouts.footer2', ['page' => 6])
+
+                        </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#average_monthly_expenses" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section"  >1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil" selected>6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#dry_cleaning_laundry" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
                         </div>
                 </section>
 
@@ -1880,7 +1997,7 @@
 
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="dry_cleaning_laundry">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
 
@@ -2107,11 +2224,29 @@
                         <div>
                             @include('layouts.footer2', ['page' => 7])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#gasoline_and_oil" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry" selected>7</option>
+                                    <option value="#affiants_oter_expenses">8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#affiants_oter_expenses" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="affiants_oter_expenses">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
 
@@ -2473,6 +2608,25 @@
                         <div>
                             @include('layouts.footer2', ['page' => 8])
                         </div>
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#dry_cleaning_laundry" ><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section"  >1</option>
+                                    <option value="#summary_of_affiants">2</option>
+                                    <option value="#workers_compensation_benefits">3</option>
+                                    <option value="#retirement_pensions">4</option>
+                                    <option value="#average_monthly_expenses">5</option>
+                                    <option value="#gasoline_and_oil">6</option>
+                                    <option value="#dry_cleaning_laundry">7</option>
+                                    <option value="#affiants_oter_expenses" selected>8</option>
+                                    <option value="#last_section">9</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                 </section>
 
 
@@ -2482,7 +2636,7 @@
 
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="last_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class=" " style="text-indent: 70px;"> Personally appeared before me, an
@@ -2535,12 +2689,40 @@
                                 <div>
                                     @include('layouts.footer2', ['page' => 9])
                                 </div>
+                                <div class="d-flex gap-3 py-auto mb-2  ">
+                                    <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#affiants_oter_expenses" ><i class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#first_section" >1</option>
+                                            <option value="#summary_of_affiants">2</option>
+                                            <option value="#workers_compensation_benefits">3</option>
+                                            <option value="#retirement_pensions">4</option>
+                                            <option value="#average_monthly_expenses">5</option>
+                                            <option value="#gasoline_and_oil">6</option>
+                                            <option value="#dry_cleaning_laundry">7</option>
+                                            <option value="#affiants_oter_expenses">8</option>
+                                            <option value="#last_section" selected>9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
+                                    <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                                </div>
                 </section>
             </form>
         </div>
     </div>
-    </div>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

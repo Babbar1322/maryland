@@ -116,6 +116,10 @@
             .pb_checkbox {
                 display: block !important;
             }
+            .d_sm_block{
+                display: block !important;
+
+            }
 
             .small_text {
                 height: auto !important;
@@ -435,7 +439,7 @@
                             </div>
 
                             <div class="col-md-5 pt-2">
-                                <div class="d-flex gap-4 ">
+                                <div class="d-flex gap-4 d_sm_block ">
                                     <div>
                                         <input type="checkbox" name="income_type" value="weekly">
                                         <label for="">weekly</label>
@@ -519,7 +523,7 @@
                     <div class="col-md-12 pt-2">
                         <div>Employment benefits:</div>
                     </div>
-                    <div class="col-md-12 d-flex gap-5 mt-3 px-4">
+                    <div class="col-md-12 d-flex gap-5 mt-3 px-4 d_sm_block">
                         <div>
                             <input type="checkbox" name="insurance" value="health_ins">
                             <label for="">health insurance</label>
@@ -799,7 +803,7 @@
                                 <div class="d-flex">
                                     <div>Pensions/Longevity</div>
                                     <input type="text" name="pl"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
@@ -877,7 +881,7 @@
                             <div class="col-md-12 pt-2">
                                 <div class="px-4 row">
                                     <div class="col-md-8">
-                                        <div style="width:705px;">
+                                        <div style="width:705px;" class="responsive_input">
                                             If yes, provide details of the payments including amount per month paid on
                                             your behalf:
                                         </div>
@@ -1073,7 +1077,7 @@
                                         sheets if necessary</span></div>
                             </div>
                         </div>
-                        <div class="col-md-12 pt-3">
+                        <div class="col-md-12 pt-3 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1137,7 +1141,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1201,7 +1205,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1265,7 +1269,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1442,7 +1446,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 ">Premium:</div>
                                 <div class="">$</div>
                                 <input type="text" name="premium"
@@ -1457,7 +1461,7 @@
                         </div>
 
                         <div class="col-md-7 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 " style="width: 180px;">Cash/surrender value:</div>
                                 <div class="">$</div>
                                 <input type="text" name="premium"
@@ -1502,7 +1506,7 @@
                                 another person</span>
                             <span class="fs-6">Use additional sheets if necessary.</span>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1555,7 +1559,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1608,7 +1612,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1661,7 +1665,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1899,7 +1903,7 @@
                                     <span>Total:</span>
                                     <span class="fs-6">$</span>
                                     <input type="text" name="prop_total"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                        class="border-none border-0 border-bottom responsive_input  shadow-none my-auto">
                                 </div>
                             </div>
                         </div>
@@ -2109,7 +2113,7 @@
                                 result in an award for or</div>
                         </div>
                         <div class="col-md-12">
-                            <div class="d-flex gap-5">
+                            <div class="d-flex gap-5 d_sm_block">
                                 <div class="ps-3">against you</div>
                                 <div class="ps-3">
                                     <input type="checkbox" name="elec_curr" value="yes">
@@ -2120,7 +2124,7 @@
                                     <label for="">No</label>
                                 </div>
                                 <div class="ps-5 d-flex">
-                                    <div style="width:530px">If yes, describe the case, where it is filed and the
+                                    <div style="width:530px" class="responsive_input">If yes, describe the case, where it is filed and the
                                         possible liability:</div>
                                     <input type="text" name="elec_curr_desc"
                                         class="border-none border-0 border-bottom  shadow-none my-auto">
@@ -2469,7 +2473,7 @@
                                 cases only (DO and DM case
                                 types).</div>
                         </div>
-                        <div class="col-md-12 pt-2 d-flex gap-3">
+                        <div class="col-md-12 pt-2 d-flex gap-3 d_sm_block">
                             <div>1. Have you ever filed for bankruptcy?</div>
                             <div class="px-3">
                                 <input type="checkbox" name="bankruptcy" value="yes">
@@ -2608,7 +2612,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <button type="submit" class="bg-transparent px-4 me-4">Submit</button>
+                        <button type="butt  on" class="bg-transparent px-4 me-4">Submit</button>
                     </div>
                 </section>
             </form>

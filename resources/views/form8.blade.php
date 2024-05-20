@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+         a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -244,7 +249,7 @@
 
             <form action="{{ route('form8.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -882,9 +887,25 @@
                                 friends, and others:</div>
                         </div>
                         @include('layouts.footer6', ['page' => 1])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#mandatory_deductions" >2</option>
+                                    <option value="#insert_an">3</option>
+                                    <option value="#assets">4</option>
+                                    <option value="#retirement_plains">5</option>
+                                    <option value="#last_section">6</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="mandatory_deductions">
                     <div>
                         <div class="d-flex">
                             <div class="fw-bold pe-3">2) Mandatory Deductions</div>
@@ -1671,6 +1692,22 @@
 
                             </div>
                             @include('layouts.footer6', ['page' => 2])
+                            <div class="d-flex gap-3 py-auto mb-2  ">
+                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#first_section" >1</option>
+                                        <option value="#mandatory_deductions" selected >2</option>
+                                        <option value="#insert_an">3</option>
+                                        <option value="#assets">4</option>
+                                        <option value="#retirement_plains">5</option>
+                                        <option value="#last_section">6</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#insert_an" ><i class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                            </div>
                         </div>
 
 
@@ -1678,7 +1715,7 @@
                 </section>
 
 
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="insert_an">
                     <div>
                         <div class="text-center mx-auto">Insert an ("x") in the box if you are not currently paying the
                             expense, or if someone else is paying the expense.</div>
@@ -2769,13 +2806,29 @@
                             </div>
 
                             @include('layouts.footer6', ['page' => 3])
+                            <div class="d-flex gap-3 py-auto mb-2  ">
+                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#first_section" >1</option>
+                                        <option value="#mandatory_deductions"  >2</option>
+                                        <option value="#insert_an" selected>3</option>
+                                        <option value="#assets">4</option>
+                                        <option value="#retirement_plains">5</option>
+                                        <option value="#last_section">6</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                            </div>
                         </div>
 
                     </div>
                 </section>
 
 
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="assets">
 
                     <div>
                         <div class="pt-lg-4">
@@ -3570,11 +3623,27 @@
 
                         </div>
                         @include('layouts.footer6', ['page' => 4])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#insert_an" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#mandatory_deductions"  >2</option>
+                                    <option value="#insert_an" >3</option>
+                                    <option value="#assets" selected>4</option>
+                                    <option value="#retirement_plains">5</option>
+                                    <option value="#last_section">6</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#retirement_plains" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
 
                     </div>
                 </section>
 
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="retirement_plains">
 
                     <div>
                         <div class="row">
@@ -4025,10 +4094,26 @@
 
                         </div>
                         @include('layouts.footer6', ['page' => 5])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#assets" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#mandatory_deductions"  >2</option>
+                                    <option value="#insert_an" >3</option>
+                                    <option value="#assets" >4</option>
+                                    <option value="#retirement_plains" selected>5</option>
+                                    <option value="#last_section">6</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
 
                     </div>
                 </section>
-                    <section class="section_area p-5">
+                    <section class="section_area p-5" id="last_section">
 
 
                             <div>
@@ -4272,12 +4357,39 @@
                                     </div>
                                 </div>
                                 @include('layouts.footer6', ['page' => 6])
+                                <div class="d-flex gap-3 py-auto mb-2  ">
+                                    <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#retirement_plains" ><i class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#first_section" >1</option>
+                                            <option value="#mandatory_deductions"  >2</option>
+                                            <option value="#insert_an" >3</option>
+                                            <option value="#assets" >4</option>
+                                            <option value="#retirement_plains" >5</option>
+                                            <option value="#last_section" selected>6</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
+                                    <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                                </div>
 
                             </div>
                         </section>
             </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

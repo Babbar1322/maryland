@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+          a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -255,7 +260,7 @@
 
             <form action="{{ route('form11.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -428,8 +433,7 @@
                                         <td class="text-center">A</td>
                                         <td class="text-center">B</td>
                                         <td colspan="3">
-                                            <div class="d-flex gap-5 justify-content-center"> <span>C </span> - <span>
-                                                    D </span> = <span> E </span></div>
+                                            <div class="d-flex gap-5 justify-content-center"> <span>C </span> - <span>  D </span> = <span> E </span></div>
                                         </td>
                                         <td colspan="2" class="text-center">F</td>
                                     </tr>
@@ -444,99 +448,90 @@
                                         <td class="text-center small_text">NET FAIR MARKET VALUE</td>
                                         <td class="text-center small_text" colspan="2">
                                             <div>PROPOSAL FOR DIVISION</div>
-                                            <div> Award or Confirm to:</div>
+                                            <div>Award or Confirm to:</div>
                                             <div class="d-flex gap-3 justify-content-center">
-                                                <span> PETITIONER</span>
+                                                <span>PETITIONER</span>
                                                 <span>RESPONDENT</span>
                                             </div>
-                                            </td>
+                                        </td>
                                     </tr>
-
                                     <tr>
                                         <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>1.REAL ESTATE</div>
-                                                <div><input type="text" name="brif_desc1" class="w-100  border-0 table_input">
+                                                <div><input type="text" name="brif_desc1" class="w-100 border-0 table_input">
                                                 </div>
-                                                <div><input type="text" name="brif_desc2" class="w-100  border-0 table_input">
+                                                <div><input type="text" name="brif_desc2" class="w-100 border-0 table_input">
                                                 </div>
                                             </div>
                                             <div>
-                                                <div>
-                                                    2.HOUSEHOLD FURNITURE, FURNISHINGS, APPLIANCES
-                                                </div>
-                                                <input type="text" name="applince1" class="w-100  border-0 table_input">
-                                                <input type="text" name="applince2" class="w-100  border-0 table_input">
-                                                <input type="text" name="applince3" class="w-100  border-0 table_input">
-                                                <input type="text" name="applince4" class="w-100  border-0 table_input">
-                                                <input type="text" name="applince5" class="w-100  border-0 table_input">
+                                                <div> 2.HOUSEHOLD FURNITURE, FURNISHINGS, APPLIANCES </div>
+                                                <input type="text" name="applince1" class="w-100 border-0 table_input">
+                                                <input type="text" name="applince2" class="w-100 border-0 table_input">
+                                                <input type="text" name="applince3" class="w-100 border-0 table_input">
+                                                <input type="text" name="applince4" class="w-100 border-0 table_input">
+                                                <input type="text" name="applince5" class="w-100 border-0 table_input">
                                             </div>
                                             <div>
-                                                <div>
-                                                    3. JEWELRY, ANTIQUES, ART, COIN COLLECTIONS, ETC
-                                                </div>
-                                                <input type="text" name="jewel1" class="w-100  border-0 table_input">
-                                                <input type="text" name="jewel2" class="w-100  border-0 table_input">
-                                                <input type="text" name="jewel3" class="w-100  border-0 table_input">
+                                                <div> 3. JEWELRY, ANTIQUES, ART, COIN COLLECTIONS, ETC </div>
+                                                <input type="text" name="jewel1" class="w-100 border-0 table_input">
+                                                <input type="text" name="jewel2" class="w-100 border-0 table_input">
+                                                <input type="text" name="jewel3" class="w-100 border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>4. VEHICLES, BOATS, TRAILERS</div>
-                                                <input type="text" name="vehicles1" class="w-100  border-0 table_input">
-                                                <input type="text" name="vehicles2" class="w-100  border-0 table_input">
-                                                <input type="text" name="vehicles3" class="w-100  border-0 table_input">
+                                                <input type="text" name="vehicles1" class="w-100 border-0 table_input">
+                                                <input type="text" name="vehicles2" class="w-100 border-0 table_input">
+                                                <input type="text" name="vehicles3" class="w-100 border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>5. SAVINGS ACCOUNTS</div>
-                                                <input type="text" name="sav_acc1" class="w-100  border-0 table_input">
-                                                <input type="text" name="sav_acc2" class="w-100  border-0 table_input">
-                                                <input type="text" name="sav_acc3" class="w-100  border-0 table_input">
+                                                <input type="text" name="sav_acc1" class="w-100 border-0 table_input">
+                                                <input type="text" name="sav_acc2" class="w-100 border-0 table_input">
+                                                <input type="text" name="sav_acc3" class="w-100 border-0 table_input">
                                             </div>
                                             <div>
                                                 <div>6. CHECKING ACCOUNTS</div>
-                                                <input type="text" name="check_acc1" class="w-100  border-0 table_input">
-                                                <input type="text" name="check_acc2" class="w-100  border-0 table_input">
-                                                <input type="text" name="check_acc3" class="w-100  border-0 table_input">
+                                                <input type="text" name="check_acc1" class="w-100 border-0 table_input">
+                                                <input type="text" name="check_acc2" class="w-100 border-0 table_input">
+                                                <input type="text" name="check_acc3" class="w-100 border-0 table_input">
                                             </div>
                                         </td>
                                         <td rowspan="8" class="small_text">
                                             <div>
                                                 <br>
-                                                <div><input type="text" name="re_date_a1" class=" border-0 table_input"></div>
-                                                <div><input type="text" name="re_date_a2" class=" border-0 table_input"></div>
+                                                <div><input type="text" name="re_date_a1" class="w-100 border-0 table_input"></div>
+                                                <div><input type="text" name="re_date_a2" class="w-100 border-0 table_input"></div>
                                             </div>
                                             <br>
                                             <br>
                                             <div>
                                                 <input type="text" name="app_date1" class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="app_date2" class="w-100 border-0 table_input">
                                                 <input type="text" name="app_date3" class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date4" class="w-100  border-0 table_input">
+                                                <input type="text" name="app_date4" class="w-100 border-0 table_input">
                                                 <input type="text" name="app_date5" class=" w-100 border-0 table_input">
                                             </div>
                                             <br>
                                             <br>
                                             <div>
                                                 <input type="text" name="jew_date1" class="w-100 border-0 table_input">
-                                                <input type="text" name="jew_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="jew_date2" class="w-100 border-0 table_input">
                                                 <input type="text" name="jew_date3" class="w-100 border-0 table_input">
-                                            </div>
-                                            <br>
-                                            <br>
+                                            </div>  <br><br>
                                             <div>
                                                 <input type="text" name="vech_date1" class="w-100 border-0 table_input">
-                                                <input type="text" name="vech_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="vech_date2" class="w-100 border-0 table_input">
                                                 <input type="text" name="vech_date3" class="w-100 border-0 table_input">
-                                            </div>
-                                            <br>
+                                            </div> <br>
                                             <div>
                                                 <input type="text" name="sav_date1" class="w-100 border-0 table_input">
-                                                <input type="text" name="sav_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="sav_date2" class="w-100 border-0 table_input">
                                                 <input type="text" name="sav_date3" class="w-100 border-0 table_input">
-                                            </div>
-                                            <br>
+                                            </div><br>
                                             <div>
                                                 <input type="text" name="ca_date1" class="w-100 border-0 table_input">
-                                                <input type="text" name="ca_date2" class="w-100  border-0 table_input">
+                                                <input type="text" name="ca_date2" class="w-100 border-0 table_input">
                                                 <input type="text" name="ca_date3" class="w-100 border-0 table_input">
                                             </div>
                                         </td>
@@ -544,11 +539,10 @@
                                             <div>
                                             <div>$</div>
                                             <div class="small_text">
-                                                <div><input type="text" name="re_gross_val1" class="w-100  border-0 table_input text-end"></div>
-                                                <div><input type="text" name="re_gross_val2" class="w-100  border-0 table_input text-end"></div>
+                                                <div><input type="text" name="re_gross_val1" class="w-100 border-0 table_input text-end"></div>
+                                                <div><input type="text" name="re_gross_val2" class="w-100 border-0 table_input text-end"></div>
                                             </div>
-                                            </div>
-                                            <br>
+                                            </div> <br>
                                             <br>
                                             <div class="small_text">
                                                 <input type="text" name="app_gross_val1" class="w-100 border-0 table_input text-end">
@@ -765,6 +759,21 @@
                             </table>
                         </div>
                         @include('layouts.footer7', ['page' => 1])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#second_section" >2</option>
+                                    {{-- <option value="#third_section">3</option> --}}
+                                    <option value="#last_section">3</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#second_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                         {{-- <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
                             party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
                             documents was completed or waived must be filed with the court (see form FL-141)</div> --}}
@@ -772,7 +781,7 @@
                     </div>
                 </section>
 
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2 " id="second_section">
                     <div class="table-responsive pt-5">
                             <table class="table-bordered border border-2 border-dark">
                                 <thead>
@@ -875,7 +884,7 @@
                                             <div>
                                                 <br>
                                                 <br>
-                                                <div><input type="text" name="ca_date_a1" class=" border-0 table_input"></div>
+                                                <div><input type="text" name="ca_date_a1" class="w-100 border-0 table_input"></div>
                                                 <div><input type="text" name="ca_date_a2" class=" border-0 table_input"></div>
                                                 <div><input type="text" name="ca_date_a2" class=" border-0 table_input"></div>
                                             </div>
@@ -1341,10 +1350,24 @@
                             </table>
                     </div>
                     @include('layouts.footer7', ['page' => 2])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#second_section" selected>2</option>
+                                {{-- <option value="#third_section" >3</option> --}}
+                                <option value="#last_section">3</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
 
 
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2" id="last_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -1670,8 +1693,7 @@
                         </table>
                         <div class="px-3">
                             <div class="d-flex">
-                                <input type="checkbox" class="me-2" name="continuation_declaration" value="Yes"> A Continuation of Property Declaration (<div class="lh-1">(<a href="https://www.courts.ca.gov/documents/fl161.pdf" target="_blank">form
-                                    FL-161</a> )</div>) is attached and incorported by reference
+                                <input type="checkbox" class="me-2" name="continuation_declaration" value="Yes"> A Continuation of Property Declaration (<div class=" "> <a href="https://www.courts.ca.gov/documents/fl161.pdf" target="_blank">form FL-161</a></div>) is attached and incorported by reference
                             </div>
                             <div class="small_text">I declare under penalty of perjury under the laws of the State of California that, to the best of my knowledge, the foregoing is a true and correct listing of assets and obligations and the amounts shown are correct</div>
                             <div class="d-flex">
@@ -1688,10 +1710,23 @@
                 <div class="small_text text-center">SIGNATURE</div>
      </div>
 </div>
-
                         </div>
                     </div>
                     @include('layouts.footer7', ['page' => 3])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#second_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#second_section" >2</option>
+                                {{-- <option value="#third_section" selected>3</option> --}}
+                                <option value="#last_section" selected>3</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
 
                 {{-- <section class="section_area  px-lg-5 px-2 pt-5 ">
@@ -1706,6 +1741,17 @@
             </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

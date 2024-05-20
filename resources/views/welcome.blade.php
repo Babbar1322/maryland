@@ -217,7 +217,7 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 7</h5>
-                      <span>fm006-long  CT.pdf</span>
+                      <span>fm006-short  CT.pdf</span>
                     </div>
                   </div>
                 </a>
@@ -227,7 +227,10 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 8</h5>
-                      <span>fl140  CA.pdf</span>
+                      {{-- <span>fl140  CA.pdf</span> --}}
+                      <span>
+                        fm006-long  CT.pdf
+                      </span>
                     </div>
                   </div>
                 </a>
@@ -237,7 +240,9 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 9</h5>
-                      <span>fl161  CA.pdf</span>
+                      {{-- <span>fl161  CA.pdf</span> --}}
+                      <span>fl140  CA.pdf</span>
+
                     </div>
                   </div>
                 </a>
@@ -247,7 +252,8 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 10</h5>
-                      <span>fl160  CA.pdf</span>
+                      {{-- <span>fl160  CA.pdf</span> --}}
+                      <span>fl161 CA.pdf</span>
                     </div>
                   </div>
                 </a>
@@ -257,7 +263,9 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 11</h5>
-                      <span>FAM108_Current.pdf</span>
+                      {{-- <span>FAM108_Current.pdf</span> --}}
+                                            <span>fl160  CA.pdf</span>
+
                     </div>
                   </div>
                 </a>
@@ -267,7 +275,9 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 12</h5>
-                      <span>fl142  CA.pdf</span>
+                      {{-- <span>fl142  CA.pdf</span> --}}
+                                            <span>FAM108_Current.pdf</span>
+
                     </div>
                   </div>
                 </a>
@@ -288,6 +298,16 @@
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 14</h5>
                       <span>fl150  CA.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4 ">
+                <a href="{{route('pdf_form15')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 15</h5>
+                      <span>Sworn-Financial-Statement  CO.pdf</span>
                     </div>
                   </div>
                 </a>

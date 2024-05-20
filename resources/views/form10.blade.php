@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+         a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -250,7 +255,7 @@
 
             <form action="{{ route('form10.submit') }}" method="post">
                 @csrf
-                <section class="section_area  px-lg-5 px-2">
+                <section class="section_area  px-lg-5 px-2 " id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -581,8 +586,20 @@
                                 www.courts.ca.gov</a>
                         </div>
                     </div>
+                    <div class="d-flex gap-3 py-auto pb-3  ">
+                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" selected>1</option>
+                                <option value="#last_section" >2</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#last_section" > <i class="fas fa-chevron-right"></i></a>  </div>
+                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2 " id="last_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -824,11 +841,35 @@
                             <button type="reset" style="background-color: #F59292 ">Clear this form</button>
                         </div>
                     </div>
+                    <div class="d-flex gap-3 py-auto pb-3  ">
+                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#last_section" selected>2</option>
+                            </select>
+                        </div>
+                        <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
+                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                    </div>
+
                 </section>
 
             </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
