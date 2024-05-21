@@ -316,6 +316,10 @@ class FormController extends Controller
     public function form15() {
         return  view('form15');
     }
+    public function form16() {
+        return  view('form16');
+    }
+
 
 
 }
