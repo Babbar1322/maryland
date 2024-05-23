@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+        a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -253,10 +258,10 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form11.submit') }}" method="post">
+        <div class="container bg_color p-lg-3 p-1">
+            <form action="{{ route('form15.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -770,9 +775,24 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 1])
+
+                        <div class="d-flex gap-3 py-auto pb-3  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#section_two">2</option>
+                                    <option value="#section_three">2</option>
+                                    <option value="#last_section" >4</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#section_two" > <i class="fas fa-chevron-right"></i></a>  </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="section_two">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">2. </span>Monthly Deductions (Mandatory and Voluntary)</div>
                         <div class="table-responsive pt-3">
@@ -1148,11 +1168,25 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 2])
+                        <div class="d-flex gap-3 py-auto pb-3  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#section_two">2</option>
+                                    <option value="#section_three">2</option>
+                                    <option value="#last_section" >4</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#section_three" > <i class="fas fa-chevron-right"></i></a>  </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 
 
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="section_three">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
 
 
@@ -1547,11 +1581,25 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 3])
+                        <div class="d-flex gap-3 py-auto pb-3  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#section_two" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#section_two">2</option>
+                                    <option value="#section_three">2</option>
+                                    <option value="#last_section" >4</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#last_section" > <i class="fas fa-chevron-right"></i></a>  </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 
 
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="last_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">4. </span> Debts (unsecured)</div>
                         <div class="small_text">List unsecured debts such as credit cards, store charge accounts,
@@ -2260,6 +2308,20 @@
 
                         </div>
                         @include('layouts.footer11', ['page' => 4])
+                        <div class="d-flex gap-3 py-auto pb-3  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#section_two" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#section_two">2</option>
+                                    <option value="#section_three">3</option>
+                                    <option value="#last_section" >4</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#last_section" > <i class="fas fa-chevron-right"></i></a>  </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 

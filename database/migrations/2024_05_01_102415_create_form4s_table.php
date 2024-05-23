@@ -13,9 +13,13 @@ class CreateForm4sTable extends Migration
      */
     public function up()
     {
-        Schema::create('form4s', function (Blueprint $table) {
+        Schema::create('4_pa_form_data', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->bigInteger("pa_form_id");
+            $table->string("keyss");
+            $table->string("valuess")->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
@@ -26,6 +30,6 @@ class CreateForm4sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form4s');
+        Schema::dropIfExists('4_pa_form_data');
     }
 }

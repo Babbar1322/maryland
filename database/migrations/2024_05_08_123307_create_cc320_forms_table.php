@@ -13,7 +13,7 @@ class CreateCc320FormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cc320_forms', function (Blueprint $table) {
+        Schema::create('7_cc320_forms', function (Blueprint $table) {
             $table->id();
             $table->string("title")->nullable();
             $table->timestamp('created_at')->useCurrent();
@@ -28,6 +28,6 @@ class CreateCc320FormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cc320_forms');
+        Schema::dropIfExists('7_cc320_forms');
     }
 }

@@ -13,9 +13,13 @@ class CreateForm3sTable extends Migration
      */
     public function up()
     {
-        Schema::create('form3s', function (Blueprint $table) {
+        Schema::create('3_ga_form_data', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->bigInteger("ga_form_id");
+            $table->string("keyss");
+            $table->string("valuess")->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
@@ -26,6 +30,6 @@ class CreateForm3sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form3s');
+        Schema::dropIfExists('3_ga_form_data');
     }
 }

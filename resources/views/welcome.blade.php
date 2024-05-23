@@ -229,7 +229,7 @@
                       <h5 class="text-decoration-none text-dark">Form 8</h5>
                       {{-- <span>fl140  CA.pdf</span> --}}
                       <span>
-                        fm006-long  CT.pdf
+                     CT Long.pdf
                       </span>
                     </div>
                   </div>
@@ -302,7 +302,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 ">
+            <div class="col-lg-4 mt-4">
                 <a href="{{route('pdf_form15')}}" class="text-decoration-none">
                  <div class="card">
                      <div class="card-body p-5">
@@ -312,12 +312,22 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 ">
+            <div class="col-lg-4 mt-4">
                 <a href="{{route('pdf_form16')}}" class="text-decoration-none">
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 16</h5>
-                      <span>Sworn-Financial-Statement  CO.pdf</span>
+                      <span>902c10-21  FL long form.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <a href="{{route('pdf_form17')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 17</h5>
+                      <span>902b 11-20   FL short form.pdf</span>
                     </div>
                   </div>
                 </a>

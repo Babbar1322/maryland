@@ -959,7 +959,7 @@
             <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
  </div>
 </div>
-
+                    </div>
                     @include('layouts.footer9', ['page' => 4])
                     <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i

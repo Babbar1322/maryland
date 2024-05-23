@@ -210,7 +210,7 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="#" class="" method="post">
+            <form action="{{route('form3.submit')}}" class="" method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-10 mx-auto">

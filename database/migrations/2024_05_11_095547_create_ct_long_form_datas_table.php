@@ -13,7 +13,7 @@ class CreateCtLongFormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('ct_long_form_datas', function (Blueprint $table) {
+        Schema::create('8_ct_long_form_datas', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("cslong_form_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateCtLongFormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ct_long_form_datas');
+        Schema::dropIfExists('8_ct_long_form_datas');
     }
 }

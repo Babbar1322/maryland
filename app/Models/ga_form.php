@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class fl160_ca_form extends Model
+class ga_form extends Model
 {
     use HasFactory;
-    protected $table = "11_fl160_ca_forms";
 
+    use HasFactory;
+    protected $table = "3_ga_forms";
     protected $guarded = [];
 }

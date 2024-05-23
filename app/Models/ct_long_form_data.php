@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ct_long_form_data extends Model
 {
     use HasFactory;
-    protected $table = "ct_long_form_datas";
+    protected $table = "8_ct_long_form_datas";
 
     protected $guarded = [];
 }

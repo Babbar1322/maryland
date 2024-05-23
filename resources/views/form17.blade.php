@@ -324,35 +324,38 @@
                                     <span class="fw-bold">Service</span> must be in
                                     accordance with Florida Rule of General Practice and Judicial Administration 2.516.
                                 </div>
-                                <div class="fw-bold text-center h3 mt-3">Where can I look for more information?
-                                </div>
+                                <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-FILING </div>
 
                                 <div class="mt-3">
-                                    <span class="fw-bold">Before proceeding, you should read “General Information for Self-Represented
-                                        Litigants” found at the
-                                    beginning of these forms.</span> The words that are in <a href="#" class="text-dark fw-bold">“bold underline”</a> in these
-                                    instructions are defined there.
-                                    For further information, see Florida Family Law Rule of Procedure 12.285.
-                                </div>
-                                <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-FILING</div>
-
-                                <div class="mt-3">The Florida Rules of General Practice and Judicial Administration
-                                    now
-                                    require that all petitions, pleadings,
+                                    The Florida Rules of General Practice and Judicial Administration now require that
+                                    all petitions, pleadings,
                                     and documents be filed electronically except in certain circumstances. <span
                                         class="fw-bold">Self-represented litigants may file
                                         petitions or other pleadings or documents electronically; however, they are not
-                                        required
-                                        to do so.</span> If
+                                        required to do so.</span> If
                                     you choose to file your pleadings or other documents electronically, you must do so
-                                    in
-                                    accordance with
+                                    in accordance with
                                     Florida Rule of General Practice and Judicial Administration 2.525, and you must
-                                    follow the
-                                    procedures of
+                                    follow the procedures of
                                     the judicial circuit in which you file. The rules and procedures should be carefully
-                                    read
-                                    and followed.</div>
+                                    read and followed. </div>
+
+
+                                <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-SERVICE
+                                    ELECTION</div>
+
+
+                                <div class="mt-3">After the initial service of process of the petition or supplemental
+                                    petition by the Sheriff or certified
+                                    process server, the Florida Rules of General Practice and Judicial Administration
+                                    now require that all
+                                    documents required or permitted to be served on the other party must be served by
+                                    electronic mail (e-
+                                    mail) except in certain circumstances. You must strictly comply with the format
+                                    requirements set forth
+                                    in the Florida Rules of General Practice and Judicial Administration. If you elect
+                                    to participate in
+                                </div>
 
 
 
@@ -368,20 +371,7 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
 
-
-                                <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-SERVICE
-                                    ELECTION</div>
-
-                                <div class="mt-3">After the initial service of process of the petition or supplemental
-                                    petition by the Sheriff or certified
-                                    process server, the Florida Rules of General Practice and Judicial Administration
-                                    now require that all
-                                    documents required or permitted to be served on the other party must be served by
-                                    electronic mail (e-
-                                    mail) except in certain circumstances. You must strictly comply with the format
-                                    requirements set forth
-                                    in the Florida Rules of General Practice and Judicial Administration. If you elect
-                                    to participate in
+                                <div>
                                     electronic service, which means serving or receiving pleadings by electronic mail
                                     (e-mail), or through the
                                     Florida Courts E-Filing Portal, you must review Florida Rule of General Practice and
@@ -414,6 +404,20 @@
                                         Address,</span> Florida Supreme Court Approved Family Law Form 12.915; and
                                     Florida Rule of General Practice and Judicial Administration 2.516.
                                 </div>
+
+                                <div class="fw-bold text-center h3 mt-3">Where can I look for more information?
+                                </div>
+
+                                <div class="mt-3">
+                                    <span class="fw-bold">Before proceeding, you should read “General Information for
+                                        Self-Represented
+                                        Litigants” found at the
+                                        beginning of these forms.</span> The words that are in <a href="#"
+                                        class="text-dark fw-bold">“bold underline”</a> in these
+                                    instructions are defined there.
+                                    For further information, see Florida Family Law Rule of Procedure 12.285.
+                                </div>
+
                                 <div class="fw-bold h3 text-center mt-3">Special notes . . .</div>
                                 <div class="mt-3">If you want to keep your address confidential because you have been
                                     found by a judge to be the victim of sexual battery, aggravated child abuse,
@@ -426,114 +430,121 @@
                                     amounts. If you are paid or your
                                     bills are due on a schedule which is not monthly, you must convert those amounts.
                                     Hints are provided
-                                    below for making these conversions.</div>
-                                    <div class="" style="padding-bottom:200px;"></div>
+                                    below for making these conversions.
+                                </div>
+
+                                <div class="row  pt-2">
+                                    <div class="">
+                                        <div class="mt-3">
+                                            <span class="fw-bold h5">Hourly</span>
+                                            - If you are paid by the hour, you may convert your income to monthly as
+                                            follows:
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <div class="m-0 p-0"> Hourly amount</div>
+                                                    <div class="m-0 p-0"> Weekly amount</div>
+                                                    <div class="m-0 p-0"> Yearly amount</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>x</div>
+                                                    <div>x</div>
+                                                    <div>÷</div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div> Hours worked per week</div>
+                                                    <div>52 Weeks per year</div>
+                                                    <div>12 Months per year</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>=</div>
+                                                    <div>=</div>
+                                                    <div>=</div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div>Weekly amount</div>
+                                                    <div>Yearly amount</div>
+                                                    <div class="fw-bold ">Monthly Amount</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-bold h5">Daily</span>
+                                            - If you are paid by the day, you may convert your income to monthly as
+                                            follows:
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <div class="m-0 p-0"> Daily amount</div>
+                                                    <div class="m-0 p-0"> Weekly amount</div>
+                                                    <div class="m-0 p-0"> Yearly amount</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>x</div>
+                                                    <div>x</div>
+                                                    <div>÷</div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div>Days worked per week</div>
+                                                    <div>52 Weeks per year</div>
+                                                    <div>12 Months per year</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>=</div>
+                                                    <div>=</div>
+                                                    <div>=</div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div>Weekly amount</div>
+                                                    <div>Yearly amount</div>
+                                                    <div class="fw-bold ">Monthly Amount</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <span class="fw-bold h5">Weekly</span>
+                                            - If you are paid by the week, you may convert your income to monthly as
+                                            follows:
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <div class="m-0 p-0"> Weekly amount</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>x</div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div>52 Weeks per year</div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <div>=</div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div>Yearly amount</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
 
 
-                                @include('layouts.footer12', ['page' => 2])
+                                    @include('layouts.footer12', ['page' => 2])
+                                </div>
+
                             </div>
-
                         </div>
-                    </div>
 
                 </section>
 
                 {{--  page 3 --}}
-
                 <section class="section_area py-5">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
 
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="px-lg-5">
-                                    <div class="mt-3">
-                                        <span class="fw-bold h5">Hourly</span>
-                                        - If you are paid by the hour, you may convert your income to monthly as
-                                        follows:
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="m-0 p-0"> Hourly amount</div>
-                                                <div class="m-0 p-0"> Weekly amount</div>
-                                                <div class="m-0 p-0"> Yearly amount</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>x</div>
-                                                <div>x</div>
-                                                <div>÷</div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div> Hours worked per week</div>
-                                                <div>52 Weeks per year</div>
-                                                <div>12 Months per year</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>=</div>
-                                                <div>=</div>
-                                                <div>=</div>
-                                            </div>
-                                            <div class="col-lg-5">
-                                                <div>Weekly amount</div>
-                                                <div>Yearly amount</div>
-                                                <div class="fw-bold ">Monthly Amount</div>
-                                            </div>
-                                        </div>
+                            <div class="row px-lg-5 py-2 pt-0">
+                                <div class="">
 
-                                    </div>
 
-                                    <div>
-                                        <span class="fw-bold h5">Daily</span>
-                                        - If you are paid by the day, you may convert your income to monthly as follows:
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="m-0 p-0"> Daily amount</div>
-                                                <div class="m-0 p-0"> Weekly amount</div>
-                                                <div class="m-0 p-0"> Yearly amount</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>x</div>
-                                                <div>x</div>
-                                                <div>÷</div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div>Days worked per week</div>
-                                                <div>52 Weeks per year</div>
-                                                <div>12 Months per year</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>=</div>
-                                                <div>=</div>
-                                                <div>=</div>
-                                            </div>
-                                            <div class="col-lg-5">
-                                                <div>Weekly amount</div>
-                                                <div>Yearly amount</div>
-                                                <div class="fw-bold ">Monthly Amount</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <span class="fw-bold h5">Weekly</span>
-                                        - If you are paid by the week, you may convert your income to monthly as
-                                        follows:
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="m-0 p-0"> Weekly amount</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>x</div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div>52 Weeks per year</div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div>=</div>
-                                            </div>
-                                            <div class="col-lg-5">
-                                                <div>Yearly amount</div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="row">
                                         <div class="col-lg-2">
                                             <div class="m-0 p-0">Yearly amount</div>
@@ -622,24 +633,37 @@
                     </div>
                 </section>
 
+
                 {{-- page 4 --}}
                 <section class="section_area py-5">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
+
+
+
+
                             <div class="row px-lg-5 px-2 py-2 pt-0">
+
+
+
+
+
                                 <div class=" justify-content-center d-flex d_sm_block">IN THE CIRCUIT COURT OF THE
                                     <input type="text" min="0" name="j_circuit"
-                                        class="border-0 footer_field border-bottom"> JUDICIAL CIRCUIT,</div>
+                                        class="border-0 footer_field border-bottom"> JUDICIAL CIRCUIT,
+                                </div>
                                 <div class=" justify-content-center m-0 p-0  d-flex d_sm_block">IN AND FOR
                                     <input type="text" min="0" name="country_f"
                                         class="border-0 m-0 p-0 footer_field border-bottom"> COUNTY, FLORIDA
                                 </div>
                                 <div class="d-flex d_sm_block justify-content-end mt-2">Case No.: <input
                                         type="text" min="0" name="case_no"
-                                        class="border-0 m-0 p-0 footer_field border-bottom"></div>
+                                        class="border-0 m-0 p-0 footer_field border-bottom">
+                                </div>
                                 <div class="d-flex d_sm_block justify-content-end">Division: <input type="text"
                                         min="0" name="division"
-                                        class="border-0 m-0 p-0  footer_field border-bottom"></div>
+                                        class="border-0 m-0 p-0  footer_field border-bottom">
+                                </div>
                                 <div class="d-flex d_sm_block  mt-2"><input type="text" min="0"
                                         name="petitioner" class="border-0 m-0 p-0 footer_field border-bottom">,
                                 </div>
@@ -660,277 +684,178 @@
                                     being sworn, certify that the following
                                 </div>
                                 <div>information is true:</div>
-
-
-                                <div class="border border-dark bg-secondary text-dark mb-4">SECTION I. INCOME</div>
-                                <div class="d-flex d_sm_block "><span class="me-2">1.</span> My age is:
-                                    <input type="text" min="0" name="m_age"
-                                        class="border-0  footer_field border-bottom">
+                                <div class="d-flex d_sm_block  "> My occupation is:
+                                    <input type="text" min="0" name="m_occupation"
+                                        class="border-0 footer_field border-bottom ">
+                                    Employed by:
+                                    <input type="text" min="0" name="m_occupation"
+                                        class="border-0 footer_field border-bottom ">
                                 </div>
 
-                                <div class="d-flex d_sm_block  "><span class="me-2">2.</span> My occupation is:
-                                    <input type="text" min="0" name="m_occupation"
-                                    style="width:805px"
-                                        class="border-0 footer_field border-bottom responsive_input">
+                                <div class="d-flex d_sm_block ">Pay rate: <div class="d-flex d_sm_block px-2 "> $
+                                        <input type="text" min="0" name="p_rate"
+                                            class="border-0 m-0 p-0 footer_field border-bottom">
+                                    </div> <input type="checkbox" name="everyweek" class=""> <span
+                                        class="px-2">every
+                                        week</span> <input type="checkbox" name="every_ow" class=""> <span
+                                        class="px-2">every other
+                                        week</span>
+                                    <input type="checkbox" name="t_month" class=""> <span class="px-2">twice
+                                        a week</span> <input type="checkbox" name="monthly" class=""> <span
+                                        class="px-2">monthly</span>
+                                </div>
+                                <div class="d-flex d_sm_block ">
+                                    <input type="checkbox" name="other_c" class=""> <span
+                                        class="ps-2">other:</span>
+                                    <input type="text" min="0" style="width: 875px;" name="other_val"
+                                        class="border-0 m-0 p-0 footer_field border-bottom responsive_input">
+                                </div>
+                                <div class="d-flex d_sm_block ">
+                                    <input type="checkbox" name="other_c" class=""> <span class="ps-2">Check
+                                        here if unemployed and explain on a separate sheet your efforts to find
+                                        employment.</span>
+                                </div>
+
+
+
+                                <div class="pt-4">
+                                    <div class="fw-bold">SECTION I. PRESENT MONTHLY GROSS INCOME:</div>
+                                    <div> <strong>All amounts must be MONTHLY. </strong> See the instructions with this
+                                        form
+                                        to figure out money amounts for anything that is NOT paid monthly. Attach more
+                                        paper, if needed. Items included under “other” should be listed separately with
+                                        separate dollar amounts.</div>
                                 </div>
                                 <div>
-                                    <div class="d-flex d_sm_block "><span class="me-2">3.</span> I am currently
-                                    </div>
-                                    <div class=" ms-3"> [Check all that apply] </div>
-                                    <div class=" ms-3 d-flex d_sm_block "> a. <span class="border-bottom ms-3 me-2">
-                                            <input type="checkbox" name="a_employed" class=" "> </span> Unemployed
-                                    </div>
-                                    <div class="ms-3">Describe your efforts to find employment, how soon you expect
-                                        to be employed, and the pay you expect to receive</div>
-                                    <div class="ms-3">
-                                        <input type="text" min="0" name="a_e_v1"
-                                            class="border-0 w-100 footer_field border-bottom">
-                                    </div>
-                                    <div class="ms-3">
-                                        <input type="text" min="0" name="a_e_v2"
-                                            class="border-0 w-100 footer_field border-bottom">
+
+                                    <div class="row mt-1">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
+                                            <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                    name="mgs_wages"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">Monthly gross salary or wages</div>
                                     </div>
 
-
-                                    <div class=" ms-3 d-flex d_sm_block "> b. <span class="border-bottom ms-3 me-2">
-                                            <input type="checkbox" name="b_employe" class=" "> </span>
-                                        <span>Employed by:</span> <input type="text" min="0"
-                                            name="b_e_val" class="border-0 w-75 footer_field border-bottom responsive_input" style="width:788px !important">
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">2.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mbca_payments"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">Monthly bonuses, commissions, allowances, overtime,
+                                            tips,
+                                            and
+                                            similar payments</div>
                                     </div>
 
-
-                                    <div class=" ms-3 d-flex d_sm_block "> <span>Address:</span>
-                                        <input type="text" min="0" name="b_address"
-                                            class="border-0 w-100 footer_field border-bottom">
-                                    </div>
-
-
-                                    <div class=" ms-3 d-flex d_sm_block "> <span>City, State, Zip code:</span>
-                                        <input type="text" min="0" name="c_s_z_c"
-                                            class="border-0  footer_field border-bottom responsive_input" style="width:410px; !important">
-                                        <span>Telephone Number:</span>
-                                        <input type="text" min="0" name="t_number"
-                                            class="border-0 w-25   footer_field border-bottom">
-                                    </div>
-                                    <div class="d-flex d_sm_block ms-lg-3">Pay rate: <div
-                                            class="d-flex d_sm_block px-2 "> $ <input type="text" min="0"
-                                                name="p_rate"
-                                                class="border-0 m-0 p-0 footer_field border-bottom"></div> <input
-                                            type="checkbox" name="everyweek" class=""> <span
-                                            class="px-2">every week</span> <input type="checkbox"
-                                            name="every_ow" class=""> <span class="px-2">every other
-                                            week</span>
-                                        <input type="checkbox" name="t_month" class=""> <span
-                                            class="px-2">twice a week</span> <input type="checkbox"
-                                            name="monthly" class=""> <span class="px-2">monthly</span>
-                                    </div>
-                                    <div class="d-flex d_sm_block ms-lg-3">
-                                        <input type="checkbox" name="other_c" class=""> <span
-                                            class="ps-2">other:</span>
-                                        <input type="text" min="0" style="width: 875px;" name="other_val"
-                                            class="border-0 m-0 p-0 footer_field border-bottom responsive_input">
-                                    </div>
-                                    <div class="d-flex d_sm_block ms-lg-3">
-                                        <div class="">If you are expecting to become unemployed or change jobs
-                                            soon, describe the change you expect and why and how it will affect your
-                                            income: <span> <input type="text" min="0" name="income_val1"
-                                                    class="border-0 m-0 p-0 footer_field border-bottom responsive_input " style="width: 840px;"></span>
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input
+                                                type="text" min="0" name="mbi_ssi"
+                                                class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
+                                        </div>
+                                        <div class="col-lg-10">Monthly business income from sources such as
+                                            self-employment,
+                                            partnerships, close
+                                            corporations, and/or independent contracts (gross receipts minus ordinary
+                                            and
+                                            necessary
+                                            expenses required to produce income) (Attach sheet itemizing such income and
+                                            expenses.)
                                         </div>
                                     </div>
-                                    <div class="ms-lg-3">
-                                        <input type="text" min="0" name="income_val2"
-                                        style="width: 940px "
-                                            class="border-0 m-0 p-0 footer_field  border-bottom responsive_input ">
-                                    </div>
-                                    <div class="ms-lg-3">
-                                        <input type="text" min="0" name="income_val3"
-                                            class="border-0 m-0 p-0 footer_field  border-bottom w-100">
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">4.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mdb_ssi"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">Monthly disability benefits/SSI</div>
                                     </div>
 
-                                    <div class="ms-lg-3"><span class="mx-3"> <input type="checkbox" name="income_chk"
-                                                id=""> </span> Check here if you currently have more than one
-                                        job. List the information above for the
-                                        second job(s) on a separate sheet and attach it to this affidavit.</div>
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mw_compensation"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">Monthly Workers’ Compensation</div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">6.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mu_compensation"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10"> Monthly Unemployment Compensation</div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">7.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mpra_payments"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">Monthly pension, retirement, or annuity payments</div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">8.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="mss_benefits"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10"> Monthly Social Security benefits</div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">9.</span>
+                                            <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                    name="maar"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10"> Monthly alimony actually received (Add 9a and 9b)</div>
+                                    </div>
+
+                                    <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From
+                                        this
+                                        case: <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                                min="0" name="maar_a"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From
+                                        other
+                                        case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                                min="0" name="maar_b"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+
                                 </div>
+
+
+
+                                @include('layouts.footer12', ['page' => 4])
                             </div>
-                            @include('layouts.footer12', ['page' => 4])
                         </div>
-                    </div>
                 </section>
 
                 {{-- page 5 --}}
                 <section class="section_area py-5">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class=" ms-3 d-flex d_sm_block "> c. <span class="border-bottom ms-3 me-2">
-                                        <input type="checkbox" name="c_check" class=" "> </span> <span>Retired.
-                                        Date of retirement</span> <input type="text" min="0"
-                                        style="    width: 700px !important;"
-                                        name="c_retirement" class="border-0 responsive_input  footer_field border-bottom">
-                                </div>
-
-                                <div class=" ms-3 d-flex d_sm_block "> <span>Employer from whom retired:</span>
-                                    <input type="text" min="0" name="c_retired"
-                                    style="width: 725px !important;"
-                                        class="border-0  responsive_input footer_field border-bottom">
-                                </div>
-                                <div class=" ms-3 d-flex d_sm_block "> <span>Address:</span>
-                                    <input type="text" min="0" name="c_address"
-                                    style="    width: 880px !important;"
-                                        class="border-0 responsive_input  footer_field border-bottom">
-                                </div>
-                                <div class=" ms-3 d-flex d_sm_block "> <span>City, State, Zip code:</span>
-                                    <input type="text" min="0" name="c_cszc"
-                                        class="border-0 w-25 footer_field border-bottom">
-                                    <span>Telephone Number:</span>
-                                    <input type="text" min="0" name="c_tn"
-                                    style="    width: 410px !important;"
-                                        class="border-0 responsive_input   footer_field border-bottom">
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="fw-bold text-center"> LAST YEAR’S GROSS INCOME: </div>
-                                    <div class="d-flex d_sm_block justify-content-center"> <span>YEAR</span><input
-                                            type="text" class="border-bottom border-0 footer_field w-25 " name="gi_year"></div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="fw-bold text-center">Your Income </div>
-                                    <div class="d-flex d_sm_block justify-content-center">
-                                        <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25" name="your_income">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="fw-bold text-center"> Other Party’s Income (if known) </div>
-                                    <div class="d-flex d_sm_block justify-content-center">
-                                        <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25 " name="op_income">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="pt-4">
-                                <div class="fw-bold">PRESENT MONTHLY GROSS INCOME:</div>
-                                <div> <strong>All amounts must be MONTHLY. </strong> See the instructions with this form
-                                    to figure out money amounts for anything that is NOT paid monthly. Attach more
-                                    paper, if needed. Items included under “other” should be listed separately with
-                                    separate dollar amounts.</div>
-                            </div>
                             <div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="mgs_wages"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly gross salary or wages</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">2.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mbca_payments"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly bonuses, commissions, allowances, overtime, tips,
-                                        and
-                                        similar payments</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input
-                                            type="text" min="0" name="mbi_ssi"
-                                            class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly business income from sources such as
-                                        self-employment,
-                                        partnerships, close
-                                        corporations, and/or independent contracts (gross receipts minus ordinary and
-                                        necessary
-                                        expenses required to produce income) (Attach sheet itemizing such income and
-                                        expenses.)
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">4.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mdb_ssi"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly disability benefits/SSI</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mw_compensation"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly Workers’ Compensation</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">6.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mu_compensation"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> Monthly Unemployment Compensation</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">7.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mpra_payments"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly pension, retirement, or annuity payments</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">8.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mss_benefits"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> Monthly Social Security benefits</div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">9.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="maar"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> Monthly alimony actually received (Add 9a and 9b)</div>
-                                </div>
-
-                                <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From this
-                                    case: <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="maar_a"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From other
-                                    case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
-                                            min="0" name="maar_b"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
 
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">10.</span>
@@ -1044,15 +969,14 @@
                                         filing status and allowable
                                         dependents and income tax liabilities)</div>
                                 </div>
-                                <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3"> a.</span>Filing
+                                <div class="mt-2 ps-5 d-flex d_sm_block"><span class="me-3"> a.</span>Filing
                                     Status
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="mfs_18_a"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            name="mfs_18_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
-                                <div class="ms-5  ps-5 d-flex d_sm_block">
+                                <div class="  ps-5 d-flex d_sm_block">
                                     <span class="me-3"> b.</span>
                                     Number of dependents claimed:
                                     <div class="d-flex d_sm_block ms-1 ">
@@ -1069,18 +993,6 @@
                                     </div>
                                     <div class="col-lg-10">Monthly FICA or self-employment taxes</div>
                                 </div>
-                            </div>
-                            @include('layouts.footer12', ['page' => 5])
-
-                        </div>
-                    </div>
-                </section>
-
-                {{-- page 6 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">20.</span>
                                         <input type="text" min="0" name="mmp_20"
@@ -1138,14 +1050,16 @@
                                     <div class="col-lg-10">Monthly court-ordered alimony actually paid (Add 25a and
                                         25b)</div>
                                 </div>
-                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this case:
+                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this
+                                    case:
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
                                             name="mcoa_25_a"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
                                     </div>
                                 </div>
 
-                                <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From other
+                                <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From
+                                    other
                                     case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
                                             min="0" name="mcoa_25_b"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
@@ -1154,9 +1068,10 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">26.</span>
-                                        <input type="text" min="0" name="tda_26"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="tpm_17"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
                                     </div>
                                     <div class="col-lg-10 fw-bold">TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30,
                                         FLORIDA STATUTES
@@ -1167,562 +1082,301 @@
                                         <div class="col-lg-10  ">
                                             <div>(Add lines 18 through 25.)</div>
                                         </div>
-                                        <div class="row mt-1">
+                                        <div class="row mt-1" style="padding-bottom: 250px">
                                             <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">27.</span>
-                                                <input type="text" min="0" name="pnmi_27"
-                                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
-
-                                            </div>
-                                            <div class="col-lg-10 fw-bold">PRESENT NET MONTHLY INCOME
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"> </div>
-                                                <div class="col-lg-10  ">
-                                                    <div>(Subtract line 26 from line 17.)</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="border border-dark bg-secondary text-dark my-4">SECTION II.
-                                                AVERAGE MONTHLY EXPENSES</div>
-                                            <div><strong>Proposed/Estimated Expenses.</strong> If this is a dissolution
-                                                of marriage case and your expenses as listed below do not reflect what
-                                                you actually pay currently, you should write “estimate” next to each
-                                                amount that is estimated.</div>
-                                            <div class="fw-bold pt-3">HOUSEHOLD:</div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="s2_h1"
-                                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-10">Monthly mortgage or rent payments</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">2.</span>
-                                                    <input type="text" min="0" name="s2_h2"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly property taxes (if not included in
-                                                    mortgage)</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span>
-                                                    <input type="text" min="0" name="s2_h3"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly insurance on residence (if not included
-                                                    in mortgage)</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">4.</span>
-                                                    <input type="text" min="0" name="s2_h4"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly condominium maintenance fees and
-                                                    homeowner’s association fees</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
-                                                    <input type="text" min="0" name="s2_h5"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly electricity</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">6.</span>
-                                                    <input type="text" min="0" name="s2_h6"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly water, garbage, and sewer</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">7.</span>
-                                                    <input type="text" min="0" name="s2_h7"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly telephone</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">8.</span>
-                                                    <input type="text" min="0" name="s2_h8"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly fuel oil or natural gas</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">9.</span>
-                                                    <input type="text" min="0" name="s2_h9"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly repairs and maintenance</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">10.</span>
-                                                    <input type="text" min="0" name="s2_h10"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly lawn care</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">11.</span>
-                                                    <input type="text" min="0" name="s2_h11"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly pool maintenance</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">12.</span>
-                                                    <input type="text" min="0" name="s2_h12"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly pest control</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">13.</span>
-                                                    <input type="text" min="0" name="s2_h13"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly misc. household</div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">14.</span>
-                                                    <input type="text" min="0" name="s2_h14"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10">Monthly food and home supplies</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">15.</span>
-                                                    <input type="text" min="0" name="s2_h15"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly meals outside home</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">16.</span>
-                                                    <input type="text" min="0" name="s2_h16"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly cable t.v.</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">17.</span>
-                                                    <input type="text" min="0" name="s2_h17"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly alarm service contract</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">18.</span>
-                                                    <input type="text" min="0" name="s2_h18"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly alarm service contract</div>
-                                            </div>
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">19.</span>
-                                                    <input type="text" min="0" name="s2_h19"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                                <div class="col-lg-10"> Monthly maid service</div>
-                                            </div>
-                                            <div>Other:</div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-12 d-flex d_sm_block"><span
-                                                        class="me-3">20.</span>
-                                                    <input type="text" min="0" name="s2_h20"
+                                                <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                        name="tpm_17"
                                                         class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                             </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-12 d-flex d_sm_block"><span
-                                                        class="me-3">21.</span>
-                                                    <input type="text" min="0" name="s2_h21"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
+                                            <div class="col-lg-10 fw-bold">PRESENT NET MONTHLY INCOME <span
+                                                    class="fw-normal">(Subtract line 26 from line 17.)</span>
                                             </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-12 d-flex d_sm_block"><span
-                                                        class="me-3">22.</span>
-                                                    <input type="text" min="0" name="s2_h22"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-12 d-flex d_sm_block"><span
-                                                        class="me-3">23.</span>
-                                                    <input type="text" min="0" name="s2_h23"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-12 d-flex d_sm_block"><span
-                                                        class="me-3">24.</span>
-                                                    <input type="text" min="0" name="s2_h24"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                </div>
-                                            </div>
-
-                                            <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">25.</span>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="s2_h25"
-                                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-10"><b>SUBTOTAL</b> (Add lines 1 through 24.)</div>
-                                            </div>
-
                                         </div>
-                                        @include('layouts.footer12', ['page' => 6])
-
                                     </div>
+                                    @include('layouts.footer12', ['page' => 5])
+
                                 </div>
+                            </div>
                 </section>
 
-                {{-- page 7 --}}
+                {{-- page 6 --}}
                 <section class="section_area py-5">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
 
 
-                                <div class="fw-bold pt-3">AUTOMOBILE:</div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">26.</span>
-                                        <div class="d-flex s2_a26 ">$<input type="text" min="0"
-                                                name="t_u_m_service"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <div class="border border-dark bg-secondary text-dark my-4">SECTION II.
+                                    AVERAGE MONTHLY EXPENSES</div>
+                                <div><strong>Proposed/Estimated Expenses.</strong> If this is a dissolution
+                                    of marriage case and your expenses as listed below do not reflect what
+                                    you actually pay currently, you should write “estimate” next to each
+                                    amount that is estimated.</div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="fw-bold pt-3"><span class="me-2">A.</span>HOUSEHOLD:</div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="fw-bold pt-3"><span class="me-2">O.</span>OTHER EXPENSES NOT
+                                            LISTED ABOVE</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4 ">Mortgage or rent</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"> Monthly gasoline and oil</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">27.</span>
-                                        <input type="text" min="0" name="s2_a27"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly repairs</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">28.</span>
-                                        <input type="text" min="0" name="s2_a28"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly auto tags and emission testing</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">29.</span>
-                                        <input type="text" min="0" name="s2_a29"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10"> Monthly insurance</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">30.</span>
-                                        <input type="text" min="0" name="s2_a30"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly payments (lease or financing)</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">31.</span>
-                                        <input type="text" min="0" name="s2_a31"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly rental/replacements</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">32.</span>
-                                        <input type="text" min="0" name="s2_a32"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly alternative transportation (bus, rail, car pool,
-                                        etc.)</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">33.</span>
-                                        <input type="text" min="0" name="s2_a33"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly tolls and parking</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">34.</span>
-                                        <input type="text" min="0" name="s2_a34"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-9 d-flex d_sm_block ">
-                                        <div class="">Other:</div>
-                                        <input type="text" min="0" name="t_u_m_service"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">35.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_a35"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                    <div class="col-lg-4">Clothing</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"><b> SUBTOTAL</b> (Add lines 26 through 34.)</div>
                                 </div>
-
-
-                                <div class="pt-3 fw-bold">MONTHLY EXPENSES FOR CHILDREN COMMON TO BOTH PARTIES:</div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">36.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_m36"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <div class="row">
+                                    <div class="col-lg-4">Property taxes</div>
+                                    <div class="col-lg-2 justify-content-end">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10">Monthly nursery, babysitting, or day care</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">37.</span>
-                                        <input type="text" min="0" name="s2_m37"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly school tuition</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">38.</span>
-                                        <input type="text" min="0" name="s2_m38"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly school supplies, books, and fees</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">39.</span>
-                                        <input type="text" min="0" name="s2_m39"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly after school activities</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">40.</span>
-                                        <input type="text" min="0" name="s2_m40"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly lunch money</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">41.</span>
-                                        <input type="text" min="0" name="s2_m41"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly private lessons or tutoring</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">42.</span>
-                                        <input type="text" min="0" name="s2_m42"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly allowances</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">43.</span>
-                                        <input type="text" min="0" name="s2_m43"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10"> Monthly clothing and uniforms</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">44.</span>
-                                        <input type="text" min="0" name="s2_m44"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly entertainment (movies, parties, etc.)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">45.</span>
-                                        <input type="text" min="0" name="s2_m45"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly health insurance</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">46.</span>
-                                        <input type="text" min="0" name="s2_m46"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly medical, dental, prescriptions (nonreimbursed only)
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">47.</span>
-                                        <input type="text" min="0" name="s2_m47"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly psychiatric/psychological/counselor</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">48.</span>
-                                        <input type="text" min="0" name="s2_m48"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly orthodontic</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">49.</span>
-                                        <input type="text" min="0" name="s2_m49"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly vitamins</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">50.</span>
-                                        <input type="text" min="0" name="s2_m50"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly beauty parlor/barber shop</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">51.</span>
-                                        <input type="text" min="0" name="s2_m51"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly nonprescription medication</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">52.</span>
-                                        <input type="text" min="0" name="s2_m52"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly cosmetics, toiletries, and sundries</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">53.</span>
-                                        <input type="text" min="0" name="s2_m53"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly gifts from child(ren) to others (other children,
-                                        relatives, teachers, etc.)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">54.</span>
-                                        <input type="text" min="0" name="s2_m54"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly camp or summer activities</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">55.</span>
-                                        <input type="text" min="0" name="s2_m55"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly clubs (Boy/Girl Scouts, etc.)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">56.</span>
-                                        <input type="text" min="0" name="s2_m56"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly time-sharing expenses</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">57.</span>
-                                        <input type="text" min="0" name="s2_m57"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly miscellaneous</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">58 .</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_m58"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                    <div class="col-lg-4">Medical/Dental (uninsured)</div>
+                                    <div class="col-lg-2 justify-content-end">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"><b> SUBTOTAL</b> (Add lines 36 through 57.)</div>
-                                </div>
-                                <div class="fw-bold ">MONTHLY EXPENSES FOR CHILD(REN) FROM ANOTHER RELATIONSHIP</div>
-                                <div>(other than court-ordered child support)</div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">59.</span>
-                                        $<input type="text" min="0" name="s2_mo59"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
                                 </div>
 
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">60.</span>
-                                        <input type="text" min="0" name="s2_mo60"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">61.</span>
-                                        <input type="text" min="0" name="s2_mo61"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">62.</span>
-                                        <input type="text" min="0" name="s2_mo62"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">63.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mo63"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <div class="row">
+                                    <div class="col-lg-4">Utilitiest</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"><b>SUBTOTAL</b> (Add lines 59 through 62.)</div>
+                                    <div class="col-lg-4">Grooming</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-lg-4">Telephone</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">Entertainment</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">Food</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">Gifts</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">Meals outside home</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">Religious organizations</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">Maintenance/Repairs</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">Miscellaneous</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">Other:<input type="text" min="0" name="tpm_17"
+                                            style="width:100px" class="border-0 p-0 m-0 border-bottom footer_field ">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">Other:<input type="text" min="0" name="tpm_17"
+                                            style="width:175px" class="border-0 p-0 m-0 border-bottom footer_field ">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                    </div>
+                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                            class="border-0 p-0 m-0 border-bottom footer_field w-75">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="fw-bold pt-3"><span class="me-2">B.</span>AUTOMOBILE:</div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row  pt-3">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="tpm_17" class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+
+                                            <div class="col-lg-4 d-flex">
+                                                $<input type="text" min="0" name="tpm_17"
+                                                    {{-- style="width:10px" --}}
+                                                    class="border-0 p-0 m-0 border-bottom footer_field w-75">
+                                                {{-- </div> --}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-4 ">Gasoline</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                            class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 ">Repairs</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                            class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 ">Insurance</div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                            class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                                style="width:100px"
+                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col-lg-5 ">Insurance</div>
+                                            <div class="col-lg-2 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="tpm_17" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6"></div>
+                                </div>
+
 
                             </div>
-                            @include('layouts.footer12', ['page' => 7])
+                            @include('layouts.footer12', ['page' => 6])
 
                         </div>
                     </div>
@@ -1730,325 +1384,7 @@
 
 
 
-                {{-- page 8 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
 
-
-                                <div class="fw-bold pt-3">MONTHLY INSURANCE:</div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">64.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mi64"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> Health insurance (if not listed on lines 23 or 45)</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">65.</span>
-                                        <input type="text" min="0" name="s2_mi65"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Life insurance</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">66.</span>
-                                        <input type="text" min="0" name="s2_mi66"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Dental insurance.</div>
-                                </div>
-                                <div class="ps-5">Other:</div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">67.</span>
-                                        <input type="text" min="0" name="s2_mi67 "
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">68.</span>
-                                        <input type="text" min="0" name="s2_mi68 "
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">69.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mi69"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> SUBTOTAL (Add lines 66 through 68, exclude lines 64 and
-                                        65.)</div>
-                                </div>
-                                <div class="fw-bold">OTHER MONTHLY EXPENSES NOT LISTED ABOVE:</div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">70.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_om70"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"> Monthly dry cleaning and laundry</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">71.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_om71"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10">Monthly clothing</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">72.</span>
-                                        <input type="text" min="0" name="s2_om72"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10"> Monthly medical, dental, and prescription (unreimbursed
-                                        only)</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">73.</span>
-                                        <input type="text" min="0" name="s2_om73"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly psychiatric, psychological, or counselor
-                                        (unreimbursed only)</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">74.</span>
-                                        <input type="text" min="0" name="s2_om74"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly non-prescription medications, cosmetics,
-                                        toiletries, and sundries</div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">75.</span>
-                                        <input type="text" min="0" name="s2_om75"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly grooming</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">76.</span>
-                                        <input type="text" min="0" name="s2_om76"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly gifts</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">77.</span>
-                                        <input type="text" min="0" name="s2_om77"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly pet expenses</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">78.</span>
-                                        <input type="text" min="0" name="s2_om78"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly club dues and membership</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">79.</span>
-                                        <input type="text" min="0" name="s2_om79"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly sports and hobbies</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">80.</span>
-                                        <input type="text" min="0" name="s2_om80"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly entertainment</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">81.</span>
-                                        <input type="text" min="0" name="s2_om81"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly periodicals/books/tapes/CDs</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">82.</span>
-                                        <input type="text" min="0" name="s2_om82"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly vacations</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">83.</span>
-                                        <input type="text" min="0" name="s2_om83"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly religious organizations</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">84.</span>
-                                        <input type="text" min="0" name="s2_om84"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly bank charges/credit card fees</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">85.</span>
-                                        <input type="text" min="0" name="s2_om85"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Monthly education expenses</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">86.</span>
-                                        <input type="text" min="0" name="s2_om86_1"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                    <div class="col-lg-10">Other: (include any usual and customary expenses not
-                                        otherwise mentioned in the items </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3"> </span>
-                                    </div>
-                                    <div class="col-lg-10">listed above) <span> <input type="text"
-                                                min="0" name="s2_om86_2" style="width: 772px !important;"
-                                                class="border-0 p-0 m-0 responsive_input border-bottom footer_field "></span>
-                                    </div>
-                                </div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">87.</span>
-                                        <input type="text" min="0" name="s2_om87"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">88.</span>
-                                        <input type="text" min="0" name="s2_om88"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">89.</span>
-                                        <input type="text" min="0" name="s2_om89"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">90.</span>
-                                        <div class="d-flex   ">$<input type="text" min="0"
-                                                name="s2_om90"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>SUBTOTAL</b> (Add lines 70 through 89.)</div>
-                                </div>
-                                <div><b>MONTHLY PAYMENTS TO CREDITORS: </b> (only when payments are currently made by
-                                    you on outstanding
-                                    balances). List only last 4 digits of account numbers.</div>
-                                <div class="fw-normal">MONTHLY PAYMENT AND NAME OF CREDITOR(s):</div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">91.</span>
-                                        <div class="d-flex w-100">$ <input type="text" min="0"
-                                                name="s2_mp91"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">92.</span>
-                                        <input type="text" min="0" name="s2_mp92"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">93.</span>
-                                        <input type="text" min="0" name="s2_mp93"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">94.</span>
-                                        <input type="text" min="0" name="s2_mp94"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">95.</span>
-                                        <input type="text" min="0" name="s2_mp95"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">96.</span>
-                                        <input type="text" min="0" name="s2_mp96"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">97.</span>
-                                        <input type="text" min="0" name="s2_mp97"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">98.</span>
-                                        <input type="text" min="0" name="s2_mp98"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">99.</span>
-                                        <input type="text" min="0" name="s2_mp99"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">100.</span>
-                                        <input type="text" min="0" name="s2_mp100"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">101.</span>
-                                        <input type="text" min="0" name="s2_mp101"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-                                @include('layouts.footer12', ['page' => 8])
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
 
 
 
@@ -2057,83 +1393,7 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">102.</span>
-                                        <input type="text" min="0" name="s2_mp102"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-12 d-flex d_sm_block"><span class="me-3">103.</span>
-                                        <input type="text" min="0" name="s2_mp103"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                    </div>
-                                </div>
 
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">104.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp104"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>SUBTOTAL</b> (Add lines 91 through 103.)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">105.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp105"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES:</b> (Add lines 91 through 103.)
-                                    </div>
-                                </div>
-
-                                <div class="pt-4">SUMMARY</div>
-
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">106.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp106"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>TOTAL PRESENT MONTHLY NET INCOME</b> (from line 27 of
-                                        SECTION I. INCOME)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">107.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp107"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES </b> (from line 105 above)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">108.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp108"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>SURPLUS </b> (If line 106 is more than line 107,
-                                        subtract line 107 from line 106. This is the amount of your surplus. Enter that
-                                        amount here.)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">109.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="s2_mp109"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>(DEFICIT) </b> (If line 107 is more than line 106,
-                                        subtract line 106 from line 107. This is
-                                        the amount of your deficit. Enter that amount here.)</div>
-                                </div>
                                 <div class="border border-dark bg-secondary text-dark my-4">SECTION III. ASSETS AND
                                     LIABILITIES</div>
                                 <div class="fw-bold"><span class="me-4">A.</span> ASSETS (This is where you list
@@ -2351,7 +1611,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk12"></td>
                                                 <td class="d-flex">Real estate: (Home) <input type="text"
-                                                    class="border-0 w-75" name="a_val11"></span></td>
+                                                        class="border-0 w-75" name="a_val11"></span></td>
                                                 <td> <input type="text" min="0" name="b_val12"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p12"></td>
@@ -2360,8 +1620,8 @@
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk13"></td>
-                                                <td>(Other) <input type="text"
-                                                    class="border-0 w-75" name="a_val12"></span></td>
+                                                <td>(Other) <input type="text" class="border-0 w-75"
+                                                        name="a_val12"></span></td>
                                                 <td> <input type="text" min="0" name="b_val13"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p13"></td>
@@ -2609,13 +1869,15 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk31" class="m-1"></td>
                                                 <td>
-                                                    <div >Other vehicles<span><input type="text"
+                                                    <div>Other vehicles<span><input type="text"
                                                                 class="border-0 w-50" name="a_val30"></span></div>
                                                 </td>
                                                 <td><input type="text" min="0" name="b_val31"
                                                         class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 " style="margin-right: 75px !important"></td>
-                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 " style="margin-right: 85px !important"></td>
+                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 "
+                                                        style="margin-right: 75px !important"></td>
+                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 "
+                                                        style="margin-right: 85px !important"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk32"></td>
@@ -2717,8 +1979,8 @@
                                                 <td><input type="checkbox" name="a_chk39"></td>
                                                 <td>
                                                     <div>Furniture & furnishings elsewhere <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val38"></span></div>
+                                                                class="border-0  text-center" name="a_val38"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val39"
                                                         class="border-0 text-center "> </td>
@@ -2743,8 +2005,8 @@
                                                 <td><input type="checkbox" name="a_chk41"></td>
                                                 <td>
                                                     <div>Collectibles <span><input type="text"
-                                                                class="border-0 text-center"
-                                                                name="a_val40"></span></div>
+                                                                class="border-0 text-center" name="a_val40"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val41"
                                                         class="border-0 text-center w-100"> </td>
@@ -2768,8 +2030,8 @@
                                                 <td><input type="checkbox" name="a_chk43"></td>
                                                 <td>
                                                     <div>Jewelry <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val42"></span></div>
+                                                                class="border-0  text-center" name="a_val42"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val43"
                                                         class="border-0 text-center w-100"> </td>
@@ -2828,10 +2090,9 @@
                                                 <td><input type="checkbox" name="a_chk48"></td>
                                                 <td>
                                                     <div>Sporting and entertainment (T.V., stereo, etc.)
-                                                        equipment <span><input type="text"
-                                                            style="width:20px"
-                                                                class="border-0 text-center"
-                                                                name="a_val47"></span></div>
+                                                        equipment <span><input type="text" style="width:20px"
+                                                                class="border-0 text-center" name="a_val47"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val48"
                                                         class="border-0 text-center w-100"> </td>
@@ -2890,8 +2151,8 @@
                                                 <td><input type="checkbox" name="a_chk53"></td>
                                                 <td>
                                                     <div>Other assets: <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val52"></span></div>
+                                                                class="border-0  text-center" name="a_val52"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b-val53"
                                                         class="border-0 text-center w-100"> </td>
@@ -3323,7 +2584,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk20"></td>
                                                 <td> <input type="text" min="0" name="l_a20"
-                                                    class="border-0 text-center w-100"> </td>
+                                                        class="border-0 text-center w-100"> </td>
                                                 <td> <input type="text" min="0" name="l_b20"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p20"></td>
@@ -3536,7 +2797,8 @@
                                             <tr>
                                                 <td><input type="checkbox" name="d_a_chk1"></td>
                                                 <td> <span><input type="text" class="border-0 w-100"
-                                                            name="d_a1"> </td>
+                                                            name="d_a1">
+                                                </td>
                                                 <td>
                                                     <div class="d-flex d_sm_block ">$<input type="text"
                                                             min="0" name="d_b1"
@@ -3589,7 +2851,8 @@
                                                 <td colspan="2">Total Contingent Assets</td>
                                                 <td>
                                                     <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_assets" class="border-0 text-center w-100">
+                                                            name="d_total_assets"
+                                                            class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -3627,7 +2890,8 @@
                                             <tr>
                                                 <td><input type="checkbox" name="dl_a_chk1"></td>
                                                 <td> <span><input type="text" class="border-0 w-100"
-                                                            name="dl_a1"> </td>
+                                                            name="dl_a1">
+                                                </td>
                                                 <td>
                                                     <div class="d-flex d_sm_block ">$<input type="text"
                                                             min="0" name="dl_b1"
@@ -3680,7 +2944,8 @@
                                                 <td colspan="2">Total Contingent Liabilities </td>
                                                 <td>
                                                     <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_liabilities" class="border-0 text-center w-100">
+                                                            name="d_total_liabilities"
+                                                            class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -3712,58 +2977,123 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-                            <div class="">[Check one only]</div>
-                            <div class=""><input type="checkbox" name="acs1" id=""> <b>A Child Support Guidelines Worksheet IS or WILL BE filed in this case.</b> This case involves the
-                                establishment or modification of child support.</div>
+                                <div class="">[Check one only]</div>
+                                <div class=""><input type="checkbox" name="acs1" id=""> <b>A
+                                        Child Support Guidelines Worksheet IS or WILL BE filed in this case.</b> This
+                                    case involves the
+                                    establishment or modification of child support.</div>
 
-                            <div class=""><input type="checkbox" name="acs2" id=""> <b>A Child Support Guidelines Worksheet IS NOT being filed in this case.</b> The establishment or modification of child support is not an issue in this case.</div>
+                                <div class=""><input type="checkbox" name="acs2" id=""> <b>A
+                                        Child Support Guidelines Worksheet IS NOT being filed in this case.</b> The
+                                    establishment or modification of child support is not an issue in this case.</div>
 
-                            <div class="fw-bold">I certify that a copy of this financial affidavit was [check all used]: <span>(<input type="checkbox"  name="emailed">)</span> e-mailed <span>(<input type="checkbox"  name="mailed">)</span> mailed <span>(<input type="checkbox"  name="faxed">)</span>faxed  <span>(<input type="checkbox"  name="hand_d">)</span> hand delivered to the person(s) listed below on {date}  <span><input type="text" name="bo_date" class="border-0 border-bottom footer_field" id=""></span> <span class="">.</span> </div>
-                             </div>
-
-
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="col-lg-6 ">
-                                    <div class="fw-bold">Other party or his/her attorney:</div>
-                                    <div class="">Name: <span><input type="text" name="name1" id="" class="border-0 border-bottom footer_field" style="width:288px !important"></span></div>
-                                    <div class="">Address: <span><input type="text" name="address1" id="" class="border-0 border-bottom footer_field" style="width:270px !important"></span></div>
-                                    <div class="">City, State, Zip: <span><input type="text" name="csz1" id="" class="border-0 border-bottom footer_field" style="width:220px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text" name="number1" id="" class="border-0 border-bottom footer_field"></span></div>
-                                    <div class="">Fax Number: <span><input type="text" name="fax_numbe1" id="" class="border-0 border-bottom footer_field" style="width:240px !important"></span></div>
-                                    <div class="">E-mail Address(es): <span><input type="text" name="em_address1" id="" class="border-0 border-bottom footer_field"></span></div>
+                                <div class="fw-bold">I certify that a copy of this financial affidavit was [check all
+                                    used]: <span>(<input type="checkbox" name="emailed">)</span> e-mailed
+                                    <span>(<input type="checkbox" name="mailed">)</span> mailed <span>(<input
+                                            type="checkbox" name="faxed">)</span>faxed <span>(<input
+                                            type="checkbox" name="hand_d">)</span> hand delivered to the person(s)
+                                    listed below on {date} <span><input type="text" name="bo_date"
+                                            class="border-0 border-bottom footer_field" id=""></span> <span
+                                        class="">.</span>
                                 </div>
-
-                                <div class="py-5 fw-bold">Under penalties of perjury, I declare that I have read this document and the facts stated in it are true.</div>
                             </div>
 
 
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class="col-lg-6 ">
-                                     <div class="">Dated: <span><input type="text" name="dated" id="" class="border-0 border-bottom footer_field  responsive_input" style="width:334px  !important"></span></div>
+                                    <div class="fw-bold">Other party or his/her attorney:</div>
+                                    <div class="">Name: <span><input type="text" name="name1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:288px !important"></span></div>
+                                    <div class="">Address: <span><input type="text" name="address1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:270px !important"></span></div>
+                                    <div class="">City, State, Zip: <span><input type="text"
+                                                name="csz1" id=""
+                                                class="border-0 border-bottom footer_field"
+                                                style="width:220px !important"></span></div>
+                                    <div class="">Telephone Number: <span><input type="text"
+                                                name="number1" id=""
+                                                class="border-0 border-bottom footer_field"></span></div>
+                                    <div class="">Fax Number: <span><input type="text" name="fax_numbe1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:240px !important"></span></div>
+                                    <div class="">E-mail Address(es): <span><input type="text"
+                                                name="em_address1" id=""
+                                                class="border-0 border-bottom footer_field"></span></div>
+                                </div>
+
+                                <div class="py-5 fw-bold">Under penalties of perjury, I declare that I have read this
+                                    document and the facts stated in it are true.</div>
+                            </div>
+
+
+                            <div class="row px-lg-5 px-2 py-2 pt-0">
+                                <div class="col-lg-6 ">
+                                    <div class="">Dated: <span><input type="text" name="dated"
+                                                id=""
+                                                class="border-0 border-bottom footer_field  responsive_input"
+                                                style="width:334px  !important"></span></div>
                                 </div>
                                 <div class="col-lg-6">
-                                     <div class="">
-                                        <input type="text" name="sign_oparty" id="" class="border-0 border-bottom footer_field responsive_input" style="width:440px  !important">
+                                    <div class="">
+                                        <input type="text" name="sign_oparty" id=""
+                                            class="border-0 border-bottom footer_field responsive_input"
+                                            style="width:440px  !important">
                                         <div class="">Signature of Party</div>
                                     </div>
-                                    <div class="">Printed Name: <span><input type="text" name="printed_name" id="" class="border-0 border-bottom footer_field responsive_input" style="width:335px !important"></span></div>
-                                    <div class="">Address: <span><input type="text" name="" id="address2" class="border-0 border-bottom footer_field responsive_input" style="width:375px !important"></span></div>
-                                    <div class="">City, State, Zip: <span><input type="text" name="csz2" id="" class="border-0 border-bottom footer_field responsive_input" style="width:325px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text" name="number2" id="" class="border-0 border-bottom footer_field responsive_input" style="width: 295px !important;" ></span></div>
-                                    <div class="">Fax Number: <span><input type="text" name="" id="fax_number2" class="border-0 border-bottom footer_field responsive_input" style="width:345px !important"></span></div>
-                                    <div class="">E-mail Address(es): <span><input type="text" name="" id="em_address2" class="border-0 border-bottom footer_field responsive_input" style="width: 300px !important;"></span></div>
+                                    <div class="">Printed Name: <span><input type="text"
+                                                name="printed_name" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:335px !important"></span></div>
+                                    <div class="">Address: <span><input type="text" name=""
+                                                id="address2"
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:375px !important"></span></div>
+                                    <div class="">City, State, Zip: <span><input type="text"
+                                                name="csz2" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:325px !important"></span></div>
+                                    <div class="">Telephone Number: <span><input type="text"
+                                                name="number2" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width: 295px !important;"></span></div>
+                                    <div class="">Fax Number: <span><input type="text" name=""
+                                                id="fax_number2"
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:345px !important"></span></div>
+                                    <div class="">E-mail Address(es): <span><input type="text"
+                                                name="" id="em_address2"
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width: 300px !important;"></span></div>
                                 </div>
-                                    <div class="py-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST FILL IN THE BLANKS BELOW:</div>
+                                <div class="py-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST
+                                    FILL IN THE BLANKS BELOW:</div>
 
 
-                                    <div>[fill in all blanks] This form was prepared for the: {choose only one} <span> (<input type="checkbox"  name="coo_p">) </span> Petitioner <span> (<input type="checkbox"  name="coo_r">) </span> Respondent <span>This form was completed with the assistance of: </div>
-                                        <div>{name of individual} <span>  <input type="text" class="border-0 border-bottom footer_field  responsive_input" style="width: 780px;" name="no_individual">  </span> </div>
-                                        <div>{name of business} <span >  <input type="text" class="border-0 border-bottom footer_field  responsive_input " name="no_business" style="width: 790px !important">  </span> </div>
-                                        <div>{address} <span>  <input type="text" class="border-0 border-bottom footer_field w-75 responsive_input" name="nl_address" style="width: 860px !important">  </span> </div>
-                                        <div>{city} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_city">  </span> {state} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_state">  </span> {telephone number} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_tnumber"  style="width: 290px !important">  </span>  </div>
-                                 </div>
-                             <div style="padding-bottom:300px;"></div>
-                             @include('layouts.footer12', ['page' => 15])
+                                <div>[fill in all blanks] This form was prepared for the: {choose only one} <span>
+                                        (<input type="checkbox" name="coo_p">) </span> Petitioner <span> (<input
+                                            type="checkbox" name="coo_r">) </span> Respondent <span>This form was
+                                        completed with the assistance of: </div>
+                                <div>{name of individual} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field  responsive_input"
+                                            style="width: 780px;" name="no_individual"> </span> </div>
+                                <div>{name of business} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field  responsive_input "
+                                            name="no_business" style="width: 790px !important"> </span> </div>
+                                <div>{address} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field w-75 responsive_input"
+                                            name="nl_address" style="width: 860px !important"> </span> </div>
+                                <div>{city} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_city"> </span>
+                                    {state} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_state"> </span>
+                                    {telephone number} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_tnumber"
+                                            style="width: 290px !important"> </span> </div>
+                            </div>
+                            <div style="padding-bottom:300px;"></div>
+                            @include('layouts.footer12', ['page' => 15])
                         </div>
                     </div>
                 </section>

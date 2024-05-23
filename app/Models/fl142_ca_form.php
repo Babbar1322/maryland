@@ -10,4 +10,6 @@ class fl142_ca_form extends Model
     use HasFactory;
 
     protected $guarded = [];
+    protected $table = "13_fl142_ca_forms";
+
 }

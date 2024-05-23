@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFl142CaFormDatasTable extends Migration
+class CreateSfsCoFormDatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateFl142CaFormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('13_fl142_ca_form_datas', function (Blueprint $table) {
+        Schema::create('15_sfs_co_form_datas', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger("fl142_form_id");
+            $table->bigInteger("sfs_form_id");
             $table->string("keyss");
             $table->string("valuess")->nullable();
             $table->timestamp('created_at')->useCurrent();
@@ -30,6 +30,6 @@ class CreateFl142CaFormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('13_fl142_ca_form_datas');
+        Schema::dropIfExists('sfs_co_form_datas');
     }
 }
