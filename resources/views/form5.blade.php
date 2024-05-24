@@ -4483,6 +4483,27 @@
                             <div class="col-lg-1">   </div>
                         </div>
                         @include('layouts.footer4', ['page' => 10])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#balance_sheet2" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#schedule_personal" >7</option>
+                                    <option value="#balance_sheet1" >8</option>
+                                    <option value="#balance_sheet2" >9</option>
+                                    <option value="#last_section" selected>10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
             </form>

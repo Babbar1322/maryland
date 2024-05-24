@@ -4,7 +4,7 @@
         (10/21)</div>
       {{-- <div class="{{$page == 6 ? 'col-lg-3':'col-lg-4  '}} text-center"> Page {{$page}} of 6</div> --}}
 
-      @if($page == 15 )
+      @if($page == 9 )
       <div class="col-lg-2 ">
           <button type="button" class="bg-transparent px-4">Submit</button>
       </div>

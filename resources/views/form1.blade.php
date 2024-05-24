@@ -156,7 +156,7 @@
 <body>
     <div class="container-fluid  bg_color py-1 py-lg-3">
 
-        <form action="{{ route('form.store') }}" class="" method="post">
+        <form action="{{ route('form1.store') }}" class="" method="post">
             @csrf
 
             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">

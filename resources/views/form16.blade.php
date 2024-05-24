@@ -13,7 +13,13 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+        a {
+            color: black !important;
+        }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -260,13 +266,13 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form11.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                {{-- page 1 --}}
+                <section class="section_area" id="section_first">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    {{-- page 1 --}}
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <section class="px-lg-5 px-2 py-5">
@@ -328,9 +334,11 @@
                                 </div>
 
                                 <div class="mt-3">
-                                    <span class="fw-bold">Before proceeding, you should read “General Information for Self-Represented
+                                    <span class="fw-bold">Before proceeding, you should read “General Information for
+                                        Self-Represented
                                         Litigants” found at the
-                                    beginning of these forms.</span> The words that are in <a href="#" class="text-dark fw-bold">“bold underline”</a> in these
+                                        beginning of these forms.</span> The words that are in <a href="#"
+                                        class="text-dark fw-bold">“bold underline”</a> in these
                                     instructions are defined there.
                                     For further information, see Florida Family Law Rule of Procedure 12.285.
                                 </div>
@@ -357,13 +365,43 @@
 
 
                                 @include('layouts.footer12', ['page' => 1])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first" selected>1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_fiveteen">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_two"><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
                             </section>
                         </div>
                     </div>
                 </section>
 
                 {{-- page 2 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_two">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -372,7 +410,8 @@
                                 <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-SERVICE
                                     ELECTION</div>
 
-                                <div class="mt-3">After the initial service of process of the petition or supplemental
+                                <div class="mt-3">After the initial service of process of the petition or
+                                    supplemental
                                     petition by the Sheriff or certified
                                     process server, the Florida Rules of General Practice and Judicial Administration
                                     now require that all
@@ -427,10 +466,41 @@
                                     bills are due on a schedule which is not monthly, you must convert those amounts.
                                     Hints are provided
                                     below for making these conversions.</div>
-                                    <div class="" style="padding-bottom:200px;"></div>
+                                <div class="" style="padding-bottom:200px;"></div>
 
 
                                 @include('layouts.footer12', ['page' => 2])
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two" selected>2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_fiveteen">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_three"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
                             </div>
 
                         </div>
@@ -440,7 +510,7 @@
 
                 {{--  page 3 --}}
 
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_three">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
 
@@ -617,19 +687,52 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 3])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_two"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three" selected>3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_fiveteen">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_four"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 {{-- page 4 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_four">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class=" justify-content-center d-flex d_sm_block">IN THE CIRCUIT COURT OF THE
                                     <input type="text" min="0" name="j_circuit"
-                                        class="border-0 footer_field border-bottom"> JUDICIAL CIRCUIT,</div>
+                                        class="border-0 footer_field border-bottom"> JUDICIAL CIRCUIT,
+                                </div>
                                 <div class=" justify-content-center m-0 p-0  d-flex d_sm_block">IN AND FOR
                                     <input type="text" min="0" name="country_f"
                                         class="border-0 m-0 p-0 footer_field border-bottom"> COUNTY, FLORIDA
@@ -669,8 +772,7 @@
                                 </div>
 
                                 <div class="d-flex d_sm_block  "><span class="me-2">2.</span> My occupation is:
-                                    <input type="text" min="0" name="m_occupation"
-                                    style="width:805px"
+                                    <input type="text" min="0" name="m_occupation" style="width:805px"
                                         class="border-0 footer_field border-bottom responsive_input">
                                 </div>
                                 <div>
@@ -678,7 +780,8 @@
                                     </div>
                                     <div class=" ms-3"> [Check all that apply] </div>
                                     <div class=" ms-3 d-flex d_sm_block "> a. <span class="border-bottom ms-3 me-2">
-                                            <input type="checkbox" name="a_employed" class=" "> </span> Unemployed
+                                            <input type="checkbox" name="a_employed" class=" "> </span>
+                                        Unemployed
                                     </div>
                                     <div class="ms-3">Describe your efforts to find employment, how soon you expect
                                         to be employed, and the pay you expect to receive</div>
@@ -694,8 +797,9 @@
 
                                     <div class=" ms-3 d-flex d_sm_block "> b. <span class="border-bottom ms-3 me-2">
                                             <input type="checkbox" name="b_employe" class=" "> </span>
-                                        <span>Employed by:</span> <input type="text" min="0"
-                                            name="b_e_val" class="border-0 w-75 footer_field border-bottom responsive_input" style="width:788px !important">
+                                        <span>Employed by:</span> <input type="text" min="0" name="b_e_val"
+                                            class="border-0 w-75 footer_field border-bottom responsive_input"
+                                            style="width:788px !important">
                                     </div>
 
 
@@ -707,22 +811,22 @@
 
                                     <div class=" ms-3 d-flex d_sm_block "> <span>City, State, Zip code:</span>
                                         <input type="text" min="0" name="c_s_z_c"
-                                            class="border-0  footer_field border-bottom responsive_input" style="width:410px; !important">
+                                            class="border-0  footer_field border-bottom responsive_input"
+                                            style="width:410px; !important">
                                         <span>Telephone Number:</span>
                                         <input type="text" min="0" name="t_number"
                                             class="border-0 w-25   footer_field border-bottom">
                                     </div>
                                     <div class="d-flex d_sm_block ms-lg-3">Pay rate: <div
                                             class="d-flex d_sm_block px-2 "> $ <input type="text" min="0"
-                                                name="p_rate"
-                                                class="border-0 m-0 p-0 footer_field border-bottom"></div> <input
-                                            type="checkbox" name="everyweek" class=""> <span
-                                            class="px-2">every week</span> <input type="checkbox"
-                                            name="every_ow" class=""> <span class="px-2">every other
+                                                name="p_rate" class="border-0 m-0 p-0 footer_field border-bottom">
+                                        </div> <input type="checkbox" name="everyweek" class=""> <span
+                                            class="px-2">every week</span> <input type="checkbox" name="every_ow"
+                                            class=""> <span class="px-2">every other
                                             week</span>
                                         <input type="checkbox" name="t_month" class=""> <span
-                                            class="px-2">twice a week</span> <input type="checkbox"
-                                            name="monthly" class=""> <span class="px-2">monthly</span>
+                                            class="px-2">twice a week</span> <input type="checkbox" name="monthly"
+                                            class=""> <span class="px-2">monthly</span>
                                     </div>
                                     <div class="d-flex d_sm_block ms-lg-3">
                                         <input type="checkbox" name="other_c" class=""> <span
@@ -734,12 +838,13 @@
                                         <div class="">If you are expecting to become unemployed or change jobs
                                             soon, describe the change you expect and why and how it will affect your
                                             income: <span> <input type="text" min="0" name="income_val1"
-                                                    class="border-0 m-0 p-0 footer_field border-bottom responsive_input " style="width: 840px;"></span>
+                                                    class="border-0 m-0 p-0 footer_field border-bottom responsive_input "
+                                                    style="width: 840px;"></span>
                                         </div>
                                     </div>
                                     <div class="ms-lg-3">
                                         <input type="text" min="0" name="income_val2"
-                                        style="width: 940px "
+                                            style="width: 940px "
                                             class="border-0 m-0 p-0 footer_field  border-bottom responsive_input ">
                                     </div>
                                     <div class="ms-lg-3">
@@ -747,37 +852,69 @@
                                             class="border-0 m-0 p-0 footer_field  border-bottom w-100">
                                     </div>
 
-                                    <div class="ms-lg-3"><span class="mx-3"> <input type="checkbox" name="income_chk"
-                                                id=""> </span> Check here if you currently have more than one
+                                    <div class="ms-lg-3"><span class="mx-3"> <input type="checkbox"
+                                                name="income_chk" id=""> </span> Check here if you currently
+                                        have more than one
                                         job. List the information above for the
                                         second job(s) on a separate sheet and attach it to this affidavit.</div>
                                 </div>
                             </div>
                             @include('layouts.footer12', ['page' => 4])
+
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_first"> <i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#section_three"> <i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_first">1</option>
+                                        <option value="#section_two">2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four" selected>4</option>
+                                        <option value="#section_five">5</option>
+                                        <option value="#section_six">6</option>
+                                        <option value="#section_seven">7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine">9</option>
+                                        <option value="#section_ten">10</option>
+                                        <option value="#section_eleven">11</option>
+                                        <option value="#section_twelve">12</option>
+                                        <option value="#section_thirteen">13</option>
+                                        <option value="#section_fourteen">14</option>
+                                        <option value="#section_fiveteen">15</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#section_five"><i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                                <div class="my-auto ps-2"><a href="#section_last"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 {{-- page 5 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_five">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class=" ms-3 d-flex d_sm_block "> c. <span class="border-bottom ms-3 me-2">
                                         <input type="checkbox" name="c_check" class=" "> </span> <span>Retired.
                                         Date of retirement</span> <input type="text" min="0"
-                                        style="    width: 700px !important;"
-                                        name="c_retirement" class="border-0 responsive_input  footer_field border-bottom">
+                                        style="    width: 700px !important;" name="c_retirement"
+                                        class="border-0 responsive_input  footer_field border-bottom">
                                 </div>
 
                                 <div class=" ms-3 d-flex d_sm_block "> <span>Employer from whom retired:</span>
                                     <input type="text" min="0" name="c_retired"
-                                    style="width: 725px !important;"
+                                        style="width: 725px !important;"
                                         class="border-0  responsive_input footer_field border-bottom">
                                 </div>
                                 <div class=" ms-3 d-flex d_sm_block "> <span>Address:</span>
                                     <input type="text" min="0" name="c_address"
-                                    style="    width: 880px !important;"
+                                        style="    width: 880px !important;"
                                         class="border-0 responsive_input  footer_field border-bottom">
                                 </div>
                                 <div class=" ms-3 d-flex d_sm_block "> <span>City, State, Zip code:</span>
@@ -785,7 +922,7 @@
                                         class="border-0 w-25 footer_field border-bottom">
                                     <span>Telephone Number:</span>
                                     <input type="text" min="0" name="c_tn"
-                                    style="    width: 410px !important;"
+                                        style="    width: 410px !important;"
                                         class="border-0 responsive_input   footer_field border-bottom">
                                 </div>
 
@@ -794,20 +931,23 @@
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center"> LAST YEAR’S GROSS INCOME: </div>
                                     <div class="d-flex d_sm_block justify-content-center"> <span>YEAR</span><input
-                                            type="text" class="border-bottom border-0 footer_field w-25 " name="gi_year"></div>
+                                            type="text" class="border-bottom border-0 footer_field w-25 "
+                                            name="gi_year"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center">Your Income </div>
                                     <div class="d-flex d_sm_block justify-content-center">
                                         <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25" name="your_income">
+                                        <input type="text" class="border-bottom border-0 footer_field w-25"
+                                            name="your_income">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center"> Other Party’s Income (if known) </div>
                                     <div class="d-flex d_sm_block justify-content-center">
                                         <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25 " name="op_income">
+                                        <input type="text" class="border-bottom border-0 footer_field w-25 "
+                                            name="op_income">
                                     </div>
 
                                 </div>
@@ -919,8 +1059,7 @@
 
                                 <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From this
                                     case: <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="maar_a"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            name="maar_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
@@ -1047,8 +1186,7 @@
                                 <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3"> a.</span>Filing
                                     Status
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="mfs_18_a"
-                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                            name="mfs_18_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
@@ -1072,12 +1210,43 @@
                             </div>
                             @include('layouts.footer12', ['page' => 5])
 
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_first"> <i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#section_four"> <i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_first">1</option>
+                                        <option value="#section_two">2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four">4</option>
+                                        <option value="#section_five" selected>5</option>
+                                        <option value="#section_six">6</option>
+                                        <option value="#section_seven">7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine">9</option>
+                                        <option value="#section_ten">10</option>
+                                        <option value="#section_eleven">11</option>
+                                        <option value="#section_twelve">12</option>
+                                        <option value="#section_thirteen">13</option>
+                                        <option value="#section_fourteen">14</option>
+                                        <option value="#section_fiveteen">15</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#section_six"><i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                                <div class="my-auto ps-2"><a href="#section_last"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
 
                 {{-- page 6 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_six">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -1138,14 +1307,16 @@
                                     <div class="col-lg-10">Monthly court-ordered alimony actually paid (Add 25a and
                                         25b)</div>
                                 </div>
-                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this case:
+                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this
+                                    case:
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
                                             name="mcoa_25_a"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
                                     </div>
                                 </div>
 
-                                <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From other
+                                <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From
+                                    other
                                     case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
                                             min="0" name="mcoa_25_b"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
@@ -1404,12 +1575,44 @@
                                         </div>
                                         @include('layouts.footer12', ['page' => 6])
 
+                                        <div class="d-flex gap-3 py-auto pb-2  ">
+                                            <div class="my-auto"> <a href="#section_first"> <i
+                                                        class="fas fa-chevron-left"></i><i
+                                                        class="fas fa-chevron-left"></i></a></div>
+                                            <div class="my-auto ps-2"> <a href="#section_five"> <i
+                                                        class="fas fa-chevron-left"></i></a> </div>
+                                            <div>
+                                                <select class="form-select w-100 sectionSelect">
+                                                    <option value="#section_first">1</option>
+                                                    <option value="#section_two">2</option>
+                                                    <option value="#section_three">3</option>
+                                                    <option value="#section_four">4</option>
+                                                    <option value="#section_five">5</option>
+                                                    <option value="#section_six" selected>6</option>
+                                                    <option value="#section_seven">7</option>
+                                                    <option value="#section_eight">8</option>
+                                                    <option value="#section_nine">9</option>
+                                                    <option value="#section_ten">10</option>
+                                                    <option value="#section_eleven">11</option>
+                                                    <option value="#section_twelve">12</option>
+                                                    <option value="#section_thirteen">13</option>
+                                                    <option value="#section_fourteen">14</option>
+                                                    <option value="#section_fiveteen">15</option>
+                                                </select>
+                                            </div>
+                                            <div class="my-auto"> <a href="#section_seven"><i
+                                                        class="fas fa-chevron-right"></i> </a></div>
+                                            <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                        class="fas fa-chevron-right"></i><i
+                                                        class="fas fa-chevron-right"></i> </a></div>
+                                        </div>
+
                                     </div>
                                 </div>
                 </section>
 
                 {{-- page 7 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_seven">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -1724,14 +1927,45 @@
                             </div>
                             @include('layouts.footer12', ['page' => 7])
 
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_first"> <i
+                                            class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div class="my-auto ps-2"> <a href="#section_six"> <i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_first">1</option>
+                                        <option value="#section_two">2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four">4</option>
+                                        <option value="#section_five">5</option>
+                                        <option value="#section_six">6</option>
+                                        <option value="#section_seven" selected>7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine">9</option>
+                                        <option value="#section_ten">10</option>
+                                        <option value="#section_eleven">11</option>
+                                        <option value="#section_twelve">12</option>
+                                        <option value="#section_thirteen">13</option>
+                                        <option value="#section_fourteen">14</option>
+                                        <option value="#section_fiveteen">15</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#section_eight"><i
+                                            class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2"><a href="#section_last"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                            </div>
+
                         </div>
+
                     </div>
                 </section>
 
-
-
                 {{-- page 8 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_eight">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2044,16 +2278,49 @@
                                     </div>
                                 </div>
                                 @include('layouts.footer12', ['page' => 8])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_seven"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight" selected>8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_nine"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
                     </div>
                 </section>
 
-
-
                 {{-- page 9 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_nine">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2165,6 +2432,41 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 9])
+
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_eight"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine" selected>9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_ten"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -2172,10 +2474,8 @@
 
                 </section>
 
-
-
                 {{-- page 10 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_ten">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2351,7 +2651,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk12"></td>
                                                 <td class="d-flex">Real estate: (Home) <input type="text"
-                                                    class="border-0 w-75" name="a_val11"></span></td>
+                                                        class="border-0 w-75" name="a_val11"></span></td>
                                                 <td> <input type="text" min="0" name="b_val12"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p12"></td>
@@ -2360,8 +2660,8 @@
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk13"></td>
-                                                <td>(Other) <input type="text"
-                                                    class="border-0 w-75" name="a_val12"></span></td>
+                                                <td>(Other) <input type="text" class="border-0 w-75"
+                                                        name="a_val12"></span></td>
                                                 <td> <input type="text" min="0" name="b_val13"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p13"></td>
@@ -2588,16 +2888,48 @@
                                     </table>
                                 </div>
                                 @include('layouts.footer12', ['page' => 10])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_nine"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten" selected>10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_eleven"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </section>
 
-
-
                 {{-- page 11 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_eleven">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2609,13 +2941,15 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk31" class="m-1"></td>
                                                 <td>
-                                                    <div >Other vehicles<span><input type="text"
+                                                    <div>Other vehicles<span><input type="text"
                                                                 class="border-0 w-50" name="a_val30"></span></div>
                                                 </td>
                                                 <td><input type="text" min="0" name="b_val31"
                                                         class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 " style="margin-right: 75px !important"></td>
-                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 " style="margin-right: 85px !important"></td>
+                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 "
+                                                        style="margin-right: 75px !important"></td>
+                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 "
+                                                        style="margin-right: 85px !important"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk32"></td>
@@ -2717,8 +3051,8 @@
                                                 <td><input type="checkbox" name="a_chk39"></td>
                                                 <td>
                                                     <div>Furniture & furnishings elsewhere <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val38"></span></div>
+                                                                class="border-0  text-center" name="a_val38"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val39"
                                                         class="border-0 text-center "> </td>
@@ -2743,8 +3077,8 @@
                                                 <td><input type="checkbox" name="a_chk41"></td>
                                                 <td>
                                                     <div>Collectibles <span><input type="text"
-                                                                class="border-0 text-center"
-                                                                name="a_val40"></span></div>
+                                                                class="border-0 text-center" name="a_val40"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val41"
                                                         class="border-0 text-center w-100"> </td>
@@ -2768,8 +3102,8 @@
                                                 <td><input type="checkbox" name="a_chk43"></td>
                                                 <td>
                                                     <div>Jewelry <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val42"></span></div>
+                                                                class="border-0  text-center" name="a_val42"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val43"
                                                         class="border-0 text-center w-100"> </td>
@@ -2828,10 +3162,9 @@
                                                 <td><input type="checkbox" name="a_chk48"></td>
                                                 <td>
                                                     <div>Sporting and entertainment (T.V., stereo, etc.)
-                                                        equipment <span><input type="text"
-                                                            style="width:20px"
-                                                                class="border-0 text-center"
-                                                                name="a_val47"></span></div>
+                                                        equipment <span><input type="text" style="width:20px"
+                                                                class="border-0 text-center" name="a_val47"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b_val48"
                                                         class="border-0 text-center w-100"> </td>
@@ -2890,8 +3223,8 @@
                                                 <td><input type="checkbox" name="a_chk53"></td>
                                                 <td>
                                                     <div>Other assets: <span><input type="text"
-                                                                class="border-0  text-center"
-                                                                name="a_val52"></span></div>
+                                                                class="border-0  text-center" name="a_val52"></span>
+                                                    </div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="b-val53"
                                                         class="border-0 text-center w-100"> </td>
@@ -3001,18 +3334,50 @@
                                     @include('layouts.footer12', ['page' => 11])
                                 </div>
 
+
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_ten"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven" selected>11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_twelve"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                 </section>
 
-
-
-
-
                 {{-- page 12 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_twelve">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3048,6 +3413,42 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 12])
+
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_twelve"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve" selected>12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_thirteen"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -3055,15 +3456,8 @@
 
                 </section>
 
-
-
-
-
-
-
-
                 {{-- page 13 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_thirteen">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3323,7 +3717,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk20"></td>
                                                 <td> <input type="text" min="0" name="l_a20"
-                                                    class="border-0 text-center w-100"> </td>
+                                                        class="border-0 text-center w-100"> </td>
                                                 <td> <input type="text" min="0" name="l_b20"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p20"></td>
@@ -3443,6 +3837,41 @@
                                 <div class="pt-5">
                                     @include('layouts.footer12', ['page' => 13])
                                 </div>
+
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_twelve"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen" selected>13</option>
+                                            <option value="#section_fourteen">14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_fourteen"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3450,7 +3879,7 @@
                 </section>
 
                 {{-- page 14 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_fourteen">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3536,7 +3965,8 @@
                                             <tr>
                                                 <td><input type="checkbox" name="d_a_chk1"></td>
                                                 <td> <span><input type="text" class="border-0 w-100"
-                                                            name="d_a1"> </td>
+                                                            name="d_a1">
+                                                </td>
                                                 <td>
                                                     <div class="d-flex d_sm_block ">$<input type="text"
                                                             min="0" name="d_b1"
@@ -3589,7 +4019,8 @@
                                                 <td colspan="2">Total Contingent Assets</td>
                                                 <td>
                                                     <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_assets" class="border-0 text-center w-100">
+                                                            name="d_total_assets"
+                                                            class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -3627,7 +4058,8 @@
                                             <tr>
                                                 <td><input type="checkbox" name="dl_a_chk1"></td>
                                                 <td> <span><input type="text" class="border-0 w-100"
-                                                            name="dl_a1"> </td>
+                                                            name="dl_a1">
+                                                </td>
                                                 <td>
                                                     <div class="d-flex d_sm_block ">$<input type="text"
                                                             min="0" name="dl_b1"
@@ -3680,7 +4112,8 @@
                                                 <td colspan="2">Total Contingent Liabilities </td>
                                                 <td>
                                                     <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_liabilities" class="border-0 text-center w-100">
+                                                            name="d_total_liabilities"
+                                                            class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -3700,6 +4133,41 @@
                                 <div>
                                     @include('layouts.footer12', ['page' => 14])
                                 </div>
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_first"> <i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_thirteen"> <i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_first">1</option>
+                                            <option value="#section_two">2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                            <option value="#section_ten">10</option>
+                                            <option value="#section_eleven">11</option>
+                                            <option value="#section_twelve">12</option>
+                                            <option value="#section_thirteen">13</option>
+                                            <option value="#section_fourteen" selected>14</option>
+                                            <option value="#section_last">15</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_last"><i
+                                                class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_last"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -3708,62 +4176,160 @@
                 </section>
 
                 {{-- page 15 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_last">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-                            <div class="">[Check one only]</div>
-                            <div class=""><input type="checkbox" name="acs1" id=""> <b>A Child Support Guidelines Worksheet IS or WILL BE filed in this case.</b> This case involves the
-                                establishment or modification of child support.</div>
+                                <div class="">[Check one only]</div>
+                                <div class=""><input type="checkbox" name="acs1" id=""> <b>A
+                                        Child Support Guidelines Worksheet IS or WILL BE filed in this case.</b> This
+                                    case involves the
+                                    establishment or modification of child support.</div>
 
-                            <div class=""><input type="checkbox" name="acs2" id=""> <b>A Child Support Guidelines Worksheet IS NOT being filed in this case.</b> The establishment or modification of child support is not an issue in this case.</div>
+                                <div class=""><input type="checkbox" name="acs2" id=""> <b>A
+                                        Child Support Guidelines Worksheet IS NOT being filed in this case.</b> The
+                                    establishment or modification of child support is not an issue in this case.</div>
 
-                            <div class="fw-bold">I certify that a copy of this financial affidavit was [check all used]: <span>(<input type="checkbox"  name="emailed">)</span> e-mailed <span>(<input type="checkbox"  name="mailed">)</span> mailed <span>(<input type="checkbox"  name="faxed">)</span>faxed  <span>(<input type="checkbox"  name="hand_d">)</span> hand delivered to the person(s) listed below on {date}  <span><input type="text" name="bo_date" class="border-0 border-bottom footer_field" id=""></span> <span class="">.</span> </div>
-                             </div>
-
-
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="col-lg-6 ">
-                                    <div class="fw-bold">Other party or his/her attorney:</div>
-                                    <div class="">Name: <span><input type="text" name="name1" id="" class="border-0 border-bottom footer_field" style="width:288px !important"></span></div>
-                                    <div class="">Address: <span><input type="text" name="address1" id="" class="border-0 border-bottom footer_field" style="width:270px !important"></span></div>
-                                    <div class="">City, State, Zip: <span><input type="text" name="csz1" id="" class="border-0 border-bottom footer_field" style="width:220px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text" name="number1" id="" class="border-0 border-bottom footer_field"></span></div>
-                                    <div class="">Fax Number: <span><input type="text" name="fax_numbe1" id="" class="border-0 border-bottom footer_field" style="width:240px !important"></span></div>
-                                    <div class="">E-mail Address(es): <span><input type="text" name="em_address1" id="" class="border-0 border-bottom footer_field"></span></div>
+                                <div class="fw-bold">I certify that a copy of this financial affidavit was [check all
+                                    used]: <span>(<input type="checkbox" name="emailed">)</span> e-mailed
+                                    <span>(<input type="checkbox" name="mailed">)</span> mailed <span>(<input
+                                            type="checkbox" name="faxed">)</span>faxed <span>(<input
+                                            type="checkbox" name="hand_d">)</span> hand delivered to the person(s)
+                                    listed below on {date} <span><input type="text" name="bo_date"
+                                            class="border-0 border-bottom footer_field" id=""></span> <span
+                                        class="">.</span>
                                 </div>
-
-                                <div class="py-5 fw-bold">Under penalties of perjury, I declare that I have read this document and the facts stated in it are true.</div>
                             </div>
 
 
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class="col-lg-6 ">
-                                     <div class="">Dated: <span><input type="text" name="dated" id="" class="border-0 border-bottom footer_field  responsive_input" style="width:334px  !important"></span></div>
+                                    <div class="fw-bold">Other party or his/her attorney:</div>
+                                    <div class="">Name: <span><input type="text" name="name1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:288px !important"></span></div>
+                                    <div class="">Address: <span><input type="text" name="address1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:270px !important"></span></div>
+                                    <div class="">City, State, Zip: <span><input type="text"
+                                                name="csz1" id=""
+                                                class="border-0 border-bottom footer_field"
+                                                style="width:220px !important"></span></div>
+                                    <div class="">Telephone Number: <span><input type="text"
+                                                name="number1" id=""
+                                                class="border-0 border-bottom footer_field"></span></div>
+                                    <div class="">Fax Number: <span><input type="text" name="fax_numbe1"
+                                                id="" class="border-0 border-bottom footer_field"
+                                                style="width:240px !important"></span></div>
+                                    <div class="">E-mail Address(es): <span><input type="text"
+                                                name="em_address1" id=""
+                                                class="border-0 border-bottom footer_field"></span></div>
+                                </div>
+
+                                <div class="py-5 fw-bold">Under penalties of perjury, I declare that I have read this
+                                    document and the facts stated in it are true.</div>
+                            </div>
+
+
+                            <div class="row px-lg-5 px-2 py-2 pt-0">
+                                <div class="col-lg-6 ">
+                                    <div class="">Dated: <span><input type="text" name="dated"
+                                                id=""
+                                                class="border-0 border-bottom footer_field  responsive_input"
+                                                style="width:334px  !important"></span></div>
                                 </div>
                                 <div class="col-lg-6">
-                                     <div class="">
-                                        <input type="text" name="sign_oparty" id="" class="border-0 border-bottom footer_field responsive_input" style="width:440px  !important">
+                                    <div class="">
+                                        <input type="text" name="sign_oparty" id=""
+                                            class="border-0 border-bottom footer_field responsive_input"
+                                            style="width:440px  !important">
                                         <div class="">Signature of Party</div>
                                     </div>
-                                    <div class="">Printed Name: <span><input type="text" name="printed_name" id="" class="border-0 border-bottom footer_field responsive_input" style="width:335px !important"></span></div>
-                                    <div class="">Address: <span><input type="text" name="" id="address2" class="border-0 border-bottom footer_field responsive_input" style="width:375px !important"></span></div>
-                                    <div class="">City, State, Zip: <span><input type="text" name="csz2" id="" class="border-0 border-bottom footer_field responsive_input" style="width:325px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text" name="number2" id="" class="border-0 border-bottom footer_field responsive_input" style="width: 295px !important;" ></span></div>
-                                    <div class="">Fax Number: <span><input type="text" name="" id="fax_number2" class="border-0 border-bottom footer_field responsive_input" style="width:345px !important"></span></div>
-                                    <div class="">E-mail Address(es): <span><input type="text" name="" id="em_address2" class="border-0 border-bottom footer_field responsive_input" style="width: 300px !important;"></span></div>
+                                    <div class="">Printed Name: <span><input type="text"
+                                                name="printed_name" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:335px !important"></span></div>
+                                    <div class="">Address: <span><input type="text" name="address2"
+                                                id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:375px !important"></span></div>
+                                    <div class="">City, State, Zip: <span><input type="text"
+                                                name="csz2" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:325px !important"></span></div>
+                                    <div class="">Telephone Number: <span><input type="text"
+                                                name="number2" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width: 295px !important;"></span></div>
+                                    <div class="">Fax Number: <span><input type="text" name="fax_number2"
+                                                id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width:345px !important"></span></div>
+                                    <div class="">E-mail Address(es): <span><input type="text"
+                                                name="em_address2" id=""
+                                                class="border-0 border-bottom footer_field responsive_input"
+                                                style="width: 300px !important;"></span></div>
                                 </div>
-                                    <div class="py-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST FILL IN THE BLANKS BELOW:</div>
+                                <div class="py-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST
+                                    FILL IN THE BLANKS BELOW:</div>
 
 
-                                    <div>[fill in all blanks] This form was prepared for the: {choose only one} <span> (<input type="checkbox"  name="coo_p">) </span> Petitioner <span> (<input type="checkbox"  name="coo_r">) </span> Respondent <span>This form was completed with the assistance of: </div>
-                                        <div>{name of individual} <span>  <input type="text" class="border-0 border-bottom footer_field  responsive_input" style="width: 780px;" name="no_individual">  </span> </div>
-                                        <div>{name of business} <span >  <input type="text" class="border-0 border-bottom footer_field  responsive_input " name="no_business" style="width: 790px !important">  </span> </div>
-                                        <div>{address} <span>  <input type="text" class="border-0 border-bottom footer_field w-75 responsive_input" name="nl_address" style="width: 860px !important">  </span> </div>
-                                        <div>{city} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_city">  </span> {state} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_state">  </span> {telephone number} <span>  <input type="text" class="border-0 border-bottom footer_field " name="nl_tnumber"  style="width: 290px !important">  </span>  </div>
-                                 </div>
-                             <div style="padding-bottom:300px;"></div>
-                             @include('layouts.footer12', ['page' => 15])
+                                <div>[fill in all blanks] This form was prepared for the: {choose only one} <span>
+                                        (<input type="checkbox" name="coo_p">) </span> Petitioner <span> (<input
+                                            type="checkbox" name="coo_r">) </span> Respondent <span>This form was
+                                        completed with the assistance of: </div>
+                                <div>{name of individual} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field  responsive_input"
+                                            style="width: 780px;" name="no_individual"> </span> </div>
+                                <div>{name of business} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field  responsive_input "
+                                            name="no_business" style="width: 790px !important"> </span> </div>
+                                <div>{address} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field w-75 responsive_input"
+                                            name="nl_address" style="width: 860px !important"> </span> </div>
+                                <div>{city} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_city"> </span>
+                                    {state} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_state"> </span>
+                                    {telephone number} <span> <input type="text"
+                                            class="border-0 border-bottom footer_field " name="nl_tnumber"
+                                            style="width: 290px !important"> </span> </div>
+                            </div>
+                            <div style="padding-bottom:300px;"></div>
+                            @include('layouts.footer12', ['page' => 15])
+
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_first"> <i
+                                            class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div class="my-auto ps-2"> <a href="#section_fourteen"> <i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_first">1</option>
+                                        <option value="#section_two">2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four">4</option>
+                                        <option value="#section_five">5</option>
+                                        <option value="#section_six">6</option>
+                                        <option value="#section_seven">7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine">9</option>
+                                        <option value="#section_ten">10</option>
+                                        <option value="#section_eleven">11</option>
+                                        <option value="#section_twelve">12</option>
+                                        <option value="#section_thirteen">13</option>
+                                        <option value="#section_fourteen">14</option>
+                                        <option value="#section_last" selected>15</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                                <div class="my-auto ps-2"> <i class="fas fa-chevron-right"></i><i
+                                        class="fas fa-chevron-right"></i> </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -3772,5 +4338,17 @@
     </div>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+        selectElement.addEventListener('change', function() {
+            const selectedSection = this.value;
+            if (selectedSection) {
+                window.location.hash = selectedSection;
+            }
+        });
+    });
+</script>
 
 </html>

@@ -13,7 +13,13 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+        a {
+            color: black !important;
+        }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -260,16 +266,17 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form11.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+
+                {{-- page 1 --}}
+                <section class="section_area" id="section_one">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    {{-- page 1 --}}
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <section class="px-lg-5 px-2 py-5">
+                            <div class="px-lg-5 px-2 py-5">
                                 <div class="fw-bold text-center">
                                     <h2 class="fw-bold">INSTRUCTIONS FOR FLORIDA FAMILY LAW RULES OF PROCEDURE</h2>
                                     <h2 class="fw-bold">FORM 12.902(b)</h2>
@@ -351,22 +358,49 @@
                                     now require that all
                                     documents required or permitted to be served on the other party must be served by
                                     electronic mail (e-
-                                    mail) except in certain circumstances. You must strictly comply with the format
-                                    requirements set forth
-                                    in the Florida Rules of General Practice and Judicial Administration. If you elect
+                                    mail) except in certain circumstances. <b>You must strictly comply with the format
+                                        requirements set forth
+                                        in the Florida Rules of General Practice and Judicial Administration.</b> If you
+                                    elect
                                     to participate in
                                 </div>
 
 
 
                                 @include('layouts.footer12', ['page' => 1])
-                            </section>
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"><i class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_one" selected>1</option>
+                                            <option value="#section_two"> 2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_two"><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                 </section>
 
                 {{-- page 2 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_two">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -423,10 +457,12 @@
                                     found by a judge to be the victim of sexual battery, aggravated child abuse,
                                     aggravated stalking, harassment, aggravated battery, or domestic violence do not
                                     enter the address, telephone, and fax information at the bottom of this form.
-                                    Instead, file Request for Confidential Filing of Address, Florida Supreme Court
+                                    Instead, file <b> Request for Confidential Filing of Address,</b> Florida Supreme
+                                    Court
                                     Approved Family Law Form
                                     12.980(h).</div>
-                                <div class="mt-3">The affidavit must be completed using monthly income and expense
+                                <div class="mt-3">The affidavit must be completed using <b>monthly</b> income and
+                                    expense
                                     amounts. If you are paid or your
                                     bills are due on a schedule which is not monthly, you must convert those amounts.
                                     Hints are provided
@@ -529,6 +565,31 @@
 
 
                                     @include('layouts.footer12', ['page' => 2])
+                                    <div class="d-flex gap-3 py-auto pb-2  ">
+                                        <div class="my-auto"> <a href="#section_one"><i
+                                                    class="fas fa-chevron-left"></i><i
+                                                    class="fas fa-chevron-left"></i></a></div>
+                                        <div class="my-auto ps-2"> <a href="#section_one"><i
+                                                    class="fas fa-chevron-left"></i></a> </div>
+                                        <div>
+                                            <select class="form-select w-100 sectionSelect">
+                                                <option value="#section_one">1</option>
+                                                <option value="#section_two" selected> 2</option>
+                                                <option value="#section_three">3</option>
+                                                <option value="#section_four">4</option>
+                                                <option value="#section_five">5</option>
+                                                <option value="#section_six">6</option>
+                                                <option value="#section_seven">7</option>
+                                                <option value="#section_eight">8</option>
+                                                <option value="#section_nine">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="my-auto"> <a href="#section_three"><i
+                                                    class="fas fa-chevron-right"></i> </a></div>
+                                        <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                    class="fas fa-chevron-right"></i><i
+                                                    class="fas fa-chevron-right"></i> </a></div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -537,14 +598,11 @@
                 </section>
 
                 {{--  page 3 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_three">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-
                             <div class="row px-lg-5 py-2 pt-0">
                                 <div class="">
-
-
                                     <div class="row">
                                         <div class="col-lg-2">
                                             <div class="m-0 p-0">Yearly amount</div>
@@ -603,7 +661,7 @@
                                                 <div>x</div>
                                             </div>
                                             <div class="col-lg-3">
-                                                <div class="ps-5">2</div>
+                                                <div class="">2</div>
                                             </div>
                                             <div class="col-lg-1">
                                                 <div>=</div>
@@ -628,6 +686,32 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 3])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_one"><i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_two"><i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_one">1</option>
+                                            <option value="#section_two" selected> 2</option>
+                                            <option value="#section_three" selected>3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_four"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -635,21 +719,12 @@
 
 
                 {{-- page 4 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_four">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-
-
-
-
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-
-
-
-
-
                                 <div class=" justify-content-center d-flex d_sm_block">IN THE CIRCUIT COURT OF THE
-                                    <input type="text" min="0" name="j_circuit"
+                                    <input type="text" min="0" name="judicial_c"
                                         class="border-0 footer_field border-bottom"> JUDICIAL CIRCUIT,
                                 </div>
                                 <div class=" justify-content-center m-0 p-0  d-flex d_sm_block">IN AND FOR
@@ -678,8 +753,8 @@
                                 </div>
                                 <div class="text-center">(Under $50,000 Individual Gross Annual Income)</div>
 
-                                <div class="d-flex d_sm_block mt-3">I, {full legal name}
-                                    <input type="text" min="0" name="fl_name"
+                                <div class="d-flex d_sm_block mt-3">I, <i> {full legal name}</i>
+                                    <input type="text" min="0" name="full_legal_n"
                                         class="border-0 w-50 footer_field border-bottom">,
                                     being sworn, certify that the following
                                 </div>
@@ -688,7 +763,7 @@
                                     <input type="text" min="0" name="m_occupation"
                                         class="border-0 footer_field border-bottom ">
                                     Employed by:
-                                    <input type="text" min="0" name="m_occupation"
+                                    <input type="text" min="0" name="employed_by"
                                         class="border-0 footer_field border-bottom ">
                                 </div>
 
@@ -697,21 +772,23 @@
                                             class="border-0 m-0 p-0 footer_field border-bottom">
                                     </div> <input type="checkbox" name="everyweek" class=""> <span
                                         class="px-2">every
-                                        week</span> <input type="checkbox" name="every_ow" class=""> <span
+                                        week</span> <input type="checkbox" name="e_otherweek" class=""> <span
                                         class="px-2">every other
                                         week</span>
-                                    <input type="checkbox" name="t_month" class=""> <span class="px-2">twice
+                                    <input type="checkbox" name="twice_month" class=""> <span
+                                        class="px-2">twice
                                         a week</span> <input type="checkbox" name="monthly" class=""> <span
                                         class="px-2">monthly</span>
                                 </div>
                                 <div class="d-flex d_sm_block ">
-                                    <input type="checkbox" name="other_c" class=""> <span
+                                    <input type="checkbox" name="other_chk" class=""> <span
                                         class="ps-2">other:</span>
                                     <input type="text" min="0" style="width: 875px;" name="other_val"
                                         class="border-0 m-0 p-0 footer_field border-bottom responsive_input">
                                 </div>
                                 <div class="d-flex d_sm_block ">
-                                    <input type="checkbox" name="other_c" class=""> <span class="ps-2">Check
+                                    <input type="checkbox" name="check_here" class=""> <span
+                                        class="ps-2">Check
                                         here if unemployed and explain on a separate sheet your efforts to find
                                         employment.</span>
                                 </div>
@@ -731,7 +808,7 @@
                                     <div class="row mt-1">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
                                             <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                    name="mgs_wages"
+                                                    name="section1_1"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -741,7 +818,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">2.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mbca_payments"
+                                                    name="section1_2"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -753,7 +830,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input
-                                                type="text" min="0" name="mbi_ssi"
+                                                type="text" min="0" name="section1_3"
                                                 class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
                                         </div>
                                         <div class="col-lg-10">Monthly business income from sources such as
@@ -769,7 +846,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">4.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mdb_ssi"
+                                                    name="section1_4"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -779,7 +856,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mw_compensation"
+                                                    name="section1_5"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -789,7 +866,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">6.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mu_compensation"
+                                                    name="section1_6"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -799,7 +876,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">7.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mpra_payments"
+                                                    name="section1_7"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -809,7 +886,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">8.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="mss_benefits"
+                                                    name="section1_8"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -819,7 +896,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">9.</span>
                                             <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                    name="maar"
+                                                    name="section1_9"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
                                         </div>
@@ -829,7 +906,7 @@
                                     <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From
                                         this
                                         case: <div class="d-flex d_sm_block ms-1 ">$<input type="text"
-                                                min="0" name="maar_a"
+                                                min="0" name="section1_9a"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -837,7 +914,7 @@
                                     <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From
                                         other
                                         case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
-                                                min="0" name="maar_b"
+                                                min="0" name="section1_9b"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -847,12 +924,38 @@
 
 
                                 @include('layouts.footer12', ['page' => 4])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_one"><i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_three"><i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_one">1</option>
+                                            <option value="#section_two"> 2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four" selected>4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_five"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                        </a></div>
+                                </div>
                             </div>
                         </div>
                 </section>
 
                 {{-- page 5 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_five">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div>
@@ -860,7 +963,7 @@
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">10.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mid_10"
+                                                name="section1_10"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -871,8 +974,8 @@
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">11.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mri_11"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                name="section1_11"
+                                                class="border-0 p-0 m-0 mb-4 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class="col-lg-10">Monthly rental income (gross receipts minus ordinary and
@@ -891,18 +994,18 @@
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">13.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mre_13"
+                                                name="section1_13"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class="col-lg-10">Monthly reimbursed expenses and in-kind payments to the
-                                        extent that they reduce
-                                        personal living expenses (Attach sheet itemizing each item and amount.)</div>
+                                        extent that they
+                                        reduce personal living expenses</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">14.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mgd_14_1"
+                                                name="section1_14"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -910,30 +1013,24 @@
                                         including nonrecurring gains)</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block">
-                                        <div class="d-flex d_sm_block ms-5"> <input type="text" min="0"
-                                                name="mgd_14_2"
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">15.</span>
+                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                                name="section1_15a"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10">Any other income of a recurring nature (identify source):
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12 d-flex d_sm_block">
-                                        <span class="me-3">15.</span>
-                                        <div class="d-flex d_sm_block w-100 "> <input type="text" min="0"
-                                                name="no_15"
-                                                class="border-0 p-0 m-0  border-bottom footer_field w-100">
+                                    <div class="col-lg-10 d-flex">Any other income of a recurring nature (identify
+                                        source): <div class="d-flex d_sm_block ms-1 "><input type="text"
+                                                min="0" name="section1_15b"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-12 d-flex d_sm_block">
                                         <span class="me-3">16.</span>
                                         <div class="d-flex d_sm_block w-100 "> <input type="text" min="0"
-                                                name="no_16"
+                                                name="section1_16"
                                                 class="border-0 p-0 m-0  border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -942,37 +1039,35 @@
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">17.</span>
                                         <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="tpm_17"
+                                                name="section1_17"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1 through 16.)
+                                    <div class="col-lg-10 fw-bold">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1 through 16.)
                                     </div>
                                 </div>
 
 
-                                <div class="pt-5">
+                                <div class="pt-5    ">
                                     <div class="fw-bold">PRESENT MONTHLY DEDUCTIONS:</div>
-                                    <div> <b>All amounts must be MONTHLY.</b> See the instructions with this form to
-                                        figure out money amounts for
-                                        anything that is NOT paid monthly.</div>
                                 </div>
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">18.</span>
                                         <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="mfs_18"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                name="section1_18"
+                                                class="border-0 p-0 m-0 mb-4 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class="col-lg-10">Monthly federal, state, and local income tax (corrected for
                                         filing status and allowable
                                         dependents and income tax liabilities)</div>
                                 </div>
-                                <div class="mt-2 ps-5 d-flex d_sm_block"><span class="me-3"> a.</span>Filing
+                                <div class=" ps-5 d-flex d_sm_block"><span class="me-3"> a.</span>Filing
                                     Status
-                                    <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="mfs_18_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                    <div class="d-flex d_sm_block ms-1 "><input type="text" min="0"
+                                            name="section1_18a"
+                                            class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
@@ -980,14 +1075,14 @@
                                     <span class="me-3"> b.</span>
                                     Number of dependents claimed:
                                     <div class="d-flex d_sm_block ms-1 ">
-                                        $<input type="text" min="0" name="mfs_18_b"
+                                        <input type="text" min="0" name="section1_18b"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">19.</span>
-                                        <input type="text" min="0" name="mfica_19"
+                                        <input type="text" min="0" name="section1_19"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -995,7 +1090,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">20.</span>
-                                        <input type="text" min="0" name="mmp_20"
+                                        <input type="text" min="0" name="section1_20"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1004,7 +1099,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">21.</span>
-                                        <input type="text" min="0" name="mmud_21"
+                                        <input type="text" min="0" name="section1_21"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1013,7 +1108,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">22.</span>
-                                        <input type="text" min="0" name="mmrp_22"
+                                        <input type="text" min="0" name="section1_22"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1022,7 +1117,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">23.</span>
-                                        <input type="text" min="0" name="mhi_23"
+                                        <input type="text" min="0" name="section1_23"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1033,7 +1128,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">24.</span>
-                                        <input type="text" min="0" name="mcoc_24"
+                                        <input type="text" min="0" name="section1_24"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1043,7 +1138,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex  "><span class="me-3">25.</span>
-                                        <input type="text" min="0" name="mcoa_25"
+                                        <input type="text" min="0" name="section1_25"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
 
                                     </div>
@@ -1053,7 +1148,7 @@
                                 <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this
                                     case:
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
-                                            name="mcoa_25_a"
+                                            name="section1_25a"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
                                     </div>
                                 </div>
@@ -1061,7 +1156,7 @@
                                 <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From
                                     other
                                     case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
-                                            min="0" name="mcoa_25_b"
+                                            min="0" name="section1_25b"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
 
                                     </div>
@@ -1069,7 +1164,7 @@
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">26.</span>
                                         <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="tpm_17"
+                                                name="section1_26"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -1085,7 +1180,7 @@
                                         <div class="row mt-1" style="padding-bottom: 250px">
                                             <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">27.</span>
                                                 <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                        name="tpm_17"
+                                                        name="section1_27"
                                                         class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                             </div>
@@ -1096,18 +1191,44 @@
                                     </div>
                                     @include('layouts.footer12', ['page' => 5])
 
+                                    <div class="d-flex gap-3 py-auto pb-2  ">
+                                        <div class="my-auto"> <a href="#section_one"><i
+                                                    class="fas fa-chevron-left"></i><i
+                                                    class="fas fa-chevron-left"></i></a></div>
+                                        <div class="my-auto ps-2"> <a href="#section_four"><i
+                                                    class="fas fa-chevron-left"></i></a> </div>
+                                        <div>
+                                            <select class="form-select w-100 sectionSelect">
+                                                <option value="#section_one">1</option>
+                                                <option value="#section_two"> 2</option>
+                                                <option value="#section_three">3</option>
+                                                <option value="#section_four">4</option>
+                                                <option value="#section_five" selected>5</option>
+                                                <option value="#section_six">6</option>
+                                                <option value="#section_seven">7</option>
+                                                <option value="#section_eight">8</option>
+                                                <option value="#section_nine">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="my-auto"> <a href="#section_six"><i
+                                                    class="fas fa-chevron-right"></i> </a></div>
+                                        <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                    class="fas fa-chevron-right"></i><i
+                                                    class="fas fa-chevron-right"></i> </a></div>
+                                    </div>
+
                                 </div>
                             </div>
                 </section>
 
                 {{-- page 6 --}}
-                <section class="section_area py-5">
+                <section class="section_area py-5" id="section_six">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
 
 
-                                <div class="border border-dark bg-secondary text-dark my-4">SECTION II.
+                                <div class=" text-dark fw-bold mt-4">SECTION II.
                                     AVERAGE MONTHLY EXPENSES</div>
                                 <div><strong>Proposed/Estimated Expenses.</strong> If this is a dissolution
                                     of marriage case and your expenses as listed below do not reflect what
@@ -1128,14 +1249,14 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Mortgage or rent</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="mortgage_rent" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Clothing</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="clothing"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1144,15 +1265,15 @@
                                 <div class="row">
                                     <div class="col-lg-4">Property taxes</div>
                                     <div class="col-lg-2 justify-content-end">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="property_taxes" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Medical/Dental (uninsured)</div>
                                     <div class="col-lg-2 justify-content-end">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="medical_dental" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
@@ -1161,14 +1282,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Utilitiest</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="utilitiest" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Grooming</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="grooming"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1177,15 +1298,15 @@
                                 <div class="row">
                                     <div class="col-lg-4">Telephone</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="a_telephone" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Entertainment</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="entertainment" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
@@ -1194,14 +1315,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Food</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="food"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Gifts</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="gifts"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1211,15 +1332,15 @@
                                 <div class="row">
                                     <div class="col-lg-4">Meals outside home</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="meals_home" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Religious organizations</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="religious_org" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
@@ -1228,35 +1349,35 @@
                                 <div class="row">
                                     <div class="col-lg-4">Maintenance/Repairs</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="maintenance_rep" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Miscellaneous</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="miscellaneous" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-4">Other:<input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4">Other:<input type="text" min="0" name="a_other1"
                                             style="width:100px" class="border-0 p-0 m-0 border-bottom footer_field ">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="a_other2"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">Other:<input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4">Other:<input type="text" min="0" name="e_other1"
                                             style="width:175px" class="border-0 p-0 m-0 border-bottom footer_field ">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="e_other2"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1268,11 +1389,11 @@
                                     </div>
                                     <div class="col-lg-2 ">
                                     </div>
-                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4"><input type="text" min="0" name="e_other3"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-75">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="e_other4"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1288,15 +1409,14 @@
                                     <div class="col-lg-6">
                                         <div class="row  pt-3">
                                             <div class="col-lg-8"><input type="text" min="0"
-                                                    name="tpm_17" class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    name="e_other5"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
                                                     style="width: 225px">
                                             </div>
 
                                             <div class="col-lg-4 d-flex">
-                                                $<input type="text" min="0" name="tpm_17"
-                                                    {{-- style="width:10px" --}}
+                                                $<input type="text" min="0" name="e_other6"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-75">
-                                                {{-- </div> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -1307,16 +1427,16 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Gasoline</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="gasoline"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4"><input type="text" min="0" name="e_other7"
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="e_other8"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1325,16 +1445,16 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Repairs</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="b_repairs"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4"><input type="text" min="0" name="e_other9"
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="e_other10"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1343,121 +1463,420 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Insurance</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
-                                                style="width:100px"
+                                        <div class="d-flex  ">$<input type="text" min="0"
+                                                name="b_insurance" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4"><input type="text" min="0" name="tpm_17"
+                                    <div class="col-lg-4"><input type="text" min="0" name="e_other11"
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="tpm_17"
+                                        <div class="d-flex  ">$<input type="text" min="0" name="e_other12"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-lg-10">
+
+                                <div class="row " style="margin-bottom: 250px">
+                                    <div class="col-lg-6">
+                                        <div class="fw-bold pt-3"><span class="me-2">C.</span>CHILD(REN)’S EXPENSES
+                                        </div>
                                         <div class="row">
-                                            <div class="col-lg-5 ">Insurance</div>
-                                            <div class="col-lg-2 ">
+                                            <div class="col-lg-8">Day care</div>
+                                            <div class="col-lg-4 ">
                                                 <div class="d-flex  ">$<input type="text" min="0"
-                                                        name="tpm_17" style="width:100px"
+                                                        name="c_daycare" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Lunch money</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_lunchmoney" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Clothing</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_clothing" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Grooming</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_grooming" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Gifts for holidays</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_gifts" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Medical/Dental (uninsured)</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_medicaldental" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Other:<input type="text" min="0"
+                                                    name="c_other1" style="width:100px"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field ">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="c_other2" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fw-bold pt-4"><span class="me-2">D.</span>INSURANCE</div>
+
+                                        <div class="row">
+                                            <div class="col-lg-8">Medical/Dental (if not listed on
+                                                lines 23 or 45)</div>
+                                            <div class="col-lg-4 mt-3 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="d_medicaldental" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Child(ren)’s medical/dental</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="d_childrens" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Life</div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="d_life" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">Other:<input type="text" min="0"
+                                                    name="d_other1" style="width:100px"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field ">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="d_other2" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 mt-4">
+                                        <div class="fw-bold pt-3"><span class="me-2">F.</span>O. PAYMENTS TO
+                                            CREDITORS</div>
+                                        <div class="row">
+                                            <div class="col-lg-8">CREDITOR:</div>
+                                            <div class="col-lg-4">MONTHLY PAYMENT</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor1"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly1" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor2"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly2" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor3"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly3" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor4"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly4" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor5"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly5" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor6"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly6" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor7"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly7" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor8"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly8" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor9"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly9" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor10"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly10" style="width:100px"
+                                                        class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8"><input type="text" min="0"
+                                                    name="f_creditor11"
+                                                    class="border-0 p-0 m-0 border-bottom footer_field"
+                                                    style="width: 225px">
+                                            </div>
+                                            <div class="col-lg-4 ">
+                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                        name="f_monthly11" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6"></div>
                                 </div>
+
 
 
                             </div>
                             @include('layouts.footer12', ['page' => 6])
-
-                        </div>
-                    </div>
-                </section>
-
-
-
-
-
-
-
-                {{-- page 9 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-
-                                <div class="border border-dark bg-secondary text-dark my-4">SECTION III. ASSETS AND
-                                    LIABILITIES</div>
-                                <div class="fw-bold"><span class="me-4">A.</span> ASSETS (This is where you list
-                                    what you OWN.) </div>
-                                <div class="ms-lg-5">
-                                    <div class="fw-bold">INSTRUCTIONS:</div>
-                                    <div><b class="border-bottom"> STEP 1:</b><b> In column A,</b> list a description
-                                        of each separate item owned by you (and/or your spouse, if
-                                        this is a petition for dissolution of marriage). Blank spaces are provided if
-                                        you need to list more than
-                                        one of an item.</div>
-                                    <div><b class="border-bottom">STEP 2: </b> If this is a petition for dissolution
-                                        of marriage, check the line in Column A next to any item
-                                        that you are requesting the judge award to you.</div>
-                                    <div><b class="border-bottom"> STEP 3:</b> In column B, write what you believe to
-                                        be the current fair market value of all items listed</div>
-                                    <div><b class="border-bottom"> STEP 4: </b><b>Use column C only if this is a
-                                            petition for dissolution of marriage and you believe an item
-                                            is “nonmarital,” meaning it belongs to only one of you and should not be
-                                            divided. </b>You should
-                                        indicate to whom you believe the item belongs. (Typically, you will only use
-                                        Column C if property
-                                        was owned by one spouse before the marriage. See the <b>“General Information for
-                                            Self-Represented
-                                            Litigants” </b> found at the beginning of these forms and section 61.075(1),
-                                        Florida Statutes, for
-                                        definitions of “marital” and “nonmarital” assets and liabilities.)</div>
-                                    <div style="padding-bottom:400px"></div>
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_one"><i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#section_five"><i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_one">1</option>
+                                        <option value="#section_two"> 2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four">4</option>
+                                        <option value="#section_five">5</option>
+                                        <option value="#section_six" selected>6</option>
+                                        <option value="#section_seven">7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine">9</option>
+                                    </select>
                                 </div>
-
-                                @include('layouts.footer12', ['page' => 9])
+                                <div class="my-auto"> <a href="#section_seven"><i
+                                            class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                    </a></div>
                             </div>
 
                         </div>
                     </div>
-
                 </section>
 
-
-
-                {{-- page 10 --}}
-                <section class="section_area py-5">
+                {{-- page 7 --}}
+                <section class="section_area py-5" id="section_seven">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="table-responsive">
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">28.</span>
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="section2_28"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES:</b> (add <b>ALL</b> monthly
+                                        amounts in A through F above)
+                                    </div>
+                                </div>
+                                <div class="pt-4 fw-bold">SUMMARY</div>
+
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">29.</span>
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="section2_29"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b>TOTAL PRESENT MONTHLY NET INCOME</b> (from line 27 of
+                                        SECTION I. INCOME)</div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">30.</span>
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="section2_30"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES </b> (from line 28 above)</div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">31.</span>
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="section2_31"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b>SURPLUS </b> (If line 29 is more than line 30,
+                                        subtract line 30 from line 29. This is the amount of your surplus. Enter that
+                                        amount here.)</div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">32.</span>
+                                        <div class="d-flex d_sm_block ">($<input type="text" min="0"
+                                                name="section2_32"
+                                                class="border-0 mb-5 m-0 border-bottom footer_field w-100">)
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b>(DEFICIT) </b> (If line 107 is more than line 106,
+                                        subtract line 106 from line 107. This is
+                                        the amount of your deficit. Enter that amount here.)</div>
+                                </div>
+
+                                <div class="fw-bold  text-dark mt-4">SECTION III. ASSETS AND
+                                    LIABILITIES</div>
+
+                                <div><b>Use the nonmarital column only if this is a petition for dissolution of marriage
+                                        and you believe an item
+                                        is “nonmarital,” meaning it belongs to only one of you and should not be
+                                        divided.</b> You should indicate
+                                    to whom you believe the item(s) or debt belongs. (Typically, you will only use this
+                                    column if property/debt
+                                    was owned/owed by one spouse before the marriage. See the <b>“General Information
+                                        for Self-
+                                        Represented Litigants”</b> found at the beginning of these forms and section
+                                    61.075(1), Florida Statutes, for
+                                    definitions of “marital” and “nonmarital” assets and liabilities.)</div>
+
+                                <div class="fw-bold mt-5">A. <span class="ps-2">ASSETS:</span></div>
+                                <div class="table-responsive ">
                                     <table class="table-bordered  border border-dark border-2 w-100">
                                         <tbody>
                                             <tr>
                                                 <td class="bg-secondary" colspan="2" rowspan="2"
-                                                    style="min-width: 300px;">
-                                                    <div class="text-center">A</div>
-                                                    <div class="text-center ">ASSETS: DESCRIPTION OF ITEM(S)</div>
-                                                    <div>LIST ONLY LAST FOUR DIGITS OF ACCOUNT NUMBERS.
-                                                        Check the line next to any asset(s) which you are
-                                                        requesting the judge award to you.</div>
+                                                    style="    width: 550px;
+                                                            ">
+                                                    <div class="fw-bold">DESCRIPTION OF ITEM(S). List a description of
+                                                        each separate
+                                                        item owned by you (and/or your spouse, if this is a petition
+                                                        for dissolution of marriage). LIST ONLY LAST 4 DIGITS OF
+                                                        ACCOUNT NUMBERS. Check the line next to any asset(s)
+                                                        which you are requesting the judge award to you.</div>
                                                 </td>
                                                 <td class="bg-secondary" rowspan="2">
-                                                    <div>B.</div>
-                                                    <div>Current Fair Market Value</div>
+                                                    <div class="text-center mt-5 fw-bold">Current Fair Market Value</div>
                                                 </td>
                                                 <td class="bg-secondary" colspan="2">
-                                                    <div>C</div>
-                                                    <div> Nonmarital (Check correct column)</div>
+                                                    <div class="text-center fw-bold">Nonmarital </div>
+                                                    <div class="text-center fw-bold"> (Check correct column)</div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1468,1524 +1887,677 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk1"></td>
                                                 <td>
-                                                    <div>Cash (on hand) <span><input type="text"
-                                                                class="border-0 w-75" name="a_val1"></span></div>
+                                                    <div>Cash (on hand) <span></div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="b_val1"
+                                                            min="0" name="current_val1"
                                                             class="border-0 text-center w-100"> </div>
                                                 </td>
-                                                <td><input type="checkbox" name="c_p1"></td>
-                                                <td><input type="checkbox" name="c_r1"></td>
+                                                <td><input type="checkbox" name="non_pet1"></td>
+                                                <td><input type="checkbox" name="non_resp1"></td>
                                             </tr>
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk2"></td>
                                                 <td>
-                                                    <div>Cash (in banks or credit unions) <span><input type="text"
-                                                                class="border-0 w-50" name="a_val2"></span></div>
+                                                    <div>Cash (in banks or credit unions) </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val2"
+                                                <td> <input type="text" min="0" name="current_val2"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p2"></td>
-                                                <td><input type="checkbox" name="c_r2"></td>
+                                                <td><input type="checkbox" name="non_pet2"></td>
+                                                <td><input type="checkbox" name="non_resp2"></td>
                                             </tr>
 
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk3"></td>
+                                                <td><input type="checkbox" name="a-chk3"></td>
                                                 <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="a_val3"></span></div>
+                                                    <div> Stocks, Bonds, Notes</div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val3"
+                                                <td> <input type="text" min="0" name="current_val3"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p3"></td>
-                                                <td><input type="checkbox" name="c_r3"></td>
+                                                <td><input type="checkbox" name="non_pet3"></td>
+                                                <td><input type="checkbox" name="non_resp3"></td>
                                             </tr>
 
                                             <tr>
                                                 <td><input type="checkbox" name="a-chk4"></td>
                                                 <td>
-                                                    <div> Stocks/Bonds<span><input type="text"
-                                                                class="border-0 w-75" name="a_val4"></span></div>
+                                                    <div> Real estate: (Home)</div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val4"
+                                                <td> <input type="text" min="0" name="current_val4"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p4"></td>
-                                                <td><input type="checkbox" name="c_r4"></td>
+                                                <td><input type="checkbox" name="non_pet4"></td>
+                                                <td><input type="checkbox" name="non_resp4"></td>
                                             </tr>
+
+
+
+
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk5"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="a_val5"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val5"
+                                                <td>(Other) </td>
+                                                <td> <input type="text" min="0" name="current_val5"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p5"></td>
-                                                <td><input type="checkbox" name="c_r5"></td>
+                                                <td><input type="checkbox" name="non_pet5"></td>
+                                                <td><input type="checkbox" name="non_resp5"></td>
                                             </tr>
+
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk6"></td>
                                                 <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="a_val6"></span></div>
+                                                    <div>Automobiles</div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val6"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p6"></td>
-                                                <td><input type="checkbox" name="c_r6"></td>
+                                                <td><input type="text" min="0" name="current_val6"
+                                                        class="border-0 text-center w-100"></td>
+                                                <td><input type="checkbox" name="non_pet6"></td>
+                                                <td><input type="checkbox" name="non_resp6"></td>
                                             </tr>
 
-                                            <tr>
-                                                <td> </td>
-                                                <td>Notes (money owed to you in writing)</td>
-                                                <td> </td>
-                                                <td> </td>
-                                                <td> </td>
-                                            </tr>
+
+
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk7"></td>
                                                 <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val7"></span></div>
+                                                    <div>Other personal property</div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val7"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p7"></td>
-                                                <td><input type="checkbox" name="c_r7"></td>
+                                                <td><input type="text" min="0" name="current_val7"
+                                                        class="border-0 text-center w-100"></td>
+                                                <td><input type="checkbox" name="non_pet7"></td>
+                                                <td><input type="checkbox" name="non_resp7"></td>
                                             </tr>
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk8"></td>
                                                 <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val8"></span></div>
+                                                    <div>Retirement plans (Profit Sharing, Pension, IRA, 401(k)s, etc.)
+                                                    </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val8"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p8"></td>
-                                                <td><input type="checkbox" name="c_r8"></td>
+                                                <td><input type="text" min="0" name="current_val8"
+                                                        class="border-0 text-center w-100"></td>
+                                                <td><input type="checkbox" name="non_pet8"></td>
+                                                <td><input type="checkbox" name="non_resp8"></td>
+                                            </tr>
+                                            <tr>
+                                                <td> </td>
+                                                <td>Other</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
                                             </tr>
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk9"></td>
-                                                <td>Money owed to you (not evidenced by a note)</td>
-                                                <td> <input type="text" min="0" name="b_val9"
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="a_val1"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="current_val9"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p9"></td>
-                                                <td><input type="checkbox" name="c_r9"></td>
+                                                <td><input type="checkbox" name="non_pet9"></td>
+                                                <td><input type="checkbox" name="non_resp9"></td>
                                             </tr>
-
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk10"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val9"></span></div>
+                                                                name="a_val2"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val10"
+                                                <td> <input type="text" min="0" name="current_val10"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p10"></td>
-                                                <td><input type="checkbox" name="c_r10"></td>
+                                                <td><input type="checkbox" name="non_pet10"></td>
+                                                <td><input type="checkbox" name="non_resp10"></td>
                                             </tr>
-
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk11"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val10"></span></div>
+                                                                name="a_val3"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val11"
+                                                <td> <input type="text" min="0" name="current_val11"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p11"></td>
-                                                <td><input type="checkbox" name="c_r11"></td>
+                                                <td><input type="checkbox" name="non_pet11"></td>
+                                                <td><input type="checkbox" name="non_resp11"></td>
                                             </tr>
-
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk12"></td>
-                                                <td class="d-flex">Real estate: (Home) <input type="text"
-                                                        class="border-0 w-75" name="a_val11"></span></td>
-                                                <td> <input type="text" min="0" name="b_val12"
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="a_val4"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="current_val12"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p12"></td>
-                                                <td><input type="checkbox" name="c_r12"></td>
+                                                <td><input type="checkbox" name="non_pet12"></td>
+                                                <td><input type="checkbox" name="non_resp12"></td>
                                             </tr>
-
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk13"></td>
-                                                <td>(Other) <input type="text" class="border-0 w-75"
-                                                        name="a_val12"></span></td>
-                                                <td> <input type="text" min="0" name="b_val13"
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="a_val5"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="current_val13"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p13"></td>
-                                                <td><input type="checkbox" name="c_r13"></td>
+                                                <td><input type="checkbox" name="non_pet13"></td>
+                                                <td><input type="checkbox" name="non_resp13"></td>
                                             </tr>
-
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk14"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val13"></span></div>
+                                                                name="a_val6"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val14"
+                                                <td> <input type="text" min="0" name="current_val14"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p14"></td>
-                                                <td><input type="checkbox" name="c_r14"></td>
+                                                <td><input type="checkbox" name="non_pet14"></td>
+                                                <td><input type="checkbox" name="non_resp14"></td>
                                             </tr>
 
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk15"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val14"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val15"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p15"></td>
-                                                <td><input type="checkbox" name="c_r15"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk16"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val15"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val16"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p16"></td>
-                                                <td><input type="checkbox" name="c_r16"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk17"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val16"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val17"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p17"></td>
-                                                <td><input type="checkbox" name="c_r17"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk18"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val17"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val18"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p18"></td>
-                                                <td><input type="checkbox" name="c_r18"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk19"></td>
-                                                <td>
-                                                    <div>Business interests<span><input type="text"
-                                                                class="border-0 w-75" name="a_val18"></span></div>
-                                                </td>
-                                                <td><input type="text" min="0" name="b_val19"
-                                                        class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p19"></td>
-                                                <td><input type="checkbox" name="c_r19"></td>
+                                                <td> </td>
+                                                <td><span class="mx-2"><input type="checkbox"
+                                                            name="chk_additional"></span><span
+                                                        class="bg-secondary">Check
+                                                        here if additional pages are attached.</span></td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk20"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val19"></span></div>
+                                                <td colspan="2" class="bg-secondary"><b>Total Assets</b> (add next
+                                                    column)
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val20"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p20"></td>
-                                                <td><input type="checkbox" name="c_r20"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk21"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val20"></span></div>
+                                                <td class="bg-secondary">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="t_current_val" class="border-0 text-center w-100">
+                                                    </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val21"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p21"></td>
-                                                <td><input type="checkbox" name="c_r21"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk22"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val21"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val22"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p22"></td>
-                                                <td><input type="checkbox" name="c_r22"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk23"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val22"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val23"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p23"></td>
-                                                <td><input type="checkbox" name="c_r23"></td>
+                                                <td><input type="checkbox" name="t_non_pet"></td>
+                                                <td><input type="checkbox" name="t_non_resp"></td>
                                             </tr>
 
 
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk24"></td>
-                                                <td>
-                                                    <div>Automobiles<span><input type="text"
-                                                                class="border-0 w-75" name="a_val23"></span></div>
-                                                </td>
-                                                <td><input type="text" min="0" name="b_val24"
-                                                        class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p24"></td>
-                                                <td><input type="checkbox" name="c_r24"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk25"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val24"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val25"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p25"></td>
-                                                <td><input type="checkbox" name="c_r25"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk26"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val25"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val26"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p26"></td>
-                                                <td><input type="checkbox" name="c_r26"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk27"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val26"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val27"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p27"></td>
-                                                <td><input type="checkbox" name="c_r27"></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk28"></td>
-                                                <td>
-                                                    <div>Boats<span><input type="text" class="border-0 w-75"
-                                                                name="a_val27"></span></div>
-                                                </td>
-                                                <td><input type="text" min="0" name="b_val28"
-                                                        class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p28"></td>
-                                                <td><input type="checkbox" name="c_r28"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk29"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val28"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val29"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p29"></td>
-                                                <td><input type="checkbox" name="c_r29"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk30"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val29"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val30"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p30"></td>
-                                                <td><input type="checkbox" name="c_r30"></td>
-                                            </tr>
                                         </tbody>
 
                                     </table>
                                 </div>
-                                @include('layouts.footer12', ['page' => 10])
+
+                                @include('layouts.footer12', ['page' => 9])
+
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_one"><i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_six"><i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_one">1</option>
+                                            <option value="#section_two" seleted> 2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven" selected>7</option>
+                                            <option value="#section_eight">8</option>
+                                            <option value="#section_nine">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_eight"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
                 </section>
 
-
-
-                {{-- page 11 --}}
-                <section class="section_area py-5">
+                {{-- page 8 --}}
+                <section class="section_area py-5" id="section_eight">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="table-responsive">
+                            <div class="row  px-2 py-2 pt-0">
+                                <div class="fw-bold ">B. <span class="ps-2">LIABILTIES:</span></div>
+                                <div class="table-responsive ">
                                     <table class="table-bordered  border border-dark border-2 w-100">
                                         <tbody>
-
-
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk31" class="m-1"></td>
-                                                <td>
-                                                    <div>Other vehicles<span><input type="text"
-                                                                class="border-0 w-50" name="a_val30"></span></div>
+                                                <td class="bg-secondary" colspan="2" rowspan="2"
+                                                    style="    width: 550px;
+                                                    ">
+                                                    <div class="fw-bold">DESCRIPTION OF ITEM(S). List a description of
+                                                        each separate
+                                                        debt owed by you (and/or your spouse, if this is a petition for
+                                                        dissolution of marriage). LIST ONLY LAST 4 DIGITS OF
+                                                        ACCOUNT NUMBERS. Check the line next to any debt(s) for
+                                                        which you believe you should be responsible.</div>
                                                 </td>
-                                                <td><input type="text" min="0" name="b_val31"
-                                                        class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 "
-                                                        style="margin-right: 75px !important"></td>
-                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 "
-                                                        style="margin-right: 85px !important"></td>
+                                                <td class="bg-secondary" rowspan="2">
+                                                    <div class="text-center mt-5 fw-bold">Current Amount Owed</div>
+                                                </td>
+                                                <td class="bg-secondary" colspan="2">
+                                                    <div class="text-center fw-bold">Nonmarital </div>
+                                                    <div class="text-center fw-bold"> (Check correct column)</div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk32"></td>
+                                                <td class="bg-secondary">Petitioner</td>
+                                                <td class="bg-secondary">Respondent</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk1"></td>
+                                                <td>
+                                                    <div>Mortgages on real estate: First mortgage on home <span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex d_sm_block ">$<input type="text"
+                                                            min="0" name="ca_owed1"
+                                                            class="border-0 text-center w-100"> </div>
+                                                </td>
+                                                <td><input type="checkbox" name="bn_pet1"></td>
+                                                <td><input type="checkbox" name="bn_resp1"></td>
+                                            </tr>
+
+
+
+
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk2"></td>
+                                                <td>
+                                                    <div> Second mortgage on home</div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_owed2"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="bn_pet2"></td>
+                                                <td><input type="checkbox" name="bn_resp2"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk3"></td>
+                                                <td>
+                                                    <div> Other mortgages</div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_owed3"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="bn_pet3"></td>
+                                                <td><input type="checkbox" name="bn_resp3"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk4"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val31"></span></div>
+                                                                name="b_val1"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val32"
+                                                <td> <input type="text" min="0" name="ca_owed4"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p32"></td>
-                                                <td><input type="checkbox" name="c_r32"></td>
+                                                <td><input type="checkbox" name="bn_pet4"></td>
+                                                <td><input type="checkbox" name="bn_resp4"></td>
                                             </tr>
 
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk33"></td>
+                                                <td> </td>
+                                                <td>Auto loans</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk5"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val32"></span></div>
+                                                                name="b_val2"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val33"
+                                                <td> <input type="text" min="0" name="ca_owed5"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p33"></td>
-                                                <td><input type="checkbox" name="c_r33"></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk34"></td>
-                                                <td>
-                                                    <div>Retirement plans (Profit Sharing, Pension, IRA,
-                                                        401(k)s, etc.)<span><input type="text"
-                                                                class="border-0 w-25" name="a_val33"></span></div>
-                                                </td>
-                                                <td><input type="text" min="0" name="b_val34"
-                                                        class="border-0 text-center "></td>
-                                                <td><input type="checkbox" name="c_p34"></td>
-                                                <td><input type="checkbox" name="c_r34"></td>
+                                                <td><input type="checkbox" name="bn_pet5"></td>
+                                                <td><input type="checkbox" name="bn_resp5"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk35"></td>
+                                                <td> </td>
+                                                <td>charge/credit card accounts</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk6"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val34"></span></div>
+                                                                name="b_val3"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val35"
+                                                <td> <input type="text" min="0" name="ca_owed6"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p35"></td>
-                                                <td><input type="checkbox" name="c_r35"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk36"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val35"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val36"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p36"></td>
-                                                <td><input type="checkbox" name="c_r36"></td>
+                                                <td><input type="checkbox" name="bn_pet6"></td>
+                                                <td><input type="checkbox" name="bn_resp6"></td>
                                             </tr>
 
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk37"></td>
+                                                <td><input type="checkbox" name="b_chk7"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val36"></span></div>
+                                                                name="b_val4"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val37"
+                                                <td> <input type="text" min="0" name="ca_owed7"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p37"></td>
-                                                <td><input type="checkbox" name="c_r37"></td>
+                                                <td><input type="checkbox" name="bn_pet7"></td>
+                                                <td><input type="checkbox" name="bn_resp7"></td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td>Furniture & furnishings in home</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td><input type="checkbox" name="b_chk8"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="b_val5"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_owed8"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="bn_pet8"></td>
+                                                <td><input type="checkbox" name="bn_resp8"></td>
                                             </tr>
 
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk38"></td>
+                                                <td> </td>
+                                                <td>Other</td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk9"></td>
                                                 <td>
                                                     <div> <span><input type="text"
                                                                 class="border-0 w-100 text-center"
-                                                                name="a_val37"></span></div>
+                                                                name="b_val6"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val38"
+                                                <td> <input type="text" min="0" name="ca_owed9"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p38"></td>
-                                                <td><input type="checkbox" name="c_r38"></td>
+                                                <td><input type="checkbox" name="bn_pet9"></td>
+                                                <td><input type="checkbox" name="bn_resp9"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" name="a_chk39"></td>
+                                                <td><input type="checkbox" name="b_chk10"></td>
                                                 <td>
-                                                    <div>Furniture & furnishings elsewhere <span><input type="text"
-                                                                class="border-0  text-center" name="a_val38"></span>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="b_val7"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_owed10"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="bn_pet10"></td>
+                                                <td><input type="checkbox" name="bn_rep10"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="b_chk11"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="b_val8"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_owed11"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="bn_pet11"></td>
+                                                <td><input type="checkbox" name="bn_resp11"></td>
+                                            </tr>
+
+
+
+
+                                            <tr>
+                                                <td> </td>
+                                                <td class="d-flex"><input type="text" min="0"
+                                                        name="b_chk_add" class="border-0 border-bottom text-center "
+                                                        style="width: 50px"><span class="bg-secondary">Check here if
+                                                        additional pages are attached.</span></td>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="bg-secondary"><b>Total Debts</b> (add next
+                                                    column)
+                                                </td>
+                                                <td class="bg-secondary">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="t_ca_owed" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val39"
-                                                        class="border-0 text-center "> </td>
-                                                <td><input type="checkbox" name="c_p39"></td>
-                                                <td><input type="checkbox" name="c_r39"></td>
+                                                <td><input type="checkbox" name="t_bn_pet"></td>
+                                                <td><input type="checkbox" name="t_bn_resp"></td>
                                             </tr>
 
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk40"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val39"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val40"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p40"></td>
-                                                <td><input type="checkbox" name="c_r40"></td>
-                                            </tr>
 
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk41"></td>
-                                                <td>
-                                                    <div>Collectibles <span><input type="text"
-                                                                class="border-0 text-center" name="a_val40"></span>
-                                                    </div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val41"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p41"></td>
-                                                <td><input type="checkbox" name="c_r41"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk42"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val41"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val42"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p42"></td>
-                                                <td><input type="checkbox" name="c_r42"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk43"></td>
-                                                <td>
-                                                    <div>Jewelry <span><input type="text"
-                                                                class="border-0  text-center" name="a_val42"></span>
-                                                    </div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val43"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p43"></td>
-                                                <td><input type="checkbox" name="c_r43"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk44"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val43"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val44"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p44"></td>
-                                                <td><input type="checkbox" name="c_r44"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk45"></td>
-                                                <td>
-                                                    <div>Life insurance (cash surrender value) <span><input
-                                                                type="text" class="border-0  text-center"
-                                                                name="a_val44"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val45"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p45"></td>
-                                                <td><input type="checkbox" name="c_r45"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk46"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val45"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val46"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p46"></td>
-                                                <td><input type="checkbox" name="c_r46"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk47"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val46"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val47"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p47"></td>
-                                                <td><input type="checkbox" name="c_r47"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk48"></td>
-                                                <td>
-                                                    <div>Sporting and entertainment (T.V., stereo, etc.)
-                                                        equipment <span><input type="text" style="width:20px"
-                                                                class="border-0 text-center" name="a_val47"></span>
-                                                    </div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val48"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p48"></td>
-                                                <td><input type="checkbox" name="c_r48"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk49"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val48"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val49"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p49"></td>
-                                                <td><input type="checkbox" name="c_r49"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk50"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val49"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val50"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p50"></td>
-                                                <td><input type="checkbox" name="c_r50"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk51"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val50"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val51"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p51"></td>
-                                                <td><input type="checkbox" name="c_r51"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk52"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val51"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val52"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p52"></td>
-                                                <td><input type="checkbox" name="c_r52"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk53"></td>
-                                                <td>
-                                                    <div>Other assets: <span><input type="text"
-                                                                class="border-0  text-center" name="a_val52"></span>
-                                                    </div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b-val53"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p53"></td>
-                                                <td><input type="checkbox" name="c_r53"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk54"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val53"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val54"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p54"></td>
-                                                <td><input type="checkbox" name="c_r54"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk55"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val54"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val55"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p55"></td>
-                                                <td><input type="checkbox" name="c_r55"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk56"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val55"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val56"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p56"></td>
-                                                <td><input type="checkbox" name="c_r56"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk57"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val56"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val57"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p57"></td>
-                                                <td><input type="checkbox" name="c_r57"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk58"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val57"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val58"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p58"></td>
-                                                <td><input type="checkbox" name="c_r58"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk_59"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val58"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val59"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p59"></td>
-                                                <td><input type="checkbox" name="c_r59"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="a_chk60"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val59"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val60"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="c_p60"></td>
-                                                <td><input type="checkbox" name="c_r60"></td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="bg-secondary">Total Assets (add column B)
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="text" min="0"
-                                                            name="total_b_val" class="border-0 text-center w-100">
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
                                         </tbody>
 
                                     </table>
                                 </div>
+
+                                <div class="fw-bold mt-4 ">C. <span class="ps-2">CONTINGENT ASSETS AND
+                                        LIABILITIES:</span></div>
+                                <div>
+                                    INSTRUCTIONS: If you have any <b>POSSIBLE assets</b> (income potential, accrued
+                                    vacation or sick leave, bonus,
+                                    inheritance, etc.) or <b>POSSIBLE liabilities</b> (possible lawsuits, future unpaid
+                                    taxes, contingent tax liabilities,
+                                    debts assumed by another), you must list them here.
+                                </div>
+
+                                <div class="table-responsiv mt-3 ">
+                                    <table class="table-bordered  border border-dark border-2 w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg-secondary" colspan="2" rowspan="2"
+                                                    style="    width: 550px;
+                                                    ">
+                                                    <div class="text-center fw-bold">Contingent Assets</div>
+                                                    <div class="fw-bold mt-2">Check the line next to any contingent
+                                                        asset(s) which you
+                                                        are requesting the judge award to you.</div>
+                                                </td>
+                                                <td class="bg-secondary" rowspan="2">
+                                                    <div class="text-center mt-5 fw-bold">Possible Value</div>
+                                                </td>
+                                                <td class="bg-secondary" colspan="2">
+                                                    <div class="text-center fw-bold">Nonmarital </div>
+                                                    <div class="text-center fw-bold"> (Check correct column)</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-secondary">Petitioner</td>
+                                                <td class="bg-secondary">Respondent</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" name="ca_chk1"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="ca_val1"></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="ca_possible1" class="border-0 text-center w-100">
+                                                    </div>
+                                                </td>
+                                                <td><input type="checkbox" name="can_pet1"></td>
+                                                <td><input type="checkbox" name="can_resp1"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="ca_chk2"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="ca_val2"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="ca_possible2"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="can_pet2"></td>
+                                                <td><input type="checkbox" name="can_resp2"></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent Assets
+                                                </td>
+                                                <td class="">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="t_ca_poss" class="border-0 text-center w-100">
+                                                    </div>
+                                                </td>
+                                                <td><input type="checkbox" name="t_can_pet"></td>
+                                                <td><input type="checkbox" name="t_can_resp"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="table-responsiv mt-3 ">
+                                    <table class="table-bordered  border border-dark border-2 w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg-secondary" colspan="2" rowspan="2"
+                                                    style="    width: 550px;
+                                                    ">
+                                                    <div class="text-center fw-bold">Contingent Liabilities</div>
+                                                    <div class="fw-bold mt-2">Check the line next to any contingent
+                                                        debt(s) for which
+                                                        you believe you should be responsible.</div>
+                                                </td>
+                                                <td class="bg-secondary" rowspan="2">
+                                                    <div class="text-center mt-5 fw-bold">Possible Amount
+                                                        Owed</div>
+                                                </td>
+                                                <td class="bg-secondary" colspan="2">
+                                                    <div class="text-center fw-bold">Nonmarital </div>
+                                                    <div class="text-center fw-bold"> (Check correct column)</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg-secondary">Petitioner</td>
+                                                <td class="bg-secondary">Respondent</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" name="cl_chk1"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="cl_val1"></span></div>
+                                                </td>
+                                                <td class="">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="cl_pao1" class="border-0 text-center w-100">
+                                                    </div>
+                                                </td>
+                                                <td><input type="checkbox" name="cln_pet1"></td>
+                                                <td><input type="checkbox" name="cln_resp1"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" name="cl_chk2"></td>
+                                                <td>
+                                                    <div> <span><input type="text"
+                                                                class="border-0 w-100 text-center"
+                                                                name="cl_val2"></span></div>
+                                                </td>
+                                                <td> <input type="text" min="0" name="cl_pao2"
+                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="checkbox" name="cln_pet2"></td>
+                                                <td><input type="checkbox" name="cln_resp2"></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent Liabilities
+                                                </td>
+                                                <td class="">
+                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                            name="t_cl_pao" class="border-0 text-center w-100">
+                                                    </div>
+                                                </td>
+                                                <td><input type="checkbox" name="t_cln_pet"></td>
+                                                <td><input type="checkbox" name="t_cln_resp"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
                                 <div class="pt-5">
                                     @include('layouts.footer12', ['page' => 11])
                                 </div>
 
+                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                    <div class="my-auto"> <a href="#section_one"><i
+                                                class="fas fa-chevron-left"></i><i
+                                                class="fas fa-chevron-left"></i></a></div>
+                                    <div class="my-auto ps-2"> <a href="#section_seven"><i
+                                                class="fas fa-chevron-left"></i></a> </div>
+                                    <div>
+                                        <select class="form-select w-100 sectionSelect">
+                                            <option value="#section_one">1</option>
+                                            <option value="#section_two"> 2</option>
+                                            <option value="#section_three">3</option>
+                                            <option value="#section_four">4</option>
+                                            <option value="#section_five">5</option>
+                                            <option value="#section_six">6</option>
+                                            <option value="#section_seven">7</option>
+                                            <option value="#section_eight" selected>8</option>
+                                            <option value="#section_nine">9</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-auto"> <a href="#section_nine"><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                    <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                                class="fas fa-chevron-right"></i><i
+                                                class="fas fa-chevron-right"></i> </a></div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                 </section>
 
-
-
-
-
-                {{-- page 12 --}}
-                <section class="section_area py-5">
+                {{-- page 9 --}}
+                <section class="section_area py-5" id="section_nine">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-
-
-
-                                <div class="fw-bold"><span class="me-4">B.</span> LIABILITIES/DEBTS (This is where
-                                    you list what you OWE.) </div>
-                                <div class="ms-lg-5">
-                                    <div class="fw-bold">INSTRUCTIONS:</div>
-                                    <div><b class="border-bottom"> STEP 1:</b><b> In column A,</b> list a description
-                                        of each separate debt owed by you (and/or your spouse, if
-                                        this is a petition for dissolution of marriage). Blank spaces are provided if
-                                        you need to list more than
-                                        one of an item.</div>
-                                    <div><b class="border-bottom">STEP 2: </b> If this is a petition for dissolution
-                                        of marriage, check the line in Column A next to any debt(s)
-                                        for which you believe you should be responsible.</div>
-                                    <div><b class="border-bottom"> STEP 3:</b> <b>In column B,</b> write what you
-                                        believe to be the current amount owed for all items listed.</div>
-                                    <div><b class="border-bottom"> STEP 4: </b><b>Use column C only if this is a
-                                            petition for dissolution of marriage and you believe an item
-                                            is “nonmarital,” meaning it belongs to only one of you and should not be
-                                            divided. </b>You should
-                                        indicate to whom you believe the item belongs. (Typically, you will only use
-                                        Column C if property
-                                        was owned by one spouse before the marriage. See the <b>“General Information for
-                                            Self-Represented
-                                            Litigants” </b> found at the beginning of these forms and section 61.075(1),
-                                        Florida Statutes, for
-                                        definitions of “marital” and “nonmarital” assets and liabilities.)</div>
-                                    <div style="padding-bottom:500px"></div>
-                                </div>
-
-                                @include('layouts.footer12', ['page' => 12])
-                            </div>
-
-                        </div>
-                    </div>
-
-                </section>
-
-
-
-
-
-
-
-
-                {{-- page 13 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="table-responsive">
-                                    <table class="table-bordered  border border-dark border-2 w-100">
-                                        <tbody>
-                                            <tr>
-                                                <td class="bg-secondary" colspan="2" rowspan="2"
-                                                    style="min-width: 300px;">
-                                                    <div class="text-center">A</div>
-                                                    <div class="text-center ">LIABILITIES: DESCRIPTION OF ITEM(S)
-                                                    </div>
-                                                    <div>LIST ONLY LAST FOUR DIGITS OF ACCOUNT NUMBERS.
-                                                        Check the line next to any debt(s) for which you believe
-                                                        you should be responsible.</div>
-                                                </td>
-                                                <td class="bg-secondary" rowspan="2">
-                                                    <div>B.</div>
-                                                    <div>Current Amount
-                                                        Owed</div>
-                                                </td>
-                                                <td class="bg-secondary" colspan="2">
-                                                    <div>C</div>
-                                                    <div> Nonmarital
-                                                        (Check correct column)</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="bg-secondary">Petitioner</td>
-                                                <td class="bg-secondary">Respondent</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk1"></td>
-                                                <td>
-                                                    <div>Mortgages on real estate: First mortgage on home <span><input
-                                                                type="text" class="border-0 w-25"
-                                                                name="l_a1"></span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="l_b1"
-                                                            class="border-0 text-center w-100"> </div>
-                                                </td>
-                                                <td><input type="checkbox" name="lc_p1"></td>
-                                                <td><input type="checkbox" name="lc_r1"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk2"></td>
-                                                <td>
-                                                    <div>Second mortgage on home <span><input type="text"
-                                                                class="border-0 w-50" name="l_a2"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b2"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p2"></td>
-                                                <td><input type="checkbox" name="lc_r2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk3"></td>
-                                                <td>
-                                                    <div>Other mortgages <span><input type="text"
-                                                                class="border-0 w-50" name="l-a3"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b3"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p3"></td>
-                                                <td><input type="checkbox" name="lc_r3"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk4"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a4"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b4"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p4"></td>
-                                                <td><input type="checkbox" name="lc_r4"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk5"></td>
-                                                <td>
-                                                    <div> Charge/credit card accounts<span><input type="text"
-                                                                class="border-0 w-50" name="l_a5"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b5"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p5"></td>
-                                                <td><input type="checkbox" name="lc_r5"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk6"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a6"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b6"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p6"></td>
-                                                <td><input type="checkbox" name="lc_r6"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk7"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a7"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b7"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p7"></td>
-                                                <td><input type="checkbox" name="lc_r7"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk8"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a8"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b8"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p8"></td>
-                                                <td><input type="checkbox" name="lc_r8"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk9"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a9"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b9"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p9"></td>
-                                                <td><input type="checkbox" name="lc_r9"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk10"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a10"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b10"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p10"></td>
-                                                <td><input type="checkbox" name="lc_r10"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk11"></td>
-                                                <td>
-                                                    <div> Auto loan<span><input type="text" class="border-0 w-75"
-                                                                name="l_a11"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b11"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p11"></td>
-                                                <td><input type="checkbox" name="lc_r11"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk12"></td>
-                                                <td>
-                                                    <div> Auto loan<span><input type="text" class="border-0 w-75"
-                                                                name="l_a12"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b12"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p12"></td>
-                                                <td><input type="checkbox" name="lc_r12"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk13"></td>
-                                                <td>
-                                                    <div> Bank/Credit Union loans<span><input type="text"
-                                                                class="border-0 w-50" name="l_a13"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b13"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p13"></td>
-                                                <td><input type="checkbox" name="lc_r13"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk14"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a14"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b14"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p14"></td>
-                                                <td><input type="checkbox" name="lc_r14"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk15"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a15"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b15"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p15"></td>
-                                                <td><input type="checkbox" name="lc_r15"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk16"></td>
-                                                <td>
-                                                    <div> <span><input type="text" class="border-0 w-100"
-                                                                name="l_a16"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b16"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p16"></td>
-                                                <td><input type="checkbox" name="lc_r16"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk17"></td>
-                                                <td>
-                                                    <div>Money you owe (not evidenced by a note)<span><input
-                                                                type="text" class="border-0 w-25"
-                                                                name="l_a17"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b17"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p17"></td>
-                                                <td><input type="checkbox" name="lc_r17"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk18"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a18"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b18"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_r18"></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk19"></td>
-                                                <td>
-                                                    <div>Judgments<span><input type="text" class="border-0 w-75"
-                                                                name="l_a19"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b19"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p19"></td>
-                                                <td><input type="checkbox" name="lc_r19"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk20"></td>
-                                                <td> <input type="text" min="0" name="l_a20"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td> <input type="text" min="0" name="l_b20"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p20"></td>
-                                                <td><input type="checkbox" name="lc_r20"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk21"></td>
-                                                <td>
-                                                    <div> Other<span><input type="text"
-                                                                class="border-0 w-75 text-center"
-                                                                name="l_a21"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b21"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p21"></td>
-                                                <td><input type="checkbox" name="lc_r21"></td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk22"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a22"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b22"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p22"></td>
-                                                <td><input type="checkbox" name="lc_r22"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk23"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a23"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b23"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p23"></td>
-                                                <td><input type="checkbox" name="lc_r23"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk24"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a24"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b24"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p24"></td>
-                                                <td><input type="checkbox" name="lc_r24"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk25"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a25"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b25"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p25"></td>
-                                                <td><input type="checkbox" name="lc_r25"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk26"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a26"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b26"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p26"></td>
-                                                <td><input type="checkbox" name="lc_r26"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="l_chk27"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a27"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="l_b27"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="lc_p27"></td>
-                                                <td><input type="checkbox" name="lc_p28"></td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <td colspan="2" class="bg-secondary">Total Debts (add column B)
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
-                                                            name="total_lb" class="border-0 text-center w-100">
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                                <div class="pt-5">
-                                    @include('layouts.footer12', ['page' => 13])
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                {{-- page 14 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="fw-bold pb-3"> <span class="me-3">C.</span> NET WORTH (excluding
-                                    contingent assets and liabilities) </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block">
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="c_t_assets"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>Total Assets </b> (enter total of Column B in Asset
-                                        Table; Section A)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block">
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="c_t_liabilities"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10"><b>Total Liabilities </b> (enter total of Column B in
-                                        Liabilities Table; Section B)</div>
-                                </div>
-                                <div class="row mt-1">
-                                    <div class="col-lg-2 d-flex d_sm_block  bg-secondary ">
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
-                                                name="c_t_networth"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-10  bg-secondary">
-                                        <div class="fw-bold">TOTAL NET WORTH (Total Assets minus Total Liabilities)
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row  ">
-                                    <div class="col-lg-2 d-flex d_sm_block bg-secondary">
-
-                                    </div>
-                                    <div class="col-lg-10 bg-secondary">
-                                        <div>(excluding contingent assets and liabilities) </div>
-                                    </div>
-                                </div>
-                                <div class="fw-bold"><span class="me-lg-3"> D.</span> CONTINGENT ASSETS AND
-                                    LIABILITIES</div>
-                                <div class="ms-lg-5">
-                                    <div class="fw-bold">INSTRUCTIONS:</div>
-                                    <div>If you have any <b>POSSIBLE assets</b> (income potential, accrued vacation or
-                                        sick leave, bonus, inheritance,
-                                        etc.) or <b>POSSIBLE liabilities</b> (possible lawsuits, future unpaid taxes,
-                                        contingent tax liabilities, debts
-                                        assumed by another), you must list them here.</div>
-
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table-bordered  border border-dark border-2 w-100">
-                                        <tbody>
-                                            <tr>
-                                                <td class="bg-secondary" colspan="2" rowspan="2"
-                                                    style="min-width: 300px;">
-                                                    <div class="text-center">A</div>
-                                                    <div class="text-center ">Contingent Assets</div>
-                                                    <div>Check the line next to any contingent asset(s) which
-                                                        you are requesting the judge award to you.</div>
-                                                </td>
-                                                <td class="bg-secondary text-center my-auto" rowspan="2">
-                                                    <div>B.</div>
-                                                    <div>Possible Value</div>
-                                                </td>
-                                                <td class="bg-secondary text-center" colspan="2">
-                                                    <div>C</div>
-                                                    <div>Nonmarital
-                                                        (Check correct column)</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="bg-secondary">Petitioner</td>
-                                                <td class="bg-secondary">Respondent</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="d_a_chk1"></td>
-                                                <td> <span><input type="text" class="border-0 w-100"
-                                                            name="d_a1">
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="d_b1"
-                                                            class="border-0 text-center w-100"> </div>
-                                                </td>
-                                                <td><input type="checkbox" name="dc_p1"></td>
-                                                <td><input type="checkbox" name="dc_r1"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="d_a_chk2"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="d_a2">
-                                                </td>
-                                                <td> <input type="text" min="0" name="d_b2"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dc_p2"></td>
-                                                <td><input type="checkbox" name="dc_r2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="d_a_chk3"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="d_a3">
-                                                </td>
-                                                <td> <input type="text" min="0" name="d_b3"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dc_p3"></td>
-                                                <td><input type="checkbox" name="dc_r3"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="d_a_chk4"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="d_a4">
-                                                </td>
-                                                <td> <input type="text" min="0" name="d_b4"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dc_p4"></td>
-                                                <td><input type="checkbox" name="dc_r4"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="d_a_chk5"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="d_a5">
-                                                </td>
-                                                <td> <input type="text" min="0" name="d_b5"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dc_p5"></td>
-                                                <td><input type="checkbox" name="dc_r5"></td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <td colspan="2">Total Contingent Assets</td>
-                                                <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_assets"
-                                                            class="border-0 text-center w-100">
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-
-                                    </table>
-
-
-                                    <table class="table-bordered  border border-dark border-2 w-100 mt-4">
-                                        <tbody>
-                                            <tr>
-                                                <td class="bg-secondary" colspan="2" rowspan="2"
-                                                    style="min-width: 300px;">
-                                                    <div class="text-center">A</div>
-                                                    <div class="text-center ">Contingent Assets</div>
-                                                    <div>Check the line next to any contingent asset(s) which
-                                                        you are requesting the judge award to you.</div>
-                                                </td>
-                                                <td class="bg-secondary text-center my-auto" rowspan="2">
-                                                    <div>B.</div>
-                                                    <div>Possible Amount Owed</div>
-                                                </td>
-                                                <td class="bg-secondary text-center" colspan="2">
-                                                    <div>C</div>
-                                                    <div>Nonmarital (Check correct column)</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="bg-secondary">Petitioner</td>
-                                                <td class="bg-secondary">Respondent</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="dl_a_chk1"></td>
-                                                <td> <span><input type="text" class="border-0 w-100"
-                                                            name="dl_a1">
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
-                                                            min="0" name="dl_b1"
-                                                            class="border-0 text-center w-100"> </div>
-                                                </td>
-                                                <td><input type="checkbox" name="dl_cp1"></td>
-                                                <td><input type="checkbox" name="dl_cr1"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><input type="checkbox" name="dl_a_chk2"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="dl_a2">
-                                                </td>
-                                                <td> <input type="text" min="0" name="dl_b2"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dl_cp2"></td>
-                                                <td><input type="checkbox" name="dl_cr2"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="dl_a_chk3"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="dl_a3">
-                                                </td>
-                                                <td> <input type="text" min="0" name="dl_b3"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dl_cp3"></td>
-                                                <td><input type="checkbox" name="dl_cr3"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="dl_a_chk4"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="dl_a4">
-                                                </td>
-                                                <td> <input type="text" min="0" name="dl_b4"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dl_cp4"></td>
-                                                <td><input type="checkbox" name="dl_cr4"></td>
-                                            </tr>
-                                            <tr>
-                                                <td><input type="checkbox" name="dl_a_chk5"></td>
-                                                <td> <input type="text" class="border-0 w-100" name="dl_a5">
-                                                </td>
-                                                <td> <input type="text" min="0" name="dl_b5"
-                                                        class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="dl_cp5"></td>
-                                                <td><input type="checkbox" name="dlcr5"></td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <td colspan="2">Total Contingent Liabilities </td>
-                                                <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
-                                                            name="d_total_liabilities"
-                                                            class="border-0 text-center w-100">
-                                                    </div>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                                <div class="fw-bold pt-3"><span class="me-3"> E.</span> CHILD SUPPORT GUIDELINES
-                                    WORKSHEET. Florida Family Law Rules of Procedure Form 12.902(e),
-                                    Child Support Guidelines Worksheet, MUST be filed with the court at or prior to a
-                                    hearing to
-                                    establish or modify child support. This requirement cannot be waived by the parties.
-                                </div>
-
-                                <div>
-                                    @include('layouts.footer12', ['page' => 14])
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </section>
-
-                {{-- page 15 --}}
-                <section class="section_area py-5">
-                    <div class="row">
-                        <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class="">[Check one only]</div>
-                                <div class=""><input type="checkbox" name="acs1" id=""> <b>A
+                                <div class="fw-bold"><span class="pe-2">SECTION IV. </span> CHILD SUPPORT
+                                    GUIDELINES WORKSHEET</div>
+                                <div>(Florida Family Law Rules of Procedure Form 12.902(e), Child Support Guidelines
+                                    Worksheet, MUST be
+                                    filed with the court at or prior to a hearing to establish or modify child support.
+                                    This requirement cannot
+                                    be waived by the parties.)</div>
+                                <div class="mt-3">[Check <b>one</b> only]</div>
+                                <div class=""><input type="checkbox" name="section4_chk1" id="">
+                                    <b>A
                                         Child Support Guidelines Worksheet IS or WILL BE filed in this case.</b> This
                                     case involves the
-                                    establishment or modification of child support.</div>
+                                    establishment or modification of child support.
+                                </div>
 
-                                <div class=""><input type="checkbox" name="acs2" id=""> <b>A
+                                <div class=""><input type="checkbox" name="section4_chk2" id="">
+                                    <b>A
                                         Child Support Guidelines Worksheet IS NOT being filed in this case.</b> The
-                                    establishment or modification of child support is not an issue in this case.</div>
+                                    establishment or modification of child support is not an issue in this case.
+                                </div>
 
                                 <div class="fw-bold">I certify that a copy of this financial affidavit was [check all
                                     used]: <span>(<input type="checkbox" name="emailed">)</span> e-mailed
@@ -3046,8 +2618,8 @@
                                                 name="printed_name" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width:335px !important"></span></div>
-                                    <div class="">Address: <span><input type="text" name=""
-                                                id="address2"
+                                    <div class="">Address: <span><input type="text" name="address2"
+                                                id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width:375px !important"></span></div>
                                     <div class="">City, State, Zip: <span><input type="text"
@@ -3058,42 +2630,69 @@
                                                 name="number2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width: 295px !important;"></span></div>
-                                    <div class="">Fax Number: <span><input type="text" name=""
-                                                id="fax_number2"
+                                    <div class="">Fax Number: <span><input type="text" name="fax_number2"
+                                                id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width:345px !important"></span></div>
                                     <div class="">E-mail Address(es): <span><input type="text"
-                                                name="" id="em_address2"
+                                                name="em_address2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width: 300px !important;"></span></div>
                                 </div>
-                                <div class="py-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST
+                                <div class="pt-5 fw-bold">IF A NONLAWYER HELPED YOU FILL OUT THIS FORM, HE/SHE MUST
                                     FILL IN THE BLANKS BELOW:</div>
 
 
                                 <div>[fill in all blanks] This form was prepared for the: {choose only one} <span>
-                                        (<input type="checkbox" name="coo_p">) </span> Petitioner <span> (<input
-                                            type="checkbox" name="coo_r">) </span> Respondent <span>This form was
+                                        (<input type="checkbox" name="coo_pet">) </span> Petitioner <span> (<input
+                                            type="checkbox" name="coo_resp">) </span> Respondent <span>This form was
                                         completed with the assistance of: </div>
-                                <div>{name of individual} <span> <input type="text"
+                                <div><i>{name of individual}</i> <span> <input type="text"
                                             class="border-0 border-bottom footer_field  responsive_input"
-                                            style="width: 780px;" name="no_individual"> </span> </div>
-                                <div>{name of business} <span> <input type="text"
+                                            style="width: 780px;" name="no_individual">, </span> </div>
+                                <div><i>{name of business}</i> <span> <input type="text"
                                             class="border-0 border-bottom footer_field  responsive_input "
-                                            name="no_business" style="width: 790px !important"> </span> </div>
-                                <div>{address} <span> <input type="text"
+                                            name="no_business" style="width: 790px !important">, </span> </div>
+                                <div><i>{address} </i><span> <input type="text"
                                             class="border-0 border-bottom footer_field w-75 responsive_input"
-                                            name="nl_address" style="width: 860px !important"> </span> </div>
-                                <div>{city} <span> <input type="text"
+                                            name="nl_address" style="width: 860px !important">, </span> </div>
+                                <div><i>{city} </i><span> <input type="text"
                                             class="border-0 border-bottom footer_field " name="nl_city"> </span>
-                                    {state} <span> <input type="text"
+                                    <i>, {state}</i> <span> <input type="text" style="width: 50px"
                                             class="border-0 border-bottom footer_field " name="nl_state"> </span>
-                                    {telephone number} <span> <input type="text"
+                                    <i> , {zip code}</i> <span> <input type="text" style="width: 90px"
+                                            class="border-0 border-bottom footer_field " name="nl_zipcode"> </span>
+                                    <i>,{telephone number} </i><span> <input type="text"
                                             class="border-0 border-bottom footer_field " name="nl_tnumber"
-                                            style="width: 290px !important"> </span> </div>
+                                            style="width: 240px !important">, </span>
+                                </div>
                             </div>
                             <div style="padding-bottom:300px;"></div>
                             @include('layouts.footer12', ['page' => 15])
+
+                            <div class="d-flex gap-3 py-auto pb-2  ">
+                                <div class="my-auto"> <a href="#section_one"><i class="fas fa-chevron-left"></i><i
+                                            class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#section_eight"><i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#section_one">1</option>
+                                        <option value="#section_two"> 2</option>
+                                        <option value="#section_three">3</option>
+                                        <option value="#section_four">4</option>
+                                        <option value="#section_five">5</option>
+                                        <option value="#section_six">6</option>
+                                        <option value="#section_seven">7</option>
+                                        <option value="#section_eight">8</option>
+                                        <option value="#section_nine" selected>9</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <i class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2"><a href="#section_nine"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -3102,5 +2701,16 @@
     </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+        selectElement.addEventListener('change', function() {
+            const selectedSection = this.value;
+            if (selectedSection) {
+                window.location.hash = selectedSection;
+            }
+        });
+    });
+</script>
 
 </html>

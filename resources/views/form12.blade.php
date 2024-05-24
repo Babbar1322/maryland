@@ -1236,16 +1236,11 @@
                                         class="border-0 w-100 border-bottom footer_field"></div>
                                 <div class="d-flex pt-1">$<input type="text" name="purchase_price2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2"
-                                        class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2"
-                                        class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2"
-                                        class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2"
-                                        class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="rental_income2"
-                                        class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2" class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2" class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2" class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2" class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="rental_income2" class="border-0 w-100 border-bottom footer_field"> </div>
                             </div>
                         </div>
                     </div>

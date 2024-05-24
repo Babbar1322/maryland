@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('form', FormController::class);
+Route::resource('form1', FormController::class);
 Route::get('form2', [FormController::class, 'form2'])->name('pdf_form2');
 Route::get('form3', [FormController::class, 'form3'])->name('pdf_form3');
 Route::get('form4', [FormController::class, 'form4'])->name('pdf_form4');

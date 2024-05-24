@@ -146,7 +146,7 @@
     <div class="container">
         <div class="row mx-auto text-center my-5">
             <div class="col-lg-4 mt-4 ">
-                <a href="{{route('form.index')}}" class="text-decoration-none">
+                <a href="{{route('form1.index')}}" class="text-decoration-none">
                 <div class="card">
                      <div class="card-body p-5 ">
                       <h5 class="text-decoration-none text-dark">Form 1</h5>
@@ -292,7 +292,7 @@
                   </div>
                 </a>
             </div>
-            <div class="col-lg-4 mt-4 ">
+            {{-- <div class="col-lg-4 mt-4 ">
                 <a href="{{route('pdf_form14')}}" class="text-decoration-none">
                  <div class="card">
                      <div class="card-body p-5">
@@ -301,7 +301,7 @@
                     </div>
                   </div>
                 </a>
-            </div>
+            </div> --}}
             <div class="col-lg-4 mt-4">
                 <a href="{{route('pdf_form15')}}" class="text-decoration-none">
                  <div class="card">
