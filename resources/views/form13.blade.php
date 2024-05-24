@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+         a {
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -255,13 +260,13 @@
 
             <form action="{{ route('form13.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
                     <div class="row  px-lg-5 px-2   pt-2">
-                        <div class="small_text text-end fw-bold">FL-160</div>
+                        <div class="small_text text-end fw-bold">FL-142</div>
                         <div class="border border-dark p-0">
                             <div class="row">
                                 <div class="col-lg-8">
@@ -409,6 +414,24 @@
                         </div>
 
                         @include('layouts.footer9', ['page' => 1])
+                        <div class="d-flex gap-3 py-auto pb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                        class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section"><i
+                                        class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#second_section" > 2</option>
+                                    <option value="#third_section" >3</option>
+                                    <option value="#last_section">4</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#third_section"><i
+                                        class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
+                                        class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                         {{-- <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
                             party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
                             documents was completed or waived must be filed with the court (see form FL-141)</div> --}}
@@ -416,7 +439,7 @@
                     </div>
                 </section>
 
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2 " id="second_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -571,11 +594,29 @@
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 2])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                    class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#first_section"><i
+                                    class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#second_section" selected> 2</option>
+                                <option value="#third_section" >3</option>
+                                <option value="#last_section">4</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#third_section"><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
 
 
 
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2" id="third_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -731,8 +772,26 @@
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 3])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                    class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#second_section"><i
+                                    class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#second_section">2</option>
+                                <option value="#third_section" selected>3</option>
+                                <option value="#last_section">4</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#last_section"><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
-                <section class="section_area  px-lg-5 px-2 ">
+                <section class="section_area  px-lg-5 px-2" id="last_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -900,8 +959,26 @@
             <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
  </div>
 </div>
-
+                    </div>
                     @include('layouts.footer9', ['page' => 4])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                    class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#third_section"><i
+                                    class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section" >1</option>
+                                <option value="#second_section">2</option>
+                                <option value="#third_section">3</option>
+                                <option value="#last_section" selected>4</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href="#third_section"><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
+                                    class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </section>
 
                 {{-- <section class="section_area  px-lg-5 px-2 pt-5 ">
@@ -916,6 +993,18 @@
             </form>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

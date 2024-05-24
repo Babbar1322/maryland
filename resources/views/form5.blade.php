@@ -13,7 +13,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+         a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -227,7 +232,7 @@
                 </div>
                 @endif
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="fw-bold text-center">Appendix V</div>
                         <div class="fw-bold text-center">Family Part Case Information Statement</div>
@@ -343,12 +348,31 @@
                                 obtained.</p>
                         </div>
                         @include('layouts.footer4', ['page' => 1])
-
+                         <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#case_information">2</option>
+                                    <option value="#attach_affidavit">3</option>
+                                    <option value="#gross_income">4</option>
+                                    <option value="#did_you_receive">5</option>
+                                    <option value="#monthly_expenses">6</option>
+                                    <option value="#schedule_personal">7</option>
+                                    <option value="#balance_sheet1">8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#case_information" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
 
                     </div>
                 </section>
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="case_information">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -792,12 +816,31 @@
                                     style="width:850px">
                             </div>
                             @include('layouts.footer4', ['page' => 2])
-
+                            <div class="d-flex gap-3 py-auto mb-2  ">
+                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#first_section" >1</option>
+                                        <option value="#case_information" selected>2</option>
+                                        <option value="#attach_affidavit">3</option>
+                                        <option value="#gross_income">4</option>
+                                        <option value="#did_you_receive">5</option>
+                                        <option value="#monthly_expenses">6</option>
+                                        <option value="#schedule_personal">7</option>
+                                        <option value="#balance_sheet1">8</option>
+                                        <option value="#balance_sheet2">9</option>
+                                        <option value="#last_section">10</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#attach_affidavit" ><i class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                            </div>
                         </div>
                 </section>
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="attach_affidavit">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -1127,6 +1170,26 @@
                                                 </div>
                                             </div>
                                             @include('layouts.footer4', ['page' => 3])
+                                            <div class="d-flex gap-3 py-auto mb-2  ">
+                                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                                                <div class="my-auto ps-2"> <a href="#case_information" ><i class="fas fa-chevron-left"></i></a> </div>
+                                                <div>
+                                                    <select class="form-select w-100 sectionSelect">
+                                                        <option value="#first_section" >1</option>
+                                                        <option value="#case_information" >2</option>
+                                                        <option value="#attach_affidavit" selected>3</option>
+                                                        <option value="#gross_income">4</option>
+                                                        <option value="#did_you_receive">5</option>
+                                                        <option value="#monthly_expenses">6</option>
+                                                        <option value="#schedule_personal">7</option>
+                                                        <option value="#balance_sheet1">8</option>
+                                                        <option value="#balance_sheet2">9</option>
+                                                        <option value="#last_section">10</option>
+                                                    </select>
+                                                </div>
+                                                <div class="my-auto"> <a href="#gross_income" ><i class="fas fa-chevron-right"></i> </a></div>
+                                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1136,14 +1199,14 @@
 
                 </section>
                 <section
-                class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="gross_income">
                 <div class="col-lg-10 mx-auto">
 
 
 
                     {{-- div - 3 --}}
                     <div class="row  mt-lg-3">
-                        <div class="col-lg-6 small_text">3. GROSS INCOME NET OF TAXES $</div>
+                        <div class="col-lg-6 small_text">3. GROSS INCOME NET OF TAXES</div>
                         <div class="d-flex col-lg-6 pt-lg-2"><small>$</small><input type="number" min="0"
                                 name="ginof" style="width: 365px"
                                 class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
@@ -1448,10 +1511,32 @@
                         </div>
 
                         @include('layouts.footer4', ['page' => 4])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#attach_affidavit" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" selected>4</option>
+                                    <option value="#did_you_receive">5</option>
+                                    <option value="#monthly_expenses">6</option>
+                                    <option value="#schedule_personal">7</option>
+                                    <option value="#balance_sheet1">8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#did_you_receive" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
+
                     </div>
                 </div>
             </section>
-                <section   class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section   class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="did_you_receive">
                 <div class="col-lg-10 mx-auto">
 
                     <div class="row">
@@ -1716,6 +1801,26 @@
 
 
                         @include('layouts.footer4', ['page' => 5])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#gross_income" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" selected>5</option>
+                                    <option value="#monthly_expenses">6</option>
+                                    <option value="#schedule_personal">7</option>
+                                    <option value="#balance_sheet1">8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#monthly_expenses" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
 
             </section>
 
@@ -1725,7 +1830,7 @@
 
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="monthly_expenses">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -1759,7 +1864,7 @@
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Rent </span>
                                         <div class="d-flex"> <input type="text" min="0" name="rent"
                                                 style="width: 438px"
-                                                class="border-bottom border-0   bg-transparent border outline-none form-control">
+                                                class="border-bottom border-0 responsive_input  bg-transparent border outline-none form-control">
                                         </div>
 
                                     </div>
@@ -1767,7 +1872,7 @@
                                         </span>
                                         <div class="d-flex"> <input type="text" min="0" name="hear"
                                                 style="width: 322px"
-                                                class="border-bottom border-0   bg-transparent border outline-none form-control">
+                                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text"> Electric & Gas (if not
@@ -1796,12 +1901,8 @@
                             </div>
                             </div>
                             <div class="col-lg-3">
-
-
                                 <div class="d-flex mt-lg-1">
-                                    <small class="ms-2">$</small><input type="number" min="0"
-                                        name="rent1" style="width: 365px"
-                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <small class="ms-2">$</small><input type="number" min="0" name="rent1" style="width: 365px" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex">
                                     <small class="ms-2">$</small><input type="number" min="0"
@@ -2563,13 +2664,33 @@
                                </div>
                            </div>
                            @include('layouts.footer4', ['page' => 6])
+                           <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#did_you_receive" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" selected>6</option>
+                                    <option value="#schedule_personal">7</option>
+                                    <option value="#balance_sheet1">8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#schedule_personal" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                        </div>
                     </div>
 
                 </section>
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="schedule_personal">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -3367,11 +3488,32 @@
                             </div>
                         </div>
                         @include('layouts.footer4', ['page' => 7])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#monthly_expenses" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#schedule_personal" selected>7</option>
+                                    <option value="#balance_sheet1">8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#balance_sheet1" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="balance_sheet1">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
@@ -3873,13 +4015,34 @@
                         </div>
 
                         @include('layouts.footer4', ['page' => 8])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#schedule_personal" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#schedule_personal" >7</option>
+                                    <option value="#balance_sheet1" selected>8</option>
+                                    <option value="#balance_sheet2">9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#balance_sheet2" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 
 
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="balance_sheet2">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
@@ -4212,6 +4375,27 @@
                         </div>
 
                         @include('layouts.footer4', ['page' => 9])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#balance_sheet1" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#schedule_personal" >7</option>
+                                    <option value="#balance_sheet1" >8</option>
+                                    <option value="#balance_sheet2" selected>9</option>
+                                    <option value="#last_section">10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
 
@@ -4219,9 +4403,9 @@
 
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="last_section">
                     <div class="col-lg-10 mx-auto">
-                        <div class=" ">Part F - - Statement of Special Problems</div>
+                        <div class=" ">Part F - Statement of Special Problems</div>
                         <div class=" ">Provide a Brief Narrative Statement of Any Special Problems Involving This Case: As example, state if the matter involves complex valuation problems (such as for a closely held business) or special medical problems of any family member, etc.</div>
                         <textarea name="partf_provide" class="form-control" id=""  rows="5"></textarea>
                         <div class=" ">Part G - Required Attachments</div>
@@ -4299,10 +4483,42 @@
                             <div class="col-lg-1">   </div>
                         </div>
                         @include('layouts.footer4', ['page' => 10])
+
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#balance_sheet2" ><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" >1</option>
+                                    <option value="#case_information" >2</option>
+                                    <option value="#attach_affidavit" >3</option>
+                                    <option value="#gross_income" >4</option>
+                                    <option value="#did_you_receive" >5</option>
+                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#schedule_personal" >7</option>
+                                    <option value="#balance_sheet1" >8</option>
+                                    <option value="#balance_sheet2" >9</option>
+                                    <option value="#last_section" selected>10</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </section>
             </form>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

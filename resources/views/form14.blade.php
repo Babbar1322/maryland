@@ -260,7 +260,7 @@
                         </div>
                     @endif
                     <div class="row  px-lg-5 px-2   pt-2">
-                        <div class="small_text text-end fw-bold">FL-160</div>
+                        <div class="small_text text-end fw-bold">FL-150</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="row">
                                 <div class="col">
@@ -566,7 +566,290 @@
 
                             </div>
                         </div>
+                        <div class="pt-2 f ">4. Other party’s Income. I estimate the gross monthly income (before taxes) of the other party in this case at (specify) : $ This estimate is based on (explain)</div>
+                        <div class="row ps-lg-3">
+                            <div class="fw-bold">(If you need more space to answer any questions on tis form, attach an 8 1/2-by-11-inch sheet of paper and write the question number before your answer.) </div>
+                            <div class="d-flex">
+                                <small> Number of pages attached:</small>
+                               <input type="text" name="signature" class="border-0 border-bottom  w-75 ">
+                            </div>
+                        </div>
+                        <div><small>I declare under penalty of perjury under the laws of the State of California that the information contained on all pages of this form and any attachments is true  and correct</small></div>
+                        <div class="d-flex">
+                            <div class="  me-2">Date</div>
+                            <div> <input type="text" name="date" class="border-0 border-bottom footer_field"></div>
+                        </div>
+                            <div class="row  ">
+                                <div class="col-lg-6">
+                                        <div> <input type="text" name="topn" class="border-0 border-bottom form-control footer_field "></div>
+                                        <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div> <input type="text" name="signature" class="border-0 border-bottom form-control footer_field "></div>
+                                            <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
+                                </div>
+                            </div>
+                        @include('layouts.footer10', ['page' => 1])
+                    </div>
 
+                </section>
+
+                <section class="section_area pt-5">
+
+                    <div class="row px-lg-5 px-2 py-2 pt-5">
+                        <div class="small_text text-end fw-bold">FL-150</div>
+
+                        <div class="col-lg-8 border border-dark">
+                            <div class="p-2 border-dark">
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">PETITIONER:</div>
+                                        <div> <input type="text" name="petitioner" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">RESPONDENT:</div>
+                                        <div> <input type="text" name="respondent" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">OTHER PARENT/PARTY:</div>
+                                        <div> <input type="text" name="other_party" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-lg-4 border border-dark">
+                            <div class="small_text">CASE NUMBER:</div>
+                            <input type="text" name="case_number" class="border-0 table_input w-100">
+                        </div>
+                    </div>
+                    <div class="px-lg-5 px-2">
+                    <div class="fw-bold">Attach copies of your pay stubs for the last two months and proof of any other income. Take a copy of your latest federal tax return to the court hearing. (Black out your Social Security number on the pay stub and tax return.)</div>
+
+                    <div class="pt-2 ">5. Income (For average monthly, add up all the income you receive in each category in the last 12 months</div>
+                    <div class="row ps-lg-3">
+                        <div class="col-lg-6">
+                            <div> and divide the total by 12.)</div>
+                            <h6 class=" ">a. Salary or wages (gross, before taxes) .............................................................................................</h6>
+                            <h6 class="">b. Overtime (gross, before taxes) .......................................................................................................</h6>
+                            <h6 class="">c. Commissions or bonuses ...............................................................................................................</h6>
+                            <h6 class="d-flex">d. Public assistance (for example : TANF, SSI, GA/GR)   <div class="d-flex ps-2  ">
+                                <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                <div class="small_text ps-2">Currently receiving </div>
+                            </div> ............................</h6>
+                            <h6 class="d-flex">e. Spousal support
+                                 <div class="d-flex ps-2  ">
+                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                    <div class="small_text ps-2">From this marriage</div>
+                                </div>
+                                 <div class="d-flex ps-2  ">
+                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                    <div class="small_text ps-2">From a different marriage</div>
+                                </div>
+                                 <div class="d-flex ps-2  ">
+                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                    <div class="small_text ps-2">Federally taxable*</div>
+                                </div>..</h6>
+                            <h6 class="d-flex">f. Partner  support
+                                 <div class="d-flex ps-2">
+                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                    <div class="small_text ps-2">From this domestic partnership</div>
+                                </div>
+                                 <div class="d-flex ps-2">
+                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                   <div class="small_text ps-2">From a different domestic partnership</div>.</div>
+                            </h6>
+                             <h6 class="">g. Pension/retirement fund payments ..............................................................................................</h6>
+                            <h6 class="">h . Social Security retirement (not SSI) ..........................................................................................</h6>
+                            {{-- <h6 class="">j. Commissions or bonuses ...............................................................................</h6> --}}
+                            <h6 class="d-flex">i. Disability
+                                <div class="d-flex ps-2">
+                                  <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                   <div class="small_text ps-2">Social Security (not SSI)</div>
+                               </div>
+                                <div class="d-flex ps-2">
+                                  <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                  <div class="small_text ps-2">State disability (SDI)</div>
+                                </div>
+                                <div class="d-flex ps-2">
+                                  <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                                  <div class="small_text ps-2">Private insurance</div>
+                                </div>
+                                ............
+                           </h6>
+                            <h6 class="">j. Unemployment compensation  .....................................................................................................</h6>
+                            <h6 class="">k. Workers’ compensation..............................................................................................................</h6>
+                            <h6 class="">l. Other (military allowances, royalty payments) (specify) </h6>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="text-center">Last Month</div>
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <small>$</small>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="text-center">Average monthly</div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div>
+                                <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                        </div>
+                    </div>
+
+                     <div class="pt-2">6. Investment income (Attach a schedule showing gross receipts less cash expenses for each piece of property.)</div>
+                     <div class="row ps-lg-3">
+                        <div class="col-lg-6">
+                             <h6 class=" ">a. Dividends/interest ...........................................................................................................................</h6>
+                            <h6 class="">b. Rental property income ..................................................................................................................</h6>
+                            <h6 class="">c. Trust income ...................................................................................................................................</h6>
+                            <h6 class="">d. Other (specify): ..............................................................................................................................</h6>
+                            <div class="">7. Income from self-employment, after business expenses for all businesses.....</div>
+
+                        </div>
+                        <div class="col-lg-3">
+                             <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div class="d-flex ">
+                                <div class="small_text">$</div>
+                                <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                             <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                            <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                            <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                            <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                            <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6 class="d-flex ps-5"> I am the
+                            <div class="d-flex ps-2">
+                              <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                               <div class="small_text ps-2">owner/sole proprietor</div>
+                           </div>
+                            <div class="d-flex ps-2  ">
+                              <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                               <div class="small_text ps-2">business partner</div>
+                           </div>
+                            <div class="d-flex ps-2  ">
+                              <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
+                               <div class="small_text ps-2">other (specify state):</div>
+                           </div>
+                        <input type="text" class="border-0 footer_field w-50 border-bottom">
+                        </h6>
+                    </div>
+                        @include('layouts.footer10', ['page' => 2])
                     </div>
                 </section>
             </form>

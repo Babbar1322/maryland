@@ -13,7 +13,7 @@ class CreateNjFormTable extends Migration
      */
     public function up()
     {
-        Schema::create('nj_form', function (Blueprint $table) {
+        Schema::create('5_nj_form', function (Blueprint $table) {
             $table->id();
             $table->string("title")->nullable();
             $table->timestamp('created_at')->useCurrent();
@@ -28,6 +28,6 @@ class CreateNjFormTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nj_form');
+        Schema::dropIfExists('5_nj_form');
     }
 }

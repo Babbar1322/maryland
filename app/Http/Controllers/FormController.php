@@ -18,10 +18,14 @@ use App\Models\fl161_ca_form;
 use App\Models\fl161_ca_form_data;
 use App\Models\form2;
 use App\Models\form3;
+use App\Models\ga_form;
 use App\Models\form4;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
+use App\Models\pa_form;
+use App\Models\sfs_co_form;
+use App\Models\sfs_co_form_data;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -90,7 +94,21 @@ class FormController extends Controller
     }
 
     public function form3_post(Request $request){
-        form3::create($request->all());
+        // form3::create($request->all());
+
+        $nj = new ga_form();
+        $nj->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $nj_data = new form3();
+            $nj_data->ga_form_id = $nj->id;
+            $nj_data->keyss = $key;
+            $nj_data->valuess= $req;
+            $nj_data->save();
+        }
 
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -100,8 +118,19 @@ class FormController extends Controller
     }
 
     public function form4_post(Request $request) {
-        form4::create($request->all());
+        $nj = new pa_form();
+        $nj->save();
 
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $nj_data = new form4();
+            $nj_data->pa_form_id = $nj->id;
+            $nj_data->keyss = $key;
+            $nj_data->valuess= $req;
+            $nj_data->save();
+        }
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
@@ -310,6 +339,38 @@ class FormController extends Controller
     public function form14(){
         return view('form14');
     }
+
+
+
+    public function form15() {
+        return  view('form15');
+    }
+
+
+    public function form15_post(Request $request) {
+        $sfs_co_form = new sfs_co_form();
+        $sfs_co_form->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $sfs_co_form_data = new sfs_co_form_data();
+            $sfs_co_form_data->sfs_form_id = $sfs_co_form->id;
+            $sfs_co_form_data->keyss = $key;
+            $sfs_co_form_data->valuess= $req;
+            $sfs_co_form_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+    public function form16() {
+        return  view('form16');
+    }
+    public function form17() {
+        return  view('form17');
+    }
+
 
 
 }

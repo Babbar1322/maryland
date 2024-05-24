@@ -117,6 +117,11 @@
                 display: block !important;
             }
 
+            .d_sm_block {
+                display: block !important;
+
+            }
+
             .small_text {
                 height: auto !important;
             }
@@ -238,7 +243,8 @@
             <form action="{{ route('form6.submit') }}" method="post">
                 @csrf
 
-                <section class="section_area row p-5">
+                {{-- section_first --}}
+                <section class="section_area row p-5" id="section_first">
                     <div class="col-md-4 border border-2 border-dark pb-5 border-start-0 border-end-0 ">
                         <h4 class="fw-bold text-center">STATE OF MICHIGAN</h4>
                         <div class="d-flex">
@@ -435,7 +441,7 @@
                             </div>
 
                             <div class="col-md-5 pt-2">
-                                <div class="d-flex gap-4 ">
+                                <div class="d-flex gap-4 d_sm_block ">
                                     <div>
                                         <input type="checkbox" name="income_type" value="weekly">
                                         <label for="">weekly</label>
@@ -502,7 +508,9 @@
                                     class="border-none border-0 border-bottom  shadow-none "></span></div>
                     </div>
                 </section>
-                <section class="section_area row p-5">
+
+                {{-- section_two --}}
+                <section class="section_area row p-5" id="section_two">
                     <div class="col-md-6">
                         <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
                         <div class="fs-6"><span>Page 2 of </span><span> <input type="text" name="page"
@@ -519,7 +527,7 @@
                     <div class="col-md-12 pt-2">
                         <div>Employment benefits:</div>
                     </div>
-                    <div class="col-md-12 d-flex gap-5 mt-3 px-4">
+                    <div class="col-md-12 d-flex gap-5 mt-3 px-4 d_sm_block">
                         <div>
                             <input type="checkbox" name="insurance" value="health_ins">
                             <label for="">health insurance</label>
@@ -799,7 +807,7 @@
                                 <div class="d-flex">
                                     <div>Pensions/Longevity</div>
                                     <input type="text" name="pl"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
@@ -877,7 +885,7 @@
                             <div class="col-md-12 pt-2">
                                 <div class="px-4 row">
                                     <div class="col-md-8">
-                                        <div style="width:705px;">
+                                        <div style="width:705px;" class="responsive_input">
                                             If yes, provide details of the payments including amount per month paid on
                                             your behalf:
                                         </div>
@@ -901,7 +909,9 @@
                             self-employed, also attach a copy of your three most recent business tax returns and/or
                             corporate returns.</div>
                 </section>
-                <section class="section_area p-5">
+
+                {{-- section_three --}}
+                <section class="section_area p-5" id="section_three">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -1073,7 +1083,7 @@
                                         sheets if necessary</span></div>
                             </div>
                         </div>
-                        <div class="col-md-12 pt-3">
+                        <div class="col-md-12 pt-3 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1137,7 +1147,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1201,7 +1211,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1265,7 +1275,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1331,7 +1341,8 @@
                         </div>
                 </section>
 
-                <section class="section_area p-5">
+                {{-- section_four --}}
+                <section class="section_area p-5" id="section_four">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -1442,7 +1453,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 ">Premium:</div>
                                 <div class="">$</div>
                                 <input type="text" name="premium"
@@ -1457,7 +1468,7 @@
                         </div>
 
                         <div class="col-md-7 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 " style="width: 180px;">Cash/surrender value:</div>
                                 <div class="">$</div>
                                 <input type="text" name="premium"
@@ -1502,7 +1513,7 @@
                                 another person</span>
                             <span class="fs-6">Use additional sheets if necessary.</span>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1555,7 +1566,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1608,7 +1619,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1661,7 +1672,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-12 pt-4">
+                        <div class="col-md-12 pt-4 table-responsive">
                             <table class="table-bordered  border border-dark border-2 w-100">
                                 <tr class="fw-bold">
                                     <td style="width:600px;">
@@ -1717,7 +1728,8 @@
                     </div>
                 </section>
 
-                <section class="section_area p-5">
+                {{-- section_five --}}
+                <section class="section_area p-5" id="section_five">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -1899,7 +1911,7 @@
                                     <span>Total:</span>
                                     <span class="fs-6">$</span>
                                     <input type="text" name="prop_total"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                        class="border-none border-0 border-bottom responsive_input  shadow-none my-auto">
                                 </div>
                             </div>
                         </div>
@@ -2032,7 +2044,8 @@
                     </div>
                 </section>
 
-                <section class="section_area p-5">
+                {{-- section_six --}}
+                <section class="section_area p-5" id="section_six">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -2109,7 +2122,7 @@
                                 result in an award for or</div>
                         </div>
                         <div class="col-md-12">
-                            <div class="d-flex gap-5">
+                            <div class="d-flex gap-5 d_sm_block">
                                 <div class="ps-3">against you</div>
                                 <div class="ps-3">
                                     <input type="checkbox" name="elec_curr" value="yes">
@@ -2120,7 +2133,8 @@
                                     <label for="">No</label>
                                 </div>
                                 <div class="ps-5 d-flex">
-                                    <div style="width:530px">If yes, describe the case, where it is filed and the
+                                    <div style="width:530px" class="responsive_input">If yes, describe the case,
+                                        where it is filed and the
                                         possible liability:</div>
                                     <input type="text" name="elec_curr_desc"
                                         class="border-none border-0 border-bottom  shadow-none my-auto">
@@ -2374,7 +2388,8 @@
                     </div>
                 </section>
 
-                <section class="section_area p-5">
+                {{-- section_last --}}
+                <section class="section_area p-5" id="section_last">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -2469,7 +2484,7 @@
                                 cases only (DO and DM case
                                 types).</div>
                         </div>
-                        <div class="col-md-12 pt-2 d-flex gap-3">
+                        <div class="col-md-12 pt-2 d-flex gap-3 d_sm_block">
                             <div>1. Have you ever filed for bankruptcy?</div>
                             <div class="px-3">
                                 <input type="checkbox" name="bankruptcy" value="yes">
@@ -2536,21 +2551,22 @@
                             </div>
                         </div>
                         <div class="col-md-12 py-5">
-                            <div>I declare that the statements above are true to the best of my information, knowledge, and belief.</div>
+                            <div>I declare that the statements above are true to the best of my information, knowledge,
+                                and belief.</div>
                         </div>
 
                         <div class="col-md-7">
                             <div>
                                 <input type="text" name="date"
-                                class="border-none border-0 border-bottom  shadow-none ">
+                                    class="border-none border-0 border-bottom  shadow-none ">
                                 <div class="fs-6">Date</div>
                             </div>
                         </div>
 
                         <div class="col-md-5">
-                            <div >
+                            <div>
                                 <input type="text" name="sign"
-                                class="border-none border-0 border-bottom  shadow-none w-100">
+                                    class="border-none border-0 border-bottom  shadow-none w-100">
                                 <div class="fs-6">Signature</div>
                             </div>
                         </div>
@@ -2560,55 +2576,56 @@
                                 <div style="width:430px;">Subscribed and sworn to before me on</div>
                                 <div class="w-100">
                                     <input type="text" name="subs_date"
-                                    class="border-none border-0 border-bottom  shadow-none w-100">
+                                        class="border-none border-0 border-bottom  shadow-none w-100">
                                     <div class="fs-6">Date</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6"></div>
                         <div class="col-md-6 ms-auto">
-                                <div class="w-100 ">
-                                    <input type="text" name="subs_date"
+                            <div class="w-100 ">
+                                <input type="text" name="subs_date"
                                     class="border-none border-0 border-bottom  shadow-none w-100">
-                                    <div class="fs-6">Deputy clerk/Notary public signature</div>
-                                </div>
+                                <div class="fs-6">Deputy clerk/Notary public signature</div>
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                           <div class="d-flex ps-3">
-                            <div style="width:355px;">My commission expires on</div>
+                            <div class="d-flex ps-3">
+                                <div style="width:355px;">My commission expires on</div>
                                 <input type="text" name="com_date"
-                                class="border-none border-0 border-bottom  shadow-none w-100">
-                           </div>
+                                    class="border-none border-0 border-bottom  shadow-none w-100">
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div>
                                 <input type="text" name="print_name"
-                                class="border-none border-0 border-bottom  shadow-none ">
+                                    class="border-none border-0 border-bottom  shadow-none ">
                                 <div class="fs-6">Name (type or print)</div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="ps-3">Notary public, State of Michigan, County of
                                 <input type="text" name="notary"
-                                class="border-none border-0 border-bottom  shadow-none ">
+                                    class="border-none border-0 border-bottom  shadow-none ">
                                 <span>.</span>
                                 <input type="checkbox" name="notry_county">
                                 Acting in the County of
                                 <input type="text" name="print_name"
-                                class="border-none border-0 border-bottom  shadow-none">
+                                    class="border-none border-0 border-bottom  shadow-none">
                                 <span>.</span>
                             </div>
                         </div>
                         <div class="col-md-12 pb-5 mb-5">
                             <div class="ps-3">
                                 <input type="checkbox" name="elec_notr">
-                                This notarial act was performed using an electronic notarization system or a remote electronic notarization platform.
+                                This notarial act was performed using an electronic notarization system or a remote
+                                electronic notarization platform.
                             </div>
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <button type="submit" class="bg-transparent px-4 me-4">Submit</button>
+                        <button type="butt  on" class="bg-transparent px-4 me-4">Submit</button>
                     </div>
                 </section>
             </form>

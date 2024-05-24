@@ -13,7 +13,7 @@ class CreateNjFormDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('nj_form_data', function (Blueprint $table) {
+        Schema::create('5_nj_form_data', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("nj_form_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateNjFormDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nj_form_data');
+        Schema::dropIfExists('5_nj_form_data');
     }
 }

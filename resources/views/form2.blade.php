@@ -12,7 +12,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <style>
+          a{
+            color: black !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -154,81 +159,19 @@
 
             <form action="{{ route('form2.submit') }}" class="" method="post">
                 @csrf
-             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4">
+             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
                 <div class="form-area   pt-5 ">
                     @if (session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
-                    <div class="border border-dark fw-bolder p-1  top_text">This form contains Restricted Information.
-                    </div>
-                    {{-- <div class="row mt-3">
-                        <div class="col-lg-1 col-sm-1 col-md-2 ps-4 col-3   mb-sm-0 "> <img src="{{ asset('logo.png') }}"  alt=""
-                                class="w-100 my-auto"> </div>
-                        <div class="col-lg-11 col-md-9">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3 fw-bolder p-lg-0 h5 col-sm-5 top_text_width "
-                                    style="max-width: 180px;/ height: 0px; // margin-bottom: 0px; /"> CIRCUIT COURT FOR </div>
-                                 <div class="col-lg-4 col-xl-7">
+                    <div class="border border-dark fw-bolder p-1  top_text">This form contains Restricted Information. </div>
 
-                                    <select id="county" name="county" class="form-select form-control border-0 border-bottom">
-                                        <option selected=""> </option>
-                                        <option value="CIRCUIT COURT LOCATIONS">CIRCUIT COURT LOCATIONS</option>
-                                        <option value="Allegany Country (CC)">Allegany Country (CC)</option>
-                                        <option value="Anne Arundel  Country (CC)">Anne Arundel Country (CC)</option>
-                                        <option value="Baltimore City (CC)">Baltimore City (CC)</option>
-                                        <option value="Baltimore County (CC)">Baltimore County (CC)</option>
-                                        <option value="Calvert County (CC)">Calvert County (CC)</option>
-                                        <option value="Caroline County (CC)">Caroline County (CC)</option>
-                                        <option value="Carroll County (CC)">Carroll County (CC)</option>
-                                        <option value="Cecil County (CC)">Cecil County (CC)</option>
-                                        <option value="Charles County (CC)">Charles County (CC)</option>
-                                        <option value="Dorchester County (CC)">Dorchester County (CC)</option>
-                                        <option value="Frederick County (CC)">Frederick County (CC)</option>
-                                        <option value="Garrett County (CC)">Garrett County (CC)</option>
-                                        <option value="Harford County (CC)">Harford County (CC)</option>
-                                        <option value="Howard County (CC)">Howard County (CC)</option>
-                                        <option value="Kent County (CC)">Kent County (CC)</option>
-                                        <option value="Montgomery County (CC)">Montgomery County (CC)</option>
-                                        <option value="Prince George's County (CC)">Prince George's County (CC)</option>
-                                        <option value="Queen Anne's County (CC)">Queen Anne's County (CC)</option>
-                                        <option value="Somerset County (CC)">Somerset County (CC)</option>
-                                        <option value="St. Mary's County (CC)">St. Mary's County (CC)</option>
-                                        <option value="Talbot County (CC)">Talbot County (CC)</option>
-                                        <option value="Washington County (CC)">Washington County (CC)</option>
-                                        <option value="Wicomico County (CC)">Wicomico County (CC)</option>
-                                        <option value="Worcester County (CC)">Worcester County (CC)</option>
-                                    </select>
-                                    <div class="text-center"> City/County </div>
-                                </div>
-                                <h5 class="col-lg-1 col-sm-3 col-md-2 d-flex gap-1"> <span class="fw-bold fs-3">, </span><span
-                                        class="fs-4">MARYLAND</span>
-                                </h5>
-                            </div>
-
-                            <div class="row">
-                                 <div class="col-lg-1 col-sm-3 text-center p-lg-0" style="max-width:105px;">Located at</div>
-                                <div class="col-lg-5 col-sm-9" style="max-width: 900px;">
-                                    <input type="text" name="court_address"
-                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none">
-                                    <div class="text-center"> Court Address </div>
-                                </div>
-                                <div class="col-lg-1 col-sm-4">
-                                    <div style="max-width:119px;">Case Number</div>
-                                </div>
-                                <div class="col-lg-5 col-sm-8  ">
-                                    <input type="number" name="case_no"
-                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none">
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="row mt-3">
                         <div class="col-lg-1 col-sm-1 ps-4 col-3  mb-sm-0 "> <img src="{{ asset('logo.png') }}" alt="" class="w-100"> </div>
                         <div class="col-lg-11">
                             <div class="row">
-                                <div class="col-md-3   fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; "> CIRCUIT COURT FOR </div>
+                                <div class="col-md-3 fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; "> CIRCUIT COURT FOR </div>
                                 <div class="col-md-7 px-lg-0 top_select_box" >
-
                                     <select id="county" name="county" class="form-select form-control border-0 border-bottom">
                                         <option selected=""> </option>
                                         <option value="CIRCUIT COURT LOCATIONS">CIRCUIT COURT LOCATIONS</option>
@@ -262,10 +205,8 @@
                                 <h5 class="col-md-1  d-flex gap-1 px-lg-0"> <span class="fw-bold fs-3">, </span><span class="fs-4">MARYLAND</span>
                                 </h5>
                             </div>
-
                             <div class="row">
-
-                                <div class="col-md-1 col-lg-2 px-lg-0" style="max-width: 77px;">Located at</div>
+                                <div class="col-md-1 col-lg-2 px-lg-0" style="max-width: 92px;">Located at</div>
                                 <div class="col-md-6 px-lg-0">
                                     <input type="text" name="court_address" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center"> Court Address </div>
@@ -328,7 +269,6 @@
                                     <div class="col-lg-4 col-sm-6">
                                         <input type="text" name="plaintiff_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
-
                                     </div>
                                 </div>
                             </div>
@@ -529,11 +469,28 @@
                             </table>
                         </div>
                         @include('layouts.footer', ['page' => 1])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section" selected>1</option>
+                                    <option value="#lawn_yard_care">2</option>
+                                    <option value="#drug_store_items">3</option>
+                                    <option value="#transportation_expense">4</option>
+                                    <option value="#income_statement">5</option>
+                                    <option value="#assets_liabilities">6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <i class="fas fa-chevron-right"></i> </div>
+                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4">
+            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="lawn_yard_care">
                 <div class="row   ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -551,27 +508,21 @@
                                 <td><input type="number" name="p_lawn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_lawn_total"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td><input type="number" name="p_lawn_total" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Replacement Furnishings/Appliances</td>
                                 <td><input type="number" name="p_furnishings_self" class="border-0 bg-transparent border outline-none form-control" value="100">
                                 </td>
-                                <td><input type="number" name="p_furnishings_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
+                                <td><input type="number" name="p_furnishings_child" class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_furnishings_total"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="100">
+                                <td><input type="number" name="p_furnishings_total" class="border-0 bg-transparent border outline-none form-control" value="100">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Condominium Fee (not included elsewhere)</td>
-                                <td><input type="number" name="p_condominium_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
+                                <td><input type="number" name="p_condominium_self" class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 <td><input type="number" name="p_condominium_child"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -980,12 +931,29 @@
 
                         </table>
                         @include('layouts.footer', ['page' => 2])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#first_section"><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section">1</option>
+                                    <option value="#lawn_yard_care" selected>2</option>
+                                    <option value="#drug_store_items">3</option>
+                                    <option value="#transportation_expense">4</option>
+                                    <option value="#income_statement">5</option>
+                                    <option value="#assets_liabilities">6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#drug_store_items"><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
-            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4">
+            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="drug_store_items">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -1474,6 +1442,23 @@
                             </tr>
                         </table>
                         @include('layouts.footer', ['page' => 3])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"><a href="#lawn_yard_care"> <i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section">1</option>
+                                    <option value="#lawn_yard_care">2</option>
+                                    <option value="#drug_store_items" selected>3</option>
+                                    <option value="#transportation_expense">4</option>
+                                    <option value="#income_statement">5</option>
+                                    <option value="#assets_liabilities">6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#transportation_expense"><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1483,7 +1468,7 @@
 
 
 
-            <section class="section_area page4  mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4">
+            <section class="section_area page4  mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="transportation_expense">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -1756,21 +1741,7 @@
                                         value="0">
                                 </td>
                             </tr>
-                            {{-- <tr>
-                                <td>
-                                    <div>Extracurricular activities</div>
-                                </td>
-                                <td><input type="number" name="i_ea_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
-                                <td><input type="number" name="i_ea_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
-                                <td><input type="number" name="i_ea_total"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
-                            </tr> --}}
+
                             <tr>
                                 <td>
                                     <div>Alterations/Dry Cleaning</div>
@@ -1924,12 +1895,29 @@
                             </tr>
                         </table>
                         @include('layouts.footer', ['page' => 4])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#drug_store_items"><i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section">1</option>
+                                    <option value="#lawn_yard_care">2</option>
+                                    <option value="#drug_store_items">3</option>
+                                    <option value="#transportation_expense" selected>4</option>
+                                    <option value="#income_statement">5</option>
+                                    <option value="#assets_liabilities">6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#income_statement"><i class="fas fa-chevron-right"></i></a> </div>
+                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
-            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4">
+            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="income_statement">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -2267,12 +2255,29 @@
 
                         </table>
                         @include('layouts.footer', ['page' => 5])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#transportation_expense"><i class="fas fa-chevron-left"></i> </a></div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section">1</option>
+                                    <option value="#lawn_yard_care">2</option>
+                                    <option value="#drug_store_items">3</option>
+                                    <option value="#transportation_expense">4</option>
+                                    <option value="#income_statement" selected>5</option>
+                                    <option value="#assets_liabilities">6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"> <a href="#assets_liabilities"><i class="fas fa-chevron-right"></i></a> </div>
+                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="assets_liabilities">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div class=>Case Number</div>
@@ -2445,15 +2450,12 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">a.</div>
                                 </td>
-                                <td> <input type="text" name="da1"
-                                        class="border-0 bg-transparent border outline-none form-control" value="chase"></td>
+                                <td> <input type="text" name="da1" class="border-0 bg-transparent border outline-none form-control" value="chase"></td>
 
                                 <td class="py-0">
-                                    <input type="number" name="da2"
-                                        class="border-0 bg-transparent border outline-none form-control" value="1000">
+                                    <input type="number" name="da2" class="border-0 bg-transparent border outline-none form-control" value="1000">
                                 </td>
-                                {{-- <td class="py-0 bg-secondary" rowspan="4">
-                                </td> --}}
+
                             </tr>
                             <tr>
                                 <td class="" style="width:1px;">
@@ -2553,17 +2555,28 @@
 
                         </table>
                         @include('layouts.footer', ['page' => 6])
+                        <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"><a href="#income_statement"> <i class="fas fa-chevron-left"></i></a> </div>
+                            <div>
+                                <select class="form-select w-100 sectionSelect">
+                                    <option value="#first_section">1</option>
+                                    <option value="#lawn_yard_care">2</option>
+                                    <option value="#drug_store_items">3</option>
+                                    <option value="#transportation_expense">4</option>
+                                    <option value="#income_statement">5</option>
+                                    <option value="#assets_liabilities" selected>6</option>
+                                    <option value="#last_section">7</option>
+                                </select>
+                            </div>
+                            <div class="my-auto"><a href="#last_section"> <i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-
-
-
-
-
-            {{-- <section class="section_area mt-2 mt-lg-4 page7 pe-2 pe-lg-4   p-lg-0 ps-2 pt-lg-5 pt-4"> --}}
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="last_section">
                 <div class="form-area    pt-3 ">
                     <div class="mx-auto h4 fw-bold  ">I solemnly affirm under the penalties of perjury that the
                         contents of this document, Monthly Expense List,
@@ -2692,11 +2705,39 @@
                         </div>
                     </div>
                     @include('layouts.footer', ['page' => 7])
+                    <div class="d-flex gap-3 py-auto pb-2  ">
+                        <div class="my-auto"> <a href="#first_section" class="text-dark"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
+                        <div class="my-auto ps-2"> <a href="#assets_liabilities"><i class="fas fa-chevron-left"></i></a> </div>
+                        <div>
+                            <select class="form-select w-100 sectionSelect">
+                                <option value="#first_section">1</option>
+                                <option value="#lawn_yard_care">2</option>
+                                <option value="#drug_store_items">3</option>
+                                <option value="#transportation_expense">4</option>
+                                <option value="#income_statement">5</option>
+                                <option value="#assets_liabilities">6</option>
+                                <option value="#last_section" selected>7</option>
+                            </select>
+                        </div>
+                        <div class="my-auto"> <a href=""><i class="fas fa-chevron-right"></i></a> </div>
+                        <div class="my-auto ps-2" ><a href="#last_section" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                    </div>
                 </div>
         </form>
-
         </section>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

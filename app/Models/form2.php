@@ -10,4 +10,6 @@ class form2 extends Model
     use HasFactory;
     protected $guarded = [];
 
+    protected $table = "2_md_partially_form_data";
+
 }

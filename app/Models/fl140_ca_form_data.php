@@ -9,7 +9,7 @@ class fl140_ca_form_data extends Model
 {
 
     use HasFactory;
-    protected $table = "fl140_ca_form_datas";
+    protected $table = "9_fl140_ca_form_datas";
 
     protected $guarded = [];
 }

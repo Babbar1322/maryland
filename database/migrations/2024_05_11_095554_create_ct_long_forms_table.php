@@ -13,7 +13,7 @@ class CreateCtLongFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ct_long_forms', function (Blueprint $table) {
+        Schema::create('8_ct_long_forms', function (Blueprint $table) {
             $table->id();
              $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -27,6 +27,6 @@ class CreateCtLongFormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ct_long_forms');
+        Schema::dropIfExists('8_ct_long_forms');
     }
 }

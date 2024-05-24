@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class form4 extends Model
 {
     use HasFactory;
+    protected $table = "4_pa_form_data";
+    protected $guarded = [];
+
 }

@@ -13,7 +13,7 @@ class CreateFl142CaFormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('fl142_ca_form_datas', function (Blueprint $table) {
+        Schema::create('13_fl142_ca_form_datas', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("fl142_form_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateFl142CaFormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fl142_ca_form_datas');
+        Schema::dropIfExists('13_fl142_ca_form_datas');
     }
 }

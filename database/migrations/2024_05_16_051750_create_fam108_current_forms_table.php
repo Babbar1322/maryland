@@ -13,7 +13,7 @@ class CreateFam108CurrentFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fam108_current_forms', function (Blueprint $table) {
+        Schema::create('12_fam108_current_forms', function (Blueprint $table) {
             $table->id();
             $table->timestamp('created_at')->useCurrent();
            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -27,6 +27,6 @@ class CreateFam108CurrentFormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fam108_current_forms');
+        Schema::dropIfExists('12_fam108_current_forms');
     }
 }

@@ -13,7 +13,7 @@ class CreateFl142CaFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fl142_ca_forms', function (Blueprint $table) {
+        Schema::create('13_fl142_ca_forms', function (Blueprint $table) {
             $table->id();
             $table->timestamp('created_at')->useCurrent();
            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -27,6 +27,6 @@ class CreateFl142CaFormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fl142_ca_forms');
+        Schema::dropIfExists('13_fl142_ca_forms');
     }
 }

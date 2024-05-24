@@ -13,7 +13,7 @@ class CreateForm2sTable extends Migration
      */
     public function up()
     {
-        Schema::create('form2s', function (Blueprint $table) {
+        Schema::create('2_md_partially_form_data', function (Blueprint $table) {
             $table->id();
 
             $table->string("county")->nullable();
@@ -447,6 +447,6 @@ class CreateForm2sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form2s');
+        Schema::dropIfExists('2_md_partially_form_data');
     }
 }

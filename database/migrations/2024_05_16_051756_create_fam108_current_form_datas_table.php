@@ -13,7 +13,7 @@ class CreateFam108CurrentFormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('fam108_current_form_datas', function (Blueprint $table) {
+        Schema::create('12_fam108_current_form_datas', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("fam108_current_form_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateFam108CurrentFormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fam108_current_form_datas');
+        Schema::dropIfExists('12_fam108_current_form_datas');
     }
 }
