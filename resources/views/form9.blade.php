@@ -13,6 +13,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
         td {
             padding: 0px !important;
@@ -469,7 +471,7 @@ Response. The time periods may be extended by written agreement of the parties o
     </div>
 </div>
 
-
+@include('layouts.pagination', ['page' => 9 ])
                     </div>
                 </section>
 

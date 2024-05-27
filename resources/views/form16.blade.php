@@ -264,7 +264,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="{{ route('form11.submit') }}" method="post">
+            <form action="{{ route('form16.submit') }}" method="post">
                 @csrf
                 {{-- page 1 --}}
                 <section class="section_area" id="section_first">
@@ -366,7 +366,7 @@
 
                                 @include('layouts.footer12', ['page' => 1])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <i class="fas fa-chevron-left"></i><i
                                             class="fas fa-chevron-left"></i></a></div>
                                     <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i></a> </div>
@@ -394,7 +394,7 @@
                                     <div class="my-auto ps-2"><a href="#section_last"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </section>
                         </div>
                     </div>
@@ -470,7 +470,7 @@
 
 
                                 @include('layouts.footer12', ['page' => 2])
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -500,7 +500,7 @@
                                     <div class="my-auto ps-2"><a href="#section_last"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -688,7 +688,7 @@
 
                                 @include('layouts.footer12', ['page' => 3])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -718,7 +718,7 @@
                                     <div class="my-auto ps-2"><a href="#section_last"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -861,7 +861,7 @@
                             </div>
                             @include('layouts.footer12', ['page' => 4])
 
-                            <div class="d-flex gap-3 py-auto pb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                 <div class="my-auto"> <a href="#section_first"> <i class="fas fa-chevron-left"></i><i
                                             class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#section_three"> <i
@@ -890,7 +890,7 @@
                                 <div class="my-auto ps-2"><a href="#section_last"> <i
                                             class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </section>
@@ -1210,7 +1210,7 @@
                             </div>
                             @include('layouts.footer12', ['page' => 5])
 
-                            <div class="d-flex gap-3 py-auto pb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                 <div class="my-auto"> <a href="#section_first"> <i class="fas fa-chevron-left"></i><i
                                             class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#section_four"> <i
@@ -1239,7 +1239,7 @@
                                 <div class="my-auto ps-2"><a href="#section_last"> <i
                                             class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -1575,7 +1575,7 @@
                                         </div>
                                         @include('layouts.footer12', ['page' => 6])
 
-                                        <div class="d-flex gap-3 py-auto pb-2  ">
+                                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                             <div class="my-auto"> <a href="#section_first"> <i
                                                         class="fas fa-chevron-left"></i><i
                                                         class="fas fa-chevron-left"></i></a></div>
@@ -1605,7 +1605,7 @@
                                             <div class="my-auto ps-2"><a href="#section_last"> <i
                                                         class="fas fa-chevron-right"></i><i
                                                         class="fas fa-chevron-right"></i> </a></div>
-                                        </div>
+                                        </div> --}}
 
                                     </div>
                                 </div>
@@ -1927,7 +1927,7 @@
                             </div>
                             @include('layouts.footer12', ['page' => 7])
 
-                            <div class="d-flex gap-3 py-auto pb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                 <div class="my-auto"> <a href="#section_first"> <i
                                             class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
                                 </div>
@@ -1957,7 +1957,7 @@
                                 <div class="my-auto ps-2"><a href="#section_last"> <i
                                             class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                     </a></div>
-                            </div>
+                            </div> --}}
 
                         </div>
 
@@ -2279,7 +2279,7 @@
                                 </div>
                                 @include('layouts.footer12', ['page' => 8])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -2311,7 +2311,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
 
@@ -2434,7 +2434,7 @@
                                 @include('layouts.footer12', ['page' => 9])
 
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -2466,7 +2466,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -2889,7 +2889,7 @@
                                 </div>
                                 @include('layouts.footer12', ['page' => 10])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -2921,7 +2921,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -3336,7 +3336,7 @@
 
 
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -3368,7 +3368,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
@@ -3415,7 +3415,7 @@
                                 @include('layouts.footer12', ['page' => 12])
 
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -3447,7 +3447,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
 
@@ -3839,7 +3839,7 @@
                                 </div>
 
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -3871,7 +3871,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -4134,7 +4134,7 @@
                                     @include('layouts.footer12', ['page' => 14])
                                 </div>
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_first"> <i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -4166,7 +4166,7 @@
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
@@ -4298,7 +4298,7 @@
                             <div style="padding-bottom:300px;"></div>
                             @include('layouts.footer12', ['page' => 15])
 
-                            <div class="d-flex gap-3 py-auto pb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                 <div class="my-auto"> <a href="#section_first"> <i
                                             class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
                                 </div>
@@ -4328,7 +4328,9 @@
                                 <div class="my-auto ps-2"> <i class="fas fa-chevron-right"></i><i
                                         class="fas fa-chevron-right"></i> </a>
                                 </div>
-                            </div>
+                            </div> --}}
+
+                            @include('layouts.pagination', ['page' => 16])
 
                         </div>
                     </div>

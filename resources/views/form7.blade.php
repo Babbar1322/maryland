@@ -931,7 +931,7 @@
                             <div>List here and explain any other income including but not limited to: non-reported  income; and support provided by relatives, friends, and others:</div>
                         </div>
                         @include('layouts.footer5', ['page' => 1])
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -944,7 +944,7 @@
                             </div>
                             <div class="my-auto"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
                     </div>
                 </section>
                 <section class="section_area p-5" id="mandatory_deductions">
@@ -1692,7 +1692,7 @@
                                 </div>
                             </div>
                             @include('layouts.footer5', ['page' => 2])
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -1705,7 +1705,7 @@
                                 </div>
                                 <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
 
                         </div>
                 </section>
@@ -2302,7 +2302,7 @@
                             </div>
                             </div>
                             @include('layouts.footer5', ['page' => 3])
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -2315,7 +2315,7 @@
                                 </div>
                                 <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
 
                         </div>
                 </section>
@@ -2596,7 +2596,7 @@
 
                             </div>
                             @include('layouts.footer5', ['page' => 4])
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -2609,7 +2609,8 @@
                                 </div>
                                 <div class="my-auto">  <i class="fas fa-chevron-right"></i> </div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
+                            @include('layouts.pagination', ['page' => 7 ])
 
                         </div>
                 </section>

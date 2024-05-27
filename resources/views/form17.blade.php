@@ -264,7 +264,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="{{ route('form11.submit') }}" method="post">
+            <form action="{{ route('form17.submit') }}" method="post">
                 @csrf
 
                 {{-- page 1 --}}
@@ -369,7 +369,7 @@
 
                                 @include('layouts.footer12', ['page' => 1])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <i class="fas fa-chevron-left"></i><i
                                             class="fas fa-chevron-left"></i></a></div>
                                     <div class="my-auto ps-2"><i class="fas fa-chevron-left"></i></a> </div>
@@ -391,7 +391,7 @@
                                     <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -476,27 +476,27 @@
                                             - If you are paid by the hour, you may convert your income to monthly as
                                             follows:
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-2 col-sm-2 col-md-2">
                                                     <div class="m-0 p-0"> Hourly amount</div>
                                                     <div class="m-0 p-0"> Weekly amount</div>
                                                     <div class="m-0 p-0"> Yearly amount</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>x</div>
                                                     <div>x</div>
                                                     <div>÷</div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-lg-3 col-sm-3 col-md-3">
                                                     <div> Hours worked per week</div>
                                                     <div>52 Weeks per year</div>
                                                     <div>12 Months per year</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>=</div>
                                                     <div>=</div>
                                                     <div>=</div>
                                                 </div>
-                                                <div class="col-lg-5">
+                                                <div class="col-lg-5 col-sm-5 col-md-5">
                                                     <div>Weekly amount</div>
                                                     <div>Yearly amount</div>
                                                     <div class="fw-bold ">Monthly Amount</div>
@@ -510,27 +510,27 @@
                                             - If you are paid by the day, you may convert your income to monthly as
                                             follows:
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-2 col-sm-2 col-md-2">
                                                     <div class="m-0 p-0"> Daily amount</div>
                                                     <div class="m-0 p-0"> Weekly amount</div>
                                                     <div class="m-0 p-0"> Yearly amount</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>x</div>
                                                     <div>x</div>
                                                     <div>÷</div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-lg-3 col-sm-3 col-md-1">
                                                     <div>Days worked per week</div>
                                                     <div>52 Weeks per year</div>
                                                     <div>12 Months per year</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>=</div>
                                                     <div>=</div>
                                                     <div>=</div>
                                                 </div>
-                                                <div class="col-lg-5">
+                                                <div class="col-lg-5 col-sm-5 col-md-5">
                                                     <div>Weekly amount</div>
                                                     <div>Yearly amount</div>
                                                     <div class="fw-bold ">Monthly Amount</div>
@@ -543,19 +543,19 @@
                                             - If you are paid by the week, you may convert your income to monthly as
                                             follows:
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-lg-2 col-sm-2 col-md-2">
                                                     <div class="m-0 p-0"> Weekly amount</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>x</div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-lg-3 col-sm-3 col-md-3">
                                                     <div>52 Weeks per year</div>
                                                 </div>
-                                                <div class="col-lg-1">
+                                                <div class="col-lg-1 col-sm-1 col-md-1">
                                                     <div>=</div>
                                                 </div>
-                                                <div class="col-lg-5">
+                                                <div class="col-lg-5 col-sm-5 col-md-5">
                                                     <div>Yearly amount</div>
                                                 </div>
                                             </div>
@@ -565,7 +565,7 @@
 
 
                                     @include('layouts.footer12', ['page' => 2])
-                                    <div class="d-flex gap-3 py-auto pb-2  ">
+                                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                         <div class="my-auto"> <a href="#section_one"><i
                                                     class="fas fa-chevron-left"></i><i
                                                     class="fas fa-chevron-left"></i></a></div>
@@ -589,7 +589,7 @@
                                         <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                     class="fas fa-chevron-right"></i><i
                                                     class="fas fa-chevron-right"></i> </a></div>
-                                    </div>
+                                    </div> --}}
                                 </div>
 
                             </div>
@@ -604,19 +604,19 @@
                             <div class="row px-lg-5 py-2 pt-0">
                                 <div class="">
                                     <div class="row">
-                                        <div class="col-lg-2">
+                                        <div class="col-lg-2 col-sm-2 col-md-2">
                                             <div class="m-0 p-0">Yearly amount</div>
                                         </div>
-                                        <div class="col-lg-1">
+                                        <div class="col-lg-1 col-sm-1 col-md-1">
                                             <div>÷</div>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-3 col-sm-3 col-md-3">
                                             <div>12 Months per year</div>
                                         </div>
-                                        <div class="col-lg-1">
+                                        <div class="col-lg-1 col-sm-1 col-md-1">
                                             <div>=</div>
                                         </div>
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-5 col-sm-5 col-md-5">
                                             <div class="fw-bold">Monthly Amount</div>
                                         </div>
                                     </div>
@@ -625,23 +625,23 @@
                                         may
                                         convert your income to monthly as follows:
                                         <div class="row">
-                                            <div class="col-lg-2">
+                                            <div class="col-lg-2 col-sm-2 col-md-2">
                                                 <div class="m-0 p-0"> Bi-weekly amount</div>
                                                 <div class="m-0 p-0"> Yearly amount</div>
                                             </div>
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-1 col-sm-1 col-md-1">
                                                 <div>x</div>
                                                 <div>÷</div>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-3 col-sm-3 col-md-3">
                                                 <div class="ps-5">26</div>
                                                 <div>12 Months per year</div>
                                             </div>
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-1 col-sm-1 col-md-1">
                                                 <div>=</div>
                                                 <div>=</div>
                                             </div>
-                                            <div class="col-lg-5">
+                                            <div class="col-lg-5 col-sm-5 col-md-5">
                                                 <div>Yearly amount</div>
                                                 <div class="fw-bold ">Monthly Amount</div>
                                             </div>
@@ -654,19 +654,19 @@
                                         you may
                                         convert your income to monthly as follows:
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-3 col-sm-3 col-md-3">
                                                 <div class="m-0 p-0"> Semi-monthly amount</div>
                                             </div>
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-1 col-sm-1 col-md-1">
                                                 <div>x</div>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-3 col-sm-3 col-md-3">
                                                 <div class="">2</div>
                                             </div>
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-1 col-sm-1 col-md-1">
                                                 <div>=</div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4 col-sm-4 col-md-4">
                                                 <div class="fw-bold ">Monthly Amount</div>
                                             </div>
                                         </div>
@@ -686,7 +686,7 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 3])
-
+                                {{--
                                 <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_one"><i
                                                 class="fas fa-chevron-left"></i><i
@@ -711,7 +711,7 @@
                                     <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -925,7 +925,7 @@
 
                                 @include('layouts.footer12', ['page' => 4])
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_one"><i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -949,7 +949,7 @@
                                     <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                 class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                         </a></div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                 </section>
@@ -1043,7 +1043,8 @@
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10 fw-bold">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1 through 16.)
+                                    <div class="col-lg-10 fw-bold">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1
+                                        through 16.)
                                     </div>
                                 </div>
 
@@ -1191,7 +1192,7 @@
                                     </div>
                                     @include('layouts.footer12', ['page' => 5])
 
-                                    <div class="d-flex gap-3 py-auto pb-2  ">
+                                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                         <div class="my-auto"> <a href="#section_one"><i
                                                     class="fas fa-chevron-left"></i><i
                                                     class="fas fa-chevron-left"></i></a></div>
@@ -1215,7 +1216,7 @@
                                         <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                     class="fas fa-chevron-right"></i><i
                                                     class="fas fa-chevron-right"></i> </a></div>
-                                    </div>
+                                    </div> --}}
 
                                 </div>
                             </div>
@@ -1247,11 +1248,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-4 ">Mortgage or rent</div>
-                                    <div class="col-lg-2 ">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">Mortgage or rent</div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
                                         <div class="d-flex  ">$<input type="text" min="0"
                                                 name="mortgage_rent" style="width:100px"
-                                                class="border-0 p-0 m-0 border-bottom footer_field ">
+                                                class="border-0 p-0 m-0 border-bottom footer_field responsive_input">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Clothing</div>
@@ -1752,7 +1753,7 @@
 
                             </div>
                             @include('layouts.footer12', ['page' => 6])
-                            <div class="d-flex gap-3 py-auto pb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                 <div class="my-auto"> <a href="#section_one"><i class="fas fa-chevron-left"></i><i
                                             class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#section_five"><i
@@ -1775,7 +1776,7 @@
                                 <div class="my-auto ps-2"><a href="#section_nine"> <i
                                             class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
                                     </a></div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -1872,7 +1873,8 @@
                                                         which you are requesting the judge award to you.</div>
                                                 </td>
                                                 <td class="bg-secondary" rowspan="2">
-                                                    <div class="text-center mt-5 fw-bold">Current Fair Market Value</div>
+                                                    <div class="text-center mt-5 fw-bold">Current Fair Market Value
+                                                    </div>
                                                 </td>
                                                 <td class="bg-secondary" colspan="2">
                                                     <div class="text-center fw-bold">Nonmarital </div>
@@ -2072,7 +2074,8 @@
                                                 <td> </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2" class="bg-secondary"><b>Total Assets</b> (add next
+                                                <td colspan="2" class="bg-secondary"><b>Total Assets</b> (add
+                                                    next
                                                     column)
                                                 </td>
                                                 <td class="bg-secondary">
@@ -2091,7 +2094,7 @@
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 9])
-
+                                {{--
                                 <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_one"><i
                                                 class="fas fa-chevron-left"></i><i
@@ -2116,7 +2119,7 @@
                                     <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a></div>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -2413,7 +2416,8 @@
 
 
                                             <tr>
-                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent Assets
+                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent
+                                                    Assets
                                                 </td>
                                                 <td class="">
                                                     <div class="d-flex ">$<input type="text" min="0"
@@ -2483,7 +2487,8 @@
 
 
                                             <tr>
-                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent Liabilities
+                                                <td colspan="2" class="bg-secondary fw-bold">Total Contingent
+                                                    Liabilities
                                                 </td>
                                                 <td class="">
                                                     <div class="d-flex ">$<input type="text" min="0"
@@ -2501,7 +2506,7 @@
                                     @include('layouts.footer12', ['page' => 11])
                                 </div>
 
-                                <div class="d-flex gap-3 py-auto pb-2  ">
+                                {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                                     <div class="my-auto"> <a href="#section_one"><i
                                                 class="fas fa-chevron-left"></i><i
                                                 class="fas fa-chevron-left"></i></a></div>
@@ -2525,7 +2530,7 @@
                                     <div class="my-auto ps-2"><a href="#section_nine"> <i
                                                 class="fas fa-chevron-right"></i><i
                                                 class="fas fa-chevron-right"></i> </a></div>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
@@ -2670,29 +2675,7 @@
                             <div style="padding-bottom:300px;"></div>
                             @include('layouts.footer12', ['page' => 15])
 
-                            <div class="d-flex gap-3 py-auto pb-2  ">
-                                <div class="my-auto"> <a href="#section_one"><i class="fas fa-chevron-left"></i><i
-                                            class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#section_eight"><i
-                                            class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#section_one">1</option>
-                                        <option value="#section_two"> 2</option>
-                                        <option value="#section_three">3</option>
-                                        <option value="#section_four">4</option>
-                                        <option value="#section_five">5</option>
-                                        <option value="#section_six">6</option>
-                                        <option value="#section_seven">7</option>
-                                        <option value="#section_eight">8</option>
-                                        <option value="#section_nine" selected>9</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2"><a href="#section_nine"> <i
-                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-                                    </a></div>
-                            </div>
+                            @include('layouts.pagination', ['page' => 17])
                         </div>
                     </div>
                 </section>

@@ -16,6 +16,10 @@ use App\Models\fl160_ca_form;
 use App\Models\fl160_ca_form_data;
 use App\Models\fl161_ca_form;
 use App\Models\fl161_ca_form_data;
+use App\Models\fl_long_form;
+use App\Models\fl_long_form_data;
+use App\Models\fl_short_form;
+use App\Models\fl_short_form_data;
 use App\Models\form2;
 use App\Models\form3;
 use App\Models\ga_form;
@@ -367,11 +371,49 @@ class FormController extends Controller
     public function form16() {
         return  view('form16');
     }
+
+
+
+    public function form16_post(Request $request){
+        $fl_long = new fl_long_form();
+        $fl_long->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fl_long_data = new fl_long_form_data();
+            $fl_long_data->fl_long_id = $fl_long->id;
+            $fl_long_data->keyss = $key;
+            $fl_long_data->valuess= $req;
+            $fl_long_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
     public function form17() {
         return  view('form17');
     }
 
 
+    public function form17_post(Request $request){
+        $fl_short = new fl_short_form();
+        $fl_short->save();
 
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fl_short_data = new fl_short_form_data();
+            $fl_short_data->fl_short_id = $fl_short->id;
+            $fl_short_data->keyss = $key;
+            $fl_short_data->valuess= $req;
+            $fl_short_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+    public function form18() {
+        return  view('form18');
+    }
 }
 

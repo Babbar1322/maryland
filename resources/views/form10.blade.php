@@ -586,7 +586,7 @@
                                 www.courts.ca.gov</a>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 py-auto pb-3  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-3  ">
                         <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                         <div>
@@ -597,7 +597,7 @@
                         </div>
                         <div class="my-auto"> <a href="#last_section" > <i class="fas fa-chevron-right"></i></a>  </div>
                         <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
                 </section>
                 <section class="section_area  px-lg-5 px-2 " id="last_section">
                     <div class="table-responsive pt-5">
@@ -841,7 +841,7 @@
                             <button type="reset" style="background-color: #F59292 ">Clear this form</button>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 py-auto pb-3  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-3  ">
                         <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                         <div>
@@ -852,7 +852,9 @@
                         </div>
                         <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
                         <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
+
+                    @include('layouts.pagination', ['page' => 10])
 
                 </section>
 

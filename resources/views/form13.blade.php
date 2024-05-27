@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-         a {
+        a {
             color: black !important;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -90,6 +91,7 @@
             outline: none !important;
             /* border-bottom: 2px solid black !important; */
         }
+
         .footer_field:focus-visible {
             outline: none !important;
             border-bottom: 2px solid black !important;
@@ -248,8 +250,9 @@
         td[rowspan] {
             vertical-align: top;
         }
+
         .table_input:hover {
-             background-color: #e4eaf9 !important;
+            background-color: #e4eaf9 !important;
         }
     </style>
 </head>
@@ -262,7 +265,8 @@
                 @csrf
                 <section class="section_area" id="first_section">
                     @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}<button
+                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
                     <div class="row  px-lg-5 px-2   pt-2">
@@ -286,11 +290,12 @@
                             </div>
                             {{-- <textarea name="" id="" cols="6" class="form-control p-0 m-0"></textarea> --}}
                         </div>
-                         <div class="p-2 border border-dark">
+                        <div class="p-2 border border-dark">
                             <div class="">
                                 <div>
                                     <div>SUPERIOR COURT OF CALIFORNIA, COUNTY OF</div>
-                                    <div> <input type="text" name="county_of" class="border-0 table_input w-100 "></div>
+                                    <div> <input type="text" name="county_of" class="border-0 table_input w-100 ">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -299,13 +304,15 @@
                             <div>
                                 <div class="d-flex w-100">
                                     <div class="small_text">PETITIONER:</div>
-                                    <div> <input type="text" name="petitioner_val" class="border-0 table_input w-100"></div>
+                                    <div> <input type="text" name="petitioner_val"
+                                            class="border-0 table_input w-100"></div>
                                 </div>
                             </div>
                             <div>
                                 <div class="d-flex">
                                     <div class="small_text">RESPONDENT:</div>
-                                    <div> <input type="text" name="respondent_val" class="border-0 table_input "></div>
+                                    <div> <input type="text" name="respondent_val" class="border-0 table_input ">
+                                    </div>
                                 </div>
                             </div>
 
@@ -333,8 +340,14 @@
                     <div class="px-lg-5 px-2 row">
                         <div class="p-2">
                             <div class="text-center "> — INSTRUCTIONS — </div>
-                            <div class="lh-1">List all your known community and separate assets or debts. Include assets even if they are in the possession of another person, including your spouse. If you contend an asset or debt is separate, put P (for Petitioner) or R (for Respondent) in the first column (separate property) to indicate to whom you contend it belongs.</div>
-                            <div class="lh-1 pt-3"> All values should be as of the date of signing the declaration unless you specify a different valuation date with the description. For additional space, use a continuation sheet numbered to show which item is being continued</div>
+                            <div class="lh-1">List all your known community and separate assets or debts. Include
+                                assets even if they are in the possession of another person, including your spouse. If
+                                you contend an asset or debt is separate, put P (for Petitioner) or R (for Respondent)
+                                in the first column (separate property) to indicate to whom you contend it belongs.
+                            </div>
+                            <div class="lh-1 pt-3"> All values should be as of the date of signing the declaration
+                                unless you specify a different valuation date with the description. For additional
+                                space, use a continuation sheet numbered to show which item is being continued</div>
                         </div>
                         <div class="table-responsive">
                             <table class="table-bordered border border-2 border-dark">
@@ -354,58 +367,60 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="2"  class="small_text p-0">
-                                            1. REAL ESTATE (Give street addresses and attach copies of deeds with legal descriptions and latest lender's statement.)
+                                        <td colspan="2" class="small_text p-0">
+                                            1. REAL ESTATE (Give street addresses and attach copies of deeds with legal
+                                            descriptions and latest lender's statement.)
                                             <textarea name="asseets_description1" id="" class="form-control" rows="12"></textarea>
                                         </td>
                                         <td class="small_text p-0">
                                             <textarea name="sep_prop1" id="" class="form-control" rows="14"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="date_acquired1" id="" class="form-control" rows="14"></textarea>
                                         </td>
-                                        <td  class="small_text p-0 d-flex">$
+                                        <td class="small_text p-0 d-flex">$
                                             <textarea name="current_gross_fair1" id="" class="form-control" rows="14"></textarea>
                                         </td>
 
-                                        <td  class="small_text p-0"> <div class="d-flex">$
-                                            <textarea name="amount_of_money1" id="" class="form-control" rows="14"></textarea>
-                                        </div>
+                                        <td class="small_text p-0">
+                                            <div class="d-flex">$
+                                                <textarea name="amount_of_money1" id="" class="form-control" rows="14"></textarea>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2"  class="small_text p-0">
+                                        <td colspan="2" class="small_text p-0">
                                             2. HOUSEHOLD FURNITURE, FURNISHINGS, APPLIANCES (Identify.)
                                             <textarea name="asseets_description2" id="" class="form-control" rows="7"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="sep_prop2" id="" class="form-control" rows="8"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="date_acquired2" id="" class="form-control" rows="8"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="current_gross_fair2" id="" class="form-control" rows="8"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="amount_of_money2" id="" class="form-control" rows="8"></textarea>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2"  class="small_text p-0">
+                                        <td colspan="2" class="small_text p-0">
                                             3. JEWELRY, ANTIQUES, ART, COIN COLLECTIONS, etc.(Identify.)
                                             <textarea name="asseets_description3" id="" class="form-control" rows="4"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="sep_prop3" id="" class="form-control" rows="5"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="date_acquired3" id="" class="form-control" rows="5"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="current_gross_fair3" id="" class="form-control" rows="5"></textarea>
                                         </td>
-                                        <td  class="small_text p-0">
+                                        <td class="small_text p-0">
                                             <textarea name="amount_of_money3" id="" class="form-control" rows="5"></textarea>
                                         </td>
                                     </tr>
@@ -414,7 +429,7 @@
                         </div>
 
                         @include('layouts.footer9', ['page' => 1])
-                        <div class="d-flex gap-3 py-auto pb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                             <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
                                         class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#first_section"><i
@@ -431,7 +446,7 @@
                                         class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
                                         class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
                         {{-- <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
                             party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
                             documents was completed or waived must be filed with the court (see form FL-141)</div> --}}
@@ -444,12 +459,12 @@
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
                                 <tr>
-                                        <td colspan="2" class="text-center">
-                                            <div class="d-flex gap-5 justify-content-center">
-                                                <span>ITEM NO.</span>
-                                                <span>ASSETS DESCRIPTION</span>
-                                            </div>
-                                        </td>
+                                    <td colspan="2" class="text-center">
+                                        <div class="d-flex gap-5 justify-content-center">
+                                            <span>ITEM NO.</span>
+                                            <span>ASSETS DESCRIPTION</span>
+                                        </div>
+                                    </td>
                                     <td class="text-center">SEP.PROP</td>
                                     <td>DATE ACQUIRED</td>
                                     <td>CURRENT GROSS FAIR MARKET VALUE</td>
@@ -458,68 +473,71 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         4. VEHICLES, BOATS, TRAILERS (Describe and attach copy of title document.)
 
                                         <textarea name="asseets_description4" id="" class="form-control" rows="12"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop4" id="" class="form-control" rows="14"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired4" id="" class="form-control" rows="14"></textarea>
                                     </td>
-                                    <td  class="small_text p-0 d-flex">$
+                                    <td class="small_text p-0 d-flex">$
                                         <textarea name="current_gross_fair4" id="" class="form-control" rows="14"></textarea>
                                     </td>
 
-                                    <td  class="small_text p-0"> <div class="d-flex">$
-                                        <textarea name="amount_of_money4" id="" class="form-control" rows="14"></textarea>
-                                    </div>
+                                    <td class="small_text p-0">
+                                        <div class="d-flex">$
+                                            <textarea name="amount_of_money4" id="" class="form-control" rows="14"></textarea>
+                                        </div>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         5. SAVINGS ACCOUNTS (Account name, account number,
                                         bank, and branch. Attach copy of latest statement.)
                                         <textarea name="asseets_description5" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop5" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired5" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair5" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money5" id="" class="form-control" rows="8"></textarea>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
-                                        6. CHECKING ACCOUNTS (Account name and number, bank, and branch. Attach copy of latest statement.)
+                                    <td colspan="2" class="small_text p-0">
+                                        6. CHECKING ACCOUNTS (Account name and number, bank, and branch. Attach copy of
+                                        latest statement.)
                                         <textarea name="asseets_description6" id="" class="form-control" rows="4"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop6" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired6" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair6" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money6" id="" class="form-control" rows="6"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
-                                        7. CREDIT UNION, OTHER DEPOSIT ACCOUNTS (Account name and number, bank, and branch. Attach copy of latest statement.)
+                                    <td colspan="2" class="small_text p-0">
+                                        7. CREDIT UNION, OTHER DEPOSIT ACCOUNTS (Account name and number, bank, and
+                                        branch. Attach copy of latest statement.)
                                         <textarea name="asseets_description7" id="" class="form-control" rows="7"></textarea>
                                     </td>
                                     <td class="small_text p-0">
@@ -536,7 +554,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         8. CASH (Give location.)
                                         <textarea name="asseets_description8" id="" class="form-control" rows="6"></textarea>
                                     </td>
@@ -554,7 +572,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         9. TAX REFUND
                                         <textarea name="asseets_description9" id="" class="form-control" rows="6"></textarea>
                                     </td>
@@ -572,7 +590,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         10. LIFE INSURANCE WITH CASH SURRENDER OR LOAN
                                         VALUE (Attach copy of declaration page for each policy.)
                                         <textarea name="asseets_description10" id="" class="form-control" rows="5"></textarea>
@@ -594,7 +612,7 @@
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 2])
-                    <div class="d-flex gap-3 py-auto pb-2  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
                                     class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#first_section"><i
@@ -611,7 +629,7 @@
                                     class="fas fa-chevron-right"></i> </a></div>
                         <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
                                     class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
                 </section>
 
 
@@ -621,12 +639,12 @@
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
                                 <tr>
-                                        <td colspan="2" class="text-center">
-                                            <div class="d-flex gap-5 justify-content-center">
-                                                <span>ITEM NO.</span>
-                                                <span>ASSETS DESCRIPTION</span>
-                                            </div>
-                                        </td>
+                                    <td colspan="2" class="text-center">
+                                        <div class="d-flex gap-5 justify-content-center">
+                                            <span>ITEM NO.</span>
+                                            <span>ASSETS DESCRIPTION</span>
+                                        </div>
+                                    </td>
                                     <td class="text-center">SEP.PROP</td>
                                     <td>DATE ACQUIRED</td>
                                     <td>CURRENT GROSS FAIR MARKET VALUE</td>
@@ -635,70 +653,71 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         11. STOCKS, BONDS, SECURED NOTES, MUTUAL FUNDS
                                         (Give certificate number and attach copy of the certificate or
                                         copy of latest statement.)
-                                         <textarea name="asseets_description11" id="" class="form-control" rows="7"></textarea>
+                                        <textarea name="asseets_description11" id="" class="form-control" rows="7"></textarea>
                                     </td>
 
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop11" id="" class="form-control" rows="9"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired11" id="" class="form-control" rows="9"></textarea>
                                     </td>
-                                    <td  class="small_text p-0 d-flex">$
+                                    <td class="small_text p-0 d-flex">$
                                         <textarea name="current_gross_fair11" id="" class="form-control" rows="9"></textarea>
                                     </td>
 
-                                    <td  class="small_text p-0"> <div class="d-flex">$
-                                        <textarea name="amount_of_money11" id="" class="form-control" rows="9"></textarea>
-                                    </div>
+                                    <td class="small_text p-0">
+                                        <div class="d-flex">$
+                                            <textarea name="amount_of_money11" id="" class="form-control" rows="9"></textarea>
+                                        </div>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         12. RETIREMENT AND PENSIONS (Attach copy of latest
                                         summary plan documents and latest benefit statement.)
                                         <textarea name="asseets_description12" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop12" id="" class="form-control" rows="10"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired12" id="" class="form-control" rows="10"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair12" id="" class="form-control" rows="10"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money12" id="" class="form-control" rows="10"></textarea>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         13. PROFIT - SHARING, ANNUITIES, IRAS, DEFERRED
                                         COMPENSATION (Attach copy of latest statement.)
                                         <textarea name="asseets_description13" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop13" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired13" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair13" id="" class="form-control" rows="8"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money13" id="" class="form-control" rows="8"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         14. ACCOUNTS RECEIVABLE AND UNSECURED NOTES (Attach copy of each.)
                                         <textarea name="asseets_description14" id="" class="form-control" rows="7"></textarea>
                                     </td>
@@ -716,7 +735,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         15. PARTNERSHIPS AND OTHER BUSINESS INTERESTS
                                         (Attach copy of most current K-1 form and Schedule C.)
                                         <textarea name="asseets_description15" id="" class="form-control" rows="5"></textarea>
@@ -735,7 +754,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         16. OTHER ASSETS
                                         <textarea name="asseets_description16" id="" class="form-control" rows="10"></textarea>
                                     </td>
@@ -753,26 +772,39 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0"> 17. TOTAL ASSETS FROM CONTINUATION SHEET </td>
+                                    <td colspan="2" class="small_text p-0"> 17. TOTAL ASSETS FROM CONTINUATION
+                                        SHEET </td>
                                     <td class="small_text p-0">
-                                        <input name="total_asssets_continuation1" id="" class="form-control border-0"></td>
+                                        <input name="total_asssets_continuation1" id=""
+                                            class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="total_asssets_continuation2" id="" class="form-control border-0"></td>
+                                        <input name="total_asssets_continuation2" id=""
+                                            class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="total_asssets_continuation3" id="" class="form-control border-0"></td>
+                                        <input name="total_asssets_continuation3" id=""
+                                            class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="total_asssets_continuation4" id="" class="form-control border-0"></td>
+                                        <input name="total_asssets_continuation4" id=""
+                                            class="form-control border-0">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4"  class="small_text p-0"> 18. TOTAL ASSETS</td>
-                                    <td class="small_text p-0 d-flex">$  <input name="total_assets1" id="" class="form-control border-0"></input></td>
-                                    <td class="small_text p-0"> <div class="d-flex">$ <input name="total_assets2" id="" class="form-control border-0"></input>  </div>  </td>
+                                    <td colspan="4" class="small_text p-0"> 18. TOTAL ASSETS</td>
+                                    <td class="small_text p-0 d-flex">$ <input name="total_assets1" id=""
+                                            class="form-control border-0"></input></td>
+                                    <td class="small_text p-0">
+                                        <div class="d-flex">$ <input name="total_assets2" id=""
+                                                class="form-control border-0"></input> </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 3])
-                    <div class="d-flex gap-3 py-auto pb-2  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
                                     class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#second_section"><i
@@ -789,7 +821,7 @@
                                     class="fas fa-chevron-right"></i> </a></div>
                         <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
                                     class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
                 </section>
                 <section class="section_area  px-lg-5 px-2" id="last_section">
                     <div class="table-responsive pt-5">
@@ -810,9 +842,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         19. STUDENT LOANS (Give details.)
-                                           <textarea name="asseets_description19" id="" class="form-control" rows="3"></textarea>
+                                        <textarea name="asseets_description19" id="" class="form-control" rows="3"></textarea>
                                     </td>
                                     <td class="small_text p-0">
                                         <textarea name="sep_prop19" id="" class="form-control" rows="4"></textarea>
@@ -824,48 +856,50 @@
                                         <textarea name="current_gross_fair19" id="" class="form-control" rows="4"></textarea>
                                     </td>
 
-                                    <td class="small_text p-0"> <div class="d-flex">$
-                                        <textarea name="amount_of_money19" id="" class="form-control" rows="4"></textarea>
-                                    </div>
+                                    <td class="small_text p-0">
+                                        <div class="d-flex">$
+                                            <textarea name="amount_of_money19" id="" class="form-control" rows="4"></textarea>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0"> 20. TAXES (Give details.)
+                                    <td colspan="2" class="small_text p-0"> 20. TAXES (Give details.)
                                         <textarea name="asseets_description20" id="" class="form-control" rows="4"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop20" id="" class="form-control" rows="5"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired20" id="" class="form-control" rows="5"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair20" id="" class="form-control" rows="5"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money20" id="" class="form-control" rows="5"></textarea>
                                     </td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">21. SUPPORT ARREARAGES (Attach copies of orders and statements.)
+                                    <td colspan="2" class="small_text p-0">21. SUPPORT ARREARAGES (Attach copies of
+                                        orders and statements.)
                                         <textarea name="asseets_description21" id="" class="form-control" rows="5"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="sep_prop21" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="date_acquired21" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="current_gross_fair21" id="" class="form-control" rows="6"></textarea>
                                     </td>
-                                    <td  class="small_text p-0">
+                                    <td class="small_text p-0">
                                         <textarea name="amount_of_money21" id="" class="form-control" rows="6"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         22. LOANS—UNSECURED (Give bank name and loan number and attach copy of latest
                                         statement.)
                                         <textarea name="asseets_description22" id="" class="form-control" rows="4"></textarea>
@@ -884,7 +918,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">23. CREDIT CARDS (Give creditor's name and address and the account number. Attach copy of latest statement.)
+                                    <td colspan="2" class="small_text p-0">23. CREDIT CARDS (Give creditor's name
+                                        and address and the account number. Attach copy of latest statement.)
                                         <textarea name="asseets_description23" id="" class="form-control" rows="8"></textarea>
                                     </td>
                                     <td class="small_text p-0">
@@ -901,7 +936,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         24. OTHER DEBTS (Specify.):
                                         <textarea name="asseets_description24" id="" class="form-control" rows="15"></textarea>
                                     </td>
@@ -919,22 +954,30 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"  class="small_text p-0">
+                                    <td colspan="2" class="small_text p-0">
                                         25. TOTAL DEBTS FROM CONTINUATION SHEET</td>
                                     <td class="small_text p-0">
-                                        <input name="sep_prop25" class="form-control border-0"></td>
+                                        <input name="sep_prop25" class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="date_acquired25" class="form-control border-0"></td>
+                                        <input name="date_acquired25" class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="current_gross_fair25" class="form-control border-0"></td>
+                                        <input name="current_gross_fair25" class="form-control border-0">
+                                    </td>
                                     <td class="small_text p-0">
-                                        <input name="amount_of_money25" class="form-control border-0"></td>
+                                        <input name="amount_of_money25" class="form-control border-0">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4"  class="small_text p-0"> 26. TOTAL DEBTS</td>
+                                    <td colspan="4" class="small_text p-0"> 26. TOTAL DEBTS</td>
 
-                                        <td class="small_text p-0 d-flex">$  <input name="total_debts1" id="" class="form-control border-0"> </td>
-                                        <td class="small_text p-0"> <div class="d-flex">$ <input name="total_debts2" id="" class="form-control border-0">  </div>  </td>
+                                    <td class="small_text p-0 d-flex">$ <input name="total_debts1" id=""
+                                            class="form-control border-0"> </td>
+                                    <td class="small_text p-0">
+                                        <div class="d-flex">$ <input name="total_debts2" id=""
+                                                class="form-control border-0"> </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -942,54 +985,55 @@
                     </div>
                     <div class=" pt-1">
                         <div class="d-flex d_sm_block">
-                           <span>27.</span> <input type="checkbox" class="mx-2" name="continuation_declaration" value="Yes">  (Specify number): <input type="text" class="border-0 border-bottom footer_field"> <span>pages are attached as continuation sheets.</span>
+                            <span>27.</span> <input type="checkbox" class="mx-2" name="continuation_declaration"
+                                value="Yes"> (Specify number): <input type="text"
+                                class="border-0 border-bottom footer_field"> <span>pages are attached as continuation
+                                sheets.</span>
                         </div>
-                        <div class="small_text">I declare under penalty of perjury under the laws of the State of California that the foregoing is true and correct.</div>
+                        <div class="small_text">I declare under penalty of perjury under the laws of the State of
+                            California that the foregoing is true and correct.</div>
                         <div class="d-flex">
                             <div class="  me-2">Date</div>
-                            <div> <input type="text" name="date" class="border-0 border-bottom footer_field"></div>
+                            <div> <input type="text" name="date" class="border-0 border-bottom footer_field">
+                            </div>
                         </div>
-<div class="row  ">
-<div class="col-lg-6">
-          <div> <input type="text" name="topn" class="border-0 border-bottom form-control footer_field "></div>
-          <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
-        </div>
-        <div class="col-lg-6">
-            <div> <input type="text" name="signature" class="border-0 border-bottom form-control footer_field "></div>
-            <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
- </div>
-</div>
+                        <div class="row  ">
+                            <div class="col-lg-6">
+                                <div> <input type="text" name="topn"
+                                        class="border-0 border-bottom form-control footer_field "></div>
+                                <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div> <input type="text" name="signature"
+                                        class="border-0 border-bottom form-control footer_field "></div>
+                                <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
+                            </div>
+                        </div>
                     </div>
                     @include('layouts.footer9', ['page' => 4])
-                    <div class="d-flex gap-3 py-auto pb-2  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
                                     class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#third_section"><i
-                                    class="fas fa-chevron-left"></i></a> </div>
+                        <div class="my-auto ps-2"> <a href="#third_section"><i class="fas fa-chevron-left"></i></a>
+                        </div>
                         <div>
                             <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section" >1</option>
+                                <option value="#first_section">1</option>
                                 <option value="#second_section">2</option>
                                 <option value="#third_section">3</option>
                                 <option value="#last_section" selected>4</option>
                             </select>
                         </div>
-                        <div class="my-auto"> <a href="#third_section"><i
-                                    class="fas fa-chevron-right"></i> </a></div>
+                        <div class="my-auto"> <a href="#third_section"><i class="fas fa-chevron-right"></i> </a>
+                        </div>
                         <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
                                     class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
+
+                    @include('layouts.pagination', ['page' => 13 ])
                 </section>
 
-                {{-- <section class="section_area  px-lg-5 px-2 pt-5 ">
-                    <h5 class="text-center fw-bold">INFORMATION AND INSTRUCTIONS FOR COMPLETING FORM FL-160</h5>
-                    <div class="">
-                        Property Declaration (form FL-160) is a multipurpose form, which may be filed with the court as as attachment to a Petition or Response or served on the other party to comply with disclosure requirements in place of a Schedule of Assets and Debts (form FL-142). Courts may also require a party to a file a Property Declarationas an attachment to a Request to Enter Default (form FL-165) or Judgment (form FL-180).
-                    </div>
-                    <div class="fw-bold text-center">when filliing a Property Declatation with the court, do not include private financial documents listed below.</div>
-                    <div class="fw-bold">Identify the type of declatation completed</div>
-                    <ul></ul>
-                </section> --}}
+
             </form>
         </div>
     </div>
