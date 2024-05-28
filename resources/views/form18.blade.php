@@ -16,6 +16,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+        @media screen and (min-width : 350px) {
+            .logo {
+                padding-bottom: 10px !important;
+                width: 130px !important;
+            }
+
+            .link {
+                text-align: center !important;
+            }
+        }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -260,7 +271,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="#" method="post">
+            <form action="{{ route('form18.submit') }}" method="post">
                 @csrf
                 {{-- page 1 --}}
                 <section class="section_area" id="section_first">
@@ -272,11 +283,12 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
-                                <div class="row d-flex justify-content-between border-bottom">
-                                    <div class="col-lg-6 col-sm-6 col-md-6">
-                                        <img src="{{ asset('logo.png') }}" class="image-fluid w-25" alt="...">
+                                <div class="row  d-flex justify-content-between border-bottom">
+                                    <div class="col-lg-6 col-sm-6 col-md-6  ">
+                                        <img src="{{ asset('logo11.png') }}" class="image-fluid logo w-25"
+                                            alt="...">
                                     </div>
-                                    <div class="col-lg-6 col-sm-6 col-md-6 text-end">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 text-end link">
                                         <p class="m-0">201 Spear St, San Francisco, CA 94105</p>
 
                                         <a href="https://www.suretranslation.com">https://www.suretranslation.com</a>
@@ -583,23 +595,23 @@
 
                                 <div class=" justify-content-center d-flex d_sm_block">EN EL TRIBUNAL DE CIRCUITO DE LA
                                     CIRCUNSCRIPCIÓN JUDICIAL
-                                    <input type="text" min="0" name="j_circuit"
+                                    <input type="text" min="0" name="judicial"
                                         class="border-0 footer_field border-bottom"> ,
                                 </div>
                                 <div class=" justify-content-center m-0 p-0  d-flex d_sm_block">EN Y PARA EL CONDADO DE
-                                    <input type="text" min="0" name="country_f"
+                                    <input type="text" min="0" name="florida"
                                         class="border-0 m-0 p-0 footer_field border-bottom"> , FLORIDA
                                 </div>
 
                                 <div class="mt-1">N.o de caso:</div>
                                 <div>División:</div>
                                 <div class=" m-0 p-0  d-flex d_sm_block"> <input type="text" min="0"
-                                        name="country_f" class="border-0 m-0 p-0 footer_field border-bottom"> ,
+                                        name="solicitante" class="border-0 m-0 p-0 footer_field border-bottom"> ,
                                 </div>
                                 <div>Solicitante,</div>
                                 <div class="">y</div>
                                 <div class=" m-0 p-0  d-flex d_sm_block"> <input type="text" min="0"
-                                        name="country_f" class="border-0 m-0 p-0 footer_field border-bottom"> ,
+                                        name="demandado" class="border-0 m-0 p-0 footer_field border-bottom"> ,
                                 </div>
                                 <div>Demandado.</div>
                                 <div class="ms-1">DECLARACIÓN JURADA FINANCIERA DE DERECHO DE FAMILIA (FORMULARIO
@@ -621,7 +633,7 @@
                                 </div>
 
                                 <div class=" d-flex d_sm_block ">Yo, {nombre legal completo}
-                                    <input type="text" min="0" name="j_circuit"
+                                    <input type="text" min="0" name="nombre_lc"
                                         class="border-0 footer_field border-bottom"> , bajo juramento, certificoque la
                                     siguiente información es verdadera:
                                 </div>
@@ -629,12 +641,12 @@
                                 <div class="mt-4 fs-5">SECCIÓN I. INGRESOS</div>
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">1. </span>Mi edad es:<input type="text" min="0"
-                                        name="mid_10"
+                                        name="mi_edad_es"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">2. </span>Mi ocupación es:<input type="text"
-                                        min="0" name="mid_10"
+                                        min="0" name="mi_ocupacion_es"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -659,7 +671,7 @@
                                 Si espera quedar desempleado o cambiar de trabajo pronto, describa el cambio que espera
                                 y por qué y cómo afectará a su ingreso:
 
-                                <input type="text" min="0" name="country_f"
+                                <input type="text" min="0" name="marque_aqui"
                                     class="border-0 m-0 p-0 footer_field border-bottom w-25 mt-4">
                                 <div>Marque aquí si actualmente tiene más de un empleo. Liste la información anterior
                                     para el segundo trabajo(s) en una hoja separada y adjúntela a esta declaración
@@ -672,28 +684,39 @@
 
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"
-                                        min="0" name="mid_10"
+                                        min="0" name="de_jubilacion"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">Empleador de quien se jubiló<input
-                                        type="text" min="0" name="mid_10"
+                                        type="text" min="0" name="jubilo"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">Dirección:<input type="text" min="0"
-                                        name="mid_10"
+                                        name="direccion"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">Ciudad, Estado, Código postal:<input
-                                        type="text" min="0" name="mid_10"
+                                        type="text" min="0" name="codigo_postal"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">Número de teléfono:<input type="text"
-                                        min="0" name="mid_10"
+                                        min="0" name="de_telefono"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
 
                                 <div class="mt-4">
                                     INGRESOS BRUTOS DEL AÑO PASADO:</div>
+                                <div>Su ingreso Ingreso de la otra parte (si se conoce)</div>
+                                <div class="d-flex align-items-center">AÑO<input type="text" min="0"
+                                        name="ano"
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                </div>
+                                <div class="d-flex align-items-center">$<input type="text" min="0"
+                                        name="ano_$"
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                </div>
+
+                                <div class="mt-4">INGRESOS BRUTOS MENSUALES ACTUALES:</div>
                                 <div>Todos los montos deben ser MENSUALES. Vea las instrucciones de este formulario para
                                     calcular montos de dinero para cualquier cosa que NO se pague mensualmente. Adjunte
                                     más</div>
@@ -719,20 +742,20 @@
 
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">1.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="salario_1"
                                         class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Salario o sueldo bruto mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">2.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="bonos_2"
                                         class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">Bonos mensuales, comisiones, subsidios, horas extras,
                                     propinas y pagos similares
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">3.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="ingresos_3"
                                         class="border-0 p-0  m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Ingresos mensuales del negocio de fuentes como autoempleo,
                                     sociedades, corporaciones cerradas y/o contratos independientes (Ingresos brutos
@@ -741,50 +764,50 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">4.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="beneficios_4"
                                         class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px"> Beneficios por discapacidad/SSI mensuales
                                 </div>
 
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">5.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="compensacion_5"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Compensación de Trabajadores mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">6.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="compensacion_6"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Compensación por Desempleo mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">7.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_7"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Pagos mensuales de pensión, jubilación o anualidades
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">8.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="beneficios_8"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px"> Beneficios del Seguro Social mensuales
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">9.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pension_9"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Pensión alimenticia realmente recibida mensualmente (Sumar
                                     9a y 9b)
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9a. </span>De este caso: <span class="">$</span><input
-                                        type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        type="text" min="0" name="de_9a"
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 responsive_input">
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9b. </span> De otros casos: <span
-                                        class="">$</span><input type="text" min="0" name="mid_10"
+                                        class="">$</span><input type="text" min="0" name="de_9b"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
@@ -795,7 +818,7 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">11.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="ngresos_11"
                                         class="border-0 p-0  m-0 border-bottom footer_field align-top "
                                         style="width: 80px">ngresos por alquiler mensuales (ingresos brutos menos los
                                     gastos ordinarios y necesarios para producir ingresos) (Adjunte hoja detallando
@@ -803,14 +826,14 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">12.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="ingresos_12"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Ingresos mensuales por derechos de autor, fideicomisos o
                                     herencias
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">13.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="igastos_13"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">IGastos reembolsados e ingresos en especie mensuales en la
                                     medida en que reducen los gastos personales de vida (Adjunte hoja detallando cada
@@ -818,32 +841,32 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">14.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="ganancias_14"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top "
                                         style="width: 80px">Ganancias mensuales derivadas de tratos con propiedades (no
                                     incluyendo ganancias no recurrentes)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">15.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="cualquier_15"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top "
                                         style="width: 80px">Cualquier otro ingreso de naturaleza recurrente
                                     (identificar fuente):
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">15.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="cualquier_15a"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">16.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="blank_16"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">17.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="cualquier_17"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top "
                                         style="width: 80px">Cualquier otro ingreso de naturaleza recurrente
                                     (identificar fuente):
@@ -855,7 +878,7 @@
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">18.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="impuestos_18"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">Impuestos mensuales federales, estatales y locales sobre la
                                     renta (corregidos por estado civil para declarar y dependientes permisibles y
@@ -870,7 +893,7 @@
 
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">19.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="impuestos_19"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top "
                                         style="width: 80px">Impuestos FICA o impuestos para autoempleados mensuales
                                     Formulario de Reglas de Procedimiento de Derecho Familiar de Florida 12.902(c),
@@ -878,19 +901,19 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">20.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_20"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">Pagos mensuales de Medicare
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">21.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="cuotas_21"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">Cuotas sindicales obligatorias mensuales
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">22.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_22"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px"> Pagos de jubilación obligatorios mensuales
                                 </div>
@@ -905,50 +928,50 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex mt-4 d_sm_block">
                                     <span class="me-2">23.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 mb-5  border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="pagos_23"
+                                        class="border-0 p-0 m-0 responsive_inupt border-bottom footer_field align-top "
                                         style="width: 80px"> Pagos mensuales de seguro de salud (incluyendo seguro
                                     dental), excluyendo la porción pagada por cualquier hijo menor de esta relación
                                 </div>
                                 <div class="d-flex ">
-                                    <span class="me-2">24.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <span class="me-2 d_sm_block">24.</span>
+                                    <input type="text" min="0" name="manutencion_24"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Manutención infantil ordenada por la corte y realmente
                                     pagada para los hijos de otra relación
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">25.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="pension_25"
+                                        class="border-0 p-0 m-0  responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">Pensión alimenticia ordenada por la corte y realmente
                                     pagada mensualmente (Sumar 25a y 25b)
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">25a. </span>de este caso: <span class="">$</span><input
-                                        type="text" min="0" name="mid_10"
+                                        type="text" min="0" name="de_25a"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">25b. </span>de otros casos:<span
-                                        class="">$</span><input type="text" min="0" name="mid_10"
+                                        class="">$</span><input type="text" min="0" name="de_25b"
                                         class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">26.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 mb-4  border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="total_26"
+                                        class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE DEDUCCIONES PERMISIBLES BAJO LA SECCIÓN 61.30,
                                     ESTATUTOS DE FLORIDA (Sumar las líneas 18 a 25.)
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">27.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="ingreso_27"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">INGRESO NETO MENSUAL ACTUAL
                                 </div>
                                 <div>(Restar la línea 26 de la línea 17.)</div>
@@ -959,143 +982,143 @@
                                     escribir "estimado" junto a cada monto que sea estimado.</div>
 
                                 <div class="mt-4">HOGAR:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">1.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_1"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Pagos mensuales de hipoteca o alquiler
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">2.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_2"
+                                        class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">Impuestos de propiedad mensuales (si no están incluidos en
                                     la hipoteca)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">3.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_3"
+                                        class="border-0 p-0 m-0 responsive_input responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">Seguro mensual de residencia (si no está incluido en la
                                     hipoteca)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">4.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_4"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Cuotas mensuales de mantenimiento de condominio y cuotas de
                                     asociación de propietarios
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">5.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_5"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Electricidad mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">6.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_6"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Agua, basura y alcantarillado mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">7.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_7"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Teléfono mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">8.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_8"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Aceite para calefacción o gas natural mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">9.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_9"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Reparaciones y mantenimiento mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">10.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_10"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Cuidado del césped mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">11.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_11"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Mantenimiento de la piscina mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">12.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_12"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Control de plagas mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">13.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_13"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Otros gastos del hogar mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">14.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_14"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Alimentos y suministros para el hogar mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">15.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_15"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Comidas fuera de casa mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">16.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_16"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Televisión por cable mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">17.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_17"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Contrato de servicio de alarma mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">18.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_18"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Contratos de servicio para electrodomésticos mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">19.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_19"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Servicio de limpieza mensual
                                 </div>
                                 <div>Others:</div>
                                 <div class="d-flex">
                                     <span class="me-2">20.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
+                                    <input type="text" min="0" name="hogar_20"
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">21.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="hogar_21"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">22.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="hogar_22"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">23.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="hogar_23"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
 
@@ -1110,16 +1133,16 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex mt-4 ">
                                     <span class="me-2">24.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="hogar_24"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">25.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="hogar_25"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 1 a 24.)
                                 </div>
 
@@ -1128,212 +1151,212 @@
                                     Largo) (10/21)</div>
 
                                 <div>AUTOMÓVIL:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">26.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_26"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Gasolina y aceite mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">27.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_27"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Reparaciones mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">28.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_28"
+                                        class="border-0 p-0 m-0 responsive_input    border-bottom footer_field align-top "
                                         style="width: 80px"> Etiquetas de auto mensuales y pruebas de emisión
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">29.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_29"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Seguro mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">30.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_30"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Pagos mensuales (arrendamiento o Financiamiento)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">31.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_31"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Alquiler/reemplazos mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">32.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_32"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Transporte alternativo mensual (autobús, tren, compartir
                                     coche, etc.)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">33.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_33"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Peajes y estacionamiento mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">34.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_34"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Otros:<input type="text" min="0"
                                         name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">35.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="automovil_35"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 26 a 34.)
                                 </div>
                                 <div class="mt-4">
                                     GASTOS MENSUALES POR HIJOS COMUNES A AMBAS PARTES:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">36.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_36"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Guardería, niñera o cuidado diurno mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">37.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_37"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Colegiatura mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">38.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_38"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Útiles escolares, libros y cuotas mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">39.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_39"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Actividades extracurriculares mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">40.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_40"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Dinero para el almuerzo mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">41.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_41"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Lecciones privadas o tutoría mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">42.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_42"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Mesada mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">43.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_43"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Ropa y uniformes mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">44.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_44"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Entretenimiento mensual (cine, fiestas, etc.)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">45.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_45"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Seguro de salud mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">46.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_46"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Médico, dental, recetas (solo lo no reembolsado) mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">47.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_47"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Servicios de psiquiatría/psicología/consejero mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">48.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_48"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Ortodoncia mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">49.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_49"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px"> Vitaminas mensualesal
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">50.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_50"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Servicios de peluquería/barbería mensualesnsual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">51.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_51"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Medicamentos sin receta médica mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">52.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_52"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Cosméticos mensuales, artículos de tocador y varios
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">53.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_53"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Regalos mensuales de hijo(s) a otros (otros niños,
                                     familiares, profesores, etc.)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">54.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_54"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Campamentos o actividades de verano mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">55.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_55"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Clubes mensuales (Boy/Girl Scouts, etc.)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">56.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_56"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Gastos mensuales de tiempo compartido
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">57.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_57"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Miscelánea mensual
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">58.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_58"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 36 a 57.)
                                 </div>
                             </div>
@@ -1353,30 +1376,30 @@
                                 <div class="d-flex">
                                     <span class="me-2">59.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="gastos_59"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
 
                                 <div class="d-flex">
                                     <span class="me-2">60.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="gastos_60"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">61.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="gastos_61"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">62.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="gastos_62"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">63.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="gastos_63"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 59 a 62.)
                                 </div>
                                 <div>Formulario de Reglas de Procedimiento de Ley de Familia de Florida 12.902(c),
@@ -1384,176 +1407,177 @@
 
                                 <div class="mt-4">
                                     SEGUROS MENSUALES:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">64.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="seguros_64"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Seguro de salud (si no se enumera en las líneas 23 o 45)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">65.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="seguros_65"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Seguro de vida
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">66.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="seguros_66"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Seguro dental.
                                 </div>
                                 <div>Otro:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">67.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
+                                    <input type="text" min="0" name="otro_67"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">68.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
+                                    <input type="text" min="0" name="otro_68"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">69.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">SUBTOTAL (Sumar las líneas 66 a 68, excluir las líneas 64 y
+                                    <input type="text" min="0" name="otro_69"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        style="width: 80px">SUBTOTAL (Sumar las líneas 66 a 68, excluir las líneas 64
+                                    y
                                     65.)
                                 </div>
                                 <div class="mt-4">OTROS GASTOS MENSUALES NO ENUMERADOS ARRIBA:</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">70.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_70"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Limpieza en seco y lavandería mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">71.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_71"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Ropa mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">72.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_72"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Gastos médicos, dentales y de recetas (solo no
                                     reembolsados)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">73.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_73"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Gastos psiquiátricos, psicológicos o de consejería (solo
                                     no reembolsados)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">74.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_74"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Medicamentos sin receta, cosméticos, artículos de tocador
                                     y varios mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">75.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_75"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Aseo personal mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">76.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_76"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Regalos mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">77.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_77"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Gastos mensuales de mascotas
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">78.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_78"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Cuotas de clubes y membresías mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">79.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_79"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Deportes y pasatiempos mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">80.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_80"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Entretenimiento mensual
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">81.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_81"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Periódicos/libros/cintas/CDs mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">82.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_82"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Vacaciones mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">83.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_83"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Organizaciones religiosas mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">84.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_84"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Comisiones bancarias/cuotas de tarjetas de crédito
                                     mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">85.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_85"
+                                        class="border-0 p-0 m-0 responsive_input   border-bottom footer_field align-top "
                                         style="width: 80px">Gastos de educación mensuales
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">86.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0  border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_86"
+                                        class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top "
                                         style="width: 80px">Otro: (incluir cualquier gasto habitual y acostumbrado no
                                     mencionado en los elementos listados arriba)
                                 </div>
-                                <input type="text" min="0" name="mid_10"
-                                    class="border-0 p-0 m-0 ps-3 mt-0  responsive_input border-bottom footer_field align-top w-100">
+                                <input type="text" min="0" name="otros_86a"
+                                    class="border-0 p-0 m-0  ps-3 mt-0  responsive_input border-bottom footer_field align-top w-100">
                                 <div class="d-flex">
                                     <span class="me-2">87.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="otros_87"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">88.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="otros_88"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">89.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="otros_89"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
 
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">90.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="otros_90"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 70 a 89.)
                                 </div>
 
@@ -1574,105 +1598,105 @@
                                 <div class="d-flex">
                                     <span class="me-2">91.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_91"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">92.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_92"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">93.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_93"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">94.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_94"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">95.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_95"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">96.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_96"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">97.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_97"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">98.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_98"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">99.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_99"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">100.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_100"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">101.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_101"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">102.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_102"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
                                 <div class="d-flex">
                                     <span class="me-2">103.</span>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="pagos_103"
                                         class="border-0 p-0 m-0   border-bottom footer_field align-top w-100">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block ">
                                     <span class="me-2">104.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="pagos_104"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 91 a 103.)
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">105.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="pagos_105"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE GASTOS MENSUALES:
                                 </div>
                                 <div>(Sumar las líneas 25, 35, 58, 63, 69, 90 y 104 de la Sección II, Gastos.)</div>
 
                                 <div class="mt-4">RESUMEN</div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <span class="me-2">106.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="resumen_106"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE INGRESOS NETOS MENSUALES ACTUALES (de la línea 27
                                     de la SECCIÓN I. INGRESOS)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">107.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="resumen_107"
                                         class="border-0 responsive_input p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE GASTOS MENSUALES (de la línea 105 arriba)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">108.</span>
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="resumen_108"
                                         class="border-0 p-0 responsive_input  m-0 border-bottom footer_field align-top  "
                                         style="width: 80px">SUPERÁVIT (Si la línea 106 es mayor que la línea 107,
                                     restar la línea 107 de la línea 106. Esta es la cantidad de su superávit. Ingresar
@@ -1681,7 +1705,7 @@
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">109.</span>
                                     ( <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
+                                    <input type="text" min="0" name="resumen_109"
                                         class="border-0 p-0 m-0 responsive_input mb-4 border-bottom footer_field align-top "
                                         style="width: 80px">) (DÉFICIT) (Si la línea 107 es mayor que la línea 106,
                                     restar la línea 106 de la línea 107. Esta es la cantidad de su déficit. Ingresar esa
@@ -1853,24 +1877,24 @@
                                 </div>
                                 <div class="my-4">C. PATRIMONIO NETO (excluyendo activos y pasivos contingentes)
                                 </div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex d_sm_block mt-4">
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="c_tot_activos"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Total Activos (introduzca el total de la Columna B en la
                                     Tabla de Activos; Sección A)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="c_tot_pasivos"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Total Pasivos (introduzca el total de la Columna B en la
                                     Tabla de Pasivos; Sección B)
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex d_sm_block ">
                                     <sapn class="">$</sapn>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
+                                    <input type="text" min="0" name="c_patrimonio"
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">PATRIMONIO NETO TOTAL (Total Activos menos Total Pasivos)
                                 </div>
                                 <div>(excluyendo activos y pasivos contingentes)</div>
@@ -1941,7 +1965,7 @@
                                     [marque todos los que corresponda]: ( ) enviada por correo electrónico () enviada
                                     por correo, () enviada por fax ( ) entregada en mano a la(s) persona(s) indicada(s)
                                     abajo en la fecha {fecha}</div>
-                                <div class="d-flex "> <input type="text" min="0" name="j_circuit"
+                                <div class="d-flex "> <input type="text" min="0" name="certufuco_que"
                                         class="border-0 footer_field align-start border-bottom">.</div>
 
                                 <div class="mt-4">Otra parte o su abogado:</div>
@@ -1966,7 +1990,7 @@
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
                                 <div class="d-flex my-4 ">Fecha: <input type="text" min="0"
-                                        name="j_circuit" class="border-0 footer_field align-start border-bottom">
+                                        name="fecha" class="border-0 footer_field align-start border-bottom">
                                 </div>
                                 <div>Firma de la Parte</div>
                                 <div>Nombre Impreso:</div>
@@ -1980,26 +2004,42 @@
                                     preparado para: {escoja solo uno} ( ) Peticionario ( ) Demandado</div>
                                 <div>Este formulario fue completado con la ayuda de:</div>
                                 <div class="d-flex ">{nombre del individuo} <input type="text" min="0"
-                                        name="j_circuit"
-                                        class="border-0 footer_field align-start border-bottom w-75">
+                                        name="nom_del_ind"
+                                        class="border-0 footer_field align-start border-bottom w-50">
 
                                 </div>
                                 <div>{nombre del negocio},
                                 </div>
                                 <div class="d-flex ">{dirección}<input type="text" min="0"
-                                        name="j_circuit"
-                                        class="border-0 footer_field align-start border-bottom w-25">
+                                        name="direccion_1"
+                                        class="border-0 footer_field responsive_input align-start border-bottom w-25">
                                 </div>
-                                <div class="d-flex ">{ciudad}<input type="text" min="0"
-                                        name="j_circuit"
-                                        class="border-0 footer_field align-start border-bottom " style="width: 70px">, {estado}<input type="text" min="0"
-                                        name="j_circuit"
-                                        class="border-0 footer_field align-start border-bottom " style="width: 40px">,
+                                <div class="d-flex ">{ciudad}<input type="text" min="0" name="ciudad"
+                                        class="border-0 footer_field responsive_input align-start border-bottom "
+                                        style="width: 70px">, {estado}<input type="text" min="0"
+                                        name="estado"
+                                        class="border-0 footer_field responsive_input align-start border-bottom "
+                                        style="width: 135px">,
                                 </div>
                                 <div>{número de teléfono}</div>
-                                <div class="mt-5" style="margin-bottom: 500px">Reglas de Procedimiento de Derecho Familiar de Florida Formulario 12.902(c), Declaración Jurada Financiera de Derecho Familiar (Forma Larga) (10/21)</div>
+                                <div class="mt-5" style="margin-bottom: 500px">Reglas de Procedimiento de Derecho
+                                    Familiar de Florida Formulario 12.902(c), Declaración Jurada Financiera de Derecho
+                                    Familiar (Forma Larga) (10/21)</div>
+                                <div class="row my-4" >
+                                    <div class="col-6">
+                                        <button type="submit" class="bg-transparent px-4">Submit</button>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <button type="reset" class="bg-transparent px-4">Reset</button>
+                                    </div>
+                                </div>
+                                {{-- <div style="margin-bottom: 90px"> --}}
+                                    <div>
+                                    @include('layouts.pagination', ['page' => 18])</div>
+
                             </div>
                         </div>
+                    </div>
                 </section>
             </form>
         </div>

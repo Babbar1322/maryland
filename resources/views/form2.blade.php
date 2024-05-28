@@ -2722,7 +2722,7 @@
                         <div class="my-auto"> <a href=""><i class="fas fa-chevron-right"></i></a> </div>
                         <div class="my-auto ps-2" ><a href="#last_section" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
                     </div> --}}
-                    @include('layouts.pagination', ['page' => 2 , 'name' => "MD partially filled out to check formulas.pdf"])
+                    @include('layouts.pagination', ['page' => 2 ])
                 </div>
         </form>
         </section>

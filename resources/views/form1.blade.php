@@ -2646,7 +2646,7 @@
                         <div class="my-auto"> <a href=""><i class="fas fa-chevron-right"></i></a> </div>
                         <div class="my-auto ps-2" ><a href="#last_section" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
                     </div> --}}
-                    @include('layouts.pagination', ['page' => 1, 'name' => "MD.pdf"])
+                    @include('layouts.pagination', ['page' => 1,])
                 </div>
             </section>
         </form>
@@ -2665,4 +2665,3 @@
     </script>
 </body>
 </html>
-2781

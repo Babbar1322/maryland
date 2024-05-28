@@ -30,6 +30,8 @@ use App\Models\judicial;
 use App\Models\pa_form;
 use App\Models\sfs_co_form;
 use App\Models\sfs_co_form_data;
+use App\Models\spanish_form;
+use App\Models\spanish_form_data;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -415,5 +417,20 @@ class FormController extends Controller
     public function form18() {
         return  view('form18');
     }
-}
+    public function form18_post(Request $request){
+        $spanish = new spanish_form();
+        $spanish->save();
 
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $spanish_form = new spanish_form_data();
+            $spanish_form->spanish_id = $spanish->id;
+            $spanish_form->keyss = $key;
+            $spanish_form->valuess= $req;
+            $spanish_form->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+}
