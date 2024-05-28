@@ -13,6 +13,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
         td {
             padding: 0px !important;
@@ -2626,7 +2628,11 @@
                     </div>
                     <div class="text-center mt-3">
                         <button type="butt  on" class="bg-transparent px-4 me-4">Submit</button>
+
                     </div>
+                    {{-- <div class="mx-5 px-5"> --}}
+                        @include('layouts.pagination', ['page' => 6 ])
+                    {{-- </div> --}}
                 </section>
             </form>
         </div>

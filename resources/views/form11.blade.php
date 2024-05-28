@@ -760,20 +760,19 @@
                         </div>
                         @include('layouts.footer7', ['page' => 1])
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
                                 <select class="form-select w-100 sectionSelect">
                                     <option value="#first_section" selected>1</option>
                                     <option value="#second_section" >2</option>
-                                    {{-- <option value="#third_section">3</option> --}}
                                     <option value="#last_section">3</option>
                                 </select>
                             </div>
                             <div class="my-auto"> <a href="#second_section" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
                         {{-- <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
                             party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
                             documents was completed or waived must be filed with the court (see form FL-141)</div> --}}
@@ -1350,20 +1349,19 @@
                             </table>
                     </div>
                     @include('layouts.footer7', ['page' => 2])
-                    <div class="d-flex gap-3 py-auto pb-2  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                         <div>
                             <select class="form-select w-100 sectionSelect">
                                 <option value="#first_section" >1</option>
                                 <option value="#second_section" selected>2</option>
-                                {{-- <option value="#third_section" >3</option> --}}
                                 <option value="#last_section">3</option>
                             </select>
                         </div>
                         <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
                         <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div>
+                    </div> --}}
                 </section>
 
 
@@ -1713,31 +1711,22 @@
                         </div>
                     </div>
                     @include('layouts.footer7', ['page' => 3])
-                    <div class="d-flex gap-3 py-auto pb-2  ">
+                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
                         <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                         <div class="my-auto ps-2"> <a href="#second_section" ><i class="fas fa-chevron-left"></i></a> </div>
                         <div>
                             <select class="form-select w-100 sectionSelect">
                                 <option value="#first_section" >1</option>
                                 <option value="#second_section" >2</option>
-                                {{-- <option value="#third_section" selected>3</option> --}}
                                 <option value="#last_section" selected>3</option>
                             </select>
                         </div>
                         <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
                         <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div>
-                </section>
+                    </div> --}}
 
-                {{-- <section class="section_area  px-lg-5 px-2 pt-5 ">
-                    <h5 class="text-center fw-bold">INFORMATION AND INSTRUCTIONS FOR COMPLETING FORM FL-160</h5>
-                    <div class="">
-                        Property Declaration (form FL-160) is a multipurpose form, which may be filed with the court as as attachment to a Petition or Response or served on the other party to comply with disclosure requirements in place of a Schedule of Assets and Debts (form FL-142). Courts may also require a party to a file a Property Declarationas an attachment to a Request to Enter Default (form FL-165) or Judgment (form FL-180).
-                    </div>
-                    <div class="fw-bold text-center">when filliing a Property Declatation with the court, do not include private financial documents listed below.</div>
-                    <div class="fw-bold">Identify the type of declatation completed</div>
-                    <ul></ul>
-                </section> --}}
+                    @include('layouts.pagination', ['page' => 11 ])
+                </section>
             </form>
         </div>
     </div>

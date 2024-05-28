@@ -13,6 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
         td {
             padding: 0px !important;
@@ -850,6 +851,7 @@
                         </h6>
                     </div>
                         @include('layouts.footer10', ['page' => 2])
+                        @include('layouts.pagination', ['page' => 14 ])
                     </div>
                 </section>
             </form>

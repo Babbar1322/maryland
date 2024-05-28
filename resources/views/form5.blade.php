@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-         a{
+        a {
             color: black !important;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -114,9 +115,10 @@
         }
 
         @media screen and (max-width : 768px) {
-            .pb_checkbox{
+            .pb_checkbox {
                 display: block !important;
             }
+
             .small_text {
                 height: auto !important;
             }
@@ -225,14 +227,16 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="{{route('form5.submit')}}" method="post">
+            <form action="{{ route('form5.submit') }}" method="post">
                 @csrf
-                @if(session('success'))
-                <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+                @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                            type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                 @endif
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="first_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="fw-bold text-center">Appendix V</div>
                         <div class="fw-bold text-center">Family Part Case Information Statement</div>
@@ -247,7 +251,8 @@
                             <div class="col-lg-6 border border-dark py-3">
 
                                 <div class="  px-lg-0">
-                                    <input type="text" name="Plaintiff_name" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="Plaintiff_name"
+                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-end"> Plaintiff,</div>
                                 </div>
                                 <div class="small_text">vs</div>
@@ -348,7 +353,7 @@
                                 obtained.</p>
                         </div>
                         @include('layouts.footer4', ['page' => 1])
-                         <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -367,12 +372,13 @@
                             </div>
                             <div class="my-auto"> <a href="#case_information" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </section>
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="case_information">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="case_information">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -408,12 +414,16 @@
                                         style="width:247px">
 
                                 </div>
-                                <div class='d-flex pt-2 justify-content-end'> <input type="text"  name="a_dops" class=" form-control  border-none border-0 border-bottom border-dotted shadow-none  "
+                                <div class='d-flex pt-2 justify-content-end'> <input type="text" name="a_dops"
+                                        class=" form-control  border-none border-0 border-bottom border-dotted shadow-none  "
                                         style="width:247px">
 
                                 </div>
                                 <div class='d-flex pt-2'>
-                                    <small class="small_text pe-4">Your Birthdate</small> <input type="text" name="a_yb"  class=" form-control  border-none border-0 border-bottom border-dotted shadow-none " style="width:343px">
+                                    <small class="small_text pe-4">Your Birthdate</small> <input type="text"
+                                        name="a_yb"
+                                        class=" form-control  border-none border-0 border-bottom border-dotted shadow-none "
+                                        style="width:343px">
 
                                 </div>
                                 <div class='d-flex pt-2'>
@@ -600,7 +610,8 @@
                             </div>
                             <div class='d-flex pt-2'>
                                 <small class="  pe-4">Email :</small> <input type="text" name="a_email2"
-                                    class="form-control  border-none border-0 border-bottom border-dotted shadow-none" style="width:882px">
+                                    class="form-control  border-none border-0 border-bottom border-dotted shadow-none"
+                                    style="width:882px">
                             </div>
 
 
@@ -632,15 +643,18 @@
                                 </div>
 
                                 <div class="col-lg-2">
-                                    <h5 class="small_text">Birthdate</h5> <input type="text" name="cb1" class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb2"  class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb3"  class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb4"  class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
+                                    <h5 class="small_text">Birthdate</h5> <input type="text" name="cb1"
+                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
+                                    <input type="text" name="cb2"
+                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
+                                    <input type="text" name="cb3"
+                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
+                                    <input type="text" name="cb4"
+                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
 
                                 <div class="col-lg-3">
-                                    <h5 class="small_text">Person’s Name</h5><input type="text"
-                                        name="cpn1"
+                                    <h5 class="small_text">Person’s Name</h5><input type="text" name="cpn1"
                                         class="form-control border-none border-0 border-bottom border-dotted shadow-none "><input
                                         type="text" name="cpn2"
                                         class="form-control border-none border-0 border-bottom border-dotted shadow-none "><input
@@ -689,8 +703,7 @@
                                 </div>
 
                                 <div class="col-lg-3">
-                                    <h5 class="small_text">Person’s Name</h5><input type="text"
-                                        name="cpn5"
+                                    <h5 class="small_text">Person’s Name</h5><input type="text" name="cpn5"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none "><input
                                         type="text" name="cpn6"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none "><input
@@ -712,7 +725,8 @@
                                     Business, if
                                     Self-employed)</div>
                                 <div class="col-lg-3">
-                                    <h5 style="width: 250px;" class="small_text responsive_input">Name of Employer/Business </h5>
+                                    <h5 style="width: 250px;" class="small_text responsive_input">Name of
+                                        Employer/Business </h5>
                                 </div>
                                 <div class="col-lg-3"><input type="text" name="b_mi"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
@@ -735,7 +749,8 @@
 
                             <div class="row pt-lg-3">
                                 <div class="col-lg-3">
-                                    <h5 style="width: 250px;" class="small_text responsive_input">Name of Employer/Business </h5>
+                                    <h5 style="width: 250px;" class="small_text responsive_input">Name of
+                                        Employer/Business </h5>
                                 </div>
                                 <div class="col-lg-3"><input type="text" name="b_noe"
                                         class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none ">
@@ -759,8 +774,10 @@
                                     Employment/Business?</div>
                                 <div class="col-lg-6 d-flex">
 
-                                    <div class="d-flex "><input class="me-2 " type="checkbox" name="b_ibt"   value="Yes" id=""> Yes</div>
-                                    <div class="d-flex mx-lg-5"><input class="me-2" type="checkbox" name="b_ibt" value="No"  id=""> No</div>
+                                    <div class="d-flex "><input class="me-2 " type="checkbox" name="b_ibt"
+                                            value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-5"><input class="me-2" type="checkbox" name="b_ibt"
+                                            value="No" id=""> No</div>
                                     <div class="d-flex">Type of Insurance:</div>
 
 
@@ -769,30 +786,30 @@
                             <div class="row   mt-lg-3">
                                 <div class=" d-flex mx-lg-1 small_text pb_checkbox">
                                     <div class="small_text">Medical</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox" value="Yes" name="b_medical"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" value="No" name="b_medical"
-                                            id=""> No;</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox"
+                                            value="Yes" name="b_medical" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            value="No" name="b_medical" id=""> No;</div>
                                     <div class="small_text">Dental</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox" name="dental" value="Yes"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" name="dental" value="No"
-                                            id=""> No;</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox"
+                                            name="dental" value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            name="dental" value="No" id=""> No;</div>
                                     <small class="small_text">Prescription Drug</small>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox" name="prescription_drug" value="Yes"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" name="prescription_drug" value="No"
-                                            id=""> No;</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox"
+                                            name="prescription_drug" value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            name="prescription_drug" value="No" id=""> No;</div>
                                     <div class="small_text">Life</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox" name="lift" value="Yes"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" name="lift" value="No"
-                                            id=""> No;</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-2" type="checkbox"
+                                            name="lift" value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            name="lift" value="No" id=""> No;</div>
                                     <div class="small_text">Disability</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" name="disability" value="Yes"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox" name="disability" value="No"
-                                            id=""> No</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            name="disability" value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-1 small_text"><input class="me-4" type="checkbox"
+                                            name="disability" value="No" id=""> No</div>
                                 </div>
                             </div>
                             <div class='d-flex pt-2'>
@@ -805,18 +822,19 @@
                                 <div class="col-lg-5 small_text">Is Insurance available through Employment/Business?
                                 </div>
                                 <div class="col-lg-7 d-flex">
-                                    <div class="d-flex "><input class="me-2" type="checkbox" name="insurance_available"  value="Yes"
-                                            id=""> Yes</div>
-                                    <div class="d-flex mx-lg-5"><input class="me-2" type="checkbox" name="insurance_available" value="No"
-                                            id=""> No</div>
+                                    <div class="d-flex "><input class="me-2" type="checkbox"
+                                            name="insurance_available" value="Yes" id=""> Yes</div>
+                                    <div class="d-flex mx-lg-5"><input class="me-2" type="checkbox"
+                                            name="insurance_available" value="No" id=""> No</div>
                                 </div>
                             </div>
                             <div class='d-flex pt-2'>
-                                <small class="ms-4 me-2">Explain</small> <input type="text" name="explain" class="form-control border-none border-0 border-bottom border-dotted shadow-none"
+                                <small class="ms-4 me-2">Explain</small> <input type="text" name="explain"
+                                    class="form-control border-none border-0 border-bottom border-dotted shadow-none"
                                     style="width:850px">
                             </div>
                             @include('layouts.footer4', ['page' => 2])
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -835,12 +853,12 @@
                                 </div>
                                 <div class="my-auto"> <a href="#attach_affidavit" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
                         </div>
                 </section>
 
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="attach_affidavit">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="attach_affidavit">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -849,10 +867,10 @@
                             <div class="small_text pt-lg-2"> 4. Additional Identification: </div>
                             <div class="small_text d-flex"> Confidential Litigant Information Sheet: <span
                                     class="px-lg-3">Filed</span>
-                                <div class="d-flex ps-3"><input type="checkbox" class="me-lg-1" name="additional_identification" value="Yes"
-                                        id=""> Yes</div>
-                                <div class="d-flex mx-lg-2"><input type="checkbox" class="me-lg-1" name="additional_identification" value="No"
-                                        id=""> No</div>
+                                <div class="d-flex ps-3"><input type="checkbox" class="me-lg-1"
+                                        name="additional_identification" value="Yes" id=""> Yes</div>
+                                <div class="d-flex mx-lg-2"><input type="checkbox" class="me-lg-1"
+                                        name="additional_identification" value="No" id=""> No</div>
                             </div>
                             <div class="small_text pt-lg-2"> 5. ATTACH a list of all prior/pending family actions
                                 involving support, custody or Domestic Violence, with the Docket Number, County, State
@@ -942,14 +960,16 @@
                                 total income plus a copy of the most recently filed Tax Returns. (See Part G)</strong>
                             <div class="d-flex">
                                 <div>Check if attached:</div>
-                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox" name="check_if_attached" value="Federal Tax Return"
-                                        id=""> Federal Tax Return</div>
-                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox" name="check_if_attached" value="State Tax Return"
-                                        id="">State Tax Return</div>
-                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox" name="check_if_attached" value="W-2"
-                                        id="">W-2</div>
-                                <div class="d-flex pb_checkbox  mx-lg-4"><input class="me-2" type="checkbox" name="check_if_attached" value="Other"
-                                        id="">Other</div>
+                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox"
+                                        name="check_if_attached" value="Federal Tax Return" id=""> Federal
+                                    Tax Return</div>
+                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox"
+                                        name="check_if_attached" value="State Tax Return" id="">State Tax
+                                    Return</div>
+                                <div class="d-flex  pb_checkbox mx-lg-4"><input class="me-2" type="checkbox"
+                                        name="check_if_attached" value="W-2" id="">W-2</div>
+                                <div class="d-flex pb_checkbox  mx-lg-4"><input class="me-2" type="checkbox"
+                                        name="check_if_attached" value="Other" id="">Other</div>
 
 
                             </div>
@@ -961,11 +981,14 @@
                                         – ATTACH pay stubs)</div>
                                     <div class="d-flex">
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
-                                                name="earned_incode_expenses" value="included" id="">included</div>
+                                                name="earned_incode_expenses" value="included"
+                                                id="">included</div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
-                                                name="earned_incode_expenses" value="not included" id="">not included*</div>
+                                                name="earned_incode_expenses" value="not included" id="">not
+                                            included*</div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
-                                                name="earned_incode_expenses" value="not paid to you" id="">not paid to you.</div>
+                                                name="earned_incode_expenses" value="not paid to you"
+                                                id="">not paid to you.</div>
 
 
                                     </div>
@@ -1008,11 +1031,13 @@
                                     </div>
                                     <div class="d-flex pb_checkbox">
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
-                                                name="deducation_per_week" value="Federal" id="">Federal</div>
+                                                name="deducation_per_week" value="Federal" id="">Federal
+                                        </div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
                                                 name="deducation_per_week" value="State" id="">State</div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
-                                                name="deducation_per_week" value="F.I.C.A" id="">F.I.C.A</div>
+                                                name="deducation_per_week" value="F.I.C.A" id="">F.I.C.A
+                                        </div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
                                                 name="deducation_per_week" value="S.U.I" id="">S.U.I</div>
                                         <div class="d-flex mx-lg-4"><input class="me-2" type="checkbox"
@@ -1067,7 +1092,8 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="small_text text-center py-3">3. Your Current Year-to-Date Earned Income</div>
+                                        <div class="small_text text-center py-3">3. Your Current Year-to-Date Earned
+                                            Income</div>
                                         <div class="row  mt-lg-3">
                                             <div class="col-lg-7 small_text">
                                                 <div class=" d-flex small_text">1. GROSS EARNED INCOME: <div
@@ -1170,7 +1196,7 @@
                                                 </div>
                                             </div>
                                             @include('layouts.footer4', ['page' => 3])
-                                            <div class="d-flex gap-3 py-auto mb-2  ">
+                                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                                 <div class="my-auto ps-2"> <a href="#case_information" ><i class="fas fa-chevron-left"></i></a> </div>
                                                 <div>
@@ -1189,7 +1215,7 @@
                                                 </div>
                                                 <div class="my-auto"> <a href="#gross_income" ><i class="fas fa-chevron-right"></i> </a></div>
                                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -1198,321 +1224,329 @@
                     </div>
 
                 </section>
-                <section
-                class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="gross_income">
-                <div class="col-lg-10 mx-auto">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="gross_income">
+                    <div class="col-lg-10 mx-auto">
 
 
 
-                    {{-- div - 3 --}}
-                    <div class="row  mt-lg-3">
-                        <div class="col-lg-6 small_text">3. GROSS INCOME NET OF TAXES</div>
-                        <div class="d-flex col-lg-6 pt-lg-2"><small>$</small><input type="number" min="0"
-                                name="ginof" style="width: 365px"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                        </div>
-                    </div>
-
-                    {{-- div -4 --}}
-                    <div class="row  mt-lg-3">
-                        <div class="col-lg-9 small_text">4. OTHER DEDUCTIONS </div>
-                        <div class="d-flex col-lg-3 small_text ">If mandatory, check box
-                        </div>
-                    </div>
-                    <div class="row  mt-lg-3">
-                        <div class="col-lg-6 small_text">
-                            <p class="m-0 p-0">a. Hospitalization/Medical Insurance </p>
-                            <p class="m-0 p-0">b. Life Insurance</p>
-                            <p class="m-0 p-0">c. Union Dues </p>
-                            <p class="m-0 p-0">d. 401(k) Plans </p>
-                            <p class="m-0 p-0">e. Pension/Retirement Plans </p>
-                            <p class="m-0 p-0 d-flex">f. Other Plans - specify <input type="number"
-                                    min="0" name="other_plains" style="width: 220px;"
-                                    class="border-bottom border-0 ms-3  responsive_input bg-transparent border outline-none form-control">
-                            </p>
-                            <p class="m-0 p-0">g. Charity </p>
-                            <p class="m-0 p-0">h. Wage Execution</p>
-                            <p class="m-0 p-0">i. Medical Reimbursement (flex fund)</p>
-                            <p class="m-0 p-0    d-flex">j. Other: <input type="number" min="0"
-                                    name="j_others" style="width: 315px;"
-                                    class="border-bottom border-0 ms-3  responsive_input bg-transparent border outline-none form-control">
-                            </p>
-                            <p class="m-0 p-0 text-end">TOTAL </p>
-
-                        </div>
-                        <div class=" col-lg-6 ">
-                            <div class="d-flex m-0 p-0"><small>a. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="hmi" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="hmi_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>b. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="lift_insurance" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="lift_insurance_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>c. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="401kplans" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="401kplans_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>d. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="retirement_plans" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="retirement_plans_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>e. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="other_plan_specify" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="other_plan_specify_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>f. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="charity" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="charity_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0 "><small>g. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="wage_execution" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="wage_execution_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>h. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="medical_reimbursement" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="medical_reimbursement_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>i. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="medical_reimbursement1" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="medical_reimbursement1_f"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small>j. </small><small class="ms-2">$</small><input
-                                    type="number" min="0" name="medical_reimbursement2" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <div class="ps-5 "> <input class="my-auto" type="checkbox" name="medical_reimbursement2_2"
-                                        id=""></div>
-                            </div>
-                            <div class="d-flex m-0 p-0"><small class="ms-3">$</small><input type="number"
-                                    min="0" name="medical_reimbursement3"  style="width: 305px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                        </div>
-                    </div>
-                    {{--  div - 5 --}}
-
-                    <div class="row  mt-lg-1">
-                        <div class="col-lg-6 small_text">
-                            <p class="p-0 m-0">5. NET YEAR-TO-DATE EARNED INCOME:</p>
-                            <p class="p-0 m-0 ps-3">NET AVERAGE EARNED INCOME PER MONTH: </p>
-                            <p class="p-0 m-0 ps-3">NET AVERAGE EARNED INCOME PER WEEK </h5>
-                        </div>
-                        <div class=" col-lg-6 ">
-                            <div class="d-flex"><small>$</small><input type="number" min="0"
-                                    name="netdei" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small>$</small><input type="number" min="0"
-                                    name="naeipm" style="width: 365px"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small>$</small><input type="number" min="0"
-                                    name="naeipw" style="width: 365px"
+                        {{-- div - 3 --}}
+                        <div class="row  mt-lg-3">
+                            <div class="col-lg-6 small_text">3. GROSS INCOME NET OF TAXES</div>
+                            <div class="d-flex col-lg-6 pt-lg-2"><small>$</small><input type="number" min="0"
+                                    name="ginof" style="width: 365px"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
-                    </div>
-
-                    {{--  part - 4 --}}
-
-                    <h6 class="mt-5 text-center">4. Your Year-to-Date Gross Unearned Income From All Sources </h6>
-
-                    <p class="small_text text-center">(including, but not limited to, income from unemployment,
-                        disability
-                        and/or social security
-                        payments, interest, dividends,
-                        rental income and any other miscellaneous unearned income)
-                    </p>
-
-                    <div class="row mt-lg-3">
-                        <div class="col-lg-6">
-                            <p class="text-center small_text m-0 p-0">Source</p>
-                            <input type="number" min="0" name="source1"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source2"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source3"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source4"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source5"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source6"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source7"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source8"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="source9"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <p class="mt-2 p-0 small_text">TOTAL GROSS UNEARNED INCOME YEAR TO DATE </p>
-                        </div>
-                        <div class="col-lg-3">
-                            <p class="text-center small_text m-0 p-0">How often paid</p>
-                            <input type="number" min="0" name="how_often_paid1"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid2"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid3"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid4"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid5"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid6"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid7"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid8"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            <input type="number" min="0" name="how_often_paid9"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-
-
-                        </div>
-                        <div class="col-lg-3">
-                            <p class="text-center small_text m-0 p-0">Year to date amount</p>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda1"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda2"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda3"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda4"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda5"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda6"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda7"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda8"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda9"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                            </div>
-                            <div class="d-flex"><small class="ms-2">$</small><input type="number"
-                                    min="0" name="yda10"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                        {{-- div -4 --}}
+                        <div class="row  mt-lg-3">
+                            <div class="col-lg-9 small_text">4. OTHER DEDUCTIONS </div>
+                            <div class="d-flex col-lg-3 small_text ">If mandatory, check box
                             </div>
                         </div>
-                    </div>
+                        <div class="row  mt-lg-3">
+                            <div class="col-lg-6 small_text">
+                                <p class="m-0 p-0">a. Hospitalization/Medical Insurance </p>
+                                <p class="m-0 p-0">b. Life Insurance</p>
+                                <p class="m-0 p-0">c. Union Dues </p>
+                                <p class="m-0 p-0">d. 401(k) Plans </p>
+                                <p class="m-0 p-0">e. Pension/Retirement Plans </p>
+                                <p class="m-0 p-0 d-flex">f. Other Plans - specify <input type="number"
+                                        min="0" name="other_plains" style="width: 220px;"
+                                        class="border-bottom border-0 ms-3  responsive_input bg-transparent border outline-none form-control">
+                                </p>
+                                <p class="m-0 p-0">g. Charity </p>
+                                <p class="m-0 p-0">h. Wage Execution</p>
+                                <p class="m-0 p-0">i. Medical Reimbursement (flex fund)</p>
+                                <p class="m-0 p-0    d-flex">j. Other: <input type="number" min="0"
+                                        name="j_others" style="width: 315px;"
+                                        class="border-bottom border-0 ms-3  responsive_input bg-transparent border outline-none form-control">
+                                </p>
+                                <p class="m-0 p-0 text-end">TOTAL </p>
 
-                    {{--  part - 5 --}}
-                    <h6 class="mt-5 text-center">5. Additional Information: </h6>
-
-                    <div class="row">
-                        <div class="d-flex my-auto pt-3">
-                            <p class="small_text p-0 m-0"><span class="me-3">1.</span> How often are you paid?</p>
-                            <input type="number" min="0" name="hop" style="width: 435px"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-3">
+                            </div>
+                            <div class=" col-lg-6 ">
+                                <div class="d-flex m-0 p-0"><small>a. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="hmi" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox" name="hmi_f"
+                                            id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>b. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="lift_insurance" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="lift_insurance_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>c. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="401kplans" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox" name="401kplans_f"
+                                            id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>d. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="retirement_plans" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="retirement_plans_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>e. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="other_plan_specify"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="other_plan_specify_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>f. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="charity" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox" name="charity_f"
+                                            id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0 "><small>g. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="wage_execution" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="wage_execution_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>h. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="medical_reimbursement"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="medical_reimbursement_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>i. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="medical_reimbursement1"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="medical_reimbursement1_f" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small>j. </small><small class="ms-2">$</small><input
+                                        type="number" min="0" name="medical_reimbursement2"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <div class="ps-5 "> <input class="my-auto" type="checkbox"
+                                            name="medical_reimbursement2_2" id=""></div>
+                                </div>
+                                <div class="d-flex m-0 p-0"><small class="ms-3">$</small><input type="number"
+                                        min="0" name="medical_reimbursement3" style="width: 305px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex my-auto pt-3">
-                            <p class="small_text p-0 m-0"><span class="me-3">2.</span> What is your annual
-                                salary?
-                            </p>
-                            <small class="ms-3">$</small><input type="number" min="0" name="wiya"
-                                style="width: 250px"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                        </div>
-                        <div class="d-flex my-auto row pt-3">
+                        {{--  div - 5 --}}
 
-                            <div class="col-lg-6 small_text" >
-                                <div >
-                                <span class="me-3">3.</span>Have you received any
-                                raises in the current year?   If yes, provide the date and the gross/net
-                                amount. </div>
+                        <div class="row  mt-lg-1">
+                            <div class="col-lg-6 small_text">
+                                <p class="p-0 m-0">5. NET YEAR-TO-DATE EARNED INCOME:</p>
+                                <p class="p-0 m-0 ps-3">NET AVERAGE EARNED INCOME PER MONTH: </p>
+                                <p class="p-0 m-0 ps-3">NET AVERAGE EARNED INCOME PER WEEK </h5>
                             </div>
-                            <div class="col-lg-4">
-                                <input type="number" min="0" name="current_year"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ">
+                            <div class=" col-lg-6 ">
+                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                        name="netdei" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                        name="naeipm" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                        name="naeipw" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
                             </div>
-                            <div class='d-flex col-lg-1 my-auto '>
-                                <input type="checkbox" name="current_year_f" value="Yes"
-                                    class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                            </div>
-                            <div class="d-flex  col-lg-1 my-auto">
 
-                                <input type="checkbox" name="current_year_f" value="No"
-                                    class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                            </div>
-                        </div>
-                        <div class="d-flex my-auto pt-3 ">
-                            <p class="small_text p-0 m-0"><span class="me-3">4.</span>Do you receive bonuses,
-                                commissions, or other compensation, including distributions, taxable or nontaxable,
-                                in addition to your regular salary?
-                            </p>
-                            <div class='d-flex col-lg-1 my-auto '>
-                                <input type="checkbox" name="receive_bonuses_f" value='Yes' class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                            </div>
-                            <div class="d-flex  col-lg-1 my-auto">
-
-                                <input type="checkbox" name="receive_bonuses_f" value='No' class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                            </div>
-                        </div>
-                        <div class="ms-3 d-flex small_text">If yes, explain:
-                            <input type="number" min="0" name="rbcc" style="width: 525px"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-3">
-                        </div>
-                        <div class="d-flex my-auto  pt-3">
-                            <p class="small_text p-0 m-0"><span class="me-3">5.</span>Does your employer pay
-                                for or provide you with an automobile (lease or purchase), automobile expenses,
-                                gas, repairs, lodging and other.
-                            </p>
-                            <div class='d-flex col-lg-1 my-auto '>
-                                <input type="checkbox" name="employer_pay_f" value="Yes"
-                                    class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                            </div>
-                            <div class="d-flex  col-lg-1 my-auto">
-
-                                <input type="checkbox" name="employer_pay_f" value="No"
-                                    class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                            </div>
-                        </div>
-                        <div class="ms-3 small_text">If yes, explain:
-                            <input type="number" min="0" name="employer_pay" style="width: 625px"
-                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-2">
                         </div>
 
-                        @include('layouts.footer4', ['page' => 4])
+                        {{--  part - 4 --}}
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        <h6 class="mt-5 text-center">4. Your Year-to-Date Gross Unearned Income From All Sources </h6>
+
+                        <p class="small_text text-center">(including, but not limited to, income from unemployment,
+                            disability
+                            and/or social security
+                            payments, interest, dividends,
+                            rental income and any other miscellaneous unearned income)
+                        </p>
+
+                        <div class="row mt-lg-3">
+                            <div class="col-lg-6">
+                                <p class="text-center small_text m-0 p-0">Source</p>
+                                <input type="number" min="0" name="source1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="source9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <p class="mt-2 p-0 small_text">TOTAL GROSS UNEARNED INCOME YEAR TO DATE </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="text-center small_text m-0 p-0">How often paid</p>
+                                <input type="number" min="0" name="how_often_paid1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="how_often_paid9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+
+
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="text-center small_text m-0 p-0">Year to date amount</p>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda4"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda5"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda6"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda7"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda8"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda9"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex"><small class="ms-2">$</small><input type="number"
+                                        min="0" name="yda10"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{--  part - 5 --}}
+                        <h6 class="mt-5 text-center">5. Additional Information: </h6>
+
+                        <div class="row">
+                            <div class="d-flex my-auto pt-3">
+                                <p class="small_text p-0 m-0"><span class="me-3">1.</span> How often are you paid?
+                                </p>
+                                <input type="number" min="0" name="hop" style="width: 435px"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-3">
+                            </div>
+                            <div class="d-flex my-auto pt-3">
+                                <p class="small_text p-0 m-0"><span class="me-3">2.</span> What is your annual
+                                    salary?
+                                </p>
+                                <small class="ms-3">$</small><input type="number" min="0"
+                                    name="wiya" style="width: 250px"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                            </div>
+                            <div class="d-flex my-auto row pt-3">
+
+                                <div class="col-lg-6 small_text">
+                                    <div>
+                                        <span class="me-3">3.</span>Have you received any
+                                        raises in the current year? If yes, provide the date and the gross/net
+                                        amount.
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="number" min="0" name="current_year"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ">
+                                </div>
+                                <div class='d-flex col-lg-1 my-auto '>
+                                    <input type="checkbox" name="current_year_f" value="Yes"
+                                        class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                </div>
+                                <div class="d-flex  col-lg-1 my-auto">
+
+                                    <input type="checkbox" name="current_year_f" value="No"
+                                        class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                </div>
+                            </div>
+                            <div class="d-flex my-auto pt-3 ">
+                                <p class="small_text p-0 m-0"><span class="me-3">4.</span>Do you receive bonuses,
+                                    commissions, or other compensation, including distributions, taxable or nontaxable,
+                                    in addition to your regular salary?
+                                </p>
+                                <div class='d-flex col-lg-1 my-auto '>
+                                    <input type="checkbox" name="receive_bonuses_f" value='Yes'
+                                        class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                </div>
+                                <div class="d-flex  col-lg-1 my-auto">
+
+                                    <input type="checkbox" name="receive_bonuses_f" value='No'
+                                        class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                </div>
+                            </div>
+                            <div class="ms-3 d-flex small_text">If yes, explain:
+                                <input type="number" min="0" name="rbcc" style="width: 525px"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-3">
+                            </div>
+                            <div class="d-flex my-auto  pt-3">
+                                <p class="small_text p-0 m-0"><span class="me-3">5.</span>Does your employer pay
+                                    for or provide you with an automobile (lease or purchase), automobile expenses,
+                                    gas, repairs, lodging and other.
+                                </p>
+                                <div class='d-flex col-lg-1 my-auto '>
+                                    <input type="checkbox" name="employer_pay_f" value="Yes"
+                                        class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                </div>
+                                <div class="d-flex  col-lg-1 my-auto">
+
+                                    <input type="checkbox" name="employer_pay_f" value="No"
+                                        class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                </div>
+                            </div>
+                            <div class="ms-3 small_text">If yes, explain:
+                                <input type="number" min="0" name="employer_pay" style="width: 625px"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-2">
+                            </div>
+
+                            @include('layouts.footer4', ['page' => 4])
+
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#attach_affidavit" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -1531,277 +1565,337 @@
                             </div>
                             <div class="my-auto"> <a href="#did_you_receive" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-                <section   class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="did_you_receive">
-                <div class="col-lg-10 mx-auto">
-
-                    <div class="row">
-                        <div class="col-lg-10 border-bottom border-dark pb-2">
-                            <div class="small_text">   6.Did you receive bonuses, commissions, or other compensation, including distributions, taxable or nontaxable, in addition to your regular salary during the current or immediate past 2 calendar years? </div>
-                            <div class="small_text">If yes, explain and state the date(s) of receipt and set forth the gross and net amounts received:</div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="rbc_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="rbc_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text"> 7. Do you receive cash or distributions not otherwise listed</div>
-                            <div class="small_text">
-                                <div class="d-flex">If yes, explain.<input type="number" min="0" name="rcd"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:694px">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="rcd_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="rcd_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">8. Have you received income from overtime work during either the current or immediate past calendar year?</div>
-                            <div class="small_text">
-                                <div class="d-flex">If yes, explain. <input type="number" min="0" name="rio"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:694px">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="roi_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="roi_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">9. Have you been awarded or granted stock options, restricted stock or any other non-cash compensation or entitlement during the current or immediate past calendar year?</div>
-                            <div class="small_text">
-                                <div class="d-flex">If yes, explain. <input type="number" min="0" name="aogs"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:694px">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="aogs_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="aogs_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">10. Have you received any other supplemental compensation during either the current or immediate past calendar year?</div>
-                            <div class="small_text">If yes, state the date(s) of receipt and set forth the gross and net amounts received. Also describe the nature of any supplemental compensation received.</div>
-                            <div class="small_text">
-                                <div class="d-flex">
-                                     <input type="number" min="0" name="hyr1" class="border-0    bg-transparent border border-bottom outline-none form-control" >
-                                 </div>
-                                <div class="d-flex">
-                                     <input type="number" min="0" name="hyr2"  class="border-0    bg-transparent border border-bottom outline-none form-control" >
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="hyr_f" value="Yes" class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="hyr_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">11. Have you received income from unemployment, disability and/or social security during either the current or immediate past calendar year?</div>
-                            <div class="small_text">If yes, state the date(s) of receipt and set forth the gross and net amounts received.</div>
-                            <div class="d-flex">
-                                <input type="number" min="0" name="uds"  class="border-0    bg-transparent border border-bottom outline-none form-control" >
-
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="uds_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="uds_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                             <div class="small_text">
-                                <div class="d-flex">12. List the names of the dependents you claim: <input type="number" min="0" name="lonc"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:468px">
-                            </div>
-                                 <div class="d-flex">  <input type="number" min="0" name="lnd"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control"   >
-
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
+                        </div> --}}
 
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">13. Are you paying or receiving any alimony?</div>
-                             <div class="small_text">
-                                <div class="d-flex">If yes, how much and from or to whom? <input type="number" min="0" name="pra1"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:505px">
+                </section>
+                <section
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="did_you_receive">
+                    <div class="col-lg-10 mx-auto">
+
+                        <div class="row">
+                            <div class="col-lg-10 border-bottom border-dark pb-2">
+                                <div class="small_text"> 6.Did you receive bonuses, commissions, or other
+                                    compensation, including distributions, taxable or nontaxable, in addition to your
+                                    regular salary during the current or immediate past 2 calendar years? </div>
+                                <div class="small_text">If yes, explain and state the date(s) of receipt and set forth
+                                    the gross and net amounts received:</div>
                             </div>
-                                 <div class="d-flex">  <input type="number" min="0" name="pra2"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control"   >
-
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="pra_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="pra_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">14. Are you paying or receiving any child support?</div>
-                            <div class="small_text">If yes, list names of the children, the amount paid or received for each child and to whom paid or from whom
-                                received.</div>
-
-                                <div class="d-flex"> <input type="number" min="0" name="child_s1"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control"  >
-                                </div>
-
-                                 <div class="d-flex">  <input type="number" min="0" name="child_s2"
-                                    class="border-0    bg-transparent border border-bottom outline-none form-control"   >
-                                 </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="child_s_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="child_s_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="rbc_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="rbc_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">15. Is there a wage execution in connection with support?</div>
-                             <div class="small_text">
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text"> 7. Do you receive cash or distributions not otherwise listed
+                                </div>
                                 <div class="small_text">
-                                    <div class="d-flex">If yes, explain. <input type="number" min="0" name="conn_w_support"
-                                        class="border-0    bg-transparent border border-bottom outline-none form-control" style="width:671px">
+                                    <div class="d-flex">If yes, explain.<input type="number" min="0"
+                                            name="rcd"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                            style="width:694px">
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="conn_w_support_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="conn_w_support_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">16. Does a Safe Deposit Box exist and if so, at which bank?</div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="sdb_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="sdb_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="rcd_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="rcd_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">17. Has a dependent child of yours received income from social security, SSI or other government program during either the current or immediate past calendar year?</div>
-                            <div class="small_text">If yes, explain the basis and state the date(s) of receipt and set forth the gross and net amounts received</div>
-                            <div class="d-flex">
-
-                                <input type="number" min="0" name="dcoyri"  class="border-0    bg-transparent border border-bottom outline-none form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class='d-flex   my-auto ps-2 '>
-                                <div>
-                                    <input type="checkbox" name="dcoyri_f" value="Yes"  class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
-                                </div>
-                                <div class="ms-lg-4">
-                                    <input type="checkbox" name="dcoyri_f" value="No" class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text">8. Have you received income from overtime work during either
+                                    the current or immediate past calendar year?</div>
+                                <div class="small_text">
+                                    <div class="d-flex">If yes, explain. <input type="number" min="0"
+                                            name="rio"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                            style="width:694px">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-10  pb-2">
-                            <div class="small_text">18. Explanation of Income or Other Information:</div>
-                             <div class="d-flex">
-
-                                <input type="number" min="0" name="eioi"  class="border-0    bg-transparent border border-bottom outline-none form-control">
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="roi_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="roi_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text">9. Have you been awarded or granted stock options, restricted
+                                    stock or any other non-cash compensation or entitlement during the current or
+                                    immediate past calendar year?</div>
+                                <div class="small_text">
+                                    <div class="d-flex">If yes, explain. <input type="number" min="0"
+                                            name="aogs"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                            style="width:694px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="aogs_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="aogs_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text">10. Have you received any other supplemental compensation
+                                    during either the current or immediate past calendar year?</div>
+                                <div class="small_text">If yes, state the date(s) of receipt and set forth the gross
+                                    and net amounts received. Also describe the nature of any supplemental compensation
+                                    received.</div>
+                                <div class="small_text">
+                                    <div class="d-flex">
+                                        <input type="number" min="0" name="hyr1"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+                                    <div class="d-flex">
+                                        <input type="number" min="0" name="hyr2"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="hyr_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="hyr_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-                        @include('layouts.footer4', ['page' => 5])
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text">11. Have you received income from unemployment, disability
+                                    and/or social security during either the current or immediate past calendar year?
+                                </div>
+                                <div class="small_text">If yes, state the date(s) of receipt and set forth the gross
+                                    and net amounts received.</div>
+                                <div class="d-flex">
+                                    <input type="number" min="0" name="uds"
+                                        class="border-0    bg-transparent border border-bottom outline-none form-control">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class='d-flex   my-auto ps-2 '>
+                                    <div>
+                                        <input type="checkbox" name="uds_f" value="Yes"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                    </div>
+                                    <div class="ms-lg-4">
+                                        <input type="checkbox" name="uds_f" value="No"
+                                            class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-10  pb-2">
+                                <div class="small_text">
+                                    <div class="d-flex">12. List the names of the dependents you claim: <input
+                                            type="number" min="0" name="lonc"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                            style="width:468px">
+                                    </div>
+                                    <div class="d-flex"> <input type="number" min="0" name="lnd"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">13. Are you paying or receiving any alimony?</div>
+                                    <div class="small_text">
+                                        <div class="d-flex">If yes, how much and from or to whom? <input
+                                                type="number" min="0" name="pra1"
+                                                class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                                style="width:505px">
+                                        </div>
+                                        <div class="d-flex"> <input type="number" min="0" name="pra2"
+                                                class="border-0    bg-transparent border border-bottom outline-none form-control">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class='d-flex   my-auto ps-2 '>
+                                        <div>
+                                            <input type="checkbox" name="pra_f" value="Yes"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <input type="checkbox" name="pra_f" value="No"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">14. Are you paying or receiving any child support?</div>
+                                    <div class="small_text">If yes, list names of the children, the amount paid or
+                                        received for each child and to whom paid or from whom
+                                        received.</div>
+
+                                    <div class="d-flex"> <input type="number" min="0" name="child_s1"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+
+                                    <div class="d-flex"> <input type="number" min="0" name="child_s2"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class='d-flex   my-auto ps-2 '>
+                                        <div>
+                                            <input type="checkbox" name="child_s_f" value="Yes"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <input type="checkbox" name="child_s_f" value="No"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">15. Is there a wage execution in connection with support?
+                                    </div>
+                                    <div class="small_text">
+                                        <div class="small_text">
+                                            <div class="d-flex">If yes, explain. <input type="number"
+                                                    min="0" name="conn_w_support"
+                                                    class="border-0    bg-transparent border border-bottom outline-none form-control"
+                                                    style="width:671px">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class='d-flex   my-auto ps-2 '>
+                                        <div>
+                                            <input type="checkbox" name="conn_w_support_f" value="Yes"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <input type="checkbox" name="conn_w_support_f" value="No"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">16. Does a Safe Deposit Box exist and if so, at which
+                                        bank?</div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class='d-flex   my-auto ps-2 '>
+                                        <div>
+                                            <input type="checkbox" name="sdb_f" value="Yes"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <input type="checkbox" name="sdb_f" value="No"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">17. Has a dependent child of yours received income from
+                                        social security, SSI or other government program during either the current or
+                                        immediate past calendar year?</div>
+                                    <div class="small_text">If yes, explain the basis and state the date(s) of receipt
+                                        and set forth the gross and net amounts received</div>
+                                    <div class="d-flex">
+
+                                        <input type="number" min="0" name="dcoyri"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class='d-flex   my-auto ps-2 '>
+                                        <div>
+                                            <input type="checkbox" name="dcoyri_f" value="Yes"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
+                                        </div>
+                                        <div class="ms-lg-4">
+                                            <input type="checkbox" name="dcoyri_f" value="No"
+                                                class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10  pb-2">
+                                    <div class="small_text">18. Explanation of Income or Other Information:</div>
+                                    <div class="d-flex">
+
+                                        <input type="number" min="0" name="eioi"
+                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+
+                                </div>
+                            </div>
+
+
+                            @include('layouts.footer4', ['page' => 5])
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#gross_income" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -1820,9 +1914,9 @@
                             </div>
                             <div class="my-auto"> <a href="#monthly_expenses" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
 
-            </section>
+                </section>
 
 
                 {{-- 6 page  --}}
@@ -1830,7 +1924,8 @@
 
 
                 <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="monthly_expenses">
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="monthly_expenses">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -1859,50 +1954,59 @@
                             <div class="small_text">SCHEDULE A: SHELTER</div>
                             <div class="col-lg-7 ">
                                 <div class="ps-lg-5">
-                                <div class="small_text">If Tenant:</div>
-                                <div class="ps-lg-3">
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Rent </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="rent"
-                                                style="width: 438px"
-                                                class="border-bottom border-0 responsive_input  bg-transparent border outline-none form-control">
-                                        </div>
+                                    <div class="small_text">If Tenant:</div>
+                                    <div class="ps-lg-3">
+                                        <div class="d-flex"><span class="pe-lg-4 small_text">Rent </span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="rent" style="width: 438px"
+                                                    class="border-bottom border-0 responsive_input  bg-transparent border outline-none form-control">
+                                            </div>
 
-                                    </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Heat (if not furnished)
-                                        </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="hear"
-                                                style="width: 322px"
-                                                class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                         </div>
-                                    </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Electric & Gas (if not
-                                            furnished) </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="electric"
-                                                style="width: 261px"
-                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        <div class="d-flex"><span class="pe-lg-4 small_text"> Heat (if not
+                                                furnished)
+                                            </span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="hear" style="width: 322px"
+                                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Renter’s Insurance</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="renters"
-                                                style="width: 344px"
-                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        <div class="d-flex"><span class="pe-lg-4 small_text"> Electric & Gas (if not
+                                                furnished) </span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="electric" style="width: 261px"
+                                                    class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Parking (at Apartment)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="parking" style="width: 311px" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        <div class="d-flex"><span class="pe-lg-4 small_text">Renter’s
+                                                Insurance</span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="renters" style="width: 344px"
+                                                    class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other charges
-                                            (Itemize)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="other_charges" style="width: 309px" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        <div class="d-flex"><span class="pe-lg-4 small_text">Parking (at
+                                                Apartment)</span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="parking" style="width: 311px"
+                                                    class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex"><span class="pe-lg-4 small_text">Other charges
+                                                (Itemize)</span>
+                                            <div class="d-flex"> <input type="text" min="0"
+                                                    name="other_charges" style="width: 309px"
+                                                    class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
                             <div class="col-lg-3">
                                 <div class="d-flex mt-lg-1">
-                                    <small class="ms-2">$</small><input type="number" min="0" name="rent1" style="width: 365px" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="rent1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex">
                                     <small class="ms-2">$</small><input type="number" min="0"
@@ -1964,38 +2068,42 @@
                             </div>
                         </div>
                         <div class="row pt-lg-4">
-                             <div class="col-lg-7 ps-lg-5">
+                            <div class="col-lg-7 ps-lg-5">
                                 <div class="small_text">If Homeowner:</div>
                                 <div class="ps-lg-3">
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Mortgage </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="mortgage"
-                                                style="width: 400px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="mortgage" style="width: 400px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
 
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Real Estate Taxes (if not included w/mortgage payment)
+                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Real Estate Taxes (if not
+                                            included w/mortgage payment)
                                         </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="real_estate_taxes"
-                                                style="width: 90px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="real_estate_taxes" style="width: 90px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Homeowners Ins. (if not included w/mortgage payment)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="homeowners_ins"
-                                                style="width: 94px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Homeowners Ins. (if not
+                                            included w/mortgage payment)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="homeowners_ins" style="width: 94px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other Mortgages or Home Equity Loans</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="other_mortgages"
-                                                style="width: 200px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other Mortgages or Home
+                                            Equity Loans</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="other_mortgages" style="width: 200px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Heat (unless Electric or Gas)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="unless_electric"
-                                                style="width: 278px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Heat (unless Electric or
+                                            Gas)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="unless_electric" style="width: 278px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -2006,44 +2114,46 @@
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Water & Sewer</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="water_sewer"
-                                                style="width: 362px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="water_sewer" style="width: 362px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Garbage Removal</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="garbage_removal"
-                                                style="width: 345px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="garbage_removal" style="width: 345px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Snow Removal</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="snow_removal"
-                                                style="width: 362px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="snow_removal" style="width: 362px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Lawn Care</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="lawn_care"
-                                                style="width: 391px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="lawn_care" style="width: 391px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Maintenance/Repairs</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="maintenance"
-                                                style="width: 324px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="maintenance" style="width: 324px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Condo, Co-op or Association Fees</span>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Condo, Co-op or Association
+                                            Fees</span>
                                         <div class="d-flex"> <input type="text" min="0" name="condo"
                                                 style="width: 238px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other Charges (Itemize)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="other_chages_itemsize"
-                                                style="width: 306px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other Charges
+                                            (Itemize)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="other_chages_itemsize" style="width: 306px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -2190,55 +2300,58 @@
 
 
                         <div class="row pt-lg-4">
-                             <div class="col-lg-7 ps-lg-5">
+                            <div class="col-lg-7 ps-lg-5">
                                 <div class="small_text">Tenant or Homeowner:</div>
                                 <div class="ps-lg-3">
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Telephone </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1telephone"
-                                                style="width: 397px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1telephone" style="width: 397px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
 
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">  Mobile/Cellular Telephone</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1mobile_cellular"
-                                                style="width: 292px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Mobile/Cellular
+                                            Telephone</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1mobile_cellular" style="width: 292px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Service Contracts on Equipment</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1service_contracts"
-                                                style="width: 255px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Service Contracts on
+                                            Equipment</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1service_contracts" style="width: 255px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Cable TV</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1cable_tv"
-                                                style="width: 406px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1cable_tv" style="width: 406px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Plumber/Electrician</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1plumber_electrician"
-                                                style="width: 339px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1plumber_electrician" style="width: 339px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Equipment & Furnishings</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1equipment_furnishings"
-                                                style="width: 299px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Equipment &
+                                            Furnishings</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1equipment_furnishings" style="width: 299px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Internet Charges</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1internet_charges"
-                                                style="width: 355px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1internet_charges" style="width: 355px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Home Security System</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="1home_security_system"
-                                                style="width: 314px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="1home_security_system" style="width: 314px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -2360,337 +2473,350 @@
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
                             </div>
-                         </div>
-                         <div class="row pt-lg-4">
+                        </div>
+                        <div class="row pt-lg-4">
                             <div class="col-lg-7 ps-lg-5">
-                               <div class="small_text">Tenant or Homeowner:</div>
-                               <div class="ps-lg-3">
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Telephone </span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2telephone"
-                                               style="width: 397px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
+                                <div class="small_text">Tenant or Homeowner:</div>
+                                <div class="ps-lg-3">
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Telephone </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2telephone" style="width: 397px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
 
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">  Mobile/Cellular Telephone</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2moblie_cellular"
-                                               style="width: 292px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Service Contracts on Equipment</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2service_contracts"
-                                               style="width: 255px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Cable TV</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2cable_tv"
-                                               style="width: 406px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Plumber/Electrician</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2plumber_electrician"
-                                               style="width: 339px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Equipment & Furnishings</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2equipment_furnishings"
-                                               style="width: 299px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Internet Charges</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2internet_charges"
-                                               style="width: 355px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Home Security System</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="2home_security_system"
-                                               style="width: 314px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Other (itemize)</span>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Mobile/Cellular
+                                            Telephone</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2moblie_cellular" style="width: 292px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Service Contracts on
+                                            Equipment</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2service_contracts" style="width: 255px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Cable TV</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2cable_tv" style="width: 406px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Plumber/Electrician</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2plumber_electrician" style="width: 339px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Equipment &
+                                            Furnishings</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2equipment_furnishings" style="width: 299px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Internet Charges</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2internet_charges" style="width: 355px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Home Security System</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="2home_security_system" style="width: 314px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other (itemize)</span>
 
-                                   </div>
-                                   <div class="text-end pt-2"><span class="pe-lg-4 small_text">TOTAL</span>
+                                    </div>
+                                    <div class="text-end pt-2"><span class="pe-lg-4 small_text">TOTAL</span>
 
-                                   </div>
+                                    </div>
 
-                               </div>
-                           </div>
-                           <div class="col-lg-3 pt-lg-4">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 pt-lg-4">
 
 
 
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2telephone1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2moblie_cellular1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2telephone1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2moblie_cellular1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
 
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2service_contracts2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2cable_tv2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2plumber_electrician2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2equipment_furnishings2"  style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2internet_charges" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2home_security_system2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="1other_charges5" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="1other_charges6" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                           </div>
-                           <div class="col-lg-2 pt-lg-4">
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2service_contracts2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2cable_tv2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2plumber_electrician2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2equipment_furnishings2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2internet_charges" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2home_security_system2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="1other_charges5" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="1other_charges6" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 pt-lg-4">
 
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2telephone2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2moblie_cellular2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2service_contracts2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2cable_tv2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2plumber_electrician2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2equipment_furnishings2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2internet_charges2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="2home_security_system2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="1other_charges7" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="1other_charges8" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                           </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2telephone2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2moblie_cellular2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2service_contracts2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2cable_tv2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2plumber_electrician2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2equipment_furnishings2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2internet_charges2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="2home_security_system2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="1other_charges7" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="1other_charges8" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
                         </div>
                         <div class="row pt-lg-4">
                             <div class="small_text">SCHEDULE B: TRANSPORTATION</div>
                             <div class="col-lg-7 ps-lg-5">
-                               <div class="ps-lg-3">
-                                   <div class="d-flex"><span class="pe-lg-3 small_text">Auto Payment </span>
-                                       <div class="d-flex"> <input type="text" min="0" name="auto_payment"
-                                               style="width: 377px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
+                                <div class="ps-lg-3">
+                                    <div class="d-flex"><span class="pe-lg-3 small_text">Auto Payment </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="auto_payment" style="width: 377px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
 
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text"> Auto Insurance</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="auto_insurance"
-                                               style="width: 366px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Registration, License</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="registration_license"
-                                               style="width: 329px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Maintenance</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="maintenance"
-                                               style="width: 381px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Fuel and Oil</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="fuel_and_oil"
-                                               style="width: 387px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Commuting Expenses</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="commuting_expenses"
-                                               style="width: 322px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
-                                   </div>
-                                   <div class="d-flex"><span class="pe-lg-4 small_text">Other Charges (Itemize)</span>
-                                       <div class="d-flex"> <input type="text" min="0" name="pg6_other_charges"
-                                               style="width: 307px"
-                                               class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
-                                       </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text"> Auto Insurance</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="auto_insurance" style="width: 366px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Registration,
+                                            License</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="registration_license" style="width: 329px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Maintenance</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="maintenance" style="width: 381px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Fuel and Oil</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="fuel_and_oil" style="width: 387px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Commuting Expenses</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="commuting_expenses" style="width: 322px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Other Charges
+                                            (Itemize)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="pg6_other_charges" style="width: 307px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        </div>
 
                                     </div>
                                     <div class="text-end pt-2"><span class="pe-lg-4 small_text">TOTAL</span></div>
 
 
                                 </div>
-                           </div>
-                           <div class="col-lg-3 pt-lg-1">
-
-
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="auto_payment1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="auto_insurance1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="registration_license1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="maintenance1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="fuel_and_oil1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="commuting_expenses1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="pg6_other_charges1" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                           </div>
-                           <div class="col-lg-2 pt-lg-1">
-
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="auto_payment2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="auto_insurance2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="registration_license2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="maintenance2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="fuel_and_oil2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="commuting_expenses2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                               <div class="d-flex">
-                                   <small class="ms-2">$</small><input type="number" min="0"
-                                       name="pg6_other_charges2" style="width: 365px"
-                                       class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                               </div>
-                           </div>
-                           @include('layouts.footer4', ['page' => 6])
-                           <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#did_you_receive" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#case_information" >2</option>
-                                    <option value="#attach_affidavit" >3</option>
-                                    <option value="#gross_income" >4</option>
-                                    <option value="#did_you_receive" >5</option>
-                                    <option value="#monthly_expenses" selected>6</option>
-                                    <option value="#schedule_personal">7</option>
-                                    <option value="#balance_sheet1">8</option>
-                                    <option value="#balance_sheet2">9</option>
-                                    <option value="#last_section">10</option>
-                                </select>
                             </div>
-                            <div class="my-auto"> <a href="#schedule_personal" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+                            <div class="col-lg-3 pt-lg-1">
+
+
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="auto_payment1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="auto_insurance1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="registration_license1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="maintenance1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="fuel_and_oil1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="commuting_expenses1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="pg6_other_charges1" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 pt-lg-1">
+
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="auto_payment2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="auto_insurance2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="registration_license2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="maintenance2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="fuel_and_oil2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="commuting_expenses2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small><input type="number" min="0"
+                                        name="pg6_other_charges2" style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                            @include('layouts.footer4', ['page' => 6])
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
+                                <div class="my-auto"> <a href="#first_section"><i
+                                            class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div class="my-auto ps-2"> <a href="#did_you_receive"><i
+                                            class="fas fa-chevron-left"></i></a> </div>
+                                <div>
+                                    <select class="form-select w-100 sectionSelect">
+                                        <option value="#first_section">1</option>
+                                        <option value="#case_information">2</option>
+                                        <option value="#attach_affidavit">3</option>
+                                        <option value="#gross_income">4</option>
+                                        <option value="#did_you_receive">5</option>
+                                        <option value="#monthly_expenses" selected>6</option>
+                                        <option value="#schedule_personal">7</option>
+                                        <option value="#balance_sheet1">8</option>
+                                        <option value="#balance_sheet2">9</option>
+                                        <option value="#last_section">10</option>
+                                    </select>
+                                </div>
+                                <div class="my-auto"> <a href="#schedule_personal"><i
+                                            class="fas fa-chevron-right"></i> </a></div>
+                                <div class="my-auto ps-2"><a href="#last_section"> <i
+                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
+                                    </a></div>
+                            </div> --}}
                         </div>
-                       </div>
                     </div>
 
                 </section>
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="schedule_personal">
+                <section
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="schedule_personal">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -2701,9 +2827,11 @@
                             </div>
                             <div class="col-lg-5 d-flex">
                                 <div class="small_text pe-5">
-                                    Joint Life Style Family, including <input type="text" name="jlsf_children2"  class="border-bottom border-0 w-25">children
+                                    Joint Life Style Family, including <input type="text" name="jlsf_children2"
+                                        class="border-bottom border-0 w-25">children
                                 </div>
-                                <div class="small_text"> Current Life Style Yours and<input type="text" name="clsy_children2" class="border-bottom border-0 w-25">children
+                                <div class="small_text"> Current Life Style Yours and<input type="text"
+                                        name="clsy_children2" class="border-bottom border-0 w-25">children
                                 </div>
 
                             </div>
@@ -2712,106 +2840,116 @@
                         </div>
 
                         <div class="row">
-                             <div class="col-lg-7 ps-lg-5">
-                                 <div class="ps-lg-3">
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Food at Home & household supplies </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="food_at_home"
-                                                style="width: 226px"
+                            <div class="col-lg-7 ps-lg-5">
+                                <div class="ps-lg-3">
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Food at Home & household
+                                            supplies </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="food_at_home" style="width: 226px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
 
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text"> Prescription Drugs</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="prescription_drugs"
-                                                style="width: 344px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="prescription_drugs" style="width: 344px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Non-prescription drugs, cosmetics, toiletries & sundries</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="non_prescription_drugs"
-                                                style="width: 99px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Non-prescription drugs,
+                                            cosmetics, toiletries & sundries</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="non_prescription_drugs" style="width: 99px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">School Lunch </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="school_lunch"
-                                                style="width: 379px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="school_lunch" style="width: 379px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Restaurants</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="restaurants"
-                                                style="width: 388px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="restaurants" style="width: 388px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Clothing</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="clothing"  style="width: 410px" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="clothing" style="width: 410px"
+                                                class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Dry Cleaning, Commercial Laundry</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="dry_cleaning"
-                                                style="width: 234px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Dry Cleaning, Commercial
+                                            Laundry</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="dry_cleaning" style="width: 234px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Hair Care</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="hair_care"
-                                                style="width: 405px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="hair_care" style="width: 405px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Domestic Help</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="domestic_help"
-                                                style="width: 368px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="domestic_help" style="width: 368px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Medical (exclusive of psychiatric)*</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="medical_exclusive"
-                                                style="width: 242px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Medical (exclusive of
+                                            psychiatric)*</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="medical_exclusive" style="width: 242px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Eye Care*</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="eye_care"
-                                                style="width: 403px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="eye_care" style="width: 403px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Psychiatric/psychological/counseling*</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="psychiatric_psychological"
-                                                style="width: 216px"
+                                    <div class="d-flex"><span
+                                            class="pe-lg-4 small_text">Psychiatric/psychological/counseling*</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="psychiatric_psychological" style="width: 216px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Dental (exclusive of Orthodontic*</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="dental_exclusive"
-                                                style="width: 242px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Dental (exclusive of
+                                            Orthodontic*</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="dental_exclusive" style="width: 242px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Orthodontic* </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="orthodontic"
-                                                style="width: 379px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="orthodontic" style="width: 379px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Medical Insurance (hospital, etc.)*</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="medical_insurance"
-                                                style="width: 241px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Medical Insurance
+                                            (hospital, etc.)*</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="medical_insurance" style="width: 241px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Club Dues and Memberships </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="club_dues_memberships"
-                                                style="width: 272px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Club Dues and Memberships
+                                        </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="club_dues_memberships" style="width: 272px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Sports and Hobbies </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="sports_and_hobbies"
-                                                style="width: 333px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="sports_and_hobbies" style="width: 333px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -2821,57 +2959,61 @@
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Vacations  </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="vacations"
-                                                style="width: 403px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Vacations </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="vacations" style="width: 403px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Children’s Private School Costs    </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="childrens_private_school_costs"
-                                                style="width: 259px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Children’s Private School
+                                            Costs </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="childrens_private_school_costs" style="width: 259px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Parent’s Educational Costs</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="parents_educational_costs"
-                                                style="width: 290px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Parent’s Educational
+                                            Costs</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="parents_educational_costs" style="width: 290px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Children’s Lessons (dancing, music, sports, etc.)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="childrens_lessons"
-                                                style="width: 150px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Children’s Lessons
+                                            (dancing, music, sports, etc.)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="childrens_lessons" style="width: 150px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Babysitting</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="babysitting"
-                                                style="width: 391px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="babysitting" style="width: 391px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Day-Care Expenses</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="day_care_expenses"
-                                                style="width: 335px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="day_care_expenses" style="width: 335px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Entertainment </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="entertainment"
-                                                style="width: 371px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="entertainment" style="width: 371px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Alcohol and Tobacco </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="alcohol_and_tobacco"
-                                                style="width: 328px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="alcohol_and_tobacco" style="width: 328px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Newspapers and Periodicals </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="newspapers_and_periodicals"
-                                                style="width: 276px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Newspapers and Periodicals
+                                        </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="newspapers_and_periodicals" style="width: 276px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -2882,71 +3024,79 @@
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Contributions</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="contributions"
-                                                style="width: 377px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="contributions" style="width: 377px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Payments to Non-Child Dependents </span>
-                                        <div class="d-flex"> <input type="text" min="0" name="payments_non_child_dependents"
-                                                style="width: 225px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Payments to Non-Child
+                                            Dependents </span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="payments_non_child_dependents" style="width: 225px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Prior Existing Support Obligations this family/other families  </span>
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Prior Existing Support
+                                            Obligations this family/other families </span>
 
                                     </div>
-                                    <div class="d-flex justify-content-between"><span class="pe-lg-4 small_text">  (specify)</span>
-                                        <div class="d-flex justify-content-end"> <input type="text" min="0" name="prior_existing_support"
-                                                style="width: 80px"
+                                    <div class="d-flex justify-content-between"><span class="pe-lg-4 small_text">
+                                            (specify)</span>
+                                        <div class="d-flex justify-content-end"> <input type="text"
+                                                min="0" name="prior_existing_support" style="width: 80px"
                                                 class="border-bottom text-end border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Tax Reserve (not listed elsewhere)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="tax_reserve"
-                                                style="width: 237px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Tax Reserve (not listed
+                                            elsewhere)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="tax_reserve" style="width: 237px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Life Insurance</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="life_insurance"
-                                                style="width: 376px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="life_insurance" style="width: 376px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Savings/Investment</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="savings_investment"
-                                                style="width: 337px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="savings_investment" style="width: 337px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Debt Service (from page 7) (not listed elsewhere)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="debt_service"
-                                                style="width: 137px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Debt Service (from page 7)
+                                            (not listed elsewhere)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="debt_service" style="width: 137px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Parenting Time Expenses</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="parenting_time_expenses"
-                                                style="width: 296px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Parenting Time
+                                            Expenses</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="parenting_time_expenses" style="width: 296px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Professional Expenses (other than this proceeding)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="professional_expenses"
-                                                style="width: 125px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Professional Expenses
+                                            (other than this proceeding)</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="professional_expenses" style="width: 125px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Pet Care and Expenses</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="pet_care_expenses"
-                                                style="width: 310px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Pet Care and
+                                            Expenses</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="pet_care_expenses" style="width: 310px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Other (specify)</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="other_specify"
-                                                style="width: 366px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="other_specify" style="width: 366px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -3378,56 +3528,62 @@
                         <div class="row pt-lg-4">
                             <div class="small_text">*unreimbursed only</div>
 
-                                <div class="col-lg-7 ps-lg-5 ">
-                                    <div class="text-end"><span class="pe-lg-4 small_text">Total </span>
-                                    </div>
+                            <div class="col-lg-7 ps-lg-5 ">
+                                <div class="text-end"><span class="pe-lg-4 small_text">Total </span>
                                 </div>
-                                <div class="col-lg-3 ">
-                                    <div class="d-flex">
-                                        <small class="ms-2">$</small>
-                                        <input type="number" min="0"  name="unreimbursed_total1" style="width: 365px" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small>
+                                    <input type="number" min="0" name="unreimbursed_total1"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
-                                <div class="col-lg-2  ">
-                                    <div class="d-flex">
-                                        <small class="ms-2">$</small>
-                                        <input type="number" min="0"  name="unreimbursed_total2" style="width: 365px" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    </div>
+                            </div>
+                            <div class="col-lg-2  ">
+                                <div class="d-flex">
+                                    <small class="ms-2">$</small>
+                                    <input type="number" min="0" name="unreimbursed_total2"
+                                        style="width: 365px"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
+                            </div>
 
 
                         </div>
 
                         <div class="row  ">
                             <div class="small_text ps-lg-5">
-                                Please Note: If you are paying expenses for a spouse or civil union partner and/or children not reflected in this budget, attach a schedule of such payments.
+                                Please Note: If you are paying expenses for a spouse or civil union partner and/or
+                                children not reflected in this budget, attach a schedule of such payments.
                             </div>
-                             <div class="col-lg-7 ps-lg-5 ">
-                                 <div class="ps-lg-3">
+                            <div class="col-lg-7 ps-lg-5 ">
+                                <div class="ps-lg-3">
 
 
 
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Schedule A: Shelter</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="schedule_shelter1"
-                                                style="width: 332px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="schedule_shelter1" style="width: 332px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
-                                    <div class="d-flex"><span class="pe-lg-4 small_text">Schedule B: Transportation</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="schedule_transportation1"
-                                                style="width: 285px"
+                                    <div class="d-flex"><span class="pe-lg-4 small_text">Schedule B:
+                                            Transportation</span>
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="schedule_transportation1" style="width: 285px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex"><span class="pe-lg-4 small_text">Schedule C: Personal</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="schedule_personal1"
-                                                style="width: 324px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="schedule_personal1" style="width: 324px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
                                     <div class="d-flex mt-lg-1"><span class="pe-lg-4 small_text">Grand Totals</span>
-                                        <div class="d-flex"> <input type="text" min="0" name="grand_total1"
-                                                style="width: 381px"
+                                        <div class="d-flex"> <input type="text" min="0"
+                                                name="grand_total1" style="width: 381px"
                                                 class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                         </div>
                                     </div>
@@ -3489,31 +3645,38 @@
                         </div>
                         @include('layouts.footer4', ['page' => 7])
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#monthly_expenses" ><i class="fas fa-chevron-left"></i></a> </div>
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                        class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#monthly_expenses"><i
+                                        class="fas fa-chevron-left"></i></a> </div>
                             <div>
                                 <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#case_information" >2</option>
-                                    <option value="#attach_affidavit" >3</option>
-                                    <option value="#gross_income" >4</option>
-                                    <option value="#did_you_receive" >5</option>
-                                    <option value="#monthly_expenses" >6</option>
+                                    <option value="#first_section">1</option>
+                                    <option value="#case_information">2</option>
+                                    <option value="#attach_affidavit">3</option>
+                                    <option value="#gross_income">4</option>
+                                    <option value="#did_you_receive">5</option>
+                                    <option value="#monthly_expenses">6</option>
                                     <option value="#schedule_personal" selected>7</option>
                                     <option value="#balance_sheet1">8</option>
                                     <option value="#balance_sheet2">9</option>
                                     <option value="#last_section">10</option>
                                 </select>
                             </div>
-                            <div class="my-auto"> <a href="#balance_sheet1" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                            <div class="my-auto"> <a href="#balance_sheet1"><i class="fas fa-chevron-right"></i>
+                                </a></div>
+                            <div class="my-auto ps-2"><a href="#last_section"> <i
+                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div> --}}
                     </div>
                 </section>
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="balance_sheet1">
+                <section
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="balance_sheet1">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
@@ -3525,10 +3688,11 @@
                                 <div class="small_text">Title to Property (P, D, J)1</div>
                             </div>
                             <div class="col">
-                                <div class="small_text">Date of purchase/acquisition. If claim that asset is exempt, state reason and value of what is claimed to be exempt</div>
+                                <div class="small_text">Date of purchase/acquisition. If claim that asset is exempt,
+                                    state reason and value of what is claimed to be exempt</div>
                             </div>
                             <div class="col">
-                                <div class="small_text">Value $  Put * after exempt</div>
+                                <div class="small_text">Value $ Put * after exempt</div>
                             </div>
                             <div class="col">
                                 <div class="small_text">Date of Evaluation Mo./Day/ Yr.</div>
@@ -3541,75 +3705,112 @@
                         <div class="row">
                             <div class="small_text">1. Real Property</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="real_property_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_property_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="real_property_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_property_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="real_property_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_property_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="real_property_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="real_property_c1" id="" class="mt-2">
+                                    <input type="number" min="0" name="real_property_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="real_property_c1" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="real_property_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="real_property_c2" id="" class="mt-2">
+                                    <input type="number" min="0" name="real_property_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="real_property_c2" id=""
+                                        class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="real_property_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_property_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_property_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
                         {{-- 2  --}}
                         <div class="row">
-                            <div class="small_text">2. Bank Accounts, CD’s (identify institution and type of account(s))</div>
+                            <div class="small_text">2. Bank Accounts, CD’s (identify institution and type of
+                                account(s))</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="bank_account_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="bank_account_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_title3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_title4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_title3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_title4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="bank_account_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_dop3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_dop4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_dop3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_dop4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
-                                <div class="d-flex">  <input type="number" min="0"  name="bank_account_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="bank_account_c1" value="True" id="" class="mt-2">
+                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="bank_account_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="number" min="0"  name="bank_account_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="bank_account_c1" value="True" id="" class="mt-2">
+                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="bank_account_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
-                                <div class="d-flex">  <input type="number" min="0"  name="bank_account_v3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="bank_account_c1" value="True" id="" class="mt-2">
+                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="bank_account_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="number" min="0"  name="bank_account_v4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="bank_account_c1" value="True" id="" class="mt-2">
+                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v4"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="bank_account_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="bank_account_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_doe3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bank_account_doe4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_doe3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bank_account_doe4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -3618,88 +3819,124 @@
                         <div class="row">
                             <div class="small_text">3. Vehicles</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="vehicles_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="vehicles_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="vehicles_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="vehicles_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="vehicles_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="vehicles_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="vehicles_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="vehicles_c1" id="" value="True" class="mt-2">
+                                    <input type="number" min="0" name="vehicles_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="vehicles_c1" id="" value="True"
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="vehicles_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="vehicles_c1" id="" value="True" class="mt-2">
+                                    <input type="number" min="0" name="vehicles_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="vehicles_c1" id="" value="True"
+                                        class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="vehicles_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="vehicles_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="vehicles_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                         </div>
 
-                         {{-- 4  --}}
-                         <div class="row">
+                        {{-- 4  --}}
+                        <div class="row">
                             <div class="small_text">4. Tangible Personal Property</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="tangible_personal_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="tangible_personal_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_title3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_title4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_title3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_title4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="tangible_personal_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_dop3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_dop4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_dop3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_dop4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="tangible_personal_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="tangible_personal_c1" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="tangible_personal_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="tangible_personal_c1" value="True"
+                                        id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="tangible_personal_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="tangible_personal_c2" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="tangible_personal_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="tangible_personal_c2" value="True"
+                                        id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="tangible_personal_v3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="tangible_personal_c3" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="tangible_personal_v3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="tangible_personal_c3" value="True"
+                                        id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="tangible_personal_v4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="tangible_personal_c4" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="tangible_personal_v4"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="tangible_personal_c4" value="True"
+                                        id="" class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="tangible_personal_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_doe3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tangible_personal_doe4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_doe3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tangible_personal_doe4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -3709,53 +3946,78 @@
                         {{-- 5 --}}
 
                         <div class="row">
-                            <div class="small_text">5. Stocks, Bonds and Securities (identify institution and type of account(s))</div>
+                            <div class="small_text">5. Stocks, Bonds and Securities (identify institution and type of
+                                account(s))</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="stocks_bonds_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="stocks_bonds_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_title3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_title4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_title3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_title4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="stocks_bonds_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_dop3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_dop4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_dop3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_dop4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="stocks_bonds_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="stocks_bonds_c1" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="stocks_bonds_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="stocks_bonds_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="stocks_bonds_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="stocks_bonds_c2" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="stocks_bonds_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="stocks_bonds_c2" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="stocks_bonds_v3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="stocks_bonds_c3" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="stocks_bonds_v3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="stocks_bonds_c3" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="stocks_bonds_v4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="stocks_bonds_c4" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="stocks_bonds_v4"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="stocks_bonds_c4" value="True" id=""
+                                        class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="stocks_bonds_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_doe3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="stocks_bonds_doe4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_doe3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="stocks_bonds_doe4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -3765,37 +4027,50 @@
                         {{-- 6 --}}
 
                         <div class="row">
-                            <div class="small_text">6. Pension, Profit Sharing, Retirement Plan(s), 40l(k)s, etc. (identify each institution or employer)</div>
+                            <div class="small_text">6. Pension, Profit Sharing, Retirement Plan(s), 40l(k)s, etc.
+                                (identify each institution or employer)</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="pension_profit_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="pension_profit_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="pension_profit_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="pension_profit_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="pension_profit_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="pension_profit_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="pension_profit_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="pension_profit_c1" id="" value="True" class="mt-2">
+                                    <input type="number" min="0" name="pension_profit_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="pension_profit_c1" id=""
+                                        value="True" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="pension_profit_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="pension_profit_c2" id=""value="True"  class="mt-2">
+                                    <input type="number" min="0" name="pension_profit_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="pension_profit_c2" id=""value="True"
+                                        class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="pension_profit_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="pension_profit_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension_profit_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -3807,39 +4082,60 @@
                         <div class="row">
                             <div class="small_text">7. IRAs</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="iras_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="iras_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_title3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_title3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="iras_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_dop3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_dop3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="iras_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="iras_c1" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="iras_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="iras_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="iras_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="iras_c2" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="iras_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="iras_c2" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="iras_v3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="iras_c3" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="iras_v3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="iras_c3" value="True" id=""
+                                        class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="iras_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="iras_doe3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="iras_doe3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 8 --}}
@@ -3848,73 +4144,106 @@
                         <div class="row">
                             <div class="small_text">8. Businesses, Partnerships, Professional Practices</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="bpp_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="bpp_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_title3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_title3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="bpp_dop1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_dop2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_dop3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_dop1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_dop2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_dop3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="bpp_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="bpp_c1" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="bpp_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="bpp_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="bpp_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="bpp_c2" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="bpp_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="bpp_c2" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="bpp_v3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="bpp_c3" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="bpp_v3"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="bpp_c3" value="True" id=""
+                                        class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="bpp_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="bpp_doe3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="bpp_doe3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 9 --}}
                         <div class="row">
                             <div class="small_text">9. Life Insurance (cash surrender value)</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="li_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="li_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="li_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="li_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="li_dob1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="li_dob2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_dob1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_dob2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="li_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="li_c1" id="" class="mt-2">
+                                    <input type="number" min="0" name="li_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="li_c1" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="li_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="li_c2" id="" class="mt-2">
+                                    <input type="number" min="0" name="li_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="li_c2" id="" class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="li_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="li_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="li_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 10 --}}
@@ -3922,32 +4251,44 @@
                         <div class="row">
                             <div class="small_text">10. Loans Receivable</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="lr_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="lr_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="lr_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="lr_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="lr_dob1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="lr_dob2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_dob1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_dob2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="lr_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="lr_c1" id="" class="mt-2">
+                                    <input type="number" min="0" name="lr_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="lr_c1" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="lr_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="lr_c2" id="" class="mt-2">
+                                    <input type="number" min="0" name="lr_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="lr_c2" id="" class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="lr_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="lr_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="lr_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 11 --}}
@@ -3956,33 +4297,47 @@
                         <div class="row">
                             <div class="small_text">11. Other (specify)</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0"  name="other_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="other_title1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_title2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_title1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_title2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="other_dob1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_dob2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_dob1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_dob2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="other_v1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="other_c1" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="other_v1"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="other_c1" value="True" id=""
+                                        class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0"  name="other_v2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="other_c2" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="other_v2"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
+                                        type="checkbox" name="other_c2" value="True" id=""
+                                        class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="other_doe1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_doe2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_doe1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_doe2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         <div class="row pt-lg-2">
@@ -3990,21 +4345,23 @@
                             <div class="col-lg-10">
                                 <div class="small_text text-end pt-1">TOTAL GROSS ASSETS:</div>
                                 <div class="small_text text-end pt-1">TOTAL SUBJECT TO EQUITABLE DISTRIBUTION:</div>
-                                <div class="small_text text-end pt-1">TOTAL NOT SUBJECT TO EQUITABLE DISTRIBUTION:</div>
+                                <div class="small_text text-end pt-1">TOTAL NOT SUBJECT TO EQUITABLE DISTRIBUTION:
+                                </div>
 
-                             </div>
+                            </div>
 
                             <div class="col-lg-2">
-                                <div class="d-flex">$<input type="number" min="0" name="total_gross_assets"
-                                    class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
+                                <div class="d-flex">$<input type="number" min="0"
+                                        name="total_gross_assets"
+                                        class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex">$<input type="number" min="0" name="t_stwd"
-                                    class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
+                                        class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex">$<input type="number" min="0" name="t_nsted"
-                                    class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
+                                        class="border-0  responsive_input border-bottom bg-transparent border outline-none form-control">
                                 </div>
-                                  </div>
+                            </div>
                         </div>
                         <div class="row pt-lg-5">
                             <div class="col-lg-6">
@@ -4016,33 +4373,40 @@
 
                         @include('layouts.footer4', ['page' => 8])
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#schedule_personal" ><i class="fas fa-chevron-left"></i></a> </div>
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                        class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#schedule_personal"><i
+                                        class="fas fa-chevron-left"></i></a> </div>
                             <div>
                                 <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#case_information" >2</option>
-                                    <option value="#attach_affidavit" >3</option>
-                                    <option value="#gross_income" >4</option>
-                                    <option value="#did_you_receive" >5</option>
-                                    <option value="#monthly_expenses" >6</option>
-                                    <option value="#schedule_personal" >7</option>
+                                    <option value="#first_section">1</option>
+                                    <option value="#case_information">2</option>
+                                    <option value="#attach_affidavit">3</option>
+                                    <option value="#gross_income">4</option>
+                                    <option value="#did_you_receive">5</option>
+                                    <option value="#monthly_expenses">6</option>
+                                    <option value="#schedule_personal">7</option>
                                     <option value="#balance_sheet1" selected>8</option>
                                     <option value="#balance_sheet2">9</option>
                                     <option value="#last_section">10</option>
                                 </select>
                             </div>
-                            <div class="my-auto"> <a href="#balance_sheet2" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                            <div class="my-auto"> <a href="#balance_sheet2"><i class="fas fa-chevron-right"></i>
+                                </a></div>
+                            <div class="my-auto ps-2"><a href="#last_section"> <i
+                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div> --}}
                     </div>
                 </section>
 
 
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="balance_sheet2">
+                <section
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="balance_sheet2">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
@@ -4051,10 +4415,11 @@
                                 <div class="small_text">Description</div>
                             </div>
                             <div class="col-lg-1">
-                                <div class="small_text">Name of Responsible Party  (P, D, J)</div>
+                                <div class="small_text">Name of Responsible Party (P, D, J)</div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="small_text">If you contend liability should not be shared, state reason</div>
+                                <div class="small_text">If you contend liability should not be shared, state reason
+                                </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="small_text">Monthly Payment</div>
@@ -4073,42 +4438,66 @@
                         <div class="row">
                             <div class="small_text">1. Real Estate Mortgages</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="real_state_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="real_state_name1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_name2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_name3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_name4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_name1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_name2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_name3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_name4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="real_state_reason1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_reason2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_reason3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_reason4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_reason1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_reason2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_reason3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_reason4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="real_state_mp1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_mp2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_mp3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_mp4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_mp1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_mp2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_mp3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_mp4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="real_state_to1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_to2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_to3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_to4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_to1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_to2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_to3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_to4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="real_state_date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_date3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="real_state_date4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_date1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_date2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_date3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="real_state_date4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -4116,48 +4505,72 @@
                         <div class="row">
                             <div class="small_text">2. Other Long Term Debts</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="other_login_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="other_login_name1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_name2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_name3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_name4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_name1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_name2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_name3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_name4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="other_login_reason1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_reason2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_reason3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_reason4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_reason1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_reason2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_reason3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_reason4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="other_login_mp1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_mp2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_mp3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_mp4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_mp1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_mp2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_mp3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_mp4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="other_login_to1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_to2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_to3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_to4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_to1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_to2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_to3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_to4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="other_login_date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_date3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_login_date4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_date1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_date2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_date3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_login_date4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -4168,140 +4581,230 @@
                         <div class="row">
                             <div class="small_text">3. Revolving Charges</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="revolving_charges_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_d11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_d11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="revolving_charges_name1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_name11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_name11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="revolving_charges_reason1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_reason11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_reason11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="revolving_charges_mp1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_mp11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_mp11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="revolving_charges_tw1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_tw11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_tw11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="revolving_charges_date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date5" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date6" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date7" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date8" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date9" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date10" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="revolving_charges_date11" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date5"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date6"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date7"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date8"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date9"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date10"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="revolving_charges_date11"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                         </div>
 
-                         {{-- 4  --}}
-                         <div class="row">
+                        {{-- 4  --}}
+                        <div class="row">
                             <div class="small_text">4. Other Short Term Debts</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="other_short_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_d4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_d4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="other_short_name1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_name2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_name3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_name4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_name1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_name2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_name3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_name4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="other_short_reason1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_reason2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_reason3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_reason4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_reason1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_reason2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_reason3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_reason4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="other_short_mp1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_mp2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_mp3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_mp4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_mp1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_mp2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_mp3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_mp4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="other_short_to1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_to2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_to2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_to4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_to1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_to2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_to2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_to4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="other_short_date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_date3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="other_short_date4" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_date1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_date2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_date3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other_short_date4"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -4313,42 +4816,60 @@
                         <div class="row">
                             <div class="small_text">5. Contingent Liabilities</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0"  name="contingent_liabilities_d1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_d2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_d3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                             </div>
+                                <input type="number" min="0" name="contingent_liabilities_d1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_d2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_d3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                            </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="contingent_liabilities_name1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_name2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                 <input type="number" min="0"  name="contingent_liabilities_name3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_name1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_name2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_name3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0"  name="contingent_liabilities_reason1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_reason2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_reason3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_reason1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_reason2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_reason3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="contingent_liabilities_mp1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_mp2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_mp3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_mp1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_mp2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_mp3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="contingent_liabilities_to1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_to2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                 <input type="number" min="0"  name="contingent_liabilities_to3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_to1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_to2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_to3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0"  name="contingent_liabilities_date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="contingent_liabilities_date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                 <input type="number" min="0"  name="contingent_liabilities_date3" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_date1"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_date2"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="contingent_liabilities_date3"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -4359,43 +4880,53 @@
                                 <div class="small_text text-end">TOTAL GROSS ASSETS:
                                     <br><small>(excluding contingent liabilities)</small>
                                 </div>
-                                <div class="small_text text-end">NET WORTH: <br> <span>(subject to equitable distribution)</span></div>
+                                <div class="small_text text-end">NET WORTH: <br> <span>(subject to equitable
+                                        distribution)</span></div>
                                 <div class="small_text text-end">TOTAL SUBJECT TO EQUITABLE DISTRIBUTION:</div>
                                 <div class="small_text text-end">TOTAL NOT SUBJECT TO EQUITABLE DISTRIBUTION:</div>
 
-                             </div>
+                            </div>
 
                             <div class="col-lg-2">
-                                <input type="number" min="0"  name="total_ga" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="total_nw" class="border-bottom border-0 mt-lg-4  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tsted" class="border-bottom border-0 mt-lg-4 responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0"  name="tnsted" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="total_ga"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="total_nw"
+                                    class="border-bottom border-0 mt-lg-4  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tsted"
+                                    class="border-bottom border-0 mt-lg-4 responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="tnsted"
+                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
-                                  </div>
+                            </div>
                         </div>
 
                         @include('layouts.footer4', ['page' => 9])
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#balance_sheet1" ><i class="fas fa-chevron-left"></i></a> </div>
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
+                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
+                                        class="fas fa-chevron-left"></i></a></div>
+                            <div class="my-auto ps-2"> <a href="#balance_sheet1"><i
+                                        class="fas fa-chevron-left"></i></a> </div>
                             <div>
                                 <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#case_information" >2</option>
-                                    <option value="#attach_affidavit" >3</option>
-                                    <option value="#gross_income" >4</option>
-                                    <option value="#did_you_receive" >5</option>
-                                    <option value="#monthly_expenses" >6</option>
-                                    <option value="#schedule_personal" >7</option>
-                                    <option value="#balance_sheet1" >8</option>
+                                    <option value="#first_section">1</option>
+                                    <option value="#case_information">2</option>
+                                    <option value="#attach_affidavit">3</option>
+                                    <option value="#gross_income">4</option>
+                                    <option value="#did_you_receive">5</option>
+                                    <option value="#monthly_expenses">6</option>
+                                    <option value="#schedule_personal">7</option>
+                                    <option value="#balance_sheet1">8</option>
                                     <option value="#balance_sheet2" selected>9</option>
                                     <option value="#last_section">10</option>
                                 </select>
                             </div>
-                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                            <div class="my-auto"> <a href="#last_section"><i class="fas fa-chevron-right"></i>
+                                </a></div>
+                            <div class="my-auto ps-2"><a href="#last_section"> <i
+                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div> --}}
                     </div>
                 </section>
 
@@ -4403,22 +4934,28 @@
 
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="last_section">
+                <section
+                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="last_section">
                     <div class="col-lg-10 mx-auto">
                         <div class=" ">Part F - Statement of Special Problems</div>
-                        <div class=" ">Provide a Brief Narrative Statement of Any Special Problems Involving This Case: As example, state if the matter involves complex valuation problems (such as for a closely held business) or special medical problems of any family member, etc.</div>
-                        <textarea name="partf_provide" class="form-control" id=""  rows="5"></textarea>
+                        <div class=" ">Provide a Brief Narrative Statement of Any Special Problems Involving This
+                            Case: As example, state if the matter involves complex valuation problems (such as for a
+                            closely held business) or special medical problems of any family member, etc.</div>
+                        <textarea name="partf_provide" class="form-control" id="" rows="5"></textarea>
                         <div class=" ">Part G - Required Attachments</div>
                         <div class="text-center">Check If You Have Attached the Following Required Documents</div>
 
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">1.</div>
-                            <div class="col-lg-10">A full and complete copy of your last federal and state income tax returns with all schedules and attachments. (Part C-1)</div>
+                            <div class="col-lg-10">A full and complete copy of your last federal and state income tax
+                                returns with all schedules and attachments. (Part C-1)</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg1" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">2.</div>
-                            <div class="col-lg-10">Your last calendar year’s W-2 statements, 1099’s, K-1 statements.</div>
+                            <div class="col-lg-10">Your last calendar year’s W-2 statements, 1099’s, K-1 statements.
+                            </div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg2" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
@@ -4428,22 +4965,29 @@
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">4.</div>
-                            <div class="col-lg-10">Bonus information including, but not limited to, percentage overrides, timing of payments, etc.; the last three statements of such bonuses, commissions, etc. (Part C)</div>
+                            <div class="col-lg-10">Bonus information including, but not limited to, percentage
+                                overrides, timing of payments, etc.; the last three statements of such bonuses,
+                                commissions, etc. (Part C)</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg4" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">5.</div>
-                            <div class="col-lg-10">Your most recent corporate benefit statement or a summary thereof showing the nature, amount and status of retirement plans, savings plans, income deferral plans, insurance benefits, etc. (Part C)</div>
+                            <div class="col-lg-10">Your most recent corporate benefit statement or a summary thereof
+                                showing the nature, amount and status of retirement plans, savings plans, income
+                                deferral plans, insurance benefits, etc. (Part C)</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg5" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">6.</div>
-                            <div class="col-lg-10">Affidavit of Insurance Coverage as required by Court Rule 5:4-2(f) (Part B-3)</div>
+                            <div class="col-lg-10">Affidavit of Insurance Coverage as required by Court Rule 5:4-2(f)
+                                (Part B-3)</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg6" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">7.</div>
-                            <div class="col-lg-10">List of all prior/pending family actions involving support, custody or Domestic Violence, with the Docket Number, County, State and the disposition reached. Attach copies of all existing Orders in effect. (Part B-5)</div>
+                            <div class="col-lg-10">List of all prior/pending family actions involving support, custody
+                                or Domestic Violence, with the Docket Number, County, State and the disposition reached.
+                                Attach copies of all existing Orders in effect. (Part B-5)</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg7" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
@@ -4453,7 +4997,8 @@
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">9.</div>
-                            <div class="col-lg-10">Schedule of payments made for a spouse or civil union partner and/or children not reflected in Part D.</div>
+                            <div class="col-lg-10">Schedule of payments made for a spouse or civil union partner
+                                and/or children not reflected in Part D.</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg9" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
@@ -4463,28 +5008,40 @@
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">11.</div>
-                            <div class="col-lg-10">An Appendix IX Child Support Guideline Worksheet, as applicable, based upon available information.</div>
+                            <div class="col-lg-10">An Appendix IX Child Support Guideline Worksheet, as applicable,
+                                based upon available information.</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg11" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1">12.</div>
-                            <div class="col-lg-10">If a request has been made for college or post-secondary school contribution, all relevant information pertaining to that request, including but not limited to documentation of all costs and reimbursements or assistance for which contribution is sought, such as invoices or receipts for tuition, board and books; proof of enrollment; and proof of all financial aid, scholarships, grants and student loans obtained. A list of the information as promulgated by the Administrative Director of the Courts can be found on the Judiciary website.</div>
+                            <div class="col-lg-10">If a request has been made for college or post-secondary school
+                                contribution, all relevant information pertaining to that request, including but not
+                                limited to documentation of all costs and reimbursements or assistance for which
+                                contribution is sought, such as invoices or receipts for tuition, board and books; proof
+                                of enrollment; and proof of all financial aid, scholarships, grants and student loans
+                                obtained. A list of the information as promulgated by the Administrative Director of the
+                                Courts can be found on the Judiciary website.</div>
                             <div class="col-lg-1"> <input type="checkbox" name="pg12" id=""> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1"> </div>
-                            <div class="col-lg-10 ps-lg-5">I certify that, other than in this form and its attachments, confidential personal identifiers have been redacted from documents now submitted to the court, and will be redacted from all documents submitted in the future in accordance with Rule 1:38-7(b).</div>
-                            <div class="col-lg-1">   </div>
+                            <div class="col-lg-10 ps-lg-5">I certify that, other than in this form and its
+                                attachments, confidential personal identifiers have been redacted from documents now
+                                submitted to the court, and will be redacted from all documents submitted in the future
+                                in accordance with Rule 1:38-7(b).</div>
+                            <div class="col-lg-1"> </div>
                         </div>
                         <div class="row pt-lg-3">
                             <div class="col-lg-1"> </div>
-                            <div class="col-lg-10 ps-lg-5">I certify that the foregoing information contained herein is true. I am aware that if any of the foregoing information contained therein is willfully false, I am subject to punishment.
+                            <div class="col-lg-10 ps-lg-5">I certify that the foregoing information contained herein
+                                is true. I am aware that if any of the foregoing information contained therein is
+                                willfully false, I am subject to punishment.
                             </div>
-                            <div class="col-lg-1">   </div>
+                            <div class="col-lg-1"> </div>
                         </div>
                         @include('layouts.footer4', ['page' => 10])
 
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#balance_sheet2" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -4503,7 +5060,9 @@
                             </div>
                             <div class="my-auto"> <i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
+
+                        @include('layouts.pagination', ['page' => 5])
                     </div>
                 </section>
             </form>
@@ -4521,4 +5080,5 @@
         });
     </script>
 </body>
+
 </html>

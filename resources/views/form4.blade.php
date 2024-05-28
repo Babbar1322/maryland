@@ -615,7 +615,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2">  <i class="fas fa-chevron-left"></i> </div>
                                 <div>
@@ -630,7 +630,7 @@
                                 </div>
                                 <div class="my-auto"> <a href="#latest_pa_income" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
 
                             @include('layouts.footer3', ['page' => 1])
 
@@ -1146,7 +1146,7 @@
                                 </table>
 
                             </div>
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -1161,7 +1161,7 @@
                                 </div>
                                 <div class="my-auto"> <a href="#additional_information" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
 
                             @include('layouts.footer3', ['page' => 2])
 
@@ -1579,7 +1579,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="d-flex gap-3 py-auto mb-2  ">
+                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                                 <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                                 <div class="my-auto ps-2"> <a href="#latest_pa_income" ><i class="fas fa-chevron-left"></i></a> </div>
                                 <div>
@@ -1594,7 +1594,7 @@
                                 </div>
                                 <div class="my-auto"> <a href="#part_a_income" ><i class="fas fa-chevron-right"></i> </a></div>
                                 <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div>
+                            </div> --}}
 
                             @include('layouts.footer3', ['page' => 3])
 
@@ -1865,7 +1865,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#additional_information" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -1880,7 +1880,7 @@
                             </div>
                             <div class="my-auto"> <a href="#general_information" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
 
                         @include('layouts.footer3', ['page' => 4])
 
@@ -1983,7 +1983,7 @@
                                     target="_blank">www.revenue.pa.gov</a></p>
                             <p>REV-488</p>
                         </div>
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#part_a_income" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -1998,7 +1998,7 @@
                             </div>
                             <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
 
                         @include('layouts.footer3', ['page' => 5])
 
@@ -2062,7 +2062,7 @@
                             <p><a href="https://www.revenue.pa.gov" class="text-dark text-decoration-none"
                                     target="_blank">www.revenue.pa.gov</a></p>
                         </div>
-                        <div class="d-flex gap-3 py-auto mb-2  ">
+                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
                             <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
                             <div class="my-auto ps-2"> <a href="#general_information" ><i class="fas fa-chevron-left"></i></a> </div>
                             <div>
@@ -2077,8 +2077,9 @@
                             </div>
                             <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
                             <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div>
+                        </div> --}}
                         @include('layouts.footer3', ['page' => 6])
+                        @include('layouts.pagination', ['page' => 4])
 
                     </div>
                 </section>
