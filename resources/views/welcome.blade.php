@@ -342,6 +342,16 @@
                   </div>
                 </a>
             </div>
+            <div class="col-lg-4 mt-4">
+                <a href="{{route('pdf_form19')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 19</h5>
+                      <span>financial-disclosure-form-pdf-fillable.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

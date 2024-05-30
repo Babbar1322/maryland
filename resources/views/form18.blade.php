@@ -17,22 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
         @media screen and (min-width : 350px) {
-            .logo {
-                padding-bottom: 10px !important;
-                width: 130px !important;
-            }
-
             .link {
                 text-align: center !important;
             }
         }
-
         td {
             padding: 0px !important;
             padding-left: 5px !important;
             background-color: transparent important;
         }
-
         input:focus {
             border: none !important;
             /* border-bottom: 1px solid black !important; */
@@ -57,20 +50,15 @@
         }
 
         .form-control:focus-visible {
-            /* border-bottom: 1px solid black !important; */
-
             box-shadow: none !important;
         }
 
         .form-control {
             border-radius: 0 !important;
             padding: 0px !important;
-
         }
-
         .table input:focus {
             border: none !important;
-
             box-shadow: none !important;
         }
 
@@ -90,8 +78,6 @@
         .section_area {
             background-color: white !important;
             margin: 10px !important;
-            /* margin-top: 29px !important; */
-
         }
 
         .top:focus {
@@ -100,7 +86,6 @@
 
         input:focus-visible {
             outline: none !important;
-            /* border-bottom: 2px solid black !important; */
         }
 
         .footer_field:focus-visible {
@@ -108,49 +93,13 @@
             border-bottom: 2px solid black !important;
         }
 
-        .children_table {
-            min-width: 30rem !important;
-        }
-
-        .top_text {
-            width: 50% !important;
-            font-size: 21px;
-        }
-
         .footer_padding {
             padding-top: 400px !important;
         }
 
-        @media screen and (min-width : 1600px) {
-
-            .top_select_box {
-                width: 75% !important;
-            }
-
-            .case_input_top {
-                min-width: 490px !important;
-            }
-        }
-
-        @media screen and (min-width : 700px) {
-            .top_select_box {
-                width: 58.33%;
-            }
-
-            .case_input_top {
-                min-width: 275px;
-            }
-        }
-
         @media screen and (max-width : 768px) {
-
-
             .small_text {
                 height: auto !important;
-            }
-
-            .top_flex_text {
-                display: block !important;
             }
 
             .footer_padding {
@@ -159,69 +108,15 @@
 
             .d_sm_block {
                 display: block !important;
-
             }
-
-
             .responsive_input {
                 max-width: 100% !important;
                 overflow: hidden;
             }
-
-            .expires_row {
-                padding-right: 1.5rem !important;
-                padding-left: 1.5rem !important;
-            }
-
-            .bottom_day {
-                width: 90px !important;
-            }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .flex_input {
-                width: 100% !important;
-                margin-bottom: 10px !important;
-            }
-
-            .age_input_top {
-                width: 100% !important;
-            }
-
-            /* .section_area {
-            background-color: white !important;
-             margin-top: 15px !important;
-        } */
-            .top_select_box {
-                width: 58.33333%;
-            }
-
-            .case_input_top {
-                min-width: 275px !important;
-            }
-
-            .top_text_width {
-                min-width: 100% !important;
-            }
-
-            .children_table {
-                min-width: 0 !important;
-            }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-
-
             }
-
-            .top_text {
-                width: 100% !important;
-                font-size: 17px;
-            }
-
             .container-fluid {
                 padding-right: 0px !important;
                 padding-left: 0px !important;
@@ -230,10 +125,6 @@
 
         .bg_color {
             background-color: black;
-        }
-
-        .font_bold {
-            font-weight: bolder !important;
         }
 
         .bg-secondary {
@@ -247,10 +138,6 @@
 
         .small_text {
             font-size: 14px;
-        }
-
-        .pb-500 {
-            padding-bottom: 500px;
         }
 
         .tdata input:focus,
@@ -404,15 +291,10 @@
                                     están obligados a hacerlo. Si opta por presentar sus alegatos u otros documentos
                                     electrónicamente, debe hacerlo de acuerdo con la Regla de Práctica General y
                                     Administración Judicial de Florida 2.525, y debe seguir los</div>
-
                             </div>
-
-
                         </div>
                     </div>
                 </section>
-
-                {{-- page 3 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -440,7 +322,6 @@
                                     a las Reglas de Práctica General y Administración Judicial proporcionado bajo
                                     Formularios de Derecho Familiar: Cómo Empezar, o Reglas de Corte en el Índice
                                     Temático de la A a la Z.</div>
-
                                 <div class="my-4">
                                     LOS LITIGANTES QUE SE REPRESENTAN A SÍ MISMOS PUEDEN SERVIR DOCUMENTOS POR CORREO
                                     ELECTRÓNICO; SIN EMBARGO, NO ESTÁN OBLIGADOS A HACERLO. Si un litigante que se
@@ -474,17 +355,13 @@
                         </div>
                     </div>
                 </section>
-
                 {{-- page 4 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-
-                                <div class="my-4">convertir esos montos. A continuación se ofrecen algunos consejos
-                                    para realizar estas conversiones.</div>
-
+                                <div class="my-4">convertir esos montos. A continuación se ofrecen algunos consejos para realizar estas conversiones.</div>
                                 <div class="mt-4">Instrucciones para el Formulario de Reglas de Procedimiento de Ley
                                     de Familia de Florida 12.902(c), Declaración Financiera de Ley de Familia (Forma
                                     Larga) (10/21)</div>
@@ -616,7 +493,6 @@
                                 <div>Demandado.</div>
                                 <div class="ms-1">DECLARACIÓN JURADA FINANCIERA DE DERECHO DE FAMILIA (FORMULARIO
                                     LARGO)</div>
-
                             </div>
                         </div>
                     </div>
@@ -628,9 +504,7 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-
-                                <div class="mt-4 text-center">(Ingresos Brutos Anuales Individuales de $50,000 o más)
-                                </div>
+                                <div class="mt-4 text-center">(Ingresos Brutos Anuales Individuales de $50,000 o más) </div>
 
                                 <div class=" d-flex d_sm_block ">Yo, {nombre legal completo}
                                     <input type="text" min="0" name="nombre_lc"
@@ -683,74 +557,45 @@
                                 </div>
 
                                 <div class="d-flex align-items-center">
-                                    <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"
-                                        min="0" name="de_jubilacion"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                    <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"  min="0" name="de_jubilacion" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">Empleador de quien se jubiló<input
-                                        type="text" min="0" name="jubilo"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">Empleador de quien se jubiló<input type="text" min="0" name="jubilo" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">Dirección:<input type="text" min="0"
-                                        name="direccion"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">Dirección:<input type="text" min="0"  name="direccion" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">Ciudad, Estado, Código postal:<input
-                                        type="text" min="0" name="codigo_postal"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">Ciudad, Estado, Código postal:<input type="text" min="0" name="codigo_postal" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">Número de teléfono:<input type="text"
-                                        min="0" name="de_telefono"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">Número de teléfono:<input type="text" min="0" name="de_telefono" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
 
-                                <div class="mt-4">
-                                    INGRESOS BRUTOS DEL AÑO PASADO:</div>
+                                <div class="mt-4"> INGRESOS BRUTOS DEL AÑO PASADO:</div>
                                 <div>Su ingreso Ingreso de la otra parte (si se conoce)</div>
-                                <div class="d-flex align-items-center">AÑO<input type="text" min="0"
-                                        name="ano"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">AÑO<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">$<input type="text" min="0"
-                                        name="ano_$"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">$<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-
                                 <div class="mt-4">INGRESOS BRUTOS MENSUALES ACTUALES:</div>
                                 <div>Todos los montos deben ser MENSUALES. Vea las instrucciones de este formulario para
-                                    calcular montos de dinero para cualquier cosa que NO se pague mensualmente. Adjunte
-                                    más</div>
+                                    calcular montos de dinero para cualquier cosa que NO se pague mensualmente. Adjunte más</div>
                             </div>
-
-
                         </div>
                     </div>
-
                 </section>
-
-
                 {{-- page 6 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-
                                 <div class="my-4">papel si es necesario. Los elementos incluidos en "otros" deben
                                     listarse por separado con montos en dólares separados.</div>
-
-
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">1.</span>
-                                    <input type="text" min="0" name="salario_1"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
-                                        style="width: 80px">Salario o sueldo bruto mensual
+                                    <input type="text" min="0" name="salario_1" class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top"  style="width: 80px">Salario o sueldo bruto mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">2.</span>
-                                    <input type="text" min="0" name="bonos_2"
-                                        class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top "
-                                        style="width: 80px">Bonos mensuales, comisiones, subsidios, horas extras,
+                                    <input type="text" min="0" name="bonos_2" class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top " style="width: 80px">Bonos mensuales, comisiones, subsidios, horas extras,
                                     propinas y pagos similares
                                 </div>
                                 <div class="d-flex d_sm_block">
@@ -771,34 +616,25 @@
 
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">5.</span>
-                                    <input type="text" min="0" name="compensacion_5"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Compensación de Trabajadores mensual
+                                    <input type="text" min="0" name="compensacion_5" class="border-0 p-0 m-0 border-bottom footer_field align-top " style="width: 80px">Compensación de Trabajadores mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">6.</span>
-                                    <input type="text" min="0" name="compensacion_6"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Compensación por Desempleo mensual
+                                    <input type="text" min="0" name="compensacion_6" class="border-0 p-0 m-0 border-bottom footer_field align-top " style="width: 80px">Compensación por Desempleo mensual
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">7.</span>
-                                    <input type="text" min="0" name="pagos_7"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Pagos mensuales de pensión, jubilación o anualidades
+                                    <input type="text" min="0" name="pagos_7" class="border-0 p-0 m-0 border-bottom footer_field align-top " style="width: 80px">Pagos mensuales de pensión, jubilación o anualidades
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">8.</span>
-                                    <input type="text" min="0" name="beneficios_8"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px"> Beneficios del Seguro Social mensuales
+                                    <input type="text" min="0" name="beneficios_8" class="border-0 p-0 m-0 border-bottom footer_field align-top" style="width: 80px"> Beneficios del Seguro Social mensuales
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">9.</span>
                                     <input type="text" min="0" name="pension_9"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Pensión alimenticia realmente recibida mensualmente (Sumar
-                                    9a y 9b)
+                                        style="width: 80px">Pensión alimenticia realmente recibida mensualmente (Sumar 9a y 9b)
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9a. </span>De este caso: <span class="">$</span><input
@@ -812,38 +648,28 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">10.</span>
-                                    <input type="text" min="0" name="mid_10"
-                                        class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Intereses y dividendos mensuales
+                                    <input type="text" min="0" name="mid_10" class="border-0 p-0 m-0 border-bottom footer_field align-top " style="width: 80px">Intereses y dividendos mensuales
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">11.</span>
-                                    <input type="text" min="0" name="ngresos_11"
-                                        class="border-0 p-0  m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">ngresos por alquiler mensuales (ingresos brutos menos los
-                                    gastos ordinarios y necesarios para producir ingresos) (Adjunte hoja detallando
-                                    tales ingresos y gastos.)
+                                    <input type="text" min="0" name="ngresos_11" class="border-0 p-0  m-0 border-bottom footer_field align-top " style="width: 80px">ngresos por alquiler mensuales (ingresos brutos menos los
+                                    gastos ordinarios y necesarios para producir ingresos) (Adjunte hoja detallando tales ingresos y gastos.)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">12.</span>
                                     <input type="text" min="0" name="ingresos_12"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">Ingresos mensuales por derechos de autor, fideicomisos o
-                                    herencias
+                                        style="width: 80px">Ingresos mensuales por derechos de autor, fideicomisos o herencias
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">13.</span>
                                     <input type="text" min="0" name="igastos_13"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
-                                        style="width: 80px">IGastos reembolsados e ingresos en especie mensuales en la
-                                    medida en que reducen los gastos personales de vida (Adjunte hoja detallando cada
-                                    elemento y monto.)
+                                        style="width: 80px">IGastos reembolsados e ingresos en especie mensuales en la medida en que reducen los gastos personales de vida (Adjunte hoja detallando cada elemento y monto.)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">14.</span>
-                                    <input type="text" min="0" name="ganancias_14"
-                                        class="border-0 p-0 m-0  border-bottom footer_field align-top "
-                                        style="width: 80px">Ganancias mensuales derivadas de tratos con propiedades (no
+                                    <input type="text" min="0" name="ganancias_14"  class="border-0 p-0 m-0  border-bottom footer_field align-top "  style="width: 80px">Ganancias mensuales derivadas de tratos con propiedades (no
                                     incluyendo ganancias no recurrentes)
                                 </div>
                                 <div class="d-flex d_sm_block">
@@ -920,8 +746,6 @@
                             </div>
                         </div>
                 </section>
-
-
                 {{-- page 7 --}}
                 <section class="section_area">
                     <div class="row">
@@ -1363,8 +1187,6 @@
                         </div>
                     </div>
                 </section>
-
-
                 {{-- page 9 --}}
                 <section class="section_area">
                     <div class="row">

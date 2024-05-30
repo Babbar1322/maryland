@@ -2,8 +2,11 @@
     <div class="my-auto"> <a href="{{ route('form1.index') }}"><i
                 class="fas fa-chevron-left text-dark"></i><i class="fas fa-chevron-left text-dark"></i></a>
     </div>
-    {{-- <div class="my-auto ps-2"><a href="{{ route('pdf_form16') }}"><i
-                class="fas fa-chevron-left"></i></a> </div> --}}
+    {{--<div class="my-auto ps-2">
+            <a href="{{ route('pdf_form16') }}">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div> --}}
 
 
     <div class="dropdown">

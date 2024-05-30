@@ -13,7 +13,7 @@ class CreateSpanishFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('spanish_forms', function (Blueprint $table) {
+        Schema::create('18_spanish_forms', function (Blueprint $table) {
             $table->id();
             $table->timestamp('created_at')->useCurrent();
            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -27,6 +27,6 @@ class CreateSpanishFormsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spanish_forms');
+        Schema::dropIfExists('18_spanish_forms');
     }
 }

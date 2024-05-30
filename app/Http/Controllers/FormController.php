@@ -433,4 +433,9 @@ class FormController extends Controller
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
+
+
+    public function form19() {
+        return view('form19');
+    }
 }

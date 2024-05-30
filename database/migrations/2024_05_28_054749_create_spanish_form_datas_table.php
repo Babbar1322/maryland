@@ -13,7 +13,7 @@ class CreateSpanishFormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('spanish_form_datas', function (Blueprint $table) {
+        Schema::create('18_spanish_form_datas', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("spanish_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateSpanishFormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spanish_form_datas');
+        Schema::dropIfExists('18_spanish_form_datas');
     }
 }
