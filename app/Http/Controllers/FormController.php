@@ -8,6 +8,8 @@ use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
 use App\Models\fam108_current_form;
 use App\Models\fam108_current_form_data;
+use App\Models\financial_disclosure_form;
+use App\Models\financial_disclosure_form_data;
 use App\Models\fl140_ca_form;
 use App\Models\fl140_ca_form_data;
 use App\Models\fl142_ca_form;
@@ -437,5 +439,24 @@ class FormController extends Controller
 
     public function form19() {
         return view('form19');
+    }
+
+
+
+    public function form19_post(Request $request){
+        $financial_disclosure = new financial_disclosure_form();
+        $financial_disclosure->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $financial_disclosure_form = new financial_disclosure_form_data();
+            $financial_disclosure_form->financial_disclosure_id = $financial_disclosure->id;
+            $financial_disclosure_form->keyss = $key;
+            $financial_disclosure_form->valuess= $req;
+            $financial_disclosure_form->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 }

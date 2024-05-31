@@ -118,7 +118,15 @@
             .pb_checkbox {
                 display: block !important;
             }
+            .d_sm_block {
+                display: block !important;
 
+            }
+
+            .responsive_input {
+                max-width: 100% !important;
+                overflow: hidden;
+            }
             .small_text {
                 height: auto !important;
             }
@@ -576,20 +584,20 @@
                                 </div>
                                 <div class="col-lg-1 px-lg-0">State/Zip </div>
                                 <div class="col-lg-2 px-lg-0"><input type="text" name="a_sz1"
-                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none "
+                                        class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:200px"></div>
                             </div>
 
-                            <div class='d-flex pt-2'>
-                                <small class="  pe-4">Email :</small> <input type="text" name="a_email1"
-                                    class="form-control  border-none border-0 border-bottom border-dotted shadow-none "
+                            <div class='d-flex d_sm_block pt-2'>
+                                <small class="  pe-lg-4">Email :</small> <input type="text" name="a_email1"
+                                    class="form-control  border-none border-0 responsive_input border-bottom border-dotted shadow-none "
                                     style="width:882px">
 
                             </div>
-                            <div class='d-flex pt-2'>
-                                <small class="  pe-4">Other Party’s Name :</small> <input type="text"
+                            <div class='d-flex d_sm_block pt-2'>
+                                <small class="  pe-lg-4">Other Party’s Name :</small> <input type="text"
                                     name="a_opn"
-                                    class="form-control  border-none border-0 border-bottom border-dotted shadow-none "
+                                    class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none "
                                     style="width:782px">
 
                             </div>
@@ -597,7 +605,7 @@
                             <div class="row pt-3">
                                 <div class="col-lg-2  ">Street Address</div>
                                 <div class="col-lg-4 px-lg-0"><input type="text" name="a_sa2"
-                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
+                                        class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
                                 <div class=" " style="width:50px;">City</div>
                                 <div class="col-lg-2 px-lg-0"><input type="text" name="a_c2"
@@ -605,12 +613,12 @@
                                 </div>
                                 <div class="col-lg-1 px-lg-0">State/Zip </div>
                                 <div class="col-lg-2 px-lg-0"><input type="text" name="a_sz2"
-                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none "
+                                        class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:200px"></div>
                             </div>
-                            <div class='d-flex pt-2'>
+                            <div class='d-flex d_sm_block pt-2'>
                                 <small class="  pe-4">Email :</small> <input type="text" name="a_email2"
-                                    class="form-control  border-none border-0 border-bottom border-dotted shadow-none"
+                                    class="form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none"
                                     style="width:882px">
                             </div>
 
@@ -622,13 +630,13 @@
                                 <div class="col-lg-3">
                                     <h5 class="small_text">Child’s Full Name </h5><input type="text"
                                         name="cn1"
-                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none "><input
+                                        class=" form-control border-none border-0 border-bottom border-dotted shadow-none "><input
                                         type="text" name="cn2"
-                                        class="form-control  border-none border-0 border-bottom border-dotted shadow-none "><input
+                                        class=" form-control  border-none border-0 border-bottom border-dotted shadow-none "><input
                                         type="text" name="cn3"
-                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none "><input
+                                        class=" form-control border-none border-0 border-bottom border-dotted shadow-none "><input
                                         type="text" name="cn4"
-                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none ">
+                                        class=" form-control border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
 
                                 <div class="col-lg-4">

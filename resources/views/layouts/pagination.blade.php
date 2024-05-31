@@ -33,10 +33,11 @@
             <li><a class="dropdown-item" href="{{ route('pdf_form16') }}">16. 902c10-21  FL long form.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form17') }}">17. 902b 11-20   FL short form.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form18') }}">18. FL Long Form Spanish.pdf</a></li>
+            <li><a class="dropdown-item" href="{{ route('pdf_form19') }}">19. financial-disclosure-form-pdf-fillable.pdf</a></li>
         </ul>
     </div>
     {{-- <div class="my-auto"> <i class="fas fa-chevron-right"></i> </div> --}}
-    <div class="my-auto ps-2" ><a href="{{route('pdf_form18')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+    <div class="my-auto ps-2" ><a href="{{route('pdf_form19')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
 </div>
 
 {{-- <div>

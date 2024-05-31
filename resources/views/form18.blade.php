@@ -47,6 +47,7 @@
 
         body {
             font-family: "unset";
+
         }
 
         .form-control:focus-visible {
@@ -111,6 +112,7 @@
             }
             .responsive_input {
                 max-width: 100% !important;
+              width: 100% !important;
                 overflow: hidden;
             }
             .section_area {
@@ -124,7 +126,7 @@
         }
 
         .bg_color {
-            background-color: black;
+            background-color: #8c8a8a;
         }
 
         .bg-secondary {
@@ -171,7 +173,7 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="row  d-flex justify-content-between border-bottom">
-                                    <div class="col-lg-6 col-sm-6 col-md-6  ">
+                                    <div class="col-lg-6  col-md-6 mx-auto ">
                                         <img src="{{ asset('logo11.png') }}" class="image-fluid logo w-25"
                                             alt="...">
                                     </div>
@@ -209,7 +211,7 @@
                                         <div class="m-5">
                                             signature
                                         </div>
-                                        <div class="border-bottom w-50"></div>
+                                        <div class="border-bottom w-50 responsive_input"></div>
                                         <p class="m-0 mt-2">Laura Harris</p>
                                         <p class="m-0">Authorized Representative</p>
                                         <p class="m-0">Order Date: 03/29/2024</p>
@@ -235,7 +237,7 @@
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
                                 <div class="text-center mt-5">INSTRUCCIONES PARA LAS NORMAS DE PROCEDIMIENTO DE DERECHO
-                                    DE FAMILIA <br> DE FLORIDA</div>
+                                    DE FAMILIA   DE FLORIDA</div>
                                 <div class="text-center">FORMULARIO 12.902(c)</div>
                                 <div class="text-center">DECLARACIÓN JURADA FINANCIERA DE DERECHO DE FAMILIA (FORMULARIO
                                     LARGO) <br> (10/21)</div>
@@ -369,46 +371,46 @@
                                     siguiente manera:</div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad por hora</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
                                     <div class="col-lg-3 col-md-3 col-sm-3">Horas trabajadas por semana</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad semanal</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad semanal</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">52 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">52 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad anual</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad anual</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">÷</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">12 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">÷</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">12 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad mensual</div>
                                 </div>
                                 <div>Diario - Si le pagan por día, puede convertir sus ingresos mensuales de la
                                     siguiente manera:</div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad diaria</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">Dias trabajados por semana</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:223px">Dias trabajados por semana</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad semanal</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-lg-2">Cantidad semanal</div>
-                                    <div class="col-lg-1 col-md-1 col-lg-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-lg-3">52 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-lg-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-lg-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-lg-3" style="width:168px;">52 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-lg-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-lg-5">Canidad anual</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad anual</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">÷</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">12 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">÷</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">12 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad mensual</div>
                                 </div>
 
@@ -417,16 +419,16 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad semanal</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">52 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">52 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad anual</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad anual</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">÷</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">12 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">÷</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">12 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad mensual</div>
                                 </div>
 
@@ -435,17 +437,17 @@
                                     la siguiente manera:
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3">Cantidad quincenal</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">26</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:170px">Cantidad quincenal</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:10px">26</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">Canidad anual</div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 col-md-2 col-sm-2">Cantidad anual</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">÷</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">12 semanas por ano</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">÷</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:168px;">12 semanas por ano</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-5 col-md-5 col-sm-5">Canidad mensual</div>
                                 </div>
 
@@ -454,9 +456,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-3 col-sm-3">Cantidad dos veces al mes </div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">x</div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">2</div>
-                                    <div class="col-lg-1 col-md-1 col-sm-1">=</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">x</div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3" style="width:10px">2</div>
+                                    <div class="col-lg-1 col-md-1 col-sm-1" style="width:10px">=</div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">Canidad mensual</div>
                                 </div>
 
@@ -482,13 +484,13 @@
 
                                 <div class="mt-1">N.o de caso:</div>
                                 <div>División:</div>
-                                <div class=" m-0 p-0  d-flex d_sm_block"> <input type="text" min="0"
-                                        name="solicitante" class="border-0 m-0 p-0 footer_field border-bottom"> ,
+                                <div class=" m-0 p-0  d-flex d_sm_block "> <input type="text" min="0"
+                                        name="solicitante" class="border-0 m-0  responsive_input p-0 footer_field border-bottom"> ,
                                 </div>
                                 <div>Solicitante,</div>
                                 <div class="">y</div>
                                 <div class=" m-0 p-0  d-flex d_sm_block"> <input type="text" min="0"
-                                        name="demandado" class="border-0 m-0 p-0 footer_field border-bottom"> ,
+                                        name="demandado" class="border-0 m-0 p-0 footer_field border-bottom responsive_input"> ,
                                 </div>
                                 <div>Demandado.</div>
                                 <div class="ms-1">DECLARACIÓN JURADA FINANCIERA DE DERECHO DE FAMILIA (FORMULARIO
@@ -556,23 +558,23 @@
                                     Largo) (10/21) :no seleccionado:
                                 </div>
 
-                                <div class="d-flex align-items-center">
-                                    <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"  min="0" name="de_jubilacion" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex d_sm_block align-items-center">
+                                    <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"  min="0" name="de_jubilacion" class="border-0 p-0 m-0 responsive_input align-middle border-bottom footer_field   ">
                                 </div>
-                                <div class="d-flex align-items-center">Empleador de quien se jubiló<input type="text" min="0" name="jubilo" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex  d_sm_block align-items-center">Empleador de quien se jubiló<input type="text" min="0" name="jubilo" class="border-0   p-0 m-0 align-middle border-bottom footer_field  responsive_input " style="width:265px !important">
                                 </div>
-                                <div class="d-flex align-items-center">Dirección:<input type="text" min="0"  name="direccion" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex d_sm_block align-items-center">Dirección:<input type="text" min="0"  name="direccion" class="border-0 p-0 m-0   align-middle border-bottom footer_field responsive_input" style="width:400px !important">
                                 </div>
-                                <div class="d-flex align-items-center">Ciudad, Estado, Código postal:<input type="text" min="0" name="codigo_postal" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex d_sm_block align-items-center">Ciudad, Estado, Código postal:<input type="text" min="0" name="codigo_postal" class="border-0  responsive_input p-0 m-0 align-middle border-bottom footer_field   ">
                                 </div>
-                                <div class="d-flex align-items-center">Número de teléfono:<input type="text" min="0" name="de_telefono" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex d_sm_block align-items-center">Número de teléfono:<input type="text" min="0" name="de_telefono" class="border-0 responsive_input  p-0 m-0 align-middle border-bottom footer_field   ">
                                 </div>
 
                                 <div class="mt-4"> INGRESOS BRUTOS DEL AÑO PASADO:</div>
                                 <div>Su ingreso Ingreso de la otra parte (si se conoce)</div>
-                                <div class="d-flex align-items-center">AÑO<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">AÑO<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input" style="width:50px;">
                                 </div>
-                                <div class="d-flex align-items-center">$<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                <div class="d-flex align-items-center">$<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input "  style="width:75px;">
                                 </div>
                                 <div class="mt-4">INGRESOS BRUTOS MENSUALES ACTUALES:</div>
                                 <div>Todos los montos deben ser MENSUALES. Vea las instrucciones de este formulario para
@@ -598,7 +600,7 @@
                                     <input type="text" min="0" name="bonos_2" class="border-0 p-0 m-0 responsive_input  border-bottom footer_field align-top " style="width: 80px">Bonos mensuales, comisiones, subsidios, horas extras,
                                     propinas y pagos similares
                                 </div>
-                                <div class="d-flex d_sm_block">
+                                <div class=" d_sm_block">
                                     <span class="me-2">3.</span>
                                     <input type="text" min="0" name="ingresos_3"
                                         class="border-0 p-0  m-0 responsive_input border-bottom footer_field align-top "
@@ -637,20 +639,20 @@
                                         style="width: 80px">Pensión alimenticia realmente recibida mensualmente (Sumar 9a y 9b)
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
-                                    <span class="pe-2">9a. </span>De este caso: <span class="">$</span><input
+                                    <span class="pe-2">9a. </span>De este caso: <span class=""> $</span><input
                                         type="text" min="0" name="de_9a"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 responsive_input">
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input" style="width:118px;">
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9b. </span> De otros casos: <span
-                                        class="">$</span><input type="text" min="0" name="de_9b"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        class=""> $</span><input type="text" min="0" name="de_9b"
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input " style="width:100px;">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">10.</span>
                                     <input type="text" min="0" name="mid_10" class="border-0 p-0 m-0 border-bottom footer_field align-top " style="width: 80px">Intereses y dividendos mensuales
                                 </div>
-                                <div class="d-flex d_sm_block">
+                                <div class=" d_sm_block">
                                     <span class="me-2">11.</span>
                                     <input type="text" min="0" name="ngresos_11" class="border-0 p-0  m-0 border-bottom footer_field align-top " style="width: 80px">ngresos por alquiler mensuales (ingresos brutos menos los
                                     gastos ordinarios y necesarios para producir ingresos) (Adjunte hoja detallando tales ingresos y gastos.)
@@ -661,7 +663,7 @@
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">Ingresos mensuales por derechos de autor, fideicomisos o herencias
                                 </div>
-                                <div class="d-flex d_sm_block">
+                                <div class=" d_sm_block">
                                     <span class="me-2">13.</span>
                                     <input type="text" min="0" name="igastos_13"
                                         class="border-0 p-0 m-0 border-bottom footer_field align-top "
@@ -701,7 +703,7 @@
                                 <div class="mt-4">DEDUCCIONES MENSUALES ACTUALES:</div>
                                 <div>Todos los montos deben ser MENSUALES. Vea las instrucciones de este formulario para
                                     calcular montos de dinero para cualquier cosa que NO se pague mensualmente.</div>
-                                <div class="d-flex d_sm_block">
+                                <div class="  d_sm_block">
                                     <span class="me-2">18.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="impuestos_18"
@@ -717,7 +719,7 @@
                                     <span class="me-2">b.</span>Número de dependientes reclamados
                                 </div>
 
-                                <div class="d-flex d_sm_block">
+                                <div class="  d_sm_block">
                                     <span class="me-2">19.</span>
                                     <input type="text" min="0" name="impuestos_19"
                                         class="border-0 p-0 m-0  border-bottom footer_field align-top "
@@ -752,15 +754,15 @@
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-                                <div class="d-flex mt-4 d_sm_block">
+                                <div class=" mt-4 d_sm_block">
                                     <span class="me-2">23.</span>
                                     <input type="text" min="0" name="pagos_23"
                                         class="border-0 p-0 m-0 responsive_inupt border-bottom footer_field align-top "
                                         style="width: 80px"> Pagos mensuales de seguro de salud (incluyendo seguro
                                     dental), excluyendo la porción pagada por cualquier hijo menor de esta relación
                                 </div>
-                                <div class="d-flex ">
-                                    <span class="me-2 d_sm_block">24.</span>
+                                <div class="d-flex d_sm_block ">
+                                    <span class="me-2 ">24.</span>
                                     <input type="text" min="0" name="manutencion_24"
                                         class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px">Manutención infantil ordenada por la corte y realmente
@@ -773,17 +775,17 @@
                                         style="width: 80px">Pensión alimenticia ordenada por la corte y realmente
                                     pagada mensualmente (Sumar 25a y 25b)
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">25a. </span>de este caso: <span class="">$</span><input
                                         type="text" min="0" name="de_25a"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">25b. </span>de otros casos:<span
                                         class="">$</span><input type="text" min="0" name="de_25b"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input w-25 ">
                                 </div>
-                                <div class="d-flex d_sm_block">
+                                <div class=" d_sm_block">
                                     <span class="me-2">26.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="total_26"
@@ -1825,23 +1827,19 @@
                                     LLENAR LOS ESPACIOS A CONTINUACIÓN: [rellene todos los espacios] Este formulario fue
                                     preparado para: {escoja solo uno} ( ) Peticionario ( ) Demandado</div>
                                 <div>Este formulario fue completado con la ayuda de:</div>
-                                <div class="d-flex ">{nombre del individuo} <input type="text" min="0"
+                                <div class="d-flex d_sm_block">{nombre del individuo} <input type="text" min="0"
                                         name="nom_del_ind"
-                                        class="border-0 footer_field align-start border-bottom w-50">
+                                        class="border-0 footer_field responsive_input align-start border-bottom w-50">
 
                                 </div>
-                                <div>{nombre del negocio},
-                                </div>
-                                <div class="d-flex ">{dirección}<input type="text" min="0"
+                                <div>{nombre del negocio}, </div>
+                                <div class="d-flex d_sm_block ">{dirección}<input type="text" min="0"
                                         name="direccion_1"
                                         class="border-0 footer_field responsive_input align-start border-bottom w-25">
                                 </div>
-                                <div class="d-flex ">{ciudad}<input type="text" min="0" name="ciudad"
+                                <div class="d-flex d_sm_block">{ciudad}<input type="text" min="0" name="ciudad"
                                         class="border-0 footer_field responsive_input align-start border-bottom "
-                                        style="width: 70px">, {estado}<input type="text" min="0"
-                                        name="estado"
-                                        class="border-0 footer_field responsive_input align-start border-bottom "
-                                        style="width: 135px">,
+                                        style="width: 70px">, {estado}<input type="text" min="0" name="estado" class="border-0 footer_field responsive_input align-start border-bottom " style="width: 135px">,
                                 </div>
                                 <div>{número de teléfono}</div>
                                 <div class="mt-5" style="margin-bottom: 500px">Reglas de Procedimiento de Derecho
