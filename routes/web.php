@@ -31,12 +31,13 @@ Route::get('form10', [FormController::class, 'form10'])->name('pdf_form10');
 Route::get('form11', [FormController::class, 'form11'])->name('pdf_form11');
 Route::get('form12', [FormController::class, 'form12'])->name('pdf_form12');
 Route::get('form13', [FormController::class, 'form13'])->name('pdf_form13');
-// Route::get('form14', [FormController::class, 'form14'])->name('pdf_form14');
+Route::get('form14', [FormController::class, 'form14'])->name('pdf_form14');
 Route::get('form15', [FormController::class, 'form15'])->name('pdf_form15');
 Route::get('form16', [Formcontroller::class, 'form16'])->name('pdf_form16');
 Route::get('form17', [Formcontroller::class, 'form17'])->name('pdf_form17');
 Route::get('form18', [Formcontroller::class, 'form18'])->name('pdf_form18');
 Route::get('form19', [Formcontroller::class, 'form19'])->name('pdf_form19');
+Route::get('form20', [Formcontroller::class, 'form20'])->name('pdf_form20');
 
 
 
@@ -52,9 +53,11 @@ Route::post('form10_submit', [FormController::class, 'form10_post'])->name('form
 Route::post('form11_submit', [FormController::class, 'form11_post'])->name('form11.submit');
 Route::post('form12_submit', [FormController::class, 'form12_post'])->name('form12.submit');
 Route::post('form13_submit', [FormController::class, 'form13_post'])->name('form13.submit');
+Route::post('form14_submit', [FormController::class, 'form14_post'])->name('form14.submit');
 
 Route::post('form15_submit', [FormController::class, 'form15_post'])->name('form15.submit');
 Route::post('form16_submit', [FormController::class, 'form16_post'])->name('form16.submit');
 Route::post('form17_submit', [FormController::class, 'form17_post'])->name('form17.submit');
 Route::post('form18_submit', [FormController::class, 'form18_post'])->name('form18.submit');
 Route::post('form19_submit', [FormController::class, 'form19_post'])->name('form19.submit');
+Route::post('form20_submit', [FormController::class, 'form20_post'])->name('form20.submit');

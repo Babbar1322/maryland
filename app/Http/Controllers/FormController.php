@@ -14,6 +14,8 @@ use App\Models\fl140_ca_form;
 use App\Models\fl140_ca_form_data;
 use App\Models\fl142_ca_form;
 use App\Models\fl142_ca_form_data;
+use App\Models\fl150_ca_form;
+use App\Models\fl150_ca_form_data;
 use App\Models\fl160_ca_form;
 use App\Models\fl160_ca_form_data;
 use App\Models\fl161_ca_form;
@@ -348,7 +350,23 @@ class FormController extends Controller
         return view('form14');
     }
 
+    public function form14_post(Request $request) {
 
+        $fl150_ca = new fl150_ca_form();
+        $fl150_ca->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fl150_data = new fl150_ca_form_data();
+            $fl150_data->fl150_form_id = $fl150_ca->id;
+            $fl150_data->keyss = $key;
+            $fl150_data->valuess= $req;
+            $fl150_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
 
     public function form15() {
         return  view('form15');
@@ -458,5 +476,14 @@ class FormController extends Controller
             $financial_disclosure_form->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form20() {
+        return view('form20');
+    }
+
+    public function form20_post() {
+        die('comming soon');
     }
 }

@@ -253,7 +253,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form11.submit') }}" method="post">
+            <form action="{{ route('form14.submit') }}" method="post">
                 @csrf
                 <section class="section_area">
                     @if (session('success'))
@@ -634,14 +634,14 @@
                     <div class="row ps-lg-3">
                         <div class="col-lg-6">
                             <div> and divide the total by 12.)</div>
-                            <h6 class=" ">a. Salary or wages (gross, before taxes) .............................................................................................</h6>
-                            <h6 class="">b. Overtime (gross, before taxes) .......................................................................................................</h6>
-                            <h6 class="">c. Commissions or bonuses ...............................................................................................................</h6>
+                            <h6 class="responsive_input ">a. Salary or wages (gross, before taxes) .............................................................................................</h6>
+                            <h6 class="responsive_input">b. Overtime (gross, before taxes) .......................................................................................................</h6>
+                            <h6 class="responsive_input">c. Commissions or bonuses ...............................................................................................................</h6>
                             <h6 class="d-flex">d. Public assistance (for example : TANF, SSI, GA/GR)   <div class="d-flex ps-2  ">
                                 <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                 <div class="small_text ps-2">Currently receiving </div>
                             </div> ............................</h6>
-                            <h6 class="d-flex">e. Spousal support
+                            <h6 class="d-flex d_sm_block">e. Spousal support
                                  <div class="d-flex ps-2  ">
                                    <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">From this marriage</div>
@@ -654,7 +654,7 @@
                                    <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">Federally taxable*</div>
                                 </div>..</h6>
-                            <h6 class="d-flex">f. Partner  support
+                            <h6 class="d-flex d_sm_block">f. Partner  support
                                  <div class="d-flex ps-2">
                                    <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">From this domestic partnership</div>
@@ -663,10 +663,10 @@
                                    <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                    <div class="small_text ps-2">From a different domestic partnership</div>.</div>
                             </h6>
-                             <h6 class="">g. Pension/retirement fund payments ..............................................................................................</h6>
-                            <h6 class="">h . Social Security retirement (not SSI) ..........................................................................................</h6>
+                             <h6 class="responsive_input">g. Pension/retirement fund payments ..............................................................................................</h6>
+                            <h6 class="responsive_input">h . Social Security retirement (not SSI) ..........................................................................................</h6>
                             {{-- <h6 class="">j. Commissions or bonuses ...............................................................................</h6> --}}
-                            <h6 class="d-flex">i. Disability
+                            <h6 class="d-flex d_sm_block">i. Disability
                                 <div class="d-flex ps-2">
                                   <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                    <div class="small_text ps-2">Social Security (not SSI)</div>
@@ -681,9 +681,9 @@
                                 </div>
                                 ............
                            </h6>
-                            <h6 class="">j. Unemployment compensation  .....................................................................................................</h6>
-                            <h6 class="">k. Workers’ compensation..............................................................................................................</h6>
-                            <h6 class="">l. Other (military allowances, royalty payments) (specify) </h6>
+                            <h6 class="responsive_input">j. Unemployment compensation  .....................................................................................................</h6>
+                            <h6 class="responsive_input">k. Workers’ compensation..............................................................................................................</h6>
+                            <h6 class="responsive_input">l. Other (military allowances, royalty payments) (specify) </h6>
                         </div>
                         <div class="col-lg-3">
                             <div class="text-center">Last Month</div>
@@ -793,10 +793,10 @@
                      <div class="pt-2">6. Investment income (Attach a schedule showing gross receipts less cash expenses for each piece of property.)</div>
                      <div class="row ps-lg-3">
                         <div class="col-lg-6">
-                             <h6 class=" ">a. Dividends/interest ...........................................................................................................................</h6>
-                            <h6 class="">b. Rental property income ..................................................................................................................</h6>
-                            <h6 class="">c. Trust income ...................................................................................................................................</h6>
-                            <h6 class="">d. Other (specify): ..............................................................................................................................</h6>
+                             <h6 class="responsive_input">a. Dividends/interest ...........................................................................................................................</h6>
+                            <h6 class="responsive_input">b. Rental property income ..................................................................................................................</h6>
+                            <h6 class="responsive_input">c. Trust income ...................................................................................................................................</h6>
+                            <h6 class="responsive_input">d. Other (specify): ..............................................................................................................................</h6>
                             <div class="">7. Income from self-employment, after business expenses for all businesses.....</div>
 
                         </div>
@@ -847,11 +847,385 @@
                               <div> <input type="radio" name="other_party" class="border-0 table_input "></div>
                                <div class="small_text ps-2">other (specify state):</div>
                            </div>
-                        <input type="text" class="border-0 footer_field w-50 border-bottom">
+                        <input type="text" class="border-0 footer_field w-50 ">
                         </h6>
+                        <h6 class="d-flex ps-lg-5">
+
+                            <div class="d-flex   ">
+                                <div class="small_text  ">Number of years in this business (specify):</div>
+                            </div>
+                        <input type="text" class="border-0 footer_field w-75 ">
+                        </h6>
+                        <h6 class="d-flex ps-lg-5">
+
+                            <div class="d-flex   ">
+                                <div class="small_text  ">Name of business (specify):</div>
+                            </div>
+                        <input type="text" class="border-0 footer_field w-75 ">
+                        </h6>
+                        <h6 class="d-flex ps-lg-5">
+
+                            <div class="d-flex   ">
+                                <div class="small_text  ">Type of business (specify):</div>
+                            </div>
+                        <input type="text" class="border-0 footer_field w-75 ">
+                        </h6>
+                        <div class="fw-bold small_text ps-lg-5"> Attach a profit and loss statement for the last two years or a Schedule C from your last federal tax return. Black out your
+                            Social Security number. If you have more than one business, provide the information above for each of your businesses.</div>
+                            <div class="small_text"> 8. <input type="checkbox" class="mx-2" name=""> <b>Additional income.</b> I received one-time money (lottery winnings, inheritance, etc.) in the last 12 months (specify source and amount): <input type="text" class="border-0 w-25 "></div>
+                            <div class="small_text"> 9. <input type="checkbox" class="mx-2" name=""> <b>Change in income.</b> My financial situation has changed significantly over the last 12 months because (specify):<input type="text" class="border-0 w-50 ps-lg-5"></div>
+                            <div class="fw-bold small_text">10. Deductions</div>
+                            <div class="row ps-lg-5">
+                                <div class="col-lg-9">
+                                     <h6 class="responsive_input pt-lg-5">a. Required union dues ...............................................................................................................................................................................................</h6>
+                                    <h6 class="responsive_input">b. Required retirement payments (not Social Security, FICA, 401(k), or IRA) .........................................................................................................</h6>
+                                    <h6 class="responsive_input">c. Medical, hospital, dental, and other health insurance premiums (total monthly amount) ......................................................................................</h6>
+                                    <h6 class="responsive_input">d. Child support that I pay for children from other relationships ...............................................................................................................................</h6>
+                                    <h6 class="responsive_input">e. Spousal support that I pay by court order from a different marriage <input type="checkbox" name=""> federally tax deductible* ........................................................................</h6>
+                                    <h6 class="responsive_input">f. Partner support that I pay by court order from a different domestic partnership ....................................................................................................</h6>
+                                    <h6 class="responsive_input">g. Necessary job-related expenses not reimbursed by my employer (attach explanation labeled "Question 10g") ...................................................</h6>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="small_tex t">Last month</div>
+                                     <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                </div>
+                            </div>
+                            <div class="fw-bold small_text">11. Assets</div>
+                            <div class="row ps-lg-5">
+                                <div class="col-lg-9">
+                                     <h6 class=" pt-lg-5">a. Cash and checking accounts, savings, credit union, money market, and other deposit accounts ..........................................................................</h6>
+                                    <h6 class="responsive_input">b. Stocks, bonds, and other assets I could easily sell .................................................................................................................................................</h6>
+                                    <h6 class="">c. All other property, <input type="checkbox" name=""> real and  <input type="checkbox" name=""> personal (estimate fair market value minus the debts you owe) .......................................................................</h6>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="small_tex t">Total</div>
+                                     <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0"  name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                </div>
+                                <div class="small_text pt-3">* Check the box if the spousal support order or judgment was executed by the parties and the court before January 1, 2019, or if a court-ordered change
+                                    maintains the spousal support payments as taxable income to the recipient and tax deductible to the payor.  </div>
+                            </div>
                     </div>
                         @include('layouts.footer10', ['page' => 2])
-                        @include('layouts.pagination', ['page' => 14 ])
+                     </div>
+                </section>
+                <section class="section_area pt-5">
+
+                    <div class="row px-lg-5 px-2 py-2 pt-5">
+                        <div class="small_text text-end fw-bold">FL-150</div>
+
+                        <div class="col-lg-8 border border-dark">
+                            <div class="p-2 border-dark">
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">PETITIONER:</div>
+                                        <div> <input type="text" name="petitioner" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">RESPONDENT:</div>
+                                        <div> <input type="text" name="respondent" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">OTHER PARENT/PARTY:</div>
+                                        <div> <input type="text" name="other_party" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-lg-4 border border-dark">
+                            <div class="small_text">CASE NUMBER:</div>
+                            <input type="text" name="case_number" class="border-0 table_input w-100">
+                        </div>
+                    </div>
+                    <div class="px-lg-5">
+
+                        <div><b>12. The following people live with me:</b></div>
+                        <div class="responsive-table ps-lg-5">
+                            <table class="table table-bordered border-dark">
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Age</td>
+                                        <td>How the person is related to me (ex: son)</td>
+                                        <td>That person's gross monthly income</td>
+                                        <td>Pays some of the household expenses?</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex">a. <input type="text" name="ei_doh1" class="border-0 form-control ms-3"></div></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="checkbox" name="" id="" class="me-2"> Yes <input type="checkbox" name="" class="ms-4 me-2">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex">b. <input type="text" name="ei_doh1" class="border-0 form-control ms-3"></div></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="checkbox" name="" id="" class="me-2"> Yes <input type="checkbox" name="" class="ms-4 me-2">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex">c. <input type="text" name="ei_doh1" class="border-0 form-control ms-3"></div></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="checkbox" name="" id="" class="me-2"> Yes <input type="checkbox" name="" class="ms-4 me-2">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex">d. <input type="text" name="ei_doh1" class="border-0 form-control ms-3"></div></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="checkbox" name="" id="" class="me-2"> Yes <input type="checkbox" name="" class="ms-4 me-2">No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex">e. <input type="text" name="ei_doh1" class="border-0 form-control ms-3"></div></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ei_doh1" class="border-0 form-control"></td>
+                                        <td><input type="checkbox" name="" id="" class="me-2"> Yes <input type="checkbox" name="" class="ms-4 me-2">No</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>13. <b>Average monthly expenses</b> <input type="checkbox" name="" id="" class="ms-3"> stimated expenses   <input type="checkbox" name="" id="" class="ms-3"> Actual expenses     <input type="checkbox" name="" id="" class="ms-3"> Proposed needs</div>
+                        section 13 pending
+                        <div class="">14. <b> Installment payments and debts not listed above</b></div>
+                        <div class="table-responsive ps-lg-5">
+                            <table class="table table-bordered border-dark">
+                                <tbody>
+                                    <tr>
+                                        <td>Paid to</td>
+                                        <td>For</td>
+                                        <td>Amount</td>
+                                        <td>Balance</td>
+                                        <td>Date of last payment</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                    <tr>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="total_amount6" class="border-0 w-100">  </div></td>
+                                        <td><input type="text" name="account_name2" class="border-0 form-control "></td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>15. <b>Attorney fees</b> (This information is required if either party is requesting attorney fees):</div>
+                        <div class="ps-lg-5">
+                            <div>a. To date, I have paid my attorney this amount for fees and costs (specify): $ <input type="text" name="" class="border-0 "> </div>
+                            <div>b. The source of this money was (specify): <input type="text" name="" class="border-0 "> </div>
+                            <div>c. I still owe the following fees and costs to my attorney (specify total owed): $ <input type="text" name="" class="border-0 "> </div>
+                            <div>d. My attorney's hourly rate is (specify): <input type="text" name="" class="border-0 "> </div>
+                            {{-- <div>a. Home:</div> --}}
+
+                        </div>
+                        <div>I confirm this fee arrangement.</div>
+                        <div>Date : <input type="date" name="" id="" class="border-0 border-bottom footer_field"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" name="" id="" class="border-0 border-bottom footer_field w-100">
+                                <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" name="" id="" class="border-0 border-bottom footer_field w-100">
+                                <div class="small_text text-center">(SIGNATURE OF DECLARANT)</div>
+                            </div>                        </div>
+                        @include('layouts.footer10', ['page' => 3])
+                        {{-- @include('layouts.pagination', ['page' => 14 ]) --}}
+                    </div>
+                </section>
+
+
+
+                <section class="section_area pt-5">
+
+                    <div class="row px-lg-5 px-2 py-2 pt-5">
+                        <div class="small_text text-end fw-bold">FL-150</div>
+
+                        <div class="col-lg-8 border border-dark">
+                            <div class="p-2 border-dark">
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">PETITIONER:</div>
+                                        <div> <input type="text" name="petitioner" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">RESPONDENT:</div>
+                                        <div> <input type="text" name="respondent" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex ps-lg-5">
+                                        <div class="small_text">OTHER PARENT/PARTY:</div>
+                                        <div> <input type="text" name="other_party" class="border-0 table_input "></div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-lg-4 border border-dark">
+                            <div class="small_text">CASE NUMBER:</div>
+                            <input type="text" name="case_number" class="border-0 table_input w-100">
+                        </div>
+                    </div>
+                    <div class="px-lg-5">
+
+                        <div class="text-center fw-bold">CHILD SUPPORT INFORMATION</div>
+                        <div class="text-center fw-bold">(NOTE: Fill out this page only if your case involves child support.)</div>
+                        <div class="small_text fw-bold">16. Number of children</div>
+                        <div class="ps-lg-5">
+                            <div>a. I have (specify number): <input type="text" name="" class="border-0"> children under the age of 18 with the other parent in this case.</div>
+                            <div>b. The children spend <input type="text" name="" class="border-0"> percent of their time with me and <input type="text" name="" class="border-0"> percent of their time with the other parent.</div>
+                            <div class="ps-lg-3">(If you're not sure about percentage or it has not been agreed on, please describe your parenting schedule here.)</div>
+                            <textarea name="" class="ps-lg-3 form-control " id=""  rows="5"></textarea>
+
+                        </div>
+                        <div class="small_text fw-bold">17. Children's health-care expenses</div>
+                        <div class="ps-lg-5">
+                            <div>a. <input type="checkbox" name="" class="border-0"> I do <input type="checkbox" name="" class="border-0"> I do not <span class="ps-lg-3">have health insurance available to me for the children through my job.</span></div>
+                            <div>b. Name of insurance company:<input type="text" name="" class="border-0"></div>
+                            <div>c. Address of insurance company: </div>
+                             <textarea name="" class="ps-lg-3 form-control " id=""  rows="5"></textarea>
+                             <div>d. The monthly cost for the children's health insurance is or would be (specify): $<input type="text" name="" class="border-0"></div>
+                             <div class="ps-lg-3">(Do not include the amount your employer pays.)</div>
+
+                        </div>
+                        <div class="small_text fw-bold">18. Additional expense for the children in this case</div>
+                        <div class="row ps-lg-5">
+                            <div class="col-lg-9">
+                                <div class="responsive_input">a. Childcare so I can work or get job training..................................................................................................................</div>
+                                <div class="responsive_input">b. Children's health care not covered by insurance..........................................................................................................</div>
+                                <div class="responsive_input">c. Travel expenses for visitation.......................................................................................................................................</div>
+                                <div class="responsive_input">d. Children's educational or other special needs (specify below):...................................................................................</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small_text fw-bold pt-2">19. <b>Special hardships</b>. I ask the court to consider the following special financial circumstances</div>
+                        <div class="row ps-lg-5">
+                            <div class="col-lg-6">
+                                <div>(attach documentation of any item listed here, including court orders):</div>
+                                <div class="responsive_input">a. Extraordinary health expenses not included in 18b......................................</div>
+                                <div class="responsive_input">b. Major losses not covered by insurance (examples: fire, theft, other
+                                    insured loss)...............................................................................................</div>
+                                <div class="responsive_input">c.  (1)Expenses for my minor children who are from other relationships and
+                                    are living with me..................................................................................</div>
+                                    <div class="ps-lg-3">(2) Names and ages of those children (specify):</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>Amount per month</div>
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+
+                                <div class="d-flex pt-lg-5">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div>For how many months?</div>
+                                <div class=""> <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control"> </div>
+                                <div class=""> <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control"> </div>
+                                <div class="pt-lg-5"> <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control"> </div>
+                            </div>
+                            <textarea name="" id="" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="row ps-lg-5">
+                            <div class="col-lg-6 ps-lg-4">
+                                <div class="responsive_input">(3) Child support I receive for those children...............................................</div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex ">
+                                    <div class="small_text">$</div>
+                                    <input type="text" min="0" name="rent1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                </div>
+                            </div>
+                            <div>The expenses listed in a, b, and c create an extreme financial hardship because (explain):</div>
+                            <textarea name="" id="" class="form-control" rows="4"></textarea>
+
+                        </div>
+                        <div>20. <b>Other information I want the court to know concerning support in my case (specify):</b></div>
+                        <textarea name="" id="" class="form-control ms-lg-4" rows="4"></textarea>
+
+                        @include('layouts.footer10', ['page' => 4])
+                        {{-- @include('layouts.pagination', ['page' => 14 ]) --}}
                     </div>
                 </section>
             </form>
