@@ -1,4 +1,6 @@
+{{-- MD partially filled out to check formulas.pdf --}}
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
