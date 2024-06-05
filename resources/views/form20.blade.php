@@ -21,7 +21,6 @@
         a {
             color: black !important;
         }
-
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -48,12 +47,9 @@
         .form-control {
             border-radius: 0 !important;
             padding: 0px !important;
-
         }
 
         .table input:focus {
-            /* border: none !important; */
-
             box-shadow: none !important;
         }
 
@@ -63,22 +59,18 @@
 
         .border_bottom {
             border-bottom: 2px solid black !important;
-
         }
-
         .table> :not(caption)>*>* {
             background-color: white;
         }
-
         .section_area {
             background-color: white !important;
             margin: 10px !important;
             /* margin-top: 29px !important; */
-
         }
 
         input[type='checkbox'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         .footer_field:focus-visible {
@@ -253,13 +245,14 @@
         <div class="container bg_color p-lg-3 p-1  ">
             <form action="{{ route('form20.submit') }}" method="post">
                 @csrf
-                @if (session('success'))
+
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="first_section">
+                    @if (session('success'))
                     <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                             type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="first_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="row pt-lg-5 align-items-end">
                             <div class="col-lg-6">
@@ -385,7 +378,6 @@
                             provide attachments. If you fail to disclose all assets and income, you could be subject
                             to sanctions under Utah Rule of Civil Procedure 37. Sanctions can include an award of
                             non-disclosed assets to the other party, attorney’s fees or other sanctions.</div>
-                        {{-- </div> --}}
 
 
                         @include('layouts.footer15', ['page' => 1])
@@ -397,19 +389,18 @@
             id="case_information">
             <div class="col-lg-10 mx-auto">
                 <div class="row mt-lg-3">
-                    {{-- <div class="fw-bold text-center">Monthly Personal Income Schedule</div> --}}
                     <div class="fw-bold py-2"><span class="me-lg-4">1.</span> i am this form to the other party and
                         (Choose one.):</div>
                     <div class="ms-lg-5">
                         <div class="row">
                             <div class="col-1 " style="width:60px"> [ <input type="checkbox" name="not_financial_declaration" value="Yes">  ]</div>
-                            <div class="col-lg-11 col-10"> <b>I am not filing the Financial Declaration with the court</b>
+                            <div class="col-lg-11 col-sm-10 col-12"> <b>I am not filing the Financial Declaration with the court</b>
                                 because a hearing about child support, spousal support, property, debts, attorney fees and court costs is not scheduled, or because the court has not ordered me to file it.</div>
                             </div>
 
                         <div class="row">
                             <div class="col-lg-1 col-2" style="width:60px"> [ <input type="checkbox" name="financial_declaration" value="Yes">  ]</div>
-                            <div class="col-lg-11 col-10"> <b>I am filing the Financial Declaration with the court</b> because
+                            <div class="col-lg-11 col-sm-10 col-12"> <b>I am filing the Financial Declaration with the court</b> because
                                 a hearing
                                 about child support, spousal support, property, debts, attorney fees and
                                 court costs is scheduled, or the court has ordered me to file it.
@@ -500,15 +491,7 @@
                                             <div class="small_text">[ <input type="checkbox" name="doesnt_apply5" value="Yes"> ] Doesn’t apply</div>
                                         </td>
                                     </tr>
-                                    {{-- <tr>
-                                        <td>
-                                            <div>investment, and retirement.</div>
 
-                                        </td>
-                                        <td class="w-25">
-
-                                        </td>
-                                    </tr> --}}
                                 </thead>
                             </table>
                         </div>
@@ -695,12 +678,10 @@
                             available, estimate the amount and explain how you reached that amount.)</div>
 
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;">[ <input type="checkbox" name="gross_monthly_income" value="Yes"> ] </div>
+                            <div class="col-lg-1 col-sm-2" style="max-width:60px;">[ <input type="checkbox" name="gross_monthly_income" value="Yes"> ] </div>
                             <div class="col-lg-11  ">
                                 <div>I have the following monthly income before tax deductions:</div>
-                                (<small>Print your pre-tax income in the boxes below. For income that changes from month
-                                    to month, calculate the annual total and divide by 12 months to list a monthly
-                                    average.</small>)
+                                (<small>Print your pre-tax income in the boxes below. For income that changes from month to month, calculate the annual total and divide by 12 months to list a monthly average.</small>)
                             </div>
                         </div>
                         <div class="table-responsive py-2">
@@ -1014,7 +995,7 @@
 
                     <div class="row pt-lg-5">
                         <div class="col-lg-1 col-2" style="max-width:30px;"> 5 </div>
-                        <div class=" col-10" >
+                        <div class=" col-lg-10" >
                             <b>Monthly Tax Deductions</b> (<small> You must attach proof of amounts listed. If the proof
                                 is not
                                 available, estimate the amount and explain how you reached that amount.</small>)
@@ -1126,7 +1107,7 @@
                     <div class="col-lg-11  ">
                         <div class="fw-bold">After Tax Income</div>
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;"> [ <input type="checkbox" name="monthly_income" value="Yes"> ]</div>
+                            <div class="col-lg-1 col-3" style="max-width:60px;"> [ <input type="checkbox" name="monthly_income" value="Yes"> ]</div>
                             <div class="col-lg-11  ">
                                 <div>My monthly income is:</div>
                                 <div class="ps-lg-5">
@@ -1164,13 +1145,13 @@
                                 yourself and any spouse, children or other dependents in your household.</small>)</div>
 
                         <div class="row ps-lg-3">
-                            <div class="col-lg-1 col-2" style="max-width:60px;"> [ <input type="checkbox" name="no_party_requested" value="Yes">  ] </div>
-                            <div class="col-lg-11 col-10">No party has requested alimony so I am only completing the "Current
+                            <div class="col-lg-1 col-3" style="max-width:60px;"> [ <input type="checkbox" name="no_party_requested" value="Yes">  ] </div>
+                            <div class="col-lg-11 col-9">No party has requested alimony so I am only completing the "Current
                                 Amount" column, which represents the amount I pay now. </div>
                         </div>
                         <div class="row ps-lg-3">
-                            <div class="col-lg-1 col-2" style="max-width:60px;"> [ <input type="checkbox" name="party_requested" value="Yes">  ] </div>
-                            <div class="col-lg-11 col-10">One of the parties has requested alimony so I am completing both the
+                            <div class="col-lg-1 col-3" style="max-width:60px;"> [ <input type="checkbox" name="party_requested" value="Yes">  ] </div>
+                            <div class="col-lg-11 col-9">One of the parties has requested alimony so I am completing both the
                                 "Current Amount" and the "Marital Expenses" column, which represents
                                 the amount paid during the marriage prior to separation. </div>
                         </div>
@@ -1810,14 +1791,14 @@
 
 
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;">[  <input type="checkbox" name="no_business_interests" value="Yes">  ] </div>
-                            <div class="col-lg-11 col-10">
+                            <div class="col-lg-1 col-3" style="max-width:60px;">[  <input type="checkbox" name="no_business_interests" value="Yes">  ] </div>
+                            <div class="col-lg-11 col-9">
                                 <div>I have no business interests.</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;">[  <input type="checkbox" name="business_interests" value="Yes">  ] </div>
-                            <div class="col-lg-11 col-10">
+                            <div class="col-lg-1 col-3" style="max-width:60px;">[  <input type="checkbox" name="business_interests" value="Yes">  ] </div>
+                            <div class="col-lg-11 col-9">
                                 <div> I have the following business interests.</div>
                             </div>
                         </div>
@@ -1908,14 +1889,14 @@
 
 
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;">[  <input type="checkbox" name="no_financial_assets" value="Yes"> ] </div>
-                            <div class="col-lg-11 col-10">
+                            <div class="col-lg-1 col-3" style="max-width:60px;">[  <input type="checkbox" name="no_financial_assets" value="Yes"> ] </div>
+                            <div class="col-lg-11 col-9">
                                 <div>I have no financial assets.</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-1 col-2" style="max-width:60px;">[  <input type="checkbox" name="financial_assets" value="Yes"> ] </div>
-                            <div class="col-lg-11 col-10">
+                            <div class="col-lg-1 col-3" style="max-width:60px;">[  <input type="checkbox" name="financial_assets" value="Yes"> ] </div>
+                            <div class="col-lg-11 col-9">
                                 <div> I have the following financial assets.</div>
                             </div>
                         </div>
@@ -2233,14 +2214,12 @@
                                     <div class="small_text">Name(s) on title</div>
                                 </div>
                                 <div class="col-lg-2">
-                                    {{-- <input type="text" name="commission_wages_fees1" class="border-0 form-control w-100 border-bottom"> --}}
                                     <div class="d-flex w-100 mx-auto">
                                         <small>$</small><input type="text" name="re_original_cost1" class="border-0  border-bottom w-100">
                                     </div>
                                     <div class="small_text">Original cost</div>
                                 </div>
                                 <div class="col-lg-3">
-                                    {{-- <input type="text" name="commission_wages_fees1" class="border-0 form-control w-100 border-bottom"> --}}
                                     <div class="d-flex w-100 mx-auto">
                                         <small>$</small><input type="text" name="re_current_value" class="border-0  border-bottom w-100">
                                     </div>
@@ -2300,14 +2279,12 @@
                                     <div class="small_text">Name(s) on title</div>
                                 </div>
                                 <div class="col-lg-2">
-                                    {{-- <input type="text" name="commission_wages_fees1" class="border-0 form-control w-100 border-bottom"> --}}
                                     <div class="d-flex w-100 mx-auto">
                                         <small>$</small><input type="text" name="ore_original_cost1" class="border-0  border-bottom w-100">
                                     </div>
                                     <div class="small_text">Original cost</div>
                                 </div>
                                 <div class="col-lg-3">
-                                    {{-- <input type="text" name="commission_wages_fees1" class="border-0 form-control w-100 border-bottom"> --}}
                                     <div class="d-flex w-100 mx-auto">
                                         <small>$</small><input type="text" name="ore_original_cost2" class="border-0  border-bottom w-100">
                                     </div>
@@ -2589,16 +2566,13 @@
                                             <div>Account number:</div>
                                             <div><input type="text" name="account_number1"  class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to1" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="debt_owed_to1" class="border-0 form-control " rows="5"></textarea> </td>
 
-                                        {{-- <td><input type="text" name="names_on_debt1" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="names_on_debt1" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed1" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="amount_owed1" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2606,7 +2580,6 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments1" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="minimum_monthly_payments1" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2620,16 +2593,13 @@
                                             <div>Account number:</div>
                                             <div><input type="text" name="account_number2" class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to2" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="debt_owed_to2" class="border-0 form-control " rows="5"></textarea> </td>
 
-                                        {{-- <td><input type="text" name="names_on_debt2" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="names_on_debt2" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed2" class="border-0 w-100"> --}}
                                                 <textarea type="text" name="amount_owed2" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2637,7 +2607,6 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments2" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="minimum_monthly_payments2" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2652,16 +2621,13 @@
                                             <div><input type="text" name="account_number3"
                                                     class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to3" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="debt_owed_to3" class="border-0 form-control " rows="5"></textarea> </td>
 
-                                        {{-- <td><input type="text" name="names_on_debt3" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="names_on_debt3" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed3" class="border-0 w-100"> --}}
                                                 <textarea type="text" name="amount_owed3" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2669,7 +2635,6 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments3" class="border-0 w-100"> --}}
                                                 <textarea type="text" name="minimum_monthly_payments3" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2684,18 +2649,14 @@
                                             <div><input type="text" name="account_number4"
                                                     class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to4"
-                                                class="border-0 form-control"> </td> --}}
+
                                                 <td><textarea type="text" name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea> </td>
 
-                                        {{-- <td><input type="text" name="names_on_debt4"
-                                                class="border-0 form-control"> </td> --}}
                                                 <td><textarea type="text" name="names_on_debt4" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed4" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="amount_owed4" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2703,9 +2664,7 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments4"  class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="minimum_monthly_payments4" class="border-0 form-control " rows="5"></textarea>
-
                                             </div>
                                         </td>
                                     </tr>
@@ -2716,15 +2675,12 @@
                                             <div>Account number:</div>
                                             <div><input type="text" name="account_number5" class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to5" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="debt_owed_to5" class="border-0 form-control " rows="5"></textarea> </td>
-                                        {{-- <td><input type="text" name="names_on_debt5" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="names_on_debt5" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed5" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="amount_owed5" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2732,9 +2688,7 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments5" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="minimum_monthly_payments5" class="border-0 form-control " rows="5"></textarea>
-
                                             </div>
                                         </td>
                                     </tr>
@@ -2745,16 +2699,13 @@
                                             <div>Account number:</div>
                                             <div><input type="text" name="account_number6" class="border-0 form-control w-75"> </div>
                                         </td>
-                                        {{-- <td><input type="text" name="debt_owed_to6" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea> </td>
 
-                                        {{-- <td><input type="text" name="names_on_debt6" class="border-0 form-control"> </td> --}}
                                         <td><textarea type="text" name="names_on_debt6" class="border-0 form-control " rows="5"></textarea> </td>
 
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="amount_owed6" class="border-0 w-100"> --}}
                                                 <textarea type="text" name="amount_owed6" class="border-0 form-control " rows="5"></textarea>
 
                                             </div>
@@ -2762,9 +2713,7 @@
                                         <td>
                                             <div class="d-flex w-100 mx-auto">
                                                 <small>$</small>
-                                                {{-- <input type="text" name="minimum_monthly_payments6" class="border-0 w-100 "> --}}
                                                 <textarea type="text" name="minimum_monthly_payments6" class="border-0 form-control " rows="5"></textarea>
-
                                             </div>
                                         </td>
                                     </tr>

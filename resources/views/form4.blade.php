@@ -219,16 +219,13 @@
 </head>
 
 <body>
-    <div class="container-fluid   py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-
+    <div class="container-fluid py-1 py-lg-3">
+        <div class="container bg_color p-lg-3 p-1">
             <form action="{{route('form4.submit')}}" class="" method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
-
                     <div class="col-lg-12 mx-auto">
-                        <div class="text-danger fw-bold text-center">IMPORTANT: FILL IN FORM MUST BE DOWNLOADED
-                            ONTO YOUR COMPUTER PRIOR TO COMPLETING</div>
+                        <div class="text-danger fw-bold text-center">IMPORTANT: FILL IN FORM MUST BE DOWNLOADED ONTO YOUR COMPUTER PRIOR TO COMPLETING</div>
                     </div>
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area border-bottom border-dark  pt-5 ">
@@ -239,12 +236,8 @@
 
                                 <div class="me-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
                                 <div class="row mt-lg-3">
-
                                     <div class="col-lg-1 h3 "></div>
-                                    <div class="col-lg-3 h3 ">
-
-
-                                        REV-488</div>
+                                    <div class="col-lg-3 h3 ">  REV-488</div>
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-5 ">
                                         <div class="border-bottom top_flex_text border-dark d-flex"><small>OFFICIAL USE
@@ -616,22 +609,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2">  <i class="fas fa-chevron-left"></i> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" selected>1</option>
-                                        <option value="#latest_pa_income" >2</option>
-                                        <option value="#additional_information">3</option>
-                                        <option value="#part_a_income">4</option>
-                                        <option value="#general_information">5</option>
-                                        <option value="#last_section">6</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#latest_pa_income" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
 
                             @include('layouts.footer3', ['page' => 1])
 
@@ -1147,23 +1124,6 @@
                                 </table>
 
                             </div>
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section"  >1</option>
-                                        <option value="#latest_pa_income" selected >2</option>
-                                        <option value="#additional_information">3</option>
-                                        <option value="#part_a_income">4</option>
-                                        <option value="#general_information">5</option>
-                                        <option value="#last_section">6</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#additional_information" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
-
                             @include('layouts.footer3', ['page' => 2])
 
                     </div>
@@ -1422,8 +1382,7 @@
                                         </tr>
                                         <tr>
                                             <td>8. Bank Revolving Credit</td>
-                                            {{-- <td class=""   style="width:1px;">  <div class=" px-2">a.</div>  </td> --}}
-                                            <td colspan="3"> <input type="text" name="d_8"
+                                             <td colspan="3"> <input type="text" name="d_8"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
@@ -1580,22 +1539,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#latest_pa_income" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#latest_pa_income" >2</option>
-                                        <option value="#additional_information" selected>3</option>
-                                        <option value="#part_a_income">4</option>
-                                        <option value="#general_information">5</option>
-                                        <option value="#last_section">6</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#part_a_income" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
 
                             @include('layouts.footer3', ['page' => 3])
 
@@ -1866,29 +1809,13 @@
                                 </tbody>
                             </table>
                         </div>
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#additional_information" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#latest_pa_income" >2</option>
-                                    <option value="#additional_information" >3</option>
-                                    <option value="#part_a_income" selected>4</option>
-                                    <option value="#general_information">5</option>
-                                    <option value="#last_section">6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#general_information" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
 
                         @include('layouts.footer3', ['page' => 4])
 
                     </div>
                 </div>
             </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4" id="general_information">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4">
                     <div class="col-lg-10 mx-auto">
                         <div class="row border-bottom">
                             <div class="col-lg-6">
@@ -1984,28 +1911,12 @@
                                     target="_blank">www.revenue.pa.gov</a></p>
                             <p>REV-488</p>
                         </div>
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#part_a_income" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#latest_pa_income" >2</option>
-                                    <option value="#additional_information" >3</option>
-                                    <option value="#part_a_income" >4</option>
-                                    <option value="#general_information" selected>5</option>
-                                    <option value="#last_section">6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
 
                         @include('layouts.footer3', ['page' => 5])
 
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4" id="last_section">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4">
                     <div class="col-lg-10 mx-auto">
                         <div class="row mt-3 border-bottom pb-500">
                             <div class="col-lg-6">
@@ -2063,22 +1974,6 @@
                             <p><a href="https://www.revenue.pa.gov" class="text-dark text-decoration-none"
                                     target="_blank">www.revenue.pa.gov</a></p>
                         </div>
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#general_information" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#latest_pa_income" >2</option>
-                                    <option value="#additional_information" >3</option>
-                                    <option value="#part_a_income" >4</option>
-                                    <option value="#general_information" >5</option>
-                                    <option value="#last_section" selected>6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                         @include('layouts.footer3', ['page' => 6])
                         @include('layouts.pagination', ['page' => 4])
 

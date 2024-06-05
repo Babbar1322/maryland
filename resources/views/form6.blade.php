@@ -137,7 +137,6 @@
                 padding-top: 50px !important;
             }
 
-
             .responsive_input {
                 width: 100% !important;
             }
@@ -237,17 +236,16 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            @if (session('success'))
-                <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                        type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            @endif
+
 
             <form action="{{ route('form6.submit') }}" method="post">
                 @csrf
-
-                {{-- section_first --}}
                 <section class="section_area row p-5" id="section_first">
+                    @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                            type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
                     <div class="col-md-4 border border-2 border-dark pb-5 border-start-0 border-end-0 ">
                         <h4 class="fw-bold text-center">STATE OF MICHIGAN</h4>
                         <div class="d-flex">
@@ -511,8 +509,6 @@
                                     class="border-none border-0 border-bottom  shadow-none "></span></div>
                     </div>
                 </section>
-
-                {{-- section_two --}}
                 <section class="section_area row p-5" id="section_two">
                     <div class="col-md-6">
                         <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -912,8 +908,6 @@
                             self-employed, also attach a copy of your three most recent business tax returns and/or
                             corporate returns.</div>
                 </section>
-
-                {{-- section_three --}}
                 <section class="section_area p-5" id="section_three">
                     <div class="row">
                         <div class="col-md-6">
@@ -1343,8 +1337,6 @@
                             </table>
                         </div>
                 </section>
-
-                {{-- section_four --}}
                 <section class="section_area p-5" id="section_four">
                     <div class="row">
                         <div class="col-md-6">
@@ -1730,8 +1722,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- section_five --}}
                 <section class="section_area p-5" id="section_five">
                     <div class="row">
                         <div class="col-md-6">
@@ -2046,8 +2036,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- section_six --}}
                 <section class="section_area p-5" id="section_six">
                     <div class="row">
                         <div class="col-md-6">
@@ -2391,7 +2379,6 @@
                     </div>
                 </section>
 
-                {{-- section_last --}}
                 <section class="section_area p-5" id="section_last">
                     <div class="row">
                         <div class="col-md-6">
@@ -2631,9 +2618,7 @@
                         <button type="butt  on" class="bg-transparent px-4 me-4">Submit</button>
 
                     </div>
-                    {{-- <div class="mx-5 px-5"> --}}
                         @include('layouts.pagination', ['page' => 6 ])
-                    {{-- </div> --}}
                 </section>
             </form>
         </div>

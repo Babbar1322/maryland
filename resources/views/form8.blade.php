@@ -37,7 +37,7 @@
             background-color: transparent !important;
         }
         input[type='radio'] {
-    accent-color:  black !important;
+    accent-color:  #8c8a8a !important;
 }
         body {
             font-family: "unset";
@@ -697,8 +697,6 @@
                                 <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
                                     <div>Royalties and other rights.</div>
                                     <div>.........................</div>
-                                    {{-- <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div> --}}
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center  col-sm-12">$
                                     <input type="text" name="royalties_other_rights"
@@ -725,8 +723,6 @@
                                 <div class="d-flex col-lg-7 d_sm_block  col-sm-12 ">
                                     <div>Contributions from household member(s)</div>
                                     <div>.</div>
-                                    {{-- <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div> --}}
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center  col-sm-12">$
                                     <input type="text" name="contributions_household_member"
@@ -753,8 +749,6 @@
                                 <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
                                     <div>Cash income</div>
                                     <div>.............................................</div>
-                                    {{-- <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div> --}}
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
                                     <input type="text" name="cash_income"
@@ -781,8 +775,6 @@
                                 <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
                                     <div>Veterans Benefits</div>
                                     <div>.......................................</div>
-                                    {{-- <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div> --}}
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
                                     <input type="text" name="veterans_benefits"
@@ -809,8 +801,6 @@
                                 <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
                                     <div>Social Security</div>
                                     <div>.........................................</div>
-                                    {{-- <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div> --}}
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
                                     <input type="text" name="social_security"
@@ -888,22 +878,6 @@
                                 friends, and others:</div>
                         </div>
                         @include('layouts.footer6', ['page' => 1])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#mandatory_deductions" >2</option>
-                                    <option value="#insert_an">3</option>
-                                    <option value="#assets">4</option>
-                                    <option value="#retirement_plains">5</option>
-                                    <option value="#last_section">6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
                 <section class="section_area p-5" id="mandatory_deductions">
@@ -1673,19 +1647,7 @@
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
-                                        {{-- <tr>
-                                            <td colspan="3">
-                                                <div>Clothing
-                                                    ...............................................................................................................................................................................................
-                                                </div>
-                                            </td>
-                                            <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="unins_cloth" value="unins_cloth">
-                                                <div>$</div>
-                                                <input type="text" name="unins_cloth_val"
-                                                    class="border-0 border-bottom w-50">
-                                            </td>
-                                        </tr> --}}
+
                                     </table>
                                 </div>
                             </div>
@@ -1693,22 +1655,7 @@
 
                             </div>
                             @include('layouts.footer6', ['page' => 2])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#mandatory_deductions" selected >2</option>
-                                        <option value="#insert_an">3</option>
-                                        <option value="#assets">4</option>
-                                        <option value="#retirement_plains">5</option>
-                                        <option value="#last_section">6</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#insert_an" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
+
                         </div>
 
 
@@ -2708,121 +2655,12 @@
                                             </table>
                                         </div>
                                     </div>
-                                    {{-- <div class="table-responsive">
-                                <table class="table-bordered border border-1 border-dark w-100">
-
-
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="3" >
-                                            <input type="text" name="L_cn3" class="border-0 w-100">
-                                        </td>
-                                        <td class=" text-center"  colspan="2"  >
-                                              <div class="d-flex gap-2">
-                                                <div>
-                                                    <input type="radio" name="L_cntype3" value="Sole">
-                                                    <label for="">Sole</label>
-                                                </div>
-                                                <div>
-                                                    <input type="radio" name="L_cntype3" value="Joint">
-                                                    <label for="">Joint</label>
-                                                </div>
-                                        </div></td>
-                                        <td class="  " >
-                                             <div class="d-flex tdata">$ <input type="text" name="L_blcdue3" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                        <td><div class="  tdata"> <input type="text" name="L_ddi3" class="text-center border-0 w-100"></div></td>
-                                        <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="L_wp3" class="border-0 w-100 text-end"></div>
-
-                                        </td>
-                                    </tr>
-
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="3" >
-                                            <input type="text" name="L_cn4" class="border-0 w-100">
-                                        </td>
-                                        <td class=" text-center"  colspan="2"  >
-                                              <div class="d-flex gap-2">
-                                                <div>
-                                                    <input type="radio" name="L_cntype4" value="Sole">
-                                                    <label for="">Sole</label>
-                                                </div>
-                                                <div>
-                                                    <input type="radio" name="L_cntype4" value="Joint">
-                                                    <label for="">Joint</label>
-                                                </div>
-                                        </div></td>
-                                        <td class="  " >
-                                             <div class="d-flex tdata">$ <input type="text" name="L_blcdue4" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                        <td><div class="  tdata"> <input type="text" name="L_ddi4" class="text-center border-0 w-100"></div></td>
-                                        <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="L_wp4" class="border-0 w-100 text-end"></div>
-
-                                        </td>
-                                    </tr>
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="3" >
-                                            <input type="text" name="L_cn5" class="border-0 w-100">
-                                        </td>
-                                        <td class=" text-center"  colspan="2"  >
-                                              <div class="d-flex gap-2">
-                                                <div>
-                                                    <input type="radio" name="L_cntype5" value="Sole">
-                                                    <label for="">Sole</label>
-                                                </div>
-                                                <div>
-                                                    <input type="radio" name="L_cntype5" value="Joint">
-                                                    <label for="">Joint</label>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                             <div class="d-flex tdata">$ <input type="text" name="L_blcdue5" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                        <td><div class="tdata"> <input type="text" name="L_ddi5" class="text-center border-0 w-100"></div></td>
-                                        <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="L_wp5" class="border-0 w-100 text-end"></div>
-
-                                        </td>
-                                    </tr>
-                                      <tr>
-                                        <td class="  text-center tdata"  colspan="5" >
-                                            (A). Total Liabilities (Total Balance Due on Debts) ...................................                                        </td>
-
-                                        <td>
-                                             <div class="d-flex tdata">$ <input type="text" name="L_tl" class="border-0 w-100 text-end"></div>
-                                        </td>
-                                         <td>
-                                            <div class="d-flex tdata border-0"> </div>
-                                       </td>
-                                    </tr>
-                                      <tr>
-                                        <td class="    tdata"  colspan="7" >  (B). Total Weekly Liabilities Expense...................................................................................................</td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="L_twle" class="border-0 w-100 text-end"></div> </td>
-                                    </tr>
-                                </table> --}}
                                 </div>
 
                             </div>
 
                             @include('layouts.footer6', ['page' => 3])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#mandatory_deductions"  >2</option>
-                                        <option value="#insert_an" selected>3</option>
-                                        <option value="#assets">4</option>
-                                        <option value="#retirement_plains">5</option>
-                                        <option value="#last_section">6</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
+
                         </div>
 
                     </div>
@@ -2861,12 +2699,7 @@
                                         <td class="py-2" colspan="2">Home</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center tdata"><input type="text" name="a_a1"
-                                                class="border-0 w-100"> </td>
-                                        {{-- <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_o1"
-                                                    class="border-0 w-100 text-end"></div>
-                                        </td> --}}
+                                        <td class="text-center tdata"><input type="text" name="a_a1" class="border-0 w-100"> </td>
                                         <td class="tdata">
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -3029,8 +2862,6 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model1"
                                                 class="border-0 w-100 text-center"></td>
-                                        {{-- <td class="tdata"><input type="text" name="MV_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                                 <td class="tdata">
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -3070,8 +2901,6 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model2"
                                                 class="border-0 w-100 text-center"></td>
-                                        {{-- <td class="tdata"><input type="text" name="MV_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                                 <td class="tdata">
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -3084,12 +2913,7 @@
                                                         <div class=" border-dark  p-1 mx-auto text-center">
                                                         <input class="p-1"  type="radio" name="MV_ownership2" style="width:30px;" value="JTO">
                                                     </div>
-
-
                                                     </div>
-
-                                                    {{-- <input type="text" name="C_ownership1"
-                                                        class="border-0 w-100 text-center"></td> --}}
                                                 <td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="MV_avalue2"
@@ -3113,8 +2937,6 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model3"
                                                 class="border-0 w-100 text-center"></td>
-                                        {{-- <td class="tdata"><input type="text" name="MV_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                                 <td class="tdata">
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -3127,12 +2949,7 @@
                                                         <div class=" border-dark p-1 mx-auto text-center">
                                                         <input class="p-1"  type="radio" name="MV_ownership3" style="width:30px;" value="JTO">
                                                     </div>
-
-
                                                     </div>
-
-                                                    {{-- <input type="text" name="C_ownership1"
-                                                        class="border-0 w-100 text-center"></td> --}}
                                                 <td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="MV_avalue3"
@@ -3202,12 +3019,7 @@
                                                 <div class=" border-dark">
                                                 <input type="radio" name="C_ownership1" style="width:30px;" value="JTO">
                                             </div>
-
-
                                             </div>
-
-                                            {{-- <input type="text" name="C_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                         <td>
                                             <div class="d-flex tdata">$ <input type="C_cb1" name="base_pay1"
                                                     class="border-0 w-100 text-end"></div>
@@ -3232,12 +3044,7 @@
                                                 <div class=" border-dark">
                                                 <input type="radio" name="C_ownership11" style="width:30px;" value="JTO">
                                             </div>
-
-
                                             </div>
-
-                                            {{-- <input type="text" name="C_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                         <td>
                                             <div class="d-flex tdata">$ <input type="C_cb11" name="base_pay1"
                                                     class="border-0 w-100 text-end"></div>
@@ -3265,9 +3072,6 @@
 
 
                                             </div>
-
-                                            {{-- <input type="text" name="C_ownership1"
-                                                class="border-0 w-100 text-center"></td> --}}
                                         <td>
                                             <div class="d-flex tdata">$ <input type="C_cb111" name="base_pay1"
                                                     class="border-0 w-100 text-end"></div>
@@ -3519,7 +3323,6 @@
                                     </tr>
                                     <tr>
 
-                                        {{-- <td colspan="2"></td> --}}
                                         <td colspan="4" class="text-end  tdata">Total Net Value of Stocks, Bonds,
                                             Mutual Funds, Bond Funds:</td>
                                         <td>
@@ -3624,23 +3427,6 @@
 
                         </div>
                         @include('layouts.footer6', ['page' => 4])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#insert_an" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#mandatory_deductions"  >2</option>
-                                    <option value="#insert_an" >3</option>
-                                    <option value="#assets" selected>4</option>
-                                    <option value="#retirement_plains">5</option>
-                                    <option value="#last_section">6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#retirement_plains" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
                     </div>
                 </section>
 
@@ -4095,23 +3881,6 @@
 
                         </div>
                         @include('layouts.footer6', ['page' => 5])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#assets" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" >1</option>
-                                    <option value="#mandatory_deductions"  >2</option>
-                                    <option value="#insert_an" >3</option>
-                                    <option value="#assets" >4</option>
-                                    <option value="#retirement_plains" selected>5</option>
-                                    <option value="#last_section">6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#last_section" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
                     </div>
                 </section>
                     <section class="section_area p-5" id="last_section">
@@ -4358,22 +4127,7 @@
                                     </div>
                                 </div>
                                 @include('layouts.footer6', ['page' => 6])
-                                {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                    <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                    <div class="my-auto ps-2"> <a href="#retirement_plains" ><i class="fas fa-chevron-left"></i></a> </div>
-                                    <div>
-                                        <select class="form-select w-100 sectionSelect">
-                                            <option value="#first_section" >1</option>
-                                            <option value="#mandatory_deductions"  >2</option>
-                                            <option value="#insert_an" >3</option>
-                                            <option value="#assets" >4</option>
-                                            <option value="#retirement_plains" >5</option>
-                                            <option value="#last_section" selected>6</option>
-                                        </select>
-                                    </div>
-                                    <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
-                                    <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                                </div> --}}
+
 
                                 @include('layouts.pagination', ['page' => 8 ])
 

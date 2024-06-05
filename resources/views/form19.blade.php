@@ -76,7 +76,7 @@
 
         }
         input[type='checkbox'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
         .footer_field:focus-visible {
             outline: none !important;
@@ -249,47 +249,41 @@
 
             <form action="{{ route('form19.submit') }}" method="post">
                 @csrf
-                @if (session('success'))
+
+
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="first_section">
+                    @if (session('success'))
                     <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                             type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
-
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="first_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h5>FDF</h5>
                                 <div class='d-flex d_sm_block'>
-                                    <span>Name: </span><input type="text" name="fdf_name"
-                                        class="w-50 form-control border-none responsive_input border-0 border-bottom border-dotted shadow-none">
+                                    <span>Name: </span><input type="text" name="fdf_name" class="w-50 form-control border-none responsive_input border-0 border-bottom border-dotted shadow-none">
                                 </div>
 
                                 <div class='d-flex d_sm_block'>
-                                    <span>Address: </span><input type="text" name="fdf_address1"
-                                        class="  form-control border-none border-0 border-bottom border-dotted shadow-none responsive_input" style="width:213px ">
+                                    <span>Address: </span><input type="text" name="fdf_address1" class="form-control border-none border-0 border-bottom border-dotted shadow-none responsive_input" style="width:213px">
                                 </div>
 
                                 <div class='d-flex d_sm_block'>
-                                 <input type="text" name="fdf_address2"
-                                        class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none" style="width:284px ">
+                                 <input type="text" name="fdf_address2" class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none" style="width:284px ">
                                 </div>
                                 <div class='d-flex d_sm_block'>
-                                    <span>Phone: </span><input type="text" name="fdf_phone"
-                                        class=" responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:230px ">
+                                    <span>Phone: </span><input type="text" name="fdf_phone" class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:230px">
                                 </div>
                                 <div class='d-flex d_sm_block'>
-                                    <span>Email: </span><input type="text" name="fdf_email"
-                                        class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:237px ">
+                                    <span>Email: </span><input type="text" name="fdf_email" class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:237px">
                                 </div>
                                 <div class='d-flex d_sm_block'>
-                                    <span>Attorney for  </span><input type="text" name="fdf_attorney"
-                                        class=" responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:186px ">
+                                    <span>Attorney for  </span><input type="text" name="fdf_attorney" class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:186px">
                                 </div>
                                 <div class='d-flex d_sm_block'>
-                                    <span>Nevada State Bar No. </span><input type="text" name="fdf_nevada_sb"
-                                        class=" responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:111px  ">
+                                    <span>Nevada State Bar No. </span><input type="text" name="fdf_nevada_sb" class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none"  style="width:111px">
                                 </div>
                             </div>
                         </div>
@@ -415,37 +409,14 @@
                                   <input type="text" min="0" name="leaving_reason" style="width: 804px"  class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-lg-3">
                             </div>
                         </div>
-
                         </div>
                         @include('layouts.footer14', ['page' => 1])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#case_information">2</option>
-                                    <option value="#attach_affidavit">3</option>
-                                    <option value="#gross_income">4</option>
-                                    <option value="#did_you_receive">5</option>
-                                    <option value="#monthly_expenses">6</option>
-                                    <option value="#schedule_personal">7</option>
-                                    <option value="#balance_sheet1">8</option>
-                                    <option value="#balance_sheet2">9</option>
-                                    <option value="#last_section">10</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#case_information" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
                     </div>
                 </section>
 
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
                     id="case_information">
                     <div class="col-lg-10 mx-auto">
-
                         <div class="row mt-lg-3">
                             <div class="fw-bold text-center">Monthly Personal Income Schedule</div>
                             <div class="fw-bold py-2">A. Year-to-date Income.</div>
@@ -728,7 +699,6 @@
                                     </tr>
                                     <tr>
                                         <td>11.</td>
-                                        {{-- <td class="small_text">Federal Income Tax</td> --}}
                                         <td class="d-flex"><span>Other: (Type of Deduction) : </span><input type="text" name="d_other1" class="border-0     w-50 border-bottom"> </td>
                                         <td><input type="text" name="d_other2" class="border-0 form-control text-end" >  </td>
                                     </tr>
@@ -1106,8 +1076,7 @@
                                             </tr>
 
                                             <tr>
-                                                {{-- <td colspan="3" class="text-end fw-bold pe-3">Other</td> --}}
-                                                <td   > Other:  <input type="text" name="a_other1" class="border-0 w-75 border-bottom"> </td>
+                                                <td> Other:  <input type="text" name="a_other1" class="border-0 w-75 border-bottom"> </td>
 
                                                 <td><input type="text" name="a_other2" class="border-0 form-control text-end">  </td>
                                                 <td><input type="text" name="a_other3" class="border-0 form-control text-end">  </td>
@@ -1358,11 +1327,6 @@
                             </div>
                             @include('layouts.footer14', ['page' => 5])
                 </section>
-
-
-                {{-- 6 page  --}}
-
-
 
                 <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"  >
                     <div class="col-lg-10 mx-auto">
@@ -1843,41 +1807,7 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
-
                             @include('layouts.footer14', ['page' => 6])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section"><i
-                                            class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a>
-                                </div>
-                                <div class="my-auto ps-2"> <a href="#did_you_receive"><i
-                                            class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section">1</option>
-                                        <option value="#case_information">2</option>
-                                        <option value="#attach_affidavit">3</option>
-                                        <option value="#gross_income">4</option>
-                                        <option value="#did_you_receive">5</option>
-                                        <option value="#monthly_expenses" selected>6</option>
-                                        <option value="#schedule_personal">7</option>
-                                        <option value="#balance_sheet1">8</option>
-                                        <option value="#balance_sheet2">9</option>
-                                        <option value="#last_section">10</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#schedule_personal"><i
-                                            class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2"><a href="#last_section"> <i
-                                            class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-                                    </a></div>
-                            </div> --}}
-
                     </div>
 
                 </section>
@@ -1936,44 +1866,10 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
                         @include('layouts.footer14', ['page' => 7])
-
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#monthly_expenses"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#case_information">2</option>
-                                    <option value="#attach_affidavit">3</option>
-                                    <option value="#gross_income">4</option>
-                                    <option value="#did_you_receive">5</option>
-                                    <option value="#monthly_expenses">6</option>
-                                    <option value="#schedule_personal" selected>7</option>
-                                    <option value="#balance_sheet1">8</option>
-                                    <option value="#balance_sheet2">9</option>
-                                    <option value="#last_section">10</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#balance_sheet1"><i class="fas fa-chevron-right"></i>
-                                </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i
-                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
-                            </div>
-                        </div> --}}
                     </div>
                 </section>
-
-
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
                     <div class="col-lg-10 mx-auto">
                         <div class="py-2 text-center fw-bold">CERTIFICATE OF SERVICE</div>
                         <div class="text-center">I hereby declare under the penalty of perjury of the State of Nevada that the following is true and</div>
@@ -1984,8 +1880,6 @@
                           <div class="py-lg-5 " >  <input type="checkbox" name="via_1st_class_checkbox" class="border-0 border-bottom" value="True"> <span>Via 1st Class U.S. Mail, postage fully prepaid addressed as follows:</span></div>
                           <input type="text" name="via_1st_class" class="border-0 border-bottom w-100">
                         </div>
-
-
                         <div>
                           <div class="py-lg-5 " >  <input type="checkbox" name="via_electronic_service_checkbox"  value="True" class="border-0 border-bottom"> <span>Via Electronic Service, in accordance with the Master Service List, pursuant to NEFCR 9, to:</span></div>
                           <input type="text" name="via_electronic_service" class="border-0 border-bottom w-100">

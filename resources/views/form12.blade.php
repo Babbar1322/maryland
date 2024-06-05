@@ -39,11 +39,11 @@
         }
 
         input[type='radio'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         input[type='checkbox'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         body {
@@ -276,13 +276,9 @@
                         </div>
                     @endif
                     <div class="row">
-                        <h5 class="fw-bold col-lg-6 "> State of Minnesota
-                        </h5>
-                        <h5 class="fw-bold col-lg-6 text-end"> District Court
-                        </h5>
-
+                        <h5 class="fw-bold col-lg-6 "> State of Minnesota </h5>
+                        <h5 class="fw-bold col-lg-6 text-end"> District Court </h5>
                     </div>
-                    {{-- <div> --}}
                     <div class="row border mx-0">
                         <div class="col-lg-6">County of:
                             <input type="text" name="county_of" class="border-0     ms-4 w-50">
@@ -437,47 +433,19 @@
                                     class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         @include('layouts.footer8', ['page' => 1])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#information_regarding">2</option>
-                                    <option value="#if_yes">3</option>
-                                    <option value="#monthly_living">4</option>
-                                    <option value="#tax_withholding">5</option>
-                                    <option value="#iras_profit_sharing">6</option>
-                                    <option value="#others">7</option>
-                                    <option value="#last_section">8</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#information_regarding"><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
                     </div>
                 </section>
-                <section class="section_area  px-lg-5 px-2 pt-5" id="information_regarding">
+                <section class="section_area px-lg-5 px-2 pt-5" id="information_regarding">
                     <div class="pt-5">
-                        <div class="ps-lg-5  ">
-
-                            <div class=""> <input type="text" name="afraid_other_party_val2"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                        <div class="ps-lg-5">
+                            <div class=""> <input type="text" name="afraid_other_party_val2" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
-                        <div class="ps-lg-5  ">
-
-                            <div class=""> <input type="text" name="afraid_other_party_val3"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                        <div class="ps-lg-5">
+                            <div class=""> <input type="text" name="afraid_other_party_val3" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
-                        <div class="ps-lg-5 pb-3  ">
+                        <div class="ps-lg-5 pb-3">
 
-                            <div class=""> <input type="text" name="afraid_other_party_val4"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="afraid_other_party_val4" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
 
                         <div class="fw-bold">3. Information Regarding The Minor Joint Children</div>
@@ -670,39 +638,15 @@
                             </span>
                         </div>
                         @include('layouts.footer8', ['page' => 2])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#information_regarding" selected>2</option>
-                                    <option value="#if_yes">3</option>
-                                    <option value="#monthly_living">4</option>
-                                    <option value="#tax_withholding">5</option>
-                                    <option value="#iras_profit_sharing">6</option>
-                                    <option value="#others">7</option>Other
-                                    <option value="#last_section">8</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#if_yes"><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
                     </div>
                 </section>
                 <section class="section_area  px-lg-5 px-2" id="if_yes">
                     <div class="table-responsive pt-5">
                         <div class="d-flex ps-lg-5">If yes, where?
-                            <div class=""> <input type="text" name="employed_where"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="employed_where" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="d-flex ps-lg-5">Length of employment?
-                            <div class=""> <input type="text" name="employed_length"
-                                    class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="employed_length" class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <table class="table-bordered mt-1 border-black table  my-lg-1">
                             <tbody>
@@ -726,10 +670,6 @@
                                         <input type="text" name="social_security_received" class="border-0 w-100">
                                     </div>
                                     </td>
-                                    {{-- <td class="d-flex w-100">
-                                        <span>$</span>
-                                        <input type="text" name="social_security_received" class="border-0 w-100">
-                                    </td> --}}
                                 </tr>
                                 <tr>
                                     <td class="small_text">Self-Employment</td>
@@ -772,8 +712,7 @@
                                     <td class="small_text">Spousal Maintenance Received</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="spousal_maintenance_received"
-                                            class="border-0 w-100">
+                                        <input type="text" name="spousal_maintenance_received" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Military and Naval Retirement </td>
                                     <td class="d-flex w-100">
@@ -915,35 +854,12 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="border-bottom border-dark pb-2 "></div> --}}
                         <input type="text" name="source_of_income"
                             class="border-0 border-bottom  w-100 footer_field">
 
                         <div class="pt-5"></div>
                     </div>
                     @include('layouts.footer8', ['page' => 3])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#information_regarding"><i
-                                    class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section">1</option>
-                                <option value="#information_regarding">2</option>
-                                <option value="#if_yes" selected>3</option>
-                                <option value="#monthly_living">4</option>
-                                <option value="#tax_withholding">5</option>
-                                <option value="#iras_profit_sharing">6</option>
-                                <option value="#others">7</option>Other
-                                <option value="#last_section">8</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#monthly_living"><i class="fas fa-chevron-right"></i> </a>
-                        </div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                 </section>
                 <section class="section_area  px-lg-5 px-2" id="monthly_living">
                     <div class="table-responsive pt-5">
@@ -1145,28 +1061,6 @@
                             </div>
                         </div>
                         @include('layouts.footer8', ['page' => 4])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#if_yes"><i class="fas fa-chevron-left"></i></a>
-                            </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#information_regarding">2</option>
-                                    <option value="#if_yes">3</option>
-                                    <option value="#monthly_living" selected>4</option>
-                                    <option value="#tax_withholding">5</option>
-                                    <option value="#iras_profit_sharing">6</option>
-                                    <option value="#others">7</option>Other
-                                    <option value="#last_section">8</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#tax_withholding"><i class="fas fa-chevron-right"></i>
-                                </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
 
@@ -1217,7 +1111,6 @@
                                 <div class="text-center fw-bold">Homestead</div>
                                 <div><input type="text" name="date_acquired1"
                                         class="border-0 w-100 border-bottom footer_field"></div>
-                                {{-- <div><input type="text" name="subtotal_deductions"  class="border-0 w-100 border-bottom footer_field"></div> --}}
                                 <div class="d-flex pt-1">$<input type="text" name="purchase_price1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
                                 <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value1"
@@ -1309,30 +1202,6 @@
                             </div>
                         </div>
                         @include('layouts.footer8', ['page' => 5])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#monthly_living"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#information_regarding">2</option>
-                                    <option value="#if_yes">3</option>
-                                    <option value="#monthly_living">4</option>
-                                    <option value="#tax_withholding" selected>5</option>
-                                    <option value="#iras_profit_sharing">6</option>
-                                    <option value="#others">7</option>Other
-                                    <option value="#last_section">8</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#iras_profit_sharing"><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i
-                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
-                            </div>
-                        </div> --}}
-
                     </div>
                 </section>
 
@@ -1503,30 +1372,6 @@
                             </div>
                         </div>
                         @include('layouts.footer8', ['page' => 6])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#tax_withholding"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#information_regarding">2</option>
-                                    <option value="#if_yes">3</option>
-                                    <option value="#monthly_living">4</option>
-                                    <option value="#tax_withholding">5</option>
-                                    <option value="#iras_profit_sharing" selected>6</option>
-                                    <option value="#others">7</option>Other
-                                    <option value="#last_section">8</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#others"><i class="fas fa-chevron-right"></i> </a>
-                            </div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i
-                                        class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a>
-                            </div>
-                        </div> --}}
-
                     </div>
                 </section>
 
@@ -1763,34 +1608,8 @@
                     </div>
 
                     @include('layouts.footer8', ['page' => 7])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#iras_profit_sharing"><i
-                                    class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section">1</option>
-                                <option value="#information_regarding">2</option>
-                                <option value="#if_yes">3</option>
-                                <option value="#monthly_living">4</option>
-                                <option value="#tax_withholding">5</option>
-                                <option value="#iras_profit_sharing">6</option>
-                                <option value="#others" selected>7</option>Other
-                                <option value="#last_section">8</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#last_section"><i class="fas fa-chevron-right"></i> </a>
-                        </div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                 </section>
-
-
-
                 <section class="section_area  px-lg-5 px-2 pt-5" id="last_section">
-
                     <div class="ps-lg-5 pt-5">
                         <div class="d-flex ps-lg-5">Are you involved in bankruptcy proceedings?
                             <span class="d-flex d_sm_block ps-3">
@@ -1842,19 +1661,11 @@
                         are true and correct to the best of my knowledge.</div>
                     <div class="w-100 mt-3">
                         <div class="row">
-                            {{-- <div class="col-lg-6 col-sm-6">
-                                <div class="col-lg-12  ">
-                                    <input type="text" name="date"
-                                        class="form-control  border-none  border-0 border-bottom footer_field shadow-none">
-                                    <div class="text-center">Date1</div>
-                                </div>
-                            </div> --}}
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                         <label for="">Date:</label>
-                                        <input type="text" name="date"
-                                            class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
+                                        <input type="text" name="date" class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                 </div>
                             </div>
@@ -2003,27 +1814,6 @@
                         </div>
                     </div>
                     @include('layouts.footer8', ['page' => 8])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#others"><i class="fas fa-chevron-left"></i></a>
-                        </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section">1</option>
-                                <option value="#information_regarding">2</option>
-                                <option value="#if_yes">3</option>
-                                <option value="#monthly_living">4</option>
-                                <option value="#tax_withholding">5</option>
-                                <option value="#iras_profit_sharing">6</option>
-                                <option value="#others">7</option>
-                                <option value="#last_section" selected>8</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#others"><i class="fas fa-chevron-right"></i> </a></div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                     @include('layouts.pagination', ['page' => 12 ])
                 </section>
             </form>

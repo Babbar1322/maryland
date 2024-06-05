@@ -16,9 +16,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-        a{
+        a {
             color: black !important;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -40,7 +41,7 @@
             border-bottom: 1px dotted black !important;
 
             box-shadow: none !important;
-         }
+        }
 
         .form-control {
             border-radius: 0 !important;
@@ -62,9 +63,11 @@
             border-bottom: 2px solid black !important;
 
         }
-        .table > :not(caption) > * > * {
-            background-color : white;
+
+        .table> :not(caption)>*>* {
+            background-color: white;
         }
+
         .section_area {
             background-color: white !important;
             margin: 10px;
@@ -85,39 +88,43 @@
             width: 50% !important;
             font-size: 21px;
         }
+
         @media screen and (min-width : 1600px) {
 
-            .top_select_box{
+            .top_select_box {
                 width: 75% !important;
-                        }
+            }
 
-                        .case_input_top {
-                            min-width: 490px !important;
-                        }
+            .case_input_top {
+                min-width: 490px !important;
+            }
         }
 
         @media screen and (min-width : 700px) {
 
-            .top_select_box{
-                width: 58.33% ;
-                        }
+            .top_select_box {
+                width: 58.33%;
+            }
 
-                        .case_input_top {
-                            min-width: 275px ;
-                        }
+            .case_input_top {
+                min-width: 275px;
+            }
         }
 
 
         @media screen and (max-width : 768px) {
-            .top_select_box{
-                width: 58.33333% ;
-                        }
+            .top_select_box {
+                width: 58.33333%;
+            }
+
             .case_input_top {
-                            min-width: 275px !important;
-                        }
-            .top_text_width{
+                min-width: 275px !important;
+            }
+
+            .top_text_width {
                 min-width: 100% !important;
             }
+
             .children_table {
                 min-width: 0 !important;
             }
@@ -147,17 +154,18 @@
         .font_bold {
             font-weight: bolder !important;
         }
+
         .bg-secondary {
-    --bs-bg-opacity: 1;
-    background-color: rgb(184 188 192) !important;
-}
+            --bs-bg-opacity: 1;
+            background-color: rgb(184 188 192) !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid  bg_color py-1 py-lg-3">
 
-        <form action="{{ route('form1.store') }}" class="" method="post">
+        <form action="{{ route('form1.submit') }}" class="" method="post">
             @csrf
 
             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
@@ -169,13 +177,16 @@
                     </div>
 
                     <div class="row mt-3">
-                        <div class="col-lg-1 col-sm-1 ps-4 col-3  mb-sm-0 "> <img src="{{ asset('logo.png') }}" alt="" class="w-100"> </div>
+                        <div class="col-lg-1 col-sm-1 ps-4 col-3  mb-sm-0 "> <img src="{{ asset('logo.png') }}"
+                                alt="" class="w-100"> </div>
                         <div class="col-lg-11">
                             <div class="row">
-                                <div class="col-md-3   fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; "> CIRCUIT COURT FOR </div>
-                                <div class="col-md-7 px-lg-0 top_select_box" >
+                                <div class="col-md-3   fw-bolder  h5  top_text_width px-lg-0 "
+                                    style="max-width: 180px;"> CIRCUIT COURT FOR </div>
+                                <div class="col-md-7 px-lg-0 top_select_box">
 
-                                    <select id="county" name="county" class="form-select form-control border-0 border-bottom">
+                                    <select id="county" name="county"
+                                        class="form-select form-control border-0 border-bottom">
                                         <option selected=""> </option>
                                         <option value="CIRCUIT COURT LOCATIONS">CIRCUIT COURT LOCATIONS</option>
                                         <option value="Allegany Country (CC)">Allegany Country (CC)</option>
@@ -205,7 +216,8 @@
                                     </select>
                                     <div class="text-center"> City/County </div>
                                 </div>
-                                <h5 class="col-md-1  d-flex gap-1 px-lg-0"> <span class="fw-bold fs-3">, </span><span class="fs-4">MARYLAND</span>
+                                <h5 class="col-md-1  d-flex gap-1 px-lg-0"> <span class="fw-bold fs-3">, </span><span
+                                        class="fs-4">MARYLAND</span>
                                 </h5>
                             </div>
 
@@ -213,14 +225,17 @@
 
                                 <div class="col-md-1 col-lg-2 px-lg-0" style="max-width: 92px;">Located at</div>
                                 <div class="col-md-6 px-lg-0">
-                                    <input type="text" name="court_address" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="court_address"
+                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center"> Court Address </div>
                                 </div>
                                 <div class="col-md-2 px-lg-0" style="max-width: 89px;">
                                     <div>Case Number</div>
                                 </div>
                                 <div class="col-md-3">
-                                    <input type="number" min="0" name="case_no" class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none" style="min-width: 195px;">
+                                    <input type="number" min="0" name="case_no"
+                                        class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none"
+                                        style="min-width: 195px;">
                                 </div>
                             </div>
                         </div>
@@ -231,7 +246,8 @@
                         <div class="row">
                             <div class="col-lg-5 col-sm-5">
                                 <div class="col-lg-12  ">
-                                    <input type="number" min="0" name="plaintiff" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="number" min="0" name="plaintiff"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="">Plaintiff</div>
                                 </div>
                             </div>
@@ -240,7 +256,8 @@
                             </div>
                             <div class="col-lg-5 col-sm-5">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="defendant" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="defendant"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="">Defendant</div>
                                 </div>
                             </div>
@@ -250,7 +267,8 @@
                         <div class="row">
                             <div class="col-lg-5  col-sm-6">
                                 <div class="col-lg-12  ">
-                                    <input type="text" name="plaintiff_street_address" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="plaintiff_street_address"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class=""> Street Address</div>
                                 </div>
                             </div>
@@ -259,7 +277,8 @@
                             </div>
                             <div class="col-lg-5  col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="defendant_street_address" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="defendant_street_address"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class=""> Street Address</div>
 
                                 </div>
@@ -271,11 +290,13 @@
                             <div class="col-lg-5">
                                 <div class="row">
                                     <div class="col-lg-8 col-sm-6 ">
-                                        <input type="text" name="plaintiff_csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="text" name="plaintiff_csz"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="number" min="0" name="plaintiff_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="number" min="0" name="plaintiff_tel"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
 
                                     </div>
@@ -285,11 +306,13 @@
                             <div class="col-lg-5">
                                 <div class="row">
                                     <div class="col-lg-8 col-sm-6">
-                                        <input type="text" name="defendant_csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="text" name="defendant_csz"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="number" min="0" name="defendant_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="number" min="0" name="defendant_tel"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
                                     </div>
                                 </div>
@@ -301,7 +324,8 @@
                             <div class="col-lg-5 col-sm-6">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input type="email" name="plaintiff_email" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="email" name="plaintiff_email"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>E-mail</div>
                                     </div>
                                 </div>
@@ -309,7 +333,8 @@
                             <div class="col-lg-2 col-sm-2 d-none  d-lg-block"> </div>
                             <div class="col-lg-5 col-sm-6">
                                 <div class="col-sm-12">
-                                    <input type="email" name="defendant_email" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="email" name="defendant_email"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div>E-mail</div>
                                 </div>
                             </div>
@@ -321,7 +346,8 @@
                                 <div class="text-end fw-bold">FINANCIAL STATEMENT OF</div>
                             </div>
                             <div class="col-lg-5 col-sm-12">
-                                <input type="text" name="statement_name" class=" w-100 form-control border-none border-0 border-bottom shadow-none">
+                                <input type="text" name="statement_name"
+                                    class=" w-100 form-control border-none border-0 border-bottom shadow-none">
                                 <div class="text-center">Name</div>
                             </div>
                         </div>
@@ -343,32 +369,41 @@
                                     <tr>
                                         <td colspan="8"><input type="text" name="child1"
                                                 class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="age1" class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age1"
+                                                class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child2" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="age2" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child2"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age2"
+                                                class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child3" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="age3" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child3"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age3"
+                                                class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child4" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="age4" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child4"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age4"
+                                                class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child5" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="age5" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child5"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="age5"
+                                                class="form-control border-0"></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="row  ">
+                    <div class="row">
                         <h4 class="text-center m-0"> <span class="border_bottom"> MONTHLY EXPENSES</span></h4>
                         <div class="table-responsive">
-                            <table class="table-bordered mt-1 border-black table  ">
+                            <table class="table-bordered mt-1 border-black table">
                                 <thead class="text-center">
                                     <tr>
                                         <th class="fw-bold">ITEM</th>
@@ -386,85 +421,121 @@
                                     </tr>
                                     <tr>
                                         <td class="w-50">Mortgage</td>
-                                        <td><input type="number" min="0" name="p_mortgage_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_mortgage_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_mortgage_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_mortgage_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_mortgage_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_mortgage_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Insurance (homeowners)</td>
-                                        <td><input type="number" min="0" name="p_insurance_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_insurance_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_insurance_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_insurance_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_insurance_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_insurance_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Rent/Ground Rent</td>
-                                        <td><input type="number" min="0" name="p_rent_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_rent_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_rent_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_rent_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_rent_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_rent_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Taxes</td>
-                                        <td><input type="number" min="0" name="p_taxes_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_taxes_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_taxes_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_taxes_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_taxes_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_taxes_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Gas & Electric</td>
-                                        <td><input type="number" min="0" name="p_gas_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_gas_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_gas_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_gas_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_gas_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_gas_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Electric Only</td>
-                                        <td><input type="number" min="0" name="p_electric_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_electric_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_electric_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_electric_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_electric_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_electric_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Heat (oil)</td>
-                                        <td><input type="number" min="0" name="p_heat_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_heat_self"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_heat_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_heat_child"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_heat_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_heat_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Telephone</td>
-                                        <td><input type="number" min="0" name="p_tel_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_tel_self"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_tel_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_tel_child"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_tel_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_tel_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Trash Removal</td>
-                                        <td><input type="number" min="0" name="p_trash_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_trash_self"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_trash_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_trash_child"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_trash_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_trash_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Water Bill</td>
-                                        <td><input type="number" min="0" name="p_water_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_water_self"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_water_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_water_child"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_water_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_water_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Cell Phone/Pager</td>
-                                        <td><input type="number" min="0" name="p_pager_self" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_pager_self"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_pager_child" class="form-control border-0">
+                                        <td><input type="number" min="0" name="p_pager_child"
+                                                class="form-control border-0">
                                         </td>
-                                        <td><input type="number" min="0" name="p_pager_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_pager_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Repairs</td>
-                                        <td><input type="number" min="0" name="p_repairs_self" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_repairs_child" class="form-control border-0"></td>
-                                        <td><input type="number" min="0" name="p_repairs_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" min="0" name="p_repairs_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_repairs_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" min="0" name="p_repairs_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
 
                                 </tbody>
@@ -472,28 +543,12 @@
                         </div>
                         @include('layouts.footer', ['page' => 1])
 
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#lawn_yard_care">2</option>
-                                    <option value="#drug_store_items">3</option>
-                                    <option value="#transportation_expense">4</option>
-                                    <option value="#income_statement">5</option>
-                                    <option value="#assets_liabilities">6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <i class="fas fa-chevron-right"></i> </div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </div>
             </section>
 
-            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="lawn_yard_care">
+            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="lawn_yard_care">
                 <div class="row   ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -519,95 +574,73 @@
                             <tr>
                                 <td class="w-50">Replacement Furnishings/Appliances</td>
                                 <td><input type="number" min="0" name="p_furnishings_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td><input type="number" min="0" name="p_furnishings_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td><input type="number" min="0" name="p_furnishings_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"></td>
                             </tr>
                             <tr>
                                 <td class="w-50">Condominium Fee (not included elsewhere)</td>
                                 <td><input type="number" min="0" name="p_condominium_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td><input type="number" min="0" name="p_condominium_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td><input type="number" min="0" name="p_condominium_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"></td>
                             </tr>
                             <tr>
                                 <td class="w-50">Painting/Wallpapering</td>
                                 <td><input type="number" min="0" name="p_painting_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_painting_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_painting_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Carpet Cleaning</td>
                                 <td><input type="number" min="0" name="p_carpt_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_carpt_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_carpt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Domestic Assistance/Housekeeper</td>
                                 <td><input type="number" min="0" name="p_assistance_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_assistance_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_assistance_total"
-                                        class="border-0 bg-transparent border outline-none form-control" value="0">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Pool</td>
                                 <td><input type="number" min="0" name="p_pool_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_pool_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_pool_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr class="w-50">
                                 <td>Other: <span class="border-bottom "><input type="text" name="p_others"
-                                            class="border-0 bg-transparent w-50">
-                                    </span>
-                                </td>
+                                            class="border-0 bg-transparent w-50"> </span> </td>
                                 <td><input type="number" min="0" name="p_other_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_other_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="p_other_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td class="">
@@ -615,16 +648,13 @@
                                 </td>
                                 <td><input type="number" min="0" name="p_subtotal_self"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"></td>
                                 <td><input type="number" min="0" name="p_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"></td>
                                 <td><input type="number" min="0" name="p_subtotal_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="py-3 bg-secondary"></td>
@@ -638,28 +668,22 @@
                             <tr>
                                 <td>Mortgage</td>
                                 <td><input type="number" min="0" name="s_mortgage_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td><input type="number" min="0" name="s_mortgage_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="s_mortgage_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td>Insurance (homeowners)</td>
                                 <td><input type="number" min="0" name="s_insurance_self"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="s_insurance_child"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                        class="border-0 bg-transparent border outline-none form-control"> </td>
                                 <td><input type="number" min="0" name="s_insurance_total"
                                         class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                        value="0"> </td>
                             </tr>
                             <tr>
                                 <td>Rent/Ground Rent</td>
@@ -883,8 +907,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="s_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="s_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" min="0" name="s_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -940,27 +965,12 @@
 
                         </table>
                         @include('layouts.footer', ['page' => 2])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section"><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#lawn_yard_care" selected>2</option>
-                                    <option value="#drug_store_items">3</option>
-                                    <option value="#transportation_expense">4</option>
-                                    <option value="#income_statement">5</option>
-                                    <option value="#assets_liabilities">6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#drug_store_items"><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </div>
             </section>
-            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="drug_store_items">
+            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="drug_store_items">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -997,8 +1007,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="w-50">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="c_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td class="w-50">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="c_others" class="border-0 bg-transparent w-50"></span>
                                 </td>
 
                                 <td><input type="number" min="0" name="c_other_self"
@@ -1107,8 +1118,9 @@
                             </tr>
 
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="d_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="d_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" min="0" name="d_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1237,8 +1249,9 @@
                                 </td>
                             </tr>
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="e_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="e_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" min="0" name="e_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1413,8 +1426,9 @@
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="f_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="f_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" min="0" name="f_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1449,27 +1463,12 @@
                             </tr>
                         </table>
                         @include('layouts.footer', ['page' => 3])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"><a href="#lawn_yard_care"> <i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#lawn_yard_care">2</option>
-                                    <option value="#drug_store_items" selected>3</option>
-                                    <option value="#transportation_expense">4</option>
-                                    <option value="#income_statement">5</option>
-                                    <option value="#assets_liabilities">6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#transportation_expense"><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </div>
             </section>
-            <section class="section_area page4 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="transportation_expense">
+            <section class="section_area page4 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
+                id="transportation_expense">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -1576,8 +1575,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="w-50">Other: <span class="border-dashed border-bottom outline-none"><input type="text" name="g_others"
-                                        class="border-0 bg-transparent w-50"><span class="  border-dashed border-bottom outline-none">
+                                <td class="w-50">Other: <span
+                                        class="border-dashed border-bottom outline-none"><input type="text"
+                                            name="g_others" class="border-0 bg-transparent w-50"><span
+                                            class="  border-dashed border-bottom outline-none">
                                 </td>
 
                                 <td><input type="number" min="0" name="g_other_self"
@@ -1671,8 +1672,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="h_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="h_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" min="0" name="h_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1772,7 +1774,9 @@
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="i_others" class="w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="i_others"
+                                            class="w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" min="0" name="i_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1872,8 +1876,9 @@
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other:<span class="  border-dashed border-bottom outline-none"> <input type="text" name="j_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other:<span class="  border-dashed border-bottom outline-none"> <input
+                                            type="text" name="j_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" min="0" name="j_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1908,27 +1913,12 @@
                             </tr>
                         </table>
                         @include('layouts.footer', ['page' => 4])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#drug_store_items"><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#lawn_yard_care">2</option>
-                                    <option value="#drug_store_items">3</option>
-                                    <option value="#transportation_expense" selected>4</option>
-                                    <option value="#income_statement">5</option>
-                                    <option value="#assets_liabilities">6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#income_statement"><i class="fas fa-chevron-right"></i></a> </div>
-                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </div>
             </section>
-            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="income_statement">
+            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
+                id="income_statement">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -2023,9 +2013,10 @@
                             </tr>
 
                             <tr>
-                                <td class="w-50">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="k_others"
-                                        class="border-0 bg-transparent w-50">
-                                        </span>
+                                <td class="w-50">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="k_others" class="border-0 bg-transparent w-50">
+                                    </span>
                                 </td>
 
                                 <td><input type="number" min="0" name="k_other_self"
@@ -2043,7 +2034,9 @@
                                 <td class="">
                                     <div>SUB TOTAL</div>
                                 </td>
-                                <td><input type="number" min="0" name="k_subtotal_self" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="k_subtotal_self"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                                 <td><input type="number" min="0" name="k_subtotal_child"
                                         class="border-0 bg-transparent border outline-none form-control"
@@ -2079,8 +2072,8 @@
                         <div>Number of dependent children, including children who have not attained the age of 19 years,
                             are
                             not
-                            married or self-supporting, and are enrolled in secondary school: <input type="number" min="0"
-                                name="ss"
+                            married or self-supporting, and are enrolled in secondary school: <input type="number"
+                                min="0" name="ss"
                                 class="border-0 bg-transparent border border-dashed border-bottom outline-none"></div>
                         <h4 class="text-center fw-bold pt-3"><span class="border_bottom">INCOME STATEMENT</span>
                         </h4>
@@ -2226,7 +2219,9 @@
                             <tr class="w-50">
                                 <td colspan="2">Total deductions from Other income: </td>
 
-                                <td><input type="number" min="0" name="tdoi" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="tdoi"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2246,37 +2241,25 @@
                                     <div>TOTAL MONTHLY INCOME</div>
                                 </td>
                                 <td class="bg-secondary"> </td>
-                                <td><input type="number" min="0" name="tmi" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="tmi"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
 
                         </table>
                         @include('layouts.footer', ['page' => 5])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#transportation_expense"><i class="fas fa-chevron-left"></i> </a></div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#lawn_yard_care">2</option>
-                                    <option value="#drug_store_items">3</option>
-                                    <option value="#transportation_expense">4</option>
-                                    <option value="#income_statement" selected>5</option>
-                                    <option value="#assets_liabilities">6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#assets_liabilities"><i class="fas fa-chevron-right"></i></a> </div>
-                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </div>
             </section>
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="assets_liabilities">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="assets_liabilities">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div class=>Case Number</div>
-                        <input type="number" min="0" class="border-0 bg-transparent border border-dashed border-bottom outline-none">
+                        <input type="number" min="0"
+                            class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
                         <h4 class="text-center fw-bold pt-3"><span class="border_bottom">ASSETS & LIABILITIES</span>
@@ -2309,7 +2292,7 @@
                                 </td>
                                 <td><input type="number" min="0" name="as_bs"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
-                                </tr>
+                            </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">U.S. Bonds</div>
@@ -2353,12 +2336,20 @@
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr class="w-50">
-                                <td colspan="2">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="as_others" class="border-0 bg-transparent w-50"> </span> </td>
-                                <td><input type="number" min="0" name="as_other" class="border-0 bg-transparent border outline-none form-control" value="0"> </td>
+                                <td colspan="2">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="as_others" class="border-0 bg-transparent w-50"> </span> </td>
+                                <td><input type="number" min="0" name="as_other"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0"> </td>
                             </tr>
                             <tr>
-                                <td colspan="2" class=""> <div>TOTAL ASSETS:</div> </td>
-                                <td><input type="number" min="0" name="as_te" class="border-0 bg-transparent border outline-none form-control" value="0"> </td>
+                                <td colspan="2" class="">
+                                    <div>TOTAL ASSETS:</div>
+                                </td>
+                                <td><input type="number" min="0" name="as_te"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0"> </td>
                                 <td class="bg-secondary"></td>
                             </tr>
                             <tr>
@@ -2442,16 +2433,21 @@
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">c.</div>
                                 </td>
-                                <td> <input type="number" min="0" name="dc1" class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td> <input type="number" min="0" name="dc1"
+                                        class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" min="0" name="dc2" class="border-0 bg-transparent border outline-none form-control">
+                                <td class="py-0"><input type="number" min="0" name="dc2"
+                                        class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
                             <tr class="w-50">
                                 <td colspan="2">Other: <span class="border-bottom">
-                                    <input type="text" name="lb_others" class="w-50 border-0 bg-transparent"></span>
+                                        <input type="text" name="lb_others"
+                                            class="w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="text" name="lb_other" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="text" name="lb_other"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2459,7 +2455,9 @@
                                     <div>TOTAL LIABILITIES</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_te" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="lb_te"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2467,7 +2465,9 @@
                                     <div>TOTAL NET WORTH:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_tnw" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="lb_tnw"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2495,7 +2495,9 @@
                                     <div>TOTAL EXPENSES:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_ti" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="lb_ti"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2503,35 +2505,24 @@
                                     <div>EXCESS OR DEFICIT:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="eod" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" min="0" name="eod"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
 
                         </table>
                         @include('layouts.footer', ['page' => 6])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"><a href="#income_statement"> <i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section">1</option>
-                                    <option value="#lawn_yard_care">2</option>
-                                    <option value="#drug_store_items">3</option>
-                                    <option value="#transportation_expense">4</option>
-                                    <option value="#income_statement">5</option>
-                                    <option value="#assets_liabilities" selected>6</option>
-                                    <option value="#last_section">7</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"><a href="#last_section"> <i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </div>
             </section>
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="last_section">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="last_section">
                 <div class="form-area pt-3">
-                    <div class="mx-auto h4 fw-bold">I solemnly affirm under the penalties of perjury that the contents of this document, Monthly Expense List, Income Statement, and Assets and Liabilities Statement are true to the best of my knowledge, information, and belief.</div>
+                    <div class="mx-auto h4 fw-bold">I solemnly affirm under the penalties of perjury that the contents
+                        of this document, Monthly Expense List, Income Statement, and Assets and Liabilities Statement
+                        are true to the best of my knowledge, information, and belief.</div>
                     @csrf
                     <div class="w-100 mt-3">
                         <div class="row">
@@ -2553,7 +2544,7 @@
                     </div>
                     <div class="w-100 mt-3">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-6">  </div>
+                            <div class="col-lg-6 col-sm-6"> </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
                                     <input type="text" name="pr_name"
@@ -2565,7 +2556,7 @@
                     </div>
                     <div class="w-100 mt-3">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-6">  </div>
+                            <div class="col-lg-6 col-sm-6"> </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
                                     <input type="text" name="address"
@@ -2581,7 +2572,8 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="csz"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">City, State, Zip</div>
                                 </div>
                             </div>
@@ -2625,29 +2617,15 @@
                     </div>
                     <div class="mx-auto h5 fw-bold  mb-5">
                         <div class="mb-5">
-                            NOTE: If you are not filing this statement with a pleading or your response to the other party’s claim, mail (postage prepaid) or hand deliver this statement to the other party and file a
+                            NOTE: If you are not filing this statement with a pleading or your response to the other
+                            party’s claim, mail (postage prepaid) or hand deliver this statement to the other party and
+                            file a
                             Certificate of Service (CC-DR-058) with the court.
                         </div>
                     </div>
                     @include('layouts.footer', ['page' => 7])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section" class="text-dark"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#assets_liabilities"><i class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section">1</option>
-                                <option value="#lawn_yard_care">2</option>
-                                <option value="#drug_store_items">3</option>
-                                <option value="#transportation_expense">4</option>
-                                <option value="#income_statement">5</option>
-                                <option value="#assets_liabilities">6</option>
-                                <option value="#last_section" selected>7</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href=""><i class="fas fa-chevron-right"></i></a> </div>
-                        <div class="my-auto ps-2" ><a href="#last_section" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
-                    @include('layouts.pagination', ['page' => 1,])
+
+                    @include('layouts.pagination', ['page' => 1])
                 </div>
             </section>
         </form>
@@ -2665,4 +2643,5 @@
         });
     </script>
 </body>
+
 </html>

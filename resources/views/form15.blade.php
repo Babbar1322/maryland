@@ -20,6 +20,10 @@
         a{
             color: black !important;
         }
+        input[type='checkbox'] {
+            accent-color: #8c8a8a !important;
+        }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -38,7 +42,7 @@
         }
 
         input[type='radio'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         body {
@@ -262,8 +266,6 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form15.submit') }}" method="post">
                 @csrf
-
-                {{-- section_first --}}
                 <section class="section_area" id="section_first">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
@@ -311,7 +313,6 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text ">In re:</div>
-                                        {{-- <div> <input type="text" name="county_of" class="border-0 table_input "></div> --}}
                                     </div>
                                 </div>
                                 <div class="">
@@ -779,26 +780,8 @@
                         </div>
                         @include('layouts.footer11', ['page' => 1])
 
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" selected>1</option>
-                                    <option value="#section_two">2</option>
-                                    <option value="#section_three">3</option>
-                                    <option value="#section_four" >4</option>
-                                    <option value="#section_five" >5</option>
-                                    <option value="#section_last" >6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#section_two" > <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" ><a href="#section_last" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
-
-                {{--  section_two --}}
                 <section class="section_area pt-5" id="section_two">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">2. </span>Monthly Deductions (Mandatory and Voluntary)</div>
@@ -1175,27 +1158,9 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 2])
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <a href="#section_first" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#section_first" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" >1</option>
-                                    <option value="#section_two" selected>2</option>
-                                    <option value="#section_three">3</option>
-                                    <option value="#section_four" >4</option>
-                                    <option value="#section_five" >5</option>
-                                    <option value="#section_last" >6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#section_three" > <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" ><a href="#section_last" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
 
-
-                {{-- section_three --}}
                 <section class="section_area pt-5" id="section_three">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
 
@@ -1591,27 +1556,8 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 3])
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <a href="#section_first" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#section_two" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" >1</option>
-                                    <option value="#section_two">2</option>
-                                    <option value="#section_three" selected>3</option>
-                                    <option value="#section_four" >4</option>
-                                    <option value="#section_five" >5</option>
-                                    <option value="#section_last" >6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#section_four" > <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" ><a href="#section_last" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
-
-
-                {{-- section_four --}}
                 <section class="section_area pt-5" id="section_four">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">4. </span> Debts (unsecured)</div>
@@ -2321,29 +2267,11 @@
 
                         </div>
                         @include('layouts.footer11', ['page' => 4])
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <a href="#section_first" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#section_three" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" >1</option>
-                                    <option value="#section_two">2</option>
-                                    <option value="#section_three" >3</option>
-                                    <option value="#section_four" selected>4</option>
-                                    <option value="#section_five" >5</option>
-                                    <option value="#section_last" >6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#section_five" > <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" ><a href="#section_last" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
 
-                {{-- section_five --}}
                 <section class="section_area pt-5" id="section_five">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
-
                         <div class="fw-bold">
                             5. <span class="ps-5">Assets</span>
                         </div>
@@ -3006,30 +2934,10 @@
                             </table>
                         </div>
                         @include('layouts.footer11', ['page' => 5])
-
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <a href="#section_first" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#section_four" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" >1</option>
-                                    <option value="#section_two">2</option>
-                                    <option value="#section_three" >3</option>
-                                    <option value="#section_four" >4</option>
-                                    <option value="#section_five" selected>5</option>
-                                    <option value="#section_last" >6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#section_last" > <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" ><a href="#section_last" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
                     </div>
                 </section>
-
-                {{-- section_last --}}
                 <section class="section_area pt-5" id="section_last">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
-
                         <div class="table-responsive pt-3">
                             <table class="table-bordered border border-2 table mb-0  ">
                                 <tbody>
@@ -3498,7 +3406,6 @@
                                             class="bg-secondary small_text fw-bold text-end pe-2 pt-4">Total
 
                                         </td>
-                                        {{-- <td class="text-end bg-secondary pe-2">Total </td> --}}
                                         <td class="small_text">
                                             <div class=" ">
                                                 <div class="d-flex  text-bottom mt-3">$<input type="text"
@@ -3619,30 +3526,8 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-
                         @include('layouts.footer11', ['page' => 6])
-
-                        {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                            <div class="my-auto"> <a href="#section_first" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#section_five" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#section_first" >1</option>
-                                    <option value="#section_two">2</option>
-                                    <option value="#section_three" >3</option>
-                                    <option value="#section_four" >4</option>
-                                    <option value="#section_five" >5</option>
-                                    <option value="#section_last" selected>6</option>
-                                </select>
-                            </div>
-                            <div class="my-auto">  <i class="fas fa-chevron-right"></i></a>  </div>
-                            <div class="my-auto ps-2" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-
-
                         @include('layouts.pagination', ['page' => 15])
                     </div>
                 </section>

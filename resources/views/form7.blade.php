@@ -83,7 +83,7 @@
             border-bottom: none !important;
         }
         input[type='radio'] {
-    accent-color:  black !important;
+    accent-color:  #8c8a8a !important;
 }
         input:focus-visible {
             outline: none !important;
@@ -715,191 +715,7 @@
                             </div>
                         </div>
 
-                        {{-- <div class="col-md-6 d-flex ps-0">
-                            <div>(b)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Overtime</div>
-                                    <div>...........................................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="overtime"
-                                        class="border-0 border-bottom responsive_input text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(j)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 col-sm-12 d_sm_block mt-auto ">
-                                    <div>Child Support (Actually received)</div>
-                                    <div>........</div>
-                                </div>
-                                <div class="d-flex col-lg-5 col-sm-12 d_sm_block justify-content-center">$
-                                    <input type="text" name="child_spt"
-                                        class="border-0 responsive_input border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div>(c)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Self-employment</div>
-                                    <div>...............................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="self_emp"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(k)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Alimony (Actually received)</div>
-                                    <div>........</div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="alimony"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div>(d)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Tips</div>
-                                    <div>....................................................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="tips"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(l)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Rental and income producing property.</div>
-                                    <div>.</div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="prop_income"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div class="my-auto">(e)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block my-auto">
-                                <div class="d-flex w-100 ">
-                                    <div>Social Security</div>
-                                    <div>...................................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="security"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(m)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Contributions from household member(s)</div>
-                                    <div></div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="contri"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div>(f)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Disability</div>
-                                    <div>...........................................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="disablity"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(j)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Cash Income</div>
-                                    <div>...............................................</div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="cash_income"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div>(g)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Unemployment </div>
-                                    <div>..................................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="unemployment"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(o)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Veterans Benefits</div>
-                                    <div>.......................................</div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="veterans_benifits"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-0">
-                            <div>(b)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex w-100 mt-auto">
-                                    <div>Worker's compensation</div>
-                                    <div>......................</div>
-                                </div>
-                                <div class="d-flex w-100">$
-                                    <input type="text" name="compensation"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(p)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block justify-content-center col-sm-12 ">
-                                    <div>Other</div>
-                                    <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="base_pay_others"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
-                        </div>
 
-                         --}}
                          <div class="col-md-12 pt-3 px-0 ">
                             <div class="d-flex d_sm_block">
                                 <div class="d-flex d_sm_block col-md-9 ">
@@ -932,20 +748,7 @@
                             <div>List here and explain any other income including but not limited to: non-reported  income; and support provided by relatives, friends, and others:</div>
                         </div>
                         @include('layouts.footer5', ['page' => 1])
-                        {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                            <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#mandatory_deductions" >2</option>
-                                    <option value="#assets">3</option>
-                                    <option value="#last_section">4</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
+
                     </div>
                 </section>
                 <section class="section_area p-5" id="mandatory_deductions">
@@ -1395,16 +1198,7 @@
                                                 <input type="text" name="sewar_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
-                                            {{-- <td>
-                                                <div style="width:430px;">T.V./Internet
-                                                    ....................................</div>
-                                            </td>
-                                            <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="tv_int" value="trash">
-                                                <div>$</div>
-                                                <input type="text" name="tv_int_val"
-                                                    class="border-0 border-bottom w-50">
-                                            </td> --}}
+
                                         </tr>
                                     </table>
                                 </div>
@@ -1693,20 +1487,7 @@
                                 </div>
                             </div>
                             @include('layouts.footer5', ['page' => 2])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#mandatory_deductions" selected>2</option>
-                                        <option value="#assets">3</option>
-                                        <option value="#last_section">4</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
+
 
                         </div>
                 </section>
@@ -1898,7 +1679,6 @@
                                 </tr>
                                 <tr>
                                     <td class="text-center tdata"><input type="text" name="a_a3" class="border-0 w-100"> </td>
-                                    {{-- <td> <div class="d-flex tdata">$ <input type="text" name="a_o3" class="border-0 w-100 text-end"></div> </td> --}}
                                     <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -1958,7 +1738,6 @@
                                     <td class="tdata"><input type="text" name="MV_y1" class="border-0 w-100 text-center"></td>
                                     <td class="tdata"><input type="text" name="MV_make1" class="border-0 w-100 text-center"></td>
                                      <td class="tdata"><input type="text" name="MV_model1" class="border-0 w-100 text-center"></td>
-                                     {{-- <td class="tdata"><input type="text" name="MV_ownership1" class="border-0 w-100 text-center"></td> --}}
                                      <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -1986,7 +1765,6 @@
                                     <td class="tdata"><input type="text" name="MV_y2" class="border-0 w-100 text-center"></td>
                                     <td class="tdata"><input type="text" name="MV_make2" class="border-0 w-100 text-center"></td>
                                      <td class="tdata"><input type="text" name="MV_model2" class="border-0 w-100 text-center"></td>
-                                     {{-- <td class="tdata"><input type="text" name="MV_ownership1" class="border-0 w-100 text-center"></td> --}}
                                      <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -2044,7 +1822,6 @@
                                  <tr>
                                     <td class="tdata"  style="width:400px"><input type="text" name="C_institution1" class="border-0 w-100"></td>
                                     <td class="tdata"><input type="text" name="C_an1" class="border-0 w-100 text-center"></td>
-                                    {{-- <td class="tdata"><input type="text" name="C_ownership1" class="border-0 w-100 text-center"></td> --}}
                                     <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -2071,7 +1848,6 @@
 
                                     <td class="tdata"  style="width:400px"><input type="text" name="C_institution2" class="border-0 w-100"></td>
                                     <td class="tdata"><input type="text" name="C_an2" class="border-0 w-100 text-center"></td>
-                                    {{-- <td class="tdata"><input type="text" name="C_ownership2" class="border-0 w-100 text-center"></td> --}}
                                     <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -2099,7 +1875,6 @@
 
                                     <td class="tdata"  style="width:400px"><input type="text" name="C_institution3" class="border-0 w-100"></td>
                                     <td class="tdata"><input type="text" name="C_an3" class="border-0 w-100 text-center"></td>
-                                    {{-- <td class="tdata"><input type="text" name="C_ownership3" class="border-0 w-100 text-center"></td> --}}
                                     <td class="tdata">
                                         <div class="d-flex justify-content-center">
                                             <div class="border-end border-dark  p-1 mx-auto text-center">
@@ -2155,7 +1930,6 @@
                                     <td> <div class="d-flex tdata">$ <input type="text" name="SMB_cbv2" class="border-0 w-100 text-end"></div>
                                  </tr>
                                  <tr>
-                                    {{-- <td colspan="2"></td> --}}
                                     <td  colspan="3" class="text-end  tdata">Total Net Value of Stocks, Bonds, Mutual Funds:</td>
                                      <td> <div class="d-flex tdata">$ <input type="text" name="SMB_tnv" class="border-0 w-100 text-end"></div>
                                     </td>
@@ -2303,21 +2077,6 @@
                             </div>
                             </div>
                             @include('layouts.footer5', ['page' => 3])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#mandatory_deductions" >2</option>
-                                        <option value="#assets" selected>3</option>
-                                        <option value="#last_section">4</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto"> <a href="#assets" ><i class="fas fa-chevron-right"></i> </a></div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
-
                         </div>
                 </section>
 
@@ -2597,20 +2356,7 @@
 
                             </div>
                             @include('layouts.footer5', ['page' => 4])
-                            {{-- <div class="d-flex gap-3 py-auto mb-2  ">
-                                <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                                <div class="my-auto ps-2"> <a href="#mandatory_deductions" ><i class="fas fa-chevron-left"></i></a> </div>
-                                <div>
-                                    <select class="form-select w-100 sectionSelect">
-                                        <option value="#first_section" >1</option>
-                                        <option value="#mandatory_deductions" >2</option>
-                                        <option value="#assets" >3</option>
-                                        <option value="#last_section" selected >4</option>
-                                    </select>
-                                </div>
-                                <div class="my-auto">  <i class="fas fa-chevron-right"></i> </div>
-                                <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                            </div> --}}
+
                             @include('layouts.pagination', ['page' => 7 ])
 
                         </div>

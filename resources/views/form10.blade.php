@@ -38,7 +38,7 @@
         }
 
         input[type='radio'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         body {
@@ -587,18 +587,6 @@
                                 www.courts.ca.gov</a>
                         </div>
                     </div>
-                    {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section" selected>1</option>
-                                <option value="#last_section" >2</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#last_section" > <i class="fas fa-chevron-right"></i></a>  </div>
-                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                 </section>
                 <section class="section_area  px-lg-5 px-2 " id="last_section">
                     <div class="table-responsive pt-5">
@@ -616,17 +604,13 @@
                                     <td class="text-center small_text">DEBTS— SHOW TO WHOM OWED</td>
                                     <td class="text-center small_text">DATE INCURRED</td>
                                     <td class="text-center small_text">AMOUNT OF DEBT</td>
-                                    {{-- <td>NET FAIR MARKET VALUE</td> --}}
-                                    <td class="text-center small_text">PROPOSAL FOR DIVISION Award or Confirm to PETITIONER
-                                        RESPONDENT</td>
+                                    <td class="text-center small_text">PROPOSAL FOR DIVISION Award or Confirm to PETITIONER RESPONDENT</td>
                                 </tr>
-
                                 <tr>
                                     <td> </td>
                                     <td>  </td>
                                     <td> $</td>
                                     <td> $</td>
-                                    {{-- <td> $</td> --}}
                                     <td> $</td>
                                 </tr>
 
@@ -635,7 +619,6 @@
                                     <td> <input type="text" name="debts_show21" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i21" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit21" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair21" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division21" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -644,7 +627,6 @@
                                     <td> <input type="text" name="debts_show22" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i22" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit22" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair22" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division22" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -653,7 +635,6 @@
                                     <td> <input type="text" name="debts_show23" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i23" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit23" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair23" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division23" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -662,7 +643,6 @@
                                     <td> <input type="text" name="debts_show24" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i24" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit24" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair24" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division24" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -671,7 +651,6 @@
                                     <td> <input type="text" name="debts_show25" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i25" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit25" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair25" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division25" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -680,7 +659,6 @@
                                     <td> <input type="text" name="debts_show26" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i26" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit26" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair26" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division26" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -689,7 +667,6 @@
                                     <td> <input type="text" name="debts_show27" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i27" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit27" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair27" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division27" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -698,7 +675,6 @@
                                     <td> <input type="text" name="debts_show28" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i28" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit28" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair28" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division28" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -707,7 +683,6 @@
                                     <td> <input type="text" name="debts_show29" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i29" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit29" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair29" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division29" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -716,7 +691,6 @@
                                     <td> <input type="text" name="debts_show30" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i30" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit30" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair30" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division30" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -725,7 +699,6 @@
                                     <td> <input type="text" name="debts_show31" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i31" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit31" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair31" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division31" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -734,7 +707,6 @@
                                     <td> <input type="text" name="debts_show32" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i32" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit32" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair32" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division32" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -743,7 +715,6 @@
                                     <td> <input type="text" name="debts_show33" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i33" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit33" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair33" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division33" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -752,7 +723,6 @@
                                     <td> <input type="text" name="debts_show34" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i34" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit34" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair34" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division34" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -761,7 +731,6 @@
                                     <td> <input type="text" name="debts_show35" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i35" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit35" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair35" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division35" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -770,7 +739,6 @@
                                     <td> <input type="text" name="debts_show36" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i36" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit36" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair36" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division36" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -779,7 +747,6 @@
                                     <td> <input type="text" name="debts_show37" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i37" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit37" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair37" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division37" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -788,7 +755,6 @@
                                     <td> <input type="text" name="debts_show38" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i38" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit38" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair38" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division38" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -797,7 +763,6 @@
                                     <td> <input type="text" name="debts_show39" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i39" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit39" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair39" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division39" class="w-100  border-0">
                                     </td>
                                 </tr>
@@ -806,17 +771,13 @@
                                     <td> <input type="text" name="debts_show40" class="w-100  border-0"></td>
                                     <td> <input type="text" name="date_i40" class="w-100  border-0"></td>
                                     <td> <input type="text" name="amount_debit40" class="w-100  border-0"></td>
-                                    {{-- <td> <input type="text" name="gross_fair40" class="w-100  border-0"></td> --}}
                                     <td> <input type="text" name="proposal_division40" class="w-100  border-0">
                                     </td>
                                 </tr>
-
-
                             </thead>
                         </table>
                     </div>
                     <div class="border-bottom border-dark pt-3"></div>
-
                     <div class="row pb-5">
                         <div class="col-md-4 lh-1 py-2">
                             <div class="fs-6">FL-161 [Rev. July 1, 2013]</div>
@@ -842,18 +803,7 @@
                             <button type="reset" style="background-color: #F59292 ">Clear this form</button>
                         </div>
                     </div>
-                    {{-- <div class="d-flex gap-3 py-auto pb-3  ">
-                        <div class="my-auto"> <a href="#first_section" ><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#first_section" ><i class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section" >1</option>
-                                <option value="#last_section" selected>2</option>
-                            </select>
-                        </div>
-                        <div class="my-auto">  <i class="fas fa-chevron-right"></i>  </div>
-                        <div class="my-auto ps-2" ><a href="#last_section" > <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
+
 
                     @include('layouts.pagination', ['page' => 10])
 

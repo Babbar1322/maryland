@@ -47,7 +47,6 @@ class FormController extends Controller
     {
         //
 
-        return view('form1');
     }
 
 
@@ -90,7 +89,23 @@ class FormController extends Controller
         //
     }
 
+    public function form1() {
+        // MD.pdf
+
+        return view('form1');
+       }
+
+
+
+        public function form1_post(Request $request) {
+
+            judicial::create($request->all());
+
+            return redirect()->back()->with('success', 'Data Submitted Successfully.');
+        }
+
     public function form2() {
+        // MD partially filled out to check formulas.pdf
         return view('form2');
     }
 
@@ -102,6 +117,7 @@ class FormController extends Controller
     }
 
     public function form3() {
+        // domestic-relations-financial-affidavit_type-in-form GA.pdf
         return view('form3');
     }
 
@@ -126,6 +142,7 @@ class FormController extends Controller
     }
 
     public function form4() {
+        // rev-488 PA.pdf
         return view('form4');
     }
 
@@ -149,6 +166,7 @@ class FormController extends Controller
 
 
     public function form5(){
+        // 10482_fam_cis NJ.pdf
         return view('form5');
     }
 
@@ -172,6 +190,7 @@ class FormController extends Controller
 
 
     public function form6(){
+        // fm006-short  CT.pdf
         return view('form6');
     }
 
@@ -192,6 +211,7 @@ class FormController extends Controller
     }
 
     public function form7(){
+        // fm006-short  CT.pdf
         return view('form7');
     }
 
@@ -214,6 +234,7 @@ class FormController extends Controller
 
 
     public function form8(){
+        // CT Long.pdf
         return view('form8');
     }
 
@@ -239,13 +260,10 @@ class FormController extends Controller
 
 
     public function form9() {
+        // fl140  CA.pdf
 
         return view('form9');
     }
-
-
-
-
 
     public function form9_post(Request $request) {
         $fl140_ca = new fl140_ca_form();
@@ -266,6 +284,7 @@ class FormController extends Controller
 
 
     public function form10(){
+        // fl161 CA.pdf
         return  view('form10');
     }
 
@@ -286,6 +305,7 @@ class FormController extends Controller
 
 
     public function form11() {
+        // fl160  CA.pdf
         return view('form11');
     }
 
@@ -306,6 +326,7 @@ class FormController extends Controller
 
 
     public function form12() {
+        // FAM108_Current.pdf
         return view('form12');
     }
 
@@ -326,6 +347,8 @@ class FormController extends Controller
 
 
     public function form13(){
+
+        // fl142  CA.pdf
         return view('form13');
     }
 
@@ -349,6 +372,7 @@ class FormController extends Controller
 
 
     public function form14(){
+        // fl150  CA.pdf
         return view('form14');
     }
 
@@ -371,6 +395,7 @@ class FormController extends Controller
     }
 
     public function form15() {
+        // Sworn-Financial-Statement  CO.pdf
         return  view('form15');
     }
 
@@ -393,6 +418,8 @@ class FormController extends Controller
     }
 
     public function form16() {
+
+        // 902c10-21  FL long form.pdf
         return  view('form16');
     }
 
@@ -415,6 +442,7 @@ class FormController extends Controller
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
     public function form17() {
+        // 902b 11-20   FL short form.pdf
         return  view('form17');
     }
 
@@ -437,6 +465,7 @@ class FormController extends Controller
     }
 
     public function form18() {
+        // FL Long Form Spanish.pdf
         return  view('form18');
     }
     public function form18_post(Request $request){
@@ -458,6 +487,8 @@ class FormController extends Controller
 
 
     public function form19() {
+
+        // financial-disclosure-form-pdf-fillable.pdf
         return view('form19');
     }
 
@@ -482,6 +513,7 @@ class FormController extends Controller
 
 
     public function form20() {
+        // 1352FA_Financial_Declaration.pdf
         return view('form20');
     }
 

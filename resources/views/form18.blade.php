@@ -39,11 +39,11 @@
         }
 
         input[type='radio'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         input[type='checkbox'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         body {
@@ -163,7 +163,6 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form18.submit') }}" method="post">
                 @csrf
-                {{-- page 1 --}}
                 <section class="section_area" id="section_first">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
@@ -231,7 +230,6 @@
                     </div>
                 </section>
 
-                {{-- page 2 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -358,7 +356,6 @@
                         </div>
                     </div>
                 </section>
-                {{-- page 4 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -501,7 +498,6 @@
                     </div>
                 </section>
 
-                {{-- page 5 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -584,7 +580,6 @@
                         </div>
                     </div>
                 </section>
-                {{-- page 6 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -749,7 +744,6 @@
                             </div>
                         </div>
                 </section>
-                {{-- page 7 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -954,7 +948,6 @@
                     </div>
                 </section>
 
-                {{-- page 8 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1190,7 +1183,6 @@
                         </div>
                     </div>
                 </section>
-                {{-- page 9 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1409,9 +1401,6 @@
                             </div>
                         </div>
                 </section>
-
-
-                {{-- page 10 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1555,8 +1544,6 @@
                             </div>
                         </div>
                 </section>
-
-                {{-- page 11 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1616,8 +1603,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- page 12 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1680,8 +1665,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- page 13 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1753,8 +1736,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- page 14 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1807,8 +1788,6 @@
                         </div>
                     </div>
                 </section>
-
-                {{-- page 15 --}}
                 <section class="section_area">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -1854,7 +1833,6 @@
                                         <button type="reset" class="bg-transparent px-4">Reset</button>
                                     </div>
                                 </div>
-                                {{-- <div style="margin-bottom: 90px"> --}}
                                     <div>
                                     @include('layouts.pagination', ['page' => 18])</div>
 

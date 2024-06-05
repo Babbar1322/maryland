@@ -1,13 +1,14 @@
 <div class="d-flex gap-3 py-auto pb-2  ">
-    <div class="my-auto"> <a href="{{ route('form1.index') }}"><i
+    <div class="my-auto"> <a href="{{ route('pdf_form1') }}"><i
                 class="fas fa-chevron-left text-dark"></i><i class="fas fa-chevron-left text-dark"></i></a>
     </div>
-    {{--<div class="my-auto ps-2">
-            <a href="{{ route('pdf_form16') }}">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-        </div> --}}
-
+        @if($page > 1)
+            @php
+                $nextPage = $page - 1;
+                $routeName = "pdf_form{$nextPage}";
+            @endphp
+            <a href="{{ route($routeName) }}" class="text-dark ps-2 my-auto">   <i class="fas fa-chevron-left"></i> </a>
+        @endif
 
     <div class="dropdown">
         <button class="btn border dropdown-toggle" type="button"
@@ -15,7 +16,7 @@
            {{$page}}
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="{{ route('form1.index') }}">1. MD.pdf</a></li>
+            <li><a class="dropdown-item" href="{{ route('pdf_form1') }}">1. MD.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form2') }}">2. MD partially filled out to check formulas.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form3') }}">3. domestic-relations-financial-affidavit_type-in-form GA.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form4') }}">4. rev-488 PA.pdf</a></li>
@@ -37,24 +38,15 @@
             <li><a class="dropdown-item" href="{{ route('pdf_form20') }}">20. 1352FA_Financial_Declaration.pdf</a></li>
         </ul>
     </div>
-    {{-- <div class="my-auto"> <i class="fas fa-chevron-right"></i> </div> --}}
+    @if($page < 20)
+        @php
+            $nextPage = $page + 1;
+            $routeName = "pdf_form{$nextPage}";
+        @endphp
+    <a href="{{ route($routeName) }}" class="text-dark ps-2 my-auto">   <i class="fas fa-chevron-right"></i> </a>
+        @endif
     <div class="my-auto ps-2" ><a href="{{route('pdf_form20')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+
 </div>
 
-{{-- <div>
-    @php
-        $routes = [
-            'pdf 1' => route('pdf_form2'),
-            'pdf 2' => route('pdf_form3'),
-            'pdf 3' => route('pdf_form4'),
-            'pdf 4' => route('pdf_form5'),
-        ];
-    @endphp
 
-    <select id="routeDropdown" onchange="location = this.value;">
-        <option value="" disabled selected>Select a route</option>
-        @foreach($routes as $name => $url)
-            <option value="{{ $url }}">{{ $name }}</option>
-        @endforeach
-    </select>
-</div> --}}

@@ -39,7 +39,7 @@
         }
 
         input[type='radio'] {
-            accent-color: black !important;
+            accent-color: #8c8a8a !important;
         }
 
         body {
@@ -289,7 +289,6 @@
                                 <div class="small_text">ATTORNEY FOR (Name):</div>
                                 <div> <input type="text" name="attorey_name" class="border-0 table_input "></div>
                             </div>
-                            {{-- <textarea name="" id="" cols="6" class="form-control p-0 m-0"></textarea> --}}
                         </div>
                         <div class="p-2 border border-dark">
                             <div class="">
@@ -430,28 +429,6 @@
                         </div>
 
                         @include('layouts.footer9', ['page' => 1])
-                        {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                            <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                        class="fas fa-chevron-left"></i></a></div>
-                            <div class="my-auto ps-2"> <a href="#first_section"><i
-                                        class="fas fa-chevron-left"></i></a> </div>
-                            <div>
-                                <select class="form-select w-100 sectionSelect">
-                                    <option value="#first_section" selected>1</option>
-                                    <option value="#second_section" > 2</option>
-                                    <option value="#third_section" >3</option>
-                                    <option value="#last_section">4</option>
-                                </select>
-                            </div>
-                            <div class="my-auto"> <a href="#third_section"><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                            <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                        class="fas fa-chevron-right"></i> </a></div>
-                        </div> --}}
-                        {{-- <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
-                            party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
-                            documents was completed or waived must be filed with the court (see form FL-141)</div> --}}
-
                     </div>
                 </section>
 
@@ -613,28 +590,7 @@
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 2])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#first_section"><i
-                                    class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section" >1</option>
-                                <option value="#second_section" selected> 2</option>
-                                <option value="#third_section" >3</option>
-                                <option value="#last_section">4</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#third_section"><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                 </section>
-
-
-
                 <section class="section_area  px-lg-5 px-2" id="third_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
@@ -805,24 +761,6 @@
                         </table>
                     </div>
                     @include('layouts.footer9', ['page' => 3])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#second_section"><i
-                                    class="fas fa-chevron-left"></i></a> </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section" >1</option>
-                                <option value="#second_section">2</option>
-                                <option value="#third_section" selected>3</option>
-                                <option value="#last_section">4</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#last_section"><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
                 </section>
                 <section class="section_area  px-lg-5 px-2" id="last_section">
                     <div class="table-responsive pt-5">
@@ -1012,25 +950,6 @@
                         </div>
                     </div>
                     @include('layouts.footer9', ['page' => 4])
-                    {{-- <div class="d-flex gap-3 py-auto pb-2  ">
-                        <div class="my-auto"> <a href="#first_section"><i class="fas fa-chevron-left"></i><i
-                                    class="fas fa-chevron-left"></i></a></div>
-                        <div class="my-auto ps-2"> <a href="#third_section"><i class="fas fa-chevron-left"></i></a>
-                        </div>
-                        <div>
-                            <select class="form-select w-100 sectionSelect">
-                                <option value="#first_section">1</option>
-                                <option value="#second_section">2</option>
-                                <option value="#third_section">3</option>
-                                <option value="#last_section" selected>4</option>
-                            </select>
-                        </div>
-                        <div class="my-auto"> <a href="#third_section"><i class="fas fa-chevron-right"></i> </a>
-                        </div>
-                        <div class="my-auto ps-2"><a href="#last_section"> <i class="fas fa-chevron-right"></i><i
-                                    class="fas fa-chevron-right"></i> </a></div>
-                    </div> --}}
-
                     @include('layouts.pagination', ['page' => 13 ])
                 </section>
 
