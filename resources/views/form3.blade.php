@@ -179,7 +179,91 @@
                 padding-left: 0px !important;
             }
         }
+        @media screen and (max-width : 768px) {
 
+
+.small_text {
+    height: auto !important;
+}
+
+.top_flex_text {
+    display: block !important;
+}
+
+.footer_padding {
+    padding-top: 50px !important;
+}
+
+.d_sm_block {
+    display: block !important;
+
+}
+
+
+.responsive_input {
+    max-width: 100% !important;
+    overflow: hidden;
+}
+
+.expires_row {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.bottom_day {
+    width: 90px !important;
+}
+
+.top_flex_text {
+    display: block !important;
+}
+
+.flex_input {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+}
+
+.age_input_top {
+    width: 100% !important;
+}
+
+/* .section_area {
+background-color: white !important;
+ margin-top: 15px !important;
+} */
+.top_select_box {
+    width: 58.33333%;
+}
+
+.case_input_top {
+    min-width: 275px !important;
+}
+
+.top_text_width {
+    min-width: 100% !important;
+}
+
+.children_table {
+    min-width: 0 !important;
+}
+
+.section_area {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+
+}
+
+.top_text {
+    width: 100% !important;
+    font-size: 17px;
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+}
         .bg_color {
             background-color: #8c8a8a;
         }
@@ -216,7 +300,7 @@
                                 <div class="row">
                                     <div class="mx-auto d-flex top_flex_text h5 justify-content-center"><span>IN THE
                                             SUPERIOR COURT OF
-                                        </span> <input type="text" name="plaintiff"
+                                        </span> <input type="text" name="superior_court"
                                             class="form-control w-25  border-none  flex_input border-0 border-bottom border-solid shadow-none">
                                         <span>COUNTY STATE OF GEORGIA</span>
                                     </div>
@@ -225,7 +309,7 @@
                                         <div class="row pt-2">
                                             <div class="col-lg-5 col-sm-5">
                                                 <div class="col-lg-12  ">
-                                                    <input type="text" name="plaintiff"
+                                                    <input type="text" name="county_state"
                                                         class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                                 </div>
                                             </div>
@@ -298,7 +382,7 @@
                                                 <div class="col-lg-12 ">
                                                     <div class="d-flex">
                                                         <span class="h5">FILE NO.</span> <input type="text"
-                                                            name="plaintiff"
+                                                            name="file_no"
                                                             class="form-control w-75  border-none  border-0 border-bottom border-solid shadow-none">
                                                     </div>
                                                 </div>
@@ -312,12 +396,12 @@
                                                 AFFIANT’S NAME:
                                             </div>
                                             <div class="col-lg-6">
-                                                <input type="text" name="plaintiff"
+                                                <input type="text" name="affiant_name"
                                                     class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="plaintiff"
+                                                <input type="text" name="affiant_age"
                                                     class="form-control  border-none age1_input  border-0 border-bottom border-solid shadow-none"
                                                      >
                                             </div>
@@ -325,29 +409,29 @@
                                         <div class="row pt-2">
                                             <div class="col-lg-3 col  " style="width: 153px;">Spouse’s Name:</div>
                                             <div class="col-lg-6 p-lg-0">
-                                                <input type="text" name="plaintiff"
+                                                <input type="text" name="spouse_name"
                                                     class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2  ">
-                                                <input type="text" name="plaintiff"
-                                                    class="form-control  border-none age_input_top border-0 border-bottom border-solid shadow-none"
-                                                    style="width:190px !important;" >
+                                                <input type="text" name="spouse_age"
+                                                    class="form-control responsive_input border-none   border-0 border-bottom border-solid shadow-none"
+                                                    style="min-width:264px   !important;" >
                                             </div>
                                         </div>
                                         <div class="row pt-2">
                                             <div class="col-lg-3    " style="width: 165px;">Date of Marriage:</div>
                                             <div class="col-lg-4 p-lg-0">
-                                                <input type="text" name="plaintiff"
+                                                <input type="text" name="date_of_marriage"
                                                     class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-lg-3 col  " style="width: 180px;">Date of Separation:
                                             </div>
 
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="plaintiff"
-                                                    class="form-control  border-none age_input_top border-0 border-bottom border-solid shadow-none"
-                                                    style="width:186px !important;">
+                                                <input type="text" name="date_of_separation"
+                                                    class="form-control  border-none   border-0 border-bottom border-solid shadow-none"
+                                                    style="width:282px !important;">
                                             </div>
                                         </div>
                                         <div class="text-center h5 py-3">Names and year of birth of children for whom

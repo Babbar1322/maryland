@@ -129,7 +129,91 @@
 
 
             }
+            @media screen and (max-width : 768px) {
 
+
+.small_text {
+    height: auto !important;
+}
+
+.top_flex_text {
+    display: block !important;
+}
+
+.footer_padding {
+    padding-top: 50px !important;
+}
+
+.d_sm_block {
+    display: block !important;
+
+}
+
+
+.responsive_input {
+    max-width: 100% !important;
+    overflow: hidden;
+}
+
+.expires_row {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.bottom_day {
+    width: 90px !important;
+}
+
+.top_flex_text {
+    display: block !important;
+}
+
+.flex_input {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+}
+
+.age_input_top {
+    width: 100% !important;
+}
+
+/* .section_area {
+background-color: white !important;
+ margin-top: 15px !important;
+} */
+.top_select_box {
+    width: 58.33333%;
+}
+
+.case_input_top {
+    min-width: 275px !important;
+}
+
+.top_text_width {
+    min-width: 100% !important;
+}
+
+.children_table {
+    min-width: 0 !important;
+}
+
+.section_area {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+
+}
+
+.top_text {
+    width: 100% !important;
+    font-size: 17px;
+}
+
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+}
             .top_text {
                 width: 100% !important;
                 font-size: 17px;

@@ -6,6 +6,8 @@ use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
+use App\Models\fa_4139_form;
+use App\Models\fa_4139_form_data;
 use App\Models\fam108_current_form;
 use App\Models\fam108_current_form_data;
 use App\Models\financial_declaration_form;
@@ -532,6 +534,33 @@ class FormController extends Controller
             $financial_form->keyss = $key;
             $financial_form->valuess= $req;
             $financial_form->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+
+    }
+
+
+    public function form21() {
+        // WI FA-4139V.pdf
+        return view('form21');
+    }
+
+
+    public function form21_post(Request $request) {
+
+
+        $fa_4139 = new fa_4139_form();
+        $fa_4139->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $fa_4139_data = new fa_4139_form_data();
+            $fa_4139_data->fa_4139_id = $fa_4139->id;
+            $fa_4139_data->keyss = $key;
+            $fa_4139_data->valuess= $req;
+            $fa_4139_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
 

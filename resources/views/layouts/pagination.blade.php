@@ -36,16 +36,17 @@
             <li><a class="dropdown-item" href="{{ route('pdf_form18') }}">18. FL Long Form Spanish.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form19') }}">19. financial-disclosure-form-pdf-fillable.pdf</a></li>
             <li><a class="dropdown-item" href="{{ route('pdf_form20') }}">20. 1352FA_Financial_Declaration.pdf</a></li>
+            <li><a class="dropdown-item" href="{{ route('pdf_form21') }}">21. WI FA-4139V.pdf</a></li>
         </ul>
     </div>
-    @if($page < 20)
+    @if($page < 21)
         @php
             $nextPage = $page + 1;
             $routeName = "pdf_form{$nextPage}";
         @endphp
     <a href="{{ route($routeName) }}" class="text-dark ps-2 my-auto">   <i class="fas fa-chevron-right"></i> </a>
         @endif
-    <div class="my-auto ps-2" ><a href="{{route('pdf_form20')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
+    <div class="my-auto ps-2" ><a href="{{route('pdf_form21')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
 
 </div>
 

@@ -6,7 +6,7 @@
 
       @if($page == 9 )
       <div class="col-lg-2 ">
-          <button type="button" class="bg-transparent px-4">Submit</button>
+          <button type="submit" class="bg-transparent px-4">Submit</button>
       </div>
       <div class="col-lg-1  mt-lg-0 mt-4">
 

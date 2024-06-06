@@ -395,29 +395,29 @@
                                 Attach copies of your pay stubs for last two months (black out Social Security numbers)
                             </div>
                             <div class="col-lg-10">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> a. Employer: </small>
                                    <input type="text" name="e_employer" class="border-0  w-75 ">
                                 </div>
 
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> b. Employer's Address: </small>
                                    <input type="text" name="e_employer_address" class="border-0  w-75 ">
                                 </div>
 
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> c. Employer's phone number: </small>
                                    <input type="text" name="e_employer_phone" class="border-0  w-75 ">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> d. Occupation:</small>
                                    <input type="text" name="e_occupation" class="border-0  w-75 ">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> e. Date job started:</small>
                                    <input type="text" name="e_date_jobstart" class="border-0  w-75 ">
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <small> f. If unemployed, date job ended :</small>
                                    <input type="text" name="e_date_jobend" class="border-0  w-75 ">
                                 </div>
@@ -513,7 +513,7 @@
                         </div>
                         <div class="pt-2 fw-bold">3. Tax Information</div>
                         <div class="row ps-lg-3">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block" >
                                 <small> a. My age is (specify): </small>
                                <input type="text" name="ti_age" class="border-0  w-75 ">
                             </div>
@@ -558,13 +558,13 @@
                             <div class="fw-bold">(If you need more space to answer any questions on tis form, attach an 8 1/2-by-11-inch sheet of paper and write the question number before your answer.) </div>
                             <div class="d-flex d_sm_block">
                                 <small> Number of pages attached:</small>
-                               <input type="text" name="opi_page_attached" class="border-0 border-bottom responsive_input  w-75">
+                               <input type="text" name="opi_page_attached" class="border-0 border-bottom responsive_input footer_field  w-75">
                             </div>
                         </div>
                         <div><small>I declare under penalty of perjury under the laws of the State of California that the information contained on all pages of this form and any attachments is true  and correct</small></div>
                         <div class="d-flex">
                             <div class="  me-2">Date</div>
-                            <div> <input type="text" name="opi_date" class="border-0 border-bottom footer_field"></div>
+                            <div> <input type="text" name="opi_date" class="border-0 border-bottom responsive_input footer_field"></div>
                         </div>
                             <div class="row  ">
                                 <div class="col-lg-6">
