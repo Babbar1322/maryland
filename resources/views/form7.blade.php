@@ -145,7 +145,7 @@
 
 
             .responsive_input {
-                max-width: 100% !important;
+                width: 100% !important;
                 overflow: hidden;
             }
 
@@ -250,15 +250,19 @@
             <form action="{{ route('form7.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="first_section">
-                    @if (session('success'))
-                    <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                            type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                @endif
+
+
+                    <div class="row px-lg-5 px-2 py-5 pt-2">
+                        @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                    @endif
+
                     <div class="text-center py-4"><a href="#" class="text-dark">Click here</a> to get more
                         information
                         about the fields on this form.</div>
-                    <div class="row px-lg-5 px-2 py-5 pt-2">
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6 lh-1 py-2">
@@ -433,10 +437,10 @@
                             </div>
                         </div>
 
-                        <div class="col-1 pt-3 p-0" style="width: 10px;">
+                        <div class="col-1  pt-3 p-0" style="width: 10px;">
                             <div>(a)</div>
                         </div>
-                        <div class="col pt-3 text-center">
+                        <div class="col  pt-3 text-center">
                             <div>Employer</div>
                             <div class="d-flex pt-3">
                                 <div style="width: 50px;">Job 1</div>
@@ -451,7 +455,7 @@
                                 <input type="text" name="job3" class="w-100  border-0 border-bottom">
                             </div>
                         </div>
-                        <div class="col pt-3">
+                        <div class="col  pt-3">
                             <div>Address</div>
                             <div class="pt-3">
                                 <input type="text" name="address1" class="w-100  border-0 border-bottom">
@@ -475,7 +479,7 @@
                                     <input type="radio" name="job1_wages" value="wages1">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="base_pay1" class="border-0 border-bottom"></div>
+                                <div>$ <input type="text" name="base_pay1" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
@@ -594,7 +598,7 @@
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
                                     <input type="text" name="prop_income"
-                                        class="border-0 border-bottom text-end fw-bold">
+                                        class="responsive_input border-0 border-bottom text-end fw-bold">
                                 </div>
                             </div>
                         </div>
@@ -607,7 +611,7 @@
                                 </div>
                                 <div class="d-flex w-100">$
                                     <input type="text" name="security"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
+                                        class=" responsive_inputborder-0 border-bottom text-end fw-bold w-100">
                                 </div>
                             </div>
                         </div>
@@ -2144,7 +2148,7 @@
 
 
                                 <div class="responsive_input">I. Total Net Value All Assets (add items A through H)........................................................................................................................</div>
-                                <div class="d-flex border ms-lg-3">$ <input type="text" name="h_tnv" class="border-0 w-100 text-end"></div>
+                                <div class="d-flex  d_sm_block ms-lg-3">$ <input type="text" name="h_tnv" class="border-0 w-100 border-bottom text-end"></div>
                             </div>
 
                             <div class="pt-lg-3">
@@ -2211,7 +2215,7 @@
                                     </tr>
                                 </table>
                              </div>
-                                <div class="d-flex pt-1">
+                                <div class="d-flex d_sm_block pt-1">
                                    <div>Do you or any member of your family have HUSKY Health Insurance Coverage?</div>
                                     <div class=" ps-3 gap-2">
                                         <input type="radio" name="h_type" value="Yes">
@@ -2233,7 +2237,7 @@
                                     <div>  <strong>If Yes, whom?</strong></div>
                                    <div> <strong>If you have other financial information that has not yet been disclosed, you have an affirmative duty to disclose that
                                         information. List additional information below:</strong></div>
-                                        <div class=" tdata"> <textarea type="text" name="h_ib" class="border-0 w-100 border-dark  " rows="4"></textarea></div>
+                                        <div class=" tdata"> <textarea type="text" name="h_ib" class="border-0 w-100 border-dark  responsive_input" rows="4"></textarea></div>
 
                                 </div>
 
@@ -2245,7 +2249,7 @@
                                             <div class="pt-2"><strong>Total Net Weekly Income </strong>(See Section I. 3)......................................................................................................................... </div>
                                         </div>
                                         <div class="col-lg-3">
-                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="S_tnwi" class="border-0 border-bottom text-end" value="0"></div>
+                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="s_tnwi" class="responsive_input border-0 border-bottom text-end" value="0"></div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -2253,7 +2257,7 @@
                                             <div class="pt-2"><strong>Total Weekly Expenses and Liabilities   </strong>(Total From Section II. + III.(B)) ..........................................................................</div>
                                         </div>
                                         <div class="col-lg-3">
-                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="S_twel" class="border-0 border-bottom text-end" value="0"></div>
+                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="s_twel" class="responsive_input border-0 border-bottom text-end" value="0"></div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -2261,7 +2265,7 @@
                                             <div class="pt-2"><strong>Total Cash Value of Assets </strong>(See Section IV. I.) ....................................................................................................................</div>
                                         </div>
                                         <div class="col-lg-3">
-                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="S_tcva" class="border-0 border-bottom text-end" value="0"></div>
+                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="s_tcva" class="responsive_input border-0 border-bottom text-end" value="0"></div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -2269,7 +2273,7 @@
                                             <div class="pt-2  responsive_input"><strong>Total Liabilities </strong> (Total Balance Due on Debts) (See Section III. (A))...................................................................................</div>
                                         </div>
                                         <div class="col-lg-3">
-                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="S_tl" class="border-0 border-bottom text-end" value="0"></div>
+                                           <div class="d-flex w-100 gap-2"> <div>$</div>   <input type="text" name="s_tl" class="border-0 responsive_input border-bottom text-end" value="0"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -2297,9 +2301,9 @@
                                         </div>
 
                                     </div>
-                                    <div class="d-flex w-100">
-                                        <div class="d-flex  w-50 gap-2" > <span class="pt-2">telephone number</span>   <input type="text" name="S_residing" class="border-0 w-75 border-bottom"   > </div>
-                                        <div class="d-flex  w-50 gap-2" >   <input type="text" name="S_tn" class="border-0 w-50 border-bottom" > <div class="pt-2"> being duly sworn, depose and say that </div> </div>
+                                    <div class="d-flex d_sm_block w-100">
+                                        <div class="d-flex d_sm_block w-50 responsive_input gap-2" > <span class="pt-2">telephone number</span>   <input type="text" name="S_residing" class="border-0 w-75 border-bottom responsive_input"   > </div>
+                                        <div class="d-flex d_sm_block w-50 responsive_input gap-2" >   <input type="text" name="s_tn" class="border-0 w-50 border-bottom responsive_input" > <div class="pt-2"> being duly sworn, depose and say that </div> </div>
 
 
                                     </div>

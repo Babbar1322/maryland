@@ -262,12 +262,13 @@
             <form action="{{ route('form11.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="first_section">
-                    @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+
+                    <div class="row  px-lg-5 px-2   pt-2">
+                        @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show mt-lg-3">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <div class="row  px-lg-5 px-2   pt-2">
                         <div class="small_text text-end fw-bold">FL-160</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="row">

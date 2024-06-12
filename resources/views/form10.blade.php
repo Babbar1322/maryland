@@ -256,13 +256,13 @@
 
             <form action="{{ route('form10.submit') }}" method="post">
                 @csrf
-                <section class="section_area  px-lg-5 px-2 " id="first_section">
+                <section class="section_area pt-lg-5 px-lg-5 px-2 " id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <div class="row      pt-2">
+                    <div class="row pt-2">
                         <div class="small_text text-end fw-bold">FL-161</div>
                         <div class="col-lg-8 border border-dark">
 

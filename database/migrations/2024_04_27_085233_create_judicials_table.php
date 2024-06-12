@@ -13,7 +13,7 @@ class CreateJudicialsTable extends Migration
      */
     public function up()
     {
-        Schema::create('1_md_form_data', function (Blueprint $table) {
+        Schema::create('old_1_md_form_data', function (Blueprint $table) {
             $table->id();
             $table->string("county")->nullable();
             $table->string("court_address")->nullable();
@@ -467,6 +467,6 @@ class CreateJudicialsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('1_md_form_data');
+        Schema::dropIfExists('old_1_md_form_data');
     }
 }

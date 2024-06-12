@@ -16,6 +16,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+
         a {
             color: black !important;
         }
@@ -117,6 +118,10 @@
                 width: 58.33333%;
             }
 
+            .responsive_input {
+                width: 100% !important;
+            }
+
             .case_input_top {
                 min-width: 275px !important;
             }
@@ -183,7 +188,7 @@
                             <div class="row">
                                 <div class="col-md-3   fw-bolder  h5  top_text_width px-lg-0 "
                                     style="max-width: 180px;"> CIRCUIT COURT FOR </div>
-                                <div class="col-md-7 px-lg-0 top_select_box">
+                                <div class="col-md-7 px-lg-0 top_select_box responsive_input">
 
                                     <select id="county" name="county"
                                         class="form-select form-control border-0 border-bottom">

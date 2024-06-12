@@ -157,7 +157,7 @@
 
 
             .responsive_input {
-                max-width: 100% !important;
+            width: 100% !important;
                 overflow: hidden;
             }
 
@@ -267,12 +267,13 @@
             <form action="{{ route('form15.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="section_first">
-                    @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+
+                    <div class="row  px-lg-5 px-2   pt-2">
+                        @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show mt-lg-3">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <div class="row  px-lg-5 px-2   pt-2">
                         <div class="small_text text-end fw-bold">FL-150</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="row">
@@ -439,9 +440,9 @@
                     </div>
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <h6 class="d-flex d_sm_block w-100"><span>I,</span>
-                            <div class="d-flex pt-2">
+                            <div class="d-flex d_sm_block pt-2">
                                 <div class=" "> <input type="text" name="full_name"
-                                        class="border-0 footer_field  border-bottom"></div>
+                                        class="border-0 footer_field responsive_input border-bottom"></div>
                                 <div class="small_text ps-2">(full name) </div>
                             </div>
                             <div class="d-flex ps-2 pt-2">
@@ -458,7 +459,7 @@
 
 
                         <h6 class="d-flex  d_sm_block"><span>I am employed,</span>
-                            <div class="d-flex pt-2 ">
+                            <div class="d-flex d_sm_block pt-2 ">
                                 <div class=""> <input type="text" name="employed"
                                         class="border-0 footer_field w-100 border-bottom"></div>
                                 <div class="small_text ps-2"> hours per week. I am paid </div>
@@ -2188,6 +2189,7 @@
 
                                 </tbody>
                             </table>
+                        </div>
 
 
                             <h1 class="text-center mt-5">
@@ -3225,232 +3227,233 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
 
 
                             <div class="table-responsive ">
-                            <table class="table-bordered border border-2 border-top-none table mb-0  ">
-                                <tbody>
-                                    <tr>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="b_interests"
-                                                    class="border-0 footer_field "> Business Interests
-                                            </div>
+                                <table class="table-bordered border border-2 border-top-none table mb-0  ">
+                                    <tbody>
+                                        <tr>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="b_interests"
+                                                        class="border-0 footer_field "> Business Interests
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="s_options"
-                                                    class="border-0 footer_field "> Stock Options
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="s_options"
+                                                        class="border-0 footer_field "> Stock Options
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="money_loans"
-                                                    class="border-0 footer_field "> Money/Loans owed to you
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="money_loans"
+                                                        class="border-0 footer_field "> Money/Loans owed to you
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="irs"
-                                                    class="border-0 footer_field "> IRS Refunds due to you
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="irs"
+                                                        class="border-0 footer_field "> IRS Refunds due to you
+                                                </div>
 
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="c_club"
-                                                    class="border-0 footer_field "> Country Club &
-                                                Other Memberships
-                                            </div>
+                                        <tr>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="c_club"
+                                                        class="border-0 footer_field "> Country Club &
+                                                    Other Memberships
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="lc_equipment"
-                                                    class="border-0 footer_field "> Livestock, Crops,
-                                                Farm Equipment
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="lc_equipment"
+                                                        class="border-0 footer_field "> Livestock, Crops,
+                                                    Farm Equipment
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="p_lawsuit"
-                                                    class="border-0 footer_field "> Pending lawsuit or claim
-                                                by you
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="p_lawsuit"
+                                                        class="border-0 footer_field "> Pending lawsuit or claim
+                                                    by you
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="apl"
-                                                    class="border-0 footer_field "> Accrued Paid Leave (sick,
-                                                vacation, personal)
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="apl"
+                                                        class="border-0 footer_field "> Accrued Paid Leave (sick,
+                                                    vacation, personal)
+                                                </div>
 
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="ogr"
-                                                    class="border-0 footer_field "> Oil and Gas Rights
-                                            </div>
+                                        <tr>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="ogr"
+                                                        class="border-0 footer_field "> Oil and Gas Rights
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="vcp"
-                                                    class="border-0 footer_field "> Vacation Club Points
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="vcp"
+                                                        class="border-0 footer_field "> Vacation Club Points
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="sdbv"
-                                                    class="border-0 footer_field "> Safety Deposit Box/Vault
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="sdbv"
+                                                        class="border-0 footer_field "> Safety Deposit Box/Vault
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="t_beneficiary"
-                                                    class="border-0 footer_field "> Trust Beneficiary
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="t_beneficiary"
+                                                        class="border-0 footer_field "> Trust Beneficiary
+                                                </div>
 
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="ffm"
-                                                    class="border-0 footer_field "> Frequent Flyer Miles
-                                            </div>
+                                        <tr>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="ffm"
+                                                        class="border-0 footer_field "> Frequent Flyer Miles
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="e_accounts"
-                                                    class="border-0 footer_field "> Education Accounts
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="e_accounts"
+                                                        class="border-0 footer_field "> Education Accounts
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="hs_accounts"
-                                                    class="border-0 footer_field "> Health Savings Accounts
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="hs_accounts"
+                                                        class="border-0 footer_field "> Health Savings Accounts
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="mw_rights"
-                                                    class="border-0 footer_field "> Mineral and Water Rights
-                                            </div>
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="mw_rights"
+                                                        class="border-0 footer_field "> Mineral and Water Rights
+                                                </div>
 
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
 
 
-                                    <tr>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="oc1"
-                                                    class="border-0 footer_field me-2 "> Other -
-                                                <input type="text" min="0" name="ov1"
-                                                    class="border-0 border-bottom footer_fields">
+                                        <tr>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="oc1"
+                                                        class="border-0 footer_field me-2 "> Other -
+                                                    <input type="text" min="0" name="ov1"
+                                                        class="border-0 border-bottom footer_fields">
 
-                                            </div>
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="oc2"
-                                                    class="border-0 footer_field me-2 "> Other -
-                                                <input type="text" min="0" name="ov2"
-                                                    class="border-0 border-bottom footer_fields">
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="oc2"
+                                                        class="border-0 footer_field me-2 "> Other -
+                                                    <input type="text" min="0" name="ov2"
+                                                        class="border-0 border-bottom footer_fields">
 
-                                            </div>
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="oc3"
-                                                    class="border-0 footer_field me-2 "> Other -
-                                                <input type="text" min="0" name="ov3"
-                                                    class="border-0 border-bottom footer_fields">
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="oc3"
+                                                        class="border-0 footer_field me-2 "> Other -
+                                                    <input type="text" min="0" name="ov3"
+                                                        class="border-0 border-bottom footer_fields">
 
-                                            </div>
+                                                </div>
 
-                                        </td>
-                                        <td class=" small_text ">
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="oc4"
-                                                    class="border-0 footer_field me-2 "> Other -
-                                                <input type="text" min="0" name="ov4"
-                                                    class="border-0 border-bottom footer_fields">
+                                            </td>
+                                            <td class=" small_text ">
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="oc4"
+                                                        class="border-0 footer_field me-2 "> Other -
+                                                    <input type="text" min="0" name="ov4"
+                                                        class="border-0 border-bottom footer_fields">
 
-                                            </div>
+                                                </div>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3"
-                                            class="bg-secondary small_text fw-bold text-end pe-2 pt-4">Total
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"
+                                                class="bg-secondary small_text fw-bold text-end pe-2 pt-4">Total
 
-                                        </td>
-                                        <td class="small_text">
-                                            <div class=" ">
-                                                <div class="d-flex  text-bottom mt-3">$<input type="text"
-                                                        min="0" name="h_total"
-                                                        class="border-0 footer_field w-100"> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="bg-secondary small_text fw-bold">I. Separate
-                                            Property
-                                            <div class="small_text d-flex">
-                                                <input type="checkbox" min="0" name="i_c1"
-                                                    class="border-0 footer_field "> None <input type="checkbox"
-                                                    min="0" name="i_c2"
-                                                    class="border-0 footer_field  ms-4"> If owned please attach JDF
-                                                1111-SS to identify the property and to report the value.
-                                            </div>
+                                            </td>
+                                            <td class="small_text">
+                                                <div class=" ">
+                                                    <div class="d-flex  text-bottom mt-3">$<input type="text"
+                                                            min="0" name="h_total"
+                                                            class="border-0 footer_field w-100"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="bg-secondary small_text fw-bold">I. Separate
+                                                Property
+                                                <div class="small_text d-flex">
+                                                    <input type="checkbox" min="0" name="i_c1"
+                                                        class="border-0 footer_field "> None <input type="checkbox"
+                                                        min="0" name="i_c2"
+                                                        class="border-0 footer_field  ms-4"> If owned please attach JDF
+                                                    1111-SS to identify the property and to report the value.
+                                                </div>
 
-                                        </td>
-                                        <td class="text-end bg-secondary pe-2 pt-2 ">Total </td>
-                                        <td class="small_text">
-                                            <div class=" ">
-                                                <div class="d-flex mt-2 ">$<input type="text" min="0"
-                                                        name="i_total" class="border-0 footer_field w-100"> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                            </td>
+                                            <td class="text-end bg-secondary pe-2 pt-2 ">Total </td>
+                                            <td class="small_text">
+                                                <div class=" ">
+                                                    <div class="d-flex mt-2 ">$<input type="text" min="0"
+                                                            name="i_total" class="border-0 footer_field w-100"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td colspan="3"
-                                            class="bg-secondary small_text fw-bold fs-4 text-center p-2">Total
-                                            Value/Balance of All Assets (A – I)
-                                        </td>
-                                        <td class="small_text">
-                                            <div class=" ">
-                                                <div class="d-flex  text-end">$<input type="text"
-                                                        min="0" name="tv_assets"
-                                                        class="border-0 footer_field w-100"> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td colspan="3"
+                                                class="bg-secondary small_text fw-bold fs-4 text-center p-2">Total
+                                                Value/Balance of All Assets (A – I)
+                                            </td>
+                                            <td class="small_text">
+                                                <div class=" ">
+                                                    <div class="d-flex  text-end">$<input type="text"
+                                                            min="0" name="tv_assets"
+                                                            class="border-0 footer_field w-100"> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
                             </div>
 
                             <div class="mt-4 fw-bold">I swear or affirm under oath that this Sworn Financial
@@ -3466,9 +3469,9 @@
 
                             <div class="row mt-3">
                                 <div class="col-lg-6">
-                                    <div class=" d-flex">
-                                        <div class="d-flex ">Date : <input type="text" min="0"
-                                                name="date" class="border-0 border-bottom footer_field "> </div>
+                                    <div class=" d-flex d_sm_block">
+                                        <div class="d-flex d_sm_block">Date : <input type="text" min="0"
+                                                name="date" class="border-0 border-bottom footer_field responsive_input"> </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -3477,7 +3480,7 @@
                                                 name="signature" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="small_text d-flex mt-1 ">
+                                    <div class="small_text d-flex d_sm_block mt-1 ">
                                         Signature of
                                         <input type="checkbox" min="0" name="s_petitioner"
                                             class="border-0 footer_field ms-2 "> Petitioner or <input
@@ -3491,29 +3494,29 @@
                                         class="border-0 border-bottom footer_field w-100"> </div>
                             </div>
 
-                            <div class="mt-1 d-flex">
+                            <div class="mt-1 d-flex d_sm_block">
                                 Subscribed and affirmed, or sworn to before me in the County of <div
-                                    class="d-flex  me-2"><input type="text" min="0" name="countryof"
-                                        class="border-0 border-bottom footer_field ">, </div> State of <div
-                                    class="d-flex  me-2 "><input type="text" min="0" name="stateof"
-                                        class="border-0 border-bottom footer_field ">, </div> this <div
-                                    class="d-flex  me-2 "><input type="text" min="0" name="this"
-                                        class="border-0 border-bottom footer_field "></div>
+                                    class="d-flex  me-lg-2"><input type="text" min="0" name="countryof"
+                                        class="border-0 border-bottom footer_field responsive_input ">, </div> State of <div
+                                    class="d-flex  me-lg-2 "><input type="text" min="0" name="stateof"
+                                        class="border-0 border-bottom footer_field responsive_input ">, </div> this <div
+                                    class="d-flex  me-lg-2 "><input type="text" min="0" name="this"
+                                        class="border-0 border-bottom footer_field responsive_input "></div>
                             </div>
-                            <div class="mt-2 d-flex">day of <div class="d-flex  me-2"><input type="text"
+                            <div class="mt-2 d-flex d_sm_block">day of <div class="d-flex  me-2"><input type="text"
                                         min="0" name="dayof"
-                                        class="border-0 border-bottom footer_field ">, </div> 20 <div
+                                        class="border-0 border-bottom footer_field responsive_input ">, </div> 20 <div
                                     class="d-flex  me-2 "><input type="text" min="0" name="20"
-                                        class="border-0 border-bottom footer_field "> . </div>
+                                        class="border-0 border-bottom footer_field responsive_input "> . </div>
                             </div>
 
 
                             <div class="row mt-3">
                                 <div class="col-lg-6">
-                                    <div class=" d-flex">
-                                        <div class="d-flex ">My Commission Expires: <input type="text"
+                                    <div class=" d-flex d_sm_block">
+                                        <div class="d-flex d_sm_block">My Commission Expires: <input type="text"
                                                 min="0" name="c_expires"
-                                                class="border-0 border-bottom footer_field "> </div>
+                                                class="responsive_input border-0 border-bottom footer_field "> </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

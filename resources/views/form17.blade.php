@@ -268,13 +268,14 @@
             <form action="{{ route('form17.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="section_one">
-                    @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
+                            @if (session('success'))
+                            <div class="alert alert-success alert-dismissible fade show mt-lg-5">{{ session('success') }} <button
+                                    type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
                             <div class="px-lg-5 px-2 py-5">
                                 <div class="fw-bold text-center">
                                     <h2 class="fw-bold">INSTRUCTIONS FOR FLORIDA FAMILY LAW RULES OF PROCEDURE</h2>

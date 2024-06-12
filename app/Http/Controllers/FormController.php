@@ -35,11 +35,19 @@ use App\Models\form4;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
+use App\Models\ky_disclosure_statement_form;
+use App\Models\ky_disclosure_statement_form_data;
+use App\Models\md_form;
+use App\Models\md_form_data;
+use App\Models\md_partially_form;
+use App\Models\md_partially_form_data;
 use App\Models\pa_form;
 use App\Models\sfs_co_form;
 use App\Models\sfs_co_form_data;
 use App\Models\spanish_form;
 use App\Models\spanish_form_data;
+use App\Models\wi_spanish_form;
+use App\Models\wi_spanish_form_data;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -101,7 +109,23 @@ class FormController extends Controller
 
         public function form1_post(Request $request) {
 
-            judicial::create($request->all());
+                  // MD.pdf
+
+            // judicial::create($request->all());
+
+            $md_form = new md_form();
+            $md_form->save();
+
+            foreach($request->all() as $key=>$req){
+                if($key == "_token"){
+                    continue;
+                }
+                $md_form_data = new md_form_data();
+                $md_form_data->md_form_id = $md_form->id;
+                $md_form_data->keyss = $key;
+                $md_form_data->valuess= $req;
+                $md_form_data->save();
+            }
 
             return redirect()->back()->with('success', 'Data Submitted Successfully.');
         }
@@ -114,7 +138,21 @@ class FormController extends Controller
 
     public function form2_post(Request $request) {
 
-        form2::create($request->all());
+            // MD partially filled out to check formulas.pdf
+
+        $md_partially = new md_partially_form();
+        $md_partially->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $md_partially_data = new md_partially_form_data();
+            $md_partially_data->ky_disclosure_statement_id = $md_partially->id;
+            $md_partially_data->keyss = $key;
+            $md_partially_data->valuess= $req;
+            $md_partially_data->save();
+        }
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
@@ -124,20 +162,22 @@ class FormController extends Controller
     }
 
     public function form3_post(Request $request){
-        // form3::create($request->all());
 
-        $nj = new ga_form();
-        $nj->save();
+        // domestic-relations-financial-affidavit_type-in-form GA.pdf
+
+
+        $domestic_relations = new ga_form();
+        $domestic_relations->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $nj_data = new form3();
-            $nj_data->ga_form_id = $nj->id;
-            $nj_data->keyss = $key;
-            $nj_data->valuess= $req;
-            $nj_data->save();
+            $domestic_relations_data = new form3();
+            $domestic_relations_data->ga_form_id = $domestic_relations->id;
+            $domestic_relations_data->keyss = $key;
+            $domestic_relations_data->valuess= $req;
+            $domestic_relations_data->save();
         }
 
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
@@ -149,18 +189,22 @@ class FormController extends Controller
     }
 
     public function form4_post(Request $request) {
-        $nj = new pa_form();
-        $nj->save();
+
+        // rev-488 PA.pdf
+
+
+        $rev_pa = new pa_form();
+        $rev_pa->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $nj_data = new form4();
-            $nj_data->pa_form_id = $nj->id;
-            $nj_data->keyss = $key;
-            $nj_data->valuess= $req;
-            $nj_data->save();
+            $rev_pa_data = new form4();
+            $rev_pa_data->pa_form_id = $rev_pa->id;
+            $rev_pa_data->keyss = $key;
+            $rev_pa_data->valuess= $req;
+            $rev_pa_data->save();
         }
         return  redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -174,18 +218,22 @@ class FormController extends Controller
 
 
     public function form5_post(Request $request) {
-        $nj = new nj_form();
-        $nj->save();
+
+        // 10482_fam_cis NJ.pdf
+
+
+        $fam_cis_nj = new nj_form();
+        $fam_cis_nj->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $nj_data = new nj_form_data();
-            $nj_data->nj_form_id = $nj->id;
-            $nj_data->keyss = $key;
-            $nj_data->valuess= $req;
-            $nj_data->save();
+            $fam_cis_nj_data = new nj_form_data();
+            $fam_cis_nj_data->nj_form_id = $fam_cis_nj->id;
+            $fam_cis_nj_data->keyss = $key;
+            $fam_cis_nj_data->valuess= $req;
+            $fam_cis_nj_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -197,6 +245,7 @@ class FormController extends Controller
     }
 
     public function form6_post(Request $request){
+          // fm006-short  CT.pdf
         $form = new cc320_form();
         $form->save();
         foreach($request->all() as $key=>$req){
@@ -218,18 +267,22 @@ class FormController extends Controller
     }
 
     public function form7_post(Request $request) {
-        $cshort = new cc320_form();
-        $cshort->save();
+
+          // fm006-short  CT.pdf
+
+
+        $ct_short = new cc320_form();
+        $ct_short->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $cshort_data = new cc320_form_data();
-            $cshort_data->cshort_form_id = $cshort->id;
-            $cshort_data->keyss = $key;
-            $cshort_data->valuess= $req;
-            $cshort_data->save();
+            $ct_short_data = new cc320_form_data();
+            $ct_short_data->cshort_form_id = $ct_short->id;
+            $ct_short_data->keyss = $key;
+            $ct_short_data->valuess= $req;
+            $ct_short_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -243,18 +296,22 @@ class FormController extends Controller
 
 
     public function form8_post(Request $request) {
-        $cshort = new ct_long_form();
-        $cshort->save();
+
+        // CT Long.pdf
+
+
+        $ct_long = new ct_long_form();
+        $ct_long->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $cshort_data = new ct_long_form_data();
-            $cshort_data->cslong_form_id = $cshort->id;
-            $cshort_data->keyss = $key;
-            $cshort_data->valuess= $req;
-            $cshort_data->save();
+            $ct_long_data = new ct_long_form_data();
+            $ct_long_data->cslong_form_id = $ct_long->id;
+            $ct_long_data->keyss = $key;
+            $ct_long_data->valuess= $req;
+            $ct_long_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -268,6 +325,10 @@ class FormController extends Controller
     }
 
     public function form9_post(Request $request) {
+
+         // fl140  CA.pdf
+
+
         $fl140_ca = new fl140_ca_form();
         $fl140_ca->save();
 
@@ -292,6 +353,9 @@ class FormController extends Controller
 
 
     public function form10_post(Request $request) {
+        // fl161 CA.pdf
+
+
         $fl161_ca = new fl161_ca_form();
         $fl161_ca->save();
 
@@ -313,6 +377,10 @@ class FormController extends Controller
 
 
     public function form11_post(Request $request) {
+
+        // fl160  CA.pdf
+
+
         $fl160_ca = new fl160_ca_form();
         $fl160_ca->save();
 
@@ -334,6 +402,9 @@ class FormController extends Controller
 
 
     public function form12_post(Request $request) {
+
+        // FAM108_Current.pdf
+
         $fam108_current = new fam108_current_form();
         $fam108_current->save();
 
@@ -356,6 +427,9 @@ class FormController extends Controller
 
 
     public function form13_post(Request $request) {
+
+        // fl142  CA.pdf
+
         $fl140_ca = new fl142_ca_form();
         $fl140_ca->save();
 
@@ -379,7 +453,7 @@ class FormController extends Controller
     }
 
     public function form14_post(Request $request) {
-
+    // fl150  CA.pdf
         $fl150_ca = new fl150_ca_form();
         $fl150_ca->save();
 
@@ -403,6 +477,10 @@ class FormController extends Controller
 
 
     public function form15_post(Request $request) {
+
+        // Sworn-Financial-Statement  CO.pdf
+
+
         $sfs_co_form = new sfs_co_form();
         $sfs_co_form->save();
 
@@ -428,6 +506,9 @@ class FormController extends Controller
 
 
     public function form16_post(Request $request){
+
+          // 902c10-21  FL long form.pdf
+
         $fl_long = new fl_long_form();
         $fl_long->save();
 
@@ -444,12 +525,13 @@ class FormController extends Controller
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
     public function form17() {
-        // 902b 11-20   FL short form.pdf
+        // 902b 11-20 FL short form.pdf
         return  view('form17');
     }
 
 
     public function form17_post(Request $request){
+           // 902b 11-20 FL short form.pdf
         $fl_short = new fl_short_form();
         $fl_short->save();
 
@@ -471,6 +553,9 @@ class FormController extends Controller
         return  view('form18');
     }
     public function form18_post(Request $request){
+
+                // FL Long Form Spanish.pdf
+
         $spanish = new spanish_form();
         $spanish->save();
 
@@ -478,11 +563,11 @@ class FormController extends Controller
             if($key == "_token"){
                 continue;
             }
-            $spanish_form = new spanish_form_data();
-            $spanish_form->spanish_id = $spanish->id;
-            $spanish_form->keyss = $key;
-            $spanish_form->valuess= $req;
-            $spanish_form->save();
+            $spanish_data = new spanish_form_data();
+            $spanish_data->spanish_id = $spanish->id;
+            $spanish_data->keyss = $key;
+            $spanish_data->valuess= $req;
+            $spanish_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -497,6 +582,9 @@ class FormController extends Controller
 
 
     public function form19_post(Request $request){
+
+                // financial-disclosure-form-pdf-fillable.pdf
+
         $financial_disclosure = new financial_disclosure_form();
         $financial_disclosure->save();
 
@@ -504,11 +592,11 @@ class FormController extends Controller
             if($key == "_token"){
                 continue;
             }
-            $financial_disclosure_form = new financial_disclosure_form_data();
-            $financial_disclosure_form->financial_disclosure_id = $financial_disclosure->id;
-            $financial_disclosure_form->keyss = $key;
-            $financial_disclosure_form->valuess= $req;
-            $financial_disclosure_form->save();
+            $financial_disclosure_data = new financial_disclosure_form_data();
+            $financial_disclosure_data->financial_disclosure_id = $financial_disclosure->id;
+            $financial_disclosure_data->keyss = $key;
+            $financial_disclosure_data->valuess= $req;
+            $financial_disclosure_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -520,20 +608,21 @@ class FormController extends Controller
     }
 
     public function form20_post(Request $request) {
+        // 1352FA_Financial_Declaration.pdf
 
 
-        $financial_disclosure = new financial_declaration_form();
-        $financial_disclosure->save();
+        $financial_declaration = new financial_declaration_form();
+        $financial_declaration->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $financial_form = new financial_declaration_form_data();
-            $financial_form->financial_id = $financial_disclosure->id;
-            $financial_form->keyss = $key;
-            $financial_form->valuess= $req;
-            $financial_form->save();
+            $financial_declaration_data = new financial_declaration_form_data();
+            $financial_declaration_data->financial_id = $financial_declaration->id;
+            $financial_declaration_data->keyss = $key;
+            $financial_declaration_data->valuess= $req;
+            $financial_declaration_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
 
@@ -548,7 +637,7 @@ class FormController extends Controller
 
     public function form21_post(Request $request) {
 
-
+       // WI FA-4139V.pdf
         $fa_4139 = new fa_4139_form();
         $fa_4139->save();
 
@@ -563,6 +652,56 @@ class FormController extends Controller
             $fa_4139_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
-
     }
+
+
+    public function form22() {
+        // WI SPANISH FA-4139V_es.pdf
+        return view('form22');
+    }
+
+
+    public function form22_post(Request $request) {
+        // WI SPANISH FA-4139V_es.pdf
+
+        $wi_spanish_form = new wi_spanish_form();
+        $wi_spanish_form->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $wi_spanish_form_data = new wi_spanish_form_data();
+            $wi_spanish_form_data->fa_spanish_id = $wi_spanish_form->id;
+            $wi_spanish_form_data->keyss = $key;
+            $wi_spanish_form_data->valuess= $req;
+            $wi_spanish_form_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+    public function form23() {
+
+        // KY Disclosure statement 238-239.pdf
+        return view('form23');
+    }
+    public function form23_post(Request $request) {
+
+        // KY Disclosure statement 238-239.pdf
+
+        $ky_disclosure_statement = new ky_disclosure_statement_form();
+        $ky_disclosure_statement->save();
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $ky_disclosure_statement_data = new ky_disclosure_statement_form_data();
+            $ky_disclosure_statement_data->ky_disclosure_statement_id = $ky_disclosure_statement->id;
+            $ky_disclosure_statement_data->keyss = $key;
+            $ky_disclosure_statement_data->valuess= $req;
+            $ky_disclosure_statement_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
 }

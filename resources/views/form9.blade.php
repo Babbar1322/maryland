@@ -250,12 +250,13 @@
             <form action="{{ route('form9.submit') }}" method="post">
                 @csrf
                 <section class="section_area">
-                    @if (session('success'))
+
+                    <div class="row  px-lg-5 px-2   pt-2">
+                        @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <div class="row  px-lg-5 px-2   pt-2">
                         <div class="small_text text-end fw-bold">FL-140</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="small_text">ATTORNEY OR PARTY WITHOUT ATTORNEY (Name, State Bar number, and

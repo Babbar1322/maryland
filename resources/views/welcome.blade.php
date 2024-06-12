@@ -369,6 +369,26 @@
                   </div>
                 </a>
             </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form22')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 22</h5>
+                      <span>WI SPANISH FA-4139V_es.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form23')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 23</h5>
+                      <span>KY Disclosure statement 238-239.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

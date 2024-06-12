@@ -251,7 +251,9 @@
             <form action="{{ route('form8.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="first_section">
-                    @if (session('success'))
+
+                    <div class="row px-lg-5 px-2 py-5 pt-2">
+                        @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                 type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
@@ -259,7 +261,6 @@
                     <div class="text-center py-4"><a href="#" class="text-dark">Click here</a> to get more
                         information
                         about the fields on this form.</div>
-                    <div class="row px-lg-5 px-2 py-5 pt-2">
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6 lh-1 py-2">

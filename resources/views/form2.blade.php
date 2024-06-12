@@ -86,6 +86,7 @@
             width: 50% !important;
             font-size: 21px;
         }
+
         @media screen and (min-width : 1600px) {
 
             .top_select_box{
@@ -110,6 +111,10 @@
 
 
         @media screen and (max-width : 768px) {
+
+            .responsive_input {
+                width: 100% !important;
+            }
             .top_select_box{
                 width: 58.33333% ;
                         }
@@ -257,7 +262,7 @@ background-color: white !important;
                         <div class="col-lg-11">
                             <div class="row">
                                 <div class="col-md-3 fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; "> CIRCUIT COURT FOR </div>
-                                <div class="col-md-7 px-lg-0 top_select_box" >
+                                <div class="col-md-7 px-lg-0 top_select_box responsive_input" >
                                     <select id="county" name="county" class="form-select form-control border-0 border-bottom">
                                         <option selected=""> </option>
                                         <option value="CIRCUIT COURT LOCATIONS">CIRCUIT COURT LOCATIONS</option>

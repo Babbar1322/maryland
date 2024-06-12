@@ -164,13 +164,14 @@
             <form action="{{ route('form18.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="section_first">
-                    @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
+                            @if (session('success'))
+                            <div class="alert alert-success alert-dismissible fade show mt-lg-5">{{ session('success') }} <button
+                                    type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="row  d-flex justify-content-between border-bottom">
                                     <div class="col-lg-6  col-md-6 mx-auto ">

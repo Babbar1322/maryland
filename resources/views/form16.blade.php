@@ -159,6 +159,7 @@
 
             .responsive_input {
                 max-width: 100% !important;
+                width: 100% !important;
                 overflow: hidden;
             }
 
@@ -268,13 +269,15 @@
             <form action="{{ route('form16.submit') }}" method="post">
                 @csrf
                 <section class="section_area" id="section_first">
-                    @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+
                     <div class="row">
+
                         <div class="col-lg-10 mx-auto">
+                            @if (session('success'))
+                            <div class="alert alert-success alert-dismissible fade show mt-lg-5">{{ session('success') }} <button
+                                    type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
                             <section class="px-lg-5 px-2 py-5">
                                 <div class="fw-bold text-center">
                                     <h2 class="fw-bold">INSTRUCTIONS FOR FLORIDA FAMILY LAW RULES OF PROCEDURE</h2>

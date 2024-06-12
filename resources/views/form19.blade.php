@@ -253,12 +253,13 @@
 
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
                     id="first_section">
-                    @if (session('success'))
-                    <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                            type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                @endif
+
                     <div class="col-lg-10 mx-auto">
+                        @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
                         <div class="row">
                             <div class="col-lg-6">
                                 <h5>FDF</h5>

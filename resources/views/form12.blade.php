@@ -158,7 +158,7 @@
 
 
             .responsive_input {
-                max-width: 100% !important;
+                width: 100% !important;
                 overflow: hidden;
             }
 
@@ -591,7 +591,7 @@
 
                             </div>
 
-                            <div class="d-flex">g. Is the wife now pregnant?
+                            <div class="d-flex d_sm_block">g. Is the wife now pregnant?
 
 
                                 <span class="d-flex ps-3">
@@ -624,7 +624,7 @@
                         <div class="d-flex ps-lg-5">a. Are you employed?
 
 
-                            <span class="d-flex ps-3 pb-5">
+                            <span class="d-flex ps-3 pb-lg-5">
                                 <div class="d-flex  ">
                                     <input type="radio" name="employed" value="No" class="me-1">
                                     <div>No</div>
@@ -998,10 +998,10 @@
                                 <div class="mt-1 ps-3">Union Dues</div>
                                 <div class="mt-1">c. Other Paycheck Deductions (specify)</div>
                                 <div class=""> <input type="text" name="other_paycheck1"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="mb-3"> <input type="text" name="other_paycheck2"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                     <div class="mt-1">d. Subtotal Deductions</div>
                                     <div class="mt-1">e. NET TAKE HOME PAY</div>
                                 </div>
@@ -1010,53 +1010,53 @@
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="federal_income_tax_deductions"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
 
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="state_tax_deductions"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="social_security"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="retirement_contribution"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="union_dues"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="other_paycheck_deductions"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="other_paycheck3"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="other_paycheck4"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="subtotal_deductions"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
                                     <input type="text" name="net_take_home_pay"
-                                        class="border-0 border-bottom footer_field">
+                                        class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                             </div>
                         </div>
