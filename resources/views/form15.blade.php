@@ -39,6 +39,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         input[type='radio'] {
@@ -494,47 +496,41 @@
                             <div class="d-flex ps-2 pt-2">$<input type="number" min="0"
                                     name="hourly_rate_value" class="border-0 footer_field w-100 border-bottom">
                             </div>
-                            <div class="d-flex pt-2">
+                            <div class="d-flex d_sm_block pt-2">
                                 <div class="small_text ps-2"> <input type="checkbox" name="hourly_rate_other_ch">
                                     Other: </div>
-                                <div class=""> <input type="text" name="hourly_rate_other_val"
-                                        class="border-0 footer_field w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="hourly_rate_other_val" class="border-0 footer_field w-100 border-bottom responsive_input"></div>
                             </div>
                         </h6>
                         <h6 class="d-flex d_sm_block">
                             <div class="d-flex d_sm_block">
-                                <div class="small_text  ">Date employment began</div>
-                                <div class="d-flex"> <input type="text" name="employment_began"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"> <small
-                                        class="pt-1">.</small>
+                                <div class="small_text">Date employment began</div>
+                                <div class="d-flex"> <input type="text" name="employment_began" class="border-0 footer_field table_input w-100 border-bottom">
+                                    <small class="pt-1">.</small>
                                 </div>
                             </div>
                         </h6>
                         <h6 class="d-flex d_sm_block ">
                             <div class="d-flex d_sm_block">
                                 <div class="small_text">My occupation is:</div>
-                                <div class=""> <input type="text" name="my_occupation"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="my_occupation" class="border-0 footer_field   table_input w-100 border-bottom"></div>
                             </div>
                             <div class="d-flex d_sm_block  ">
                                 <div class="small_text">Name of employer:</div>
-                                <div class=" "> <input type="text" name="name_employer"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div class=" "> <input type="text" name="name_employer" class="border-0 footer_field table_input w-100 border-bottom"></div>
                             </div>
                         </h6>
 
                         <h6 class="d-flex d_sm_block ">
                             <div class="d-flex d_sm_block ">
                                 <div class="small_text">Address of employer:</div>
-                                <div class=""> <input type="text" name="address_employer"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="address_employer" class="border-0 footer_field   table_input w-100 border-bottom"></div>
                             </div>
                         </h6>
                         <h6 class="d-flex d_sm_block ">
                             <div class="d-flex d_sm_block">
                                 <div class="small_text">If unemployed, what date did you last work? </div>
-                                <div class=""> <input type="text" name="last_work"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="last_work" class="border-0 footer_field   table_input w-100 border-bottom"></div>
                             </div>
                         </h6>
                         <h6 class="d-flex d_sm_block "><span class="pt-2">I am unemployed due to </span>
@@ -546,97 +542,72 @@
                                 <div> <input type="checkbox" name="involuntary" class="border-0 footer_field "></div>
                                 <div class="small_text ps-2">involuntary layoff at work </div>
                             </div>
-                            <div class="d-flex pt-2">
+                            <div class="d-flex pt-2 d_sm_block">
                                 <div class="small_text ps-2"> <input type="checkbox" name="involuntary_other_ch">
                                     Other: </div>
-                                <div class=""> <input type="text" name="involuntary_other_val"
-                                        class="border-0 footer_field w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="involuntary_other_val" class="border-0 footer_field w-100 border-bottom responsive_input"></div>
                             </div>
                         </h6>
                         <h6 class="d-flex d_sm_block ">
                             <div class="d-flex d_sm_block">
                                 <div class="small_text">This household consists of</div>
-                                <div class=""> <input type="text" name="household_consists_adult"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div class=""> <input type="text" name="household_consists_adult" class="border-0 footer_field   table_input w-100 border-bottom"></div>
                             </div>
                             <div class="d-flex d_sm_block">
                                 <div class="small_text">adult(s), and </div>
-                                <div> <input type="text" name="household_consists_children"
-                                        class="border-0 footer_field   table_input w-100 border-bottom"></div>
+                                <div> <input type="text" name="household_consists_children" class="border-0 footer_field   table_input w-100 border-bottom"></div>
                             </div>
                             <div class="">minor child(ren).</div>
                         </h6>
 
                         <h6 class="d-flex d_sm_block ">
                             <span class="pt-2">I believe the monthly gross income of the other party is</span>
-                            <div class="d-flex ps-2 pt-2">$<input type="number" min="0"
-                                    name="monthly_gross_income_party"
-                                    class="border-0 footer_field w-100 border-bottom"> <span class="pt-1">.</span>
-                            </div>
+                            <div class="d-flex ps-2 pt-2">$<input type="number" min="0" name="monthly_gross_income_party" class="border-0 footer_field w-100 border-bottom"> <span class="pt-1">.</span> </div>
                         </h6>
 
                         <h6 class="d-flex d_sm_block ">
                             <div class="d-flex d_sm_block">
                                 <span class="pt-2">Annual gross income (last tax year) for Petitioner</span>
-                                <div class="d-flex ps-2 pt-2">$<input type="number" min="0"
-                                        name="annual_gross_income_petitioner"
-                                        class="border-0 footer_field w-100 border-bottom"> <span
-                                        class="pt-1">,</span></div>
+                                <div class="d-flex ps-2 pt-2">$<input type="number" min="0" name="annual_gross_income_petitioner" class="border-0 footer_field w-100 border-bottom"> <span class="pt-1">,</span></div>
                             </div>
                             <div class="d-flex d_sm_block  pt-2">
-                                <span class="pt-2"> <input name="co_respondent_ch" type="checkbox"
-                                        class="mx-2">Co-Petitioner/Respondent</span>
-                                <div class="d-flex ps-2 pt-2">$<input type="number" min="0"
-                                        name="co_respondent_val" class="border-0 footer_field w-100 border-bottom">
-                                </div>
+                                <span class="pt-2"> <input name="co_respondent_ch" type="checkbox" class="mx-2">Co-Petitioner/Respondent</span>
+                                <div class="d-flex ps-2 pt-2">$<input type="number" min="0" name="co_respondent_val" class="border-0 footer_field w-100 border-bottom"> </div>
                             </div>
                         </h6>
-
                     </div>
 
                     <div class="row px-lg-5 px-2 py-2 pt-0">
-                        <div> <span class="pe-lg-3 ps-2">1. </span> Monthly Income (Convert annual, bi-monthly, and
-                            weekly amounts to monthly amounts.)</div>
+                        <div> <span class="pe-lg-3 ps-2">1. </span> Monthly Income (Convert annual, bi-monthly, and weekly amounts to monthly amounts.)</div>
 
                         <div class="table-responsive pt-3">
                             <table class="table-bordered border border-2 table  ">
-
                                 <tbody>
                                     <tr>
-                                        <td class=" small_text" style="max-width: 300px">Gross Monthly Income (before
-                                            taxes and deductions) from salary and wages, including commissions, bonuses,
-                                            overtime, self- employment, business income, other jobs, and monthly
-                                            reimbursed expenses.</td>
-                                        <td class=" small_text">
+                                        <td class="small_text" style="max-width: 300px">Gross Monthly Income (before taxes and deductions) from salary and wages, including commissions, bonuses, overtime, self- employment, business income, other jobs, and monthly reimbursed expenses.</td>
+                                        <td class="small_text">
                                             <div class="">
-                                                <div class="d-flex ">$<input type="text" min="0"
-                                                        name="gmi_before_taxes" class="border-0 footer_field w-100">
-                                                </div>
+                                                <div class="d-flex">$<input type="text" min="0" name="gmi_before_taxes" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
-                                        <td class=" small_text">
+                                        <td class="small_text">
                                             <div class="">Social Security Benefits (SSA)</div>
-                                            <div class="d-flex"> <input type="checkbox" name="ssdi"
-                                                    class="me-2">
+                                            <div class="d-flex"> <input type="checkbox" name="ssdi" class="me-2">
                                                 <div>SSDI (Disability insurance – entitlement program)</div>
                                             </div>
-                                            <div class="d-flex"> <input type="checkbox" name="ssi"
-                                                    class="me-2">
+                                            <div class="d-flex"> <input type="checkbox" name="ssi" class="me-2">
                                                 <div>SSI (supplemental income – need based)</div>
                                             </div>
                                         </td>
-                                        <td class=" small_text">
-                                            <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
-                                                        name="ssa_value" class="border-0 footer_field w-100"> </div>
+                                        <td class="small_text">
+                                            <div class="">
+                                                <div class="d-flex ">$<input type="text" min="0" name="ssa_value" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td class="small_text">Unemployment & Veterans’ Benefits</td>
-                                        <td class=" small_text"> <input type="text" min="0"
-                                                name="unemployment_veterans" class="border-0 footer_field w-100">
+                                        <td class=" small_text"> <input type="text" min="0" name="unemployment_veterans" class="border-0 footer_field w-100">
                                         </td>
                                         <td class="small_text">Disability, Workers’ Compensation</td>
                                         <td class=" small_text"> <input type="text" min="0"

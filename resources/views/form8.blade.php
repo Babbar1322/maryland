@@ -35,6 +35,7 @@
         input,
         table {
             background-color: transparent !important;
+
         }
         input[type='radio'] {
     accent-color:  #8c8a8a !important;
@@ -883,16 +884,16 @@
                 </section>
                 <section class="section_area p-5" id="mandatory_deductions">
                     <div>
-                        <div class="d-flex">
+                        <div class="d-flex d_sm_block">
                             <div class="fw-bold pe-3">2) Mandatory Deductions</div>
                             <div> (If consistent deductions don't occur every pay check
                                 <span class="fw-bold">provide average amounts.</span>
                                 )
                             </div>
                         </div>
-                        <div class="px-5">
+                        <div class="px-lg-5">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class=" table-responsive">
                                     <table class="table-borderless">
                                         <tr>
                                             <td style="width:400px;"></td>
@@ -2705,13 +2706,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                    <input class="mx-auto text-center"  type="radio" name="a_o1" style="width:30px;"  value="S">
+                                                    <input class="mx-auto text-center"  type="radio" name="a_o1" style=""  value="S">
                                                 </div>
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                    <input  class="p-1" type="radio" name="a_o1" style="width:30px;" value="JTS">
+                                                    <input  class="p-1" type="radio" name="a_o1" style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark  p-1 mx-auto text-center">
-                                                <input class="p-1"  type="radio" name="a_o1" style="width:30px;" value="JTO">
+                                                <input class="p-1"  type="radio" name="a_o1" style="" value="JTO">
                                             </div>
 
 
@@ -2748,13 +2749,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="a_o2" style="width:30px;"  value="S">
+                                                            <input class="mx-auto text-center"  type="radio" name="a_o2" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="a_o2" style="width:30px;" value="JTS">
+                                                            <input  class="p-1" type="radio" name="a_o2" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="a_o2" style="width:30px;" value="JTO">
+                                                        <input class="p-1"  type="radio" name="a_o2" style="" value="JTO">
                                                     </div>
 
 
@@ -2788,13 +2789,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="a_o3" style="width:30px;"  value="S">
+                                                            <input class="mx-auto text-center"  type="radio" name="a_o3" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="a_o3" style="width:30px;" value="JTS">
+                                                            <input  class="p-1" type="radio" name="a_o3" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="a_o3" style="width:30px;" value="JTO">
+                                                        <input class="p-1"  type="radio" name="a_o3" style="" value="JTO">
                                                     </div>
 
 
@@ -2845,7 +2846,7 @@
                                         <td class="py-2 text-center">
                                             <div class="border-bottom">Ownership</div>
                                             <div class="d-flex">
-                                                <div class="border-end border-dark p-1" style="width:30px;">S</div>
+                                                <div class="border-end border-dark p-1" style="">S</div>
                                                 <div class="border-end border-dark p-1">JTS</div>
                                                 <div class="  border-dark p-1">JTO</div>
                                             </div>
@@ -2867,13 +2868,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership1" style="width:30px;"  value="S">
+                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership1" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership1" style="width:30px;" value="JTS">
+                                                            <input  class="p-1" type="radio" name="MV_ownership1" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership1" style="width:30px;" value="JTO">
+                                                        <input class="p-1"  type="radio" name="MV_ownership1" style="" value="JTO">
                                                     </div>
 
 
@@ -2906,13 +2907,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership2" style="width:30px;"  value="S">
+                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership2" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership2" style="width:30px;" value="JTS">
+                                                            <input  class="p-1" type="radio" name="MV_ownership2" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership2" style="width:30px;" value="JTO">
+                                                        <input class="p-1"  type="radio" name="MV_ownership2" style="" value="JTO">
                                                     </div>
                                                     </div>
                                                 <td>
@@ -2942,13 +2943,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership3" style="width:30px;"  value="S">
+                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership3" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership3" style="width:30px;" value="JTS">
+                                                            <input  class="p-1" type="radio" name="MV_ownership3" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership3" style="width:30px;" value="JTO">
+                                                        <input class="p-1"  type="radio" name="MV_ownership3" style="" value="JTO">
                                                     </div>
                                                     </div>
                                                 <td>
@@ -3004,46 +3005,43 @@
                                         <td class="  tdata">Checking</td>
                                     </tr>
                                     <tr>
-                                        <td class="tdata" style="width:400px"><input type="text"
-                                                name="C_institution1" class="border-0 w-100"></td>
-                                        <td class="tdata"><input type="text" name="C_an1"
-                                                class="border-0 w-100 text-center"></td>
-                                        <td class="tdata">
+                                        <td class="tdata mx-3" style="width:400px">
+                                            <input type="text" name="C_ pinstitution1" class="border-0 w-100"></td>
+                                        <td class="tdata p">
+                                            <input type="text" name="C_an1" class="border-0 w-100 text-center"></td>
+                                        <td class="tdata p">
                                             <div class="d-flex justify-content-center">
-                                                <div class="border-end border-dark">
+                                                <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership1" style="width:30px;" value="S">
+                                                    <input type="radio" name="C_ownership1" style="" value="S">
                                                 </div>
-                                                <div class="border-end border-dark">
-                                                    <input type="radio" name="C_ownership1" style="width:30px;" value="JTS">
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="radio" name="C_ownership1" style="" value="JTS">
                                                 </div>
-                                                <div class=" border-dark">
-                                                <input type="radio" name="C_ownership1" style="width:30px;" value="JTO">
-                                            </div>
+                                                <div class=" border-dark px-2">
+                                                  <input type="radio" name="C_ownership1" style="" value="JTO">
+                                                </div>
                                             </div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_cb1" name="base_pay1"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$<input type="C_cb1" name="base_pay1" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_voyi1" name="base_pay1"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$<input type="C_voyi1" name="base_pay1" class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
-                                        <td class="tdata" style="width:400px"><input type="text"
-                                                name="C_institution11" class="border-0 w-100"></td>
+                                        <td class="tdata" style="width:400px"><input type="text"   name="C_institution11" class="border-0 w-100"></td>
                                         <td class="tdata"><input type="text" name="C_an11"
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata">
                                             <div class="d-flex justify-content-center">
-                                                <div class="border-end border-dark">
+                                                <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership11" style="width:30px;" value="S">
+                                                    <input type="radio" name="C_ownership11" style="" value="S">
                                                 </div>
-                                                <div class="border-end border-dark">
-                                                    <input type="radio" name="C_ownership11" style="width:30px;" value="JTS">
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="radio" name="C_ownership11" style="" value="JTS">
                                                 </div>
-                                                <div class=" border-dark">
-                                                <input type="radio" name="C_ownership11" style="width:30px;" value="JTO">
+                                                <div class=" border-dark  px-2">
+                                                <input type="radio" name="C_ownership11" style="" value="JTO">
                                             </div>
                                             </div>
                                         <td>
@@ -3060,15 +3058,15 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata">
                                             <div class="d-flex justify-content-center">
-                                                <div class="border-end border-dark">
+                                                <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership111" style="width:30px;" value="S">
+                                                    <input type="radio" name="C_ownership111" style="" value="S">
                                                 </div>
-                                                <div class="border-end border-dark">
-                                                    <input type="radio" name="C_ownership111" style="width:30px;" value="JTS">
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="radio" name="C_ownership111" style="" value="JTS">
                                                 </div>
-                                                <div class=" border-dark">
-                                                <input type="radio" name="C_ownership111" style="width:30px;" value="JTO">
+                                                <div class=" border-dark px-2">
+                                                <input type="radio" name="C_ownership111" style="" value="JTO">
                                             </div>
 
 
@@ -3092,15 +3090,15 @@
                                         <td class="tdata">
 
                                             <div class="d-flex justify-content-center">
-                                                <div class="border-end border-dark">
+                                                <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership2" style="width:30px;" value="S">
+                                                    <input type="radio" name="C_ownership2" style="" value="S">
                                                 </div>
-                                                <div class="border-end border-dark">
-                                                    <input type="radio" name="C_ownership2" style="width:30px;" value="JTS">
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="radio" name="C_ownership2" style="" value="JTS">
                                                 </div>
-                                                <div class="  border-dark">
-                                                <input type="radio" name="C_ownership2" style="width:30px;" value="JTO">
+                                                <div class="  border-dark px-2">
+                                                <input type="radio" name="C_ownership2" style="" value="JTO">
                                             </div>
 
 
@@ -3122,15 +3120,15 @@
                                                 <td class="tdata">
 
                                                     <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark">
+                                                        <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="C_ownership31" style="width:30px;" value="S">
+                                                            <input type="radio" name="C_ownership31" style="" value="S">
                                                         </div>
-                                                        <div class="border-end border-dark">
-                                                            <input type="radio" name="C_ownership31" style="width:30px;" value="JTS">
+                                                        <div class="border-end border-dark px-2">
+                                                            <input type="radio" name="C_ownership31" style="" value="JTS">
                                                         </div>
-                                                        <div class=" border-dark">
-                                                        <input type="radio" name="C_ownership31" style="width:30px;" value="JTO">
+                                                        <div class=" border-dark px-2">
+                                                        <input type="radio" name="C_ownership31" style="" value="JTO">
                                                     </div>
 
 
@@ -3156,15 +3154,15 @@
                                                 <td class="tdata">
 
                                                     <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark">
+                                                        <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="cod_ownership2" style="width:30px;" value="S">
+                                                            <input type="radio" name="cod_ownership2" style="" value="S">
                                                         </div>
-                                                        <div class="border-end border-dark">
-                                                            <input type="radio" name="cod_ownership2" style="width:30px;" value="JTS">
+                                                        <div class="border-end border-dark px-2">
+                                                            <input type="radio" name="cod_ownership2" style="" value="JTS">
                                                         </div>
-                                                        <div class=" border-dark">
-                                                        <input type="radio" name="cod_ownership2" style="width:30px;" value="JTO">
+                                                        <div class=" border-dark px-2">
+                                                        <input type="radio" name="cod_ownership2" style="" value="JTO">
                                                     </div>
 
 
@@ -3191,15 +3189,15 @@
                                                 <td class="tdata">
 
                                                     <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark">
+                                                        <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="cu_ownership1" style="width:30px;" value="S">
+                                                            <input type="radio" name="cu_ownership1" style="" value="S">
                                                         </div>
-                                                        <div class="border-end border-dark">
-                                                            <input type="radio" name="cu_ownership1" style="width:30px;" value="JTS">
+                                                        <div class="border-end border-dark px-2">
+                                                            <input type="radio" name="cu_ownership1" style="" value="JTS">
                                                         </div>
-                                                        <div class=" border-dark">
-                                                        <input type="radio" name="cu_ownership1" style="width:30px;" value="JTO">
+                                                        <div class=" border-dark px-2">
+                                                        <input type="radio" name="cu_ownership1" style="" value="JTO">
                                                     </div>
 
 
@@ -3226,15 +3224,15 @@
                                                 <td class="tdata">
 
                                                     <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark">
+                                                        <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="C_ownership3" style="width:30px;" value="S">
+                                                            <input type="radio" name="C_ownership3" style="" value="S">
                                                         </div>
-                                                        <div class="border-end border-dark">
-                                                            <input type="radio" name="C_ownership3" style="width:30px;" value="JTS">
+                                                        <div class="border-end border-dark px-2">
+                                                            <input type="radio" name="C_ownership3" style="" value="JTS">
                                                         </div>
-                                                        <div class="  border-dark">
-                                                        <input type="radio" name="C_ownership3" style="width:30px;" value="JTO">
+                                                        <div class="  border-dark px-2">
+                                                        <input type="radio" name="C_ownership3" style="" value="JTO">
                                                     </div>
 
 

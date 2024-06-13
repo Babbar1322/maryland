@@ -36,6 +36,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         input[type='radio'] {
@@ -154,7 +156,7 @@
 
 
             .responsive_input {
-                max-width: 100% !important;
+                 width: 100% !important;
                 overflow: hidden;
             }
 
@@ -932,9 +934,9 @@
                         </div>
                         <div class="small_text">I declare under penalty of perjury under the laws of the State of
                             California that the foregoing is true and correct.</div>
-                        <div class="d-flex">
+                        <div class="d-flex d_sm_block">
                             <div class="  me-2">Date</div>
-                            <div> <input type="text" name="date" class="border-0 border-bottom footer_field">
+                            <div> <input type="text" name="date" class="border-0 border-bottom footer_field responsive_input">
                             </div>
                         </div>
                         <div class="row  ">

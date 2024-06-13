@@ -36,6 +36,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         input[type='radio'] {
@@ -282,7 +284,7 @@
                                 <div class="fw-bold text-center">
                                     <h2 class="fw-bold">INSTRUCTIONS FOR FLORIDA FAMILY LAW RULES OF PROCEDURE</h2>
                                     <h2 class="fw-bold">FORM 12.902(b)</h2>
-                                    <h2 class="fw-bold">FAMILY LAW FINANCIAL AFFIDAVIT (SHORT FORM)</h2>
+                                    <h2 class="fw-bold">FAMILY LAW FINANCIAL AFFIDAVIT (LONG FORM)</h2>
                                     <h2 class="fw-bold">(10/21)</h2>
 
                                     <h3 class="mt-3 fw-bold">When should this form be used?</h3>
@@ -598,14 +600,8 @@
                                 </div>
 
                                 <div class="mt-3">Expenses may be converted in the same manner.</div>
-                                <div class="mt-3" style="padding-bottom: 750px">Remember, a person who is NOT an
-                                    attorney is called a nonlawyer. If a nonlawyer helps you fill out these
-                                    forms, that person must give you a copy of a <span class="fw-bold">Disclosure from
-                                        Nonlawyer,</span> Florida Family Law Rules of
-                                    Procedure Form 12.900(a), before he or she helps you. A nonlawyer helping you fill
-                                    out these forms also
-                                    <span class="fw-bold">must</span> put his or her name, address, and telephone
-                                    number on the bottom of the last page of every form he or she helps you complete.
+                                <div class="mt-3" style="padding-bottom: 750px">Remember, a person who is NOT an attorney is called a nonlawyer. If a nonlawyer helps you fill out these forms, that person must give you a copy of a <span class="fw-bold">Disclosure from Nonlawyer,</span> Florida Family Law Rules of Procedure Form 12.900(a), before he or she helps you. A nonlawyer helping you fill out these forms also
+                                    <span class="fw-bold">must</span> put his or her name, address, and telephone number on the bottom of the last page of every form he or she helps you complete.
                                 </div>
 
                                 @include('layouts.footer12', ['page' => 3])
@@ -629,11 +625,8 @@
                                 <div class="d-flex d_sm_block justify-content-end mt-2">Case No.: <input
                                         type="text" min="0" name="case_no"
                                         class="border-0 m-0 p-0 footer_field border-bottom"></div>
-                                <div class="d-flex d_sm_block justify-content-end">Division: <input type="text"
-                                        min="0" name="division"
-                                        class="border-0 m-0 p-0  footer_field border-bottom"></div>
-                                <div class="d-flex d_sm_block  mt-2"><input type="text" min="0"
-                                        name="petitioner" class="border-0 m-0 p-0 footer_field border-bottom">,
+                                <div class="d-flex d_sm_block justify-content-end">Division: <input type="text" min="0" name="division" class="border-0 m-0 p-0  footer_field border-bottom"></div>
+                                <div class="d-flex d_sm_block  mt-2"><input type="text" min="0" name="petitioner" class="border-0 m-0 p-0 footer_field border-bottom">,
                                 </div>
                                 <div class="" style="padding-left: 130px">Petitioner,</div>
 
@@ -642,22 +635,18 @@
                                         name="respondent" class="border-0 m-0 p-0 footer_field border-bottom">,
                                 </div>
                                 <div class="" style="padding-left: 115px">Respondent.</div>
-                                <div class="text-center h3 fw-bold mt-4">FAMILY LAW FINANCIAL AFFIDAVIT (SHORT FORM)
+                                <div class="text-center h3 fw-bold mt-4">FAMILY LAW FINANCIAL AFFIDAVIT (LONG FORM)
                                 </div>
                                 <div class="text-center">(Under $50,000 Individual Gross Annual Income)</div>
 
                                 <div class="d-flex d_sm_block mt-3">I, {full legal name}
-                                    <input type="text" min="0" name="fl_name"
-                                        class="border-0 w-50 footer_field border-bottom">,
+                                    <input type="text" min="0" name="fl_name" class="border-0 w-50 footer_field border-bottom">,
                                     being sworn, certify that the following
                                 </div>
                                 <div>information is true:</div>
-
-
                                 <div class="border border-dark bg-secondary text-dark mb-4">SECTION I. INCOME</div>
                                 <div class="d-flex d_sm_block "><span class="me-2">1.</span> My age is:
-                                    <input type="text" min="0" name="m_age"
-                                        class="border-0  footer_field border-bottom">
+                                    <input type="text" min="0" name="m_age" class="border-0  footer_field border-bottom">
                                 </div>
 
                                 <div class="d-flex d_sm_block  "><span class="me-2">2.</span> My occupation is:
@@ -669,14 +658,11 @@
                                     </div>
                                     <div class=" ms-3"> [Check all that apply] </div>
                                     <div class=" ms-3 d-flex d_sm_block "> a. <span class="border-bottom ms-3 me-2">
-                                            <input type="checkbox" name="a_employed" class=" "> </span>
-                                        Unemployed
+                                            <input type="checkbox" name="a_employed" class=" "> </span> Unemployed
                                     </div>
-                                    <div class="ms-3">Describe your efforts to find employment, how soon you expect
-                                        to be employed, and the pay you expect to receive</div>
+                                    <div class="ms-3">Describe your efforts to find employment, how soon you expect  to be employed, and the pay you expect to receive</div>
                                     <div class="ms-3">
-                                        <input type="text" min="0" name="a_e_v1"
-                                            class="border-0 w-100 footer_field border-bottom">
+                                        <input type="text" min="0" name="a_e_v1" class="border-0 w-100 footer_field border-bottom">
                                     </div>
                                     <div class="ms-3">
                                         <input type="text" min="0" name="a_e_v2"
@@ -748,7 +734,9 @@
                                         second job(s) on a separate sheet and attach it to this affidavit.</div>
                                 </div>
                             </div>
-                            @include('layouts.footer12', ['page' => 4])
+                            {{-- @include('layouts.footer12', ['page' => 4]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
 
                         </div>
                     </div>
@@ -1065,7 +1053,9 @@
                                     <div class="col-lg-10">Monthly FICA or self-employment taxes</div>
                                 </div>
                             </div>
-                            @include('layouts.footer12', ['page' => 5])
+                            {{-- @include('layouts.footer12', ['page' => 5]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                         </div>
                     </div>
                 </section>
@@ -1128,7 +1118,7 @@
                                     <div class="col-lg-10">Monthly court-ordered alimony actually paid (Add 25a and
                                         25b)</div>
                                 </div>
-                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this
+                                <div class="ms-lg-5 mt-2 ps-lg-5 d-flex d_sm_block "><span class="me-3">25a.</span>From this
                                     case:
                                     <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
                                             name="mcoa_25_a"
@@ -1153,12 +1143,14 @@
                                     <div class="col-lg-10 fw-bold">TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30,
                                         FLORIDA STATUTES
                                     </div>
+                                </div>
                                     <div class="row mt-1">
                                         <div class="col-lg-2 d-flex d_sm_block">
                                         </div>
                                         <div class="col-lg-10  ">
                                             <div>(Add lines 18 through 25.)</div>
                                         </div>
+                                    </div>
                                         <div class="row mt-1">
                                             <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">27.</span>
                                                 <input type="text" min="0" name="pnmi_27"
@@ -1167,6 +1159,7 @@
                                             </div>
                                             <div class="col-lg-10 fw-bold">PRESENT NET MONTHLY INCOME
                                             </div>
+                                        </div>
                                             <div class="row mt-1">
                                                 <div class="col-lg-2 d-flex d_sm_block"> </div>
                                                 <div class="col-lg-10  ">
@@ -1192,7 +1185,7 @@
                                             </div>
 
                                             <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">2.</span>
+                                                <div class="col-lg-2 d-flex  "><span class="me-3">2.</span>
                                                     <input type="text" min="0" name="s2_h2"
                                                         class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
@@ -1202,26 +1195,21 @@
 
                                             <div class="row mt-1">
                                                 <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span>
-                                                    <input type="text" min="0" name="s2_h3"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                    <input type="text" min="0" name="s2_h3" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
-                                                <div class="col-lg-10">Monthly insurance on residence (if not included
-                                                    in mortgage)</div>
+                                                <div class="col-lg-10">Monthly insurance on residence (if not included in mortgage)</div>
                                             </div>
 
                                             <div class="row mt-1">
                                                 <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">4.</span>
-                                                    <input type="text" min="0" name="s2_h4"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                    <input type="text" min="0" name="s2_h4" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
-                                                <div class="col-lg-10">Monthly condominium maintenance fees and
-                                                    homeowner’s association fees</div>
+                                                <div class="col-lg-10">Monthly condominium maintenance fees and homeowner’s association fees</div>
                                             </div>
 
                                             <div class="row mt-1">
                                                 <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
-                                                    <input type="text" min="0" name="s2_h5"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                    <input type="text" min="0" name="s2_h5" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                                 <div class="col-lg-10">Monthly electricity</div>
                                             </div>
@@ -1259,35 +1247,28 @@
                                             <div class="row mt-1">
                                                 <div class="col-lg-2 d-flex d_sm_block"><span
                                                         class="me-3">10.</span>
-                                                    <input type="text" min="0" name="s2_h10"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                    <input type="text" min="0" name="s2_h10" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                                 <div class="col-lg-10">Monthly lawn care</div>
                                             </div>
 
                                             <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">11.</span>
-                                                    <input type="text" min="0" name="s2_h11"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">11.</span>
+                                                    <input type="text" min="0" name="s2_h11" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                                 <div class="col-lg-10">Monthly pool maintenance</div>
                                             </div>
 
                                             <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">12.</span>
-                                                    <input type="text" min="0" name="s2_h12"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">12.</span>
+                                                    <input type="text" min="0" name="s2_h12" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                                 <div class="col-lg-10">Monthly pest control</div>
                                             </div>
 
                                             <div class="row mt-1">
-                                                <div class="col-lg-2 d-flex d_sm_block"><span
-                                                        class="me-3">13.</span>
-                                                    <input type="text" min="0" name="s2_h13"
-                                                        class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                                <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">13.</span>
+                                                    <input type="text" min="0" name="s2_h13" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                                 <div class="col-lg-10">Monthly misc. household</div>
                                             </div>
@@ -1394,7 +1375,9 @@
                                             </div>
 
                                         </div>
-                                        @include('layouts.footer12', ['page' => 6])
+                                        {{-- @include('layouts.footer12', ['page' => 6]) --}}
+                                        <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                                     </div>
                                 </div>
                 </section>
@@ -1712,7 +1695,9 @@
                                 </div>
 
                             </div>
-                            @include('layouts.footer12', ['page' => 7])
+                            {{-- @include('layouts.footer12', ['page' => 7]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                         </div>
                     </div>
                 </section>
@@ -2028,7 +2013,9 @@
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
-                                @include('layouts.footer12', ['page' => 8])
+                                {{-- @include('layouts.footer12', ['page' => 8]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -2144,7 +2131,9 @@
                                     <div style="padding-bottom:400px"></div>
                                 </div>
 
-                                @include('layouts.footer12', ['page' => 9])
+                                {{-- @include('layouts.footer12', ['page' => 9]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -2561,7 +2550,9 @@
 
                                     </table>
                                 </div>
-                                @include('layouts.footer12', ['page' => 10])
+                                {{-- @include('layouts.footer12', ['page' => 10]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -2968,7 +2959,9 @@
                                     </table>
                                 </div>
                                 <div class="pt-5">
-                                    @include('layouts.footer12', ['page' => 11])
+                                    {{-- @include('layouts.footer12', ['page' => 11]) --}}
+                                    <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                                 </div>
                             </div>
                         </div>
@@ -3006,7 +2999,9 @@
                                     <div style="padding-bottom:500px"></div>
                                 </div>
 
-                                @include('layouts.footer12', ['page' => 12])
+                                {{-- @include('layouts.footer12', ['page' => 12]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -3361,9 +3356,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk27"></td>
                                                 <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="l_a27"></span></div>
+                                                    <div> <span><input type="text" class="border-0 w-100 text-center" name="l_a27"></span></div>
                                                 </td>
                                                 <td> <input type="text" min="0" name="l_b27"
                                                         class="border-0 text-center w-100"> </td>
@@ -3373,10 +3366,8 @@
                                             <tr>
                                                 <td colspan="2" class="bg-secondary">Total Debts (add column B)
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
-                                                            name="total_lb" class="border-0 text-center w-100">
-                                                    </div>
+                                                <td class="bg-secondary">
+                                                    <div class="d-flex ">$ <input type="text" min="0" name="total_lb" class="border-0 text-center w-100"> </div>
                                                 </td>
                                                 <td></td>
                                                 <td></td>
@@ -3385,7 +3376,8 @@
                                     </table>
                                 </div>
                                 <div class="pt-5">
-                                    @include('layouts.footer12', ['page' => 13])
+                                    {{-- @include('layouts.footer12', ['page' => 13]) --}}
+                                    <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
                                 </div>
                             </div>
                         </div>
@@ -3644,7 +3636,9 @@
                                 </div>
 
                                 <div>
-                                    @include('layouts.footer12', ['page' => 14])
+                                    {{-- @include('layouts.footer12', ['page' => 14]) --}}
+                                    <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
                                 </div>
 
                             </div>
@@ -3771,7 +3765,20 @@
                                             style="width: 290px !important"> </span> </div>
                             </div>
                             <div style="padding-bottom:300px;"></div>
-                            @include('layouts.footer12', ['page' => 15])
+                            {{-- @include('layouts.footer12', ['page' => 15]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(c), Family Law Financial Affidavit (Long Form) (10/21)</div>
+
+                            <div class="row pb-5 pt-3 mx-auto text-center">
+                                <div class="col-lg-2 col-6 pt-lg-0 pt-3 ">
+                                    <button type="submit" class="bg-transparent px-4">Submit</button>
+                                </div>
+                                <div class="col-lg-1  col-6 pt-lg-0 pt-3 ">
+
+                                    <button type="reset" class="bg-transparent px-4">Reset</button>
+                                </div>
+
+                            </div>
+
                             @include('layouts.pagination', ['page' => 16])
 
                         </div>

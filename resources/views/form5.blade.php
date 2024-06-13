@@ -36,6 +36,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         .form-control:focus-visible {
@@ -659,7 +661,7 @@
                                         type="text" name="cpn4"
                                         class="form-control border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
-                                <div>
+
                                 </div>
                             </div>
                             <div class="row pt-lg-3">

@@ -35,6 +35,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         .form-control:focus-visible {

@@ -36,6 +36,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         input[type='radio'] {
@@ -72,11 +74,6 @@
             border-bottom: 1px solid black !important;
         }
 
-        .border_bottom {
-            border-bottom: 2px solid black !important;
-
-        }
-
         .table> :not(caption)>*>* {
             background-color: white;
         }
@@ -87,11 +84,6 @@
             /* margin-top: 29px !important; */
 
         }
-
-        .top:focus {
-            border-bottom: none !important;
-        }
-
         input:focus-visible {
             outline: none !important;
             /* border-bottom: 2px solid black !important; */
@@ -102,55 +94,12 @@
             border-bottom: 2px solid black !important;
         }
 
-        .children_table {
-            min-width: 30rem !important;
-        }
-
-        .top_text {
-            width: 50% !important;
-            font-size: 21px;
-        }
-
-        .footer_padding {
-            padding-top: 400px !important;
-        }
-
-        @media screen and (min-width : 1600px) {
-
-            .top_select_box {
-                width: 75% !important;
-            }
-
-            .case_input_top {
-                min-width: 490px !important;
-            }
-        }
-
-        @media screen and (min-width : 700px) {
-            .top_select_box {
-                width: 58.33%;
-            }
-
-            .case_input_top {
-                min-width: 275px;
-            }
-        }
-
         @media screen and (max-width : 768px) {
 
 
             .small_text {
                 height: auto !important;
             }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .footer_padding {
-                padding-top: 50px !important;
-            }
-
             .d_sm_block {
                 display: block !important;
 
@@ -162,58 +111,9 @@
                 overflow: hidden;
             }
 
-            .expires_row {
-                padding-right: 1.5rem !important;
-                padding-left: 1.5rem !important;
-            }
-
-            .bottom_day {
-                width: 90px !important;
-            }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .flex_input {
-                width: 100% !important;
-                margin-bottom: 10px !important;
-            }
-
-            .age_input_top {
-                width: 100% !important;
-            }
-
-            /* .section_area {
-            background-color: white !important;
-             margin-top: 15px !important;
-        } */
-            .top_select_box {
-                width: 58.33333%;
-            }
-
-            .case_input_top {
-                min-width: 275px !important;
-            }
-
-            .top_text_width {
-                min-width: 100% !important;
-            }
-
-            .children_table {
-                min-width: 0 !important;
-            }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-
-
-            }
-
-            .top_text {
-                width: 100% !important;
-                font-size: 17px;
             }
 
             .container-fluid {
@@ -224,10 +124,6 @@
 
         .bg_color {
             background-color: black;
-        }
-
-        .font_bold {
-            font-weight: bolder !important;
         }
 
         .bg-secondary {
@@ -241,10 +137,6 @@
 
         .small_text {
             font-size: 14px;
-        }
-
-        .pb-500 {
-            padding-bottom: 500px;
         }
 
         .tdata input:focus,
@@ -364,7 +256,9 @@
                                     elect
                                     to participate in
                                 </div>
-                                @include('layouts.footer12', ['page' => 1])
+                                {{-- @include('layouts.footer12', ['page' => 1]) --}}
+                                <div>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
+                                    (10/21)</div>
                             </div>
                         </div>
                     </div>
@@ -531,7 +425,9 @@
                                         </div>
 
                                     </div>
-                                    @include('layouts.footer12', ['page' => 2])
+                                    {{-- @include('layouts.footer12', ['page' => 2]) --}}
+                                    <div>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
+                                        (10/21)</div>
                                 </div>
                             </div>
                         </div>
@@ -623,7 +519,9 @@
                                     number on the bottom of the last page of every form he or she helps you complete.
                                 </div>
 
-                                @include('layouts.footer12', ['page' => 3])
+                                {{-- @include('layouts.footer12', ['page' => 3]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -829,7 +727,9 @@
                                     </div>
 
                                 </div>
-                                @include('layouts.footer12', ['page' => 4])
+                                {{-- @include('layouts.footer12', ['page' => 4]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                             </div>
                         </div>
                 </section>
@@ -1066,7 +966,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @include('layouts.footer12', ['page' => 5])
+                                    {{-- @include('layouts.footer12', ['page' => 5]) --}}
+                                    <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                                 </div>
                             </div>
                 </section>
@@ -1591,7 +1493,9 @@
                                     </div>
                                 </div>
                             </div>
-                            @include('layouts.footer12', ['page' => 6])
+                            {{-- @include('layouts.footer12', ['page' => 6]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                         </div>
                     </div>
                 </section>
@@ -1904,7 +1808,9 @@
 
                                     </table>
                                 </div>
-                                @include('layouts.footer12', ['page' => 9])
+                                {{-- @include('layouts.footer12', ['page' => 9]) --}}
+                                <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                             </div>
                         </div>
                     </div>
@@ -2284,7 +2190,9 @@
                                 </div>
 
                                 <div class="pt-5">
-                                    @include('layouts.footer12', ['page' => 11])
+                                    {{-- @include('layouts.footer12', ['page' => 11]) --}}
+                                    <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
                                 </div>
                             </div>
                         </div>
@@ -2424,7 +2332,20 @@
                                 </div>
                             </div>
                             <div style="padding-bottom:300px;"></div>
-                            @include('layouts.footer12', ['page' => 15])
+                            {{-- @include('layouts.footer12', ['page' => 15]) --}}
+                            <div>Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form) (10/21)</div>
+
+
+                            <div class="row pb-5 pt-3 mx-auto text-center">
+                                <div class="col-lg-2 col-6 pt-lg-0 pt-3 ">
+                                    <button type="submit" class="bg-transparent px-4">Submit</button>
+                                </div>
+                                <div class="col-lg-1  col-6 pt-lg-0 pt-3 ">
+
+                                    <button type="reset" class="bg-transparent px-4">Reset</button>
+                                </div>
+
+                            </div>
 
                             @include('layouts.pagination', ['page' => 17])
                         </div>

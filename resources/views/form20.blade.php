@@ -36,6 +36,8 @@
         input,
         table {
             background-color: transparent !important;
+            /* height : 100% !important; */
+
         }
 
         .form-control:focus-visible {
@@ -55,10 +57,6 @@
 
         .border-bottom {
             border-bottom: 1px solid black !important;
-        }
-
-        .border_bottom {
-            border-bottom: 2px solid black !important;
         }
         .table> :not(caption)>*>* {
             background-color: white;
@@ -92,115 +90,21 @@
             outline: none !important;
             border-bottom: 2px solid black !important;
         }
-
-        .children_table {
-            min-width: 30rem !important;
-        }
-
-        .top_text {
-            width: 50% !important;
-            font-size: 21px;
-        }
-
-        .footer_padding {
-            padding-top: 400px !important;
-        }
-
-        @media screen and (min-width : 1600px) {
-
-            .top_select_box {
-                width: 75% !important;
-            }
-
-            .case_input_top {
-                min-width: 490px !important;
-            }
-        }
-
-        @media screen and (min-width : 700px) {
-            .top_select_box {
-                width: 58.33%;
-            }
-
-            .case_input_top {
-                min-width: 275px;
-            }
-        }
-
         @media screen and (max-width : 768px) {
-            .pb_checkbox {
-                display: block !important;
-            }
-
             .d_sm_block {
                 display: block !important;
-
             }
 
             .small_text {
                 height: auto !important;
             }
 
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .footer_padding {
-                padding-top: 50px !important;
-            }
-
-
             .responsive_input {
                 width: 100% !important;
             }
-
-            .expires_row {
-                padding-right: 1.5rem !important;
-                padding-left: 1.5rem !important;
-            }
-
-            .bottom_day {
-                width: 90px !important;
-            }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .flex_input {
-                width: 100% !important;
-                margin-bottom: 10px !important;
-            }
-
-            .age_input_top {
-                width: 100% !important;
-            }
-
-            /* .section_area {
-            background-color: white !important;
-             margin-top: 15px !important;
-        } */
-            .top_select_box {
-                width: 58.33333%;
-            }
-
-            .case_input_top {
-                min-width: 275px !important;
-            }
-
-            .top_text_width {
-                min-width: 100% !important;
-            }
-
-            .children_table {
-                min-width: 0 !important;
-            }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-
-
             }
 
             .top_text {
@@ -223,20 +127,14 @@
         }
 
         .bg-secondary {
-            --bs-bg-opacity: 1;
             background-color: rgb(184 188 192) !important;
         }
 
         body {
             font-size: 18px !important;
         }
-
         .small_text {
             font-size: 15px;
-        }
-
-        .pb-500 {
-            padding-bottom: 500px;
         }
     </style>
 </head>

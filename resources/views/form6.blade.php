@@ -32,6 +32,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         .form-control:focus-visible {
@@ -233,7 +235,7 @@
 </head>
 
 <body>
-    <div class="container-fluid   py-1 py-lg-3">
+    <div class="container-fluid   py-1 py-lg-3 overflow-x-hidden">
         <div class="container bg_color p-lg-3 p-1  ">
 
 
@@ -396,7 +398,7 @@
                             </div>
 
                             <div class="col-md-12 pt-1">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div class="pe-1 my-auto" style="width:185px"> Employer Address:</div>
                                     <div class="w-100">
                                         <input type="text" name="emp_address"
@@ -414,7 +416,7 @@
                             </div>
 
                             <div class="col-md-5">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div class=" my-auto ">Occupation:</div>
                                     <input type="text" name="occupation"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
@@ -422,7 +424,7 @@
                             </div>
 
                             <div class="col-md-7">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div class="my-auto" style="width:490px;">Professional license, type and no.:
                                     </div>
                                     <input type="text" name="plt_no"
@@ -432,8 +434,8 @@
 
 
                             <div class="col-md-7 pt-1">
-                                <div class="d-flex">
-                                    <div class="my-auto" style="width:395px;">Gross income <span class="fs-6">
+                                <div class="d-flex d_sm_block">
+                                    <div class="my-auto responsive_input" style="width:395px;">Gross income <span class="fs-6">
                                             (before taxes and other deductions)</span>:</div>
                                     <span>$</span>
                                     <input type="text" name="occupation"
@@ -462,38 +464,32 @@
                                 </div>
                             </div>
                             <div class="col-md-12 pt-2">
-                                <div class="d-flex">
-                                    <div class="my-auto" style="width:595px;">Hourly pay rate (including shift premium
-                                        and cost of living adjustment):</div>
+                                <div class="d-flex d_sm_block">
+                                    <div class="responsive_input my-auto" style="width:595px;">Hourly pay rate (including shift premium and cost of living adjustment):</div>
                                     <span>$</span>
-                                    <input type="number" name="hpr" style="width:200px;"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                    <input type="number" name="hpr" style="width:200px;" class="responsive_input border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-6 pt-2">
-                                <div class="d-flex">
-                                    <div class="my-auto" style="width:595px;">Total regular hours worked per pay
-                                        period:</div>
-                                    <input type="text" name="trh" style="width:200px;"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                <div class="d-flex d_sm_block">
+                                    <div class="responsive_input my-auto" style="width:595px;">Total regular hours worked per pay period:</div>
+                                    <input type="text" name="trh" style="width:200px;" class="responsive_input border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
                             <div class="col-md-6 pt-2">
-                                <div class="d-flex">
-                                    <div class="my-auto" style="width:595px;">Average overtime hours for past 12
-                                        months:</div>
-                                    <input type="text" name="aoh" style="width:200px;"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                <div class="d-flex d_sm_block">
+                                    <div class="responsive_input my-auto" style="width:595px;">Average overtime hours for past 12 months:</div>
+                                    <input type="text" name="aoh" style="width:200px;" class="responsive_input border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-12 pt-2">
-                                <div class="d-flex">
-                                    <div class="my-auto" style="width:660px;">Total amount of owner’s draws during the
+                                <div class="d-flex d_sm_block">
+                                    <div class="responsive_input my-auto" style="width:660px;">Total amount of owner’s draws during the
                                         past twelve months (if self-employed):</div>
                                     <input type="text" name="hpr" style="width:300px;"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
                         </div>
@@ -590,7 +586,7 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <div class="d-flex">
+                        <div class="d-flex d_sm_block">
                             <div class="pe-1 my-auto" style="width:450px;">Name of last full-time employer:</div>
                             <div class="w-100">
                                 <input type="text" name="nlfte"
@@ -600,15 +596,15 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="d-flex">
-                            <div class="px-2 my-auto ">Position:</div>
+                        <div class="d-flex d_sm_block">
+                            <div class="px-lg-2 my-auto ">Position:</div>
                             <input type="text" name="position"
                                 class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                         </div>
                     </div>
 
                     <div class="col-md-12 pt-2">
-                        <div class="d-flex">
+                        <div class="d-flex d_sm_block">
                             <div class="pe-1 my-auto" style="width:385px"> Address of last full-time employer:</div>
                             <div class="w-100">
                                 <input type="text" name="empfte_address"
@@ -625,7 +621,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex">
+                        <div class="d-flex d_sm_block">
                             <div class="pe-1 my-auto" style="width:430px">Last day employed full-time:</div>
                             <div class="w-100">
                                 <input type="text" name="nlfte"
@@ -635,15 +631,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="px-2 my-auto" style="width:390px">Length of time employed:</div>
+                        <div class="d-flex d_sm_block">
+                            <div class="px-lg-2 my-auto" style="width:390px">Length of time employed:</div>
                             <input type="text" name="lte"
                                 class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                         </div>
                     </div>
                     <div class="col-md-12 pt-2">
-                        <div class="d-flex">
-                            <div class="pe-1 my-auto" style="width:570px"> Reason for leaving last full-time
+                        <div class="d-flex d_sm_block">
+                            <div class="pe-1 my-auto responsive_input" style="width:570px"> Reason for leaving last full-time
                                 employment:</div>
                             <div class="w-100">
                                 <input type="text" name="empfte_address"
@@ -652,8 +648,8 @@
                         </div>
                     </div>
                     <div class="col-md-12 pt-2">
-                        <div class="d-flex">
-                            <div class="pe-1 my-auto" style="width:440px;"> Gross earnings per pay period (earnings
+                        <div class="d-flex d_sm_block">
+                            <div class="pe-1 my-auto responsive_input" style="width:440px;"> Gross earnings per pay period (earnings
                                 before taxes):</div>
                             <span>$</span>
                             <input type="text" name="gross_period"
@@ -671,200 +667,200 @@
                         <div class="row">
                             <div>Provide monthly income from all other sources.</div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Commissions</div>
                                     <input type="text" name="commissions"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Unemp. Benefits</div>
                                     <input type="text" name="benefits"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">Nat’l Guard/Res. Drill</div>
                                     <input type="text" name="res_drill"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Bonuses</div>
                                     <input type="text" name="bonuses"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Strike Pay</div>
                                     <input type="text" name="strike_pay"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">Armed Services</div>
                                     <input type="text" name="armed_services"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Profit Sharing</div>
                                     <input type="text" name="profit_sharing"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>SUB Pay</div>
                                     <input type="text" name="sub_pay"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">Allowance for Rent</div>
                                     <input type="text" name="allowance_rent"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Interest</div>
                                     <input type="text" name="interest"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Sick Benefits</div>
                                     <input type="text" name="sick_benefits"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">Rental Income</div>
                                     <input type="text" name="rental_income"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Dividends</div>
                                     <input type="text" name="dividends"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Workers’ Comp.</div>
                                     <input type="text" name="workers_comp"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">Spousal Support</div>
                                     <input type="text" name="spousal_support"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Annuities</div>
                                     <input type="text" name="annuities"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Soc. Sec. Benefits</div>
                                     <input type="text" name="ss_benefits"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div style="width:300px;">State Disability Asst.</div>
                                     <input type="text" name="sda"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Pensions/Longevity</div>
                                     <input type="text" name="pl"
-                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom responsive_input shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>VA Benefits</div>
                                     <input type="text" name="va_benefits"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>F I P</div>
                                     <input type="text" name="sda"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Deferred Comp/IRA</div>
                                     <input type="text" name="ira"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Disability Ins.</div>
                                     <input type="text" name="ins"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class=" responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>SSI</div>
                                     <input type="text" name="ssi"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Trust Funds</div>
                                     <input type="text" name="trust_funds"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>GI Benefits</div>
                                     <input type="text" name="gi_benifits"
-                                        class="border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
                             <div class="col-md-4 pt-2">
-                                <div class="d-flex">
+                                <div class="d-flex d_sm_block">
                                     <div>Others</div>
                                     <input type="text" name="others"
-                                        class=" w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
+                                        class="responsive_input  w-75 border-none border-0 border-bottom  shadow-none my-auto ms-auto">
                                 </div>
                             </div>
 
@@ -882,7 +878,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 pt-2">
-                                <div class="px-4 row">
+                                <div class="px-lg-4 row">
                                     <div class="col-md-8">
                                         <div style="width:705px;" class="responsive_input">
                                             If yes, provide details of the payments including amount per month paid on
@@ -1410,41 +1406,41 @@
                             <span class="fs-6">Use additional sheets if necessary.</span>
                         </div>
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto" style="width:300px;">Insurance Company:</div>
                                 <input type="text" name="ins_comp"
-                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
+                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto responsive_input">
                             </div>
                         </div>
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto" style="width:300px;">Policy no.:</div>
                                 <input type="text" name="policy_no"
-                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
+                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto responsive_input">
                             </div>
                         </div>
 
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto" style="width:300px;">Policy owner:</div>
                                 <input type="text" name="policy_owner"
-                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
+                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto responsive_input">
                             </div>
                         </div>
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto" style="width:300px;">Beneficiary:</div>
                                 <input type="text" name="beneficiary"
-                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
+                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto responsive_input">
                             </div>
                         </div>
 
                         <div class="col-md-6 pt-2">
-                            <div class="d-flex">
+                            <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto" style="width:153px;">Death benefit:</div>
                                 <div class="my-auto">$</div>
                                 <input type="text" name="death_benefit"
-                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
+                                    class="w-100 border-none border-0 border-bottom  shadow-none my-auto responsive_input">
                             </div>
                         </div>
                         <div class="col-md-6 pt-2">
@@ -1452,11 +1448,11 @@
                                 <div class="pe-1 ">Premium:</div>
                                 <div class="">$</div>
                                 <input type="text" name="premium"
-                                    class="border-none border-0 border-bottom  shadow-none h-100 ">
+                                    class="border-none border-0 border-bottom  shadow-none h-100 responsive_input">
                                 <div class="">per</div>
                                 <div class="">
                                     <input type="text" name="pension_benefit_date"
-                                        class="w-100 border-none border-0 border-bottom  shadow-none ">
+                                        class="w-100 border-none border-0 border-bottom  shadow-none responsive_input ">
                                     <div class="text-sm fs-6">week/month/year</div>
                                 </div>
                             </div>

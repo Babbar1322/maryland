@@ -32,6 +32,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         input[type='radio'] {

@@ -36,6 +36,7 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
         }
 
         .form-control:focus-visible {
@@ -92,11 +93,6 @@
             outline: none !important;
             border-bottom: 2px solid black !important;
         }
-
-        .children_table {
-            min-width: 30rem !important;
-        }
-
         .top_text {
             width: 50% !important;
             font-size: 21px;
@@ -106,109 +102,23 @@
             padding-top: 400px !important;
         }
 
-        @media screen and (min-width : 1600px) {
-
-            .top_select_box {
-                width: 75% !important;
-            }
-
-            .case_input_top {
-                min-width: 490px !important;
-            }
-        }
-
-        @media screen and (min-width : 700px) {
-            .top_select_box {
-                width: 58.33%;
-            }
-
-            .case_input_top {
-                min-width: 275px;
-            }
-        }
-
         @media screen and (max-width : 768px) {
-            .pb_checkbox {
-                display: block !important;
-            }
 
             .d_sm_block {
                 display: block !important;
                 overflow: hidden !important;
-
             }
 
             .small_text {
                 height: auto !important;
             }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .footer_padding {
-                padding-top: 50px !important;
-            }
-
-
             .responsive_input {
                 width: 100% !important;
             }
-
-            .expires_row {
-                padding-right: 1.5rem !important;
-                padding-left: 1.5rem !important;
-            }
-
-            .bottom_day {
-                width: 90px !important;
-            }
-
-            .top_flex_text {
-                display: block !important;
-            }
-
-            .flex_input {
-                width: 100% !important;
-                margin-bottom: 10px !important;
-            }
-
-            .age_input_top {
-                width: 100% !important;
-            }
-
-            /* .section_area {
-            background-color: white !important;
-             margin-top: 15px !important;
-        } */
-            .top_select_box {
-                width: 58.33333%;
-            }
-
-            .case_input_top {
-                min-width: 275px !important;
-            }
-
-            .top_text_width {
-                min-width: 100% !important;
-            }
-
-            .children_table {
-                min-width: 0 !important;
-            }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-
-
             }
-
-            .top_text {
-                width: 100% !important;
-                font-size: 17px;
-            }
-
             .container-fluid {
                 padding-right: 0px !important;
                 padding-left: 0px !important;
@@ -218,13 +128,7 @@
         .bg_color {
             background-color: #8c8a8a;
         }
-
-        .font_bold {
-            font-weight: bolder !important;
-        }
-
         .bg-secondary {
-            --bs-bg-opacity: 1;
             background-color: rgb(184 188 192) !important;
         }
 
@@ -234,10 +138,6 @@
 
         .small_text {
             font-size: 15px;
-        }
-
-        .pb-500 {
-            padding-bottom: 500px;
         }
     </style>
 </head>
@@ -259,12 +159,12 @@
                         <div class="row pt-lg-5 align-items-end border-bottom">
                             <div class="col-lg-8">
                                 <div class="">
-                                    <div class="small_text d-flex">Petitioner/Joint Petitioner A:   <input type="text" name="1pjp_a"
+                                    <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:   <input type="text" name="1pjp_a"
                                         class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
 
                                 </div>
                                 <div class="pb-3">
-                                    <div class="small_text d-flex">Respondent/Joint Petitioner B:   <input type="text" name="1rjp_b"
+                                    <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B:   <input type="text" name="1rjp_b"
                                         class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
 
                                 </div>
@@ -316,7 +216,7 @@
                                 <div>Financial Disclosure Statement of</div>
                                 <div><input type="checkbox" name="fd_pjp_checkbox" Value="Petitioner" id=""> Petitioner/Joint Petitioner A</div>
                                 <div><input type="checkbox" name="fd_rjpcheckbox" Value="Respondent" id=""> Respondent/Joint Petitioner B</div>
-                                <div >Case No: <input type="text" class="border-0 border-bottom" name="case_number2" id=""></div>
+                                <div >Case No: <input type="text" class="border-0 border-bottom responsive_input" name="case_number2" id=""></div>
                             </div>
                         </div>
 
@@ -507,10 +407,10 @@
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
                     <div class="col-lg-10 mx-auto">
                         <div class="">
-                            <div class="small_text d-flex">Petitioner/Joint Petitioner A:   <input type="text" name="2pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                            <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:   <input type="text" name="2pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                         </div>
                         <div class="pb-3">
-                            <div class="small_text d-flex">Respondent/Joint Petitioner B:   <input type="text" name="2rjp_b" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                            <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B:   <input type="text" name="2rjp_b" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                         </div>
                         <div class="ms-lg-3 table-responsive">
                             <table class="table table-bordered">
@@ -769,13 +669,13 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
-                                <div class="small_text d-flex">Petitioner/Joint Petitioner A:
+                                <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:
                                       <input type="text" name="3pjp_a"
                                     class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
 
                             </div>
-                            <div class="">
-                                <div class="small_text d-flex">Respondent/Joint Petitioner B:   <input type="text" name="3rjp_b"
+                            <div class="pb-3">
+                                <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B:   <input type="text" name="3rjp_b"
                                     class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
 
                             </div>
@@ -1038,10 +938,10 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
-                                <div class="small_text d-flex">Petitioner/Joint Petitioner A: <input type="text" name="4pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input type="text" name="4pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                             <div class="pb-3">
-                                <div class="small_text d-flex">Respondent/Joint Petitioner B: <input type="text" name="4pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B: <input type="text" name="4pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                          </div>
                                 <div class="table-responsive">
@@ -1358,10 +1258,10 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div >
-                                <div class="small_text d-flex">Petitioner/Joint Petitioner A:  <input type="text" name="5pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:  <input type="text" name="5pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                             <div class="pb-3">
-                                <div class="small_text d-flex">Respondent/Joint Petitioner B: <input type="text" name="5rjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B: <input type="text" name="5rjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                          </div>
                                 <div class="table-responsive">
@@ -1612,10 +1512,10 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
-                                <div class="small_text d-flex">Petitioner/Joint Petitioner A: <input type="text" name="6pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input type="text" name="6pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                             <div class="pb-3">
-                                <div class="small_text d-flex">Respondent/Joint Petitioner B: <input type="text" name="6rjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B: <input type="text" name="6rjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                          </div>
 
@@ -1931,11 +1831,11 @@
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
-                                <div class="small_text d-flex">Petitioner/Joint Petitioner A:   <input type="text" name="7pjp_a"  class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:   <input type="text" name="7pjp_a"  class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
 
                             </div>
                             <div class="pb-3">
-                                <div class="small_text d-flex">Respondent/Joint Petitioner B:   <input type="text" name="7rjp_b"  class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
+                                <div class="small_text d-flex d_sm_block">Respondent/Joint Petitioner B:   <input type="text" name="7rjp_b"  class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
                             </div>
                          </div>
                                     <div class="table-responsive ps-lg-3">

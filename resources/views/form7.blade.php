@@ -35,6 +35,8 @@
         input,
         table {
             background-color: transparent !important;
+            height : 100% !important;
+
         }
 
         body {
@@ -611,7 +613,7 @@
                                 </div>
                                 <div class="d-flex w-100">$
                                     <input type="text" name="security"
-                                        class=" responsive_inputborder-0 border-bottom text-end fw-bold w-100">
+                                        class=" responsive_input border-0 border-bottom text-end fw-bold w-100">
                                 </div>
                             </div>
                         </div>
