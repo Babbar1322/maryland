@@ -39,7 +39,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important; */
 
         }
 
@@ -259,6 +259,15 @@
 
         .table_input:hover {
             background-color: #e4eaf9 !important;
+        }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -1572,7 +1581,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_1"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_1"
@@ -1620,7 +1629,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_2"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_2"
@@ -1668,7 +1677,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_3"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_3"
@@ -1716,7 +1725,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_4"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_4"
@@ -1763,7 +1772,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_5"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_5"
@@ -1811,7 +1820,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_6"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_6"
@@ -1859,7 +1868,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_7"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_7"
@@ -1907,7 +1916,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_8"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_8"
@@ -1955,7 +1964,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_9"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_9"
@@ -2003,7 +2012,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_10"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_10"
@@ -2051,7 +2060,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_11"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_11"
@@ -2099,7 +2108,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="cr_12"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="j_12"
@@ -2300,7 +2309,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="a_cr_1"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="a_j_1"
@@ -2339,7 +2348,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="a_cr_2"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="a_j_2"
@@ -2417,7 +2426,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_cr1"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_j1"
@@ -2454,7 +2463,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_cr2"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_j2"
@@ -2491,7 +2500,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_cr3"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_j3"
@@ -2529,7 +2538,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_cr4"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="b_j4"
@@ -2606,7 +2615,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_cr1"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_j1"
@@ -2643,7 +2652,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_cr2"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_j2"
@@ -2681,7 +2690,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_cr3"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_j3"
@@ -2719,7 +2728,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_cr4"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="c_j4"
@@ -2785,7 +2794,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_cr1"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_j1"
@@ -2822,7 +2831,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_cr2"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_j2"
@@ -2859,7 +2868,7 @@
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_cr3"
-                                                class="border-0 footer_field w-100">
+                                                class="border-0 footer_field  ">
                                         </td>
                                         <td class="small_text">
                                             <input type="checkbox" min="0" name="d_j3"
@@ -3208,28 +3217,28 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="b_interests"
-                                                        class="border-0 footer_field "> Business Interests
+                                                        class="border-0 footer_field me-2"> Business Interests
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="s_options"
-                                                        class="border-0 footer_field "> Stock Options
+                                                        class="border-0 footer_field me-2"> Stock Options
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="money_loans"
-                                                        class="border-0 footer_field "> Money/Loans owed to you
+                                                        class="border-0 footer_field me-2"> Money/Loans owed to you
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="irs"
-                                                        class="border-0 footer_field "> IRS Refunds due to you
+                                                        class="border-0 footer_field me-2"> IRS Refunds due to you
                                                 </div>
 
                                             </td>
@@ -3239,7 +3248,7 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="c_club"
-                                                        class="border-0 footer_field "> Country Club &
+                                                        class="border-0 footer_field me-2"> Country Club &
                                                     Other Memberships
                                                 </div>
 
@@ -3247,7 +3256,7 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="lc_equipment"
-                                                        class="border-0 footer_field "> Livestock, Crops,
+                                                        class="border-0 footer_field me-2"> Livestock, Crops,
                                                     Farm Equipment
                                                 </div>
 
@@ -3255,7 +3264,7 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="p_lawsuit"
-                                                        class="border-0 footer_field "> Pending lawsuit or claim
+                                                        class="border-0 footer_field me-2"> Pending lawsuit or claim
                                                     by you
                                                 </div>
 
@@ -3263,7 +3272,7 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="apl"
-                                                        class="border-0 footer_field "> Accrued Paid Leave (sick,
+                                                        class="border-0 footer_field me-2"> Accrued Paid Leave (sick,
                                                     vacation, personal)
                                                 </div>
 
@@ -3274,28 +3283,28 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="ogr"
-                                                        class="border-0 footer_field "> Oil and Gas Rights
+                                                        class="border-0 footer_field me-2"> Oil and Gas Rights
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="vcp"
-                                                        class="border-0 footer_field "> Vacation Club Points
+                                                        class="border-0 footer_field me-2"> Vacation Club Points
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="sdbv"
-                                                        class="border-0 footer_field "> Safety Deposit Box/Vault
+                                                        class="border-0 footer_field me-2"> Safety Deposit Box/Vault
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="t_beneficiary"
-                                                        class="border-0 footer_field "> Trust Beneficiary
+                                                        class="border-0 footer_field me-2"> Trust Beneficiary
                                                 </div>
 
                                             </td>
@@ -3305,28 +3314,28 @@
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="ffm"
-                                                        class="border-0 footer_field "> Frequent Flyer Miles
+                                                        class="border-0 footer_field me-2"> Frequent Flyer Miles
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="e_accounts"
-                                                        class="border-0 footer_field "> Education Accounts
+                                                        class="border-0 footer_field me-2"> Education Accounts
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="hs_accounts"
-                                                        class="border-0 footer_field "> Health Savings Accounts
+                                                        class="border-0 footer_field me-2"> Health Savings Accounts
                                                 </div>
 
                                             </td>
                                             <td class=" small_text ">
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="mw_rights"
-                                                        class="border-0 footer_field "> Mineral and Water Rights
+                                                        class="border-0 footer_field me-2"> Mineral and Water Rights
                                                 </div>
 
                                             </td>
@@ -3369,7 +3378,7 @@
                                                     <input type="checkbox" min="0" name="oc4"
                                                         class="border-0 footer_field me-2 "> Other -
                                                     <input type="text" min="0" name="ov4"
-                                                        class="border-0 border-bottom footer_fields">
+                                                        class="border-0 border-bottom footer_fields me-2">
 
                                                 </div>
 
@@ -3395,7 +3404,7 @@
                                                     <input type="checkbox" min="0" name="i_c1"
                                                         class="border-0 footer_field "> None <input type="checkbox"
                                                         min="0" name="i_c2"
-                                                        class="border-0 footer_field  ms-4"> If owned please attach JDF
+                                                        class="border-0 footer_field  ms-4 me-2"> If owned please attach JDF
                                                     1111-SS to identify the property and to report the value.
                                                 </div>
 
@@ -3500,9 +3509,9 @@
                                     </div>
                                 </div>
                             </div>
+                            @include('layouts.footer11', ['page' => 6])
+                            @include('layouts.pagination', ['page' => 15])
                         </div>
-                        @include('layouts.footer11', ['page' => 6])
-                        @include('layouts.pagination', ['page' => 15])
                     </div>
                 </section>
 

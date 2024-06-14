@@ -15,7 +15,7 @@
             <a href="{{ route($routeName) }}" class="text-dark ps-2 my-auto">   <i class="fas fa-chevron-left"></i> </a>
         @endif
 
-    <div class="dropdown">
+    <div class="dropup">
         <button class="btn border dropdown-toggle" type="button"
             id="pagination_dropdown" data-bs-toggle="dropdown" aria-expanded="false">
            {{$page}}

@@ -257,6 +257,14 @@
         .table_input:hover {
             background-color: #e4eaf9 !important;
         }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 

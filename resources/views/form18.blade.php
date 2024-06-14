@@ -157,6 +157,15 @@
         .table_input:hover {
             background-color: #e4eaf9 !important;
         }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
@@ -515,15 +524,15 @@
                                 </div>
 
                                 <div class="mt-4 fs-5">SECCIÓN I. INGRESOS</div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center d_sm_block">
                                     <span class="pe-2">1. </span>Mi edad es:<input type="text" min="0"
                                         name="mi_edad_es"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        class="responsive_input border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center d_sm_block">
                                     <span class="pe-2">2. </span>Mi ocupación es:<input type="text"
                                         min="0" name="mi_ocupacion_es"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
+                                        class="responsive_input border-0 p-0 m-0 align-middle border-bottom footer_field w-25 ">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <span class="pe-2">3. </span> Actualmente estoy
@@ -548,7 +557,7 @@
                                 y por qué y cómo afectará a su ingreso:
 
                                 <input type="text" min="0" name="marque_aqui"
-                                    class="border-0 m-0 p-0 footer_field border-bottom w-25 mt-4">
+                                    class="responsive_input border-0 m-0 p-0 footer_field border-bottom w-25 mt-4">
                                 <div>Marque aquí si actualmente tiene más de un empleo. Liste la información anterior
                                     para el segundo trabajo(s) en una hoja separada y adjúntela a esta declaración
                                     jurada.</div>
@@ -561,18 +570,18 @@
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">c. </span>Jubilado. Fecha de jubilación:<input type="text"  min="0" name="de_jubilacion" class="border-0 p-0 m-0 responsive_input align-middle border-bottom footer_field   ">
                                 </div>
-                                <div class="d-flex  d_sm_block align-items-center">Empleador de quien se jubiló<input type="text" min="0" name="jubilo" class="border-0   p-0 m-0 align-middle border-bottom footer_field  responsive_input " style="width:265px !important">
+                                <div class="d-flex  d_sm_block align-items-center">Empleador de quien se jubiló<input type="text" min="0" name="jubilo" class="responsive_input border-0   p-0 m-0 align-middle border-bottom footer_field  responsive_input " style="width:265px">
                                 </div>
-                                <div class="d-flex d_sm_block align-items-center">Dirección:<input type="text" min="0"  name="direccion" class="border-0 p-0 m-0   align-middle border-bottom footer_field responsive_input" style="width:400px !important">
+                                <div class="d-flex d_sm_block align-items-center">Dirección:<input type="text" min="0"  name="direccion" class="responsive_input border-0 p-0 m-0   align-middle border-bottom footer_field responsive_input" style="width:400px ">
                                 </div>
-                                <div class="d-flex d_sm_block align-items-center">Ciudad, Estado, Código postal:<input type="text" min="0" name="codigo_postal" class="border-0  responsive_input p-0 m-0 align-middle border-bottom footer_field   ">
+                                <div class="d-flex d_sm_block align-items-center">Ciudad, Estado, Código postal:<input type="text" min="0" name="codigo_postal" class="responsive_input border-0  responsive_input p-0 m-0 align-middle border-bottom footer_field   ">
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">Número de teléfono:<input type="text" min="0" name="de_telefono" class="border-0 responsive_input  p-0 m-0 align-middle border-bottom footer_field   ">
                                 </div>
 
                                 <div class="mt-4"> INGRESOS BRUTOS DEL AÑO PASADO:</div>
                                 <div>Su ingreso Ingreso de la otra parte (si se conoce)</div>
-                                <div class="d-flex align-items-center">AÑO<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input" style="width:50px;">
+                                <div class="d-flex align-items-center d_sm_block">AÑO<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input" style="width:50px;">
                                 </div>
                                 <div class="d-flex align-items-center">$<input type="text" min="0" name="ano" class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input "  style="width:75px;">
                                 </div>
@@ -640,12 +649,12 @@
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9a. </span>De este caso: <span class=""> $</span><input
                                         type="text" min="0" name="de_9a"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input" style="width:118px;">
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field  " style="width:118px;">
                                 </div>
                                 <div class="d-flex d_sm_block align-items-center">
                                     <span class="pe-2">9b. </span> De otros casos: <span
                                         class=""> $</span><input type="text" min="0" name="de_9b"
-                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field responsive_input " style="width:100px;">
+                                        class="border-0 p-0 m-0 align-middle border-bottom footer_field   " style="width:100px;">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">10.</span>
@@ -755,7 +764,7 @@
                                 <div class=" mt-4 d_sm_block">
                                     <span class="me-2">23.</span>
                                     <input type="text" min="0" name="pagos_23"
-                                        class="border-0 p-0 m-0 responsive_inupt border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
                                         style="width: 80px"> Pagos mensuales de seguro de salud (incluyendo seguro
                                     dental), excluyendo la porción pagada por cualquier hijo menor de esta relación
                                 </div>
@@ -1219,7 +1228,7 @@
                                     <span class="me-2">63.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="gastos_63"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 59 a 62.)
                                 </div>
                                 <div>Formulario de Reglas de Procedimiento de Ley de Familia de Florida 12.902(c),
@@ -1231,7 +1240,7 @@
                                     <span class="me-2">64.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="seguros_64"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">Seguro de salud (si no se enumera en las líneas 23 o 45)
                                 </div>
                                 <div class="d-flex d_sm_block ">
@@ -1261,7 +1270,7 @@
                                     <span class="me-2">69.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="otro_69"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 66 a 68, excluir las líneas 64
                                     y
                                     65.)
@@ -1271,7 +1280,7 @@
                                     <span class="me-2">70.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="otros_70"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">Limpieza en seco y lavandería mensual
                                 </div>
                                 <div class="d-flex d_sm_block ">
@@ -1397,7 +1406,7 @@
                                     <span class="me-2">90.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="otros_90"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 70 a 89.)
                                 </div>
 
@@ -1482,14 +1491,14 @@
                                     <span class="me-2">104.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="pagos_104"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">SUBTOTAL (Sumar las líneas 91 a 103.)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">105.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="pagos_105"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE GASTOS MENSUALES:
                                 </div>
                                 <div>(Sumar las líneas 25, 35, 58, 63, 69, 90 y 104 de la Sección II, Gastos.)</div>
@@ -1499,7 +1508,7 @@
                                     <span class="me-2">106.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="resumen_106"
-                                        class="border-0 p-0 m-0 responsive_input border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE INGRESOS NETOS MENSUALES ACTUALES (de la línea 27
                                     de la SECCIÓN I. INGRESOS)
                                 </div>
@@ -1507,14 +1516,14 @@
                                     <span class="me-2">107.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="resumen_107"
-                                        class="border-0 responsive_input p-0 m-0 border-bottom footer_field align-top "
+                                        class="border-0   p-0 m-0 border-bottom footer_field align-top "
                                         style="width: 80px">TOTAL DE GASTOS MENSUALES (de la línea 105 arriba)
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <span class="me-2">108.</span>
                                     <sapn class="">$</sapn>
                                     <input type="text" min="0" name="resumen_108"
-                                        class="border-0 p-0 responsive_input  m-0 border-bottom footer_field align-top  "
+                                        class="border-0 p-0    m-0 border-bottom footer_field align-top  "
                                         style="width: 80px">SUPERÁVIT (Si la línea 106 es mayor que la línea 107,
                                     restar la línea 107 de la línea 106. Esta es la cantidad de su superávit. Ingresar
                                     esa cantidad aquí.)
@@ -1523,7 +1532,7 @@
                                     <span class="me-2">109.</span>
                                     ( <sapn class="">$</sapn>
                                     <input type="text" min="0" name="resumen_109"
-                                        class="border-0 p-0 m-0 responsive_input mb-4 border-bottom footer_field align-top "
+                                        class="border-0 p-0 m-0   mb-4 border-bottom footer_field align-top "
                                         style="width: 80px">) (DÉFICIT) (Si la línea 107 es mayor que la línea 106,
                                     restar la línea 106 de la línea 107. Esta es la cantidad de su déficit. Ingresar esa
                                     cantidad aquí.)
@@ -1797,7 +1806,7 @@
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
                                 <div class="d-flex my-4 ">Fecha: <input type="text" min="0"
-                                        name="fecha" class="border-0 footer_field align-start border-bottom">
+                                        name="fecha" class=" responsive_input border-0 footer_field align-start border-bottom">
                                 </div>
                                 <div>Firma de la Parte</div>
                                 <div>Nombre Impreso:</div>

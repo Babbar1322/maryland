@@ -240,6 +240,14 @@
         .tdata textarea:focus {
             border-bottom: none !important;
         }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 

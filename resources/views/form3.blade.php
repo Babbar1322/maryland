@@ -35,8 +35,6 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
-
         }
 
         .form-control:focus-visible {
@@ -152,32 +150,21 @@
                 width: 100% !important;
                 margin-bottom: 10px !important;
             }
-            /* .section_area {
-            background-color: white !important;
-             margin-top: 15px !important;
-        } */
             .top_select_box {
                 width: 58.33333%;
             }
-
             .case_input_top {
                 min-width: 275px !important;
             }
-
-
             .top_text_width {
                 min-width: 100% !important;
             }
-
             .children_table {
                 min-width: 0 !important;
             }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
-
-
             }
 
             .top_text {
@@ -189,7 +176,6 @@
                 padding-right: 0px !important;
                 padding-left: 0px !important;
             }
-
 }
         .bg_color {
             background-color: #8c8a8a;
@@ -207,13 +193,20 @@
         body {
             font-size: 18px !important;
         }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid   py-1 py-lg-3">
+    <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-
             <form action="{{route('form3.submit')}}" class="" method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
@@ -222,13 +215,10 @@
                             @if (session('success'))
                                 <div class="alert alert-success">{{ session('success') }}</div>
                             @endif
-
-                            <div class=" w-100 mt-2">
+                            <div class="w-100 mt-2">
                                 <div class="row">
-                                    <div class="mx-auto d-flex top_flex_text h5 justify-content-center"><span>IN THE
-                                            SUPERIOR COURT OF
-                                        </span> <input type="text" name="superior_court"
-                                            class="form-control w-25  border-none  flex_input border-0 border-bottom border-solid shadow-none">
+                                    <div class="mx-auto d-flex top_flex_text h5 justify-content-center"><span>IN THE SUPERIOR COURT OF
+                                        </span> <input type="text" name="superior_court" class="form-control w-25  border-none  flex_input border-0 border-bottom border-solid shadow-none">
                                         <span>COUNTY STATE OF GEORGIA</span>
                                     </div>
                                     <span class="text-center h5"> </span>
@@ -236,17 +226,14 @@
                                         <div class="row pt-2">
                                             <div class="col-lg-5 col-sm-5">
                                                 <div class="col-lg-12  ">
-                                                    <input type="text" name="county_state"
-                                                        class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                    <input type="text" name="county_state" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                                 </div>
                                             </div>
                                             <div class="col-lg-2 col-sm-2">
                                                 <div class="col-lg-1  mx-auto text-center d-none d-sm-block"> § </div>
                                             </div>
                                             <div class="col-lg-5 col-sm-5">
-                                                <div class="col-lg-12 ">
-
-                                                </div>
+                                                <div class="col-lg-12 "> </div>
                                             </div>
                                         </div>
                                         <div class="row pt-2">
@@ -274,17 +261,14 @@
                                                 <div class="col-lg-1  mx-auto text-center d-none d-sm-block"> § </div>
                                             </div>
                                             <div class="col-lg-5 col-sm-5">
-                                                <div class="col-lg-12 ">
-
-                                                </div>
+                                                <div class="col-lg-12 "> </div>
                                             </div>
                                         </div>
 
                                         <div class="row pt-2">
                                             <div class="col-lg-5 col-sm-5">
                                                 <div class="col-lg-12  ">
-                                                    <input type="text" name="plaintiff"
-                                                        class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                    <input type="text" name="plaintiff" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                                 </div>
                                             </div>
                                             <div class="col-lg-2 col-sm-2">
@@ -308,9 +292,7 @@
                                             <div class="col-lg-5 col-sm-5">
                                                 <div class="col-lg-12 ">
                                                     <div class="d-flex d_sm_block">
-                                                        <span class="h5">FILE NO.</span> <input type="text"
-                                                            name="file_no"
-                                                            class="form-control w-75 responsive_input border-none  border-0 border-bottom border-solid shadow-none">
+                                                        <span class="h5">FILE NO.</span> <input type="text" name="file_no" class="form-control w-75 responsive_input border-none  border-0 border-bottom border-solid shadow-none">
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,52 +305,39 @@
                                                 AFFIANT’S NAME:
                                             </div>
                                             <div class="col-lg-6">
-                                                <input type="text" name="affiant_name"
-                                                    class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                <input type="text" name="affiant_name" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="affiant_age"
-                                                    class="form-control  border-none age1_input  border-0 border-bottom border-solid shadow-none"
-                                                     >
+                                                <input type="text" name="affiant_age" class="form-control  border-none age1_input  border-0 border-bottom border-solid shadow-none" >
                                             </div>
                                         </div>
                                         <div class="row pt-2">
                                             <div class="col-lg-3 col  " style="width: 153px;">Spouse’s Name:</div>
                                             <div class="col-lg-6 p-lg-0">
-                                                <input type="text" name="spouse_name"
-                                                    class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                <input type="text" name="spouse_name" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2  ">
-                                                <input type="text" name="spouse_age"
-                                                    class="form-control responsive_input border-none   border-0 border-bottom border-solid shadow-none"
-                                                    style="min-width:264px   !important;" >
+                                                <input type="text" name="spouse_age" class="form-control responsive_input border-none   border-0 border-bottom border-solid shadow-none" style="min-width:264px !important;" >
                                             </div>
                                         </div>
                                         <div class="row pt-2">
-                                            <div class="col-lg-3    " style="width: 165px;">Date of Marriage:</div>
+                                            <div class="col-lg-3" style="width: 165px;">Date of Marriage:</div>
                                             <div class="col-lg-4 p-lg-0">
                                                 <input type="text" name="date_of_marriage"
-                                                    class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                    class="form-control border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
-                                            <div class="col-lg-3 col  " style="width: 180px;">Date of Separation:
+                                            <div class="col-lg-3 col" style="width: 180px;">Date of Separation:
                                             </div>
 
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="date_of_separation"
-                                                    class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none"
-                                                    style="width:282px ;">
+                                                <input type="text" name="date_of_separation" class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none" style="width:282px ;">
                                             </div>
                                         </div>
-                                        <div class="text-center h5 py-3">Names and year of birth of children for whom
-                                            support is to be determined in this action:</div>
+                                        <div class="text-center h5 py-3">Names and year of birth of children for whom support is to be determined in this action:</div>
                                     </div>
                                 </div>
-
-
-
-
                                 <div class="row">
                                     <div class="table-responsive">
                                         <table class="table-bordered mt-1 border-black table  my-lg-1">
@@ -380,45 +349,26 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-
-
                                                 <tr>
-                                                    <td> <input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_mortgage_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td> <input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_mortgage_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_insurance_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_insurance_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_rent_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_rent_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_rent_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_rent_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-50"><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_taxes_self"
-                                                            class="form-control border-0  "></td>
-                                                    <td><input type="number" name="p_taxes_child"
-                                                            class="form-control border-0"></td>
+                                                    <td class="w-50"><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_taxes_self" class="form-control border-0  "></td>
+                                                    <td><input type="number" name="p_taxes_child" class="form-control border-0"></td>
                                                 </tr>
-
-
                                             </tbody>
                                         </table>
                                     </div>
@@ -435,42 +385,25 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-
-
                                                 <tr>
-                                                    <td> <input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_mortgage_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td> <input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_mortgage_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_insurance_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_insurance_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_rent_self"
-                                                            class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_rent_child"
-                                                            class="form-control border-0"></td>
-
+                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_rent_self" class="form-control border-0"></td>
+                                                    <td><input type="number" name="p_rent_child" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-50"><input type="number" name="p_mortgage_self"
-                                                            class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_taxes_self"
-                                                            class="form-control border-0  "></td>
-                                                    <td><input type="number" name="p_taxes_child"
-                                                            class="form-control border-0"></td>
+                                                    <td class="w-50"><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
+                                                    <td><input type="number" name="p_taxes_self" class="form-control border-0  "></td>
+                                                    <td><input type="number" name="p_taxes_child" class="form-control border-0"></td>
                                                 </tr>
 
 
@@ -478,15 +411,12 @@
                                         </table>
                                     </div>
                                     <div class="pt-lg-5 pt-2">
-
                                         @include('layouts.footer2', ['page' => 1])
                                     </div>
-
                                 </div>
                             </div>
                 </section>
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="summary_of_affiants">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="summary_of_affiants">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-5 ">
                             <div class=""> <span class="pe-lg-4">2.</span> SUMMARY OF AFFIANT’S INCOME AND NEEDS </div>
@@ -497,8 +427,7 @@
                                             <td>a.</td>
                                             <td class="w-75">Gross monthly income (item 3A)</td>
                                             <td class="w-25">
-                                                <div class="d-flex">$<input type="number" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
 
                                         </tr>
@@ -507,167 +436,118 @@
                                             <td> Net monthly income (item 3B) </td>
 
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="nmi" class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="nmi" class="border-0 bg-transparent border outline-none form-control">  </div>
                                             </td>
 
                                         </tr>
                                         <tr>
                                             <td>c.</td>
                                             <td>Average monthly expenses (item 5A)</td>
-
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="ami"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td> <div class="d-flex">$<input type="number" name="ami" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td>d.</td>
                                             <td>Monthly payment to creditors (item 5B) + </td>
-
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="mptc"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td> <div class="d-flex">$<input type="number" name="mptc" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td>Total of (c.) and (d.) above:</td>
-                                            <td>
-                                                <div class="d-flex ">$<input type="number" name="ta"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td> <div class="d-flex">$<input type="number" name="ta"  class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
                         </div>
                         <div class="form-area pt-5">
-                            <div class=""><span class="me-lg-4">3. </span><span
-                                    class="me-lg-4">A.</span><span>Affiant’s Gross Monthly Income
-                                    (complete this section or attach Child
-                                    Support Schedule A) (All income must be entered based on monthly average regardless
-                                    of
-                                    date of receipt.)</span>
+                            <div class="">
+                                <span class="me-lg-4">3. </span>
+                                <span class="me-lg-4">A.</span><span>Affiant’s Gross Monthly Income (complete this section or attach Child Support Schedule A) (All income must be entered based on monthly average regardless of date of receipt.)</span>
                             </div>
                             <div class="row px-lg-5">
                                 <div class="table-responsive">
                                     <table class="table-bordered mt-3 border-black table ">
                                         <tr>
-                                            <td>Salary or Wages (<span class="border-bottom">attach copies of 2 most
-                                                    recent $ wage statement</span>)</td>
+                                            <td>Salary or Wages (<span class="border-bottom">attach copies of 2 most recent $ wage statement</span>)</td>
                                             <td>Affiant’s</td>
                                         </tr>
                                         <tr>
                                             <td>Commissions, Fees, Tips </td>
+                                            <td> <div class="d-flex">$<input type="number" name="cft" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                        </tr>
+                                        <tr>
+                                             <td> Income from self-employment, partnerships, close corporations and  independent contracts (gross receipts minus ordinary and necessary expenses required to produce income).
+                                                <span class="border-bottom">Attach sheet itemizing your calculations.</span>
+                                            </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="cft"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="ifse" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                             <td> Income from self-employment, partnerships, close corporations and
-                                                independent contracts (gross receipts minus ordinary and necessary
-                                                expenses required to produce income). <span
-                                                    class="border-bottom">Attach sheet itemizing your
-                                                    calculations.</span> </td>
+                                            <td>Gross receipts minus ordinary and necessary expenses required to produce income. </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ifse"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gross receipts minus ordinary and necessary expenses required to produce
-                                                income. </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="grm"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="grm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Bonuses</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="bonuses"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="bonuses" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Overtime Payments</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="op"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="op" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Severance Pay</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="sp"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="sp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Recurring Income from Pensions or Retirement Plans</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="rifp"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="rifp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Interest and Dividends</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="iad"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="iad" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Trust Income</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ti"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="ti" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Income from Annuities</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ifa"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="ifa" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Capital Gains</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="cg"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="cg" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Social Security Disability or Retirement Benefits</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ssdr"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="ssdr" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
-
                         </div>
                         <div class="pt-lg-2 pt-2">
                             @include('layouts.footer2', ['page' => 2])
@@ -682,110 +562,81 @@
                                         <tr>
                                             <td>Workers’ Compensation Benefits</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="wcb"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="wcb" class="border-0 bg-transparent border outline-none form-control"> </div>
                                         </tr>
                                         <tr>
                                             <td>Unemployment Benefits</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ub"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="ub" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Judgments from Personal Injury or other Civil Cases</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="jfp"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="jfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Gifts (cash or other gifts that can be converted to cash)</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="gcoo"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                            <td> <div class="d-flex">$<input type="number" name="gcoo" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Prizes/Lottery Winnings </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="plw"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                            <td><div class="d-flex">$<input type="number" name="plw" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Alimony and Maintenance from Persons not in this Case</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="amfp"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="amfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Assets which are used for support of family</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="awu"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="awu" class="border-0 bg-transparent border outline-none form-control"></div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Fringe Benefits (if significantly reduce living expenses) </td>
+                                            <td>Fringe Benifits (if significantly reduce living expenses) </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="fbis"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="fbis" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Any Other Income (do NOT include means-tested public assistance, such as
-                                                TANF or food stamps)
-                                            </td>
+                                            <td>Any Other Income (do NOT include means-tested public assistance, such as TANF or food stamps) </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="aoidin"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="aoidin" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="h5">TOTAL GROSS MONTHLY INCOME:</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="tgmi"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="tgmi" class="border-0 bg-transparent border outline-none form-control"></div>
+                                            </td>
                                         </tr>
-
                                     </table>
                                 </div>
                             </div>
-
                         </div>
-
-
-
-                        <div class="form-area   px-lg-5 pt-2 ">
-                            <div class=""><span class="pe-lg-4 ">B.</span> Affiant’s Net Monthly Income from
-                                Employment </div>
-                            <div class="row ">
+                       <div class="form-area px-lg-5 pt-2">
+                            <div class=""><span class="pe-lg-4 ">B.</span> Affiant’s Net Monthly Income from Employment </div>
+                            <div class="row">
                                 <div class="table-responsive">
                                     <table class="table-bordered mt-3 border-black table ">
                                         <tr>
                                             <td>Gross Wage minus withheld federal, state and FICA taxes</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="gwm"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" name="gwm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Affiant’s Pay Period (i.e. weekly, monthly, etc.)</td>
-                                            <td><input type="number" name="app"
-                                                    class="border-0 bg-transparent border outline-none form-control">
-                                            </td>
+                                            <td><input type="number" name="app" class="border-0 bg-transparent border outline-none form-control"> </td>
                                         </tr>
                                         <tr>
                                             <td>Number of Exemptions Claimed:</td>
-                                            <td><input type="number" name="nec"
-                                                    class="border-0 bg-transparent border outline-none form-control">
+                                            <td><input type="number" name="nec" class="border-0 bg-transparent border outline-none form-control"> </td>
                                         </tr>
                                     </table>
                                 </div>

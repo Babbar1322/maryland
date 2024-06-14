@@ -36,7 +36,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important; */
 
         }
 
@@ -260,6 +260,15 @@
 
         .table_input:hover {
             background-color: #e4eaf9 !important;
+        }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -1614,8 +1623,8 @@
                 <section class="section_area  px-lg-5 px-2 pt-5" id="last_section">
                     <div class="ps-lg-5 pt-5">
                         <div class="d-flex ps-lg-5">Are you involved in bankruptcy proceedings?
-                            <span class="d-flex d_sm_block ps-3">
-                                <div class="d-flex d_sm_block pe-4">
+                            <span class="d-flex   ps-3">
+                                <div class="d-flex pe-4">
                                     <input type="radio" name="involved_in_bankruptcy" value="Yes"
                                         class="me-1">
                                     <div>Yes</div>
@@ -1628,8 +1637,8 @@
                             </span>
                         </div>
                         <div class="d-flex ps-lg-5">Do you intend to file bankruptcy?
-                            <span class="d-flex d_sm_block ps-3">
-                                <div class="d-flex d_sm_block pe-4">
+                            <span class="d-flex   ps-3">
+                                <div class="d-flex   pe-4">
                                     <input type="radio" name="file_bankruptcy" value="Yes" class="me-1">
                                     <div>Yes</div>
 

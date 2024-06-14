@@ -138,6 +138,14 @@
         .small_text {
             font-size: 15px;
         }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
@@ -227,9 +235,6 @@
                                                 <td class="small_text">Enter the case number. Escriba el número de caso.
                                                 </td>
                                             </tr>
-                                            {{-- <tr>
-                                                <td class="small_text">Enter the case number. <div><input type="text" name="case_number1" class="border-0  "> </div>
-                                            </td> --}}
                                             </tr>
                                         </tbody>
                                     </table>
@@ -361,20 +366,13 @@
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  150px !important"></div>Social Security Number <div>Número
                                     de Seguro Social</div>
-                                <div><input type="text" min="0" name="gi_ssnumber1"
-                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
-                                        style="min-width:  150px !important"></div>
+                                <div><input type="text" min="0" name="gi_ssnumber1" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width:  150px !important"></div>
                             </div>
                         </div>
                         <div class="row mt-1">
-                            <div class="col-lg-2 small_text">Occupation
-
-                                <div>Ocupación</div>
-                            </div>
+                            <div class="col-lg-2 small_text">Occupation <div>Ocupación</div> </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_occupation1"
-                                    class="border-0 p-0 m-0 border-bottom footer_field responsive_input"
-                                    style="min-width: 150px !important">
+                                <input type="text" min="0" name="gi_occupation1" class="border-0 p-0 m-0 border-bottom footer_field responsive_input" style="min-width: 150px !important">
                             </div>
                         </div>
 
@@ -398,49 +396,32 @@
                         </div>
                     </div>
                     <div class="col-lg-10 mx-auto">
-
-
-                        {{-- <div><span class="me-lg-3 fw-bold">4.</span>MONTHLY INCOME</div>
-                            <div class="ms-lg-4"><b>Income</b> from wages / salary is received: (check one)</div>
-                            <div class="fw-bold text-center">To calculate monthly gross income use the multiplier shown:</div>
-                            <div><input type="checkbox" name="mi_weekly_checkbox" id=""> weekly -multiply weekly income by 4.33 <input type="checkbox" name="mi_other_weekly_checkbox" id=""> every other week (bi-weekly) multiply bi-weekly income by 2.17</div>
-                            <div><input type="checkbox" name="mi_monthly_checkbox" id=""> monthly <input type="checkbox" name="mi_monthly_multiply_checkbox" id=""> twice a month-multiply semi-monthly income by 2</div> --}}
-                        <div class="row mt-1">
+                         <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Employer
-
                                 <div>Empleador</div>
                             </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_employer1"
-                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_employer1" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Address / Dirección</div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_address3"
-                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_address3" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Address / Dirección</div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_address4"
-                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_address4" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2">City / Ciudad</div>
                             <div class="col-lg-10 d-flex d_sm_block">
                                 {{-- <div> <input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div>State <div><input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div>Zip<div><input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div> --}}
-                                <div>
-                                    <input type="text" min="0" name="git_city2"
-                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
-                                        style="min-width: 241px !important">
-                                </div>State
-                                <div><input type="text" min="0" name="gi_state2"
-                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
-                                        style="min-width: 241px !important"></div>Zip
+                                <div><input type="text" min="0" name="git_city2" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width: 241px !important"> </div>State
+                                <div><input type="text" min="0" name="gi_state2" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width: 241px !important"> </div>Zip
                                 <div><input type="text" min="0" name="gi_zip2"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width: 241px   !important"></div>

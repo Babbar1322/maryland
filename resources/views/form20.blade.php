@@ -136,6 +136,15 @@
         .small_text {
             font-size: 15px;
         }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
  <body>

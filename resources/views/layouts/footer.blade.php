@@ -1,4 +1,4 @@
-  <div class="row py-5">
+</div><div class="row py-5">
   <h6 class="{{$page == 7 ? 'col':'col-lg-4 col-4 '}}" class=>CC-DR-031 (Rev. 12/2023) </h6>
     <div class="{{$page == 7 ? 'col':'col-lg-4 col-4 '}} text-center"> Page {{$page}} of 7</div>
 

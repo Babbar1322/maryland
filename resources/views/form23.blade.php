@@ -33,8 +33,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
-
+            /* height : 100% !important; */
         }
 
         .form-control:focus-visible {
@@ -77,22 +76,27 @@
             padding-top: 400px !important;
         }
 
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
         @media screen and (max-width : 768px) {
             .d_sm_block {
                 display: block !important;
             }
-
             .small_text {
                 height: auto !important;
             }
             .footer_padding {
                 padding-top: 50px !important;
             }
-
             .responsive_input {
                 width: 100% !important;
             }
-
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
@@ -128,7 +132,6 @@
         input[type='checkbox'] {
             accent-color: #8c8a8a !important;
         }
-
     </style>
 </head>
 
@@ -389,7 +392,6 @@
                         </div>
                         <div>
                              <div class="fw-bold"> <span class="me-3 fw-normal">II. </span>INCOME AND EMPLOYMENT INFORMATION OF BOTH PARTIES (<span class="fw-normal">If self-employed name of company and adjusted gross monthly income</span>) IDENTIFYING INFORMATION OF BOTH PARTIES</div>
-
                             <div class="row">
                                 <div class="">Petitioner</div>
                                 <div class="col-lg-6">
@@ -431,8 +433,7 @@
                         </div>
 
                         <div>
-                                 <div class="fw-bold"> <span class="me-3 fw-normal">III. </span> MARRIAGE INFORMATION</div>
-
+                            <div class="fw-bold"> <span class="me-3 fw-normal">III. </span> MARRIAGE INFORMATION</div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="d-flex d_sm_block pt-2">
@@ -457,13 +458,9 @@
 
                 </section>
                 <section class="section_area p-5">
-
                      @include('layouts.header1', ['page' => 2])
-
-
                     <div class="fw-bold"> <span class="me-3 fw-normal">IV. </span>CHILDREN’S INFORMATION (<span class="fw-normal">If more than 3 children, continue on a separate sheet</span>)</div>
                     <div class="me-lg-3">A. Minor children born to parties (number <input type="text" name="ci_number" id="" class="border-0 border-bottom responsive_input">)	 <span class="ms-lg-5"><input type="checkbox" name="ci_mca" value="True" id=""> More CHILDREN attached?</span>	</div>
-
                     <div class="table-responsive pt-lg-3">
                         <table class="table table-bordered border-dark">
                             <tbody>
@@ -493,13 +490,13 @@
                         <div class="small_text"> Paying party <input type="text" name="ci_pp" id="" class="border-0 border-bottom responsive_input" style="width:600px;">   <span class="ps-lg-5">Amount: $  <input type="text" name="ci_amount" id="" class="border-0 border-bottom responsive_input"  style="width:355px;"></span> </div>
                         <div class="small_text"> Children: (List names and ages) <input type="text" name="ci_lnaa1" id="" class="border-0 border-bottom responsive_input"  style="width:957px;">   </div>
                         <div> <input type="text" name="ci_lnaa2" id="" class="border-0 border-bottom responsive_input w-100">   </div>
+
                     </div>
 
                     <div>
                         <div class="fw-bold py-3 small_text">V. SUMMARY OF ASSETS & DEBTS</div>
                         <div class="small_text">A. REAL ESTATE (If more than 2 properties, continue on a separate sheet)</div>
                         <div class="small_text">Are you making a non-marital claim? <input type="radio" name="soa_non_marital_checkbox" id="" value="Yes">  Yes <input type="radio" name="soa_non_marital_checkbox" id="" value='No'> No If yes, you must comply with Section IX below.</div>
-
                         <div class="py-lg-2 ">Property 1:</div>
 
                         <div class="small_text">Address : <input type="text" name="p1_address" id="" class="border-0 border-bottom responsive_input"  style="width:1103px;"></div>
@@ -685,11 +682,11 @@
                                     <td><input type="text" name="rb_balance3" class="border-0 form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3"> More RETIREMENT BENEFITS attached? <input type="radio" name="rb_more_retirement_benefits_attached" value="Yes" id=""  > Yes <input type="radio" name="rb_more_retirement_benefits_attached" value="No" id="" class="ms-lg-2"> No </td>
+                                    <td colspan="3"> More RETIREMENT BENEFITS attached? <input type="radio" name="rb_more_retirement_benefits_attached" class=" ms-2" value="Yes" id=""  > Yes <input type="radio" name="rb_more_retirement_benefits_attached" value="No" id="" class="ms-lg-2"> No </td>
                                     <td colspan="3">Total Retirement Benefits Values:</td>
                                     <td><input type="text" name="rb_total_rbv" class="border-0 form-control"></td>
                                 </tr>
-                                </tbody>
+                                </tbody>this is 23 no form
                             </table>
                         </div>
                         <div class="small_text">Have any loans been taken out against any of these Retirement Benefits? <input type="radio" name="rb_retirement_benefits_checkbox" value="Yes" id=""  > Yes <input type="radio" name="rb_retirement_benefits_checkbox" value="No" id="" class="ms-lg-2"> No</div>
@@ -723,13 +720,10 @@
                             <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo1" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob1" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
                             <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe1" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
                             <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd1" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb1" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi1" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
-
-
                             <div class="pt-1 small_text">Name of Business & Owner:  <input type="text" name="bi_nob2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:979px"> </div>
                             <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo2" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
                             <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe2" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
                             <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
-
                 </section>
                 <section class="section_area p-5">
                     @include('layouts.header1', ['page' => 5])
@@ -1309,12 +1303,12 @@
                             <div class="text-center fw-bold mx-auto">VERIFICATION</div>
                             <div>I, <input type="text" name="v_dup1" id="" class="border-0 border-bottom responsive_input"> , declare under penalty of perjury that the information contained herein, including the information provided on any schedules and attachments, is true and accurate to the best of my knowledge, information and belief. Further, I acknowledge that I have read the foregoing instructions and have followed those instructions to the best of my ability.</div>
                             <div class="row">
-                                <div class="co  l-lg-6"></div>
-                                <div class="col-lg-6 ">
-                                    <div> <input type="text" name="v_dup2" id="" class="border-0 border-bottom responsive_input w-75 "> </div>
-                                  <div class=""> <input type="radio" name="verification" value="Petitioner" id=""  > Petitioner <input type="radio" name="verification" value="Respondent" id="" class="ms-lg-3"> Respondent {check one}</div>
-                                 </div>
-                          </div>
+                                <div class="co-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div><input type="text" name="v_dup2" id="" class="border-0 border-bottom responsive_input w-75 "> </div>
+                                    <div><input type="radio" name="verification" value="Petitioner" id=""  > Petitioner <input type="radio" name="verification" value="Respondent" id="" class="ms-lg-3"> Respondent {check one}</div>
+                                </div>
+                            </div>
                         </div>
                 </section>
                 <section class="section_area p-5" id="section_six">
@@ -1362,7 +1356,6 @@
                             AOC-238, Preliminary Verified Disclosure Statement, IF one was filed with the Court. A copy of the Final Verified
                             Disclosure Statement or the Affidavit, together with any supporting documentation, shall be provided to the
                             opposing party 15 days prior to trial unless otherwise ordered by the Court.</p>
-
 
                             <div class="buttons py-3">
                                 <div class="d-flex justify-content-around">

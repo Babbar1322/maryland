@@ -35,7 +35,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important;     */
 
         }
 
@@ -243,6 +243,15 @@ background-color: white !important;
     --bs-bg-opacity: 1;
     background-color: rgb(184 188 192) !important;
 }
+
+@media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 

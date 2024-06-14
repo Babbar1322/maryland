@@ -36,7 +36,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important; */
 
         }
 
@@ -261,6 +261,14 @@
 
         .table_input:hover {
             background-color: #e4eaf9 !important;
+        }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -690,11 +698,11 @@
                                             style="width:410px; !important">
                                         <span>Telephone Number:</span>
                                         <input type="text" min="0" name="t_number"
-                                            class="border-0 w-25   footer_field border-bottom">
+                                            class="border-0 w-25 responsive_input footer_field border-bottom">
                                     </div>
                                     <div class="d-flex d_sm_block ms-lg-3">Pay rate: <div
                                             class="d-flex d_sm_block px-2 "> $ <input type="text" min="0"
-                                                name="p_rate" class="border-0 m-0 p-0 footer_field border-bottom">
+                                                name="p_rate" class="border-0 m-0 p-0 footer_field border-bottom responsive_input">
                                         </div> <input type="checkbox" name="everyweek" class=""> <span
                                             class="px-2">every week</span> <input type="checkbox" name="every_ow"
                                             class=""> <span class="px-2">every other
@@ -745,16 +753,16 @@
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
-                                <div class=" ms-3 d-flex d_sm_block "> c. <span class="border-bottom ms-3 me-2">
+                                <div class=" ms-lg-3 d-flex d_sm_block "> c. <span class="border-bottom ms-3 me-2">
                                         <input type="checkbox" name="c_check" class=" "> </span> <span>Retired.
                                         Date of retirement</span> <input type="text" min="0"
-                                        style="    width: 700px !important;" name="c_retirement"
+                                        style="    width: 700px" name="c_retirement"
                                         class="border-0 responsive_input  footer_field border-bottom">
                                 </div>
 
                                 <div class=" ms-3 d-flex d_sm_block "> <span>Employer from whom retired:</span>
                                     <input type="text" min="0" name="c_retired"
-                                        style="width: 725px !important;"
+                                        style="width: 725px "
                                         class="border-0  responsive_input footer_field border-bottom">
                                 </div>
                                 <div class=" ms-3 d-flex d_sm_block "> <span>Address:</span>
@@ -776,22 +784,22 @@
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center"> LAST YEAR’S GROSS INCOME: </div>
                                     <div class="d-flex d_sm_block justify-content-center"> <span>YEAR</span><input
-                                            type="text" class="border-bottom border-0 footer_field w-25 "
+                                            type="text" class="border-bottom border-0 footer_field w-25  responsive_input"
                                             name="gi_year"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center">Your Income </div>
-                                    <div class="d-flex d_sm_block justify-content-center">
+                                    <div class="d-flex d_sm_block justify-content-center responsive_input">
                                         <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25"
+                                        <input type="text" class="border-bottom border-0 footer_field w-25 responsive_input"
                                             name="your_income">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="fw-bold text-center"> Other Party’s Income (if known) </div>
-                                    <div class="d-flex d_sm_block justify-content-center">
+                                    <div class="d-flex d_sm_block justify-content-center responsive_input">
                                         <span>$</span>
-                                        <input type="text" class="border-bottom border-0 footer_field w-25 "
+                                        <input type="text" class="border-bottom border-0 footer_field w-25 responsive_input "
                                             name="op_income">
                                     </div>
 
@@ -808,7 +816,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex   ">$<input type="text" min="0"
                                                 name="mgs_wages"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -903,13 +911,13 @@
                                 </div>
 
                                 <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From this
-                                    case: <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
+                                    case: <div class="d-flex   ms-1 ">$<input type="text" min="0"
                                             name="maar_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
 
                                 <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From other
-                                    case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                    case(s): <div class="d-flex   ms-1 ">$<input type="text"
                                             min="0" name="maar_b"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
@@ -918,7 +926,7 @@
 
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">10.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
+                                        <div class="d-flex   "> <input type="text" min="0"
                                                 name="mid_10"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>

@@ -36,7 +36,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important; */
 
         }
 
@@ -150,6 +150,15 @@
 
         .table_input:hover {
             background-color: #e4eaf9 !important;
+        }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -814,7 +823,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">17.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex   ">$<input type="text" min= "0"
                                                 name="section1_17"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>

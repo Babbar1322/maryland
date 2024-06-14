@@ -139,6 +139,17 @@
         .small_text {
             font-size: 15px;
         }
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
+        }
+        input[type='radio'] {
+            accent-color: #8c8a8a !important;
+        }
     </style>
 </head>
  <body>

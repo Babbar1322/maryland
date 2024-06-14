@@ -36,7 +36,6 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
 
         }
 
@@ -236,6 +235,15 @@
 
         .pb-500 {
             padding-bottom: 500px;
+        }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>

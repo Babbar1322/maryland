@@ -16,7 +16,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-
         a {
             color: black !important;
         }
@@ -36,8 +35,6 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
-
         }
 
         .form-control:focus-visible {
@@ -165,6 +162,16 @@
         .bg-secondary {
             --bs-bg-opacity: 1;
             background-color: rgb(184 188 192) !important;
+        }
+
+        @media screen and (max-width : 1600px) {
+            .d_sm_block {
+                display: block !important;
+            }
+
+            .responsive_input {
+                width: 100% !important;
+            }
         }
     </style>
 </head>
@@ -2206,41 +2213,28 @@
                                 <td> <input type="number" min="0" name="db1"
                                         class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" min="0" name="db2"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                <td class="py-0"><input type="number" min="0" name="db2" class="border-0 bg-transparent border outline-none form-control"> </td>
 
                             </tr>
                             <tr>
                                 <td class="" style="width:1px;">
                                     <div class="px-2">c.</div>
                                 </td>
-                                <td> <input type="number" min="0" name="dc1"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
-
-                                <td class="py-0"><input type="number" min="0" name="dc2"
-                                        class="border-0 bg-transparent border outline-none form-control">
-                                </td>
+                                <td><input type="number" min="0" name="dc1" class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td class="py-0"><input type="number" min="0" name="dc2" class="border-0 bg-transparent border outline-none form-control"> </td>
                             </tr>
 
                             <tr class="w-50">
                                 <td colspan="2">Total deductions from Other income: </td>
 
-                                <td><input type="number" min="0" name="tdoi"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
-                                </td>
+                                <td><input type="number" min="0" name="tdoi" class="border-0 bg-transparent border outline-none form-control" value="0"> </td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="">
                                     <div>NET OTHER INCOME</div>
                                 </td>
-
-                                <td class="bg-secondary">
-                                </td>
-                                <td><input type="number" min="0" name="noi"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td class="bg-secondary"> </td>
+                                <td><input type="number" min="0" name="noi" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2248,9 +2242,7 @@
                                     <div>TOTAL MONTHLY INCOME</div>
                                 </td>
                                 <td class="bg-secondary"> </td>
-                                <td><input type="number" min="0" name="tmi"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td><input type="number" min="0" name="tmi" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
 
@@ -2265,8 +2257,7 @@
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div class=>Case Number</div>
-                        <input type="number" min="0"
-                            class="border-0 bg-transparent border border-dashed border-bottom outline-none">
+                        <input type="number" min="0" class="border-0 bg-transparent border border-dashed border-bottom outline-none">
                     </div>
                     <div class="table-responsive">
                         <h4 class="text-center fw-bold pt-3"><span class="border_bottom">ASSETS & LIABILITIES</span>
@@ -2282,81 +2273,67 @@
                                 <td colspan="2">
                                     <div class="">Real Estate:</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_real_estate"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_real_estate" class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td rowspan="10" class="bg-secondary w-25"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Furniture (in the marital house)</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_furt"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_furt" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Bank Accounts/Savings</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_bs"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_bs" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">U.S. Bonds</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_usb"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_usb" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Stocks/Investments</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_si"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_si" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Personal Property</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_pp"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_pp" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Jewelry</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_jew"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_jew" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Automobiles</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_am"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_am" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Boats</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_boats"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="as_boats" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr class="w-50">
                                 <td colspan="2">Other: <span
-                                        class="  border-dashed border-bottom outline-none"><input type="text"
-                                            name="as_others" class="border-0 bg-transparent w-50"> </span> </td>
-                                <td><input type="number" min="0" name="as_other"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0"> </td>
+                                        class="border-dashed border-bottom outline-none"><input type="text" name="as_others" class="border-0 bg-transparent w-50"> </span> </td>
+                                <td><input type="number" min="0" name="as_other" class="border-0 bg-transparent border outline-none form-control" value="0"> </td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="">
                                     <div>TOTAL ASSETS:</div>
                                 </td>
-                                <td><input type="number" min="0" name="as_te"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0"> </td>
+                                <td><input type="number" min="0" name="as_te" class="border-0 bg-transparent border outline-none form-control" value="0"> </td>
                                 <td class="bg-secondary"></td>
                             </tr>
                             <tr>
@@ -2372,89 +2349,74 @@
                                 <td colspan="2">
                                     <div class="">Mortgage</div>
                                 </td>
-                                <td><input type="number" min="0" name="mortgage"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="mortgage" class="border-0 bg-transparent border outline-none form-control"></td>
                                 <td rowspan="10" class=" bg-secondary" > </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Automobiles</div>
                                 </td>
-                                <td><input type="number" min="0" name="lb_am"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="lb_am" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Notes payable to relatives</div>
                                 </td>
-                                <td><input type="number" min="0" name="lb_np"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="lb_np" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Bank Loans</div>
                                 </td>
-                                <td><input type="number" min="0" name="lb_bl"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="lb_bl" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">Accrued Taxes</div>
                                 </td>
-                                <td><input type="number" min="0" name="lb_at"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="lb_at" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
 
                             <tr>
                                 <td colspan="2">
                                     <div class="">Balance of Credit Card Accounts</div>
                                 </td>
-                                <td><input type="number" min="0" name="lb_bcca"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td><input type="number" min="0" name="lb_bcca" class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
 
                             <tr>
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">a.</div>
                                 </td>
-                                <td> <input type="number" min="0" name="da1"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td> <input type="number" min="0" name="da1" class="border-0 bg-transparent border outline-none form-control"></td>
 
                                 <td class="py-0">
-                                    <input type="number" min="0" name="da2"
-                                        class="border-0 bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="da2" class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="" style="width:1px;">
-                                    <div class=" px-2">b.</div>
+                                    <div class="px-2">b.</div>
                                 </td>
-                                <td> <input type="number" min="0" name="db1"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td> <input type="number" min="0" name="db1" class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" min="0" name="db2"
-                                        class="border-0 bg-transparent border outline-none form-control">
+                                <td class="py-0"><input type="number" min="0" name="db2" class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">c.</div>
                                 </td>
-                                <td> <input type="number" min="0" name="dc1"
-                                        class="border-0 bg-transparent border outline-none form-control"></td>
+                                <td> <input type="number" min="0" name="dc1" class="border-0 bg-transparent border outline-none form-control"></td>
 
-                                <td class="py-0"><input type="number" min="0" name="dc2"
-                                        class="border-0 bg-transparent border outline-none form-control">
+                                <td class="py-0"><input type="number" min="0" name="dc2" class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                             </tr>
                             <tr class="w-50">
                                 <td colspan="2">Other: <span class="border-bottom">
-                                        <input type="text" name="lb_others"
-                                            class="w-50 border-0 bg-transparent"></span>
+                                        <input type="text" name="lb_others" class="w-50 border-0 bg-transparent"></span>
                                 </td>
-                                <td><input type="text" name="lb_other"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td><input type="text" name="lb_other" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2462,9 +2424,7 @@
                                     <div>TOTAL LIABILITIES</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_te"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td><input type="number" min="0" name="lb_te" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2472,29 +2432,23 @@
                                     <div>TOTAL NET WORTH:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_tnw"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td><input type="number" min="0" name="lb_tnw" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="">
                                     <div>SUMMARY:</div>
                                 </td>
-                                <td class="bg-secondary">
-                                </td>
-                                <td class="bg-secondary">
-                                </td>
+                                <td class="bg-secondary"> </td>
+                                <td class="bg-secondary"> </td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="">
                                     <div>TOTAL INCOME:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-
-                                <td><input type="number" min="0" name="lb_ti"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td>
+                                    <input type="number" min="0" name="lb_ti" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2502,9 +2456,8 @@
                                     <div>TOTAL EXPENSES:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="lb_ti"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td>
+                                    <input type="number" min="0" name="lb_ti" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
                             <tr>
@@ -2512,38 +2465,31 @@
                                     <div>EXCESS OR DEFICIT:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" min="0" name="eod"
-                                        class="border-0 bg-transparent border outline-none form-control"
-                                        value="0">
+                                <td>
+                                    <input type="number" min="0" name="eod" class="border-0 bg-transparent border outline-none form-control" value="0">
                                 </td>
                             </tr>
-
                         </table>
                         @include('layouts.footer', ['page' => 6])
-
                     </div>
                 </div>
             </section>
             <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
                 id="last_section">
                 <div class="form-area pt-3">
-                    <div class="mx-auto h4 fw-bold">I solemnly affirm under the penalties of perjury that the contents
-                        of this document, Monthly Expense List, Income Statement, and Assets and Liabilities Statement
-                        are true to the best of my knowledge, information, and belief.</div>
+                    <div class="mx-auto h4 fw-bold">I solemnly affirm under the penalties of perjury that the contents of this document, Monthly Expense List, Income Statement, and Assets and Liabilities Statement are true to the best of my knowledge, information, and belief.</div>
                     @csrf
                     <div class="w-100 mt-3">
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12  ">
-                                    <input type="text" name="date"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="date" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Date</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="sign"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="sign" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Signature</div>
                                 </div>
                             </div>
@@ -2554,8 +2500,7 @@
                             <div class="col-lg-6 col-sm-6"> </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="pr_name"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="pr_name" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Printed Name</div>
                                 </div>
                             </div>
@@ -2566,8 +2511,7 @@
                             <div class="col-lg-6 col-sm-6"> </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="address"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="address" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Address</div>
                                 </div>
                             </div>
@@ -2579,8 +2523,7 @@
 
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="csz"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">City, State, Zip</div>
                                 </div>
                             </div>
@@ -2591,8 +2534,7 @@
                             <div class="col-lg-6 col-sm-6"></div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="phn"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="phn" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Telephone Number</div>
                                 </div>
                             </div>
@@ -2603,8 +2545,7 @@
                             <div class="col-lg-6 col-sm-6"></div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="email" name="email"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="email" name="email" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">E-mail</div>
                                 </div>
                             </div>
@@ -2615,8 +2556,7 @@
                             <div class="col-lg-6 col-sm-6"> </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="fax"
-                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="fax" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Fax</div>
                                 </div>
                             </div>
@@ -2624,14 +2564,10 @@
                     </div>
                     <div class="mx-auto h5 fw-bold  mb-5">
                         <div class="mb-5">
-                            NOTE: If you are not filing this statement with a pleading or your response to the other
-                            party’s claim, mail (postage prepaid) or hand deliver this statement to the other party and
-                            file a
-                            Certificate of Service (CC-DR-058) with the court.
+                            NOTE: If you are not filing this statement with a pleading or your response to the other party’s claim, mail (postage prepaid) or hand deliver this statement to the other party and file a Certificate of Service (CC-DR-058) with the court.
                         </div>
                     </div>
                     @include('layouts.footer', ['page' => 7])
-
                     @include('layouts.pagination', ['page' => 1])
                 </div>
             </section>
