@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a{
             color: black !important;
         }
@@ -258,7 +262,7 @@
 
 
 
-            <form action="{{ route('form7.submit') }}" method="post">
+            <form action="{{ route('form7.submit') }}" method="post" class="mb-5">
                 @csrf
                 <section class="section_area" id="first_section">
 
@@ -718,7 +722,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex ps-0">
-                            <div>(q)</div>
+                            <div>(i)</div>
                             <div class="ps-3 d-flex w-100 d_sm_block">
                                 <div class="d-flex w-100 mt-auto">
                                     <div>Public Assistance (Welfare, TFA  payments) .......................................</div>
@@ -728,6 +732,17 @@
                                         class="border-0 border-bottom  text-end fw-bold w-100">
                                 </div>
                             </div>
+                             {{-- <div>(h)</div>
+                            <div class="ps-3 d-flex w-100 d_sm_block">
+                                <div class="d-flex w-100 mt-auto">
+                                    <div>Public Assistance (Welfare, TFA  payments) </div>
+
+                                </div>
+                                <div class="d-flex w-100">$
+                                    <input type="text" name="compensation"
+                                        class="border-0 border-bottom text-end fw-bold w-100">
+                                </div>
+                            </div> --}}
                         </div>
 
 
@@ -766,7 +781,7 @@
 
                     </div>
                 </section>
-                <section class="section_area p-5" id="mandatory_deductions">
+                <section class="section_area p-5" id="second_section">
                     <div>
                         <div class="d-flex">
                             <div class="fw-bold pe-3">2) Mandatory Deductions</div>
@@ -1508,7 +1523,7 @@
                 </section>
 
 
-                <section class="section_area p-5" id="assets">
+                <section class="section_area p-5" id="third_section">
                     <div>
 
 
@@ -1616,7 +1631,7 @@
                                 <h3 class="fw-bold">IV. Assets</h3>
                                 <div>Note: Under "Ownership" indicate S for sole, JTS for joint with spouse, and JTO for joint with other. </div>
                                 <div>You must complete the last column to the right "Value of Your Interest" in each applicable section. </div>
-                                <div>A. Real Estate (including time share) </div>
+                                <div>A. <b>Real Estate</b> (including time share) </div>
                             </div>
                             <div class="table-responsive">
                             <table class="table-bordered border border-1 border-dark w-100">
@@ -1727,7 +1742,7 @@
                             </div>
 
 
-                            <div class="pt-lg-2">B. Motor Vehicles</div>
+                            <div class="pt-lg-2 fw-bold">B. Motor Vehicles</div>
                          <div class="table-responsive">
                             <table class="table-bordered border border-1 border-dark w-100">
                                 <tr>
@@ -1812,7 +1827,7 @@
                             </table>
             </div>
 
-                            <div class="mt-lg-2">C. Bank Accounts</div>
+                            <div class="mt-lg-2 fw-bold">C. Bank Accounts</div>
                             <div>Do not include custodial accounts or child(ren)'s assets — complete Section V. below.</div>
                             <div class="table-responsive">
                             <table class="table-bordered border border-1 border-dark w-100">
@@ -1920,7 +1935,7 @@
 
                             </div>
 
-                            <div class="mt-lg-2">D. Stocks, Bonds, Mutual Funds</div>
+                            <div class="mt-lg-2 fw-bold">D. Stocks, Bonds, Mutual Funds</div>
                             <div class="table-responsive">
                              <table class="table-bordered border border-1 border-dark w-100">
                                 <tr>
@@ -1955,7 +1970,7 @@
                             </div>
 
 
-                            <div class="mt-lg-2">E. Insurance (exclude children) D = Disability L = Life</div>
+                            <div class="mt-lg-2"><b>E. Insurance </b> (exclude children) D = Disability L = Life</div>
                             <div class="table-responsive">
                              <table class="table-bordered border border-1 border-dark w-100">
                                 <tr>
@@ -2001,7 +2016,7 @@
 
                             </div>
 
-                            <div class="mt-lg-2">F. Retirement Plans (Pensions on Interest, Individual IRA, 401K, Keogh, etc.)</div>
+                            <div class="mt-lg-2"><b>F. Retirement Plans</b> (Pensions on Interest, Individual IRA, 401K, Keogh, etc.)</div>
                             <div class="table-responsive">
                              <table class="table-bordered border border-1 border-dark w-100">
                                 <tr>
@@ -2061,7 +2076,7 @@
 
                             </table>
                             </div>
-<h5>G. Business Interest/Self-Employment</h5>
+                                <h5 class="fw-bold">G. Business Interest/Self-Employment</h5>
                             <div class="mt-lg-2">If you own an interest in a business, or are self-employed, complete this section.</div>
                             <div class="table-responsive">
                              <table class="table-bordered border border-1 border-dark w-100">
@@ -2096,14 +2111,14 @@
                 </section>
 
 
-                <section class="section_area p-5" id="last_section">
+                <section class="section_area p-5" id="fourth_section">
                     <div>
 
 
 
 
                         <div class="pt-5 lh-1">
-                            <div>H. Other Assets</div>
+                            <div class="fw-bold">H. Other Assets</div>
                             <div class="table-responsive">
                          <table class="table-bordered border border-1 border-dark w-100">
                             <tr>
@@ -2163,7 +2178,7 @@
                             </div>
 
                             <div class="pt-lg-3">
-                               <h4> V. Child(ren)'s Assets</h4>
+                               <h4 class="fw-bold"> V. Child(ren)'s Assets</h4>
 
                                 <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College Accounts/529 Account, Custodial Account, etc.</div>
                             </div>
@@ -2205,7 +2220,7 @@
 
                             </div>
                             <div class="pt-lg-3">
-                               <h4>VI. Health (Medical and/or Dental Insurance)</h4>
+                               <h4><b>VI. Health </b>(Medical and/or Dental Insurance)</h4>
 
                              </div>
                              <div class="table-responsive">
@@ -2372,12 +2387,21 @@
                             </div>
                             @include('layouts.footer5', ['page' => 4])
 
-                            @include('layouts.pagination', ['page' => 7 ])
+                            {{-- @include('layouts.pagination', ['page' => 7 ]) --}}
 
                         </div>
                 </section>
             </form>
         </div>
+    </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select   mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+        </select>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>

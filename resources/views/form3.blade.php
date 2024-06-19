@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+          .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a{
             color: black !important;
         }
@@ -207,7 +211,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{route('form3.submit')}}" class="" method="post">
+            <form action="{{route('form3.submit')}}" class="mb-5" method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-10 mx-auto">
@@ -325,14 +329,14 @@
                                         <div class="row pt-2">
                                             <div class="col-lg-3" style="width: 165px;">Date of Marriage:</div>
                                             <div class="col-lg-4 p-lg-0">
-                                                <input type="text" name="date_of_marriage"
+                                                <input type="date" name="date_of_marriage"
                                                     class="form-control border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-lg-3 col" style="width: 180px;">Date of Separation:
                                             </div>
 
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="date_of_separation" class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none" style="width:282px ;">
+                                                <input type="date" name="date_of_separation" class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none" style="width:282px ;">
                                             </div>
                                         </div>
                                         <div class="text-center h5 py-3">Names and year of birth of children for whom support is to be determined in this action:</div>
@@ -416,7 +420,7 @@
                                 </div>
                             </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="summary_of_affiants">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="second_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-5 ">
                             <div class=""> <span class="pe-lg-4">2.</span> SUMMARY OF AFFIANT’S INCOME AND NEEDS </div>
@@ -553,7 +557,7 @@
                             @include('layouts.footer2', ['page' => 2])
                         </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="workers_compensation_benefits">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="third_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-5 ">
                             <div class="row  px-lg-5">
@@ -641,19 +645,16 @@
                                     </table>
                                 </div>
                             </div>
-
                         </div>
-
-                        <div class="form-area   pt-4 ">
+                        <div class="form-area pt-4">
                             <div class=""><span class="pe-lg-4 pe-3">4.</span> ASSETS
                                 <div>
                                     (If you claim or agree that all or part of an asset is non-marital, indicate the
                                     non-marital portion under the appropriate spouse’s column and state the amount and
                                     the basis: pre-marital, gift, inheritance, source of funds, etc.)
-
                                 </div>
                             </div>
-                            <div class="row ">
+                            <div class="row">
                                 <div class="table-responsive">
                                     <table class="table-bordered mt-3 border-black table ">
                                         <thead>
@@ -668,53 +669,30 @@
                                         <tbody>
                                             <tr>
                                                 <td>Cash</td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value1"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah1"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw1"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc1"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><div class="d-flex">$<input type="number" name="a_value1" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                                <td><input type="number" name="a_sah1" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_saw1" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_boc1" class="border-0 bg-transparent border outline-none form-control"></td>
                                             </tr>
                                             <tr>
                                                 <td>Stocks, Bonds</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value2"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="number" name="a_value2" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="number" name="a_sah2" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="number" name="a_saw2" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="number" name="a_boc2" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>CD’s, Money Market</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value3"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="number" name="a_value3" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_sah3" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
-                                                <td><input type="number" name="a_saw3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_saw3" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
-                                                <td><input type="number" name="a_boc3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_boc3" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -725,61 +703,38 @@
                                                 <td class="bg-secondary"> </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="a_description4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_description4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value4"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="a_value4" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_sah4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
-                                                <td><input type="number" name="a_saw4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_saw4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
-                                                <td><input type="number" name="a_boc4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="number" name="a_boc4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td> <input type="number" name="a_description5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td> <input type="number" name="a_description5" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value5"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="a_value5" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="number" name="a_sah5" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_saw5" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_boc5" class="border-0 bg-transparent border outline-none form-control"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="a_description6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="number" name="a_description6" class="border-0 bg-transparent border outline-none form-control"></td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value6"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="number" name="a_value6" class="border-0 bg-transparent border outline-none form-control">  </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="number" name="a_sah6" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_saw6" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="number" name="a_boc6" class="border-0 bg-transparent border outline-none form-control"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -793,7 +748,7 @@
                 </section>
 
 
-                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="retirement_pensions">
+                <section  class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class="row">
@@ -1251,7 +1206,7 @@
                             @include('layouts.footer2', ['page' => 4])
                         </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="average_monthly_expenses">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class=""> <span class="pe-lg-4">5</span> <span
@@ -1479,7 +1434,7 @@
                             @include('layouts.footer2', ['page' => 5])
                         </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="gasoline_and_oil">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="sixth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
                             <div class="row px-lg-4">
@@ -1689,7 +1644,7 @@
 
                         </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="dry_cleaning_laundry">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="seventh_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
 
@@ -1920,7 +1875,7 @@
                 </section>
 
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="affiants_oter_expenses">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="eighth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
 
@@ -2326,9 +2281,23 @@
                                     @include('layouts.footer2', ['page' => 9])
                                 </div>
 
-                                @include('layouts.pagination', ['page' => 3])
+                                {{-- @include('layouts.pagination', ['page' => 3]) --}}
                 </section>
             </form>
+        </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#last_section">Ninth Section</option>
+            </select>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

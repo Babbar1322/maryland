@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+          .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a {
             color: black !important;
         }
@@ -252,11 +256,11 @@
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="{{ route('form5.submit') }}" method="post">
+            <form action="{{ route('form5.submit') }}" class="mb-5" method="post">
                 @csrf
 
 
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section" >
                             @if (session('success'))
                             <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                     type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -384,18 +388,19 @@
                 </section>
 
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="case_information">
+                    id="second_section">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
                             <div class="col-lg-6">
                                 <h5>Part A - Case Information:</h5>
+                                <hr class=" border-dark border">
                                 <div class="d-flex d_sm_block">
-                                    <input type="text" name="a_ci"
-                                        class=" responsive_input form-control w-100 border-none border-0 border-bottom border-dotted shadow-none">
+                                    {{-- <input type="text" name="a_ci"
+                                        class=" responsive_input form-control w-100 border-none border-0 border-bottom border-dotted shadow-none"> --}}
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text"> Date of Statement : </small> <input type="text"
+                                    <small class="small_text"> Date of Statement : </small> <input type="date"
                                         name="a_dos"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none"
                                         style="width:333px">
@@ -403,7 +408,7 @@
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
                                     <small class="small_text pe-4">Date of Divorce, Dissolution of Civil </small>
-                                    <input type="text" name="a_dod"
+                                    <input type="date" name="a_dod"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none  "
                                         style="width:200px">
 
@@ -415,7 +420,7 @@
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
                                     <small class="small_text pe-4">Date(s) of Prior Statement(s)</small> <input
-                                        type="text" name="dateofproir"
+                                        type="date" name="dateofproir"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:247px">
 
@@ -426,7 +431,7 @@
 
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text pe-4">Your Birthdate</small> <input type="text"
+                                    <small class="small_text pe-4">Your Birthdate</small> <input type="date"
                                         name="a_yb"
                                         class=" form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:343px">
@@ -434,7 +439,7 @@
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
                                     <small class="small_text pe-4">Date of Marriage, or entry into Civil Union</small>
-                                    <input type="text" name="a_bom"
+                                    <input type="date" name="a_dom"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:160px">
 
@@ -445,14 +450,14 @@
                                 </div>
 
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text pe-4">Date of Separation</small> <input type="text"
+                                    <small class="small_text pe-4">Date of Separation</small> <input type="date"
                                         name="a_dos1"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:310px">
 
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text pe-4">Date of Complaint</small> <input type="text"
+                                    <small class="small_text pe-4">Date of Complaint</small> <input type="date"
                                         name="a_doc"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:310px">
@@ -649,13 +654,13 @@
                                 </div>
 
                                 <div class="col-lg-2">
-                                    <h5 class="small_text">Birthdate</h5> <input type="text" name="cb1"
+                                    <h5 class="small_text">Birthdate</h5> <input type="date" name="cb1"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb2"
+                                    <input type="date" name="cb2"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb3"
+                                    <input type="date" name="cb3"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb4"
+                                    <input type="date" name="cb4"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
 
@@ -698,13 +703,13 @@
                                 </div>
 
                                 <div class="col-lg-2">
-                                    <h5 class="small_text">Birthdate</h5> <input type="text" name="cb5"
+                                    <h5 class="small_text">Birthdate</h5> <input type="date" name="cb5"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb6"
+                                    <input type="date" name="cb6"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb7"
+                                    <input type="date" name="cb7"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
-                                    <input type="text" name="cb8"
+                                    <input type="date" name="cb8"
                                         class="form-control  border-none border-0 border-bottom border-dotted shadow-none ">
                                 </div>
 
@@ -843,7 +848,7 @@
                 </section>
 
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="attach_affidavit">
+                    id="third_section">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -1078,8 +1083,13 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="small_text text-center py-3">3. Your Current Year-to-Date Earned
-                                            Income</div>
+                                        <div class="small_text text-center py-3">3. Your Current Year-to-Date Earned Income</div>
+                                        <div class="d_flex d_sm_block justify-content-end text-end">
+                                             <span>Provide Dates: From</span>
+                                            <input type="text"  name="yve_from" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
+                                            <span class="px-lg-3">To</span>
+                                            <input type="text"  name="yve_to" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
+                                        </div>
                                         <div class="row  mt-lg-3">
                                             <div class="col-lg-7 small_text">
                                                 <div class=" d-flex d_sm_block small_text">1. GROSS EARNED INCOME: <div
@@ -1191,7 +1201,7 @@
 
                 </section>
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="gross_income">
+                    id="fourth_section">
                     <div class="col-lg-10 mx-auto">
 
 
@@ -1340,45 +1350,45 @@
                         <div class="row mt-lg-3">
                             <div class="col-lg-6">
                                 <p class="text-center small_text m-0 p-0">Source</p>
-                                <input type="number" min="0" name="source1"
+                                <input type="text" min="0" name="source1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source2"
+                                <input type="text" min="0" name="source2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source3"
+                                <input type="text" min="0" name="source3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source4"
+                                <input type="text" min="0" name="source4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source5"
+                                <input type="text" min="0" name="source5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source6"
+                                <input type="text" min="0" name="source6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source7"
+                                <input type="text" min="0" name="source7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source8"
+                                <input type="text" min="0" name="source8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="source9"
+                                <input type="text" min="0" name="source9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <p class="mt-2 p-0 small_text">TOTAL GROSS UNEARNED INCOME YEAR TO DATE </p>
+                                <p class="mt-2 p-0  ps-lg-3 small_text">TOTAL GROSS UNEARNED INCOME YEAR TO DATE </p>
                             </div>
                             <div class="col-lg-3">
                                 <p class="text-center small_text m-0 p-0">How often paid</p>
-                                <input type="number" min="0" name="how_often_paid1"
+                                <input type="text" min="0" name="how_often_paid1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid2"
+                                <input type="text" min="0" name="how_often_paid2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid3"
+                                <input type="text" min="0" name="how_often_paid3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid4"
+                                <input type="text" min="0" name="how_often_paid4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid5"
+                                <input type="text" min="0" name="how_often_paid5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid6"
+                                <input type="text" min="0" name="how_often_paid6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid7"
+                                <input type="text" min="0" name="how_often_paid7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid8"
+                                <input type="text" min="0" name="how_often_paid8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="how_often_paid9"
+                                <input type="text" min="0" name="how_often_paid9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
@@ -1508,7 +1518,7 @@
                 </section>
                 <section
                     class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="did_you_receive">
+                    id="fifth_section">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row">
@@ -1537,7 +1547,7 @@
                                 <div class="small_text"> 7. Do you receive cash or distributions not otherwise listed
                                 </div>
                                 <div class="small_text">
-                                    <div class="d-flex d_sm_block">If yes, explain.<input type="number" min="0"
+                                    <div class="d-flex d_sm_block">If yes, explain.<input type="text" min="0"
                                             name="rcd"
                                             class="border-0 responsive_input bg-transparent border border-bottom outline-none form-control"
                                             style="width:694px">
@@ -1562,7 +1572,7 @@
                                 <div class="small_text">8. Have you received income from overtime work during either
                                     the current or immediate past calendar year?</div>
                                 <div class="small_text">
-                                    <div class="d-flex d_sm_block">If yes, explain. <input type="number" min="0"
+                                    <div class="d-flex d_sm_block">If yes, explain. <input type="text" min="0"
                                             name="rio"
                                             class="border-0  responsive_input  bg-transparent border border-bottom outline-none form-control"
                                             style="width:694px">
@@ -1588,7 +1598,7 @@
                                     stock or any other non-cash compensation or entitlement during the current or
                                     immediate past calendar year?</div>
                                 <div class="small_text">
-                                    <div class="d-flex d_sm_block">If yes, explain. <input type="number" min="0"
+                                    <div class="d-flex d_sm_block">If yes, explain. <input type="text" min="0"
                                             name="aogs"
                                             class="border-0 responsive_input   bg-transparent border border-bottom outline-none form-control"
                                             style="width:694px">
@@ -1617,11 +1627,11 @@
                                     received.</div>
                                 <div class="small_text">
                                     <div class="d-flex">
-                                        <input type="number" min="0" name="hyr1"
+                                        <input type="text" min="0" name="hyr1"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
                                     </div>
                                     <div class="d-flex">
-                                        <input type="number" min="0" name="hyr2"
+                                        <input type="text" min="0" name="hyr2"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
                                     </div>
                                 </div>
@@ -1649,7 +1659,7 @@
                                 <div class="small_text">If yes, state the date(s) of receipt and set forth the gross
                                     and net amounts received.</div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="uds"
+                                    <input type="text" min="0" name="uds"
                                         class="border-0    bg-transparent border border-bottom outline-none form-control">
 
                                 </div>
@@ -1672,11 +1682,11 @@
                             <div class="col-lg-10  pb-2">
                                 <div class="small_text">
                                     <div class="d-flex">12. List the names of the dependents you claim: <input
-                                            type="number" min="0" name="lonc"
+                                            type="text" min="0" name="lonc"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control"
                                             style="width:468px">
                                     </div>
-                                    <div class="d-flex"> <input type="number" min="0" name="lnd"
+                                    <div class="d-flex"> <input type="text" min="0" name="lnd"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
 
                                     </div>
@@ -1690,11 +1700,11 @@
                                     <div class="small_text">13. Are you paying or receiving any alimony?</div>
                                     <div class="small_text">
                                         <div class="d-flex">If yes, how much and from or to whom? <input
-                                                type="number" min="0" name="pra1"
+                                                type="text" min="0" name="pra1"
                                                 class="border-0    bg-transparent border border-bottom outline-none form-control"
                                                 style="width:505px">
                                         </div>
-                                        <div class="d-flex"> <input type="number" min="0" name="pra2"
+                                        <div class="d-flex"> <input type="text" min="0" name="pra2"
                                                 class="border-0    bg-transparent border border-bottom outline-none form-control">
 
                                         </div>
@@ -1721,11 +1731,11 @@
                                         received for each child and to whom paid or from whom
                                         received.</div>
 
-                                    <div class="d-flex"> <input type="number" min="0" name="child_s1"
+                                    <div class="d-flex"> <input type="text" min="0" name="child_s1"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
                                     </div>
 
-                                    <div class="d-flex"> <input type="number" min="0" name="child_s2"
+                                    <div class="d-flex"> <input type="text" min="0" name="child_s2"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
                                     </div>
                                 </div>
@@ -1749,7 +1759,7 @@
                                     </div>
                                     <div class="small_text">
                                         <div class="small_text">
-                                            <div class="d-flex">If yes, explain. <input type="number"
+                                            <div class="d-flex">If yes, explain. <input type="text"
                                                     min="0" name="conn_w_support"
                                                     class="border-0    bg-transparent border border-bottom outline-none form-control"
                                                     style="width:671px">
@@ -1798,7 +1808,7 @@
                                         and set forth the gross and net amounts received</div>
                                     <div class="d-flex">
 
-                                        <input type="number" min="0" name="dcoyri"
+                                        <input type="text" min="0" name="dcoyri"
                                             class="border-0    bg-transparent border border-bottom outline-none form-control">
                                     </div>
                                 </div>
@@ -1820,8 +1830,8 @@
                                     <div class="small_text">18. Explanation of Income or Other Information:</div>
                                     <div class="d-flex">
 
-                                        <input type="number" min="0" name="eioi"
-                                            class="border-0    bg-transparent border border-bottom outline-none form-control">
+                                        <input type="text" min="0" name="eioi"
+                                            class="border-0 bg-transparent border border-bottom outline-none form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-2">
@@ -1832,7 +1842,7 @@
                 </section>
 
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="monthly_expenses">
+                    id="sixth_section">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -2698,7 +2708,7 @@
 
                 <section
                     class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="schedule_personal">
+                    id="seventh_section">
                     <div class="col-lg-10 mx-auto">
 
                         <div class="row mt-lg-3">
@@ -3531,25 +3541,25 @@
 
                 <section
                     class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="balance_sheet1">
+                    id="eighth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
                         <div class="row mt-lg-3">
-                            <div class="col">
+                            <div class="col-lg-4">
                                 <div class="small_text">Description</div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-1">
                                 <div class="small_text">Title to Property (P, D, J)1</div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-3">
                                 <div class="small_text">Date of purchase/acquisition. If claim that asset is exempt,
                                     state reason and value of what is claimed to be exempt</div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-2">
                                 <div class="small_text">Value $ Put * after exempt</div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-2">
                                 <div class="small_text">Date of Evaluation Mo./Day/ Yr.</div>
                             </div>
 
@@ -3579,13 +3589,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="real_property_v1"
+                                    <input type="text" min="0" name="real_property_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="real_property_c1" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="real_property_v2"
+                                    <input type="text" min="0" name="real_property_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="real_property_c2" id=""
                                         class="mt-2">
@@ -3636,22 +3646,22 @@
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
-                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v1"
+                                <div class="d-flex"> <input type="text" min="0" name="bank_account_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="bank_account_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v2"
+                                <div class="d-flex"> <input type="text" min="0" name="bank_account_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="bank_account_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v3"
+                                <div class="d-flex"> <input type="text" min="0" name="bank_account_v3"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="bank_account_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="number" min="0" name="bank_account_v4"
+                                <div class="d-flex"> <input type="text" min="0" name="bank_account_v4"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="bank_account_c1" value="True" id=""
                                         class="mt-2">
@@ -3697,13 +3707,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="vehicles_v1"
+                                    <input type="text" min="0" name="vehicles_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="vehicles_c1" id="" value="True"
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="vehicles_v2"
+                                    <input type="text" min="0" name="vehicles_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="vehicles_c1" id="" value="True"
                                         class="mt-2">
@@ -3759,25 +3769,25 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="tangible_personal_v1"
+                                    <input type="text" min="0" name="tangible_personal_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="tangible_personal_c1" value="True"
                                         id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="tangible_personal_v2"
+                                    <input type="text" min="0" name="tangible_personal_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="tangible_personal_c2" value="True"
                                         id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="tangible_personal_v3"
+                                    <input type="text" min="0" name="tangible_personal_v3"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="tangible_personal_c3" value="True"
                                         id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="tangible_personal_v4"
+                                    <input type="text" min="0" name="tangible_personal_v4"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="tangible_personal_c4" value="True"
                                         id="" class="mt-2">
@@ -3839,25 +3849,25 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="stocks_bonds_v1"
+                                    <input type="text" min="0" name="stocks_bonds_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="stocks_bonds_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="stocks_bonds_v2"
+                                    <input type="text" min="0" name="stocks_bonds_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="stocks_bonds_c2" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="stocks_bonds_v3"
+                                    <input type="text" min="0" name="stocks_bonds_v3"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="stocks_bonds_c3" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="stocks_bonds_v4"
+                                    <input type="text" min="0" name="stocks_bonds_v4"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="stocks_bonds_c4" value="True" id=""
                                         class="mt-2">
@@ -3908,13 +3918,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="pension_profit_v1"
+                                    <input type="text" min="0" name="pension_profit_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="pension_profit_c1" id=""
                                         value="True" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="pension_profit_v2"
+                                    <input type="text" min="0" name="pension_profit_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="pension_profit_c2" id=""value="True"
                                         class="mt-2">
@@ -3966,19 +3976,19 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="iras_v1"
+                                    <input type="text" min="0" name="iras_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="iras_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="iras_v2"
+                                    <input type="text" min="0" name="iras_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="iras_c2" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="iras_v3"
+                                    <input type="text" min="0" name="iras_v3"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="iras_c3" value="True" id=""
                                         class="mt-2">
@@ -4028,19 +4038,19 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="bpp_v1"
+                                    <input type="text" min="0" name="bpp_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="bpp_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="bpp_v2"
+                                    <input type="text" min="0" name="bpp_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="bpp_c2" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="bpp_v3"
+                                    <input type="text" min="0" name="bpp_v3"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="bpp_c3" value="True" id=""
                                         class="mt-2">
@@ -4083,12 +4093,12 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="li_v1"
+                                    <input type="text" min="0" name="li_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="li_c1" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="li_v2"
+                                    <input type="text" min="0" name="li_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="li_c2" id="" class="mt-2">
                                 </div>
@@ -4129,12 +4139,12 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="lr_v1"
+                                    <input type="text" min="0" name="lr_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="lr_c1" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="lr_v2"
+                                    <input type="text" min="0" name="lr_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="lr_c2" id="" class="mt-2">
                                 </div>
@@ -4175,13 +4185,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="other_v1"
+                                    <input type="text" min="0" name="other_v1"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="other_c1" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="number" min="0" name="other_v2"
+                                    <input type="text" min="0" name="other_v2"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="other_c2" value="True" id=""
                                         class="mt-2">
@@ -4233,7 +4243,7 @@
 
                 <section
                     class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-                    id="balance_sheet2">
+                    id="ninth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="ps-lg-5">Part E - Balance Sheet of All Family Assets and Liabilities</div>
                         <div class="text-center">Statement of Assets</div>
@@ -4245,7 +4255,7 @@
                                 <div class="small_text">Name of Responsible Party (P, D, J)</div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="small_text">If you contend liability should not be shared, state reason
+                                <div class="small_text text-center">If you contend liability should not be shared, state reason
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -4265,35 +4275,35 @@
                         <div class="row">
                             <div class="small_text">1. Real Estate Mortgages</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="real_state_d1"
+                                <input type="text" min="0" name="real_state_d1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_d2"
+                                <input type="text" min="0" name="real_state_d2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_d3"
+                                <input type="text" min="0" name="real_state_d3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_d4"
+                                <input type="text" min="0" name="real_state_d4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="real_state_name1"
+                                <input type="text" min="0" name="real_state_name1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_name2"
+                                <input type="text" min="0" name="real_state_name2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_name3"
+                                <input type="text" min="0" name="real_state_name3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_name4"
+                                <input type="text" min="0" name="real_state_name4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="real_state_reason1"
+                                <input type="text" min="0" name="real_state_reason1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_reason2"
+                                <input type="text" min="0" name="real_state_reason2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_reason3"
+                                <input type="text" min="0" name="real_state_reason3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_reason4"
+                                <input type="text" min="0" name="real_state_reason4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
@@ -4317,13 +4327,13 @@
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="real_state_date1"
+                                <input type="date" min="0" name="real_state_date1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_date2"
+                                <input type="date" min="0" name="real_state_date2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_date3"
+                                <input type="date" min="0" name="real_state_date3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="real_state_date4"
+                                <input type="date" min="0" name="real_state_date4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
@@ -4332,36 +4342,36 @@
                         <div class="row">
                             <div class="small_text">2. Other Long Term Debts</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="other_login_d1"
+                                <input type="text" min="0" name="other_login_d1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_d2"
+                                <input type="text" min="0" name="other_login_d2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_d3"
+                                <input type="text" min="0" name="other_login_d3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_d4"
+                                <input type="text" min="0" name="other_login_d4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="other_login_name1"
+                                <input type="text" min="0" name="other_login_name1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_name2"
+                                <input type="text" min="0" name="other_login_name2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_name3"
+                                <input type="text" min="0" name="other_login_name3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_name4"
+                                <input type="text" min="0" name="other_login_name4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0" name="other_login_reason1"
+                                <input type="text" min="0" name="other_login_reason1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_reason2"
+                                <input type="text" min="0" name="other_login_reason2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_reason3"
+                                <input type="text" min="0" name="other_login_reason3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_reason4"
+                                <input type="text" min="0" name="other_login_reason4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
@@ -4390,13 +4400,13 @@
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="other_login_date1"
+                                <input type="date" min="0" name="other_login_date1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_date2"
+                                <input type="date" min="0" name="other_login_date2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_date3"
+                                <input type="date" min="0" name="other_login_date3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_login_date4"
+                                <input type="date" min="0" name="other_login_date4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
@@ -4408,78 +4418,78 @@
                         <div class="row">
                             <div class="small_text">3. Revolving Charges</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="revolving_charges_d1"
+                                <input type="text" min="0" name="revolving_charges_d1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d2"
+                                <input type="text" min="0" name="revolving_charges_d2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d3"
+                                <input type="text" min="0" name="revolving_charges_d3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d4"
+                                <input type="text" min="0" name="revolving_charges_d4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d5"
+                                <input type="text" min="0" name="revolving_charges_d5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d6"
+                                <input type="text" min="0" name="revolving_charges_d6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d7"
+                                <input type="text" min="0" name="revolving_charges_d7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d8"
+                                <input type="text" min="0" name="revolving_charges_d8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d9"
+                                <input type="text" min="0" name="revolving_charges_d9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d10"
+                                <input type="text" min="0" name="revolving_charges_d10"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_d11"
+                                <input type="text" min="0" name="revolving_charges_d11"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="revolving_charges_name1"
+                                <input type="text" min="0" name="revolving_charges_name1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name2"
+                                <input type="text" min="0" name="revolving_charges_name2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name3"
+                                <input type="text" min="0" name="revolving_charges_name3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name4"
+                                <input type="text" min="0" name="revolving_charges_name4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name5"
+                                <input type="text" min="0" name="revolving_charges_name5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name6"
+                                <input type="text" min="0" name="revolving_charges_name6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name7"
+                                <input type="text" min="0" name="revolving_charges_name7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name8"
+                                <input type="text" min="0" name="revolving_charges_name8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name9"
+                                <input type="text" min="0" name="revolving_charges_name9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name10"
+                                <input type="text" min="0" name="revolving_charges_name10"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_name11"
+                                <input type="text" min="0" name="revolving_charges_name11"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0" name="revolving_charges_reason1"
+                                <input type="text" min="0" name="revolving_charges_reason1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason2"
+                                <input type="text" min="0" name="revolving_charges_reason2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason3"
+                                <input type="text" min="0" name="revolving_charges_reason3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason4"
+                                <input type="text" min="0" name="revolving_charges_reason4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason5"
+                                <input type="text" min="0" name="revolving_charges_reason5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason6"
+                                <input type="text" min="0" name="revolving_charges_reason6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason7"
+                                <input type="text" min="0" name="revolving_charges_reason7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason8"
+                                <input type="text" min="0" name="revolving_charges_reason8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason9"
+                                <input type="text" min="0" name="revolving_charges_reason9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason10"
+                                <input type="text" min="0" name="revolving_charges_reason10"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_reason11"
+                                <input type="text" min="0" name="revolving_charges_reason11"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
@@ -4536,27 +4546,27 @@
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="revolving_charges_date1"
+                                <input type="date" min="0" name="revolving_charges_date1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date2"
+                                <input type="date" min="0" name="revolving_charges_date2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date3"
+                                <input type="date" min="0" name="revolving_charges_date3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date4"
+                                <input type="date" min="0" name="revolving_charges_date4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date5"
+                                <input type="date" min="0" name="revolving_charges_date5"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date6"
+                                <input type="date" min="0" name="revolving_charges_date6"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date7"
+                                <input type="date" min="0" name="revolving_charges_date7"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date8"
+                                <input type="date" min="0" name="revolving_charges_date8"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date9"
+                                <input type="date" min="0" name="revolving_charges_date9"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date10"
+                                <input type="date" min="0" name="revolving_charges_date10"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="revolving_charges_date11"
+                                <input type="date" min="0" name="revolving_charges_date11"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
@@ -4567,36 +4577,36 @@
                         <div class="row">
                             <div class="small_text">4. Other Short Term Debts</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="other_short_d1"
+                                <input type="text" min="0" name="other_short_d1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_d2"
+                                <input type="text" min="0" name="other_short_d2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_d3"
+                                <input type="text" min="0" name="other_short_d3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_d4"
+                                <input type="text" min="0" name="other_short_d4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="other_short_name1"
+                                <input type="text" min="0" name="other_short_name1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_name2"
+                                <input type="text" min="0" name="other_short_name2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_name3"
+                                <input type="text" min="0" name="other_short_name3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_name4"
+                                <input type="text" min="0" name="other_short_name4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0" name="other_short_reason1"
+                                <input type="text" min="0" name="other_short_reason1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_reason2"
+                                <input type="text" min="0" name="other_short_reason2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_reason3"
+                                <input type="text" min="0" name="other_short_reason3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_reason4"
+                                <input type="text" min="0" name="other_short_reason4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
@@ -4624,13 +4634,13 @@
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="other_short_date1"
+                                <input type="date" min="0" name="other_short_date1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_date2"
+                                <input type="date" min="0" name="other_short_date2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_date3"
+                                <input type="date" min="0" name="other_short_date3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="other_short_date4"
+                                <input type="date" min="0" name="other_short_date4"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
@@ -4641,30 +4651,30 @@
                         <div class="row">
                             <div class="small_text">5. Contingent Liabilities</div>
                             <div class="col-lg-3">
-                                <input type="number" min="0" name="contingent_liabilities_d1"
+                                <input type="text" min="0" name="contingent_liabilities_d1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_d2"
+                                <input type="text" min="0" name="contingent_liabilities_d2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_d3"
+                                <input type="text" min="0" name="contingent_liabilities_d3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="contingent_liabilities_name1"
+                                <input type="text" min="0" name="contingent_liabilities_name1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_name2"
+                                <input type="text" min="0" name="contingent_liabilities_name2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_name3"
+                                <input type="text" min="0" name="contingent_liabilities_name3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
                             <div class="col-lg-3">
 
-                                <input type="number" min="0" name="contingent_liabilities_reason1"
+                                <input type="text" min="0" name="contingent_liabilities_reason1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_reason2"
+                                <input type="text" min="0" name="contingent_liabilities_reason2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_reason3"
+                                <input type="text" min="0" name="contingent_liabilities_reason3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
                             </div>
@@ -4689,11 +4699,11 @@
 
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="contingent_liabilities_date1"
+                                <input type="date" min="0" name="contingent_liabilities_date1"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_date2"
+                                <input type="date" min="0" name="contingent_liabilities_date2"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="contingent_liabilities_date3"
+                                <input type="date" min="0" name="contingent_liabilities_date3"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
@@ -4837,10 +4847,26 @@
                         </div>
                         @include('layouts.footer4', ['page' => 10])
 
-                        @include('layouts.pagination', ['page' => 5])
+                        {{-- @include('layouts.pagination', ['page' => 5]) --}}
                     </div>
                 </section>
             </form>
+        </div>
+
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#ninth_section">Ninth Section</option>
+                <option value="#last_section">Tenth Section</option>
+            </select>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

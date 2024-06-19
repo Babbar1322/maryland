@@ -69,7 +69,8 @@
                     <div class="card">
                         <div class="card-body p-5">
                         <h5 class="text-decoration-none text-dark">Form 6</h5>
-                        <span>fm006-short  CT.pdf</span>
+                        <span>cc320.pdf</span>
+                        {{-- <span>fm006-short  CT.pdf</span> --}}
                         </div>
                     </div>
                 </a>
@@ -243,6 +244,16 @@
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 23</h5>
                       <span>KY Disclosure statement 238-239.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form24')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 24</h5>
+                      <span>ME financial statement MJB-Form-fm-043 .pdf</span>
                     </div>
                   </div>
                 </a>

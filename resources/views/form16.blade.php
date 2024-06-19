@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a {
             color: black !important;
         }
@@ -278,7 +282,7 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form16.submit') }}" method="post">
                 @csrf
-                <section class="section_area" id="section_first">
+                <section class="section_area" id="first_section">
 
                     <div class="row">
 
@@ -291,7 +295,7 @@
                             <section class="px-lg-5 px-2 py-5">
                                 <div class="fw-bold text-center">
                                     <h2 class="fw-bold">INSTRUCTIONS FOR FLORIDA FAMILY LAW RULES OF PROCEDURE</h2>
-                                    <h2 class="fw-bold">FORM 12.902(b)</h2>
+                                    <h2 class="fw-bold">FORM 12.902(c)</h2>
                                     <h2 class="fw-bold">FAMILY LAW FINANCIAL AFFIDAVIT (LONG FORM)</h2>
                                     <h2 class="fw-bold">(10/21)</h2>
 
@@ -302,14 +306,16 @@
                                     This form should be used when you are involved in a family law case which requires a
                                     <a class="text-dark fw-bold" href="#" class="decoration-none">financial
                                         affidavit</a>
-                                    <span class="fw-bold">and your individual gross income is UNDER $50,000 per
-                                        year</span>
+                                    <span class="fw-bold">
+                                        and your individual gross income is $50,000 OR MORE per year</span>
+                                    {{-- <span class="fw-bold">and your individual gross income is UNDER $50,000 per
+                                        year</span> --}}
                                     unless:
                                     <div class="p-4">
                                         <p class="m-0 p-0">(1) You are filing a simplified dissolution of marriage under
                                             rule
                                             12.105 and both parties have waived
-                                            the filing of a financial affidavit;</p>
+                                            the filing of financial affidavits;</p>
                                         <p class="m-0 p-0">(2) You have no minor children, no support issues, and have
                                             filed a
                                             written settlement agreement
@@ -318,7 +324,7 @@
                                             issues.
                                         </p>
                                     </div>
-                                    This form should be typed or printed in black ink. You should <a href="#"
+                                    This form should be typed or printed in black ink. After completing this form, you should sign the form. You should then <a href="#"
                                         class="fw-bold text-dark">file</a> this document with the <a href="#"
                                         class="fw-bold text-dark">clerk of the
                                         circuit court</a> in the county where the <a href="#"
@@ -327,33 +333,23 @@
                                 </div>
                                 <div class="fw-bold text-center h3 mt-3">What should I do next?</div>
 
-                                <div class="mt-3">A copy of this form must be filed with the court and served on the
-                                    other
-                                    party or his or her attorney in
-                                    your case within 45 days of being served with the petition, if it is not served on
-                                    him or
-                                    her with your initial
-                                    papers. The copy you are serving to the other party must be either mailed, e-mailed,
-                                    or
-                                    hand-delivered to
-                                    the opposing party or his or her attorney on the same day indicated on the
-                                    certificate of
-                                    service. If it is
-                                    mailed, it must be postmarked on the date indicated in the certificate of service.
-                                    <span class="fw-bold">Service</span> must be in
-                                    accordance with Florida Rule of General Practice and Judicial Administration 2.516.
+                                <div class="mt-3">A copy of this form must be served on the other party in your case within 45 days of being served with
+                                    the petition, if it is not served on him or her with your initial papers. Service must be in accordance with
+                                    Florida Rule of General Practice and Judicial Administration 2.516.
+                                </div>
+                                <div class="mt-1">A copy of this form must be filed with the court and served on the other party or his or her attorney. The
+                                    copy you are serving to the other party must be either mailed, e-mailed, or hand-delivered to the opposing
+                                    party or his or her attorney on the same day indicated on the certificate of service. If it is mailed, it must
+                                    be postmarked on the date indicated in the certificate of service.
                                 </div>
                                 <div class="fw-bold text-center h3 mt-3">Where can I look for more information?
                                 </div>
 
                                 <div class="mt-3">
-                                    <span class="fw-bold">Before proceeding, you should read “General Information for
-                                        Self-Represented
-                                        Litigants” found at the
-                                        beginning of these forms.</span> The words that are in <a href="#"
-                                        class="text-dark fw-bold">“bold underline”</a> in these
-                                    instructions are defined there.
-                                    For further information, see Florida Family Law Rule of Procedure 12.285.
+                                    <span class="fw-bold">Before proceeding, you should read “General Information for Self-Represented Litigants” found at the
+                                        beginning of these forms.</span> The words that are in<a href="#"
+                                        class="text-dark fw-bold">“bold underline”</a>  in these instructions are defined there.
+                                        For further information, see Florida Family Law Rule of Procedure 12.285.
                                 </div>
                                 <div class="fw-bold text-center h3 mt-3">IMPORTANT INFORMATION REGARDING E-FILING</div>
 
@@ -366,7 +362,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_two">
+                <section class="section_area py-5" id="second_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -442,7 +438,7 @@
                     </div>
 
                 </section>
-                <section class="section_area py-5" id="section_three">
+                <section class="section_area py-5" id="third_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
 
@@ -559,7 +555,7 @@
                                         convert your income to monthly as follows:
                                         <div class="row">
                                             <div class="col-lg-2">
-                                                <div class="m-0 p-0"> Bi-weekly amount</div>
+                                                <div class="m-0 p-0 small_text"> Bi-weekly amount</div>
                                                 <div class="m-0 p-0"> Yearly amount</div>
                                             </div>
                                             <div class="col-lg-1">
@@ -618,7 +614,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_four">
+                <section class="section_area py-5" id="fourth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -645,7 +641,7 @@
                                 <div class="" style="padding-left: 115px">Respondent.</div>
                                 <div class="text-center h3 fw-bold mt-4">FAMILY LAW FINANCIAL AFFIDAVIT (LONG FORM)
                                 </div>
-                                <div class="text-center">(Under $50,000 Individual Gross Annual Income)</div>
+                                <div class="text-center">($50,000 or more Individual Gross Annual Income)</div>
 
                                 <div class="d-flex d_sm_block mt-3">I, {full legal name}
                                     <input type="text" min="0" name="fl_name" class="border-0 w-50 footer_field border-bottom">,
@@ -749,13 +745,13 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_five">
+                <section class="section_area py-5" id="fifth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class=" ms-lg-3 d-flex d_sm_block "> c. <span class="border-bottom ms-3 me-2">
                                         <input type="checkbox" name="c_check" class=" "> </span> <span>Retired.
-                                        Date of retirement</span> <input type="text" min="0"
+                                        Date of retirement:</span> <input type="text" min="0"
                                         style="    width: 700px" name="c_retirement"
                                         class="border-0 responsive_input  footer_field border-bottom">
                                 </div>
@@ -837,17 +833,10 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input
-                                            type="text" min="0" name="mbi_ssi"
-                                            class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input type="text" min="0" name="mbi_ssi" class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
                                     </div>
-                                    <div class="col-lg-10">Monthly business income from sources such as
-                                        self-employment,
-                                        partnerships, close
-                                        corporations, and/or independent contracts (gross receipts minus ordinary and
-                                        necessary
-                                        expenses required to produce income) (Attach sheet itemizing such income and
-                                        expenses.)
+                                    <div class="col-lg-10">Monthly business income from sources such as self-employment, partnerships, close corporations, and/or independent contracts (gross receipts minus ordinary and
+                                        necessary expenses required to produce income) (Attach sheet itemizing such income and expenses.)
                                     </div>
                                 </div>
                                 <div class="row">
@@ -859,7 +848,6 @@
                                     </div>
                                     <div class="col-lg-10">Monthly disability benefits/SSI</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">5.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
@@ -869,7 +857,6 @@
                                     </div>
                                     <div class="col-lg-10">Monthly Workers’ Compensation</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">6.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
@@ -879,7 +866,6 @@
                                     </div>
                                     <div class="col-lg-10"> Monthly Unemployment Compensation</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">7.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
@@ -889,7 +875,6 @@
                                     </div>
                                     <div class="col-lg-10">Monthly pension, retirement, or annuity payments</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">8.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
@@ -899,7 +884,6 @@
                                     </div>
                                     <div class="col-lg-10"> Monthly Social Security benefits</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">9.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
@@ -909,21 +893,17 @@
                                     </div>
                                     <div class="col-lg-10"> Monthly alimony actually received (Add 9a and 9b)</div>
                                 </div>
-
                                 <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From this
                                     case: <div class="d-flex   ms-1 ">$<input type="text" min="0"
                                             name="maar_a" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
-
                                 <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From other
                                     case(s): <div class="d-flex   ms-1 ">$<input type="text"
                                             min="0" name="maar_b"
                                             class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                     </div>
                                 </div>
-
-
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">10.</span>
                                         <div class="d-flex   "> <input type="text" min="0"
@@ -933,9 +913,7 @@
                                     </div>
                                     <div class="col-lg-10">Monthly interest and dividends</div>
                                 </div>
-
-
-                                <div class="row">
+                                {{-- <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">11.</span>
                                         <div class="d-flex d_sm_block "> <input type="text" min="0"
                                                 name="mri_11"
@@ -944,7 +922,14 @@
                                     </div>
                                     <div class="col-lg-10">Monthly rental income (gross receipts minus ordinary and
                                         necessary expenses required to
-                                        produce income) (Attach sheet itemizing such income and expense items.)</div>
+                                        produce income.) (Attach sheet itemizing such income and expense items.)</div>
+                                </div> --}}
+                                <div class="row">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input type="text" min="0" name="mri_11" class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
+                                    </div>
+                                    <div class="col-lg-10">Monthly rental income (gross receipts minus ordinary and
+                                        necessary expenses required to
+                                        produce income.) (Attach sheet itemizing such income and expense items.) </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">12.</span>
@@ -955,16 +940,14 @@
                                     </div>
                                     <div class="col-lg-10">Monthly income from royalties, trusts, or estates</div>
                                 </div>
+
                                 <div class="row">
-                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">13.</span>
-                                        <div class="d-flex d_sm_block "> <input type="text" min="0"
-                                                name="mre_13"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">3.</span> <input type="text" min="0" name="mre_13" class="border-0 p-0 m-0 mb-5  border-bottom footer_field w-100">
                                     </div>
                                     <div class="col-lg-10">Monthly reimbursed expenses and in-kind payments to the
                                         extent that they reduce
-                                        personal living expenses (Attach sheet itemizing each item and amount.)</div>
+                                        personal living expenses (Attach sheet itemizing each item and amount.)
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">14.</span>
@@ -1067,10 +1050,10 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_six">
+                <section class="section_area py-5" id="sixth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <div class="row px-lg-5 px-2 py-2 pt-0">
+                            <div class="row   px-2 py-2 pt-0">
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">20.</span>
                                         <input type="text" min="0" name="mmp_20" class="border-0 p-0 m-0 border-bottom footer_field w-100">
@@ -1390,7 +1373,7 @@
                                 </div>
                 </section>
 
-                <section class="section_area py-5" id="section_seven">
+                <section class="section_area py-5" id="seventh_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -1651,7 +1634,7 @@
                                     <div class="col-lg-10">Monthly miscellaneous</div>
                                 </div>
 
-                                <div class="row mt-1">
+                                {{-- <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">58 .</span>
                                         <div class="d-flex d_sm_block ">$<input type="text" min="0"
                                                 name="s2_m58"
@@ -1659,7 +1642,17 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-10"><b> SUBTOTAL</b> (Add lines 36 through 57.)</div>
+                                </div> --}}
+                                <div class="row mt-1">
+                                    <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">36.</span>
+                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                                name="s2_m36"
+                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10"><b> SUBTOTAL</b> (Add lines 36 through 57.)</div>
                                 </div>
+
                                 <div class="fw-bold ">MONTHLY EXPENSES FOR CHILD(REN) FROM ANOTHER RELATIONSHIP</div>
                                 <div>(other than court-ordered child support)</div>
 
@@ -1709,7 +1702,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_eight">
+                <section class="section_area py-5" id="eighth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2028,7 +2021,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_nine">
+                <section class="section_area py-5" id="ninth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2146,7 +2139,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_ten">
+                <section class="section_area py-5" id="tenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2565,7 +2558,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_eleven">
+                <section class="section_area py-5" id="eleventh_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2975,7 +2968,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_twelve">
+                <section class="section_area py-5" id="twelfth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3014,7 +3007,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_thirteen">
+                <section class="section_area py-5" id="thirteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3392,7 +3385,7 @@
                     </div>
                 </section>
 
-                <section class="section_area py-5" id="section_fourteen">
+                <section class="section_area py-5" id="fourteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3653,7 +3646,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_last">
+                <section class="section_area py-5" id="fifteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -3794,9 +3787,28 @@
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#ninth_section">Ninth Section</option>
+                <option value="#tenth_section">Tenth Section</option>
+                <option value="#eleventh_section">Eleventh Section</option>
+                <option value="#twelfth_section">Twelfth Section</option>
+                <option value="#thirteenth_section">Thirteenth Section</option>
+                <option value="#fourteenth_section">Fourteenth Section</option>
+                <option value="#fifteenth_section">Fifteenth Section</option>
+            </select>
+        </div>
     </div>
 
-</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
@@ -3809,5 +3821,5 @@
         });
     });
 </script>
-
+</body>
 </html>

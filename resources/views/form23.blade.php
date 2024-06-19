@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         .blue_border{
             border: 2px solid #4e4ed8;
         }
@@ -140,7 +144,7 @@
         <div class="container bg_color p-lg-3 p-1  ">
             <form action="{{ route('form23.submit') }}" method="post">
                 @csrf
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="first_section">
                         @if (session('success'))
                             <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
                                     type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -457,7 +461,7 @@
                         </div>
 
                 </section>
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="second_section">
                      @include('layouts.header1', ['page' => 2])
                     <div class="fw-bold"> <span class="me-3 fw-normal">IV. </span>CHILDREN’S INFORMATION (<span class="fw-normal">If more than 3 children, continue on a separate sheet</span>)</div>
                     <div class="me-lg-3">A. Minor children born to parties (number <input type="text" name="ci_number" id="" class="border-0 border-bottom responsive_input">)	 <span class="ms-lg-5"><input type="checkbox" name="ci_mca" value="True" id=""> More CHILDREN attached?</span>	</div>
@@ -527,7 +531,7 @@
 
 
                 </section>
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="third_section">
                     @include('layouts.header1', ['page' => 3])
 
                     <div>B. VEHICLES - Automobiles, Motorcycles, Boats, Trucks, Motor Homes, etc. (If more than 3 vehicles, continue on a separate sheet) Are you making a non-marital claim? <input type="radio" name="v_claim_checkbox" value="No" id="" > Yes <input type="radio" name="v_claim_checkbox" value="Yes" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
@@ -638,7 +642,7 @@
                                 </table>
                             </div>
                 </section>
-                <section class="section_area p-5" >
+                <section class="section_area p-5" id="fourth_section" >
                     @include('layouts.header1', ['page' => 4])
                     <div>E. RETIREMENT BENEFITS – IRA, Keogh, 401(K), 403(b), Pension, etc. (If more than 3, continue on a separate sheet)
                         Are you making a non-marital claim? <input type="radio" name="rb_claim_checkbox" id="" value="Yes"  > Yes <input type="radio" name="rb_claim_checkbox" value="No" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
@@ -725,7 +729,7 @@
                             <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe2" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
                             <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
                 </section>
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="fifth_section">
                     @include('layouts.header1', ['page' => 5])
                     <div class="pt-1 small_text">Name of Business & Owner:  <input type="text" name="bi_nob3" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:979px"> </div>
                     <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo3" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob3" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
@@ -783,7 +787,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area p-5" id="section_six">
+                <section class="section_area p-5" id="sixth_section">
                     @include('layouts.header1', ['page' => 6])
                     <div><b>VI. OTHER DEBTS NOT PREVIOUSLY LISTED</b> (Do not list account numbers) Includes credit card balances, credit union loans, signature loans and other unsecured debt. (If more than 5 debts, continue on a separate sheet)</div>
                         <div>
@@ -831,7 +835,7 @@
                             </div>
                         </div>
                 </section>
-                <section class="section_area p-5" id="section_last">
+                <section class="section_area p-5" id="seventh_section">
                     @include('layouts.header1', ['page' => 7])
                     <div class="row pt-3">
                         <div class="col-lg-6">
@@ -1098,8 +1102,8 @@
                             </div>
                         </div>
                     </div>
-                 </section>
-                <section class="section_area p-5"  >
+                </section>
+                <section class="section_area p-5" id="eighth_section" >
                     @include('layouts.header1', ['page' => 8])
                     <div class="fw-bold"> VIII. OTHER</div>
                     <div class="row">
@@ -1233,7 +1237,7 @@
                         </div>
 
                 </section>
-                <section class="section_area p-5" id="section_six">
+                <section class="section_area p-5" id="ninth_section">
                     @include('layouts.header1', ['page' =>9])
                          <div class="table-responsive pt-3">
                             <table class="table table-bordered border-dark">
@@ -1311,7 +1315,7 @@
                             </div>
                         </div>
                 </section>
-                <section class="section_area p-5" id="section_six">
+                <section class="section_area p-5" id="tenth_section">
                     @include('layouts.header1', ['page' => 10])
                       <div class="row">
                           <div class="col-lg-6">
@@ -1368,6 +1372,32 @@
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                    <option value="#first_section">First Section</option>
+                    <option value="#second_section">Second Section</option>
+                    <option value="#third_section">Third Section</option>
+                    <option value="#fourth_section">Fourth Section</option>
+                    <option value="#fifth_section">Fifth Section</option>
+                    <option value="#sixth_section">Sixth Section</option>
+                    <option value="#seventh_section">Seventh Section</option>
+                    <option value="#eighth_section">Eighth Section</option>
+                    <option value="#ninth_section">Ninth Section</option>
+                    <option value="#tenth_section">Tenth Section</option>
+            </select>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

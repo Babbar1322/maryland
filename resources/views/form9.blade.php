@@ -249,6 +249,11 @@
                 width: 100% !important;
             }
         }
+
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
     </style>
 </head>
 
@@ -258,9 +263,9 @@
 
 
 
-            <form action="{{ route('form9.submit') }}" method="post">
+            <form action="{{ route('form9.submit') }}" class=" " method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
 
                     <div class="row  px-lg-5 px-2   pt-2">
                         @if (session('success'))
@@ -482,16 +487,31 @@ Response. The time periods may be extended by written agreement of the parties o
             <button type="reset"  style="background-color: #F59292 ">Clear this form</button>
         </div>
     </div>
+    {{-- @include('layouts.pagination', ['page' => 9 ]) --}}
 </div>
 
-@include('layouts.pagination', ['page' => 9 ])
                     </div>
                 </section>
 
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter  px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+        </div>
     </div>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+        selectElement.addEventListener('change', function() {
+            const selectedSection = this.value;
+            if (selectedSection) {
+                window.location.hash = selectedSection;
+            }
+        });
+    });
+</script>
 </html>

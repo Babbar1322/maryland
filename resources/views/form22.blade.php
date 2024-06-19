@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a {
             color: black !important;
         }
@@ -379,8 +383,7 @@
                         @include('layouts.footer17', ['page' => 1])
                     </div>
                 </section>
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="second_section">
                     <div class="border-bottom border-dark">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -673,8 +676,7 @@
                         @include('layouts.footer17', ['page' => 2])
                     </div>
                 </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="third_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -1027,8 +1029,7 @@
                     </div>
 
                 </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -1289,8 +1290,7 @@
                         @include('layouts.footer17', ['page' => 4])
                     </div>
                 </section>
-                <section
-                    class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
                     <div class="border-bottom">
                         <div>
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -1895,8 +1895,7 @@
                     </div>
 
                 </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="sixth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -2298,8 +2297,7 @@
                     </div>
 
                 </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section   class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="seventh_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -2733,8 +2731,7 @@
                         @include('layouts.footer17', ['page' => 7])
 
                 </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section  class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="eighth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3126,9 +3123,8 @@
                         @include('layouts.footer17', ['page' => 8])
                         @include('layouts.pagination', ['page' => 22])
                 </section>
-                </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id='ninth_section'>
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3476,9 +3472,8 @@
                         @include('layouts.pagination', ['page' => 22])
                     </div>
                 </section>
-                </section>
-                <section
-                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="tenth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3571,7 +3566,33 @@
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                    <option value="#first_section">First Section</option>
+                    <option value="#second_section">Second Section</option>
+                    <option value="#third_section">Third Section</option>
+                    <option value="#fourth_section">Fourth Section</option>
+                    <option value="#fifth_section">Fifth Section</option>
+                    <option value="#sixth_section">Sixth Section</option>
+                    <option value="#seventh_section">Seventh Section</option>
+                    <option value="#eighth_section">Eighth Section</option>
+                    <option value="#ninth_section">Ninth Section</option>
+                    <option value="#tenth_section">Tenth Section</option>
+            </select>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

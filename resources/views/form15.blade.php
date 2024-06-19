@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a{
             color: black !important;
         }
@@ -277,7 +281,7 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form15.submit') }}" method="post">
                 @csrf
-                <section class="section_area" id="section_first">
+                <section class="section_area" id="first_section">
 
                     <div class="row  px-lg-5 px-2   pt-2">
                         @if (session('success'))
@@ -763,7 +767,7 @@
 
                     </div>
                 </section>
-                <section class="section_area pt-5" id="section_two">
+                <section class="section_area pt-5" id="second_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">2. </span>Monthly Deductions (Mandatory and Voluntary)</div>
                         <div class="table-responsive pt-3">
@@ -1142,7 +1146,7 @@
                     </div>
                 </section>
 
-                <section class="section_area pt-5" id="section_three">
+                <section class="section_area pt-5" id="third_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
 
 
@@ -1539,7 +1543,7 @@
                         @include('layouts.footer11', ['page' => 3])
                     </div>
                 </section>
-                <section class="section_area pt-5" id="section_four">
+                <section class="section_area pt-5" id="fourth_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div> <span class="pe-lg-3 ps-2">4. </span> Debts (unsecured)</div>
                         <div class="small_text">List unsecured debts such as credit cards, store charge accounts,
@@ -2247,12 +2251,12 @@
                             </div>
 
 
+                            @include('layouts.footer11', ['page' => 4])
                         </div>
-                        @include('layouts.footer11', ['page' => 4])
-                    </div>
+
                 </section>
 
-                <section class="section_area pt-5" id="section_five">
+                <section class="section_area pt-5" id="fifth_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div class="fw-bold">
                             5. <span class="ps-5">Assets</span>
@@ -2286,7 +2290,7 @@
                                             Property Description and Name of Creditor/ Lender)
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="a_re_c"
-                                                    class="border-0 footer_field ">None
+                                                    class="border-0 footer_field me-2">None
                                             </div>
                                         </td>
                                         <td class="bg-secondary small_text">P</td>
@@ -2404,7 +2408,7 @@
                                             Boats, etc.) (Year, Make, Model) (Name of Creditor/Lender)
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="b_mv_c"
-                                                    class="border-0 footer_field ">None
+                                                    class="border-0 footer_field me-2">None
                                             </div>
                                         </td>
                                         <td class="bg-secondary small_text">P</td>
@@ -2594,7 +2598,7 @@
                                             Institution)
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="c_mv_c"
-                                                    class="border-0 footer_field ">None
+                                                    class="border-0 footer_field me-2">None
                                             </div>
                                         </td>
                                         <td class="bg-secondary small_text">P</td>
@@ -2771,7 +2775,7 @@
                                             (Name of Company/Beneficiary)
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="d_li_c"
-                                                    class="border-0 footer_field ">None
+                                                    class="border-0 footer_field me-2">None
                                             </div>
                                         </td>
                                         <td class="bg-secondary small_text">P</td>
@@ -2918,7 +2922,7 @@
                         @include('layouts.footer11', ['page' => 5])
                     </div>
                 </section>
-                <section class="section_area pt-5" id="section_last">
+                <section class="section_area pt-5" id="sixth_section">
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div class="table-responsive pt-3">
                             <table class="table-bordered border border-2 table mb-0  ">
@@ -3155,7 +3159,7 @@
                                             Mutual Funds, Securities & Investment Accounts
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="f_c1"
-                                                    class="border-0 footer_field "> None <input type="f_c2"
+                                                    class="border-0 footer_field  mx-2"> None <input type="f_c2"
                                                     min="0" name="blc_1"
                                                     class="border-0 footer_field  ms-4"> If owned please attach JDF
                                                 1111-SS.
@@ -3176,7 +3180,7 @@
                                             Profit Sharing, or Retirement Funds
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="g_c1"
-                                                    class="border-0 footer_field "> None <input type="checkbox"
+                                                    class="border-0 footer_field mx-2"> None <input type="checkbox"
                                                     min="0" name="g_c2"
                                                     class="border-0 footer_field  ms-4"> If owned please attach JDF
                                                 1111-SS.
@@ -3197,7 +3201,7 @@
                                             Assets
                                             <div class="small_text d-flex">
                                                 <input type="checkbox" min="0" name="h_check"
-                                                    class="border-0 footer_field "> None <span class="ms-5"> If
+                                                    class="border-0 footer_field mx-2"> None <span class="ms-5"> If
                                                     you own any of the assets identified below, please check the
                                                     appropriate box and attach JDF 1111-SS to report the value.
                                                 </span>
@@ -3402,9 +3406,9 @@
                                                 Property
                                                 <div class="small_text d-flex">
                                                     <input type="checkbox" min="0" name="i_c1"
-                                                        class="border-0 footer_field "> None <input type="checkbox"
+                                                        class="border-0 footer_field mx-2 "> None <input type="checkbox"
                                                         min="0" name="i_c2"
-                                                        class="border-0 footer_field  ms-4 me-2"> If owned please attach JDF
+                                                        class="border-0 footer_field  ms-4 mx-2"> If owned please attach JDF
                                                     1111-SS to identify the property and to report the value.
                                                 </div>
 
@@ -3463,9 +3467,9 @@
                                     <div class="small_text d-flex d_sm_block mt-1 ">
                                         Signature of
                                         <input type="checkbox" min="0" name="s_petitioner"
-                                            class="border-0 footer_field ms-2 "> Petitioner or <input
+                                            class="border-0 footer_field mx-2 "> Petitioner or <input
                                             type="checkbox" min="0" name="s_copetitioner"
-                                            class="border-0 footer_field  ms-2"> Co-Petitioner/Respondent
+                                            class="border-0 footer_field  mx-2"> Co-Petitioner/Respondent
                                     </div>
                                 </div>
                             </div>
@@ -3517,7 +3521,29 @@
 
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+            </select>
+        </div>
     </div>
-</body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
+    </body>
 </html>

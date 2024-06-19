@@ -265,6 +265,10 @@
                 width: 100% !important;
             }
         }
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
     </style>
 </head>
 
@@ -773,7 +777,7 @@
                     </div>
                     @include('layouts.footer9', ['page' => 3])
                 </section>
-                <section class="section_area  px-lg-5 px-2" id="last_section">
+                <section class="section_area  px-lg-5 px-2" id="fourth_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -961,11 +965,20 @@
                         </div>
                     </div>
                     @include('layouts.footer9', ['page' => 4])
-                    @include('layouts.pagination', ['page' => 13 ])
+                    {{-- @include('layouts.pagination', ['page' => 13 ]) --}}
                 </section>
 
 
             </form>
+        </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+            </select>
         </div>
     </div>
 

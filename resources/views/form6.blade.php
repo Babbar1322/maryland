@@ -1,4 +1,4 @@
-{{-- fm006-short  CT.pdf --}}
+{{-- cc320.pdf --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -32,7 +36,6 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
 
         }
 
@@ -248,14 +251,14 @@
 
 
 
-            <form action="{{ route('form6.submit') }}" method="post">
+            <form action="{{ route('form6.submit') }}" class="mb-5" method="post">
                 @csrf
-                <section class="section_area row p-5" id="section_first">
+                <section class="section_area row p-5" id="first_section">
                     @if (session('success'))
-                    <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                            type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                @endif
+                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
                     <div class="col-md-4 border border-2 border-dark pb-5 border-start-0 border-end-0 ">
                         <h4 class="fw-bold text-center">STATE OF MICHIGAN</h4>
                         <div class="d-flex">
@@ -362,7 +365,7 @@
                             <div class="col-md-6">
                                 <div class="d-flex">
                                     <div class="my-auto" style="width:150px;">Date of birth:</div>
-                                    <input type="text" name="dob"
+                                    <input type="date" name="dob"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -513,7 +516,7 @@
                                     class="border-none border-0 border-bottom  shadow-none "></span></div>
                     </div>
                 </section>
-                <section class="section_area row p-5" id="section_two">
+                <section class="section_area row p-5" id="second_section">
                     <div class="col-md-6">
                         <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
                         <div class="fs-6"><span>Page 2 of </span><span> <input type="text" name="page"
@@ -632,7 +635,7 @@
                         <div class="d-flex d_sm_block">
                             <div class="pe-1 my-auto" style="width:430px">Last day employed full-time:</div>
                             <div class="w-100">
-                                <input type="text" name="nlfte"
+                                <input type="date" name="nlfte"
                                     class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 <div class="text-sm fs-6">Date</div>
                             </div>
@@ -912,7 +915,7 @@
                             self-employed, also attach a copy of your three most recent business tax returns and/or
                             corporate returns.</div>
                 </section>
-                <section class="section_area p-5" id="section_three">
+                <section class="section_area p-5" id="third_section">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -964,7 +967,7 @@
                             <div class="d-flex">
                                 <div class="pe-1 my-auto" style="width: 245px">Date of purchase:</div>
                                 <div class="w-100">
-                                    <input type="text" name="pur_date"
+                                    <input type="date" name="pur_date"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                     <div class="text-sm fs-6">Date</div>
                                 </div>
@@ -1341,7 +1344,7 @@
                             </table>
                         </div>
                 </section>
-                <section class="section_area p-5" id="section_four">
+                <section class="section_area p-5" id="fourth_section">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -1396,7 +1399,7 @@
                                 <div class="pe-1 my-auto" style="width:83rem">Earliest date you are eligible to
                                     receive your pension benefit:</div>
                                 <div class="w-100">
-                                    <input type="text" name="pension_benefit_date"
+                                    <input type="date" name="pension_benefit_date"
                                         class="w-75 border-none border-0 border-bottom  shadow-none my-auto">
                                     <div class="text-sm fs-6">Date</div>
                                 </div>
@@ -1459,7 +1462,7 @@
                                     class="border-none border-0 border-bottom  shadow-none h-100 responsive_input">
                                 <div class="">per</div>
                                 <div class="">
-                                    <input type="text" name="pension_benefit_date"
+                                    <input type="date" name="pension_benefit_date"
                                         class="w-100 border-none border-0 border-bottom  shadow-none responsive_input ">
                                     <div class="text-sm fs-6">week/month/year</div>
                                 </div>
@@ -1474,7 +1477,7 @@
                                     class="border-none border-0 border-bottom  shadow-none h-100 ">
                                 <div class="" style="width: 50px">as of</div>
                                 <div class="">
-                                    <input type="text" name="pension_benefit_date"
+                                    <input type="date" name="pension_benefit_date"
                                         class="border-none border-0 border-bottom  shadow-none ">
                                     <span>.</span>
                                     <div class="text-sm fs-6">Date</div>
@@ -1726,7 +1729,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area p-5" id="section_five">
+                <section class="section_area p-5" id="fifth_section">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -2040,7 +2043,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area p-5" id="section_six">
+                <section class="section_area p-5" id="sixth_section">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -2383,7 +2386,7 @@
                     </div>
                 </section>
 
-                <section class="section_area p-5" id="section_last">
+                <section class="section_area p-5" id="seventh_section">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="h5 mb-0">Domestic Relations Verified Financial Information Form (6/22)</div>
@@ -2447,7 +2450,7 @@
                                 <div class="" style="width:600px;">Estimated end date (if applicable):</div>
                                 <div>$</div>
                                 <div class="w-100">
-                                    <input type="text" name="ap_est_date"
+                                    <input type="date" name="ap_est_date"
                                         class="w-100 border-none border-0 border-bottom  shadow-none ">
                                     <div class="text-sm fs-6">Date</div>
                                 </div>
@@ -2551,7 +2554,7 @@
 
                         <div class="col-md-7">
                             <div>
-                                <input type="text" name="date"
+                                <input type="date" name="date"
                                     class="border-none border-0 border-bottom  shadow-none ">
                                 <div class="fs-6">Date</div>
                             </div>
@@ -2569,7 +2572,7 @@
                             <div class="d-flex ps-3">
                                 <div style="width:430px;">Subscribed and sworn to before me on</div>
                                 <div class="w-100">
-                                    <input type="text" name="subs_date"
+                                    <input type="date" name="subs_date"
                                         class="border-none border-0 border-bottom  shadow-none w-100">
                                     <div class="fs-6">Date</div>
                                 </div>
@@ -2578,7 +2581,7 @@
                         <div class="col-md-6"></div>
                         <div class="col-md-6 ms-auto">
                             <div class="w-100 ">
-                                <input type="text" name="subs_date"
+                                <input type="date" name="subs_date"
                                     class="border-none border-0 border-bottom  shadow-none w-100">
                                 <div class="fs-6">Deputy clerk/Notary public signature</div>
                             </div>
@@ -2587,7 +2590,7 @@
                         <div class="col-md-6">
                             <div class="d-flex ps-3">
                                 <div style="width:355px;">My commission expires on</div>
-                                <input type="text" name="com_date"
+                                <input type="date" name="com_date"
                                     class="border-none border-0 border-bottom  shadow-none w-100">
                             </div>
                         </div>
@@ -2622,11 +2625,33 @@
                         <button type="butt  on" class="bg-transparent px-4 me-4">Submit</button>
 
                     </div>
-                        @include('layouts.pagination', ['page' => 6 ])
+                        {{-- @include('layouts.pagination', ['page' => 6 ]) --}}
                 </section>
             </form>
         </div>
     </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select   mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+            <option value="#fifth_section">Fifth Section</option>
+            <option value="#sixth_section">Sixth Section</option>
+            <option value="#seventh_section">Seventh Section</option>
+        </select>
+    </div>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+        selectElement.addEventListener('change', function() {
+            const selectedSection = this.value;
+            if (selectedSection) {
+                window.location.hash = selectedSection;
+            }
+        });
+    });
+</script>
 </html>

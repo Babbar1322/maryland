@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
          a{
             color: black !important;
         }
@@ -37,7 +41,7 @@
             background-color: transparent !important;
 
         }
-        input[type='radio'] {
+        input[type='checkbox'] {
     accent-color:  #8c8a8a !important;
 }
         body {
@@ -257,7 +261,7 @@
 
 
 
-            <form action="{{ route('form8.submit') }}" method="post">
+            <form action="{{ route('form8.submit') }}" class="mb-5" method="post">
                 @csrf
                 <section class="section_area" id="first_section">
 
@@ -286,12 +290,19 @@
 
                             <div>
                                 <h4 class="fw-bold">Instructions</h4>
-                                <p class="small_text pe-5 ps-1 fst-italic">Use this short version if your <span
+                                <p class="small_text pe-5 ps-1 fst-italic">Use this long version if either your <span
+                                    class="fw-bold ">gross annual income is more than $75,000 </span> (see
+                                    Section I. Income) or your <span
+                                    class="fw-bold ">total net assets are more than $75,000 </span> (see Section IV. Assets),
+                                    or if both are more than $75,000. Otherwise, use the short version, form JD-FM-6-SHORT.</p>
+                                {{-- <p class="small_text pe-5 ps-1 fst-italic">Use this short version if your <span
                                         class="fw-bold ">gross annual income is
                                         less than $75,000 </span> (see Section I.
                                     Income) and your <span class="fw-bold "> total net assets are less than $75,000
                                     </span> (see Section IV. Assets).
-                                    Otherwise, use the long version, form JD-FM-6-LONG.</p>
+                                    Otherwise, use the long version, form JD-FM-6-LONG.</p> --}}
+
+
                             </div>
                         </div>
                         <div class="col-md-4 pt-2">
@@ -302,11 +313,12 @@
                                         <div class="text-center fs-6">Court Use Only</div>
                                     </div>
                                     <div class="border border-1 border-dark">
-                                        <h5 class="fw-bold text-center">FINAFFS</h5>
+                                        <h5 class="fw-bold text-center">FINAFFL</h5>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div>bar code</div>
+                                    {{-- <div>bar code</div> --}}
+                                    <img src="{{asset('assets/images/bar_code.png')}}" alt="">
                                 </div>
                             </div>
                             <div class="border border-2 border-dark lh-1">
@@ -364,11 +376,11 @@
                                 <div class="tdata d-flex gap-5 ">
                                     <input type="text" name="affiant_name" class="border-0 w-100">
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="affiant_type" value="plaintiff">
+                                        <input type="checkbox" name="affiant_type" value="plaintiff">
                                         <label for="">Plaintiff</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="affiant_type" value="defendant">
+                                        <input type="checkbox" name="affiant_type" value="defendant">
                                         <label for="">Defendant</label>
                                     </div>
                                 </div>
@@ -400,23 +412,23 @@
                                 <div class="d-flex gap-3 d_sm_block">
                                     <div>Paid:</div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="paid_type" value="Weekly">
+                                        <input type="checkbox" name="paid_type" value="Weekly">
                                         <label for="">Weekly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="paid_type" value="Bi-weekly">
+                                        <input type="checkbox" name="paid_type" value="Bi-weekly">
                                         <label for="">Bi-weekly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="paid_type" value="Monthly">
+                                        <input type="checkbox" name="paid_type" value="Monthly">
                                         <label for="">Monthly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="paid_type" value="Semi-monthly">
+                                        <input type="checkbox" name="paid_type" value="Semi-monthly">
                                         <label for="">Semi-monthly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="radio" name="paid_type" value="Annually">
+                                        <input type="checkbox" name="paid_type" value="Annually">
                                         <label for="">Annually</label>
                                     </div>
 
@@ -480,33 +492,33 @@
                             <div class="text-center">Base Pay:</div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="radio" name="job1_salary" value="salary1">
+                                    <input type="checkbox" name="job1_salary" value="salary1">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="job1_wages" value="wages1">
+                                    <input type="checkbox" name="job1_wages" value="wages1">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay1" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="radio" name="job2_salary" value="salary2">
+                                    <input type="checkbox" name="job2_salary" value="salary2">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="job2_wages" value="wages2">
+                                    <input type="checkbox" name="job2_wages" value="wages2">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay2" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="radio" name="job3_salary" value="salary3">
+                                    <input type="checkbox" name="job3_salary" value="salary3">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="job3_wages" value="wages3">
+                                    <input type="checkbox" name="job3_wages" value="wages3">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay3" class="border-0 border-bottom"></div>
@@ -793,7 +805,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex ps-0">
-                            <div>(i)</div>
+                            <div>(l)</div>
                             <div class="ps-3 d-flex w-100 d_sm_block">
                                 <div class="d-flex w-100 mt-auto">
                                     <div>Retirement/Tax Deferred Funds</div>
@@ -805,21 +817,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex ps-3">
-                            <div>(m)</div>
+                        <div class="col-md-6 d-flex ps-3 ">
+                            <div>(y)</div>
                             <div class="ps-3 d-flex w-100 d_sm_block">
                                 <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
-                                    <div>Social Security</div>
-                                    <div>.........................................</div>
+                                    <div>Other</div>
+                                    <div class="w-100"><input type="text" name="others"
+                                            class="border-0 border-bottom w-100 "></div>
                                 </div>
                                 <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="social_security"
-                                        class="border-0 border-bottom text-end fw-bold">
+                                    <input type="text" name="base_pay_others"
+                                        class="border-0 border-bottom text-end fw-bold ">
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6 d-flex ps-0 ">
+                            <div>(m)</div>
+                            {{-- <div class="ps-3 d-flex w-100 d_sm_block">
+                                <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
+                                    <div>Social Security</div>
+                                    <div>...............................</div>
+                                </div>
+                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
+                                    <input type="text" name="social_security"
+                                        class="border-0 border-bottom text-end fw-bold w-100">
+                                </div>
+                            </div> --}}
+                            <div class="ps-3 d-flex w-100 d_sm_block">
+                                <div class="d-flex w-100 mt-auto">
+                                    <div>Social Security</div>
+                                    <div>...............................</div>
+                                </div>
+                                <div class="d-flex w-100">$
+                                    <input type="text" name="retirement_funds"
+                                        class="border-0 border-bottom text-end fw-bold w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex ps-3">
+
+                        </div>
                         <div class="col-md-6 d-flex ps-0">
-                            <div>(i)</div>
+                            <div>(n)</div>
                             <div class="ps-3 d-flex w-100 d_sm_block">
                                 <div class="d-flex w-100 mt-auto">
                                     <div>Disability</div>
@@ -832,18 +871,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex ps-3">
-                            <div>(m)</div>
-                            <div class="ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
-                                    <div>Other</div>
-                                    <div class="w-100"><input type="text" name="others"
-                                            class="border-0 border-bottom w-100 "></div>
-                                </div>
-                                <div class="d-flex col-lg-5 d_sm_block justify-content-center col-sm-12">$
-                                    <input type="text" name="base_pay_others"
-                                        class="border-0 border-bottom text-end fw-bold">
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="col-md-12 pt-3 px-0 ">
@@ -851,7 +879,7 @@
                                 <div class="d-flex d_sm_block col-md-9 ">
                                     <h5 class="fw-bold col">(z) Total Gross Weekly Income/Monies and Benefits From All
                                         Sources
-                                    </h5><span>(Add items a through p)</span>
+                                    </h5><span>(Add items a through y)</span>
                                 </div>
                                 <div class="col-md-3  ps-lg-5"><span>$</span>
                                     <input type="text" name="total_weekly_gross"
@@ -862,8 +890,14 @@
 
 
 
+
+                        @include('layouts.footer6', ['page' => 1])
+                    </div>
+                </section>
+                <section class="section_area p-5" id="second_section">
+                    <div>
                         <div class="col-md-12">
-                            <div class="ps-lg-3 d-flex d_sm_block">
+                            <div class="  d-flex d_sm_block">
                                 <div>Hours worked per week</div>
                                 <input type="text" name="hours_per_week" class="border-0 border-bottom">
                             </div>
@@ -887,12 +921,7 @@
                                 income; and support provided by relatives,
                                 friends, and others:</div>
                         </div>
-                        @include('layouts.footer6', ['page' => 1])
-                    </div>
-                </section>
-                <section class="section_area p-5" id="mandatory_deductions">
-                    <div>
-                        <div class="d-flex d_sm_block">
+                        <div class="d-flex d_sm_block pt-2 pt-lg-5">
                             <div class="fw-bold pe-3">2) Mandatory Deductions</div>
                             <div> (If consistent deductions don't occur every pay check
                                 <span class="fw-bold">provide average amounts.</span>
@@ -1300,7 +1329,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex d_sm_block">
+                            <div class="d-flex d_sm_block  ">
                                 <div class="pe-3 w-75   d-flex d_sm_block">
                                     <div class="fw-bold">9) Total Other Deductions (add items 1 through 8)</div>
                                     <div class="responsive_input">
@@ -1348,7 +1377,7 @@
                                                     <div style="width:320px;">Rent or Mortgage (Principal, Interest —
                                                         Real Estate Taxes and Insurance if
                                                         escrowed) </div>
-                                                    <input type="radio" name="rent_or_mortage" value="mortgage">
+                                                    <input type="checkbox" name="rent_or_mortage" value="mortgage">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1361,7 +1390,7 @@
                                                     ....................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="pta" value="pta">
+                                                <input type="checkbox" name="pta" value="pta">
                                                 <div>$</div>
                                                 <input type="text" name="pta_val"
                                                     class="border-0 border-bottom w-50">
@@ -1372,7 +1401,7 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Property taxes and assessments </div>
-                                                    <input type="radio" name="property_tax" value="mortgage">
+                                                    <input type="checkbox" name="property_tax" value="mortgage">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1390,7 +1419,7 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Condominium Fees </div>
-                                                    <input type="radio" name="condominium_fees" value="mortgage">
+                                                    <input type="checkbox" name="condominium_fees" value="mortgage">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1403,7 +1432,7 @@
                                                         name="pta_val" class="border-0 border-bottom w-75"></div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="Specify" value="pta">
+                                                <input type="checkbox" name="Specify" value="pta">
                                                 <div>$</div>
                                                 <input type="text" name="Specify_val"
                                                     class="border-0 border-bottom w-50">
@@ -1422,7 +1451,7 @@
                                                     <div style="width:320px;">Oil
                                                         ............................................................
                                                     </div>
-                                                    <input type="radio" name="oil" value="oil">
+                                                    <input type="checkbox" name="oil" value="oil">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1435,7 +1464,7 @@
                                                     ................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="tel" value="tel">
+                                                <input type="checkbox" name="tel" value="tel">
                                                 <div>$</div>
                                                 <input type="text" name="tel_val"
                                                     class="border-0 border-bottom w-50">
@@ -1445,9 +1474,9 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Electricity
-                                                        ..............................................
+                                                        ................................................
                                                     </div>
-                                                    <input type="radio" name="electricity" value="electricity">
+                                                    <input type="checkbox" name="electricity" value="electricity">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1460,7 +1489,7 @@
                                                     ...........................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="trash" value="trash">
+                                                <input type="checkbox" name="trash" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="trash_val"
                                                     class="border-0 border-bottom w-50">
@@ -1470,9 +1499,9 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Gas
-                                                        .........................................
+                                                        ...........................................................
                                                     </div>
-                                                    <input type="radio" name="gas" value="gas">
+                                                    <input type="checkbox" name="gas" value="gas">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1485,7 +1514,7 @@
                                                     ..................................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="tv_int" value="trash">
+                                                <input type="checkbox" name="tv_int" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="tv_int_val"
                                                     class="border-0 border-bottom w-50">
@@ -1495,9 +1524,9 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Water and Sewer
-                                                        .........................................
+                                                        .....................................
                                                     </div>
-                                                    <input type="radio" name="sewar" value="sewar">
+                                                    <input type="checkbox" name="sewar" value="sewar">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1515,7 +1544,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="groceries_type" value="groceries">
+                                                <input type="checkbox" name="groceries_type" value="groceries">
                                                 <div>$</div>
                                                 <input type="text" name="groceries_value"
                                                     class="border-0 border-bottom w-50">
@@ -1532,7 +1561,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="restaurants" value="restaurants">
+                                                <input type="checkbox" name="restaurants" value="restaurants">
                                                 <div>$</div>
                                                 <input type="text" name="restaurants_value"
                                                     class="border-0 border-bottom w-50">
@@ -1552,7 +1581,7 @@
                                                     <div style="width:320px;">Gas/Oil
                                                         ........................................................
                                                     </div>
-                                                    <input type="radio" name="trans" value="oil">
+                                                    <input type="checkbox" name="trans" value="oil">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1565,7 +1594,7 @@
                                                     .......................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="auto_loan" value="trash">
+                                                <input type="checkbox" name="auto_loan" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="auto_loan_val"
                                                     class="border-0 border-bottom w-50">
@@ -1577,7 +1606,7 @@
                                                     <div style="width:320px;">Repairs/Maintenance
                                                         ..................................
                                                     </div>
-                                                    <input type="radio" name="repairs" value="repairs">
+                                                    <input type="checkbox" name="repairs" value="repairs">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1590,7 +1619,7 @@
                                                     ....................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="pub_trans" value="trash">
+                                                <input type="checkbox" name="pub_trans" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
@@ -1602,7 +1631,7 @@
                                                     <div style="width:320px;">Automobile Insurance/Tax/Registration
                                                         ....
                                                     </div>
-                                                    <input type="radio" name="auto_ins" value="auto_ins">
+                                                    <input type="checkbox" name="auto_ins" value="auto_ins">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1624,7 +1653,7 @@
                                                     <div style="width:320px;">Medical/Dental (Out-of-pocket expense
                                                         after Health Savings Account/Plan).............
                                                     </div>
-                                                    <input type="radio" name="med_ins" value="med_ins">
+                                                    <input type="checkbox" name="med_ins" value="med_ins">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1638,7 +1667,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="life" value="life">
+                                                <input type="checkbox" name="life" value="life">
                                                 <div>$</div>
                                                 <input type="text" name="life_val"
                                                     class="border-0 border-bottom w-50">
@@ -1651,7 +1680,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="unins_med" value="unins_med">
+                                                <input type="checkbox" name="unins_med" value="unins_med">
                                                 <div>$</div>
                                                 <input type="text" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
@@ -1673,7 +1702,7 @@
                 </section>
 
 
-                <section class="section_area p-5" id="insert_an">
+                <section class="section_area p-5" id="third_section">
                     <div>
                         <div class="text-center mx-auto">Insert an ("x") in the box if you are not currently paying the
                             expense, or if someone else is paying the expense.</div>
@@ -1687,7 +1716,7 @@
                                             <div style="width:320px;">Personal Care (e.g., haircuts,
                                                 etc.)...............
                                             </div>
-                                            <input type="radio" name="personal_care" value="med_ins">
+                                            <input type="checkbox" name="personal_care" value="med_ins">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1701,7 +1730,7 @@
                                         </div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="radio" name="ins_clothing" value="Insurance clothing">
+                                        <input type="checkbox" name="ins_clothing" value="Insurance clothing">
                                         <div>$</div>
                                         <input type="text" name="ins_clothing_val"
                                             class="border-0 border-bottom w-50">
@@ -1715,7 +1744,7 @@
                                             <div style="width:320px;">Dry
                                                 Cleaning...............................................
                                             </div>
-                                            <input type="radio" name="personal_care" value="dry_cleanning">
+                                            <input type="checkbox" name="personal_care" value="dry_cleanning">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1728,7 +1757,7 @@
                                             .....................................................................</div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="radio" name="ins_entertainment1" value="Entertainment">
+                                        <input type="checkbox" name="ins_entertainment1" value="Entertainment">
                                         <div>$</div>
                                         <input type="text" name="ins_entertainment_val1"
                                             class="border-0 border-bottom w-50">
@@ -1739,7 +1768,7 @@
                                         <div class="d-flex gap-2">
                                             <div style="width:320px;">Alcohol, Smoking Products........................
                                             </div>
-                                            <input type="radio" name="personal_care" value="dry_cleanning">
+                                            <input type="checkbox" name="personal_care" value="dry_cleanning">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1753,7 +1782,7 @@
                                         </div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="radio" name="ins_entertainment" value="Entertainment">
+                                        <input type="checkbox" name="ins_entertainment" value="Entertainment">
                                         <div>$</div>
                                         <input type="text" name="ins_entertainment_val"
                                             class="border-0 border-bottom w-50">
@@ -1777,7 +1806,7 @@
                                                     <div style="width:320px;">Child Support of this case
                                                         ...........................
                                                     </div>
-                                                    <input type="radio" name="child_supp" value="child_supp">
+                                                    <input type="checkbox" name="child_supp" value="child_supp">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1792,7 +1821,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_care" value="child_care">
+                                                <input type="checkbox" name="child_care" value="child_care">
                                                 <div>$</div>
                                                 <input type="text" name="child_care_val"
                                                     class="border-0 border-bottom w-50">
@@ -1804,7 +1833,7 @@
                                                     <div style="width:320px;">Child Care Expense (after deductions,
                                                         credits and subsidies)...................................
                                                     </div>
-                                                    <input type="radio" name="oth_child_care"
+                                                    <input type="checkbox" name="oth_child_care"
                                                         value="oth_child_supp">
                                                 </div>
                                             </td>
@@ -1821,7 +1850,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_acts1" value="child_acts">
+                                                <input type="checkbox" name="child_acts1" value="child_acts">
                                                 <div>$</div>
                                                 <input type="text" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1829,19 +1858,19 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="d-flex gap-2">
+                                                <div class="d-flex gap-2 ">
                                                     <div style="width:320px;">Child Support of other children other
                                                         than
                                                         this case (attach a copy of the order) ...
                                                     </div>
-                                                    <input type="radio" name="oth_child_supp"
-                                                        value="oth_child_supp">
+                                                    <input type="checkbox" name="oth_child_supp"
+                                                        value="oth_child_supp" class="invisible">
                                                 </div>
                                             </td>
-                                            <td class="d-flex w-100">
+                                            <td class="d-flex w-100 invisible">
                                                 <div>$</div>
                                                 <input type="text" name="oth_child_supp_val"
-                                                    class="border-0 border-bottom w-100">
+                                                    class="border-0 border-bottom w-100 ">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">Child(ren)'s camp
@@ -1849,7 +1878,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_acts" value="child_acts">
+                                                <input type="checkbox" name="child_acts" value="child_acts">
                                                 <div>$</div>
                                                 <input type="text" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1869,7 +1898,7 @@
                                                     ....................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="oth_alimin_pay"
+                                                <input type="checkbox" name="oth_alimin_pay"
                                                     value="oth_alimin_pay">
                                                 <div>$</div>
                                                 <input type="text" name="oth_alimin_pay_val"
@@ -1878,7 +1907,7 @@
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div> <input type="radio" name="extord_trav_exp"
+                                                <div> <input type="checkbox" name="extord_trav_exp"
                                                         value="extord_trav_exp"> Check here if any part is court
                                                     ordered </div>
                                             </td>
@@ -1890,7 +1919,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="education_self" value="Education">
+                                                <input type="checkbox" name="education_self" value="Education">
                                                 <div>$</div>
                                                 <input type="text" name="education_self_val"
                                                     class="border-0 border-bottom w-50">
@@ -1903,7 +1932,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="alimony_pts" value="Alimony">
+                                                <input type="checkbox" name="alimony_pts" value="Alimony">
                                                 <div>$</div>
                                                 <input type="text" name="alimony_pts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1916,7 +1945,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="alimony_ptas"
+                                                <input type="checkbox" name="alimony_ptas"
                                                     value="Alimony another">
                                                 <div>$</div>
                                                 <input type="text" name="alimony_ptas_val"
@@ -1934,7 +1963,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="uniforms" value="Uniforms">
+                                                <input type="checkbox" name="uniforms" value="Uniforms">
                                                 <div>$</div>
                                                 <input type="text" name="uniforms_val"
                                                     class="border-0 border-bottom w-50">
@@ -1947,7 +1976,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="travel" value="Travel">
+                                                <input type="checkbox" name="travel" value="Travel">
                                                 <div>$</div>
                                                 <input type="text" name="travel_val"
                                                     class="border-0 border-bottom w-50">
@@ -1960,7 +1989,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="re_ce"
+                                                <input type="checkbox" name="re_ce"
                                                     value="Required continuing education ">
                                                 <div>$</div>
                                                 <input type="text" name="re_ce_val"
@@ -1974,7 +2003,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="employment_oth_type"
+                                                <input type="checkbox" name="employment_oth_type"
                                                     value="employment_oth_type">
                                                 <div>$</div>
                                                 <input type="text" name="employment_oth_val"
@@ -1991,7 +2020,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="charitable_contributions"
+                                                <input type="checkbox" name="charitable_contributions"
                                                     value="Charitable Contributions">
                                                 <div>$</div>
                                                 <input type="text" name="charitable_contributions_val"
@@ -2005,7 +2034,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_allowance"
+                                                <input type="checkbox" name="child_allowance"
                                                     value="Child(ren)'s allowance">
                                                 <div>$</div>
                                                 <input type="text" name="child_allowance_val"
@@ -2019,7 +2048,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="extraordinary_travel"
+                                                <input type="checkbox" name="extraordinary_travel"
                                                     value="Extraordinary travel expenses for">
                                                 <div>$</div>
                                                 <input type="text" name="extraordinary_travel_val"
@@ -2032,7 +2061,7 @@
                                                         name="child_oth" class="border-0 border-bottom w-100"></div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_oth_type"
+                                                <input type="checkbox" name="child_oth_type"
                                                     value="child_oth_type">
                                                 <div>$</div>
                                                 <input type="text" name="child_oth_type_val"
@@ -2080,10 +2109,10 @@
                                                     </td>
                                                     <td class="text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="L_cntype1"
+                                                            <div> <input type="checkbox" name="L_cntype1"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="L_cntype1"
+                                                            <div> <input type="checkbox" name="L_cntype1"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2110,10 +2139,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="L_cntype2"
+                                                            <div> <input type="checkbox" name="L_cntype2"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="L_cntype2"
+                                                            <div> <input type="checkbox" name="L_cntype2"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2141,10 +2170,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="L_cntype3"
+                                                            <div> <input type="checkbox" name="L_cntype3"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="L_cntype3"
+                                                            <div> <input type="checkbox" name="L_cntype3"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2171,10 +2200,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="L_cntype4"
+                                                            <div> <input type="checkbox" name="L_cntype4"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="L_cntype4"
+                                                            <div> <input type="checkbox" name="L_cntype4"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2201,10 +2230,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="L_cntype5"
+                                                            <div> <input type="checkbox" name="L_cntype5"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="L_cntype5"
+                                                            <div> <input type="checkbox" name="L_cntype5"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2235,10 +2264,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ocb_cntype1"
+                                                            <div> <input type="checkbox" name="ocb_cntype1"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ocb_cntype1"
+                                                            <div> <input type="checkbox" name="ocb_cntype1"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2266,10 +2295,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ocb_cntype2"
+                                                            <div> <input type="checkbox" name="ocb_cntype2"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ocb_cntype2"
+                                                            <div> <input type="checkbox" name="ocb_cntype2"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2299,10 +2328,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="td_cntype1"
+                                                            <div> <input type="checkbox" name="td_cntype1"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="td_cntype1"
+                                                            <div> <input type="checkbox" name="td_cntype1"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2329,10 +2358,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="td_cntype2"
+                                                            <div> <input type="checkbox" name="td_cntype2"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="td_cntype2"
+                                                            <div> <input type="checkbox" name="td_cntype2"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2363,10 +2392,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="hcd_cntype1"
+                                                            <div> <input type="checkbox" name="hcd_cntype1"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="hcd_cntype1"
+                                                            <div> <input type="checkbox" name="hcd_cntype1"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2393,10 +2422,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="hcd_cntype2"
+                                                            <div> <input type="checkbox" name="hcd_cntype2"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="hcd_cntype2"
+                                                            <div> <input type="checkbox" name="hcd_cntype2"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2427,10 +2456,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype1"
+                                                            <div> <input type="checkbox" name="ob_cntype1"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype1"
+                                                            <div> <input type="checkbox" name="ob_cntype1"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2457,10 +2486,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype2"
+                                                            <div> <input type="checkbox" name="ob_cntype2"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype2"
+                                                            <div> <input type="checkbox" name="ob_cntype2"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2488,10 +2517,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype3"
+                                                            <div> <input type="checkbox" name="ob_cntype3"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype3"
+                                                            <div> <input type="checkbox" name="ob_cntype3"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2519,10 +2548,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype4"
+                                                            <div> <input type="checkbox" name="ob_cntype4"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype4"
+                                                            <div> <input type="checkbox" name="ob_cntype4"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2550,10 +2579,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype5"
+                                                            <div> <input type="checkbox" name="ob_cntype5"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype5"
+                                                            <div> <input type="checkbox" name="ob_cntype5"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2581,10 +2610,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype6"
+                                                            <div> <input type="checkbox" name="ob_cntype6"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype6"
+                                                            <div> <input type="checkbox" name="ob_cntype6"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2612,10 +2641,10 @@
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="radio" name="ob_cntype7"
+                                                            <div> <input type="checkbox" name="ob_cntype7"
                                                                     value="Sole"> <label
                                                                     for="">Sole</label> </div>
-                                                            <div> <input type="radio" name="ob_cntype7"
+                                                            <div> <input type="checkbox" name="ob_cntype7"
                                                                     value="Joint"> <label
                                                                     for="">Joint</label> </div>
                                                         </div>
@@ -2677,7 +2706,7 @@
                 </section>
 
 
-                <section class="section_area p-5" id="assets">
+                <section class="section_area p-5" id="fourth_section">
 
                     <div>
                         <div class="pt-lg-4">
@@ -2686,7 +2715,7 @@
                                 joint with other. </div>
                             <div>You must complete the last column to the right "Value of Your Interest" in each
                                 applicable section. </div>
-                            <div>A. Real Estate (including time share) </div>
+                            <div>A. <b> Real Estate </b> (including time share) </div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -2714,13 +2743,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                    <input class="mx-auto text-center"  type="radio" name="a_o1" style=""  value="S">
+                                                    <input class="mx-auto text-center"  type="checkbox" name="a_o1" style=""  value="S">
                                                 </div>
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                    <input  class="p-1" type="radio" name="a_o1" style="" value="JTS">
+                                                    <input  class="p-1" type="checkbox" name="a_o1" style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark  p-1 mx-auto text-center">
-                                                <input class="p-1"  type="radio" name="a_o1" style="" value="JTO">
+                                                <input class="p-1"  type="checkbox" name="a_o1" style="" value="JTO">
                                             </div>
 
 
@@ -2757,13 +2786,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="a_o2" style=""  value="S">
+                                                            <input class="mx-auto text-center"  type="checkbox" name="a_o2" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="a_o2" style="" value="JTS">
+                                                            <input  class="p-1" type="checkbox" name="a_o2" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="a_o2" style="" value="JTO">
+                                                        <input class="p-1"  type="checkbox" name="a_o2" style="" value="JTO">
                                                     </div>
 
 
@@ -2797,13 +2826,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="a_o3" style=""  value="S">
+                                                            <input class="mx-auto text-center"  type="checkbox" name="a_o3" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="a_o3" style="" value="JTS">
+                                                            <input  class="p-1" type="checkbox" name="a_o3" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="a_o3" style="" value="JTO">
+                                                        <input class="p-1"  type="checkbox" name="a_o3" style="" value="JTO">
                                                     </div>
 
 
@@ -2843,7 +2872,7 @@
                             </div>
 
 
-                            <div class="pt-lg-2">B. Motor Vehicles</div>
+                            <div class="pt-lg-2 fw-bold">B. Motor Vehicles</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -2876,13 +2905,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership1" style=""  value="S">
+                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership1" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership1" style="" value="JTS">
+                                                            <input  class="p-1" type="checkbox" name="MV_ownership1" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership1" style="" value="JTO">
+                                                        <input class="p-1"  type="checkbox" name="MV_ownership1" style="" value="JTO">
                                                     </div>
 
 
@@ -2915,13 +2944,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership2" style=""  value="S">
+                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership2" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership2" style="" value="JTS">
+                                                            <input  class="p-1" type="checkbox" name="MV_ownership2" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership2" style="" value="JTO">
+                                                        <input class="p-1"  type="checkbox" name="MV_ownership2" style="" value="JTO">
                                                     </div>
                                                     </div>
                                                 <td>
@@ -2951,13 +2980,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="radio" name="MV_ownership3" style=""  value="S">
+                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership3" style=""  value="S">
                                                         </div>
                                                         <div class="border-end border-dark p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="radio" name="MV_ownership3" style="" value="JTS">
+                                                            <input  class="p-1" type="checkbox" name="MV_ownership3" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="radio" name="MV_ownership3" style="" value="JTO">
+                                                        <input class="p-1"  type="checkbox" name="MV_ownership3" style="" value="JTO">
                                                     </div>
                                                     </div>
                                                 <td>
@@ -2988,7 +3017,7 @@
                                 </table>
                             </div>
 
-                            <div class="mt-lg-2">C. Bank Accounts</div>
+                            <div class="mt-lg-2 fw-bold">C. Bank Accounts</div>
                             <div>Do not include custodial accounts or child(ren)'s assets — complete Section V. below.
                             </div>
                             <div class="table-responsive">
@@ -3021,13 +3050,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership1" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership1" style="" value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="radio" name="C_ownership1" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership1" style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark px-2">
-                                                  <input type="radio" name="C_ownership1" style="" value="JTO">
+                                                  <input type="checkbox" name="C_ownership1" style="" value="JTO">
                                                 </div>
                                             </div>
                                         <td>
@@ -3043,13 +3072,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership11" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership11" style="" value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="radio" name="C_ownership11" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership11" style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark  px-2">
-                                                <input type="radio" name="C_ownership11" style="" value="JTO">
+                                                <input type="checkbox" name="C_ownership11" style="" value="JTO">
                                             </div>
                                             </div>
                                         <td>
@@ -3068,13 +3097,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership111" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership111" style="" value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="radio" name="C_ownership111" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership111" style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark px-2">
-                                                <input type="radio" name="C_ownership111" style="" value="JTO">
+                                                <input type="checkbox" name="C_ownership111" style="" value="JTO">
                                             </div>
 
 
@@ -3100,13 +3129,13 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="radio" name="C_ownership2" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership2" style="" value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="radio" name="C_ownership2" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership2" style="" value="JTS">
                                                 </div>
                                                 <div class="  border-dark px-2">
-                                                <input type="radio" name="C_ownership2" style="" value="JTO">
+                                                <input type="checkbox" name="C_ownership2" style="" value="JTO">
                                             </div>
 
 
@@ -3130,13 +3159,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="C_ownership31" style="" value="S">
+                                                            <input type="checkbox" name="C_ownership31" style="" value="S">
                                                         </div>
                                                         <div class="border-end border-dark px-2">
-                                                            <input type="radio" name="C_ownership31" style="" value="JTS">
+                                                            <input type="checkbox" name="C_ownership31" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark px-2">
-                                                        <input type="radio" name="C_ownership31" style="" value="JTO">
+                                                        <input type="checkbox" name="C_ownership31" style="" value="JTO">
                                                     </div>
 
 
@@ -3164,13 +3193,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="cod_ownership2" style="" value="S">
+                                                            <input type="checkbox" name="cod_ownership2" style="" value="S">
                                                         </div>
                                                         <div class="border-end border-dark px-2">
-                                                            <input type="radio" name="cod_ownership2" style="" value="JTS">
+                                                            <input type="checkbox" name="cod_ownership2" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark px-2">
-                                                        <input type="radio" name="cod_ownership2" style="" value="JTO">
+                                                        <input type="checkbox" name="cod_ownership2" style="" value="JTO">
                                                     </div>
 
 
@@ -3199,13 +3228,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="cu_ownership1" style="" value="S">
+                                                            <input type="checkbox" name="cu_ownership1" style="" value="S">
                                                         </div>
                                                         <div class="border-end border-dark px-2">
-                                                            <input type="radio" name="cu_ownership1" style="" value="JTS">
+                                                            <input type="checkbox" name="cu_ownership1" style="" value="JTS">
                                                         </div>
                                                         <div class=" border-dark px-2">
-                                                        <input type="radio" name="cu_ownership1" style="" value="JTO">
+                                                        <input type="checkbox" name="cu_ownership1" style="" value="JTO">
                                                     </div>
 
 
@@ -3234,13 +3263,13 @@
                                                     <div class="d-flex justify-content-center">
                                                         <div class="border-end border-dark px-2">
 
-                                                            <input type="radio" name="C_ownership3" style="" value="S">
+                                                            <input type="checkbox" name="C_ownership3" style="" value="S">
                                                         </div>
                                                         <div class="border-end border-dark px-2">
-                                                            <input type="radio" name="C_ownership3" style="" value="JTS">
+                                                            <input type="checkbox" name="C_ownership3" style="" value="JTS">
                                                         </div>
                                                         <div class="  border-dark px-2">
-                                                        <input type="radio" name="C_ownership3" style="" value="JTO">
+                                                        <input type="checkbox" name="C_ownership3" style="" value="JTO">
                                                     </div>
 
 
@@ -3266,7 +3295,7 @@
 
                             </div>
 
-                            <div class="mt-lg-2">D. Stocks, Bonds, Mutual Funds, Bond Funds</div>
+                            <div class="mt-lg-2 fw-bold">D. Stocks, Bonds, Mutual Funds, Bond Funds</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -3344,7 +3373,7 @@
                             </div>
 
 
-                            <div class="mt-lg-2">E. Insurance (exclude children) D = Disability L = Life</div>
+                            <div class="mt-lg-2">E. <b>Insurance</b> (exclude children) D = Disability L = Life</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -3437,11 +3466,11 @@
                     </div>
                 </section>
 
-                <section class="section_area p-5" id="retirement_plains">
+                <section class="section_area p-5" id="fifth_section">
 
                     <div>
                         <div class="row">
-                            <div class="mt-lg-2">F. Retirement Plans (Pensions on Interest, Individual IRA, 401K,
+                            <div class="mt-lg-2">F. <b>Retirement Plans </b>(Pensions on Interest, Individual IRA, 401K,
                                 Keogh, etc.)</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
@@ -3469,11 +3498,11 @@
                                         <td class="tdata">
                                             <div class="d-flex">
                                                 <div class="d-flex gap-2">
-                                                    <input type="radio" name="RP_rp1" value="Yes">
+                                                    <input type="checkbox" name="RP_rp1" value="Yes">
                                                     <label for="">Yes</label>
                                                 </div>
                                                 <div class="d-flex gap-2 ps-lg-4">
-                                                    <input type="radio" name="RP_rp1" value="No">
+                                                    <input type="checkbox" name="RP_rp1" value="No">
                                                     <label for="">No</label>
                                                 </div>
                                             </div>
@@ -3494,11 +3523,11 @@
                                         <td class="tdata">
                                             <div class="d-flex">
                                                 <div class="d-flex gap-2">
-                                                    <input type="radio" name="RP_rp2" value="Yes">
+                                                    <input type="checkbox" name="RP_rp2" value="Yes">
                                                     <label for="">Yes</label>
                                                 </div>
                                                 <div class="d-flex gap-2 ps-lg-4">
-                                                    <input type="radio" name="RP_rp2" value="No">
+                                                    <input type="checkbox" name="RP_rp2" value="No">
                                                     <label for="">No</label>
                                                 </div>
                                             </div>
@@ -3519,11 +3548,11 @@
                                         <td class="tdata">
                                             <div class="d-flex">
                                                 <div class="d-flex gap-2">
-                                                    <input type="radio" name="RP_rp3" value="Yes">
+                                                    <input type="checkbox" name="RP_rp3" value="Yes">
                                                     <label for="">Yes</label>
                                                 </div>
                                                 <div class="d-flex gap-2 ps-lg-4">
-                                                    <input type="radio" name="RP_rp3" value="No">
+                                                    <input type="checkbox" name="RP_rp3" value="No">
                                                     <label for="">No</label>
                                                 </div>
                                             </div>
@@ -3544,11 +3573,11 @@
                                         <td class="tdata">
                                             <div class="d-flex">
                                                 <div class="d-flex gap-2">
-                                                    <input type="radio" name="RP_rp4" value="Yes">
+                                                    <input type="checkbox" name="RP_rp4" value="Yes">
                                                     <label for="">Yes</label>
                                                 </div>
                                                 <div class="d-flex gap-2 ps-lg-4">
-                                                    <input type="radio" name="RP_rp4" value="No">
+                                                    <input type="checkbox" name="RP_rp4" value="No">
                                                     <label for="">No</label>
                                                 </div>
                                             </div>
@@ -3569,11 +3598,11 @@
                                         <td class="tdata">
                                             <div class="d-flex">
                                                 <div class="d-flex gap-2">
-                                                    <input type="radio" name="RP_rp5" value="Yes">
+                                                    <input type="checkbox" name="RP_rp5" value="Yes">
                                                     <label for="">Yes</label>
                                                 </div>
                                                 <div class="d-flex gap-2 ps-lg-4">
-                                                    <input type="radio" name="RP_rp5" value="No">
+                                                    <input type="checkbox" name="RP_rp5" value="No">
                                                     <label for="">No</label>
                                                 </div>
                                             </div>
@@ -3595,7 +3624,7 @@
                                 </table>
                             </div>
                         </div>
-                        <h5 class="mt-lg-3">G. Business Interest/Self-Employment</h5>
+                        <h5 class="mt-lg-3 fw-bold">G. Business Interest/Self-Employment</h5>
                         <div class="mt-lg-2">If you own an interest in a business, or are self-employed, complete this
                             section.</div>
                         <div class="table-responsive">
@@ -3633,7 +3662,7 @@
                         </div>
 
                         <div class="pt-5 lh-1">
-                            <div>H. Institutional Held Assets</div>
+                            <div class="fw-bold">H. Institutional Held Assets</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -3703,7 +3732,7 @@
                             </div>
                         </div>
                         <div class="pt-5 lh-1">
-                             <div>I. Other Assets</div>
+                             <div class="fw-bold">I. Other Assets</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -3810,14 +3839,14 @@
                             <div class="d-flex pt-lg-3 d_sm_block">
 
 
-                                <div class="responsive_input">J. Total Net Value All Assets (add items A through I)........................................................................................................................
+                                <div class="responsive_input">J. <b> Total Net Value All Assets</b> (add items A through I)........................................................................................................................
                                 </div>
                                 <div class="d-flex border ms-lg-3">$ <input type="text" name="h_tnv"
                                         class="border-0 w-100 text-end"></div>
                             </div>
 
                             <div class="pt-lg-3">
-                                <h4> V. Child(ren)'s Assets</h4>
+                                <h4> V. <b> Child(ren)'s Assets</b></h4>
 
                                 <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College Accounts/529 Account, Custodial Account,
                                     etc.</div>
@@ -3890,13 +3919,13 @@
                         @include('layouts.footer6', ['page' => 5])
                     </div>
                 </section>
-                    <section class="section_area p-5" id="last_section">
+                    <section class="section_area p-5" id="sixth_section">
 
 
                             <div>
                                 <div class="row">
                                     <div class="pt-lg-3">
-                                        <h4>VI. Health Insurance (Medical and/or Dental Insurance)</h4>
+                                        <h4>VI. <b> Health Insurance</b> (Medical and/or Dental Insurance)</h4>
 
                                     </div>
                                     <div class="table-responsive">
@@ -3940,15 +3969,15 @@
                                     <div class="d-flex pt-1">
                                         <div>Do you or any member of your family have HUSKY Health Insurance Coverage?</div>
                                         <div class=" ps-3 gap-2">
-                                            <input type="radio" name="h_type" value="Yes">
+                                            <input type="checkbox" name="h_type" value="Yes">
                                             <label for="">Yes</label>
                                         </div>
                                         <div class=" ps-3 gap-2">
-                                            <input type="radio" name="h_type" value="No">
+                                            <input type="checkbox" name="h_type" value="No">
                                             <label for="">No</label>
                                         </div>
                                         <div class=" ps-3 gap-2">
-                                            <input type="radio" name="h_type" value="I Don't Know">
+                                            <input type="checkbox" name="h_type" value="I Don't Know">
                                             <label for="">I Don't Know</label>
                                         </div>
                                     </div>
@@ -4044,16 +4073,15 @@
                                         <div class="d-flex d_sm_block">
                                             <div class="d-flex d_sm_block gap-2 responsive_input" style="width:450px;">
                                                 <div class="pt-2">I,</div> <input type="text" name="S_tcv"
-                                                    class="border-0 w-100 border-bottom responsive_input"
-                                                    value="Total Cash Value of Assets (See Section IV. I.)">
+                                                    class="border-0 w-100 border-bottom responsive_input" >
                                                 <div class="pt-2">The</div>
                                             </div>
                                             <div class=" pt-2 ps-3  ">
-                                                <input type="radio" name="S_tcvt" value="plaintiff">
+                                                <input type="checkbox" name="S_tcvt" value="plaintiff">
                                                 <label for="">Plaintiff</label>
                                             </div>
                                             <div class=" pt-2 ps-3  ">
-                                                <input type="radio" name="S_tcvt" value="Defendant">
+                                                <input type="checkbox" name="S_tcvt" value="Defendant">
                                                 <label for="">Defendant herein, residing at</label>
                                             </div>
                                             <div class="pt-2 ps-3">
@@ -4136,11 +4164,21 @@
                                 @include('layouts.footer6', ['page' => 6])
 
 
-                                @include('layouts.pagination', ['page' => 8 ])
+                                {{-- @include('layouts.pagination', ['page' => 8 ]) --}}
 
                             </div>
                         </section>
             </form>
+        </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter  px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
           a{
             color: black !important;
         }
@@ -1341,7 +1345,7 @@
                     </div>
                     @include('layouts.footer7', ['page' => 2])
                 </section>
-                <section class="section_area  px-lg-5 px-2" id="last_section">
+                <section class="section_area  px-lg-5 px-2" id="third_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -1674,22 +1678,29 @@
                                 <div class="small_text me-2">Date</div>
                                 <div> <input type="text" name="date" class="border-0 "></div>
                             </div>
-<div class="row  ">
-    <div class="col-lg-6">
-              <div> <input type="text" name="topn" class="border-0 border-bottom form-control footer_field "></div>
-              <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
-            </div>
-            <div class="col-lg-6">
-                <div> <input type="text" name="signature" class="border-0 border-bottom form-control footer_field "></div>
-                <div class="small_text text-center">SIGNATURE</div>
-     </div>
-</div>
+                            <div class="row  ">
+                                <div class="col-lg-6">
+                                        <div> <input type="text" name="topn" class="border-0 border-bottom form-control footer_field "></div>
+                                        <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div> <input type="text" name="signature" class="border-0 border-bottom form-control footer_field "></div>
+                                            <div class="small_text text-center">SIGNATURE</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     @include('layouts.footer7', ['page' => 3])
-                    @include('layouts.pagination', ['page' => 11 ])
+                    {{-- @include('layouts.pagination', ['page' => 11 ]) --}}
                 </section>
             </form>
+        </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a {
             color: black !important;
         }
@@ -168,7 +172,7 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form17.submit') }}" method="post">
                 @csrf
-                <section class="section_area" id="section_one">
+                <section class="section_area" id="first_section">
 
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -266,13 +270,13 @@
                                     to participate in
                                 </div>
                                 {{-- @include('layouts.footer12', ['page' => 1]) --}}
-                                <div>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
+                                <div class='pt-3'>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
                                     (10/21)</div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_two">
+                <section class="section_area py-5" id="second_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -435,13 +439,13 @@
 
                                     </div>
                                     {{-- @include('layouts.footer12', ['page' => 2]) --}}
-                                    <div>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
+                                    <div class='pt-3'>Instructions for Florida Family Law Rules of Procedure Form 12.902(b), Family Law Financial Affidavit (Short Form)
                                         (10/21)</div>
                                 </div>
                             </div>
                         </div>
                 </section>
-                <section class="section_area py-5" id="section_three">
+                <section class="section_area py-5" id="third_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 py-2 pt-0">
@@ -535,7 +539,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_four">
+                <section class="section_area py-5" id="fourth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -743,7 +747,7 @@
                         </div>
                 </section>
 
-                <section class="section_area py-5" id="section_five">
+                <section class="section_area py-5" id="fifth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div>
@@ -804,11 +808,9 @@
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10 d-flex">Any other income of a recurring nature (identify
-                                        source): <div class="d-flex d_sm_block ms-1 "><input type="text"
-                                                min="0" name="section1_15b"
-                                                class="border-0 p-0 m-0 border-bottom footer_field w-100">
-                                        </div>
+                                    <div class="col-lg-10 d-flex">Any other income of a recurring nature (list source): <div class="d-flex d_sm_block ms-1 "><input type="text" min="0" name="section1_15b" class="border-0 p-0 m-0 border-bottom footer_field w-100">
+
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -828,8 +830,7 @@
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10 fw-bold">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1
-                                        through 16.)
+                                    <div class="col-lg-10 fw-bold">TOTAL PRESENT MONTHLY GROSS INCOME (Add lines 1-16.)
                                     </div>
                                 </div>
 
@@ -981,7 +982,7 @@
                                 </div>
                             </div>
                 </section>
-                <section class="section_area py-5" id="section_six">
+                <section class="section_area py-5" id="sixth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -1508,7 +1509,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_seven">
+                <section class="section_area py-5" id="seventh_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -1519,7 +1520,7 @@
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES:</b> (add <b>ALL</b> monthly
+                                    <div class="col-lg-10"><b>TOTAL MONTHLY EXPENSES</b> (add <b>ALL</b> monthly
                                         amounts in A through F above)
                                     </div>
                                 </div>
@@ -1562,9 +1563,8 @@
                                                 class="border-0 mb-5 m-0 border-bottom footer_field w-100">)
                                         </div>
                                     </div>
-                                    <div class="col-lg-10"><b>(DEFICIT) </b> (If line 107 is more than line 106,
-                                        subtract line 106 from line 107. This is
-                                        the amount of your deficit. Enter that amount here.)</div>
+                                    <div class="col-lg-10"><b>(DEFICIT) </b> (If line 30 is more than line 29, subtract line 29 from line 30. This is the amount
+                                        of your deficit. Enter that amount here.)</div>
                                 </div>
 
                                 <div class="fw-bold  text-dark mt-4">SECTION III. ASSETS AND
@@ -1621,8 +1621,8 @@
                                                             min="0" name="current_val1"
                                                             class="border-0 text-center w-100"> </div>
                                                 </td>
-                                                <td><input type="checkbox" name="non_pet1"></td>
-                                                <td><input type="checkbox" name="non_resp1"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet1"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp1"></td>
                                             </tr>
 
                                             <tr>
@@ -1632,8 +1632,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val2"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet2"></td>
-                                                <td><input type="checkbox" name="non_resp2"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet2"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp2"></td>
                                             </tr>
 
                                             <tr>
@@ -1643,8 +1643,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val3"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet3"></td>
-                                                <td><input type="checkbox" name="non_resp3"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet3"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp3"></td>
                                             </tr>
 
                                             <tr>
@@ -1654,8 +1654,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val4"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet4"></td>
-                                                <td><input type="checkbox" name="non_resp4"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet4"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp4"></td>
                                             </tr>
 
 
@@ -1667,8 +1667,8 @@
                                                 <td>(Other) </td>
                                                 <td> <input type="text" min="0" name="current_val5"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet5"></td>
-                                                <td><input type="checkbox" name="non_resp5"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet5"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp5"></td>
                                             </tr>
 
 
@@ -1679,8 +1679,8 @@
                                                 </td>
                                                 <td><input type="text" min="0" name="current_val6"
                                                         class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="non_pet6"></td>
-                                                <td><input type="checkbox" name="non_resp6"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet6"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp6"></td>
                                             </tr>
 
 
@@ -1692,8 +1692,8 @@
                                                 </td>
                                                 <td><input type="text" min="0" name="current_val7"
                                                         class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="non_pet7"></td>
-                                                <td><input type="checkbox" name="non_resp7"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet7"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp7"></td>
                                             </tr>
 
                                             <tr>
@@ -1704,8 +1704,8 @@
                                                 </td>
                                                 <td><input type="text" min="0" name="current_val8"
                                                         class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="non_pet8"></td>
-                                                <td><input type="checkbox" name="non_resp8"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet8"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp8"></td>
                                             </tr>
                                             <tr>
                                                 <td> </td>
@@ -1724,8 +1724,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val9"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet9"></td>
-                                                <td><input type="checkbox" name="non_resp9"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet9"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp9"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk10"></td>
@@ -1736,8 +1736,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val10"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet10"></td>
-                                                <td><input type="checkbox" name="non_resp10"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet10"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp10"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk11"></td>
@@ -1748,8 +1748,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val11"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet11"></td>
-                                                <td><input type="checkbox" name="non_resp11"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet11"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp11"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk12"></td>
@@ -1760,8 +1760,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val12"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet12"></td>
-                                                <td><input type="checkbox" name="non_resp12"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet12"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp12"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk13"></td>
@@ -1772,8 +1772,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val13"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet13"></td>
-                                                <td><input type="checkbox" name="non_resp13"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet13"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp13"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk14"></td>
@@ -1784,8 +1784,8 @@
                                                 </td>
                                                 <td> <input type="text" min="0" name="current_val14"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td><input type="checkbox" name="non_pet14"></td>
-                                                <td><input type="checkbox" name="non_resp14"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_pet14"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="non_resp14"></td>
                                             </tr>
 
                                             <tr>
@@ -1808,8 +1808,8 @@
                                                             name="t_current_val" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
-                                                <td><input type="checkbox" name="t_non_pet"></td>
-                                                <td><input type="checkbox" name="t_non_resp"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="t_non_pet"></td>
+                                                <td class="mx-auto text-center"><input type="checkbox" name="t_non_resp"></td>
                                             </tr>
 
 
@@ -1824,7 +1824,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_eight">
+                <section class="section_area py-5" id="eighth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row  px-2 py-2 pt-0">
@@ -2207,7 +2207,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area py-5" id="section_nine">
+                <section class="section_area py-5" id="ninth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="row px-lg-5 px-2 py-2 pt-0">
@@ -2232,8 +2232,7 @@
                                     establishment or modification of child support is not an issue in this case.
                                 </div>
 
-                                <div class="fw-bold">I certify that a copy of this financial affidavit was [check all
-                                    used]: <span>(<input type="checkbox" name="emailed">)</span> e-mailed
+                                <div class="fw-bold">I certify that a copy of this document was [check all used]: <span>(<input type="checkbox" name="emailed">)</span> e-mailed
                                     <span>(<input type="checkbox" name="mailed">)</span> mailed <span>(<input
                                             type="checkbox" name="faxed">)</span>faxed <span>(<input
                                             type="checkbox" name="hand_d">)</span> hand delivered to the person(s)
@@ -2356,25 +2355,39 @@
 
                             </div>
 
-                            @include('layouts.pagination', ['page' => 17])
+                            {{-- @include('layouts.pagination', ['page' => 17]) --}}
                         </div>
                     </div>
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#ninth_section">Ninth Section</option>
+            </select>
+        </div>
     </div>
 
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
-        selectElement.addEventListener('change', function() {
-            const selectedSection = this.value;
-            if (selectedSection) {
-                window.location.hash = selectedSection;
-            }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
         });
-    });
-</script>
+    </script>
 
+</body>
 </html>

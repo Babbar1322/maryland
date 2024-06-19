@@ -3,7 +3,7 @@
     white-space: break-spaces !important;
 }
 </style>
-<div class="d-flex gap-3 py-auto pb-2  ">
+{{-- <div class="d-flex gap-3 py-auto pb-2  ">
     <div class="my-auto"> <a href="{{ route('pdf_form1') }}">
         <i class="fas fa-chevron-left text-dark"></i><i class="fas fa-chevron-left text-dark"></i></a>
     </div>
@@ -55,6 +55,6 @@
         @endif
     <div class="my-auto ps-2" ><a href="{{route('pdf_form23')}}" class="text-dark"> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> </a></div>
 
-</div>
+</div> --}}
 
 

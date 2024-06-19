@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
          a{
             color: black !important;
         }
@@ -599,7 +603,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area  px-lg-5 px-2 " id="last_section">
+                <section class="section_area  px-lg-5 px-2 " id="second_section">
                     <div class="table-responsive pt-5">
                         <table class="table-bordered border border-2 border-dark">
                             <thead>
@@ -816,11 +820,17 @@
                     </div>
 
 
-                    @include('layouts.pagination', ['page' => 10])
+                    {{-- @include('layouts.pagination', ['page' => 10]) --}}
 
                 </section>
 
             </form>
+        </div>
+        <div class="position-absolute position-fixed bottom-0 py-2   backdrop_filter  px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

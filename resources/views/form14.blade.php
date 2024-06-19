@@ -16,6 +16,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -267,9 +271,9 @@
         <div class="container bg_color p-lg-3 p-1  ">
             <form action="{{ route('form14.submit') }}" method="post">
                 @csrf
-                <section class="section_area">
+                <section class="section_area" id="first_section">
 
-                    <div class="row  px-lg-5 px-2   pt-2">
+                    <div class="row  px-lg-5 px-2 pt-2">
                         @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show mt-lg-3">{{ session('success') }} <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
@@ -593,7 +597,7 @@
 
                 </section>
 
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="second_section">
 
                     <div class="row px-lg-5 px-2 py-2 pt-5">
                         <div class="small_text text-end fw-bold">FL-150</div>
@@ -914,7 +918,7 @@
                         @include('layouts.footer10', ['page' => 2])
                      </div>
                 </section>
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="third_section">
 
                     <div class="row px-lg-5 px-2 py-2 pt-5">
                         <div class="small_text text-end fw-bold">FL-150</div>
@@ -1077,7 +1081,7 @@
                         @include('layouts.footer10', ['page' => 3])
                     </div>
                 </section>
-                <section class="section_area pt-5">
+                <section class="section_area pt-5" id="fourth_section">
                     <div class="row px-lg-5 px-2 py-2 pt-5">
                         <div class="small_text text-end fw-bold">FL-150</div>
                         <div class="col-lg-8 border border-dark">
@@ -1219,6 +1223,26 @@
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+            </select>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -240,7 +240,8 @@ class FormController extends Controller
 
 
     public function form6(){
-        // fm006-short  CT.pdf
+
+        // cc320.pdf
         return view('form6');
     }
 
@@ -702,6 +703,12 @@ class FormController extends Controller
             $ky_disclosure_statement_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+
+    public function form24() {
+        // ME financial statement MJB-Form-fm-043 (1).pdf
+        return view('form24');
     }
 
 }

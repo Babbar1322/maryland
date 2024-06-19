@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+           .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
          a{
             color: black !important;
         }
@@ -231,7 +235,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="{{route('form4.submit')}}" class="" method="post">
+            <form action="{{route('form4.submit')}}" class="mb-5" method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-12 mx-auto">
@@ -281,7 +285,7 @@
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="small_text">Date of Birth</div><input type="number" min="0"
+                                                <div class="small_text">Date of Birth</div><input type="date" min="0"
                                                     name="t_dob"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
@@ -324,7 +328,7 @@
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="small_text">Date of Birth</div><input type="number" min="0"
+                                                <div class="small_text">Date of Birth</div><input type="date" min="0"
                                                     name="s_dob"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
@@ -629,7 +633,7 @@
 
                 <section
                     class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5  m-3 mt-4  pt-lg-5 pt-4" id="latest_pa_income">
-                    <div class="col-lg-10 mx-auto">
+                    <div class="col-lg-10 mx-auto" id="second_section">
                         <div class="mb-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
 
 
@@ -1138,7 +1142,7 @@
 
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5  m-3 mt-4  pt-lg-5 pt-4" id="additional_information">
+                <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5  m-3 mt-4  pt-lg-5 pt-4" id="third_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="mb-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
 
@@ -1555,7 +1559,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="part_a_income">
+                <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
                 <div class="col-lg-10 mx-auto">
                     <div class="mb-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
 
@@ -1798,7 +1802,7 @@
                                         <td colspan="4">Signature <input type="text" name="sgn"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
-                                        <td>Date<input type="text" name="dt"
+                                        <td>Date<input type="date" name="dt"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
                                     </tr>
@@ -1811,7 +1815,7 @@
                                             <input type="text" name="saas"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
-                                        <td>Date<input type="text" name="dte"
+                                        <td>Date<input type="date" name="dte"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
                                     </tr>
@@ -1825,7 +1829,7 @@
                     </div>
                 </div>
             </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="row border-bottom">
                             <div class="col-lg-6">
@@ -1927,7 +1931,7 @@
                     </div>
                 </section>
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4">
-                    <div class="col-lg-10 mx-auto">
+                    <div class="col-lg-10 mx-auto" id="sixth_section">
                         <div class="row mt-3 border-bottom pb-500">
                             <div class="col-lg-6">
                                 <h5 class="text-center border border-dark p-2 text-dark">SECTION VI</h5>
@@ -1985,12 +1989,23 @@
                                     target="_blank">www.revenue.pa.gov</a></p>
                         </div>
                         @include('layouts.footer3', ['page' => 6])
-                        @include('layouts.pagination', ['page' => 4])
+                        {{-- @include('layouts.pagination', ['page' => 4]) --}}
 
                     </div>
                 </section>
             </form>
         </div>
+    </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+            <option value="#fifth_section">Fifth Section</option>
+            <option value="#sixth_section">Sixth Section</option>
+        </select>
     </div>
      <script>
         document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {

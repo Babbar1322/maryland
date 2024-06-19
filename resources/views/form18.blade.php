@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
+         .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         @media screen and (min-width : 350px) {
             .link {
                 text-align: center !important;
@@ -174,7 +178,7 @@
         <div class="container bg_color p-lg-3 p-1">
             <form action="{{ route('form18.submit') }}" method="post">
                 @csrf
-                <section class="section_area" id="section_first">
+                <section class="section_area" id="first_section">
 
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
@@ -242,7 +246,7 @@
                     </div>
                 </section>
 
-                <section class="section_area">
+                <section class="section_area" id="second_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -308,7 +312,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="third_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -368,7 +372,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="fourth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -509,8 +513,7 @@
                         </div>
                     </div>
                 </section>
-
-                <section class="section_area">
+                <section class="section_area" id="fifth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -592,7 +595,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="sixth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -756,7 +759,7 @@
                             </div>
                         </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="seventh_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -960,7 +963,7 @@
                     </div>
                 </section>
 
-                <section class="section_area">
+                <section class="section_area" id="eighth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1195,7 +1198,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="ninth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1413,7 +1416,7 @@
                             </div>
                         </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="tenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1556,7 +1559,7 @@
                             </div>
                         </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="eleventh_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1615,7 +1618,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="twelfth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1677,7 +1680,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="thirteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1748,7 +1751,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="fourteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1800,7 +1803,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section_area">
+                <section class="section_area" id="fifteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
                             <div class="px-lg-5 mx-auto px-2 py-5 ">
@@ -1854,7 +1857,38 @@
                 </section>
             </form>
         </div>
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select  mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#ninth_section">Ninth Section</option>
+                 <option value="#tenth_section">Tenth Section</option>
+                <option value="#eleventh_section">Eleventh Section</option>
+                <option value="#twelfth_section">Twelfth Section</option>
+                <option value="#thirteenth_section">Thirteenth Section</option>
+                <option value="#fourteenth_section">Fourteenth Section</option>
+                <option value="#fifteenth_section">Fifteenth Section</option>
+            </select>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+        selectElement.addEventListener('change', function() {
+            const selectedSection = this.value;
+            if (selectedSection) {
+                window.location.hash = selectedSection;
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

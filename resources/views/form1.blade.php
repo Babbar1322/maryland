@@ -173,13 +173,17 @@
                 width: 100% !important;
             }
         }
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid  bg_color py-1 py-lg-3">
 
-        <form action="{{ route('form1.submit') }}" class="" method="post">
+        <form action="{{ route('form1.submit') }}" class="mb-5" method="post">
             @csrf
 
             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
@@ -558,7 +562,7 @@
                         @include('layouts.footer', ['page' => 1])
 
                     </div>
-                </div>
+
             </section>
 
             <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
@@ -981,7 +985,7 @@
                         @include('layouts.footer', ['page' => 2])
 
                     </div>
-                </div>
+
             </section>
             <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
                 id="drug_store_items">
@@ -1479,7 +1483,7 @@
                         @include('layouts.footer', ['page' => 3])
 
                     </div>
-                </div>
+
             </section>
             <section class="section_area page4 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
                 id="transportation_expense">
@@ -1929,7 +1933,7 @@
                         @include('layouts.footer', ['page' => 4])
 
                     </div>
-                </div>
+
             </section>
             <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
                 id="income_statement">
@@ -2250,7 +2254,7 @@
                         @include('layouts.footer', ['page' => 5])
 
                     </div>
-                </div>
+
             </section>
             <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
                 id="assets_liabilities">
@@ -2472,7 +2476,7 @@
                         </table>
                         @include('layouts.footer', ['page' => 6])
                     </div>
-                </div>
+
             </section>
             <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
                 id="last_section">
@@ -2483,7 +2487,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12  ">
-                                    <input type="text" name="date" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="date" name="date" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Date</div>
                                 </div>
                             </div>
@@ -2567,14 +2571,32 @@
                             NOTE: If you are not filing this statement with a pleading or your response to the other party’s claim, mail (postage prepaid) or hand deliver this statement to the other party and file a Certificate of Service (CC-DR-058) with the court.
                         </div>
                     </div>
-                    @include('layouts.footer', ['page' => 7])
-                    @include('layouts.pagination', ['page' => 1])
-                </div>
-            </section>
-        </form>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <div class="mb-5">
+
+                        @include('layouts.footer', ['page' => 7])
+                    </div>
+                    {{-- @include('layouts.pagination', ['page' => 1]) --}}
+
+                </div>
+
+            </section>
+
+        </form>
+
+        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+            <select name="" id="" class="sectionSelect form-select mx-auto ">
+                <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#lawn_yard_care">Second Section</option>
+                <option value="#drug_store_items">Third Section</option>
+                <option value="#transportation_expense">Fourth Section</option>
+                <option value="#income_statement">Fifth Section</option>
+                <option value="#assets_liabilities">Sixth Section</option>
+                <option value="#last_section">Seventh Section</option>
+            </select>
+        </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
             selectElement.addEventListener('change', function() {

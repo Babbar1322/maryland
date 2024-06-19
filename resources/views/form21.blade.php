@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
         a {
             color: black !important;
         }
@@ -415,7 +419,7 @@
                         @include('layouts.footer16', ['page' => 1])
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="second_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A:   <input type="text" name="2pjp_a" class=" border-none responsive_input border-0 border-bottom border-dotted shadow-none"></div>
@@ -475,7 +479,7 @@
                             <div class="fw-bold text-center">To calculate monthly gross income use the multiplier shown:</div>
                             <div><input type="checkbox" name="mi_weekly_checkbox" id=""> weekly -multiply weekly income by 4.33 <input type="checkbox" name="mi_other_weekly_checkbox" id=""> every other week (bi-weekly) multiply bi-weekly income by 2.17</div>
                             <div><input type="checkbox" name="mi_monthly_checkbox" id=""> monthly <input type="checkbox" name="mi_monthly_multiply_checkbox" id=""> twice a month-multiply semi-monthly income by 2</div>
-<div class="table-responsive">
+                            <div class="table-responsive">
                             <table class="table table-bordered border-dark">
                                 <tbody>
                                     <tr> <td colspan="3" class="bg-secondary">MONTHLY GROSS INCOME</td>  </tr>
@@ -676,7 +680,7 @@
                     {{-- </div> --}}
                     </div>
                 </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="third_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -944,8 +948,8 @@
                         @include('layouts.footer16', ['page' => 3])
                     </div>
 
-        </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                </section>
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -1264,8 +1268,8 @@
 
                         @include('layouts.footer16', ['page' => 4])
                     </div>
-        </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+                </section>
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div >
@@ -1518,8 +1522,8 @@
                         @include('layouts.footer16', ['page' => 5])
                     </div>
 
-        </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                </section>
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="sixth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -1837,8 +1841,8 @@
                         @include('layouts.footer16', ['page' => 6])
                     </div>
 
-        </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+                </section>
+                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="seventh_section" >
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -2089,7 +2093,7 @@
 
                     </div>
 
-        </section>
+                </section>
 
 
 
@@ -2097,6 +2101,30 @@
 
         </form>
     </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+
+        </select>
     </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

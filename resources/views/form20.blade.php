@@ -145,15 +145,19 @@
                 width: 100% !important;
             }
         }
+        .backdrop_filter{
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
     </style>
 </head>
  <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form20.submit') }}" method="post">
+        <form action="{{ route('form20.submit') }}" method="post">
                 @csrf
 
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+        <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
                     id="first_section">
 
                     <div class="col-lg-10 mx-auto">
@@ -290,11 +294,11 @@
 
                         @include('layouts.footer15', ['page' => 1])
                     </div>
-        </div>
+
         </section>
 
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-            id="case_information">
+            id="second_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row mt-lg-3">
                     <div class="fw-bold py-2"><span class="me-lg-4">1.</span> i am this form to the other party and
@@ -414,7 +418,7 @@
         </section>
 
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-            id="attach_affidavit">
+            id="third_section">
             <div class="col-lg-10 mx-auto">
                 <div class="table-responsive pt-lg-5 ms-lg-5">
                     <table class="table table-bordered border-dark">
@@ -544,7 +548,7 @@
             </div>
         </section>
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+              id="fourth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -765,7 +769,7 @@
 
         </section>
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+           id="fifth_section">
             <div class="col-lg-10 mx-auto">
 
                 <div class="row pt-lg-5">
@@ -965,7 +969,8 @@
                     </div>
                 </div>
         </section>
-        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+             id="sixth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -1181,7 +1186,7 @@
 
         </section>
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+               id="seventh_section">
             <div class="col-lg-10 mx-auto">
 
 
@@ -1655,7 +1660,8 @@
             </div>
         </section>
 
-        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                id="eighth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -1784,7 +1790,7 @@
             </div>
         </section>
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+                id="ninth_section">
             <div class="col-lg-10 mx-auto">
 
                 <div class="row">
@@ -1916,7 +1922,8 @@
                 @include('layouts.footer15', ['page' => 9])
             </div>
         </section>
-        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+             id="tenth_section" >
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -2044,7 +2051,8 @@
                 @include('layouts.footer15', ['page' => 10])
             </div>
         </section>
-        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" >
+        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+            id="eleventh_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -2248,7 +2256,7 @@
         </section>
 
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+            id="twelfth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -2450,7 +2458,7 @@
             </div>
         </section>
         <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
-         >
+                id="thirteenth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -2653,7 +2661,8 @@
                 @include('layouts.footer15', ['page' => 13])
             </div>
         </section>
-        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4">
+        <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+            id="fourteenth_section">
             <div class="col-lg-10 mx-auto">
                 <div class="row pt-lg-5">
                     <div class="col-lg-1 col-2" style="max-width:30px;"> </div>
@@ -2747,6 +2756,36 @@
         </section>
         </form>
     </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+                <option value="#first_section">First Section</option>
+                <option value="#second_section">Second Section</option>
+                <option value="#third_section">Third Section</option>
+                <option value="#fourth_section">Fourth Section</option>
+                <option value="#fifth_section">Fifth Section</option>
+                <option value="#sixth_section">Sixth Section</option>
+                <option value="#seventh_section">Seventh Section</option>
+                <option value="#eighth_section">Eighth Section</option>
+                <option value="#ninth_section">Ninth Section</option>
+                <option value="#tenth_section">Tenth Section</option>
+                <option value="#eleventh_section">Eleventh Section</option>
+                <option value="#twelfth_section">Twelfth Section</option>
+                <option value="#thirteenth_section">Thirteenth Section</option>
+                <option value="#fourteenth_section">Fourteenth Section</option>
+        </select>
     </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
