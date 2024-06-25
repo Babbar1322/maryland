@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-           .backdrop_filter{
+        .backdrop_filter {
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
-          a{
+
+        a {
             color: black !important;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -47,7 +49,7 @@
             border-bottom: 1px dotted black !important;
 
             box-shadow: none !important;
-         }
+        }
 
         .form-control {
             border-radius: 0 !important;
@@ -69,9 +71,11 @@
             border-bottom: 2px solid black !important;
 
         }
-        .table > :not(caption) > * > * {
-            background-color : white;
+
+        .table> :not(caption)>*>* {
+            background-color: white;
         }
+
         .section_area {
             background-color: white !important;
             margin: 10px;
@@ -95,24 +99,24 @@
 
         @media screen and (min-width : 1600px) {
 
-            .top_select_box{
+            .top_select_box {
                 width: 75% !important;
-                        }
+            }
 
-                        .case_input_top {
-                            min-width: 490px !important;
-                        }
+            .case_input_top {
+                min-width: 490px !important;
+            }
         }
 
         @media screen and (min-width : 700px) {
 
-            .top_select_box{
-                width: 58.33% ;
-                        }
+            .top_select_box {
+                width: 58.33%;
+            }
 
-                        .case_input_top {
-                            min-width: 275px ;
-                        }
+            .case_input_top {
+                min-width: 275px;
+            }
         }
 
 
@@ -121,15 +125,19 @@
             .responsive_input {
                 width: 100% !important;
             }
-            .top_select_box{
-                width: 58.33333% ;
-                        }
+
+            .top_select_box {
+                width: 58.33333%;
+            }
+
             .case_input_top {
-                            min-width: 275px !important;
-                        }
-            .top_text_width{
+                min-width: 275px !important;
+            }
+
+            .top_text_width {
                 min-width: 100% !important;
             }
+
             .children_table {
                 min-width: 0 !important;
             }
@@ -140,91 +148,89 @@
 
 
             }
+
             @media screen and (max-width : 768px) {
 
 
-.small_text {
-    height: auto !important;
-}
+                .small_text {
+                    height: auto !important;
+                }
 
-.top_flex_text {
-    display: block !important;
-}
+                .top_flex_text {
+                    display: block !important;
+                }
 
-.footer_padding {
-    padding-top: 50px !important;
-}
+                .footer_padding {
+                    padding-top: 50px !important;
+                }
 
-.d_sm_block {
-    display: block !important;
+                .d_sm_block {
+                    display: block !important;
 
-}
-
-
-.responsive_input {
-    max-width: 100% !important;
-    overflow: hidden;
-}
-
-.expires_row {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
-}
-
-.bottom_day {
-    width: 90px !important;
-}
-
-.top_flex_text {
-    display: block !important;
-}
-
-.flex_input {
-    width: 100% !important;
-    margin-bottom: 10px !important;
-}
-
-.age_input_top {
-    width: 100% !important;
-}
-
-/* .section_area {
-background-color: white !important;
- margin-top: 15px !important;
-} */
-.top_select_box {
-    width: 58.33333%;
-}
-
-.case_input_top {
-    min-width: 275px !important;
-}
-
-.top_text_width {
-    min-width: 100% !important;
-}
-
-.children_table {
-    min-width: 0 !important;
-}
-
-.section_area {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+                }
 
 
-}
+                .responsive_input {
+                    max-width: 100% !important;
+                    overflow: hidden;
+                }
 
-.top_text {
-    width: 100% !important;
-    font-size: 17px;
-}
+                .expires_row {
+                    padding-right: 1.5rem !important;
+                    padding-left: 1.5rem !important;
+                }
 
-.container-fluid {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-}
-}
+                .bottom_day {
+                    width: 90px !important;
+                }
+
+                .top_flex_text {
+                    display: block !important;
+                }
+
+                .flex_input {
+                    width: 100% !important;
+                    margin-bottom: 10px !important;
+                }
+
+                .age_input_top {
+                    width: 100% !important;
+                }
+
+                .top_select_box {
+                    width: 58.33333%;
+                }
+
+                .case_input_top {
+                    min-width: 275px !important;
+                }
+
+                .top_text_width {
+                    min-width: 100% !important;
+                }
+
+                .children_table {
+                    min-width: 0 !important;
+                }
+
+                .section_area {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+
+
+                }
+
+                .top_text {
+                    width: 100% !important;
+                    font-size: 17px;
+                }
+
+                .container-fluid {
+                    padding-right: 0px !important;
+                    padding-left: 0px !important;
+                }
+            }
+
             .top_text {
                 width: 100% !important;
                 font-size: 17px;
@@ -243,15 +249,17 @@ background-color: white !important;
         .font_bold {
             font-weight: bolder !important;
         }
-        .bg-secondary {
-    --bs-bg-opacity: 1;
-    background-color: rgb(184 188 192) !important;
-}
 
-@media screen and (max-width : 1600px) {
+        .bg-secondary {
+            --bs-bg-opacity: 1;
+            background-color: rgb(184 188 192) !important;
+        }
+
+        @media screen and (max-width : 1600px) {
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
@@ -263,22 +271,26 @@ background-color: white !important;
     <div class="container-fluid  bg_color py-1 py-lg-3">
 
 
-            <form action="{{ route('form2.submit') }}" class="mb-5" method="post">
-                @csrf
-             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
+        <form action="{{ route('form2.submit') }}" method="post">
+            @csrf
+            <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
                 <div class="form-area   pt-5 ">
                     @if (session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
-                    <div class="border border-dark fw-bolder p-1  top_text">This form contains Restricted Information. </div>
+                    <div class="border border-dark fw-bolder p-1  top_text">This form contains Restricted Information.
+                    </div>
 
                     <div class="row mt-3">
-                        <div class="col-lg-1 col-sm-1 ps-4 col-3  mb-sm-0 "> <img src="{{ asset('logo.png') }}" alt="" class="w-100"> </div>
+                        <div class="col-lg-1 col-sm-1 ps-4 col-3  mb-sm-0 "> <img src="{{ asset('logo.png') }}"
+                                alt="" class="w-100"> </div>
                         <div class="col-lg-11">
                             <div class="row">
-                                <div class="col-md-3 fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; "> CIRCUIT COURT FOR </div>
-                                <div class="col-md-7 px-lg-0 top_select_box responsive_input" >
-                                    <select id="county" name="county" class="form-select form-control border-0 border-bottom">
+                                <div class="col-md-3 fw-bolder  h5  top_text_width px-lg-0 " style="max-width: 180px; ">
+                                    CIRCUIT COURT FOR </div>
+                                <div class="col-md-7 px-lg-0 top_select_box responsive_input">
+                                    <select id="county" name="county"
+                                        class="form-select form-control border-0 border-bottom">
                                         <option selected=""> </option>
                                         <option value="CIRCUIT COURT LOCATIONS">CIRCUIT COURT LOCATIONS</option>
                                         <option value="Allegany Country (CC)">Allegany Country (CC)</option>
@@ -308,20 +320,24 @@ background-color: white !important;
                                     </select>
                                     <div class="text-center"> City/County </div>
                                 </div>
-                                <h5 class="col-md-1  d-flex gap-1 px-lg-0"> <span class="fw-bold fs-3">, </span><span class="fs-4">MARYLAND</span>
+                                <h5 class="col-md-1  d-flex gap-1 px-lg-0"> <span class="fw-bold fs-3">, </span><span
+                                        class="fs-4">MARYLAND</span>
                                 </h5>
                             </div>
                             <div class="row">
                                 <div class="col-md-1 col-lg-2 px-lg-0" style="max-width: 92px;">Located at</div>
                                 <div class="col-md-6 px-lg-0">
-                                    <input type="text" name="court_address" class="form-control border-none border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="court_address"
+                                        class="form-control border-none border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center"> Court Address </div>
                                 </div>
                                 <div class="col-md-2 px-lg-0" style="max-width: 89px;">
                                     <div>Case Number</div>
                                 </div>
                                 <div class="col-md-3">
-                                    <input type="number" name="case_no" class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none" style="min-width: 195px;">
+                                    <input type="number" name="case_no"
+                                        class="case_input_top form-control border-none border-0 border-bottom border-dotted shadow-none"
+                                        style="min-width: 195px;">
                                 </div>
                             </div>
                         </div>
@@ -330,7 +346,8 @@ background-color: white !important;
                         <div class="row">
                             <div class="col-lg-5 col-sm-5">
                                 <div class="col-lg-12  ">
-                                    <input type="number" name="plaintiff" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="number" name="plaintiff"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="">Plaintiff</div>
                                 </div>
                             </div>
@@ -339,7 +356,8 @@ background-color: white !important;
                             </div>
                             <div class="col-lg-5 col-sm-5">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="defendant" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="defendant"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="">Defendant</div>
                                 </div>
                             </div>
@@ -349,7 +367,8 @@ background-color: white !important;
                         <div class="row">
                             <div class="col-lg-5 col-sm-6">
                                 <div class="col-lg-12">
-                                    <input type="text" name="plaintiff_street_address" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="plaintiff_street_address"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class=""> Street Address</div>
                                 </div>
                             </div>
@@ -358,7 +377,8 @@ background-color: white !important;
                             </div>
                             <div class="col-lg-5 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="defendant_street_address" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="text" name="defendant_street_address"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div> Street Address</div>
                                 </div>
                             </div>
@@ -369,11 +389,13 @@ background-color: white !important;
                             <div class="col-lg-5">
                                 <div class="row">
                                     <div class="col-lg-8 col-sm-6 ">
-                                        <input type="text" name="plaintiff_csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="text" name="plaintiff_csz"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="text" name="plaintiff_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="text" name="plaintiff_tel"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
                                     </div>
                                 </div>
@@ -382,11 +404,13 @@ background-color: white !important;
                             <div class="col-lg-5">
                                 <div class="row">
                                     <div class="col-lg-8 col-sm-6">
-                                        <input type="text" name="defendant_csz" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="text" name="defendant_csz"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="number" name="defendant_tel" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="number" name="defendant_tel"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
                                     </div>
                                 </div>
@@ -398,7 +422,8 @@ background-color: white !important;
                             <div class="col-lg-5 col-sm-6">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input type="email" name="plaintiff_email" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                        <input type="email" name="plaintiff_email"
+                                            class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>E-mail</div>
                                     </div>
                                 </div>
@@ -406,7 +431,8 @@ background-color: white !important;
                             <div class="col-lg-2 col-sm-2 d-none  d-lg-block"> </div>
                             <div class="col-lg-5 col-sm-6">
                                 <div class="col-sm-12">
-                                    <input type="email" name="defendant_email" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="email" name="defendant_email"
+                                        class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div>E-mail</div>
                                 </div>
                             </div>
@@ -418,7 +444,8 @@ background-color: white !important;
                                 <div class="text-end fw-bold">FINANCIAL STATEMENT OF</div>
                             </div>
                             <div class="col-lg-5 col-sm-12">
-                                <input type="text" name="statement_name" class=" w-100 form-control border-none border-0 border-bottom shadow-none">
+                                <input type="text" name="statement_name"
+                                    class=" w-100 form-control border-none border-0 border-bottom shadow-none">
                                 <div class="text-center">Name</div>
                             </div>
                         </div>
@@ -443,19 +470,23 @@ background-color: white !important;
                                         <td><input type="number" name="age1" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child2" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child2"
+                                                class="form-control border-0"></td>
                                         <td><input type="number" name="age2" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child3" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child3"
+                                                class="form-control border-0"></td>
                                         <td><input type="number" name="age3" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child4" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child4"
+                                                class="form-control border-0"></td>
                                         <td><input type="number" name="age4" class="form-control border-0"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="8"><input type="text" name="child5" class="form-control border-0"></td>
+                                        <td colspan="8"><input type="text" name="child5"
+                                                class="form-control border-0"></td>
                                         <td><input type="number" name="age5" class="form-control border-0"></td>
                                     </tr>
                                 </tbody>
@@ -483,15 +514,21 @@ background-color: white !important;
                                     </tr>
                                     <tr>
                                         <td class="w-50">Mortgage</td>
-                                        <td><input type="number" name="p_mortgage_self" class="form-control border-0" value="50"></td>
-                                        <td><input type="number" name="p_mortgage_child" class="form-control border-0" value="55"></td>
-                                        <td><input type="number" name="p_mortgage_total" class="form-control border-0" value='105'></td>
+                                        <td><input type="number" name="p_mortgage_self"
+                                                class="form-control border-0" value="50"></td>
+                                        <td><input type="number" name="p_mortgage_child"
+                                                class="form-control border-0" value="55"></td>
+                                        <td><input type="number" name="p_mortgage_total"
+                                                class="form-control border-0" value='105'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Insurance (homeowners)</td>
-                                        <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_insurance_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_insurance_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_insurance_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_insurance_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Rent/Ground Rent</td>
@@ -508,7 +545,8 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_taxes_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_taxes_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_taxes_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Gas & Electric</td>
@@ -516,13 +554,17 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_gas_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_gas_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_gas_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Electric Only</td>
-                                        <td><input type="number" name="p_electric_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_electric_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_electric_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_electric_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_electric_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_electric_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Heat (oil)</td>
@@ -530,7 +572,8 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_heat_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_heat_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_heat_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Telephone</td>
@@ -538,7 +581,8 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_tel_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_tel_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_tel_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Trash Removal</td>
@@ -546,7 +590,8 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_trash_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_trash_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_trash_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Water Bill</td>
@@ -554,7 +599,8 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_water_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_water_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_water_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Cell Phone/Pager</td>
@@ -562,13 +608,17 @@ background-color: white !important;
                                         </td>
                                         <td><input type="number" name="p_pager_child" class="form-control border-0">
                                         </td>
-                                        <td><input type="number" name="p_pager_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_pager_total" class="form-control border-0"
+                                                value='0'></td>
                                     </tr>
                                     <tr>
                                         <td class="w-50">Repairs</td>
-                                        <td><input type="number" name="p_repairs_self" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_repairs_child" class="form-control border-0"></td>
-                                        <td><input type="number" name="p_repairs_total" class="form-control border-0" value='0'></td>
+                                        <td><input type="number" name="p_repairs_self"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_repairs_child"
+                                                class="form-control border-0"></td>
+                                        <td><input type="number" name="p_repairs_total"
+                                                class="form-control border-0" value='0'></td>
                                     </tr>
 
                                 </tbody>
@@ -579,7 +629,8 @@ background-color: white !important;
 
             </section>
 
-            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="lawn_yard_care">
+            <section class="section_area page2 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="lawn_yard_care">
                 <div class="row   ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -597,21 +648,29 @@ background-color: white !important;
                                 <td><input type="number" name="p_lawn_child"
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_lawn_total" class="border-0 bg-transparent border outline-none form-control" value="0">
+                                <td><input type="number" name="p_lawn_total"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="0">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Replacement Furnishings/Appliances</td>
-                                <td><input type="number" name="p_furnishings_self" class="border-0 bg-transparent border outline-none form-control" value="100">
+                                <td><input type="number" name="p_furnishings_self"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="100">
                                 </td>
-                                <td><input type="number" name="p_furnishings_child" class="border-0 bg-transparent border outline-none form-control">
+                                <td><input type="number" name="p_furnishings_child"
+                                        class="border-0 bg-transparent border outline-none form-control">
                                 </td>
-                                <td><input type="number" name="p_furnishings_total" class="border-0 bg-transparent border outline-none form-control" value="100">
+                                <td><input type="number" name="p_furnishings_total"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="100">
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-50">Condominium Fee (not included elsewhere)</td>
-                                <td><input type="number" name="p_condominium_self" class="border-0 bg-transparent border outline-none form-control">
+                                <td><input type="number" name="p_condominium_self"
+                                        class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 <td><input type="number" name="p_condominium_child"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -640,7 +699,8 @@ background-color: white !important;
                                         class="border-0 bg-transparent border outline-none form-control">
                                 </td>
                                 <td><input type="number" name="p_carpt_child"
-                                        class="border-0 bg-transparent border outline-none form-control" value="50">
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="50">
                                 </td>
                                 <td><input type="number" name="p_carpt_total"
                                         class="border-0 bg-transparent border outline-none form-control"
@@ -963,8 +1023,9 @@ background-color: white !important;
                                 </td>
                             </tr>
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="s_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="s_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" name="s_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1025,7 +1086,8 @@ background-color: white !important;
             </section>
 
 
-            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="drug_store_items">
+            <section class="section_area page3 mt-2 mt-lg-4  pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="drug_store_items">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -1062,8 +1124,9 @@ background-color: white !important;
                                 </td>
                             </tr>
                             <tr>
-                                <td class="w-50">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="c_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td class="w-50">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="c_others" class="border-0 bg-transparent w-50"></span>
                                 </td>
 
                                 <td><input type="number" name="c_other_self"
@@ -1172,8 +1235,9 @@ background-color: white !important;
                             </tr>
 
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="d_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="d_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" name="d_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1302,8 +1366,9 @@ background-color: white !important;
                                 </td>
                             </tr>
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="e_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="e_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" name="e_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1478,8 +1543,9 @@ background-color: white !important;
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="f_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="f_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" name="f_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1523,7 +1589,8 @@ background-color: white !important;
 
 
 
-            <section class="section_area page4  mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="transportation_expense">
+            <section class="section_area page4  mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
+                id="transportation_expense">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -1630,8 +1697,10 @@ background-color: white !important;
                                 </td>
                             </tr>
                             <tr>
-                                <td class="w-50">Other: <span class="border-dashed border-bottom outline-none"><input type="text" name="g_others"
-                                        class="border-0 bg-transparent w-50"><span class="  border-dashed border-bottom outline-none">
+                                <td class="w-50">Other: <span
+                                        class="border-dashed border-bottom outline-none"><input type="text"
+                                            name="g_others" class="border-0 bg-transparent w-50"><span
+                                            class="  border-dashed border-bottom outline-none">
                                 </td>
 
                                 <td><input type="number" name="g_other_self"
@@ -1727,8 +1796,9 @@ background-color: white !important;
 
 
                             <tr>
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="number" name="h_others"
-                                        class="  w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="number" name="h_others"
+                                            class="  w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" name="h_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1814,7 +1884,9 @@ background-color: white !important;
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="i_others" class="w-50 border-0 bg-transparent"></span>
+                                <td>Other: <span class="  border-dashed border-bottom outline-none"><input
+                                            type="text" name="i_others"
+                                            class="w-50 border-0 bg-transparent"></span>
                                 </td>
                                 <td><input type="number" name="i_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1914,8 +1986,9 @@ background-color: white !important;
                             </tr>
 
                             <tr class="w-50">
-                                <td>Other:<span class="  border-dashed border-bottom outline-none"> <input type="text" name="j_others"
-                                        class="border-0 bg-transparent w-50"></span>
+                                <td>Other:<span class="  border-dashed border-bottom outline-none"> <input
+                                            type="text" name="j_others"
+                                            class="border-0 bg-transparent w-50"></span>
                                 </td>
                                 <td><input type="number" name="j_other_self"
                                         class="border-0 bg-transparent border outline-none form-control">
@@ -1955,7 +2028,8 @@ background-color: white !important;
             </section>
 
 
-            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4" id="income_statement">
+            <section class="section_area page5 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-lg-5 pt-4"
+                id="income_statement">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div>Case Number</div>
@@ -2050,9 +2124,10 @@ background-color: white !important;
                             </tr>
 
                             <tr>
-                                <td class="w-50">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="k_others"
-                                        class="border-0 bg-transparent w-50">
-                                        </span>
+                                <td class="w-50">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="k_others" class="border-0 bg-transparent w-50">
+                                    </span>
                                 </td>
 
                                 <td><input type="number" name="k_other_self"
@@ -2124,7 +2199,8 @@ background-color: white !important;
                                 <td class="bg-secondary">
                                 </td>
                                 <td><input type="number" name="gmw"
-                                        class="border-0 bg-transparent border outline-none form-control" value="10000">
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="10000">
                                 </td>
                             </tr>
                             <tr>
@@ -2139,7 +2215,8 @@ background-color: white !important;
                                     <div class="">Federal</div>
                                 </td>
                                 <td><input type="number" name="federal"
-                                        class="border-0 bg-transparent border outline-none form-control" value="1000">
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="1000">
                                 </td>
                                 <td rowspan="6" class="bg-secondary">
                                 </td>
@@ -2206,7 +2283,8 @@ background-color: white !important;
                                 <td class="bg-secondary">
                                 </td>
                                 <td><input type="text" name="ogi"
-                                        class="border-0 bg-transparent border outline-none form-control" value="1000">
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="1000">
                                 </td>
                             </tr>
                             <tr>
@@ -2221,10 +2299,13 @@ background-color: white !important;
                                     <div class=" px-2">a.</div>
                                 </td>
                                 <td> <input type="text" name="gda1"
-                                        class="border-0 bg-transparent border outline-none form-control" value="car"></td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="car"></td>
 
                                 <td class="py-0">
-                                    <input type="number" name="gda2" class="border-0 bg-transparent border outline-none form-control" value="300">
+                                    <input type="number" name="gda2"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="300">
                                 </td>
                                 <td class="py-0 bg-secondary" rowspan="4">
                                 </td>
@@ -2298,7 +2379,8 @@ background-color: white !important;
             </section>
 
 
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="assets_liabilities">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="assets_liabilities">
                 <div class="row  ">
                     <div class="col-md-12 d-flex justify-content-end gap-3">
                         <div class=>Case Number</div>
@@ -2320,7 +2402,8 @@ background-color: white !important;
                                     <div class="">Real Estate:</div>
                                 </td>
                                 <td><input type="number" name="as_real_estate"
-                                        class="border-0 bg-transparent border outline-none form-control" value="100000"></td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="100000"></td>
                                 <td rowspan="10" class="bg-secondary w-25"></td>
                             </tr>
                             <tr>
@@ -2336,8 +2419,9 @@ background-color: white !important;
                                     <div class="">Bank Accounts/Savings</div>
                                 </td>
                                 <td><input type="number" name="as_bs"
-                                        class="border-0 bg-transparent border outline-none form-control" value="3000"></td>
-                                </tr>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="3000"></td>
+                            </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="">U.S. Bonds</div>
@@ -2382,8 +2466,9 @@ background-color: white !important;
                                         class="border-0 bg-transparent border outline-none form-control"></td>
                             </tr>
                             <tr class="w-50">
-                                <td colspan="2">Other: <span class="  border-dashed border-bottom outline-none"><input type="text" name="as_others"
-                                        class="border-0 bg-transparent w-50">
+                                <td colspan="2">Other: <span
+                                        class="  border-dashed border-bottom outline-none"><input type="text"
+                                            name="as_others" class="border-0 bg-transparent w-50">
                                     </span>
                                 </td>
 
@@ -2433,7 +2518,8 @@ background-color: white !important;
                                     <div class="">Notes payable to relatives</div>
                                 </td>
                                 <td><input type="number" name="lb_np"
-                                        class="border-0 bg-transparent border outline-none form-control" value="5000"></td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="5000"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
@@ -2455,17 +2541,22 @@ background-color: white !important;
                                     <div class="">Balance of Credit Card Accounts</div>
                                 </td>
                                 <td><input type="number" name="lb_bcca"
-                                        class="border-0 bg-transparent border outline-none form-control" value="3000"></td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="3000"></td>
                             </tr>
 
                             <tr>
                                 <td class="" style="width:1px;">
                                     <div class=" px-2">a.</div>
                                 </td>
-                                <td> <input type="text" name="da1" class="border-0 bg-transparent border outline-none form-control" value="chase"></td>
+                                <td> <input type="text" name="da1"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="chase"></td>
 
                                 <td class="py-0">
-                                    <input type="number" name="da2" class="border-0 bg-transparent border outline-none form-control" value="1000">
+                                    <input type="number" name="da2"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="1000">
                                 </td>
 
                             </tr>
@@ -2474,10 +2565,12 @@ background-color: white !important;
                                     <div class=" px-2">b.</div>
                                 </td>
                                 <td> <input type="text" name="db1"
-                                        class="border-0 bg-transparent border outline-none form-control" value="capital one"></td>
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="capital one"></td>
 
                                 <td class="py-0"><input type="number" name="db2"
-                                        class="border-0 bg-transparent border outline-none form-control" value="2000">
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="2000">
                                 </td>
 
                             </tr>
@@ -2549,7 +2642,9 @@ background-color: white !important;
                                     <div>TOTAL EXPENSES:</div>
                                 </td>
                                 <td class="bg-secondary"></td>
-                                <td><input type="number" name="lb_ti" class="border-0 bg-transparent border outline-none form-control" value="255">
+                                <td><input type="number" name="lb_ti"
+                                        class="border-0 bg-transparent border outline-none form-control"
+                                        value="255">
                                 </td>
                             </tr>
                             <tr>
@@ -2572,7 +2667,8 @@ background-color: white !important;
 
             </section>
 
-            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="last_section">
+            <section class="section_area page6 mt-2 mt-lg-4 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4"
+                id="last_section">
                 <div class="form-area    pt-3 ">
                     <div class="mx-auto h4 fw-bold  ">I solemnly affirm under the penalties of perjury that the
                         contents of this document, Monthly Expense List,
@@ -2703,6 +2799,16 @@ background-color: white !important;
                     @include('layouts.footer', ['page' => 7])
                     {{-- @include('layouts.pagination', ['page' => 2 ]) --}}
                 </div>
+            </section>
+
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
         </form>
 
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
@@ -2717,6 +2823,7 @@ background-color: white !important;
                 <option value="#last_section">Seventh Section</option>
             </select>
         </div>
+
         </section>
     </div>
 

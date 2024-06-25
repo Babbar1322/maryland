@@ -32,7 +32,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            height: 100% !important;
 
         }
 
@@ -245,12 +245,13 @@
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
         }
 
-        .backdrop_filter{
+        .backdrop_filter {
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
@@ -259,43 +260,47 @@
 
 <body>
     <div class="container-fluid   py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-
-
-
-            <form action="{{ route('form9.submit') }}" class=" " method="post">
-                @csrf
+        <form action="{{ route('form9.submit') }}" class=" " method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1  ">
                 <section class="section_area" id="first_section">
 
                     <div class="row  px-lg-5 px-2   pt-2">
                         @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
+                            <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
                         <div class="small_text text-end fw-bold">FL-140</div>
                         <div class="col-lg-8 border border-dark">
                             <div class="small_text">ATTORNEY OR PARTY WITHOUT ATTORNEY (Name, State Bar number, and
                                 address):</div>
-                            <textarea name="" id="" cols="6" class="form-control p-0 m-0"></textarea>
+                            <textarea name="form1[0].Page1[0].StdP1Header_sf[0].AddInfo[0].PartyAttyAddInfo_ft[0]" id="" cols="6" class="form-control p-0 m-0"></textarea>
                             <div class="p-2 border-bottom border-dark">
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">TELEPHONE NO.:</div>
-                                        <div> <input type="text" name="phone" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Phone_ft[0]" class="border-0 "></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex">
+                                        <div class="small_text">FAX NO.:</div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Fax_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">E-MAIL ADDRESS:</div>
-                                        <div> <input type="text" name="email" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Email_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">ATTORNEY FOR (Name):</div>
-                                        <div> <input type="text" name="name" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].AttyFor_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                             </div>
@@ -304,31 +309,31 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class=" ">SUPERIOR COURT OF CALIFORNIA, COUNTY OF</div>
-                                        <div> <input type="text" name="county_of" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].CrtCounty_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">STREET ADDRESS:</div>
-                                        <div> <input type="text" name="street_address" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].Street_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">MAILING ADDRESS:</div>
-                                        <div> <input type="text" name="mailing_address" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].MailingAdd_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">CITY AND ZIP CODE:</div>
-                                        <div> <input type="text" name="zip_code" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].CityZip_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">BRANCH NAME:</div>
-                                        <div> <input type="text" name="branch_name" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].Branch_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                             </div>
@@ -337,19 +342,19 @@
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">PETITIONER:</div>
-                                        <div> <input type="text" name="petitioner" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].Party1_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">RESPONDENT:</div>
-                                        <div> <input type="text" name="respondent" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].Party2_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">OTHER PARENT/PARTY:</div>
-                                        <div> <input type="text" name="other_party" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].TextField2[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                             </div>
@@ -365,21 +370,21 @@
                                 <div class="row mx-auto">
                                     <div class="col-lg-6 mx-auto text-center">
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="Yes" name="d_petitioner"  >
+                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[0].CheckBox61[0]">
                                             <label for="">Petitioner's</label>
                                         </div>
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="Yes" name="d_respondent" >
+                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[1].respondent_cb[0]">
                                             <label for="">Respondent's</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 mx-auto text-center">
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="Yes" name="preliminary"  >
+                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[2].preliminary_cb[0]">
                                             <label for="">Preliminary</label>
                                         </div>
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="Yes" name="final"  >
+                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[3].final_cb[0]">
                                             <label for="">Final</label>
                                         </div>
                                     </div>
@@ -388,113 +393,149 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                             <input type="text" name="case_number" class="border-0 w-100">
+                            <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
                         </div>
                     </div>
                     <div class="px-lg-5 px-2  pt-0 row">
                         <div class="text-center fw-bold">
                             DO NOT FILE DECLARATIONS OF DISCLOSURE OR FINANCIAL ATTACHMENTS WITH THE COURT
                         </div>
-                        <div class="small_text">In a dissolution, legal separation, or nullity action, both a preliminary and a final declaration of disclosure must be served on the other
-                            party with certain exceptions. Neither disclosure is filed with the court. Instead, a declaration stating that service of disclosure
+                        <div class="small_text">In a dissolution, legal separation, or nullity action, both a
+                            preliminary and a final declaration of disclosure must be served on the other
+                            party with certain exceptions. Neither disclosure is filed with the court. Instead, a
+                            declaration stating that service of disclosure
                             documents was completed or waived must be filed with the court (see form FL-141)</div>
 
-<ol  style="list-style-type: none">
-    <li>
-        <ol   style="list-style-type: none">
-            <li>
-                In summary dissolution cases, each spouse or domestic partner must exchange preliminary disclosures as described in Summary
-Dissolution Information (form FL-810). Final disclosures are not required (see Family Code section 2109).
-            </li>
-            <li>
-                In a default judgment case that is not a stipulated judgment or a judgment based on a marital settlement agreement, only the
-petitioner is required to complete and serve a preliminary declaration of disclosure. A final disclosure is not required of either party
-(see Family Code section 2110).
-            </li>
-            <li>Service of preliminary declarations of disclosure may not be waived by an agreement between the parties.</li>
-            <li>Parties who agree to waive final declarations of disclosure must file their written agreement with the court (see form FL-144).</li>
-        </ol>
-    </li>
-</ol>
-<div class="small_text">
-    The petitioner must serve a preliminary declaration of disclosure at the same time as the Petition or within 60 days of filing the Petition.
-The respondent must serve a preliminary declaration of disclosure at the same time as the Response or within 60 days of filing the
-Response. The time periods may be extended by written agreement of the parties or by court order (see Family Code section 2104(f)).
-</div>
-<div class="small_text fw-bold">Attached are the following:</div>
+                        <ol style="list-style-type: none">
+                            <li>
+                                <ol style="list-style-type: none">
+                                    <li>
+                                        In summary dissolution cases, each spouse or domestic partner must exchange
+                                        preliminary disclosures as described in Summary
+                                        Dissolution Information (form FL-810). Final disclosures are not required (see
+                                        Family Code section 2109).
+                                    </li>
+                                    <li>
+                                        In a default judgment case that is not a stipulated judgment or a judgment based
+                                        on a marital settlement agreement, only the
+                                        petitioner is required to complete and serve a preliminary declaration of
+                                        disclosure. A final disclosure is not required of either party
+                                        (see Family Code section 2110).
+                                    </li>
+                                    <li>Service of preliminary declarations of disclosure may not be waived by an
+                                        agreement between the parties.</li>
+                                    <li>Parties who agree to waive final declarations of disclosure must file their
+                                        written agreement with the court (see form FL-144).</li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="small_text">
+                            The petitioner must serve a preliminary declaration of disclosure at the same time as the
+                            Petition or within 60 days of filing the Petition.
+                            The respondent must serve a preliminary declaration of disclosure at the same time as the
+                            Response or within 60 days of filing the
+                            Response. The time periods may be extended by written agreement of the parties or by court
+                            order (see Family Code section 2104(f)).
+                        </div>
+                        <div class="small_text fw-bold">Attached are the following:</div>
 
-<ol class="ps-5">
-    <li><span><input type="radio" value="Yes" name="fl_142" id="" class="me-3"></span> A completed Schedule of Assets and Debts (form FL-142) or<span><input type="radio" value="Yes" name="fl_160" id="" class="mx-3"></span> A Property Declaration (form FL-160) for (specify): <span><input type="radio" value="Yes" name="c_q_c" id="" class="mx-3"></span>Community and Quasi-Community Property<span><input type="radio" value="Yes" name="s_p" id="" class="mx-3"></span>Separate Property.</li>
-    <li><span><input type="radio" value="Yes" name="c_i_e" id="" class="me-3"></span>A completed Income and Expense Declaration (form FL-150).</li>
-    <li><span><input type="radio" value="Yes" name="a_t_r" id="" class="me-3"></span>All tax returns filed by the party in the two years before the date that the party served the disclosure documents</li>
-    <div> <input type="text" name="atr_input" class="border-0 form-control "></div>
-    <li><span><input type="radio" value="Yes" name="s_am4" id="" class="me-3"></span>A statement of all material facts and information regarding valuation of all assets that are community property or in which the
-        community has an interest (not a form).</li>
-        <div> <input type="text" name="sam4_input" class="border-0 form-control "></div>
+                        <ol class="ps-5">
+                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[2].Schedule_or_Prop_cb[0]" id=""
+                                        class="me-3"></span> A completed Schedule of Assets and Debts (form FL-142)
+                                or<span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].caption_cb[0].petitioner_cb[0]" id=""
+                                        class="mx-3"></span> A Property Declaration (form FL-160) for (specify):
+                                <span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[7].CheckBox61[1]" id=""
+                                        class="mx-3"></span>Community and Quasi-Community Property<span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[8].CheckBox61[2]" id="" class="mx-3"></span>Separate Property.
+                            </li>
+                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Date_name_gp[0].IandE_cb[0]" id="" class="me-3"></span>A completed Income and Expense Declaration (form FL-150).
+                            </li>
+                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox61[0]" id="" class="me-3"></span>All tax returns filed by the party in the two years
+                                before the date that the party served the disclosure documents</li>
+                            <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].TextField2[0]" class="border-0 form-control "></div>
+                            <li><span><input type="radio" value="Yes" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox62[0]" id="" class="me-3"></span>A statement of all material facts and information
+                                regarding valuation of all assets that are community property or in which the
+                                community has an interest (not a form).</li>
+                            <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].Mtl_facts_ft[0]" class="border-0 form-control "></div>
 
-    <li><span><input type="radio" value="Yes" name="s_am5" id="" class="me-3"></span>A statement of all material facts and information regarding obligations for which the community is liable (not a form).</li>
-    <div> <input type="text" name="sam5_input" class="border-0 form-control "></div>
+                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].obligations_stmt_cb[0]" id="" class="me-3"></span>A statement of all material facts and information
+                                regarding obligations for which the community is liable (not a form).</li>
+                            <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].obligations_ft[0]" class="border-0 form-control "></div>
 
-    <li><span><input type="radio" value="Yes" name="a_c_c" id="" class="me-3"></span>An accurate and complete written disclosure of any investment opportunity, business opportunity, or other income-producing
-        opportunity presented since the date of separation that results from any investment, significant business, or other income-
-        producing opportunity from the date of marriage to the date of separation (not a form).</li>
-        <div> <input type="text" name="acc_input" class="border-0 form-control "></div>
+                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].#area[5].investment_opp_db[0]" id="" class="me-3"></span>An accurate and complete written disclosure of any investment opportunity, business opportunity, or other income-producing opportunity presented since the date of separation that results from any investment,significant business, or other income- producing opportunity from the date of marriage to the date of separation (not a form).
+                            </li>
+                            <div> <input type="text" name="form1[0].Page1[0].investmt_opp_ft[0]" class="border-0 form-control "></div>
 
-</ol>
-<div class="ps-5">
-<div class="small_text">I declare under penalty of perjury under the laws of the State of California that the foregoing is true and correct.</div>
-<div class="d-flex">
-    <div class="small_text">Date</div>
-    <div> <input type="text" name="date" class="border-0 "></div>
-</div>
+                        </ol>
+                        <div class="ps-5">
+                            <div class="small_text">I declare under penalty of perjury under the laws of the State of
+                                California that the foregoing is true and correct.</div>
+                            <div class="d-flex">
+                                <div class="small_text">Date</div>
+                                <div> <input type="text" name="form1[0].Page1[0].Date[0]" class="border-0 "></div>
+                            </div>
 
-<div class="row border-bottom border-dark">
-    <div class="col-lg-6">
-              <div> <input type="text" name="topn" class="border-0 border-bottom form-control "></div>
-              <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
-            </div>
-            <div class="col-lg-6">
-                <div> <input type="text" name="signature" class="border-0 border-bottom form-control "></div>
-                <div class="small_text text-center">SIGNATURE</div>
-     </div>
-</div>
-<div class="small_text text-end">Page 1 of 1</div>
-     <div class="row">
-        <div class="col-md-4 lh-1 py-2">
-            <h4 class="fs-6">Form Adopted for Mandatory Use</h4>
-            <div class="fs-6">Judicial Council of California</div>
-            <div class="fs-6">FL-140 [Rev. July 1, 2013]</div>
-        </div>
-        <div class="col-md-4 text-center">
-            <h4 class="mb-0 fw-bold">DECLARATION OF DISCLOSURE</h4>
-            <h4 class="mb-0 ">(Family Law)</h4>
-         </div>
-        <div class="col-md-4 text-end">
-            <h4 class="mb-0 fs-6">Family Code, §§ 2102, 2104,</h4>
-            <h4 class="mb-0 fs-6">2105, 2106, 2112</h4>
-            <a href="#" class="text-decoration-none text-dark fs-6">
-                www.courts.ca.gov</a>
-        </div>
-    </div>
-    <div class="row pb-4">
-        <div class="col-lg-4  mt-3 mt-lg-0 small_text text-danger fw-bold" style="background-color:#99CCFF">For your protection and privacy, please press the Clear
-            This Form button after you have printed the form.</div>
-        <div class="col-lg-4  mt-3 mt-lg-0 text-center mx-auto">
-            <button class="  btn-success" onclick="window.print()" style="background-color: #91FF90">Print this form</button>
-            <button type="submit" class="  btn-warning" style="background-color: #FEFE98">Save this form</button>
-        </div>
-        <div class="col-lg-4 my-3 my-lg-0 text-center mx-auto">
-            <button type="reset"  style="background-color: #F59292 ">Clear this form</button>
-        </div>
-    </div>
-    {{-- @include('layouts.pagination', ['page' => 9 ]) --}}
-</div>
+                            <div class="row border-bottom border-dark">
+                                <div class="col-lg-6">
+                                    <div> <input type="text" name="orm1[0].Page1[0].print_name_ft[0]"
+                                            class="border-0 border-bottom form-control "></div>
+                                    <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div> <input type="text" name="signature"
+                                            class="border-0 border-bottom form-control "></div>
+                                    <div class="small_text text-center">SIGNATURE</div>
+                                </div>
+                            </div>
+                            <div class="small_text text-end">Page 1 of 1</div>
+                            <div class="row">
+                                <div class="col-md-4 lh-1 py-2">
+                                    <h4 class="fs-6">Form Adopted for Mandatory Use</h4>
+                                    <div class="fs-6">Judicial Council of California</div>
+                                    <div class="fs-6">FL-140 [Rev. July 1, 2013]</div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <h4 class="mb-0 fw-bold">DECLARATION OF DISCLOSURE</h4>
+                                    <h4 class="mb-0 ">(Family Law)</h4>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <h4 class="mb-0 fs-6">Family Code, §§ 2102, 2104,</h4>
+                                    <h4 class="mb-0 fs-6">2105, 2106, 2112</h4>
+                                    <a href="#" class="text-decoration-none text-dark fs-6">
+                                        www.courts.ca.gov</a>
+                                </div>
+                            </div>
+                            <div class="row pb-4">
+                                <div class="col-lg-4  mt-3 mt-lg-0 small_text text-danger fw-bold"
+                                    style="background-color:#99CCFF">For your protection and privacy, please press the
+                                    Clear
+                                    This Form button after you have printed the form.</div>
+                                <div class="col-lg-4  mt-3 mt-lg-0 text-center mx-auto">
+                                    <button class="  btn-success" onclick="window.print()"
+                                        style="background-color: #91FF90">Print this form</button>
+                                    {{-- <button type="submit" class="  btn-warning"
+                                        style="background-color: #FEFE98">Save this form</button> --}}
+                                </div>
+                                <div class="col-lg-4 my-3 my-lg-0 text-center mx-auto">
+                                    <button type="reset" style="background-color: #F59292 ">Clear this form</button>
+                                </div>
+                            </div>
+                            {{-- @include('layouts.pagination', ['page' => 9 ]) --}}
+                        </div>
 
                     </div>
                 </section>
+            </div>
 
-            </form>
-        </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
+
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter  px-3">
             <select name="" id="" class="sectionSelect form-select  mx-auto ">
                 <option value="" disabled selected>Select a section</option>
@@ -514,4 +555,5 @@ Response. The time periods may be extended by written agreement of the parties o
         });
     });
 </script>
+
 </html>

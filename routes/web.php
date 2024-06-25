@@ -70,3 +70,4 @@ Route::post('form20_submit', [FormController::class, 'form20_post'])->name('form
 Route::post('form21_submit', [FormController::class, 'form21_post'])->name('form21.submit');
 Route::post('form22_submit', [FormController::class, 'form22_post'])->name('form22.submit');
 Route::post('form23_submit', [FormController::class, 'form23_post'])->name('form23.submit');
+Route::post('form24_submit', [FormController::class, 'form24_post'])->name('form24.submit');

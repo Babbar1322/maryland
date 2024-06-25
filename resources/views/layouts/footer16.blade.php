@@ -10,9 +10,9 @@
 
         <div class=" text-center"> Page {{$page}} of 7</div>
       @if($page == 7 )
-      <div class="col-lg-2 col-6 mx-auto ">
+      {{-- <div class="col-lg-2 col-6 mx-auto ">
           <button type="submit" class="bg-transparent px-4">Submit</button>
-      </div>
+      </div> --}}
       <div class="col-lg-1 col-6  mx-auto mt-lg-0  ">
 
           <button type="reset" class="bg-transparent px-4">Reset</button>

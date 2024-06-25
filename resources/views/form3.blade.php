@@ -211,7 +211,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{route('form3.submit')}}" class="mb-5" method="post">
+            <form action="{{route('form3.submit')}}"   method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-10 mx-auto">
@@ -222,7 +222,7 @@
                             <div class="w-100 mt-2">
                                 <div class="row">
                                     <div class="mx-auto d-flex top_flex_text h5 justify-content-center"><span>IN THE SUPERIOR COURT OF
-                                        </span> <input type="text" name="superior_court" class="form-control w-25  border-none  flex_input border-0 border-bottom border-solid shadow-none">
+                                        </span> <input type="text" name="IN THE SUPERIOR COURT OF" class="form-control w-25  border-none  flex_input border-0 border-bottom border-solid shadow-none">
                                         <span>COUNTY STATE OF GEORGIA</span>
                                     </div>
                                     <span class="text-center h5"> </span>
@@ -309,34 +309,34 @@
                                                 AFFIANT’S NAME:
                                             </div>
                                             <div class="col-lg-6">
-                                                <input type="text" name="affiant_name" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                <input type="text" name="AFFIANTS NAME" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="text" name="affiant_age" class="form-control  border-none age1_input  border-0 border-bottom border-solid shadow-none" >
+                                                <input type="text" name="Ag e" class="form-control  border-none age1_input  border-0 border-bottom border-solid shadow-none" >
                                             </div>
                                         </div>
                                         <div class="row pt-2">
                                             <div class="col-lg-3 col  " style="width: 153px;">Spouse’s Name:</div>
                                             <div class="col-lg-6 p-lg-0">
-                                                <input type="text" name="spouse_name" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
+                                                <input type="text" name="Spouses Name" class="form-control  border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-1 p-lg-0" style="max-width:35px;">Age</div>
                                             <div class="col-lg-2  ">
-                                                <input type="text" name="spouse_age" class="form-control responsive_input border-none   border-0 border-bottom border-solid shadow-none" style="min-width:264px !important;" >
+                                                <input type="text" name="Ag e_2" class="form-control responsive_input border-none   border-0 border-bottom border-solid shadow-none" style="min-width:264px !important;" >
                                             </div>
                                         </div>
                                         <div class="row pt-2">
                                             <div class="col-lg-3" style="width: 165px;">Date of Marriage:</div>
                                             <div class="col-lg-4 p-lg-0">
-                                                <input type="date" name="date_of_marriage"
+                                                <input type="date" name="Date of Marriage"
                                                     class="form-control border-none  border-0 border-bottom border-solid shadow-none">
                                             </div>
                                             <div class="col-lg-3 col" style="width: 180px;">Date of Separation:
                                             </div>
 
                                             <div class="col-lg-2 p-lg-0">
-                                                <input type="date" name="date_of_separation" class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none" style="width:282px ;">
+                                                <input type="date" name="Date of Separation" class="form-control  border-none  responsive_input border-0 border-bottom border-solid shadow-none" style="width:282px ;">
                                             </div>
                                         </div>
                                         <div class="text-center h5 py-3">Names and year of birth of children for whom support is to be determined in this action:</div>
@@ -354,24 +354,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td> <input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_mortgage_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow1" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow1" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow1" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow2" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow2" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow2" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_rent_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_rent_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow3" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow3" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow3" class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-50"><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_taxes_self" class="form-control border-0  "></td>
-                                                    <td><input type="number" name="p_taxes_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow4" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow4" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow4" class="form-control border-0"></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -390,24 +390,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td> <input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_mortgage_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow1_2" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow1_2" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow1_2   " class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_insurance_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_insurance_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow2_2" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow2_2" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow2_2   " class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_rent_self" class="form-control border-0"></td>
-                                                    <td><input type="number" name="p_rent_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow3_2" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow3_2" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow3_2   " class="form-control border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-50"><input type="number" name="p_mortgage_self" class="form-control border-0 my-1"></td>
-                                                    <td><input type="number" name="p_taxes_self" class="form-control border-0  "></td>
-                                                    <td><input type="number" name="p_taxes_child" class="form-control border-0"></td>
+                                                    <td> <input type="text" name="NameRow4_2" class="form-control border-0 my-1"></td>
+                                                    <td><input type="text" name="Year of BirthRow4_2" class="form-control border-0"></td>
+                                                    <td><input type="text" name="Resides withRow4_2   " class="form-control border-0"></td>
                                                 </tr>
 
 
@@ -431,7 +431,7 @@
                                             <td>a.</td>
                                             <td class="w-75">Gross monthly income (item 3A)</td>
                                             <td class="w-25">
-                                                <div class="d-flex">$<input type="number" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
 
                                         </tr>
@@ -440,26 +440,26 @@
                                             <td> Net monthly income (item 3B) </td>
 
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="nmi" class="border-0 bg-transparent border outline-none form-control">  </div>
+                                                <div class="d-flex">$<input type="text" name="nmi" class="border-0 bg-transparent border outline-none form-control">  </div>
                                             </td>
 
                                         </tr>
                                         <tr>
                                             <td>c.</td>
                                             <td>Average monthly expenses (item 5A)</td>
-                                            <td> <div class="d-flex">$<input type="number" name="ami" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="text" name="ami" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td>d.</td>
                                             <td>Monthly payment to creditors (item 5B) + </td>
-                                            <td> <div class="d-flex">$<input type="number" name="mptc" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="text" name="mptc" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td>Total of (c.) and (d.) above:</td>
-                                            <td> <div class="d-flex">$<input type="number" name="ta"  class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="text" name="ta"  class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -479,74 +479,74 @@
                                         </tr>
                                         <tr>
                                             <td>Commissions, Fees, Tips </td>
-                                            <td> <div class="d-flex">$<input type="number" name="cft" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                            <td> <div class="d-flex">$<input type="text" name="cft" class="border-0 bg-transparent border outline-none form-control"></div></td>
                                         </tr>
                                         <tr>
                                              <td> Income from self-employment, partnerships, close corporations and  independent contracts (gross receipts minus ordinary and necessary expenses required to produce income).
                                                 <span class="border-bottom">Attach sheet itemizing your calculations.</span>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ifse" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="ifse" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Gross receipts minus ordinary and necessary expenses required to produce income. </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="grm" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="grm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Bonuses</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="bonuses" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="bonuses" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Overtime Payments</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="op" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="op" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Severance Pay</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="sp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="sp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Recurring Income from Pensions or Retirement Plans</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="rifp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="rifp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Interest and Dividends</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="iad" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="iad" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Trust Income</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ti" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="ti" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Income from Annuities</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ifa" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="ifa" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Capital Gains</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="cg" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="cg" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Social Security Disability or Retirement Benefits</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="ssdr" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="ssdr" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -565,58 +565,59 @@
                                     <table class="table-bordered mt-3 border-black table ">
                                         <tr>
                                             <td>Workers’ Compensation Benefits</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="wcb" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="wcb" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            </td>
+
                                         </tr>
                                         <tr>
                                             <td>Unemployment Benefits</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="ub" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="ub" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Judgments from Personal Injury or other Civil Cases</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="jfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="jfp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Gifts (cash or other gifts that can be converted to cash)</td>
-                                            <td> <div class="d-flex">$<input type="number" name="gcoo" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td colspan="2"> <div class="d-flex">$<input type="text" name="gcoo" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Prizes/Lottery Winnings </td>
-                                            <td><div class="d-flex">$<input type="number" name="plw" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td colspan="2"><div class="d-flex">$<input type="text" name="plw" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Alimony and Maintenance from Persons not in this Case</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="amfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="amfp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Assets which are used for support of family</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="awu" class="border-0 bg-transparent border outline-none form-control"></div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="awu" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Fringe Benefits (if significantly reduce living expenses) </td>
-                                            <td>Fringe Benifits (if significantly reduce living expenses) </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="fbis" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                             <td>Fringe Benifits (if significantly reduce living expenses) </td>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="fbis" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Any Other Income (do NOT include means-tested public assistance, such as TANF or food stamps) </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="aoidin" class="border-0 bg-transparent border outline-none form-control"></div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="aoidin" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="h5">TOTAL GROSS MONTHLY INCOME:</td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" name="tgmi" class="border-0 bg-transparent border outline-none form-control"></div>
+                                            <td colspan="2">
+                                                <div class="d-flex">$<input type="text" name="tgmi" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                     </table>
@@ -631,16 +632,16 @@
                                         <tr>
                                             <td>Gross Wage minus withheld federal, state and FICA taxes</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" name="gwm" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="text" name="gwm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Affiant’s Pay Period (i.e. weekly, monthly, etc.)</td>
-                                            <td><input type="number" name="app" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                            <td><input type="text" name="Affiants Pay Period ie weekly monthly etc" class="border-0 bg-transparent border outline-none form-control"> </td>
                                         </tr>
                                         <tr>
                                             <td>Number of Exemptions Claimed:</td>
-                                            <td><input type="number" name="nec" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                            <td><input type="text" name="Number of Exemptions Claimed" class="border-0 bg-transparent border outline-none form-control"> </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -649,9 +650,7 @@
                         <div class="form-area pt-4">
                             <div class=""><span class="pe-lg-4 pe-3">4.</span> ASSETS
                                 <div>
-                                    (If you claim or agree that all or part of an asset is non-marital, indicate the
-                                    non-marital portion under the appropriate spouse’s column and state the amount and
-                                    the basis: pre-marital, gift, inheritance, source of funds, etc.)
+                                    (If you claim or agree that all or part of an asset is non-marital, indicate the non-marital portion under the appropriate spouse’s column and state the amount and the basis: pre-marital, gift, inheritance, source of funds, etc.)
                                 </div>
                             </div>
                             <div class="row">
@@ -669,31 +668,28 @@
                                         <tbody>
                                             <tr>
                                                 <td>Cash</td>
-                                                <td><div class="d-flex">$<input type="number" name="a_value1" class="border-0 bg-transparent border outline-none form-control"></div></td>
-                                                <td><input type="number" name="a_sah1" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_saw1" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_boc1" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><div class="d-flex">$<input type="text" name="Cash Value" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                                <td><input type="text" name="Separate Asset of Husband" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="text" name="Separate Asset of Wife" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="text" name="Basis of the Claim" class="border-0 bg-transparent border outline-none form-control"></td>
                                             </tr>
                                             <tr>
                                                 <td>Stocks, Bonds</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value2" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="text" name="Stocks, Bonds Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah2" class="border-0 bg-transparent border outline-none form-control"> </td>
-                                                <td><input type="number" name="a_saw2" class="border-0 bg-transparent border outline-none form-control"> </td>
-                                                <td><input type="number" name="a_boc2" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Husband_2" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_2" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_2" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>CD’s, Money Market</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value3" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="text" name="CD’s, Money Market Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah3" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw3" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc3" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_3" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_3" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_3" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td class="bg-secondary">Bank Accounts:</td>
@@ -703,46 +699,42 @@
                                                 <td class="bg-secondary"> </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="a_description4" class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Bank Accounts" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value4" class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Bank Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah4" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw4" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc4" class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_4" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_4" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_4" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                            </tr>
                                             </tr>
                                             <tr>
-                                                <td> <input type="number" name="a_description5" class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Bank Accounts_1" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value5" class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Bank Accounts_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah5" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_saw5" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_boc5" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td><input type="text" name="Separate Asset of Husband_5" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_5" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_5" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="a_description6" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value6" class="border-0 bg-transparent border outline-none form-control">  </div>
+                                                <td><input type="text" name="Bank Accounts_2" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
-                                                <td><input type="number" name="a_sah6" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_saw6" class="border-0 bg-transparent border outline-none form-control"></td>
-                                                <td><input type="number" name="a_boc6" class="border-0 bg-transparent border outline-none form-control"></td>
+                                                <td>
+                                                    <div class="d-flex">$<input type="text" name="Bank Accounts_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_6" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_6" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_6" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-
                         </div>
-                        <div class=" ">
+                        <div >
                             @include('layouts.footer2', ['page' => 3])
                         </div>
                 </section>
@@ -767,173 +759,94 @@
                                             <tr>
                                                 <td>Retirement/ Pensions</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value7"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Retirement/ Pensions Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_7" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_7" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_7" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
+
                                             <tr>
                                                 <td>401(K) Accounts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value8"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="401(K) Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_8" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_8" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_8" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>IRA Accounts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value9"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="IRA Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah9"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw9"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc9"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_9" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_9" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_9" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
 
                                             <tr>
                                                 <td>Profit Sharing Accts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value10"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Profit Sharing Accts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah10"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw10"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc10"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_10" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_10" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_10" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Money owed you: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value11"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Money owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah11"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw11"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc11"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_11" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_11" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_11" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> Tax Refund owed you</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value12"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Tax Refund owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah12"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw12"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc12"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_12" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_12" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_12" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Real Estate: Home </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value13"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Real Estate: Home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah13"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw13"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc13"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_13" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_13" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_13" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Debt on home </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value14"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Debt on home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah14"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw14"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc14"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_14" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_14" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_14" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Other Real Estate: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value15"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Other Real Estate Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah15"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw15"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc15"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_15" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_15" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_15" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Debt owed</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value16"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Debt owed Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah16"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw16"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc16"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_16" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_16" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_16" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td class="bg-secondary">Automobiles </td>
@@ -945,257 +858,125 @@
                                             <tr>
                                                 <td>Vehicle 1 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value17"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Vehicle 1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah17"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw17"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc17"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_17" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_17" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_17" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value18"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Debt owed_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah18"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw18"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc18"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_18" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_18" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_18" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Vehicle 2 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value19"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Vehicle 2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah19"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw19"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc19"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_19" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_19" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_19" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value20"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Debt owed_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah20"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw20"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc20"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_20" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_20" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_20" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Life Insurance (net cash value)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value21"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Life Insurance (net cash value) Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah21"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw21"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc21"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_21" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_21" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_21" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Furniture/Furnishings</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value22"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Furniture/Furnishings Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah22"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw22"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc22"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_22" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_22" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_22" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value23"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Debt owed_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah23"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw23"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc23"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_23" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_23" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_23" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Jewelry</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value24"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Jewelry Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah24"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw24"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc24"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_24" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_24" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_24" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Collectibles </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value25"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
+                                                    <div class="d-flex">$<input type="text" name="Collectibles Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
-                                                <td><input type="number" name="a_sah25"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw25"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc25"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="Separate Asset of Husband_25" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_25" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_25" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td>Other Assets (list): </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value26"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah26"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw26"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc26"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_26" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_26" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_26" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
-                                                <td> </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value27"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah27"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw27"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc27"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <input type="text" name="Other Assets list_2" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_27" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_27" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_27" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
-                                                <td> </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value28"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah28"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw28"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc28"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <input type="text" name="Other Assets list_3" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_28" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_28" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_28" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
-                                                <td> </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value29"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah29"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw29"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc29"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <input type="text" name="Other Assets list_4" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_4 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_29" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_29" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_29" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
-                                                <td> </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value30"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah30"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw30"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc30"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <input type="text" name="Other Assets list_5" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_5 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_30" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_30" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_30" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> TOTAL ASSETS:</td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="a_value31"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="a_sah31"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_saw31"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="a_boc31"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td> <div class="d-flex">$<input type="text" name="TOTAL ASSETS Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="eparate Asset of Husband_31" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Separate Asset of Wife_31" class="border-0 bg-transparent border outline-none form-control"> </td>
+                                                <td><input type="text" name="Basis of the Claim_31" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1223,14 +1004,14 @@
                                             <tr>
                                                 <td>Mortgage or Rent Payments</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_mrp" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="h_mrp" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Property Taxes</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_pt"
+                                                    <div class="d-flex">$<input type="text" name="h_pt"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1238,7 +1019,7 @@
                                             <tr>
                                                 <td>Homeowner/Renter Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_hri"
+                                                    <div class="d-flex">$<input type="text" name="h_hri"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1246,7 +1027,7 @@
                                             <tr>
                                                 <td>Electricity</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_electricity"
+                                                    <div class="d-flex">$<input type="text" name="h_electricity"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1254,7 +1035,7 @@
                                             <tr>
                                                 <td>Water</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_water"
+                                                    <div class="d-flex">$<input type="text" name="h_water"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1262,7 +1043,7 @@
                                             <tr>
                                                 <td>Garbage and Sewer</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_was"
+                                                    <div class="d-flex">$<input type="text" name="h_was"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1270,7 +1051,7 @@
                                             <tr>
                                                 <td>Residential Line Telephone</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_rlt"
+                                                    <div class="d-flex">$<input type="text" name="h_rlt"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1278,7 +1059,7 @@
                                             <tr>
                                                 <td>Cellular Telephone</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_ct"
+                                                    <div class="d-flex">$<input type="text" name="h_ct"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1286,7 +1067,7 @@
                                             <tr>
                                                 <td>Internet Service</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_is"
+                                                    <div class="d-flex">$<input type="text" name="h_is"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1294,7 +1075,7 @@
                                             <tr>
                                                 <td>Gas (natural or propane)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_gas"
+                                                    <div class="d-flex">$<input type="text" name="h_gas"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1302,7 +1083,7 @@
                                             <tr>
                                                 <td>Repairs and Maintenance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_ram"
+                                                    <div class="d-flex">$<input type="text" name="h_ram"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1310,7 +1091,7 @@
                                             <tr>
                                                 <td>Lawn Care</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_lc"
+                                                    <div class="d-flex">$<input type="text" name="h_lc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1318,7 +1099,7 @@
                                             <tr>
                                                 <td>Pest Control</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_pc"
+                                                    <div class="d-flex">$<input type="text" name="h_pc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1326,7 +1107,7 @@
                                             <tr>
                                                 <td>Cable or Satellite TV</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_cst"
+                                                    <div class="d-flex">$<input type="text" name="h_cst"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1334,7 +1115,7 @@
                                             <tr>
                                                 <td>Grocery & Misc. Household Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_gmhe"
+                                                    <div class="d-flex">$<input type="text" name="h_gmhe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1342,7 +1123,7 @@
                                             <tr>
                                                 <td>Meals Outside the Home</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_moh"
+                                                    <div class="d-flex">$<input type="text" name="h_moh"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1350,7 +1131,7 @@
                                             <tr>
                                                 <td>Retirement/ Pensions</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_rp"
+                                                    <div class="d-flex">$<input type="text" name="h_rp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1358,17 +1139,17 @@
                                             <tr>
                                                 <td>Other:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_other1"
+                                                    <div class="d-flex">$<input type="text" name="h_other1"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td> <input type="number" name="h_other2"
+                                                <td> <input type="text" name="h_other2"
                                                         class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_other3"
+                                                    <div class="d-flex">$<input type="text" name="h_other3"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1376,7 +1157,7 @@
                                             <tr>
                                                 <td>TOTAL HOUSEHOLD EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="h_the"
+                                                    <div class="d-flex">$<input type="text" name="h_the"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1387,7 +1168,7 @@
                                             <tr>
                                                 <td>Gasoline and Oil</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_gao"
+                                                    <div class="d-flex">$<input type="text" name="a_gao"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1395,7 +1176,7 @@
                                             <tr>
                                                 <td>Repairs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_r"
+                                                    <div class="d-flex">$<input type="text" name="a_r"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1403,7 +1184,7 @@
                                             <tr>
                                                 <td>Auto Tags and License</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_atl"
+                                                    <div class="d-flex">$<input type="text" name="a_atl"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1411,7 +1192,7 @@
                                             <tr>
                                                 <td>Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_i"
+                                                    <div class="d-flex">$<input type="text" name="a_i"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1419,7 +1200,7 @@
                                             <tr>
                                                 <td>TOTAL AUTO EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="a_tae"
+                                                    <div class="d-flex">$<input type="text" name="a_tae"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1449,7 +1230,7 @@
                                             <tr>
                                                 <td>Gasoline and Oil</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_gao"
+                                                    <div class="d-flex">$<input type="text" name="ov_gao"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1457,27 +1238,27 @@
                                             <tr>
                                                 <td>Repairs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_r" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="text" name="ov_r" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tags and License</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_tal" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_tal" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_i" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_i" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>TOTAL OTHER VEHICLES EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_tove" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_tove" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1487,72 +1268,72 @@
                                             <tr>
                                                 <td>Child Care (total monthly cost)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_ce" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_ce" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>School Tuition</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_st" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_st" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tutoring</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_t" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_t" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Private Lessons (e.g., music, dance)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_pl" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_pl" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>School Supplies/Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_sse" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_sse" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Lunch Money</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_lm" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_lm" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Other Educational Expenses:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_oee1" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_oee1" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="ov_oee2" class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="ov_oee2" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_oee3" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_oee3" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="ov_oee4" class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="ov_oee4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_oee5" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_oee5" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Allowance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_a"
+                                                    <div class="d-flex">$<input type="text" name="ov_a"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1560,7 +1341,7 @@
                                             <tr>
                                                 <td>Clothing</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_c"
+                                                    <div class="d-flex">$<input type="text" name="ov_c"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1568,7 +1349,7 @@
                                             <tr>
                                                 <td>Diapers</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_d"
+                                                    <div class="d-flex">$<input type="text" name="ov_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1578,7 +1359,7 @@
                                                     expenses)
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_mdp"
+                                                    <div class="d-flex">$<input type="text" name="ov_mdp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1586,7 +1367,7 @@
                                             <tr>
                                                 <td>Grooming, Hygiene</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_gh"
+                                                    <div class="d-flex">$<input type="text" name="ov_gh"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1595,7 +1376,7 @@
                                             <tr>
                                                 <td>Gifts from Children to Others</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_gfc"
+                                                    <div class="d-flex">$<input type="text" name="ov_gfc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1603,7 +1384,7 @@
                                             <tr>
                                                 <td>Entertainment</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_e"
+                                                    <div class="d-flex">$<input type="text" name="ov_e"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1612,7 +1393,7 @@
                                                 <td>Activities (extra-curricular, school, religious, $ cultural, etc.)
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_aec"
+                                                    <div class="d-flex">$<input type="text" name="ov_aec"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1620,7 +1401,7 @@
                                             <tr>
                                                 <td>Summer Camps</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_sc"
+                                                    <div class="d-flex">$<input type="text" name="ov_sc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1628,7 +1409,7 @@
                                             <tr>
                                                 <td>TOTAL CHILDREN’S EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="ov_tce"
+                                                    <div class="d-flex">$<input type="text" name="ov_tce"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1662,7 +1443,7 @@
                                             <tr>
                                                 <td>Dry Cleaning/Laundry</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_dcl"
+                                                    <div class="d-flex">$<input type="text" name="afe_dcl"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1670,7 +1451,7 @@
                                             <tr>
                                                 <td>Clothing</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_c"
+                                                    <div class="d-flex">$<input type="text" name="afe_c"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1680,7 +1461,7 @@
                                                 <td>Medical, Dental, Prescriptions<br> <span>(out of pocket/uncovered
                                                         expenses)</span></td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_mdp"
+                                                    <div class="d-flex">$<input type="text" name="afe_mdp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1689,7 +1470,7 @@
                                             <tr>
                                                 <td>Affiant’s Gifts (special holiday)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_ag"
+                                                    <div class="d-flex">$<input type="text" name="afe_ag"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1697,7 +1478,7 @@
                                             <tr>
                                                 <td>Entertainment</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_e"
+                                                    <div class="d-flex">$<input type="text" name="afe_e"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1708,7 +1489,7 @@
                                             <tr>
                                                 <td>Recreational Expenses (e.g., fitness)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_re"
+                                                    <div class="d-flex">$<input type="text" name="afe_re"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1716,7 +1497,7 @@
                                             <tr>
                                                 <td>Vacations</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_v"
+                                                    <div class="d-flex">$<input type="text" name="afe_v"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1724,7 +1505,7 @@
                                             <tr>
                                                 <td>Travel Expenses for Visitation</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_tev"
+                                                    <div class="d-flex">$<input type="text" name="afe_tev"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1732,7 +1513,7 @@
                                             <tr>
                                                 <td>Publications</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_p"
+                                                    <div class="d-flex">$<input type="text" name="afe_p"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1740,7 +1521,7 @@
                                             <tr>
                                                 <td>Dues, Clubs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_dc"
+                                                    <div class="d-flex">$<input type="text" name="afe_dc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1748,7 +1529,7 @@
                                             <tr>
                                                 <td>Religious and charities</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_rac"
+                                                    <div class="d-flex">$<input type="text" name="afe_rac"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1756,7 +1537,7 @@
                                             <tr>
                                                 <td>Pet Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_pe"
+                                                    <div class="d-flex">$<input type="text" name="afe_pe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1764,7 +1545,7 @@
                                             <tr>
                                                 <td> Alimony paid to former spouse</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_apfs"
+                                                    <div class="d-flex">$<input type="text" name="afe_apfs"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1772,7 +1553,7 @@
                                             <tr>
                                                 <td>Child Support paid for other children $ Date of Initial Order: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_cspf"
+                                                    <div class="d-flex">$<input type="text" name="afe_cspf"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1780,7 +1561,7 @@
                                             <tr>
                                                 <td>Other (attach sheet)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_oas"
+                                                    <div class="d-flex">$<input type="text" name="afe_oas"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1788,7 +1569,7 @@
                                             <tr>
                                                 <td>TOTAL OTHER EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_toe"
+                                                    <div class="d-flex">$<input type="text" name="afe_toe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1799,7 +1580,7 @@
                                             <tr>
                                                 <td> Health</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_h"
+                                                    <div class="d-flex">$<input type="text" name="afe_h"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1807,7 +1588,7 @@
                                             <tr>
                                                 <td>Health: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_hcp"
+                                                    <div class="d-flex">$<input type="text" name="afe_hcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1816,7 +1597,7 @@
                                             <tr>
                                                 <td>Dental</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_d"
+                                                    <div class="d-flex">$<input type="text" name="afe_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1824,7 +1605,7 @@
                                             <tr>
                                                 <td>Dental: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_dcp"
+                                                    <div class="d-flex">$<input type="text" name="afe_dcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1832,7 +1613,7 @@
                                             <tr>
                                                 <td>Vision</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_v"
+                                                    <div class="d-flex">$<input type="text" name="afe_v"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1840,7 +1621,7 @@
                                             <tr>
                                                 <td>Vision: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_vcp"
+                                                    <div class="d-flex">$<input type="text" name="afe_vcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1849,7 +1630,7 @@
                                                 <td>Life<br>
                                                     Relationship of Beneficiary:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_lrb"
+                                                    <div class="d-flex">$<input type="text" name="afe_lrb"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1857,7 +1638,7 @@
                                             <tr>
                                                 <td>Disability</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="afe_d"
+                                                    <div class="d-flex">$<input type="text" name="afe_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1873,8 +1654,6 @@
                         </div>
 
                 </section>
-
-
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="eighth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
@@ -1893,11 +1672,11 @@
                                         <tbody>
                                             <tr>
                                                 <td style="width:130px;">Other (specify)</td>
-                                                <td><input type="number" name="aoe_o1"
+                                                <td><input type="text" name="aoe_o1"
                                                         class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_o2"
+                                                    <div class="d-flex">$<input type="text" name="aoe_o2"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1905,7 +1684,7 @@
                                             <tr>
                                                 <td colspan="2">TOTAL OTHER INSURANCE:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_toi"
+                                                    <div class="d-flex">$<input type="text" name="aoe_toi"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1916,7 +1695,7 @@
                                             <tr>
                                                 <td colspan="2">Total Household Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_the"
+                                                    <div class="d-flex">$<input type="text" name="aoe_the"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1924,7 +1703,7 @@
                                             <tr>
                                                 <td colspan="2">Total Other Vehicles Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_tove"
+                                                    <div class="d-flex">$<input type="text" name="aoe_tove"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1932,7 +1711,7 @@
                                             <tr>
                                                 <td colspan="2">Total Children’s Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_tce"
+                                                    <div class="d-flex">$<input type="text" name="aoe_tce"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1940,7 +1719,7 @@
                                             <tr>
                                                 <td colspan="2">Total Affiant’s Other Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_taoe"
+                                                    <div class="d-flex">$<input type="text" name="aoe_taoe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1948,7 +1727,7 @@
                                             <tr>
                                                 <td colspan="2">Total Other Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_toi"
+                                                    <div class="d-flex">$<input type="text" name="aoe_toi"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1957,7 +1736,7 @@
                                                 <td colspan="2">GRAND TOTAL 5. A. <br> Average Monthly Expenses
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="aoe_ame"
+                                                    <div class="d-flex">$<input type="text" name="aoe_ame"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1996,184 +1775,107 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><input type="number" name="pc_noc1"  class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow1"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db1" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_48" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="number" name="pc_mp1" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
-                                                <td><input type="number" name="pc_j1" class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td><input type="number" name="pc_w1"  class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td><input type="number" name="pc_h1" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow2"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db2"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_49" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp2"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h2"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 2" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_2" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_2"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_2" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow3"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db3"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_50" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp3"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h3"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 3" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_3" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_3"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_3" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow4"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db4"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_51" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp4"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h4"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 4" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_4" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_4"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_4" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow5"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db5"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_52" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp5"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h5"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 5" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_5" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_5"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_5" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow6"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db6"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_53" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp6"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h6"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 6" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_6" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_6"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_6" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="number" name="pc_noc7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
+                                                <td><input type="text" name="Name of CreditorRow7"  class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_db7"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="fill_54" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp7"
-                                                            class="border-0 bg-transparent border outline-none form-control">
-                                                    </div>
-                                                </td>
-                                                <td><input type="number" name="pc_j7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h7"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 7" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td><input type="text" name="J_7" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_7"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_7" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2"> Total Monthly Payments to Creditors:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="pc_mp8"
+                                                    <div class="d-flex">$<input type="text" name="Monthly Payment 8"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td><input type="number" name="pc_j8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_w8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
-                                                <td><input type="number" name="pc_h8"
-                                                        class="border-0 bg-transparent border outline-none form-control">
-                                                </td>
+                                                <td><input type="text" name="J_8" class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="W_8"  class="border-0 bg-transparent border outline-none form-control">  </td>
+                                                <td><input type="text" name="H_8" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
+
                                             </tr>
 
 
@@ -2195,7 +1897,7 @@
                                             <tr>
                                                 <td> 5.A. Average Monthly Expenses:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="tme_ame"
+                                                    <div class="d-flex">$<input type="text" name="fill_55"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -2203,7 +1905,7 @@
                                             <tr>
                                                 <td>5.B. Payments to Creditors:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="tme_ptc"
+                                                    <div class="d-flex">$<input type="text" name="fill_56"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -2211,7 +1913,7 @@
                                             <tr>
                                                 <td> Total of 5. A & B =</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="number" name="tmc_total"
+                                                    <div class="d-flex">$<input type="text" name="fill_58"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -2230,7 +1932,7 @@
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="last_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="form-area pt-4">
-                            <div class=" " style="text-indent: 70px;"> Personally appeared before me, an
+                            <div  style="text-indent: 70px;"> Personally appeared before me, an
                                 officer authorized to administer oaths, the undersigned Affiant, who upon being sworn,
                                 swears that he/she is legally competent to make this affidavit, that the affidavit is
                                 based upon personal knowledge, and that the contents of the affidavit are true.</div>
@@ -2283,22 +1985,31 @@
 
                                 {{-- @include('layouts.pagination', ['page' => 3]) --}}
                 </section>
+            </div>
+                <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success px-4">Save</button>
+                    </div>
+                    <div class="pt-3">
+                        <button type="button" class="btn btn-dark px-4">Back</button>
+                    </div>
+                </div>
             </form>
-        </div>
-        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
-            <select name="" id="" class="sectionSelect form-select mx-auto ">
-                <option value="" disabled selected>Select a section</option>
-                <option value="#first_section">First Section</option>
-                <option value="#second_section">Second Section</option>
-                <option value="#third_section">Third Section</option>
-                <option value="#fourth_section">Fourth Section</option>
-                <option value="#fifth_section">Fifth Section</option>
-                <option value="#sixth_section">Sixth Section</option>
-                <option value="#seventh_section">Seventh Section</option>
-                <option value="#eighth_section">Eighth Section</option>
-                <option value="#last_section">Ninth Section</option>
-            </select>
-        </div>
+            <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+                <select name="" id="" class="sectionSelect form-select mx-auto ">
+                    <option value="" disabled selected>Select a section</option>
+                    <option value="#first_section">First Section</option>
+                    <option value="#second_section">Second Section</option>
+                    <option value="#third_section">Third Section</option>
+                    <option value="#fourth_section">Fourth Section</option>
+                    <option value="#fifth_section">Fifth Section</option>
+                    <option value="#sixth_section">Sixth Section</option>
+                    <option value="#seventh_section">Seventh Section</option>
+                    <option value="#eighth_section">Eighth Section</option>
+                    <option value="#last_section">Ninth Section</option>
+                </select>
+            </div>
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>

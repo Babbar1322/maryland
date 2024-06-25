@@ -17,19 +17,27 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-        .blue_border{
+        .backdrop_filter {
+            backdrop-filter: blur(5px) !important;
+            -webkit-backdrop-filter: blur(5px) !important;
+        }
+
+        .blue_border {
             border: 2px solid #4e4ed8;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
             background-color: transparent !important;
         }
+
         input:focus {
             border: none !important;
             border-bottom: 1px solid black !important;
             box-shadow: none !important;
         }
+
         input,
         table {
             background-color: transparent !important;
@@ -40,6 +48,7 @@
             border-bottom: 1px solid black !important;
             box-shadow: none !important;
         }
+
         .form-control {
             border-radius: 0 !important;
             padding: 0px !important;
@@ -80,27 +89,38 @@
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
+
+            .ms_sm_0 {
+                margin-left: 0px !important;
+            }
         }
+
         @media screen and (max-width : 768px) {
             .d_sm_block {
                 display: block !important;
             }
+
             .small_text {
                 height: auto !important;
             }
+
             .footer_padding {
                 padding-top: 50px !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
+
             .section_area {
                 padding-left: 10px !important;
                 padding-right: 10px !important;
             }
+
             .container-fluid {
                 padding-right: 0px !important;
                 padding-left: 0px !important;
@@ -110,8 +130,9 @@
         .bg_color {
             background-color: #8c8a8a;
         }
+
         .bg-secondary {
-             background-color: rgb(184 188 192) !important;
+            background-color: rgb(184 188 192) !important;
         }
 
         body {
@@ -121,6 +142,7 @@
         .small_text {
             font-size: 15px;
         }
+
         .tdata input:focus {
             border-bottom: none !important;
         }
@@ -138,1064 +160,2307 @@
 <body>
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form23.submit') }}" method="post">
+            <form action="{{ route('form24.submit') }}" method="post">
                 @csrf
-                <section class="section_area p-5">
-                        @if (session('success'))
-                            <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                    type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        @endif
-                        <div class="row">
+                <section class="section_area p-5" id="first_section">
+                    @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
+                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                    <div class="row">
+                        <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                        <div class="col-md-6 col-md-6   border-dark py-2">
+                            <div class="d-flex d_sm_block"> <input type="text"
+                                    class=" border-none border-0 border-bottom responsive_input  shadow-none my-auto w-75 responsive_input"
+                                    name="plaintiff_name"> <span>Plaintiff</span> </div>
+                            <div class="fs-6 pt-3">V.</div>
+                            <div class="d-flex d_sm_block"> <input type="text"
+                                    class=" border-none border-0 border-bottom responsive_input  shadow-none my-auto w-75 responsive_input"
+                                    name="defendant_name"> <span>Defendant</span> </div>
 
-                            <div class="col-md-6 col-md-6   border-dark py-2">
-
-                                      <div class="d-flex">  <input type="text" class=" border-none border-0 border-bottom  shadow-none my-auto w-75 responsive_input" name="plaintiff_name">  <span>Plaintiff</span> </div>
-                                        <div class="fs-6 pt-3">and</div>
-                                        <div class="d-flex">  <input type="text" class=" border-none border-0 border-bottom  shadow-none my-auto w-75 responsive_input" name="defendant_name">   <span>Defendant</span> </div>
-
-                            </div>
-                            <div class="col-md-6 border-start-0 border-end-0 border-dark pt-lg-3">
-                                <div class="d-flex d_sm_block">
-                                    <div class="pe-1 my-auto">DISTRICT COURT</div>
-                                    <div class=" ">
-                                     </div>
+                        </div>
+                        <div class="col-md-6 border-start-0 border-end-0 border-dark pt-lg-3">
+                            <div class="d-flex d_sm_block d_sm_block">
+                                <div class="pe-1 my-auto">DISTRICT COURT</div>
+                                <div class=" ">
                                 </div>
-                                <div class="d-flex d_sm_block">
-                                    <div class="pe-1 my-auto">Location (Town):</div>
-                                    <div class="w-75">
-                                        <input type="text" name="court_name" class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
-                                    </div>
+                            </div>
+                            <div class="d-flex d_sm_block d_sm_block">
+                                <div class="pe-1 my-auto">Location (Town):</div>
+                                <div class="w-75 responsive_input">
+                                    <input type="text" name="location"
+                                        class="w-100 border-none border-0 border-bottom responsive_input  shadow-none my-auto">
                                 </div>
+                            </div>
 
-                                <div class="d-flex d_sm_block">
-                                    <div class="pe-1 my-auto">Docket No.:</div>
-                                    <div class="w-75">
-                                        <input type="text" name="division" class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
-                                    </div>
+                            <div class="d-flex d_sm_block d_sm_block">
+                                <div class="pe-1 my-auto">Docket No.:</div>
+                                <div class="w-75 ms-lg-4 responsive_input">
+                                    <input type="text" name="docket_no"
+                                        class="w-100 border-none border-0 border-bottom responsive_input  shadow-none my-auto">
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                    </div>
+                    <div class="row mt-4">
 
-                            <div class="col-md-6 mx-auto text-center  border-1 px-0 ">
-                                <div class="fs-6 pt-lg-4 fw-bold">  <input type="checkbox" name="division">  PLAINTIFF’S   <input type="checkbox" name="division">   DEFENDANT’S</div>
-                                <div class="fs-6  fw-bold">FINANCIAL STATEMENT</div>
+                        <div class="col-md-6 mx-auto text-center  border-1 px-0 ">
+                            <div class="fs-6 pt-lg-4 fw-bold"> <input type="checkbox" name="plaintiffs_checkbox" value="PLAINTIFF’S"> PLAINTIFF’S
+                                <input type="checkbox" name="defendants_checkbox" value="DEFENDANT’S"> DEFENDANT’S
                             </div>
+                            <div class="fs-6  fw-bold">FINANCIAL STATEMENT</div>
                         </div>
-                        <div class="border border-dark p-1"><b>PLEASE NOTE: If either party wishes to keep an address confidential, that party may complete an Affidavit for
-                            Confidential Address (FM-057).</b>This form is available at the Clerk’s Office or at <a href="https://www.courts.maine.gov/" target="_blank">www.courts.maine.gov</a></div>
-                        <div>
-                            <div class="text-center fw-bold py-2">INSTRUCTIONS</div>
+                    </div>
+                    <div class="border border-dark p-1"><b>PLEASE NOTE: If either party wishes to keep an address
+                            confidential, that party may complete an Affidavit for
+                            Confidential Address (FM-057).</b>This form is available at the Clerk’s Office or at <a
+                            href="https://www.courts.maine.gov/" target="_blank">www.courts.maine.gov</a></div>
+                    <div>
+                        <div class="text-center fw-bold py-2">INSTRUCTIONS</div>
 
-                            <div class="px-lg-2">The financial statement consists of two parts: Part 1, Assets and Debts of Both Parties; and Part 2, Income and Expenses
-                                (of the party completing this statement). You <b class="border-bottom">must</b> complete Part 1. Complete Part 2 <b class="border-bottom">only</b> if spousal support (alimony) or
-                                attorney fees are involved in your case. You must sign and file the original version of this financial statement with the
-                                court and send a copy to the other party three (3) business days before mediation, or as otherwise ordered by the Court. </div>
-                                <div class="py-2"><b>IMPORTANT:</b> If you intentionally or recklessly enter inaccurate or misleading information on this form, the court may
-                                    order penalties and sanctions, including court costs and attorney fees.</div>
+                        <div class="px-lg-2">The financial statement consists of two parts: Part 1, Assets and Debts of
+                            Both Parties; and Part 2, Income and Expenses
+                            (of the party completing this statement). You <b class="border-bottom">must</b> complete
+                            Part 1. Complete Part 2 <b class="border-bottom">only</b> if spousal support (alimony) or
+                            attorney fees are involved in your case. You must sign and file the original version of this
+                            financial statement with the
+                            court and send a copy to the other party three (3) business days before mediation, or as
+                            otherwise ordered by the Court. </div>
+                        <div class="py-2"><b>IMPORTANT:</b> If you intentionally or recklessly enter inaccurate or
+                            misleading information on this form, the court may
+                            order penalties and sanctions, including court costs and attorney fees.</div>
 
-                                    <div class="py-2 fw-bold"> <input type="checkbox" name="" id=""> Check here if you have attached additional page(s) because you need more space to complete one or more
-                                        sections of this form. </div>
-                                    <div class="py-2 fw-bold text-center">PART 1 – ASSETS AND DEBTS OF BOTH PARTIES</div>
-                                    <div class="ps-lg-5 fw-bold">1. Parties' Assets</div>
-                                    <div class="ps-lg-5">a. Real Estate (Enter information about real estate held by both parties together or individually):</div>
+                        <div class="py-2 fw-bold"> <input type="checkbox" name="additional_page" id="" value="True"> Check here if
+                            you have attached additional page(s) because you need more space to complete one or more
+                            sections of this form. </div>
+                        <div class="py-2 fw-bold text-center">PART 1 – ASSETS AND DEBTS OF BOTH PARTIES</div>
+                        <div class="ps-lg-5 fw-bold">1. Parties' Assets</div>
+                        <div class="ps-lg-5">a. Real Estate (Enter information about real estate held by both parties
+                            together or individually):</div>
 
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered border-dark">
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="text-center">Address</td>
-                                                    <td class="text-center">Name(s) on Title</td>
-                                                    <td class="text-center">County Recorded, Book and Page</td>
-                                                    <td class="text-center">Date Acquired (mm/dd/yyyy)</td>
-                                                    <td class="text-center">Fair Market Value</td>
-                                                    <td class="text-center">Debt Owed</td>
-                                                    <td class="text-center">Non-marital</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="Yes"> Y </div>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="No"> N </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="Yes"> Y </div>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="No"> N </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="Yes"> Y </div>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="No"> N </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="Yes"> Y </div>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="No"> N </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="cld_i1" class="border-0 w-100">  </div></td>
-                                                    <td>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="Yes"> Y </div>
-                                                        <div> <input type="checkbox" name="cld_i1" id="" value="No"> N </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered border-dark">
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-center">Address</td>
+                                        <td class="text-center">Name(s) on Title</td>
+                                        <td class="text-center">County Recorded, Book and Page</td>
+                                        <td class="text-center">Date Acquired (mm/dd/yyyy)</td>
+                                        <td class="text-center">Fair Market Value</td>
+                                        <td class="text-center">Debt Owed</td>
+                                        <td class="text-center">Non-marital</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-2">1.</td>
+                                        <td>
+                                            <textarea name="aad_address1" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_name1" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_crb1" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_da1" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_fmv1" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_do1" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td class="small_text">
+                                            <div> <input type="checkbox" name="aad_nm1"  id=""
+                                                    value="Yes"> Y </div>
+                                            <div> <input type="checkbox" name="aad_nm1"  id=""
+                                                    value="No"> N </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-2">2.</td>
+                                        <td>
+                                            <textarea name="aad_address2" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_name2" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_crb2" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_da2" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_fmv2" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_do2" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td class="small_text">
+                                            <div> <input type="checkbox" name="aad_nm2"  id=""
+                                                    value="Yes"> Y </div>
+                                            <div> <input type="checkbox" name="aad_nm2"  id=""
+                                                    value="No"> N </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-2">3.</td>
+                                        <td>
+                                            <textarea name="aad_address3" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_name3" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_crb3" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_da3" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_fmv3" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_do3" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td class="small_text">
+                                            <div> <input type="checkbox" name="aad_nm3"  id="" value="Yes"> Y </div>
+                                            <div> <input type="checkbox" name="aad_nm3"  id="" value="No"> N </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-2">4.</td>
+                                        <td>
+                                            <textarea name="aad_address4" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_name4" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_crb4" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_da4" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_fmv4" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_do4" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td class="small_text">
+                                            <div> <input type="checkbox" name="aad_nm4"  id="" value="Yes"> Y </div>
+                                            <div> <input type="checkbox" name="aad_nm4"  id="" value="No"> N </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-2">5.</td>
+                                        <td>
+                                            <textarea name="aad_address5" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_name5" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_crb5" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea name="aad_da5" class="border-0 form-control" rows="2s"></textarea>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_fmv5" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex   w-100 mx-auto"> <span>$</span>
+                                                <textarea name="aad_do5" class="border-0 form-control" rows="2s"></textarea>
+                                            </div>
+                                        </td>
+                                        <td class="small_text">
+                                            <div> <input type="checkbox" name="aad_nm5"  id="" value="Yes"> Y </div>
+                                            <div> <input type="checkbox" name="aad_nm5"  id="" value="No"> N </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                        @include('layouts.footer18', ['page' => 1])
+                    </div>
 
                 </section>
-                <section class="section_area p-5">
+                <section class="section_area p-5" id="second_section">
                     <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
-                     <div class="fw-bold"> <span class="me-3 fw-normal">IV. </span>CHILDREN’S INFORMATION (<span class="fw-normal">If more than 3 children, continue on a separate sheet</span>)</div>
-                    <div class="me-lg-3">A. Minor children born to parties (number <input type="text" name="ci_number" id="" class="border-0 border-bottom responsive_input">)	 <span class="ms-lg-5"><input type="checkbox" name="ci_mca" value="True" id=""> More CHILDREN attached?</span>	</div>
-                    <div class="table-responsive pt-lg-3">
+                    <div class="ps-lg-5">
+                        b. <b>Motor Vehicles </b>(Enter information about your and your spouse’s motor vehicles, including cars, boats, trailers, motorcycles, aircrafts, etc.):
+                    </div>
+                    <div class="table-responsive">
                         <table class="table table-bordered border-dark">
                             <tbody>
                                 <tr>
-                                    <td class="w-75">Name</td>
-                                    <td class="w-25">Current Age</td>
+                                    <td></td>
+                                    <td class="text-center">Year, Make, and Model</td>
+                                    <td class="text-center">Name on Title</td>
+                                    <td class="text-center">Date Acquired (mm/dd/yyyy)</td>
+                                    <td class="text-center">Fair Market Value</td>
+                                    <td class="text-center">Balance Due</td>
+                                    <td class="text-center">Non-marital</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="ci_name1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ci_ca1" class="border-0 form-control"></td>
+                                    <td class="px-2">1.</td>
+                                    <td> <textarea name="mv_ymam1" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td>  <textarea name="mv_not1" class="border-0 form-control" rows="2"></textarea>  </td>
+                                    <td> <textarea name="mv_da1" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="mv_fmv1" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="mv_bd1" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td class="small_text">
+                                        <div> <input type="checkbox" name="mv_nm1" id="" value="Yes"> Y </div>
+                                        <div> <input type="checkbox" name="mv_nm1" id="" value="No"> N </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="ci_name2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ci_ca2" class="border-0 form-control"></td>
+                                    <td class="px-2">2.</td>
+                                    <td> <textarea name="mv_ymam2" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td>  <textarea name="mv_not2" class="border-0 form-control" rows="2"></textarea>  </td>
+                                    <td> <textarea name="mv_da2" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="mv_fmv2" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="mv_bd2" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td class="small_text">
+                                        <div> <input type="checkbox" name="mv_nm2" id="" value="Yes"> Y </div>
+                                        <div> <input type="checkbox" name="mv_nm2" id="" value="No"> N </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="ci_name3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ci_ca3" class="border-0 form-control"></td>
+                                    <td class="px-2">3.</td>
+                                    <td> <textarea name="mv_ymam3" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td>  <textarea name="mv_not3" class="border-0 form-control" rows="2"></textarea>  </td>
+                                    <td> <textarea name="mv_da3" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="mv_fmv3" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="mv_bd3" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td class="small_text">
+                                        <div> <input type="checkbox" name="mv_nm3" id="" value="Yes"> Y </div>
+                                        <div> <input type="checkbox" name="mv_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td> <textarea name="mv_ymam4" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td>  <textarea name="mv_not4" class="border-0 form-control" rows="2"></textarea>  </td>
+                                    <td> <textarea name="mv_da4" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="mv_fmv4" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="mv_bd4" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td class="small_text">
+                                        <div> <input type="checkbox" name="mv_nm4" id="" value="Yes"> Y </div>
+                                        <div> <input type="checkbox" name="mv_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td> <textarea name="mv_ymam5" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td>  <textarea name="mv_not5" class="border-0 form-control" rows="2"></textarea>  </td>
+                                    <td> <textarea name="mv_da5" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="mv_fmv5" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="mv_bd5" class="border-0 form-control" rows="2"></textarea> </div>  </td>
+                                    <td class="small_text">
+                                        <div> <input type="checkbox" name="mv_nm5" id="" value="Yes"> Y </div>
+                                        <div> <input type="checkbox" name="mv_nm5" id="" value="No"> N </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div>
-                        <div class="small_text"> B. Monthly child care/day care expenses: Cost $ <input type="text" name="ci_mcc" id="" class="border-0 border-bottom responsive_input">   <span class="ps-lg-5">Paid by  <input type="text" name="ci_paidb" id="" class="border-0 border-bottom responsive_input"></span> </div>
-                        <div class="small_text"> C. Monthly medical, dental and vision insurance for children: Cost $ <input type="text" name="ci_mmd" id="" class="border-0 border-bottom responsive_input">   <span class="ps-lg-5">Paid by  <input type="text" name="ci_paidc" id="" class="border-0 border-bottom responsive_input"></span> </div>
-                        <div class="small_text"> D. Either party court-ordered to pay child support for a child born before the children born of this marriage? <span class="ps-lg-2">   <input type="radio" name="ci_epc_checbox" id="" value="Yes"  > Yes</span> <span class="ps-lg-2">   <input type="radio" name="ci_epc_checbox" value="No" id=" "> No</span> </div>
-                        <div class="small_text"> Paying party <input type="text" name="ci_pp" id="" class="border-0 border-bottom responsive_input" style="width:600px;">   <span class="ps-lg-5">Amount: $  <input type="text" name="ci_amount" id="" class="border-0 border-bottom responsive_input"  style="width:355px;"></span> </div>
-                        <div class="small_text"> Children: (List names and ages) <input type="text" name="ci_lnaa1" id="" class="border-0 border-bottom responsive_input"  style="width:957px;">   </div>
-                        <div> <input type="text" name="ci_lnaa2" id="" class="border-0 border-bottom responsive_input w-100">   </div>
 
+                    <div class="ps-lg-5">c. <b>Tangible personal property with a value over $500 each</b> (Enter information about personal property of you and your spouse. Examples may include televisions, laptops, furniture, jewelry):
                     </div>
-
-                    <div>
-                        <div class="fw-bold py-3 small_text">V. SUMMARY OF ASSETS & DEBTS</div>
-                        <div class="small_text">A. REAL ESTATE (If more than 2 properties, continue on a separate sheet)</div>
-                        <div class="small_text">Are you making a non-marital claim? <input type="radio" name="soa_non_marital_checkbox" id="" value="Yes">  Yes <input type="radio" name="soa_non_marital_checkbox" id="" value='No'> No If yes, you must comply with Section IX below.</div>
-                        <div class="py-lg-2 ">Property 1:</div>
-
-                        <div class="small_text">Address : <input type="text" name="p1_address" id="" class="border-0 border-bottom responsive_input"  style="width:1103px;"></div>
-                        <div class="small_text">1st Mortgage Company: <input type="text" name="p1_mc" id="" class="border-0 border-bottom responsive_input"  style="width:1005px;"></div>
-                        <div class="small_text">1st Mortgage Payoff Amount: <input type="text" name="p1_mpa" id="" class="border-0 border-bottom responsive_input"  style="width:469px;"></div>
-                        <div class="small_text">2nd Mortgage Company or Home Equity Loan: <input type="text" name="p1_mch" id="" class="border-0 border-bottom responsive_input"   style="width:855px;"></div>
-                        <div class="small_text">2nd Mortgage or Home Equity Loan Payoff Amount: <input type="text" name="p1_mhe" id="" class="border-0 border-bottom responsive_input"    style="width:438px;"></div>
-                        <div class="small_text"> <span>Fair Market Value:</span> <input type="text" name="p1_fmv" id="" class="border-0 border-bottom responsive_input"   style="width:295px;"><span>Valuation Date:</span> <input type="text" name="p1_vd" id="" class="border-0 border-bottom responsive_input"  style="width:295px;"> <span>Equity: </span> <input type="text" name="p1_equity" id="" class="border-0 border-bottom responsive_input"  style="width:295px;"></div>
-
-                        <div class="py-lg-2 ">Property 2:</div>
-
-                        <div class="small_text">Address : <input type="text" name="p2_address" id="" class="border-0 border-bottom responsive_input"  style="width:1103px;"></div>
-                        <div class="small_text">1st Mortgage Company: <input type="text" name="p2_mc" id="" class="border-0 border-bottom responsive_input"  style="width:1005px;"></div>
-                        <div class="small_text">1st Mortgage Payoff Amount: <input type="text" name="p2_mpa" id="" class="border-0 border-bottom responsive_input"  style="width:469px;"></div>
-                        <div class="small_text">2nd Mortgage Company or Home Equity Loan: <input type="text" name="p2_mch" id="" class="border-0 border-bottom responsive_input"   style="width:855px;"></div>
-                        <div class="small_text">2nd Mortgage or Home Equity Loan Payoff Amount: <input type="text" name="p2_mhe" id="" class="border-0 border-bottom responsive_input"    style="width:438px;"></div>
-                        <div class="small_text"> <span>Fair Market Value:</span> <input type="text" name="p2_fmv" id="" class="border-0 border-bottom responsive_input"   style="width:295px;"><span>Valuation Date:</span> <input type="text" name="p2_vd" id="" class="border-0 border-bottom responsive_input"  style="width:295px;"> <span>Equity: </span> <input type="text" name="p2_equity" id="" class="border-0 border-bottom responsive_input"  style="width:295px;"></div>
-
-                        <div class="row py-3 pt-lg-5">
-                            <div class="col-lg-6">
-                            <div class="small_text"> More REAL ESTATE attached? <input type="radio" name="mrea_checkbox" value="Yes" id=""> Yes <input type="radio" name="mrea_checkbox" value="No" id=""> No </div>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <div class="small_text">Total Real Estate Equity:  <input type="text" name="tree"  class="border-0 border-bottom"></div>
-                            </div>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Description of each item</td>
+                                    <td class="text-center">Date Acquired (mm/dd/yyyy)</td>
+                                    <td class="text-center">Fair Market Value</td>
+                                    <td class="text-center">Balance Due</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td>  <textarea name="tp_dei1" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da1" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv1" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu1" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td>  <textarea name="tp_dei2" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da2" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv2" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu2" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td>  <textarea name="tp_dei3" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da3" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv3" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu3" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td>  <textarea name="tp_dei4" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da4" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv4" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu4" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td>  <textarea name="tp_dei5" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da5" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv5" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu5" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">6.</td>
+                                    <td>  <textarea name="tp_dei6" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da6" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv6" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu6" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm6" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm6" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">7.</td>
+                                    <td>  <textarea name="tp_dei7" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da7" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv7" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu7" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm7" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm7" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">8.</td>
+                                    <td>  <textarea name="tp_dei8" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da8" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv8" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu8" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm8" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm8" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">9.</td>
+                                    <td>  <textarea name="tp_dei9" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da9" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv9" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu9" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm9" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm9" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">10.</td>
+                                     <td>  <textarea name="tp_dei10" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <textarea name="tp_da10" class="border-0 form-control" rows="2"></textarea> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="tp_fmv10" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td> <div class="d-flex w-100 mx-auto"> <span>$</span>  <textarea name="tp_bu10" class="border-0 form-control" rows="2"></textarea> </div> </td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm10" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="tp_nm10" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-
-                </section>
-                <section class="section_area p-5">
-                    @include('layouts.header1', ['page' => 3])
-
-                    <div>B. VEHICLES - Automobiles, Motorcycles, Boats, Trucks, Motor Homes, etc. (If more than 3 vehicles, continue on a separate sheet) Are you making a non-marital claim? <input type="radio" name="v_claim_checkbox" value="No" id="" > Yes <input type="radio" name="v_claim_checkbox" value="Yes" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
-                    <div class="pt-lg-3">Vehicle 1:</div>
-                    <div class="small_text"><span>Primary Driver: </span><input type="text" name="v1_primary_driver1" id="" class="border-0 border-bottom responsive_input" style="width:400px">  <span>Year, Make & Model:</span> <input type="text" name="v1_ymm1" id="" class="border-0 border-bottom responsive_input" style="width:520px"></div>
-                    <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v1_nada_v1" id="" class="border-0 border-bottom responsive_input"   style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v1_v_date1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"> <span>Debt Owed: </span> <input type="text" name="v1_d_owed1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"></div>
-                    <div class="small_text"> <span>Lien Holder:</span> <input type="text" name="v1_lien_holder1" id="" class="border-0 border-bottom responsive_input"   style="width:860px;"><span>Equity:</span> <input type="text" name="v1_equity1" id="" class="border-0 border-bottom responsive_input" >  </div>
-                    <div class="small_text"> <span>Is this a leased vehicle? <input type="radio" name="v1_leased_vehicle_checkbox" value="Yes" id=""> Yes  <input type="radio" name="v1_leased_vehicle_checkbox" id="" value="False" class="ms-lg-2"> No If yes, please complete the following: Monthly Payment</span> <input type="text" name="v1_monthly_payment1" id="" class="border-0 border-bottom responsive_input"   style="width:540px;">  </div>
-                    <div class="small_text"> <span>Lease Term Ends</span> <input type="text" name="v1_lease_term1" id="" class="border-0 border-bottom responsive_input"   style="width:195px;"> </div>
-
-
-                    <div class="pt-lg-3">Vehicle 2:</div>
-                    <div class="small_text"><span>Primary Driver: </span><input type="text" name="v2_primary_driver1" id="" class="border-0 border-bottom responsive_input" style="width:400px">  <span>Year, Make & Model:</span> <input type="text" name="v2_ymm1" id="" class="border-0 border-bottom responsive_input" style="width:520px"></div>
-                    <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v2_nada_v1" id="" class="border-0 border-bottom responsive_input"   style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v2_v_date1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"> <span>Debt Owed: </span> <input type="text" name="v2_d_owed1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"></div>
-                    <div class="small_text"> <span>Lien Holder:</span> <input type="text" name="v2_lien_holder1" id="" class="border-0 border-bottom responsive_input"   style="width:860px;"><span>Equity:</span> <input type="text" name="v2_equity1" id="" class="border-0 border-bottom responsive_input" >  </div>
-                    <div class="small_text"> <span>Is this a leased vehicle? <input type="radio" name="v2_leased_vehicle_checkbox" value="Yes" id=""> Yes  <input type="radio" name="v2_leased_vehicle_checkbox" id="" value="False" class="ms-lg-2"> No If yes, please complete the following: Monthly Payment</span> <input type="text" name="v2_monthly_payment1" id="" class="border-0 border-bottom responsive_input"   style="width:540px;">  </div>
-                    <div class="small_text"> <span>Lease Term Ends</span> <input type="text" name="v2_lease_term1" id="" class="border-0 border-bottom responsive_input"   style="width:195px;"> </div>
-
-                    <div class="pt-lg-3">Vehicle 3:</div>
-                    <div class="small_text"><span>Primary Driver: </span><input type="text" name="v3_primary_driver1" id="" class="border-0 border-bottom responsive_input" style="width:400px">  <span>Year, Make & Model:</span> <input type="text" name="v3_ymm1" id="" class="border-0 border-bottom responsive_input" style="width:520px"></div>
-                    <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v3_nada_v1" id="" class="border-0 border-bottom responsive_input"   style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v3_v_date1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"> <span>Debt Owed: </span> <input type="text" name="v3_d_owed1" id="" class="border-0 border-bottom responsive_input"  style="width:293px;"></div>
-                    <div class="small_text"> <span>Lien Holder:</span> <input type="text" name="v3_lien_holder1" id="" class="border-0 border-bottom responsive_input"   style="width:860px;"><span>Equity:</span> <input type="text" name="v3_equity1" id="" class="border-0 border-bottom responsive_input" >  </div>
-                    <div class="small_text"> <span>Is this a leased vehicle? <input type="radio" name="v3_leased_vehicle_checkbox" value="Yes" id=""> Yes  <input type="radio" name="v3_leased_vehicle_checkbox" id="" value="False" class="ms-lg-2"> No If yes, please complete the following: Monthly Payment</span> <input type="text" name="v3_monthly_payment1" id="" class="border-0 border-bottom responsive_input"   style="width:540px;">  </div>
-                    <div class="small_text"> <span>Lease Term Ends</span> <input type="text" name="v3_lease_term1" id="" class="border-0 border-bottom responsive_input"   style="width:195px;"> </div>
-                    <div class="row py-3 pt-lg-5">
-                        <div class="col-lg-6">
-                        <div class="small_text"> More VEHICLES attached? <input type="radio" name="more_vehicles_attached_checkbox" id="" value="Yes"> Yes <input type="radio" name="more_vehicles_attached_checkbox" value="No" id=""> No </div>
-                        </div>
-                        <div class="col-lg-6 text-end">
-                            <div class="small_text">Total Vehicle Equity:  <input type="text" name="total_vehicle_equity" id="" class="border-0 border-bottom"></div>
-                        </div>
+                    <div class="ps-lg-5 mb-5">
+                        d. Cash amount (Enter the amount of cash you and your spouse have in your possession that is not
+                        in a bank account): $ <input type="text" name="tp_cash_amount" id="" class="border-0 border-bottom responsive_input">
                     </div>
+                    <div class="pt-lg-5">
 
-                    <div class="pt-lg-3">   C. BANK ACCOUNTS – Checking, Savings, CDs, Money Market accounts, etc. (If more than 3 accounts, continue on a separate sheet) (Do not list account numbers)</div>
-                        <div>Are you making a non-marital claim? <input type="radio" name="ba_non_marital" value="Yes" id=""> Yes <input type="radio" name="ba_non_marital" value="No"  id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
-                        <div class="table-responsive pt-lg-3">
-                            <table class="table table-bordered border-dark">
-                                <tr>
-                                    <td>Owner(s)</td>
-                                    <td>Institution Name <br>  [ NO ACCOUNT NUMBERS]</td>
-                                    <td>Type of Account </td>
-                                    <td>Valuation Date </td>
-                                    <td> Balance</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="ba_owner1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_institution_name1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_type_of_account1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_value_date1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_balance1" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="ba_owner2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_institution_name2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_type_of_account2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_value_date2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_balance2" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="ba_owner3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_institution_name3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_type_of_account3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_value_date3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="ba_balance3" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">More BANK ACCOUNTS attached? <input type="checkbox" name="more_ba_attached_checkbox" value="Yes" id=""> Yes <input type="checkbox" name="more_ba_attached_checkbox" value="Yes" id=""> No</td>
-                                    <td colspan="2">Total Current Balances:</td>
-                                    <td><input type="text" name="ba_total_current_balances" class="border-0 form-control"></td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div>D. STOCKS, BONDS, PORTFOLIOS, MUTUAL FUNDS, ETC. (If more than 3, continue on a separate sheet)
-                            Are you making a non-marital claim? <input type="radio" name="sb_non_marital" value="Yes" id=""> Yes <input type="radio" name="sb_non_marital" value="No" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
-
-                            <div class="table-responsive pt-lg-3">
-                                <table class="table table-bordered border-dark">
-                                    <tr>
-                                        <td>Institution Name</td>
-                                        <td colspan="2">Stock/Portfolio Name</td>
-                                        <td >Valuation Date</td>
-                                        <td>Current Value</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="sb_instutution_name1" class="border-0 form-control"></td>
-                                        <td  colspan="2"><input type="text" name="sb_stock_name1" class="border-0 form-control"></td>
-                                        <td  ><input type="text" name="sb_valuation_date1" class="border-0 form-control"></td>
-                                        <td><input type="text" name="sb_current_value1" class="border-0 form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="sb_instutution_name2" class="border-0 form-control"></td>
-                                        <td  colspan="2"><input type="text" name="sb_stock_name2" class="border-0 form-control"></td>
-                                        <td  ><input type="text" name="sb_valuation_date2" class="border-0 form-control"></td>
-                                        <td><input type="text" name="sb_current_value2" class="border-0 form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="sb_instutution_name3" class="border-0 form-control"></td>
-                                        <td  colspan="2"><input type="text" name="sb_stock_name3" class="border-0 form-control"></td>
-                                        <td><input type="text" name="sb_valuation_date3" class="border-0 form-control"></td>
-                                        <td><input type="text" name="sb_current_value3" class="border-0 form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">More INVESTMENTS attached? <input type="radio" name="sb_more_investments_attached_checkbox" value="Yes" id=""  > Yes <input type="radio" name="sb_more_investments_attached_checkbox" value="No" id="" class="ms-lg-2"> No </td>
-                                        <td colspan="2">Total Current Values: </td>
-                                        <td><input type="text" name="sb_total_current_values" class="border-0 form-control"></td>
-                                    </tr>
-                                </table>
-                            </div>
-                </section>
-                <section class="section_area p-5" >
-                    @include('layouts.header1', ['page' => 4])
-                    <div>E. RETIREMENT BENEFITS – IRA, Keogh, 401(K), 403(b), Pension, etc. (If more than 3, continue on a separate sheet)
-                        Are you making a non-marital claim? <input type="radio" name="rb_claim_checkbox" id="" value="Yes"  > Yes <input type="radio" name="rb_claim_checkbox" value="No" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
-                        <div class="table-responsive pt-lg-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                <tr>
-                                    <td class="small_text"> Participant</td>
-                                    <td class="small_text text-center"> Plan Name</td>
-                                    <td class="small_text text-center"> Contrib/Non</td>
-                                    <td class="small_text text-center"> Vested/Non</td>
-                                    <td class="small_text text-center"> Pay Status?</td>
-                                    <td class="small_text text-center"> Valuation Date</td>
-                                    <td class="small_text text-center"> Balance</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="rb_participant1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_plain_name1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_contrib1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_vested1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_pay_status1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_valuation_date1" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_balance1" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="rb_participant2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_plain_name2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_contrib2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_vested2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_pay_status2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_valuation_date2" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_balance2" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="rb_participant3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_plain_name3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_contrib3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_vested3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_pay_status3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_valuation_date3" class="border-0 form-control"></td>
-                                    <td><input type="text" name="rb_balance3" class="border-0 form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3"> More RETIREMENT BENEFITS attached? <input type="radio" name="rb_more_retirement_benefits_attached" class=" ms-2" value="Yes" id=""  > Yes <input type="radio" name="rb_more_retirement_benefits_attached" value="No" id="" class="ms-lg-2"> No </td>
-                                    <td colspan="3">Total Retirement Benefits Values:</td>
-                                    <td><input type="text" name="rb_total_rbv" class="border-0 form-control"></td>
-                                </tr>
-                                </tbody>this is 23 no form
-                            </table>
-                        </div>
-                        <div class="small_text">Have any loans been taken out against any of these Retirement Benefits? <input type="radio" name="rb_retirement_benefits_checkbox" value="Yes" id=""  > Yes <input type="radio" name="rb_retirement_benefits_checkbox" value="No" id="" class="ms-lg-2"> No</div>
-                        <div>If so, describe: <input type="text" name="rb_describe" id="" class="border-0 border-bottom border-dark"></div>
-                        <div>
-                            <div class="py-3"><b>F. LIFE INSURANCE</b> (If more than 3 policies, continue on a separate sheet)</div>
-                            <div>Are you making a non-marital claim?   <input type="radio" name="rb_non_marital_checkbox" id="" value="Yes"  > Yes <input type="radio" name="rb_non_marital_checkbox" value="No" id="" class="ms-lg-2"> No you must comply with Section IX below.</div>
-                                 <div class="small_text">Policy 1:</div>
-                                <div class="small_text">Company: <input type="text" name="p1_company" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 704px;"><span>Party Insured:</span>  <input type="text" name="p1_party_insured" id="" class="border-0 border-bottom border-dark responsive_input" style="width: 300px;"></div>
-                                <div class="small_text">Beneficiary: <input type="text" name="p1_beneficiary" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 724px;"> <span>Term/Whole:</span>  <input type="text" name="p1_term" id="" class="border-0 border-bottom border-dark responsive_input" style="width:269px;">  </div>
-                                <div class="small_text">Policy #: <input type="text" name="p1_policy" id="" class="border-0 border-bottom border-dark responsive_input" style="width:281px"> <span>Valuation Date:</span>  <input type="text" name="p1_valuation_date" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px">   <span>Cash Surrender Value:</span>  <input type="text" name="p1_csv" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px"></div>
-                                 <div class="small_text">Policy 2:</div>
-                                 <div class="small_text">Company: <input type="text" name="p2_company" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 704px;"><span>Party Insured:</span>  <input type="text" name="p2_party_insured" id="" class="border-0 border-bottom border-dark responsive_input" style="width: 300px;"></div>
-                                <div class="small_text">Beneficiary: <input type="text" name="p2_beneficiary" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 724px;"> <span>Term/Whole:</span>  <input type="text" name="p2_term" id="" class="border-0 border-bottom border-dark responsive_input" style="width:269px;">  </div>
-                                <div class="small_text">Policy #: <input type="text" name="p2_policy" id="" class="border-0 border-bottom border-dark responsive_input" style="width:281px"> <span>Valuation Date:</span>  <input type="text" name="p2_valuation_date" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px">   <span>Cash Surrender Value:</span>  <input type="text" name="p2_csv" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px"></div>
-                                 <div class="small_text">Policy 3:</div>
-                                 <div class="small_text">Company: <input type="text" name="p3_company" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 704px;"><span>Party Insured:</span>  <input type="text" name="p3_party_insured" id="" class="border-0 border-bottom border-dark responsive_input" style="width: 300px;"></div>
-                                 <div class="small_text">Beneficiary: <input type="text" name="p3_beneficiary" id="" class="border-0 border-bottom border-dark responsive_input"  style="width: 724px;"> <span>Term/Whole:</span>  <input type="text" name="p3_term" id="" class="border-0 border-bottom border-dark responsive_input" style="width:269px;">  </div>
-                                 <div class="small_text">Policy #: <input type="text" name="p3_policy" id="" class="border-0 border-bottom border-dark responsive_input" style="width:281px"> <span>Valuation Date:</span>  <input type="text" name="p3_valuation_date" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px">   <span>Cash Surrender Value:</span>  <input type="text" name="p3_csv" id="" class="border-0 border-bottom border-dark responsive_input" style="width:280px"></div>
-                        </div>
-                        <div class="row py-3 pt-lg-5">
-                            <div class="col-lg-6">
-                                <div class="small_text"> More LIFE INSURANCE attached? <input type="radio" name="rb_more_lia_checkbox" value="Yes" id=""> Yes <input type="radio"  name="rb_more_lia_checkbox" value="No" id=""> No </div>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <div class="small_text">Total Cash Value: <input type="text" name="rb_total_cash_value" id="" class="border-0 border-bottom"></div>
-                            </div>
-                        </div>
-                            G. BUSINESS INTERESTS (If more than 3 businesses, continue on a separate sheet) Are you making a non-marital claim? <input type="radio" name="bi_non_marital_checkbox" value="Yes" id=""  > Yes <input type="radio" name="bi_non_marital_checkbox" value="No" id="" class="ms-lg-2"> No If yes, you must comply with Section IX below.
-                            <div class="pt-1 small_text">Name of Business & Owner:  <input type="text" name="bi_nob1" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:979px"> </div>
-                            <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo1" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob1" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
-                            <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe1" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
-                            <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd1" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb1" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi1" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
-                            <div class="pt-1 small_text">Name of Business & Owner:  <input type="text" name="bi_nob2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:979px"> </div>
-                            <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo2" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
-                            <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe2" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
-                            <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd2" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi2" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
-                </section>
-                <section class="section_area p-5">
-                    @include('layouts.header1', ['page' => 5])
-                    <div class="pt-1 small_text">Name of Business & Owner:  <input type="text" name="bi_nob3" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:979px"> </div>
-                    <div class="pt-1 small_text">Percentage of Ownership:  <input type="text" name="bi_poo3" id=""  class="border-0 border-bottom border-dark responsive_input"> <span>Type of Business:</span>  <input type="text" name="bi_tob3" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:698px">  </div>
-                    <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.:  <input type="text" name="bi_csppe3" id=""  class="border-0 border-bottom border-dark responsive_input"  style="width:831px"> </div>
-                    <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd3" id=""  class="border-0 border-bottom border-dark responsive_input" style="width:253px"> <span>Business Loan(s) Balance:</span>  <input type="text" name="bi_blb3" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px">   <span>Value of Interest:</span>  <input type="text" name="bi_voi3" id="" class="border-0 border-bottom border-dark responsive_input" style="width:253px"></div>
-                    <div class="row py-3 pt-lg-5">
-                        <div class="col-lg-6">
-                            <div class="small_text"> More BUSINESS INTERESTS attached? <input type="radio" name="bi_mbia_checkbox" value="Yes" id=""> Yes <input type="radio" name="bi_mbia_checkbox" value="No" id="" class="ms-3"> No </div>
-                        </div>
-                        <div class="col-lg-6 text-end">
-                            <div class="small_text">Total Values: <input type="text" name="bi_total_values" id="" class="border-0 border-bottom"></div>
-                        </div>
-                    </div>
-                    <div>H. HOUSEHOLD GOODS:</div>
-                    <div>Are you making a non-marital claim? <input type="radio" name="hg_non_marital_checkbox" id="" value="Yes"  > Yes <input type="radio" name="hg_non_marital_checkbox" id="" value="No" class="ms-lg-2"> No If yes, you must comply with Section IX below.</div>
-                    <div>Agreed Division? <input type="radio" name="hg_agreed_division_checkbox" id="" value="Yes"> Yes <input type="radio" name="hg_agreed_division_checkbox" value="No" id="" class="ms-lg-4"> No , but not expected to be in dispute.</div>
-                    <div><input type="checkbox" name="dispute_anticipated_checkbox" value='Yes' id="" class=" ">  No, but dispute anticipated (Suggested appraiser  <input type="text" name="dispute_anticipated_val" id="" class="border-0 border-bottom"> )</div>
-                    <div class="fw-bold">Attached is a list of the disputed household items</div>
-                    <div class="pt-lg-3">
-                        I. OTHER ASSETS – Cash, Travelers Checks, Debts Others Owe You, Copyrights, Trademarks, Pets or Animals,
-                        Jewelry, Collectibles, Tools, Inventions, Other “Liquid Assets,” etc. (If more than 5 items, continue on a separate sheet)
-                        Are you making a non-marital claim? <input type="radio" name="hg_non_marital_checkbox" value="Yes" id=""> Yes <input type="radio" name="hg_non_marital_checkbox" value="No" id=""> No If yes, you must comply with Section IX below.
-                    </div>
-                    <div class="small_text pt-lg-3">Item 1:</div>
-                    <div class="small_text">Item Description: <input type="text" class="border-0 border-bottom responsive_input" name="i1_description" style="width:1054px;"></div>
-                    <div class="small_text">Who Holds Possession: <input type="text" class="border-0 border-bottom responsive_input" name="i1_hold_possession" style="width:448px;">   Valuation Date: <input type="text" class="border-0 border-bottom responsive_input" name="i1_valuation_date" style="width:448px;"></div>
-                    <div class="small_text">Fair Market Value: <input type="text" class="border-0 border-bottom responsive_input" name="i1_fair_market_value" style="width:266px;"> Amount Owed: <input type="text" class="border-0 border-bottom responsive_input" name="i1_amount_owed" style="width:266px;">  Net Value or Equity   <input type="text" class="border-0 border-bottom responsive_input" name="i1_net_value" style="width:266px;"></div>
-
-                    <div class="small_text pt-lg-3">Item 2:</div>
-                    <div class="small_text">Item Description: <input type="text" class="border-0 border-bottom responsive_input" name="i2_description" style="width:1054px;"></div>
-                    <div class="small_text">Who Holds Possession: <input type="text" class="border-0 border-bottom responsive_input" name="i2_hold_possession" style="width:448px;">   Valuation Date: <input type="text" class="border-0 border-bottom responsive_input" name="i2_valuation_date" style="width:448px;"></div>
-                    <div class="small_text">Fair Market Value: <input type="text" class="border-0 border-bottom responsive_input" name="i2_fair_market_value" style="width:266px;"> Amount Owed: <input type="text" class="border-0 border-bottom responsive_input" name="i2_amount_owed" style="width:266px;">  Net Value or Equity   <input type="text" class="border-0 border-bottom responsive_input" name="i2_net_value" style="width:266px;"></div>
-
-                     <div class="small_text pt-lg-3">Item 3:</div>
-                     <div class="small_text">Item Description: <input type="text" class="border-0 border-bottom responsive_input" name="i3_description" style="width:1054px;"></div>
-                    <div class="small_text">Who Holds Possession: <input type="text" class="border-0 border-bottom responsive_input" name="i3_hold_possession" style="width:448px;">   Valuation Date: <input type="text" class="border-0 border-bottom responsive_input" name="i3_valuation_date" style="width:448px;"></div>
-                    <div class="small_text">Fair Market Value: <input type="text" class="border-0 border-bottom responsive_input" name="i3_fair_market_value" style="width:266px;"> Amount Owed: <input type="text" class="border-0 border-bottom responsive_input" name="i3_amount_owed" style="width:266px;">  Net Value or Equity   <input type="text" class="border-0 border-bottom responsive_input" name="i3_net_value" style="width:266px;"></div>
-
-                    <div class="small_text pt-lg-3">Item 4:</div>
-                    <div class="small_text">Item Description: <input type="text" class="border-0 border-bottom responsive_input" name="i4_description" style="width:1054px;"></div>
-                    <div class="small_text">Who Holds Possession: <input type="text" class="border-0 border-bottom responsive_input" name="i4_hold_possession" style="width:448px;">   Valuation Date: <input type="text" class="border-0 border-bottom responsive_input" name="i4_valuation_date" style="width:448px;"></div>
-                    <div class="small_text">Fair Market Value: <input type="text" class="border-0 border-bottom responsive_input" name="i4_fair_market_value" style="width:266px;"> Amount Owed: <input type="text" class="border-0 border-bottom responsive_input" name="i4_amount_owed" style="width:266px;">  Net Value or Equity   <input type="text" class="border-0 border-bottom responsive_input" name="i4_net_value" style="width:266px;"></div>
-
-                        <div class="small_text pt-lg-3">Item 5:</div>
-                        <div class="small_text">Item Description: <input type="text" class="border-0 border-bottom responsive_input" name="i5_description" style="width:1054px;"></div>
-                        <div class="small_text">Who Holds Possession: <input type="text" class="border-0 border-bottom responsive_input" name="i5_hold_possession" style="width:448px;">   Valuation Date: <input type="text" class="border-0 border-bottom responsive_input" name="i5_valuation_date" style="width:448px;"></div>
-                        <div class="small_text">Fair Market Value: <input type="text" class="border-0 border-bottom responsive_input" name="i5_fair_market_value" style="width:266px;"> Amount Owed: <input type="text" class="border-0 border-bottom responsive_input" name="i5_amount_owed" style="width:266px;">  Net Value or Equity   <input type="text" class="border-0 border-bottom responsive_input" name="i5_net_value" style="width:266px;"></div>
-
-                        <div class="row py-3 pt-lg-5">
-                        <div class="col-lg-6">
-                        <div class="small_text">More OTHER ASSETS attached? <input type="radio" name="hg_moaa_checkbox" value="Yes" id=""> Yes <input type="radio" name="hg_moaa_checkbox" value="No" id=""> No </div>
-                        </div>
-                        <div class="col-lg-6 text-end">
-                            <div class="small_text">Total Values: <input type="text" name="hg_total_values" id="" class="border-0 border-bottom"></div>
-                        </div>
+                        @include('layouts.footer18', ['page' => 2])
                     </div>
                 </section>
-                <section class="section_area p-5" id="section_six">
-                    @include('layouts.header1', ['page' => 6])
-                    <div><b>VI. OTHER DEBTS NOT PREVIOUSLY LISTED</b> (Do not list account numbers) Includes credit card balances, credit union loans, signature loans and other unsecured debt. (If more than 5 debts, continue on a separate sheet)</div>
-                        <div>
-                            <div class="pt-lg-4 pt-2  ">Creditor 1:</div>
-                            <div class="small_text">Creditor: <input type="text" name="c1_creditor" id="" class="border-0 border-bottom responsive_input" style="width:1097px"></div>
-                            <div class="small_text">Party Named on Debt: <input type="text" name="c1_pnod" id="" class="border-0 border-bottom responsive_input"  style="width:613px"> Premarital Account? <input type="text" name="c1_pa" id="" class="border-0 border-bottom responsive_input"  style="width:250px"></div>
-                            <div class="small_text">Valuation Date: <input type="text" name="c1_vd" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Monthly Payment:  <input type="text" name="c1_mp" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Total Balance: <input type="text" name="c1_tb" id="" class="border-0 border-bottom responsive_input" style="width:273px;"></div>
+                <section class="section_area p-5" id="third_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="ps-lg-5">
+                        b. <b>Bank Accounts</b>(Enter information about savings and checking accounts, money market  accounts, certificates of deposit, etc. held by you and your spouse):
+                    </div>
 
-                            <div class="pt-lg-4 pt-2  ">Creditor 2:</div>
-                            <div class="small_text">Creditor: <input type="text" name="c2_creditor" id="" class="border-0 border-bottom responsive_input" style="width:1097px"></div>
-                            <div class="small_text">Party Named on Debt: <input type="text" name="c2_pnod" id="" class="border-0 border-bottom responsive_input"  style="width:613px"> Premarital Account? <input type="text" name="c2_pa" id="" class="border-0 border-bottom responsive_input"  style="width:250px"></div>
-                            <div class="small_text">Valuation Date: <input type="text" name="c2_vd" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Monthly Payment:  <input type="text" name="c2_mp" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Total Balance: <input type="text" name="c2_tb" id="" class="border-0 border-bottom responsive_input" style="width:273px;"></div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Name of Bank</td>
+                                    <td class="text-center">Name(s) on Account</td>
+                                    <td class="text-center">Account Number</td>
+                                    <td class="text-center">Type of Account</td>
+                                    <td class="text-center">Balance</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="ba_nob1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="ba_nob2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="ba_nob3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="ba_nob4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="ba_nob5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">6.</td>
+                                    <td><textarea name="ba_nob6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b6" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm6" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm6" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">7.</td>
+                                    <td><textarea name="ba_nob7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b7" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm7" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm7" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">8.</td>
+                                    <td><textarea name="ba_nob8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b8" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm8" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm8" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">9.</td>
+                                    <td><textarea name="ba_nob9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b9" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm9" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm9" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">10.</td>
+                                    <td><textarea name="ba_nob10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_noa10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_an10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="ba_toa10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span> <textarea name="ba_b10" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm10" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="ba_nm10" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                            <div class="pt-lg-4 pt-2  ">Creditor 3:</div>
-                            <div class="small_text">Creditor: <input type="text" name="c3_creditor" id="" class="border-0 border-bottom responsive_input" style="width:1097px"></div>
-                            <div class="small_text">Party Named on Debt: <input type="text" name="c3_pnod" id="" class="border-0 border-bottom responsive_input"  style="width:613px"> Premarital Account? <input type="text" name="c3_pa" id="" class="border-0 border-bottom responsive_input"  style="width:250px"></div>
-                            <div class="small_text">Valuation Date: <input type="text" name="c3_vd" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Monthly Payment:  <input type="text" name="c3_mp" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Total Balance: <input type="text" name="c3_tb" id="" class="border-0 border-bottom responsive_input" style="width:273px;"></div>
+                    <div class="ps-lg-5">f. Retirement Benefits and Deferred Compensation (Enter information about vested and non-vested retirement benefits, including pension plans, annuities, IRAs, 401(k)s, 403(b)s, and SEPs held by you and your spouse):</div>
 
-                            <div class="pt-lg-4 pt-2  ">Creditor 4:</div>
-                            <div class="small_text">Creditor: <input type="text" name="c4_creditor" id="" class="border-0 border-bottom responsive_input" style="width:1097px"></div>
-                            <div class="small_text">Party Named on Debt: <input type="text" name="c4_pnod" id="" class="border-0 border-bottom responsive_input"  style="width:613px"> Premarital Account? <input type="text" name="c4_pa" id="" class="border-0 border-bottom responsive_input"  style="width:250px"></div>
-                            <div class="small_text">Valuation Date: <input type="text" name="c4_vd" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Monthly Payment:  <input type="text" name="c4_mp" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Total Balance: <input type="text" name="c4_tb" id="" class="border-0 border-bottom responsive_input" style="width:273px;"></div>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Name of Plan</td>
+                                    <td class="text-center">Name of Account Holder</td>
+                                    <td class="text-center">Type of Plan</td>
+                                    <td class="text-center">Fair Market Value or Account Balance</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="rb_nop1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_noah1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_top1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="rb_fmv1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm1"id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm1"id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="rb_nop2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_noah2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_top2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="rb_fmv2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm2"id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm2"id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="rb_nop3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_noah3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_top3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="rb_fmv3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm3"id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm3"id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="rb_nop4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_noah4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_top4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="rb_fmv4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm4"id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm4"id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="rb_nop5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_noah5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="rb_top5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="rb_fmv5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm5"id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="rb_nm5"id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            <div class="pt-lg-4 pt-2  ">Creditor 5:</div>
-                            <div class="small_text">Creditor: <input type="text" name="c5_creditor" id="" class="border-0 border-bottom responsive_input" style="width:1097px"></div>
-                            <div class="small_text">Party Named on Debt: <input type="text" name="c5_pnod" id="" class="border-0 border-bottom responsive_input"  style="width:613px"> Premarital Account? <input type="text" name="c5_pa" id="" class="border-0 border-bottom responsive_input"  style="width:250px"></div>
-                            <div class="small_text">Valuation Date: <input type="text" name="c5_vd" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Monthly Payment:  <input type="text" name="c5_mp" id="" class="border-0 border-bottom responsive_input" style="width:273px;"> Total Balance: <input type="text" name="c5_tb" id="" class="border-0 border-bottom responsive_input" style="width:273px;"></div>
-                                             </div>
-                         <div class="row py-3 pt-lg-5 ">
-                            <div class="col-lg-6">
-                               <div class="small_text"> More DEBTS attached? <input type="radio" name="od_mda_checkbox" value="Yes" id=""> Yes <input type="radio" name="od_mda_checkbox" value="No" id="" class=" ms-lg-2"> No </div>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <div class="small_text">Total Debt Balances: <input type="text" name="od_total_debt_balance" id="" class="border-0 border-bottom"></div>
-                            </div>
-                        </div>
-                        <div class="pt-lg-5 pt-3">
-                            <div><b><span class="pe-lg-3">VII. </span>EXPECTED POST-DIVORCE LIVING EXPENSES SCHEDULE</b> (Do not include debts)</div>
-                            <div class="ps-lg-5">
-                                 <div class="small_text">  Not necessary if maintenance or child support are not being claimed</div>
-                                 <div class="small_text">  Do the parties’ combined gross incomes exceed $15,000 per month? <span class="ms-lg-5"> <input type="radio" name="epd_cgm_checkbox" value="Yes" id=""> Yes <input type="radio" name="epd_cgm_checkbox" value="No" id="" class=" ms-lg-2"> No</span></div>
-                                 <div class="small_text">  If <b>NO</b>, do not include children’s personal expenses below.</div>
-                                 <div class="small_text">  If <b>YES</b>, list children’s personal expenses such as private school tuition, tutors,</div>
-                                 <div class="small_text">  camps, activity fees, clothing, etc. on a separate sheet. <input type="radio" name="epd_attached_checkbox" value="Yes" id=""> Attached</div>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="pt-lg-5">
+
+                        @include('layouts.footer18', ['page' => 3])
+                    </div>
                 </section>
-                <section class="section_area p-5" id="section_last">
-                    @include('layouts.header1', ['page' => 7])
-                    <div class="row pt-3">
-                        <div class="col-lg-6">
-                            <div class="responsive-table ">
-                                <table class="table table-bordered border-dark">
-                                    <tbody>
-                                        <tr>
-                                            <td class="small_text">A. COMMON EXPENSES FOR FAMILY (Party and any children of the marriage)</td>
-                                            <td style="width:80px;"> <input type="text" name="cef_ceff" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">FOOD/GROCERIES FOR FAMILY (Non-entertainment)</td>
-                                            <td><input type="text" name="cef_fgff" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">HOUSING</td>
-                                            <td class="bg-secondary"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Cable</td>
-                                            <td><input type="text" name="cef_cable" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Garbage collection</td>
-                                            <td><input type="text" name="cef_garbage_collection" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Electric, gas, propane & oil utilities</td>
-                                            <td><input type="text" name="cef_electric_gas" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Home maintenance & repairs</td>
-                                            <td><input type="text" name="cef_home_maintenance" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Homeowner’s insurance</td>
-                                            <td><input type="text" name="cef_homeowner_insurance" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Household supplies</td>
-                                            <td><input type="text" name="cef_household_supplies" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Maid service</td>
-                                            <td ><input type="text" name="cef_maid_service" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Property taxes</td>
-                                            <td><input type="text" name="cef_property_taxes" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Rent or 1st mortgage</td>
-                                            <td><input type="text" name="cef_rent_mortgage" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ps-lg-4">2nd mortgage/home equity loan</td>
-                                            <td><input type="text" name="cef_mortgage_equity_loan" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Telephone</td>
-                                            <td><input type="text" name="cef_telephone" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ps-lg-4">Mobile phone</td>
-                                            <td><input type="text" name="cef_mobile_phone" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Vet/pet supplies</td>
-                                            <td><input type="text" name="cef_vet_supplies" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Yard expense/maintenance</td>
-                                            <td ><input type="text" name="cef_yard_expense" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Water/sewage</td>
-                                            <td ><input type="text" name="cef_water_sewage" class="border-0 form-control"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">TRANSPORTATION</td>
-                                            <td class="bg-secondary"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Gas and oil</td>
-                                            <td><input type="text" name="cef_gas_oil" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Liability insurance</td>
-                                            <td><input type="text" name="cef_liability_insurance" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">License/taxes/tag</td>
-                                            <td><input type="text" name="cef_license_taxes_tag" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Payment/loan</td>
-                                            <td><input type="text" name="cef_payment_loan" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Repairs/maintenance</td>
-                                            <td><input type="text" name="cef_repairs_maintenance" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">Other – bus, taxi, tolls & parking</td>
-                                            <td><input type="text" name="cef_other_bus_taxi" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text ">OTHER FAMILY EXPENSES (list):</td>
-                                            <td class="bg-secondary"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text" name="cef_other_family_expenses1" class="border-0 form-control"> </td>
-                                            <td><input type="text" name="cef_other_family_expenses2" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text" name="cef_other_family_expenses3" class="border-0 form-control"> </td>
-                                            <td><input type="text" name="cef_other_family_expenses4" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td>SUBTOTAL (Column A)</td>
-                                            <td><input type="text" name="cef_subtotal" class="border-0 form-control" value="0"> </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="table-responsive">
-                                <table class="table table-bordered border-dark">
-                                    <tbody>
-                                        <tr>
-                                            <td class="small_text">B. YOUR PERSONAL EXPENSES (not including any children’s expenses)</td>
-                                                <td><input type="text" name="ype_ype" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Church and charitable donations</td>
-                                            <td><input type="text" name="ype_church_charitable_donations" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Clothing</td>
-                                            <td><input type="text" name="ype_clothing" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Cosmetics, hygiene & toiletries</td>
-                                            <td><input type="text" name="ype_cosmetics_hygiene_toiletries" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Disability insurance</td>
-                                            <td><input type="text" name="ype_disability_insurance" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Dry cleaning & laundry</td>
-                                            <td><input type="text" name="ype_dry_cleaning_laundry" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Entertainment, including restaurants & movies</td>
-                                            <td><input type="text" name="ype_entertainment_including" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Hair care (barber, salon, etc.)</td>
-                                            <td><input type="text" name="ype_hair_care" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Internet access</td>
-                                            <td><input type="text" name="ype_internet_access" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Life insurance (whole life or term)</td>
-                                            <td><input type="text" name="ype_insurance" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Manicures & pedicures</td>
-                                            <td><input type="text" name="ype_manicures_pedicures" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Newspapers, magazines & books</td>
-                                            <td><input type="text" name="ype_newspapers_magazines_books" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Professional dues or uniforms</td>
-                                            <td><input type="text" name="ype_professional_uniforms" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Sports, exercise, hobbies, crafts, etc.</td>
-                                            <td><input type="text" name="ype_sports_exercise" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Travel (monthly average)</td>
-                                            <td><input type="text" name="ype_travel" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">MEDICAL</td>
-                                            <td class="bg-secondary">  </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Dental (including orthodontics)</td>
-                                            <td><input type="text" name="ype_dental" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Eyeglasses, contacts & hearing aids,  exams and testing</td>
-                                            <td><input type="text" name="ype_eyeglasses" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Insurance (hospitalization)</td>
-                                            <td><input type="text" name="ype_insurance" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Medical doctor(s)</td>
-                                            <td><input type="text" name="ype_medical_doctors" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">Prescription medication</td>
-                                            <td><input type="text" name="ype_prescription_medication" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="small_text">OTHER PERSONAL EXPENSES (list):</td>
-                                            <td class="bg-secondary"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><input type="text" name="ype_other_personal_expenses1" class="border-0 form-control"> </td>
-                                            <td><input type="text" name="ype_other_personal_expenses2" class="border-0 form-control"> </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><input type="text" name="ype_other_personal_expenses3" class="border-0 form-control"> </td>
-                                            <td><input type="text" name="ype_other_personal_expenses4" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">Sub-total from attached other personal expenses, if needed <input type="checkbox" name="subtotal_attached_checkbox" id=""> Attached </td>
-                                            <td><input type="text" name="ype_sub_total1" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text" name="ype_sub_total2" class="border-0 form-control"> </td>
-                                            <td class="bg-secondary"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">SUBTOTAL FROM COLUMN B</td>
-                                            <td><input type="text" name="ype_subtotal_b" class="border-0 form-control" value="0"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">SUBTOTAL FROM COLUMN A</td>
-                                            <td><input type="text" name="ype_subtotal_a" class="border-0 form-control" value="0"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">SUBTOTAL FROM CHILDREN’S EXPENSE LIST ATTACHMENT</td>
-                                            <td><input type="text" name="ype_subtotal_children_expense" class="border-0 form-control"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="small_text">GRAND TOTAL <small> of column a, b, and attachments</small></td>
-                                            <td><input type="text" name="ype_grand_total" class="border-0 form-control" value="0"> </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                 </section>
-                <section class="section_area p-5"  >
-                    @include('layouts.header1', ['page' => 8])
-                    <div class="fw-bold"> VIII. OTHER</div>
-                    <div class="row">
-                        <div class="col-lg-1  responsive_input" style="width: 50px;">A.</div>
-                        <div class="col-lg-11">
-                            <div>Special needs of parties:</div>
-                            <div><input type="text" name="o_snop1" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                            <div><input type="text" name="o_snop2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                            <div><input type="text" name="o_snop3" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                         </div>
-                    </div>
-                     <div class="row">
-                        <div class="col-lg-1 responsive_input" style="width: 50px;">B.</div>
-                        <div class="col-lg-11">
-                            <div>Bankruptcy <input type="text" name="o_bankruptcy1" id="" class="border-0 border-bottom    responsive_input" style="width:974px;"></div>
-                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-1 responsive_input" style="width: 50px;">C.</div>
-                        <div class="col-lg-11">
-                            <div>Lawsuits <input type="text" name="o_lawsuits1" id="" class="border-0 border-bottom   responsive_input" style="width:995px;"></div>
-                         </div>
+                <section class="section_area p-5" id="fourth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="ps-lg-5">g. <b> Investment/Brokerage Accounts, Mutual Funds, Securities Stocks, Bonds, Options, ESOPs, and Secured or Unsecured Notes</b> (Enter information about those held by you and your spouse): </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Company Name</td>
+                                    <td class="text-center">Type</td>
+                                    <td class="text-center">Owner</td>
+                                    <td class="text-center">Fair Market Value</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="iba_cn1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_t1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_o1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="iba_fmv1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="iba_cn2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_t2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_o2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="iba_fmv2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="iba_cn3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_t3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_o3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="iba_fmv3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="iba_cn4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_t4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_o4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="iba_fmv4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="iba_cn5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_t5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="iba_o5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="iba_fmv5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="iba_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div><b>IX. REQUIRED ATTACHMENTS</b> (to be sent ONLY to opposing party or opposing counsel and not filed with the Court):
-                        To complete this section, you must attach all of the following documents and/or provide the requested information on a
-                        separate sheet and attach to this form. In the spaces provided, mark as follows:</div>
+                    <div class="ps-lg-5">h. <b> Business Interests </b> (Enter information about you and your spouse’s business interests. Under “Type,” enter whether the business is a corporation, S Corp, LLC, etc.):</div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Name of Business</td>
+                                    <td class="text-center">Type</td>
+                                    <td class="text-center">% of Ownership</td>
+                                    <td class="text-center">Debt</td>
+                                    <td class="text-center">Fair Market Value</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="bi_nob1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_t1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_o1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_b1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_fmv1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="bi_nob2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_t2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_o2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_b2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_fmv2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="bi_nob3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_t3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_o3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_b3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_fmv3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="bi_nob4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_t4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_o4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_b4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_fmv4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="bi_nob5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_t5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="bi_o5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_b5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="bi_fmv5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="bi_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <div class="pt-lg-3 small_text">“A” = to indicate that the requested document/information is attached.</div>
-                        <div class="pt-lg-3 small_text">“U” = to indicate that the requested document/information is unavailable (Provide explanation on a separate page)</div>
-                        <div class="pt-lg-3 small_text">“N/A” = if not applicable</div>
-                        <div class="row">
-                            <div class="col-lg-1 small_text  " style="width: 50px;">A.</div>
-                            <div class="col-lg-11 small_text"> PERSONAL INFORMATION OF BOTH PARTIES</div>
-                        </div>
-                        <div class="row pt-2">
-                            <div class="col-lg-1 small_text   " style="width: 50px;">B.</div>
-                            <div class="col-lg-11 small_text"> B. INCOME AND EMPLOYMENT OF BOTH PARTIES</div>
-                        </div>
-                        <div class="table-responsive pt-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                    <tr>
-                                        <td class="small_text">A, U, N/A</td>
-                                        <td class="small_text">Item #</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="iae_auna1" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">1.</td>
-                                        <td class="small_text">Three (3) most recent paycheck stubs</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="iae_auna2" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">2.</td>
-                                        <td class="small_text">Federal Income Tax Return for the last year filed</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="iae_auna3" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">3.</td>
-                                        <td class="small_text">State Income Tax Return for the last year filed</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="iae_auna4" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">4.</td>
-                                        <td class="small_text">Documentation of all other income for the past 48 months, including source of income and
-                                            amount of income received year-to-date</td>
-                                    </tr>
-                                </tbody>
+                    <div class="ps-lg-5">i. <b> Life Insurance Policies </b> (Enter information about each life insurance policy you have for yourself, your spouse, or your children. Also enter information about policies held by your spouse.): </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Name of Insurance Company</td>
+                                    <td class="text-center">Type of Policy </td>
+                                    <td class="text-center">Name of Insured/Owner</td>
+                                    <td class="text-center">Beneficiar(ies)</td>
+                                    <td class="text-center">Death Benefit</td>
+                                    <td class="text-center">Cash Value</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="lip_noic1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_top1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_noi1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_b1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_db1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_cv1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="lip_noic2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_top2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_noi2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_b2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_db2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_cv2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="lip_noic3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_top3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_noi3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_b3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_db3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_cv3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="lip_noic4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_top4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_noi4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_b4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_db4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_cv4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="lip_noic5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_top5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_noi5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="lip_b5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_db5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="lip_cv5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="lip_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                            </table>
-                        </div>
-                        <div class="fw-bold">C. CHILDREN</div>
-                        <div class="table-responsive pt-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                    <tr>
-                                        <td class="small_text">A, U, N/A</td>
-                                        <td class="small_text">Item #</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="c_auna1" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">1.</td>
-                                        <td class="small_text">Verification of work-related child care expenses</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="c_auna2" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td>2.</td>
-                                        <td class="small_text">Verification of cost of health/dental insurance for children’s portion (e.g. difference between cost of single and family plan)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="fw-bold">D. ASSET SCHEDULES</div>
-                        <div class="table-responsive pt-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                    <tr>
-                                        <td class="small_text">A, U, N/A</td>
-                                        <td class="small_text">Item#</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna1" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">1.</td>
-                                        <td class="small_text">Most recent statement of each bank account</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna2" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">2.</td>
-                                        <td class="small_text">Most recent brokerage statement or documentation of purchase and/or value for each investment</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna3" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">3.</td>
-                                        <td class="small_text">Explanation of source of cash holdings, location and amount of cash</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna4" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">4.</td>
-                                        <td class="small_text">For each piece of real estate, copy of deed, documentation of all indebtedness (i.e., mortgage, home equity loan, liens, etc.) including unpaid balance and payoff (with date payoff amount obtained) for each debt, and current tax assessment</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna5" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">5.</td>
-                                        <td class="small_text">Declaration page of life insurance policies and documentation of cash surrender</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+
+                        @include('layouts.footer18', ['page' => 4])
+                </section>
+
+                <section class="section_area p-5" id="fifth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="ps-lg-5">j. <b>Lawsuits and Claims</b> (Enter information about lawsuits and claims you and your spouse have filed or intend to file. These can include, for example, claims for workers compensation, disability, etc. If you did not recover anything, enter $0, or if your case is still pending or has not yet been filed, enter unknown.):</div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Case Number</td>
+                                    <td class="text-center">Who Filed the Claim?</td>
+                                    <td class="text-center">Date Lawsuit or Claim Filed (mm/dd/yyyy)</td>
+                                    <td class="text-center">Claim Pending or Final Decision Issued</td>
+                                    <td class="text-center">Amount Recovered (if final decision has issued)</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="cl_cn1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_wfc1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_dl1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_cpf1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="cl_cn2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_wfc2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_dl2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_cpf2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="cl_cn3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_wfc3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_dl3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_cpf3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="cl_cn4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_wfc4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_dl4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_cpf4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="cl_cn5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_wfc5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_dl5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="cl_cpf5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="cl_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ps-lg-5">k. <b>Income Tax Refunds or Amounts Owed for the Last 2 Years</b> (Enter information about your and your spouse’s federal and state tax returns for the last 2 years. Enter an amount under “Refund” if you received money or “Owed” if you owed additional taxes.):</div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Tax Year (yyyy)</td>
+                                    <td class="text-center">Federal Taxes: Joint or Individual?</td>
+                                    <td class="text-center">Federal Tax Owed</td>
+                                    <td class="text-center">Federal Refund</td>
+                                    <td class="text-center">State Taxes: Joint or Individual?</td>
+                                    <td class="text-center">State Tax Owed</td>
+                                    <td class="text-center">State Refund</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td> <textarea name="it_ty1" class="border-0 form-control" rows="3"></textarea></td>
+                                    <td><div class="small_text"> <input type="radio" name="it_ft1" id="" value="Joint"> Joint </div>
+                                        <div class="small_text"> <input type="radio" name="it_ft1" id="" value="Individual"> Individual </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_fto_val1" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_fto1" id="" value="Paid"> Paid </div>
+                                        <div class="small_text"> <input type="radio" name="it_fto1" id="" value="Not yet paid"> Not yet paid </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_fr_val1" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_fr1" id="" value="Refund received "> Refund received </div>
+                                        <div class="small_text"> <input type="radio" name="it_fr1" id="" value="Not yet paid received"> Not yet paid received </div>
+                                    </td>
+                                    <td>
+                                        <div class="small_text"> <input type="radio" name="it_st1" id="" value="Joint"> Joint </div>
+                                        <div class="small_text"> <input type="radio" name="it_st1" id="" value="Individual"> Individual </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sto_val1" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_sto1" id="" value="Paid"> Paid </div>
+                                        <div class="small_text"> <input type="radio" name="it_sto1" id="" value="Not yet paid"> Not yet paid </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sr_val1" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="checkbox" name="it_sr1" id="" value="Refund received"> Refund received </div>
+                                        <div class="small_text"> <input type="checkbox" name="it_sr1" id="" value="Refund not yet received"> Refund not yet received</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td> <textarea name="it_ty2" class="border-0 form-control" rows="3"></textarea></td>
+                                    <td><div class="small_text"> <input type="radio" name="it_ft2" id="" value="Joint"> Joint </div>
+                                        <div class="small_text"> <input type="radio" name="it_ft2" id="" value="Individual"> Individual </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_fto_val2" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_fto2" id="" value="Paid"> Paid </div>
+                                        <div class="small_text"> <input type="radio" name="it_fto2" id="" value="Not yet paid"> Not yet paid </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_fr_val2" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_fr2" id="" value="Refund received "> Refund received </div>
+                                        <div class="small_text"> <input type="radio" name="it_fr2" id="" value="Not yet paid received"> Not yet paid received </div>
+                                    </td>
+                                    <td>
+                                        <div class="small_text"> <input type="radio" name="it_st2" id="" value="Joint"> Joint </div>
+                                        <div class="small_text"> <input type="radio" name="it_st2" id="" value="Individual"> Individual </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sto_val2" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="radio" name="it_sto2" id="" value="Paid"> Paid </div>
+                                        <div class="small_text"> <input type="radio" name="it_sto2" id="" value="Not yet paid"> Not yet paid </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sr_val2" id="" class="border-0"></div>
+                                        <div class="small_text"> <input type="checkbox" name="it_sr2" id="" value="Refund received"> Refund received </div>
+                                        <div class="small_text"> <input type="checkbox" name="it_sr2" id="" value="Refund not yet received"> Refund not yet received</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ps-lg-5">
+                        2. <b>Parties’ Debts</b> (Enter your and your spouse’s debts including credit cards and past due
+                        bills. Do not
+                        include debt payments previously listed in 1 above, such as your mortgage or car payment. In
+                        “Total
+                        Monthly Debt Payments,” add the monthly payment amounts together and enter the total. If you
+                        have to add an additional page with information, make sure to include those amounts, as well.):
+                    </div>
+
+
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-center">Creditor Name</td>
+                                    <td class="text-center">Describe Nature of Debt (household goods, attorney fees, etc.)</td>
+                                    <td class="text-center">Amount Owed</td>
+                                    <td class="text-center">Monthly Payment Being Made</td>
+                                    <td class="text-center">Non-marital</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">1.</td>
+                                    <td><textarea name="pd_cn1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob1" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm1" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm1" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm1" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">2.</td>
+                                    <td><textarea name="pd_cn2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob2" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm2" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm2" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm2" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">3.</td>
+                                    <td><textarea name="pd_cn3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob3" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm3" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm3" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm3" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    @include('layouts.footer18', ['page' => 5])
 
                 </section>
-                <section class="section_area p-5" id="section_six">
-                    @include('layouts.header1', ['page' =>9])
-                         <div class="table-responsive pt-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                    <tr>
-                                        <td class="small_text">A, U, N/A</td>
-                                        <td class="small_text">Item#</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna6" id="" class="border-0 w-100 responsive_input"></td>
-                                        <td class="small_text">6.</td>
-                                        <td class="small_text">Documentation of benefits accrued in pension, profit sharing, 401(k) or other retirement plans, including most recent statements of each such plan and the name, address and phone number of plan administrator</td>
+                <section class="section_area p-5" id="sixth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered border-dark">
+                            <tbody>
+                                <tr>
+                                    <td class="px-2">4.</td>
+                                    <td><textarea name="pd_cn4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob4" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm4" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm4" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">5.</td>
+                                    <td><textarea name="pd_cn5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob5" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm5" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm5" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm5" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">6.</td>
+                                    <td><textarea name="pd_cn6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob6" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao6" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm6" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm6" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm6" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">7.</td>
+                                    <td><textarea name="pd_cn7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob7" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao7" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm7" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm7" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm7" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">8.</td>
+                                    <td><textarea name="pd_cn8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob8" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao8" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm8" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm8" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm8" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">9.</td>
+                                    <td><textarea name="pd_cn9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob9" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao9" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm9" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm9" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm9" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2">10.</td>
+                                    <td><textarea name="pd_cn10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><textarea name="pd_dnob10" class="border-0 form-control" rows="2"></textarea></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_ao10" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="pd_mpbm10" class="border-0 form-control" rows="2"></textarea></div></td>
+                                    <td>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm10" id="" value="Yes"> Y </div>
+                                        <div class="small_text"> <input type="checkbox" name="pd_nm10" id="" value="No"> N </div>
+                                    </td>
+                                </tr>
 
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna7" id="" class="border-0 w-100 responsive_input"></td>
-                                        <td class="small_text">7.</td>
-                                        <td class="small_text">For each vehicle, provide amount of payoff of any indebtedness (including date payoff amount obtained) and copy of title</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna8" id="" class="border-0 w-100 responsive_input"></td>
-                                        <td class="small_text">8.</td>
-                                        <td class="small_text">For each business interest, list name of business, extent of interest or title in business (i.e.
-                                            owner, shareholder, partner, etc.), provide a copy of last income tax return filed by business
-                                            and documentation of income earned (or portion received) through business during last
-                                            twenty-four (24) months</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna9" id="" class="border-0 w-100 responsive_input"></td>
-                                        <td class="small_text">9.</td>
-                                        <td class="small_text">Provide a list describing any other assets you have an interest in, including any documentation
-                                            as to the value of the non-marital interest, date asset was acquired, and source of non-marital
-                                            interest (trace and document non-marital funds used to acquire each asset)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="as_auna10" id="" class="border-0 w-100 responsive_input"></td>
-                                        <td class="small_text">10.</td>
-                                        <td class="small_text"><b>NON-MARITAL INTEREST.</b> For each asset in which you claim a non-marital interest, provide the basis and approximate value of non-marital claim. Documentation tracing any non-marital asset shall be produced if available, and if not currently available, shall be produced when available, or as specified by separate court order</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex d_sm_block justify-content-end fw-bold">Total Monthly Debt Payments: $ <input type="text" name="tmdp" id="" class="border-0 border-bottom responsive_input"></div>
+                    <div class="fw-bold text-center">PART 2 - INCOME AND EXPENSES</div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3">
+                            <div class="border d-inline-block responsive_input w-75 mb-lg-3 p-lg-2 border-dark">In 4, check all that  apply. Provide all information requested about your jobs, including all full- time, part-time, temporary contract, or other work.</div>
+                            <div class="border d-inline-block responsive_input w-75 p-lg-2 mt-lg-5 mt-3 border-dark"> In 4e, enter your total gross income from all sources from January 1 of this year through the date you fill out this form</div>
                         </div>
-                        <div class="fw-bold pt-3">E. DEBT SCHEDULE</div>
-                        <div class="table-responsive pt-3">
-                            <table class="table table-bordered border-dark">
-                                <tbody>
-                                    <tr>
-                                        <td class="small_text">A, U, N/A</td>
-                                        <td class="small_text">Item#</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="ds_auna1" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">1.</td>
-                                        <td class="small_text">For each debt, provide the last statement or documentation of unpaid balance, or explain why documentation is not available</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" name="ds_auna2" id="" class="border-0  w-100 responsive_input"></td>
-                                        <td class="small_text">2.</td>
-                                        <td class="small_text">For each debt designated as “non-marital”, list the party you think should assume responsibility for said debt and why</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="pt-lg-5 pt-3">
-                            <div class="text-center fw-bold mx-auto">VERIFICATION</div>
-                            <div>I, <input type="text" name="v_dup1" id="" class="border-0 border-bottom responsive_input"> , declare under penalty of perjury that the information contained herein, including the information provided on any schedules and attachments, is true and accurate to the best of my knowledge, information and belief. Further, I acknowledge that I have read the foregoing instructions and have followed those instructions to the best of my ability.</div>
-                            <div class="row">
-                                <div class="co-lg-6"></div>
-                                <div class="col-lg-6">
-                                    <div><input type="text" name="v_dup2" id="" class="border-0 border-bottom responsive_input w-75 "> </div>
-                                    <div><input type="radio" name="verification" value="Petitioner" id=""  > Petitioner <input type="radio" name="verification" value="Respondent" id="" class="ms-lg-3"> Respondent {check one}</div>
+                        <div class="col-lg-9">
+                            <div class="small_text fw-bold">3. Information about other household members:</div>
+                            <div class="ps-lg-5"> currently live with another adult who is not the plaintiff or defendant in this case who helps pay my expenses:
+                                <input type="checkbox" name="ia_clwa" id="" class="me-2" value="Yes"> Yes
+                                <input type="checkbox" name="ia_clwa" id="" class="me-2" value="No"> No
+                            </div>
+                            <div class="small_text fw-bold">4. My employment:</div>
+                            <div class="ps-lg-5"> a. I am
+                                <input type="checkbox" name="" id="" class="mx-2" value="unemployed">unemployed
+                                 <input type="checkbox" name="" id="" class="me-2" value="self-employed"> self-employed
+                                 <input type="checkbox" name="" id="" class="me-2" value="employed by someone else "> employed by someone else
+                                <input type="checkbox" name="" id="" class="me-2" value="retired"> retired
+                            </div>
+                            <div class="ps-lg-5 pt-lg-3">b. Employer name : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:665px;"> </div>
+                            <div class="ps-lg-5 pt-lg-3">c. Employer address : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:645px;"> </div>
+                            <div style="padding-left:230px" class="small_text">Street Address, Apt.</div>
+                            <div class="d-flex d_sm_block d_sm_block ps-lg-5">
+                                <div>
+                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:420px;">
+                                    <div class="small_text">City</div>
+                                </div>
+                                <div>
+                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input">
+                                    <div class="small_text">State</div>
+                                </div>
+                                <div>
+                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input">
+                                    <div class="small_text">Zip</div>
+                                </div>
+                            </div>
+                            <div class="row  pt-lg-3 ps-lg-5">
+                                <div class="col-lg-4">
+                                    <div class="small_text">d. Number of paychecks per year</div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="small_text"> <input type="checkbox" name="" id="" value="12 (monthly)"> 12 (monthly) </div>
+                                    <div class="small_text"> <input type="checkbox" name="" id="" value="24 (two times a month)"> 24 (two times a month) </div>
+                                    <div class="small_text"> <input type="checkbox" name="" id="" value="26 (every two weeks)"> 26 (every two weeks) </div>
+                                    <div class="small_text"> <input type="checkbox" name="" id="" value="52 (weekly)"> 52 (weekly) </div>
+                                    <div class="small_text"> <input type="checkbox" name="" id="" value="I am paid in cash"> I am paid in cash </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-lg-3 ps-lg-5">e. Gross income (before taxes and deductions) so far this year: <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:316px;"></div>
+                            <div class="ps-lg-5">as of <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:323px;"></div>
+                            <div style="padding-left:100px;" class="small_text responsive_input">Date (mm/dd/yyyy) </div>
+                            <div class="fw-bold pt-lg-3">5. My gross income and taxes from last year:</div>
+                            <div class="row  pt-lg-3 ps-lg-5">
+                                <div class="col-lg-4">
+                                    <div class="small_text">a. Tax filing status (check only one):</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="small_text"><input type="checkbox" name="" id="" value="Married (Joint)"> Married (Joint) </div>
+                                    <div class="small_text"><input type="checkbox" name="" id="" value="Married (Separate)"> Married (Separate) </div>
+                                    <div class="small_text"><input type="checkbox" name="" id="" value="Head of Household"> Head of Household </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="small_text"><input type="checkbox" name="" id="" value="Single"> Single </div>
+                                    <div class="small_text"><input type="checkbox" name="" id="" value="Did not file"> Did not file </div>
                                 </div>
                             </div>
                         </div>
-                </section>
-                <section class="section_area p-5" id="section_six">
-                    @include('layouts.header1', ['page' => 10])
-                      <div class="row">
-                          <div class="col-lg-6">
-                            <div class="small_text ">STATE OF <input type="text" name="state_of" id="" class="w-25 border-0 border-bottom responsive_input"></div>
-                            <div class="small_text pt-lg-3">COUNTY OF <input type="text" name="county_of" id="" class="w-25 border-0 border-bottom responsive_input"></div>
-                          </div>
-                          <div class="col-lg-6"></div>
                     </div>
-                    <div>Subscribed and sworn before me by <input type="text" name="subscribed" id="" class="border-0 border-bottom responsive_input"> this <input type="text" name="before_me" id="" class="  border-0 border-bottom responsive_input"> day of <input type="text" name="this_day1" id="" class=" border-0 border-bottom responsive_input">, <input type="text" name="day_of" id="" class="  border-0 border-bottom responsive_input">.</div>
-                    <div>My commission expires <input type="text" name="commisson_expires" id="" class="border-0 border-bottom responsive_input">  </div>
-                    <div class="text-end">  <input type="text" name="notary_public" id="" class="border-0 border-bottom responsive_input"> NOTARY PUBLIC/TITLE  </div>
-                    <div class="py-4 text-center fw-bold">CERTIFICATE OF SERVICE</div>
-                    <div class="small_text">I HEREBY CERTIFY that a copy of this Verified Disclosure Statement (with schedules and attachments) was
-                        served by <input type="checkbox" name="mail_checkbox" value='True' id=""> mail, postage prepaid, or <input type="checkbox" name="hand_delivery_checkbox" value="True" id=""> hand-delivery, or <input type="checkbox" name="electronic_checkbox" value="True" id=""> electronic means, in accordance with Kentucky Rule of Civil
-                        Procedure (CR) 5.02, on (name) <input type="text" name="cos_name" id="" class="border-0 border-bottom responsive_input"> at (address) <input type="text" name="cos_address" id="" class="border-0 border-bottom responsive_input">, this the <input type="text" name="cos_this" id="" class="border-0 border-bottom responsive_input"> day of <input type="text" name="cos_day_of1" id="" class="border-0 border-bottom responsive_input">, <input type="text" name="cos_day_of2" id="" class="border-0 border-bottom responsive_input">.  </div>
+                    @include('layouts.footer18', ['page' => 6])
+
+                </section>
+                <section class="section_area p-5" id="seventh_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3">
+                            <div class="border border-dark d-inline-block responsive_input p-2 mt-3">In 5a-d, enter
+                                the information you
+                                submitted on last year’s IRS tax return. If you did not file a tax return for last year,
+                                check Did not file, leave a-d a.</div>
+                            <div class="border border-dark d-inline-block responsive_input p-2 mt-3">In 7, Regular
+                                employment earnings
+                                mean the gross income you receive on a regular basis from employment.</div>
+                            <div class="border border-dark d-inline-block responsive_input p-2 mt-3">ncome other than
+                                Regular
+                                employment earnings, such as Overtime, Commission, or Bonus should be listed separately.
+                            </div>
+                            <div class="border border-dark d-inline-block responsive_input p-2 mt-3">For Educational
+                                funds, include
+                                fellowships, stipends, gran , scholarships, etc.</div>
+                            <div class="border border-dark d-inline-block responsive_input p-2 mt-3">income other than
+                                Regular
+                                employment earnings, such as Overtime, Commission, or Bonus should be listed separately.
+                            </div>
+                        </div>
+                        <div class="col-lg-9 small_text">
+                            <div class=" ps-lg-3">b. Number of dependent exemptions claimed: <input type="text"
+                                    name="" id="" class="border-0 border-bottom responsive_input">
+                            </div>
+                            <div class="  ps-lg-3 pt-lg-3">c. Total number of exemptions claimed: <input
+                                    type="text" name="" id=""
+                                    class="border-0 border-bottom responsive_input">
+                            </div>
+                            <div class="  ps-lg-3 pt-lg-3">d. Gross income (before taxes and deductions) last year: $
+                                <input type="text" name="" id=""
+                                    class="border-0 border-bottom responsive_input">
+                            </div>
+                            <div class=" p-0" style="padding-left:380px;">Year: <input type="text"
+                                    name="" id="" class="border-0 border-bottom responsive_input">
+                            </div>
+
+                            <div class="fw-bold  ">6. Bankruptcy in the last 5 years:</div>
+                            <div class="ps-lg-3  ">I filed for bankruptcy in the last 5 years: <input
+                                    type="checkbox" name="" id="" value="Yes"> Yes <input
+                                    type="checkbox" name="" id="" value="No"> No</div>
+                            <div class="fw-bold  ">7. <input type="checkbox" name="" id=""
+                                    value="My gross"> My gross <input type="checkbox" name=""
+                                    id="" value="weekly"> weekly <input type="checkbox" name=""
+                                    id="" value="bi-weekly"> bi-weekly <input type="checkbox"
+                                    name="" id="" value="monthly other"> monthly other: <input
+                                    type="text" name="" id=""
+                                    class="border-0 border-bottom responsive_input">
+                                income (before taxes and deductions) is:</div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Employment earnings (salary, wages, self-employed income, etc.)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Overtime</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Commission</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Tips</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Bonus</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Pension and other retirement benefits</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Annuity</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Interest income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Dividend income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Trust income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Social Security (check all that apply): <input type="checkbox" name=""
+                                        id="" value="SSI"> SSI <input type="checkbox" name=""
+                                        id="" value="SSDI"> SSDI retirement</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Unemployment benefits</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Disability payment (not Social Security)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Workers’ compensation</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Military allowances</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Investment income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Rental income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Partnership income</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Distributions and draws </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Royalty income </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Educational funds (include payments made directly to the school)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Spousal support</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Gifts of money</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Other <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text">
+                                <div class="fw-bold  pe-lg-3">Total Gross <input type="checkbox" name=""
+                                        id="" value="Total Gross"> Weekly <input type="checkbox"
+                                        name="" id="" value="Weekly"> Bi-weekly <input
+                                        type="checkbox" name="" id="" value="Bi-weekly ">
+                                    Monthly <input type="checkbox" name="" id=""
+                                        value="Monthly"> Other Income:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    @include('layouts.footer18', ['page' => 7])
+
+                </section>
+                <section class="section_area p-5" id="eighth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
                     <div class="row">
-                        <div class="col-lg-8"></div>
-                        <div class="col-lg-4">
-                            <input type="text" name="cos_signature" id=""  class="border-0 border-bottom responsive_input w-100">
-                            <div class="small_text"> Signature</div>
-                            <div> <input type="checkbox" name="cos_afp" Value="True" id=""> Attorney for Petitioner <input type="checkbox" name="cos_aop" id=""  Value="True"> Attorney for Petitione  <input type="checkbox"  Value="True" name="cos_petitioner" id="">  Petitioner <input type="checkbox"  Value="True" name="cos_eespondent" id=""> Respondent </div>
-                            <div class="">
-                                <div> Address:</div>
-                                <div><input type="text" name="cos_address1" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="cos_address2" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="cos_address3" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div>Phone: ( ) <input type="text" name="cos_phone" class="border-0 border-bottom responsive_input" style="width:292px;"></div>
-                                <div> Fax: ( ) <input type="text" name="cos_fax" class="border-0 border-bottom responsive_input" style="width:316px;"></div>
-                                <div> Email: <input type="text" name="cos_email" class="border-0 border-bottom responsive_input" style="width:320px;"></div>
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-9 small_text">
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div class="fw-bold  pe-lg-3">Other <input type="checkbox" name=""
+                                        id="" value="Other"> Weekly <input type="checkbox"
+                                        name="" id="" value="Weekly"> Bi-weekly <input
+                                        type="checkbox" name="" id="" value="Bi-weekly ">
+                                    monthly (not calculated as income):</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>TANF (Temporary assistance for needy families)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Child support for children of this relationship</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Child support for children not of this relationship</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Foster care payments from DHHS</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text">
+                                <div class="pe-3 fw-bold">Total</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="fw-bold">8. My <input type="checkbox" name="" id=""
+                                    value="My"> weekly <input type="checkbox" name="" id=""
+                                    value="weekly"> bi-weekly <input type="checkbox" name=""
+                                    id="" value="bi-weekly"> monthly <input type="checkbox"
+                                    name="" id="" value="monthly"> other: <input type="text"
+                                    class="border-0 border-bottom responsive_input responsive_input" name=""
+                                    id="" style="width:430px">deductions are :</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3">In 8, use
+                                information from your
+                                paystubs, tax ecords, and other sources to identify all properly calculated deductions.
+                            </div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3">In Total Monthly
+                                Deductions, add
+                                the amounts from 8 together and enter the total.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3">In 9a, enter the
+                                amount your
+                                household spends on each item each month. If you have more than one household for which
+                                you pay expenses, attach an additional page listing the expenses for each additional
+                                household.</div>
+                        </div>
+                        <div class="col-lg-9 small_text">
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Federal tax</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>State tax</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>FICA (or Social Security equivalent)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Medicare tax</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Mandatory retirement contributions (by law or condition of employment)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Union dues </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Health insurance premiums (medical, dental, vision)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Child support actually paid under a court order in a different case</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Spousal support actually paid under a court order in a different case </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Spousal support actually paid or payable under a court order in this case </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Expenditures for repayment of debts that represent reasonable and necessary
+                                    expenses for the production of income including, but not limited to, student
+                                    loans, medical expenditures necessary to preserve life or health, reasonable
+                                    expenditures for the benefit of the child and other parent exclusive of gifts.
+                                </div>
+                                <div> <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:635px;"> </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text">
+                                <div class="fw-bold pe-lg-3">Total <input type="checkbox" name=""
+                                        id="" value="Total"> Weekly Bi-weekly Monthly Other Deductions:
+                                </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
                             </div>
                         </div>
                     </div>
+                    <div class="row mb-4">
 
-                    <div class="text-center fw-bold">*NOTE</div>
-                    <p class="small_text fw-bold">When this form is utilized as an AOC-238, Preliminary Verified Disclosure Statement, unless otherwise ordered by
-                        the Court or required by Local Rule, this form is NOT to be filed with the Court. FCRPP 2(3). However, the entire
-                        form and all attachments are to be exchanged between the parties within 45 days of service of the petition on the
-                        respondent, and objections thereto shall be exchanged within 20 days thereafter.</p>
-                        <p class="small_text fw-bold">When this form is utilized as an AOC-239, Final Verified Disclosure Statement, pursuant to FCRPP 3(3), this form
-                            is to be filed with the Court no later than 5 days prior to the trial if property matters are in dispute at that trial.
-                            However, the parties may file an AOC-239.2, Affidavit of No Change in Circumstances, since the completion of the
-                            AOC-238, Preliminary Verified Disclosure Statement, IF one was filed with the Court. A copy of the Final Verified
-                            Disclosure Statement or the Affidavit, together with any supporting documentation, shall be provided to the
-                            opposing party 15 days prior to trial unless otherwise ordered by the Court.</p>
+                        <div class="col-lg-3">
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3  ">In 9a, enter
+                                the amount your
+                                household spends on each item each month. If you have more than one household for which
+                                you pay expenses, attach an additional page listing the expenses for each additional
+                                household.</div>
+                        </div>
+                        <div class="col-lg-9 small_text">
+                            <div>9. My monthly living expenses are:</div>
+                            <div>a. <b>Hsehld enses</b></div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Mortgage</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Rent</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Home equity (HELOC) and second mortgage</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Real estate taxes</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div> Homeowners or condo association dues and assessments</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Homeowner or renter insurance</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Water and sewer line repair insurance</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Gas</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
 
-                            <div class="buttons py-3">
-                                <div class="d-flex justify-content-around">
-                                    <button class="blue_border px-lg-5" type="button" onclick="window.print()">Print</button>
-                                    <button class="blue_border px-lg-2">Save this form</button>
-                                    <button type="reset" class="blue_border px-lg-2">Reset Form</button>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Heating fuel or oil</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Electric</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Telephone (landline)</div>
+                                <div> $<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Cell phone</div>
+                                <div> $ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Cable or satellite TV</div>
+                                <div> $ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Streaming services</div>
+                                <div>$ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Internet</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Water and sewer</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                        </div>
+                    </div>
+                    @include('layouts.footer18', ['page' => 8])
+
+                </section>
+                <section class="section_area p-5" id="ninth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="row mb-4">
+
+                        <div class="col-lg-3">
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-5  ">In Subtotal
+                                Monthly Household
+                                Expenses, add the amounts in 9a together and enter the total.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-5  ">In 9b, enter
+                                the amount you
+                                spend monthly on each type of transportation expense.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3  ">If you have
+                                other transportation
+                                expenses not listed in 9b, describe in Other and enter the amount.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-5  ">In 9c, enter
+                                the amount you
+                                spend monthly only for yourself on each type of expense. Do not include expenses you are
+                                reimbursed for through insurance or your employer.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3  ">In Subtotal
+                                Monthly Personal
+                                Expenses, add the amounts in 9c together and enter the total.</div>
+                        </div>
+                        <div class="col-lg-9 small_text">
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Garbage removal</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Laundry and dry cleaning</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>House cleaning service</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Necessary repairs and maintenance to my property</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Pet care</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Groceries, household supplies, and toiletries</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end fw-bold small_text">
+                                <div class="pe-lg-3">Subtotal Monthly Household Expenses:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class=" mt-lg-2">b. <b> Transportation Expenses</b></div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Vehicle payment</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Vehicle repairs</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Vehicle maintenance</div>
+                                <div> $<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Insurance</div>
+                                <div> $ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>License</div>
+                                <div> $ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Gasoline</div>
+                                <div>$ <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Taxi, ride share, bus, and train</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Parking</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Registration</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input  "></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
+                                <div class="fw-bold pe-lg-3">Subtotal Monthly Transportation Expenses: </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div>c. <b>Personal expenses</b></div>
+                            <div class="ps-lg-3">
+                                <div>Medical expenses (out of pocket expenses)</div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Doctor visits</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Therapy and counseling</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Dental and orthodontia</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Optical</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Medicine (including prescribed and over-the-counter)</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Life insurance</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="ps-lg-3">
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Life (term)</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Life (whole or annuity) </div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
                                 </div>
                             </div>
-                            @include('layouts.pagination', ['page' => 23])
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Clothing </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Grooming (hair, nails, spa, etc.) </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Club membership dues</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Periodical/Newspaper subscription(s)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"> </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
+                                <div class="fw-bold pe-lg-3 ">Subtotal Monthly Personal Expenses:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    @include('layouts.footer18', ['page' => 9])
+
                 </section>
+                <section class="section_area p-5" id="tenth_section">
+                    <div class="fw-bold text-center">MAINE JUDICIAL BRANCH</div>
+                    <div class="row mb-5">
+
+                        <div class="col-lg-3">
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-5  ">In 9d, enter
+                                the amount spent
+                                monthly on the minor and dependent children of this relationship.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-5  ">In Medical, do
+                                not include
+                                expenses you are reimbursed for through insurance or your employer.</div>
+                            <div class="border border-dark p-3 d-inline-block responsive_input mt-3  ">If there are
+                                other child-
+                                related expenses not listed in 9d, describe the expense in Other and enter the amount.
+                            </div>
+                        </div>
+                        <div class="col-lg-9 small_text">
+                            <div>d. <b>Minor and Dependent Children Expenses</b></div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Child care (including before and after school care)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Clothing</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div>Education</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="ps-lg-3">
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Tuition</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Books, fees, and supplies</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">School lunch</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Tutoring</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Other education: <input type="text" name=""
+                                            id=""
+                                            class="border-0 border-bottom responsive_input responsive_input"
+                                            style="width:535px"></div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Medical (out of pocket expenses)</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="ps-lg-3">
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Doctor visits</div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+
+                                <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                    <div class=" ">Therapy or counseling </div>
+                                    <div>$<input type="text" name="" id=""
+                                            class="border-0 border-bottom responsive_input"></div>
+                                </div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Dental or orthodontia </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Optical</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Medicine/prescriptions</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Other medical: <input type="text" name=""
+                                        id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:565px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+
+
+
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Extra-curricular activities/lessons/sports fees </div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
+                                <div class=" ">Other: <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
+                                <div class="fw-bold pe-lg-3 ">Subtotal Monthly Children Expenses:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 ">
+                                <div class="fw-bold pe-lg-3 ">TOTAL MONTHLY LIVING EXPENSES:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 mt-2 ">
+                                <div class="fw-bold pe-lg-3 ">(add together subtotals from subsections a – d)</div>
+                                <div> <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input invisible"></div>
+
+                            </div>
+                            <div class="mt-lg-2">e. <b>Miscellaneous/Lump Sum Expenses</b> (costs in past 12 months)
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3 ">
+                                <div class="fw-bold pe-lg-3 ">Vacation</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3  ">
+                                <div class=" ">Gifts</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3  ">
+                                <div class=" ">Other <input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input responsive_input"
+                                        style="width:615px;"></div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+
+                            </div>
+                            <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 ">
+                                <div class="fw-bold pe-lg-3 ">Total Miscellaneous Expenses for Past 12 Months:</div>
+                                <div>$<input type="text" name="" id=""
+                                        class="border-0 border-bottom responsive_input"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pt-lg-5">
+
+                        @include('layouts.footer18', ['page' => 10])
+                    </div>
+
+                </section>
+                <section class="section_area p-5" id="eleventh_section">
+
+                    <div class="text-center fw-bold">MAINE JUDICIAL BRANCH</div>
+                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I hereby certify
+                        that the information in this Financial Statement is complete and is based on my personal
+                        knowledge,
+                        information, and belief.</div>
+                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I certify that I
+                        will send the opposing party complete copies of this Financial Statement, my federal tax returns
+                        for the
+                        last two years, and my three most recent paystubs,<b> not later than three days before
+                            mediation.</b></div>
+                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I swear under
+                        penalty of perjury that the above statements are true and correct. I understand that these
+                        statements
+                        are made for use as evidence in court and that I am subject to prosecution for perjury
+                        punishable by up to 5 years in
+                        prison and a fine of up to $5,000.00 for giving false information to the court.</div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>Date (mm/dd/yyyy): <input type="date" name=""
+                                    class="border-0 border-bottom responsive_input w-50" id=""></div>
+                            <div class="mt-lg-4">Attorney: <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input" style="width:420px;" id=""></div>
+                            <div>Bar No.: <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input w-75" id=""></div>
+                            <div>Address: <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
+                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
+                                    type="text" name=""
+                                    class="border-0 border-bottom responsive_input w-100" id=""></div>
+                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
+                                    type="text" name=""
+                                    class="border-0 border-bottom responsive_input w-100" id=""></div>
+                            <div>Telephone: <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input  " style="width:410px;" id=""></div>
+                            <div>Email: <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div> <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input" style="width:495px;" id="">
+                                <div class="small_text "> Signature of <input type="checkbox" name=""
+                                        id="" value="Plaintiff"> Plaintiff <input type="checkbox"
+                                        name="" id="" value="Defendant"> Defendant</div>
+                            </div>
+                            <div class="mt-lg-4">Name: <input type="text" name=""
+                                class="border-0 border-bottom responsive_input" style="width:440px;" id="">
+                            <div class="small_text"> <input type="checkbox" name="" id="" value="Address is confidential"> Address is confidential (if so, leave blank below) </div></div>
+
+                        <div>Address: <input type="text" name=""
+                                class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
+                        <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
+                                type="text" name=""
+                                class="border-0 border-bottom responsive_input w-100" id=""></div>
+
+                        <div>Telephone: <input type="text" name=""
+                                class="border-0 border-bottom responsive_input  " style="width:410px;" id=""></div>
+                        <div>Email: <input type="text" name=""
+                                class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
+                        </div>
+                    </div>
+                    <div class="text-center fw-bold py-lg-3">STATE OF MAINE</div>
+                    <div><input type="text" name="" id=""
+                            class="border-0 border-bottom responsive_input">County</div>
+                    <div class="mt-lg-3">Personally appeared the above-named party <input type="text"
+                            name="" id="" class="border-0 border-bottom responsive_input"> , and
+                        made oath that
+                        the foregoing statements are true under penalty of perjury.</div>
+                    <div class="row mt-lg-3 mb-5">
+                        <div class="col-lg-6">
+                            <div>Date (mm/dd/yyyy): <input type="date" name=""
+                                    class="border-0 border-bottom responsive_input w-50" id=""></div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div> <input type="text" name=""
+                                    class="border-0 border-bottom responsive_input w-75" id="">
+                                <div class="small_text "> <input type="checkbox" name="" id=""
+                                        value="Attorney at Law"> Attorney at Law <input type="checkbox"
+                                        name="" id="" value="Notary Public"> Notary Public <input
+                                        type="checkbox" name="" id="" value="Clerk"> Clerk
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-lg-5">
+
+                        @include('layouts.footer18', ['page' => 11])
+                    </div>
+                </section>
+                <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success px-4">Save</button>
+                    </div>
+                    <div class="pt-3">
+                        <button type="button" class="btn btn-dark px-4">Back</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+            <option value="#fifth_section">Fifth Section</option>
+            <option value="#sixth_section">Sixth Section</option>
+            <option value="#seventh_section">Seventh Section</option>
+            <option value="#eighth_section">Eighth Section</option>
+            <option value="#ninth_section">Ninth Section</option>
+            <option value="#tenth_section">Tenth Section</option>
+            <option value="#eleventh_section">Eleventh Section</option>
+        </select>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
+3179

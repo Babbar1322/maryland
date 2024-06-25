@@ -6,6 +6,8 @@ use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\ct_long_form;
 use App\Models\ct_long_form_data;
+use App\Models\ct_short_form;
+use App\Models\ct_short_form_data;
 use App\Models\fa_4139_form;
 use App\Models\fa_4139_form_data;
 use App\Models\fam108_current_form;
@@ -272,15 +274,15 @@ class FormController extends Controller
           // fm006-short  CT.pdf
 
 
-        $ct_short = new cc320_form();
+        $ct_short = new ct_short_form();
         $ct_short->save();
 
         foreach($request->all() as $key=>$req){
             if($key == "_token"){
                 continue;
             }
-            $ct_short_data = new cc320_form_data();
-            $ct_short_data->cshort_form_id = $ct_short->id;
+            $ct_short_data = new ct_short_form_data();
+            $ct_short_data->ct_form_id = $ct_short->id;
             $ct_short_data->keyss = $key;
             $ct_short_data->valuess= $req;
             $ct_short_data->save();
@@ -707,8 +709,13 @@ class FormController extends Controller
 
 
     public function form24() {
-        // ME financial statement MJB-Form-fm-043 (1).pdf
+        // ME financial statement MJB-Form-fm-043 .pdf
         return view('form24');
+    }
+
+    public function form24_post(Request $request) {
+        // ME financial statement MJB-Form-fm-043 .pdf
+        dd('comming soon');
     }
 
 }

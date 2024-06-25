@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-        .backdrop_filter{
+        .backdrop_filter {
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
+
         a {
             color: black !important;
         }
@@ -270,6 +271,7 @@
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
@@ -279,14 +281,15 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1">
+        <form action="{{ route('form12.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1">
 
-            <form action="{{ route('form12.submit') }}" method="post">
-                @csrf
                 <section class="section_area p-5" id="first_section">
                     @if (session('success'))
                         <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
                         </div>
                     @endif
                     <div class="row">
@@ -452,14 +455,17 @@
                 <section class="section_area px-lg-5 px-2 pt-5" id="second_section">
                     <div class="pt-5">
                         <div class="ps-lg-5">
-                            <div class=""> <input type="text" name="afraid_other_party_val2" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="afraid_other_party_val2"
+                                    class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="ps-lg-5">
-                            <div class=""> <input type="text" name="afraid_other_party_val3" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="afraid_other_party_val3"
+                                    class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="ps-lg-5 pb-3">
 
-                            <div class=""> <input type="text" name="afraid_other_party_val4" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="afraid_other_party_val4"
+                                    class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
 
                         <div class="fw-bold">3. Information Regarding The Minor Joint Children</div>
@@ -657,10 +663,12 @@
                 <section class="section_area  px-lg-5 px-2" id="third_section">
                     <div class="table-responsive pt-5">
                         <div class="d-flex ps-lg-5">If yes, where?
-                            <div class=""> <input type="text" name="employed_where" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="employed_where"
+                                    class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <div class="d-flex ps-lg-5">Length of employment?
-                            <div class=""> <input type="text" name="employed_length" class="border-0 border-bottom w-100 footer_field"> </div>
+                            <div class=""> <input type="text" name="employed_length"
+                                    class="border-0 border-bottom w-100 footer_field"> </div>
                         </div>
                         <table class="table-bordered mt-1 border-black table  my-lg-1">
                             <tbody>
@@ -680,9 +688,10 @@
                                         retirement, survivors' benefit) </td>
                                     <td class="">
                                         <div class="d-flex w-100">
-                                        <span>$</span>
-                                        <input type="text" name="social_security_received" class="border-0 w-100">
-                                    </div>
+                                            <span>$</span>
+                                            <input type="text" name="social_security_received"
+                                                class="border-0 w-100">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -726,7 +735,8 @@
                                     <td class="small_text">Spousal Maintenance Received</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="spousal_maintenance_received" class="border-0 w-100">
+                                        <input type="text" name="spousal_maintenance_received"
+                                            class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Military and Naval Retirement </td>
                                     <td class="d-flex w-100">
@@ -907,9 +917,9 @@
                                     <td class="small_text">Medical and Dental Expenses (not covered by insurance)</td>
                                     <td class="">
                                         <div class="d-flex w-100">
-                                        <span>$</span>
-                                        <input type="text" name="medical_and_dental_expenses"
-                                            class="border-0 w-100">
+                                            <span>$</span>
+                                            <input type="text" name="medical_and_dental_expenses"
+                                                class="border-0 w-100">
                                         </div>
                                     </td>
                                 </tr>
@@ -1144,11 +1154,16 @@
                                         class="border-0 w-100 border-bottom footer_field"></div>
                                 <div class="d-flex pt-1">$<input type="text" name="purchase_price2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2" class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2" class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2" class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2" class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="rental_income2" class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2"
+                                        class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2"
+                                        class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2"
+                                        class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2"
+                                        class="border-0 w-100 border-bottom footer_field"> </div>
+                                <div class="d-flex pt-1">$<input type="text" name="rental_income2"
+                                        class="border-0 w-100 border-bottom footer_field"> </div>
                             </div>
                         </div>
                     </div>
@@ -1679,7 +1694,8 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                         <label for="">Date:</label>
-                                        <input type="text" name="date" class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
+                                        <input type="text" name="date"
+                                            class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                 </div>
                             </div>
@@ -1828,23 +1844,31 @@
                         </div>
                     </div>
                     @include('layouts.footer8', ['page' => 8])
-                    @include('layouts.pagination', ['page' => 12 ])
+                    @include('layouts.pagination', ['page' => 12])
                 </section>
-            </form>
-        </div>
-        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
-            <select name="" id="" class="sectionSelect form-select  mx-auto ">
-                <option value="" disabled selected>Select a section</option>
-                <option value="#first_section">First Section</option>
-                <option value="#second_section">Second Section</option>
-                <option value="#third_section">Third Section</option>
-                <option value="#fourth_section">Fourth Section</option>
-                <option value="#fifth_section">Fifth Section</option>
-                <option value="#sixth_section">Sixth Section</option>
-                <option value="#seventh_section">Seventh Section</option>
-                <option value="#eighth_section">Eighth Section</option>
-            </select>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+            <option value="#fifth_section">Fifth Section</option>
+            <option value="#sixth_section">Sixth Section</option>
+            <option value="#seventh_section">Seventh Section</option>
+            <option value="#eighth_section">Eighth Section</option>
+        </select>
+    </div>
     </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

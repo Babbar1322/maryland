@@ -13,7 +13,7 @@ class CreateCc320FormDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('7_cc320_form_datas', function (Blueprint $table) {
+        Schema::create('6_cc320_form_datas', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("cshort_form_id");
             $table->string("keyss");
@@ -30,6 +30,6 @@ class CreateCc320FormDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('7_cc320_form_datas');
+        Schema::dropIfExists('6_cc320_form_datas');
     }
 }

@@ -35,7 +35,6 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
 
         }
 
@@ -268,9 +267,9 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form14.submit') }}" method="post">
-                @csrf
+        <form action="{{ route('form14.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1  ">
                 <section class="section_area" id="first_section">
 
                     <div class="row  px-lg-5 px-2 pt-2">
@@ -287,7 +286,7 @@
                                 <div class="col">
                                     <div class="d-flex  ">
                                         <div class="small_text">STATE BAR NUMBER:</div>
-                                        <div> <input type="text" name="state_bar_no" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].BarNo_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -295,45 +294,78 @@
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">NAME:</div>
-                                        <div> <input type="text" name="name" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyName_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">FIRM NAME:</div>
-                                        <div> <input type="text" name="f_name" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyFirm_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">STREET ADDRESS:</div>
-                                        <div> <input type="text" name="s_address" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyStreet_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="d-flex d_sm_block">
-                                        <div class="small_text">CITY :</div>
-                                        <div> <input type="text" name="city" class="border-0 table_input "></div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="d-flex">
+                                            <div class="d-flex d_sm_block">
+                                                <div class="small_text">CITY :</div>
+                                                <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyCity_ft[0]" class="border-0 table_input "></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="d-flex  ">
+                                            <div class="small_text">STATE:</div>
+                                            <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyState_ft[0]" class="border-0 table_input "></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="d-flex  ">
+                                            <div class="small_text">ZIP CODE:</div>
+                                            <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyZip_ft[0]" class="border-0 table_input "></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-flex">
+                                            <div class="d-flex d_sm_block">
+                                                <div class="small_text">TELEPHONE NO :</div>
+                                                <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Phone_ft[0]" class="border-0 table_input "></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex  ">
+                                            <div class="small_text">FAX NO:</div>
+                                            <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Fax_ft[0]" class="border-0 table_input "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">TELEPHONE NO :</div>
                                         <div> <input type="text" name="tel" class="border-0 table_input "></div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">EMAIL ADDRESS NO :</div>
-                                        <div> <input type="text" name="email" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Email_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">ATTORNEY FOR (name):</div>
-                                        <div> <input type="text" name="attorney_name" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyFor_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -341,31 +373,31 @@
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class=" ">SUPERIOR COURT OF CALIFORNIA, COUNTY OF</div>
-                                        <div> <input type="text" name="county_of" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].CrtCounty_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">STREET ADDRESS:</div>
-                                        <div> <input type="text" name="street_address" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].Street_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">MAILING ADDRESS:</div>
-                                        <div> <input type="text" name="mailing_address" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].MailingAdd_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">CITY AND ZIP CODE:</div>
-                                        <div> <input type="text" name="zip_code" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].CityZip_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block">
                                         <div class="small_text">BRANCH NAME:</div>
-                                        <div> <input type="text" name="branch_name" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CourtInfo[0].Branch_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -373,19 +405,19 @@
                                 <div class="">
                                     <div class="d-flex d_sm_block ps-lg-5">
                                         <div class="small_text">PETITIONER:</div>
-                                        <div> <input type="text" name="petitioner1" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].Party1_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block ps-lg-5">
                                         <div class="small_text">RESPONDENT:</div>
-                                        <div> <input type="text" name="respondent1" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].Party2_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex d_sm_block ps-lg-5">
                                         <div class="small_text">OTHER PARENT/PARTY:</div>
-                                        <div> <input type="text" name="other_party1" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].TitlePartyName[0].Party3_ft[0]" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -401,7 +433,7 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number1" class="border-0 table_input w-100">
+                            <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 table_input w-100">
                         </div>
                     </div>
                     <div class="px-lg-5 px-2">
@@ -413,50 +445,50 @@
                             <div class="col-lg-10">
                                 <div class="d-flex d_sm_block">
                                     <small> a. Employer: </small>
-                                   <input type="text" name="e_employer" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].Employer_tf[0]" class="border-0 w-75">
                                 </div>
 
                                 <div class="d-flex d_sm_block">
                                     <small> b. Employer's Address: </small>
-                                   <input type="text" name="e_employer_address" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].Employer_address_tf[0]" class="border-0  w-75 ">
                                 </div>
 
                                 <div class="d-flex d_sm_block">
                                     <small> c. Employer's phone number: </small>
-                                   <input type="text" name="e_employer_phone" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].Employer_phone\.ft[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> d. Occupation:</small>
-                                   <input type="text" name="e_occupation" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].Party_occupation_tf[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> e. Date job started:</small>
-                                   <input type="text" name="e_date_jobstart" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].Date_started_job_tf[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> f. If unemployed, date job ended :</small>
-                                   <input type="text" name="e_date_jobend" class="border-0  w-75 ">
+                                   <input type="text" name="FL-150[0].Page1[0].FillText1[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> g. I work about</small>
-                                   <input type="text" name="e_workabout" class="border-0  w-25 ">
+                                   <input type="text" name="FL-150[0].Page1[0].hours_tf[0]" class="border-0  w-25 ">
                                    <small> hours per week:</small>
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> h. I get paid</small>
-                                   <input type="text" name="e_paid" class="border-0  w-25 ">
+                                   <input type="text" name="FL-150[0].Page1[0].gross_tf[0]" class="border-0  w-25 ">
                                    <small> gross (before texes):</small>
                                    <span class="d-flex d_sm_block ps-3">
                                     <div class="d-flex pe-4">
-                                        <input type="checkbox" name="e_per_month" value="Yes" class="me-1">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Gross_cb[0]" value="Yes" class="me-1">
                                         <div>Per month</div>
                                     </div>
                                     <div class="d-flex pe-4">
-                                        <input type="checkbox" name="e_per_week" value="No" class="me-1">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Gross_cb[1]" value="No" class="me-1">
                                         <div>per week</div>
                                     </div>
                                     <div class="d-flex">
-                                        <input type="checkbox" name="e_per_hour" value="No" class="me-1">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Gross_cb[2]" value="No" class="me-1">
                                         <div>per hour</div>
                                     </div>
                                 </span>
@@ -467,49 +499,41 @@
                         <div class="pt-2 fw-bold">2 Age and education</div>
                         <div class="row ps-lg-3">
                             <div class="d-flex">
-                                <small> a.<input type="checkbox" name="ane_taxes" value="Yes" class="border-0 mx-2"> </small>
-                               <small>I last filed taxes for tax year (specify year):</small>
+                                <small> a.<input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[4]" value="Yes" class="border-0 mx-2"> </small>
+                               <small>I last filed taxes for tax year (specify year): <input type="text" name="FL-150[0].Page1[0].FillText109[4]"   class="border-0"> </small>
                             </div>
                             <div class="d-flex d_sm_block">
-                                <small> b. My tax filing status is</small>
+                                <small> b. I have completed high school or the equivalent </small>
                                 <small> gross (before texes):</small>
-                               <span class="d-flex d_sm_block ps-3">
-                                    <div class="d-flex    pe-4">
-                                        <input type="checkbox" name="ane_single" value="Yes" class="me-1">
-                                        <div>Single</div>
+                               <span class="d-flex d_sm_block   ps-3">
+                                    <div class="d-flex  pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].HSchl_cb[0]" value="Yes" class="me-1">
+                                        <div>Yes</div>
                                     </div>
-                                    <div class="d-flex pe-4">
-                                        <input type="checkbox" name="ane_household" value="Yes" class="me-1">
-                                        <div>Head of household</div>
+                                    <div class="d-flex  pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].HSchl_cb[1]" value="No" class="me-1">
+                                        <div>No</div>
+                                    </div>
+                                    <div class="">If no, highest grade completed (specify):<input type="text" name="FL-150[0].Page1[0].FillText1[2]" class="me-1 border-0"> </div>
+                                </span>
 
-                                    </div>
-                                    <div class="d-flex pe-4">
-                                        <input type="checkbox" name="ane_married" value="Yes" class="me-1">
-                                        <div>Married, filling separately</div>
-
-                                    </div>
-                                    <div class="d-flex pe-4">
-                                        <input type="checkbox" name="ane_married_joint" value="Yes" class="me-1">
-                                        <div>Married, filling jointly with (specify name):</div>
-                                    </div>
-                                 </span>
                             </div>
                             <div class="d-flex d_sm_block">
-                                <small> c.  Number of years of college completed (specify) : </small>
+                                <small> c.  Number of years of college completed (specify) : <input type="text" name="FL-150[0].Page1[0].FillText1[3]" class="me-1 border-0"> </small>
                                  <span class="d-flex ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ane_degree_college" value="Yes" class="me-1">
-                                        <div>Degree(s) obtained (specify)</div>
+                                        <input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[0]" value="Off" class="me-1">
+                                        <div> Degree(s) obtained (specify): <input type="text" name="FL-150[0].Page1[0].FillText109[0]" class="me-1 border-0"></div>
                                     </div>
                                 </span>
                             </div>
 
                             <div class="d-flex d_sm_block">
-                                <small>d.  Number of years of graduate school completed (specify) :</small>
+                                <small>d.  Number of years of graduate school completed (specify) : <input type="text" name="FL-150[0].Page1[0].FillText1[4]" class="me-1 border-0"></small>
                                  <span class="d-flex ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ane_degree_school" value="Yes" class="me-1">
-                                        <div>Degree(s) obtained (specify)</div>
+                                        <input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[1]" value="Yes" class="me-1">
+                                        <div>Degree(s) obtained (specify): <input type="text" name="FL-150[0].Page1[0].FillText109[1]" class="me-1 border-0"></div>
                                     </div>
                                 </span>
                             </div>
@@ -517,12 +541,12 @@
                                 <small>e. I have</small>
                                  <span class="d-flex d_sm_block ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ane_professional_license" value="Yes" class="me-1">
-                                        <div>Professional/occupational license(s) (specify)</div>
+                                        <input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[2]" value="Yes" class="me-1">
+                                        <div>Professional/occupational license(s) (specify) : <input type="text" name="FL-150[0].Page1[0].FillText109[2]" class="me-1 border-0"></div>
                                     </div>
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="vocational_training" value="Yes" class="me-1">
-                                        <div>Vocational training (specify)</div>
+                                        <input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[3]" value="Yes" class="me-1">
+                                        <div>Vocational training (specify): <input type="text" name="FL-150[0].Page1[0].FillText109[3]" class="me-1 border-0"></div>
                                     </div>
                                 </span>
                             </div>
@@ -531,60 +555,70 @@
                         <div class="row ps-lg-3">
                             <div class="d-flex d_sm_block" >
                                 <small> a. My age is (specify): </small>
-                               <input type="text" name="ti_age" class="border-0  w-75 ">
+                               <input type="text" name="FL-150[0].Page1[0].FillText1[1]" class="border-0  w-75 ">
                             </div>
-
                             <div class="d-flex d_sm_block">
-                                <small> b. I have completed high school or the equivalent </small>
+                                <small> b. My tax filing status is</small>
                                 <small> gross (before texes):</small>
-                               <span class="d-flex d_sm_block   ps-3">
-                                    <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ti_school_equivalent" value="Yes" class="me-1">
-                                        <div>Yes</div>
+                               <span class="d-flex d_sm_block ps-3">
+                                    <div class="d-flex pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Tax_cb[0]" value="Off" class="me-1">
+                                        <div>Single</div>
                                     </div>
-                                    <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ti_school_equivalent" value="No" class="me-1">
-                                        <div>No</div>
-                                    </div>
-                                    <div class="">If no, highest grade completed (specify)</div>
-                                </span>
+                                    <div class="d-flex pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Tax_cb[1]" value="Off" class="me-1">
+                                        <div>Head of household</div>
 
+                                    </div>
+                                    <div class="d-flex pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].Tax_cb[2]" value="Off" class="me-1">
+                                        <div>Married, filling separately</div>
+
+                                    </div>
+                                    <div class="d-flex pe-4">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].RB2Choices[5]" value="Off" class="me-1">
+                                        <div>Married, filling jointly with (specify name):</div>
+                                    </div>
+                                 </span>
                             </div>
+                            {{-- --}}
                             <div class="d-flex d_sm_block">
                                 <small> c. I file state tax returns in </small>
                                  <span class="d-flex d_sm_block ps-3">
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ti_california" value="Yes" class="me-1">
+                                        <input type="checkbox" name="FL-150[0].Page1[0].TaxSt_cb[0]" value="Off" class="me-1">
                                         <div>California</div>
                                     </div>
                                     <div class="d-flex  pe-4">
-                                        <input type="checkbox" name="ti_othername" value="Yes" class="me-1">
-                                        <div>other (specify name)</div>
+                                        <input type="checkbox" name="FL-150[0].Page1[0].TaxSt_CB[0]" value="Yes" class="me-1">
+                                        <div>other (specify name) : <input type="text" name="FL-150[0].Page1[0].FillText109[5]" class="me-1 border-0"></div>
                                     </div>
                                 </span>
                             </div>
 
                             <div class="d-flex">
-                                <small>d.  I claim the following number of exemptions (including myself) on my taxes (specify)</small>
+                                <small>d.  I claim the following number of exemptions (including myself) on my taxes (specify) : <input type="text" name="L-150[0].Page1[0].FillText1[5]" class="border-0"></small>
 
                             </div>
                         </div>
-                        <div class="pt-2 f ">4. <b>Other party’s Income.</b> I estimate the gross monthly income (before taxes) of the other party in this case at (specify) : $ This estimate is based on (explain)</div>
+                        <div class="pt-2 f ">4. <b>Other party’s Income.</b> I estimate the gross monthly income (before taxes) of the other party in this case at (specify) : $ <input type="text" name="FL-150[0].Page1[0].FillText1[6]"  class="border-0" id=""></div>
+                        <small class="ps-lg-3">This estimate is based on (explain) <input type="text" name="FL-150[0].Page1[0].FillText1[7]" class="border-0"></small>
+
                         <div class="row ps-lg-3">
                             <div class="fw-bold">(If you need more space to answer any questions on tis form, attach an 8 1/2-by-11-inch sheet of paper and write the question number before your answer.) </div>
                             <div class="d-flex d_sm_block">
                                 <small> Number of pages attached:</small>
-                               <input type="text" name="opi_page_attached" class="border-0 border-bottom responsive_input footer_field  w-75">
+                               <input type="text" name="FL-150[0].Page1[0].FillText1[8]" class="border-0 border-bottom responsive_input footer_field  w-75">
                             </div>
                         </div>
                         <div><small>I declare under penalty of perjury under the laws of the State of California that the information contained on all pages of this form and any attachments is true  and correct</small></div>
                         <div class="d-flex">
                             <div class="  me-2">Date</div>
-                            <div> <input type="text" name="opi_date" class="border-0 border-bottom responsive_input footer_field"></div>
+                            <div> <input type="text" name="FL-150[0].Page1[0].FillText1140[0]" class="border-0 border-bottom responsive_input footer_field"></div>
                         </div>
                             <div class="row  ">
                                 <div class="col-lg-6">
-                                        <div> <input type="text" name="opi_print_name" class="border-0 border-bottom form-control footer_field "></div>
+                                        <div> <input type="text" name="FL-150[0].Page1[0].FillText56[0]" class="border-0 border-bottom form-control footer_field "></div>
                                         <div class="small_text text-center">(TYPE OR PRINT NAME)</div>
                                         </div>
                                         <div class="col-lg-6">
@@ -596,9 +630,7 @@
                     </div>
 
                 </section>
-
                 <section class="section_area pt-5" id="second_section">
-
                     <div class="row px-lg-5 px-2 py-2 pt-5">
                         <div class="small_text text-end fw-bold">FL-150</div>
 
@@ -640,51 +672,51 @@
                             <h6 class="responsive_input">b. Overtime (gross, before taxes) .......................................................................................................</h6>
                             <h6 class="responsive_input">c. Commissions or bonuses ...............................................................................................................</h6>
                             <h6 class="d-flex">d. Public assistance (for example : TANF, SSI, GA/GR)   <div class="d-flex ps-2  ">
-                                <div> <input type="checkbox" name="currently_receiving" value="Yes" class="border-0 table_input "></div>
+                                <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[0]" value="Yes" class="border-0 table_input "></div>
                                 <div class="small_text ps-2">Currently receiving </div>
                             </div> ............................</h6>
                             <h6 class="d-flex d_sm_block">e. Spousal support
                                  <div class="d-flex ps-2  ">
-                                   <div> <input type="checkbox" name="this_marriage" value="Yes" class="border-0 table_input "></div>
+                                   <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[1]" value="Yes" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">From this marriage</div>
                                 </div>
                                  <div class="d-flex ps-2  ">
-                                   <div> <input type="checkbox" name="different_marriage" value="Yes" class="border-0 table_input "></div>
+                                   <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[2]" value="Yes" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">From a different marriage</div>
                                 </div>
                                  <div class="d-flex ps-2  ">
-                                   <div> <input type="checkbox" name="federally_taxable" value="Yes" class="border-0 table_input "></div>
+                                   <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[12]" value="Yes" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">Federally taxable*</div>
                                 </div>..</h6>
                             <h6 class="d-flex d_sm_block">f. Partner  support
                                  <div class="d-flex ps-2">
-                                   <div> <input type="checkbox" name="this_partnership" value="Yes" class="border-0 table_input "></div>
+                                   <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[3]" value="Yes" class="border-0 table_input "></div>
                                     <div class="small_text ps-2">From this domestic partnership</div>
                                 </div>
                                  <div class="d-flex ps-2">
-                                   <div> <input type="checkbox" name="different_partnership" value="Yes" class="border-0 table_input "></div>
+                                   <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[4]" value="Yes" class="border-0 table_input "></div>
                                    <div class="small_text ps-2">From a different domestic partnership</div>.</div>
                             </h6>
                              <h6 class="responsive_input">g. Pension/retirement fund payments ..............................................................................................</h6>
                             <h6 class="responsive_input">h . Social Security retirement (not SSI) ..........................................................................................</h6>
                             <h6 class="d-flex d_sm_block">i. Disability
                                 <div class="d-flex ps-2">
-                                  <div> <input type="checkbox" name="social_security" class="border-0 table_input "></div>
+                                  <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[5]" class="border-0 table_input "></div>
                                    <div class="small_text ps-2">Social Security (not SSI)</div>
                                </div>
                                 <div class="d-flex ps-2">
-                                  <div> <input type="checkbox" name="state_disability" class="border-0 table_input "></div>
+                                  <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[6]" class="border-0 table_input "></div>
                                   <div class="small_text ps-2">State disability (SDI)</div>
                                 </div>
                                 <div class="d-flex ps-2">
-                                  <div> <input type="checkbox" name="private_insurance" class="border-0 table_input "></div>
+                                  <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[7]" class="border-0 table_input "></div>
                                   <div class="small_text ps-2">Private insurance</div>
                                 </div>
                                 ............
                            </h6>
                             <h6 class="responsive_input">j. Unemployment compensation  .....................................................................................................</h6>
                             <h6 class="responsive_input">k. Workers’ compensation..............................................................................................................</h6>
-                            <h6 class="responsive_input">l. Other (military allowances, royalty payments) (specify) </h6>
+                            <h6 class="responsive_input">l. Other (military allowances, royalty payments) (specify) : <input type="text" name="FL-150[0].#subform[1].Page2[0].FillText1[1]" id="" class="border-0"> </h6>
                         </div>
                         <div class="col-lg-3">
                             <div class="text-center">Last Month</div>
@@ -837,16 +869,16 @@
                     <div class="row pt-3 pt-lg-0">
                         <h6 class="d-flex d_sm_block ps-lg-5"> I am the
                             <div class="d-flex ps-2">
-                              <div> <input type="checkbox" name="ii_owner_proprietor" class="border-0 table_input "></div>
+                              <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[8]" class="border-0 table_input "></div>
                                <div class="small_text ps-2">owner/sole proprietor</div>
                            </div>
                             <div class="d-flex ps-2  ">
-                              <div> <input type="checkbox" name="ii_business_partner" class="border-0 table_input "></div>
+                              <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[9]" class="border-0 table_input "></div>
                                <div class="small_text ps-2">business partner</div>
                            </div>
                             <div class="d-flex ps-2  ">
-                              <div> <input type="checkbox" name="ii_specify_state" class="border-0 table_input "></div>
-                               <div class="small_text ps-2">other (specify state):</div>
+                              <div> <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].RB2Choices[0]" class="border-0 table_input "></div>
+                               <div class="small_text ps-2">other (specify state): <input type="text" name="FL-150[0].#subform[1].Page2[0].FillText109[0]" class="border-0" id=""></div>
                            </div>
                         <input type="text" class="border-0 footer_field w-50 ">
                         </h6>
@@ -855,26 +887,26 @@
                             <div class="d-flex">
                                 <div class="small_text">Number of years in this business (specify):</div>
                             </div>
-                        <input type="text" name="ii_noyb" class="border-0 footer_field w-75 ">
+                        <input type="text" name="FL-150[0].#subform[1].Page2[0].FillText1[2]" class="border-0 footer_field w-75 ">
                         </h6>
                         <h6 class="d-flex d_sm_block ps-lg-5">
 
                             <div class="d-flex">
                                 <div class="small_text">Name of business (specify):</div>
                             </div>
-                        <input type="text" name="ii_nob" class="border-0 footer_field w-75 ">
+                        <input type="text" name="FL-150[0].#subform[1].Page2[0].FillText1[3]" class="border-0 footer_field w-75 ">
                         </h6>
                         <h6 class="d-flex d_sm_block ps-lg-5">
 
                             <div class="d-flex">
                                 <div class="small_text">Type of business (specify):</div>
                             </div>
-                        <input type="text" name="ii_tob" class="border-0 footer_field w-75 ">
+                        <input type="text" name="FL-150[0].#subform[1].Page2[0].FillText1[4]" class="border-0 footer_field w-75 ">
                         </h6>
                         <div class="fw-bold small_text ps-lg-5"> Attach a profit and loss statement for the last two years or a Schedule C from your last federal tax return. Black out your
                             Social Security number. If you have more than one business, provide the information above for each of your businesses.</div>
-                            <div class="small_text"> 8. <input type="checkbox" class="mx-2" name="additional_income_checkbox"> <b>Additional income.</b> I received one-time money (lottery winnings, inheritance, etc.) in the last 12 months (specify source and amount): <input type="text" name="additional_income_value" class="border-0 w-25 "></div>
-                            <div class="small_text"> 9. <input type="checkbox" class="mx-2" name="change_income_checkbox"> <b>Change in income.</b> My financial situation has changed significantly over the last 12 months because (specify):<input type="text" ame="change_income_value" class="border-0 w-50 ps-lg-5"></div>
+                            <div class="small_text"> 8. <input type="checkbox" class="mx-2" name="FL-150[0].#subform[1].Page2[0].CheckBox19[0]" value="True"> <b>Additional income.</b> I received one-time money (lottery winnings, inheritance, etc.) in the last 12 months (specify source and amount): <input type="text" name="additional_income_value" class="border-0 w-25 "></div>
+                            <div class="small_text"> 9. <input type="checkbox" class="mx-2" name="FL-150[0].#subform[1].Page2[0].CheckBox1[0]" value="True"> <b>Change in income.</b> My financial situation has changed significantly over the last 12 months because (specify):<input type="text" ame="change_income_value" class="border-0 w-50 ps-lg-5"></div>
                             <div class="fw-bold small_text">10. Deductions</div>
                             <div class="row ps-lg-5">
                                 <div class="col-lg-9">
@@ -882,20 +914,20 @@
                                     <h6 class="responsive_input">b. Required retirement payments (not Social Security, FICA, 401(k), or IRA) .........................................................................................................</h6>
                                     <h6 class="responsive_input">c. Medical, hospital, dental, and other health insurance premiums (total monthly amount) ......................................................................................</h6>
                                     <h6 class="responsive_input">d. Child support that I pay for children from other relationships ...............................................................................................................................</h6>
-                                    <h6 class="responsive_input">e. Spousal support that I pay by court order from a different marriage <input type="checkbox" name="federally_tax"> federally tax deductible* ........................................................................</h6>
+                                    <h6 class="responsive_input">e. Spousal support that I pay by court order from a different marriage <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[13]"> federally tax deductible* ........................................................................</h6>
                                     <h6 class="responsive_input">f. Partner support that I pay by court order from a different domestic partnership ....................................................................................................</h6>
                                     <h6 class="responsive_input">g. Necessary job-related expenses not reimbursed by my employer (attach explanation labeled "Question 10g") ...................................................</h6>
                                 </div>
 
                                 <div class="col-lg-3">
                                     <div class="small_tex t">Last month</div>
-                                     <div> <input type="text" min="0"  name="d_rud" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_rrp" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_mhd" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_cs" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_ss" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_ps" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
-                                    <div> <input type="text" min="0"  name="d_mjr" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_rud" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_rrp" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_mhd" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_cs"  class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_ss"  class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_ps"  class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
+                                    <div> <input type="text" min="0" name="d_mjr" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">  </div>
                                 </div>
                             </div>
                             <div class="fw-bold small_text">11. Assets</div>
@@ -903,7 +935,7 @@
                                 <div class="col-lg-9">
                                      <h6 class=" pt-lg-5">a. Cash and checking accounts, savings, credit union, money market, and other deposit accounts ..........................................................................</h6>
                                     <h6 class="responsive_input">b. Stocks, bonds, and other assets I could easily sell .................................................................................................................................................</h6>
-                                    <h6 class="">c. All other property, <input type="checkbox" name="real"> real and  <input type="checkbox" name="personal"> personal (estimate fair market value minus the debts you owe) .......................................................................</h6>
+                                    <h6 class="">c. All other property, <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[10]" value="Yes"> real and  <input type="checkbox" name="FL-150[0].#subform[1].Page2[0].CBChoice1_cb[11]" value="Yes"> personal (estimate fair market value minus the debts you owe) .......................................................................</h6>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="small_tex t">Total</div>
@@ -1002,7 +1034,7 @@
                             </table>
                         </div>
                         <div>13. <b>Average monthly expenses</b> <input type="checkbox" name="ame_stimated" id="" class="ms-3" value="Yes"> stimated expenses   <input type="checkbox" name="ame_actual" id="" class="ms-3" value="Yes"> Actual expenses     <input type="checkbox" name="ame_proposed" id="" class="ms-3" value="Yes"> Proposed needs</div>
-                        section 13 pending
+                        {{-- section 13 pending --}}
                         <div class="">14. <b> Installment payments and debts not listed above</b></div>
                         <div class="table-responsive ps-lg-5">
                             <table class="table table-bordered border-dark">
@@ -1221,8 +1253,16 @@
 
                     </div>
                 </section>
-            </form>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
             <select name="" id="" class="sectionSelect form-select  mx-auto ">
                 <option value="" disabled selected>Select a section</option>

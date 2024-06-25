@@ -175,9 +175,9 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1">
-            <form action="{{ route('form18.submit') }}" method="post">
-                @csrf
+        <form action="{{ route('form18.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1">
                 <section class="section_area" id="first_section">
 
                     <div class="row">
@@ -1806,11 +1806,9 @@
                 <section class="section_area" id="fifteenth_section">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <div class="px-lg-5 mx-auto px-2 py-5 ">
+                            <div class="px-lg-5 mx-auto px-2 py-5">
                                 <div class="text-end border-bottom">Order ID: 6607400ce5fa90d84a01a9d5</div>
-                                <div class="d-flex my-4 ">Fecha: <input type="text" min="0"
-                                        name="fecha" class=" responsive_input border-0 footer_field align-start border-bottom">
-                                </div>
+                                <div class="d-flex my-4 ">Fecha: <input type="text" min="0" name="fecha" class=" responsive_input border-0 footer_field align-start border-bottom"> </div>
                                 <div>Firma de la Parte</div>
                                 <div>Nombre Impreso:</div>
                                 <div>Dirección:</div>
@@ -1818,45 +1816,29 @@
                                 <div>Número de Teléfono:</div>
                                 <div>Número de Fax:</div>
                                 <div>Dirección(es) de Correo Electrónico:</div>
-                                <div class="mt-4">SI UN NO ABOGADO LE AYUDÓ A LLENAR ESTE FORMULARIO, ÉL/ELLA DEBE
-                                    LLENAR LOS ESPACIOS A CONTINUACIÓN: [rellene todos los espacios] Este formulario fue
-                                    preparado para: {escoja solo uno} ( ) Peticionario ( ) Demandado</div>
+                                <div class="mt-4">SI UN NO ABOGADO LE AYUDÓ A LLENAR ESTE FORMULARIO, ÉL/ELLA DEBE LLENAR LOS ESPACIOS A CONTINUACIÓN: [rellene todos los espacios] Este formulario fue preparado para: {escoja solo uno} ( ) Peticionario ( ) Demandado</div>
                                 <div>Este formulario fue completado con la ayuda de:</div>
-                                <div class="d-flex d_sm_block">{nombre del individuo} <input type="text" min="0"
-                                        name="nom_del_ind"
-                                        class="border-0 footer_field responsive_input align-start border-bottom w-50">
-
-                                </div>
+                                <div class="d-flex d_sm_block">{nombre del individuo} <input type="text" min="0" name="nom_del_ind" class="border-0 footer_field responsive_input align-start border-bottom w-50"> </div>
                                 <div>{nombre del negocio}, </div>
-                                <div class="d-flex d_sm_block ">{dirección}<input type="text" min="0"
-                                        name="direccion_1"
-                                        class="border-0 footer_field responsive_input align-start border-bottom w-25">
-                                </div>
-                                <div class="d-flex d_sm_block">{ciudad}<input type="text" min="0" name="ciudad"
-                                        class="border-0 footer_field responsive_input align-start border-bottom "
-                                        style="width: 70px">, {estado}<input type="text" min="0" name="estado" class="border-0 footer_field responsive_input align-start border-bottom " style="width: 135px">,
-                                </div>
+                                <div class="d-flex d_sm_block ">{dirección}<input type="text" min="0" name="direccion_1" class="border-0 footer_field responsive_input align-start border-bottom w-25"></div>
+                                <div class="d-flex d_sm_block">{ciudad}<input type="text" min="0" name="ciudad" class="border-0 footer_field responsive_input align-start border-bottom" style="width: 70px">, {estado}<input type="text" min="0" name="estado" class="border-0 footer_field responsive_input align-start border-bottom " style="width: 135px">,</div>
                                 <div>{número de teléfono}</div>
-                                <div class="mt-5" style="margin-bottom: 500px">Reglas de Procedimiento de Derecho
-                                    Familiar de Florida Formulario 12.902(c), Declaración Jurada Financiera de Derecho
-                                    Familiar (Forma Larga) (10/21)</div>
-                                <div class="row my-4" >
-                                    <div class="col-6">
-                                        <button type="submit" class="bg-transparent px-4">Submit</button>
-                                    </div>
-                                    <div class="col-6  ">
-                                        <button type="reset" class="bg-transparent px-4">Reset</button>
-                                    </div>
+                                <div class="mt-5" style="margin-bottom: 500px">Reglas de Procedimiento de Derecho Familiar de Florida Formulario 12.902(c), Declaración Jurada Financiera de Derecho Familiar (Forma Larga) (10/21)</div>
+                                <div class="row my-4">
+                                    {{-- <div class="col-6"> <button type="submit" class="bg-transparent px-4">Submit</button> </div> --}}
+                                    <div class="col-6"><button type="reset" class="bg-transparent px-4">Reset</button></div>
                                 </div>
-                                    <div>
-                                    @include('layouts.pagination', ['page' => 18])</div>
-
+                                    <div> @include('layouts.pagination', ['page' => 18])</div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </form>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col"><button type="submit" class="btn btn-success px-4">Save</button></div>
+                <div class="pt-3"><button type="button" class="btn btn-dark px-4">Back</button></div>
+            </div>
+        </form>
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
             <select name="" id="" class="sectionSelect form-select  mx-auto ">
                 <option value="" disabled selected>Select a section</option>
@@ -1878,17 +1860,17 @@
             </select>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
-        selectElement.addEventListener('change', function() {
-            const selectedSection = this.value;
-            if (selectedSection) {
-                window.location.hash = selectedSection;
-            }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script>
+        document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
+            selectElement.addEventListener('change', function() {
+                const selectedSection = this.value;
+                if (selectedSection) {
+                    window.location.hash = selectedSection;
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>

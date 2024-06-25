@@ -10,7 +10,7 @@
       @if($page == 9 )
        <div class="col d-flex justify-content-center mt-3">
 
-          <button type="submit" class="bg-transparent px-4 me-4">Submit</button>
+          {{-- <button type="submit" class="bg-transparent px-4 me-4">Submit</button> --}}
           <button type="reset" class="bg-transparent px-4">Reset</button>
 
       </div>

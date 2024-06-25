@@ -39,7 +39,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            /* height : 100% !important; */
 
         }
 
@@ -235,7 +235,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="{{route('form4.submit')}}" class="mb-5" method="post">
+            <form action="{{route('form4.submit')}}"   method="post">
                 @csrf
                 <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="first_section">
                     <div class="col-lg-12 mx-auto">
@@ -254,9 +254,8 @@
                                     <div class="col-lg-3 h3 ">  REV-488</div>
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-5 ">
-                                        <div class="border-bottom top_flex_text border-dark d-flex"><small>OFFICIAL USE
-                                                ONLY</small>
-                                            <span><input type="text" name="official_use" class="w-100 border-0"></input></span>
+                                        <div class="border-bottom top_flex_text border-dark d-flex"><small>OFFICIAL USE ONLY</small>
+                                            <span><input type="text" name="Official Use Only" class="w-100 border-0 responsive_input border-0"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -281,105 +280,105 @@
                                         <tr>
                                             <td colspan="4">
                                                 <div class="small_text">Taxpayer’s Name</div><input type="text"
-                                                    name="tpname"
+                                                    name="Taxpayer Name"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Date of Birth</div><input type="date" min="0"
-                                                    name="t_dob"
+                                                    name="Taxpayer's Date of Birth"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="small_text">SSN</div><input type="text" name="t_ssn"
+                                                <div class="small_text">SSN</div><input type="text" name="Taxpayer SSN"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Taxpayer’s Street Address</div><input
-                                                    type="text" name="tpsa"
+                                                    type="text" name="Taxpayer's Street Address"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td colspan="2">
-                                                <div class="small_text">City</div><input type="number" min="0" name="tcity"
+                                                <div class="small_text">City</div><input type="number" min="0" name="Taxpayer's City"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
-                                                <div class="small_text">County</div><input type="text" name="county"
+                                                <div class="small_text">County</div><input type="text" name="Taxpayer's County"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="small_text">State</div><input type="text" name="state"
+                                                <div class="small_text">State</div><input type="text" name="Taxpayer's State"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Zip Code</div><input type="text"
-                                                    name="tzc"
+                                                    name="Taxpayer's ZIP Code"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="4">
                                                 <div class="small_text">Spouse’s Name (if applicable)</div><input
-                                                    type="text" name="sname"
+                                                    type="text" name="Spouse’s Name"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Date of Birth</div><input type="date" min="0"
-                                                    name="s_dob"
+                                                    name="Spouse’s Date of Birth"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="small_text">SSN</div><input type="text" name="s_ssn"
+                                                <div class="small_text">SSN</div><input type="text" name="Spouse’s SSN"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Spouse’s Street Address (if different from
-                                                    above)</div><input type="text" name="ssa"
+                                                    above)</div><input type="text" name="Spouse’s Street Address"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-                                                <div class="small_text">City</div><input type="text" name="s_city"
+                                                <div class="small_text">City</div><input type="text" name="Spouse’s City"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">County</div><input type="text"
-                                                    name="s_county"
-                                                    class="border-0  expires_input bg-transparent border   outline-none form-control">
+                                                    name="Spouse’s County"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">State</div><input type="text"
-                                                    name="s_state"
-                                                    class="border-0  expires_input bg-transparent border   outline-none form-control">
+                                                    name="Spouse’s State"
+                                                    class="border-0 expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Zip Code</div><input type="text"
-                                                    name="s_zc"
+                                                    name="Spouse’s Zip Code"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="small_text">Phone Number</div><input type="number" min="0"
-                                                    name="s_phone"
+                                                    name="Taxpayer's Phone Number"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">Marital Status</div><input type="text"
-                                                    name="m_status"
+                                                    name="Taxpayer's Marital Status"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="3">
                                                 <div class="small_text">Number of Exemptions Claimed on W-4</div>
                                                  <input
-                                                    type="text" name="s_ex"
+                                                    type="text" name="Number of Exemptions Claimed on W-4"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
@@ -391,14 +390,14 @@
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Employer or Business Name</div><input
-                                                    type="text" name="e_bn"
+                                                    type="text" name="Employer or Business Name"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Employer or Business Street Address</div><input
-                                                    type="text" name="e_bsa"
+                                                    type="text" name="Employer or Business Street Address"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -406,62 +405,61 @@
                                         <tr>
                                             <td colspan="2">
                                                 <div class="small_text">City</div><input type="text"
-                                                    name="e_city"
+                                                    name="Employer or Business City"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">County</div><input type="text"
-                                                    name="e_county"
+                                                    name="Employer or Business County"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">State</div><input type="text"
-                                                    name="e_state"
+                                                    name="Employer or Business State"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Zip Code</div><input type="text"
-                                                    name="e_zc"
+                                                    name="Employer or Business ZIP Code"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="small_text">Business Phone Number</div><input
-                                                    type="number" min="0" name="e_phn"
+                                                    type="number" min="0" name="Business Phone Number"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Occupation</div><input type="text"
-                                                    name="e_oc"
+                                                    name="Occupation"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Payday</div><input type="text"
-                                                    name="e_pd"
+                                                    name="Paydays"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="3">
                                                 <div class="small_text">Fill In Appropriate Oval</div>
                                                 <div class="row">
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box" id="" value="Wage Earner"> Wage Earner</span></div>
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box" id="" value="Partner"> Partner</span></div>
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box" id="" value="Sole Proprietor"> Sole Proprietor</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Wage Earner 1" id="" value="Wage Earner" > Wage Earner</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Partner 1" id="" value="Partner"> Partner</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Sole Proprietor 1" id="" value="Sole Proprietor"> Sole Proprietor</span></div>
                                             </div>
-                                            </td>
 
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Spouse’s Employer or Business Name</div><input
-                                                    type="text" name="se_bn"
+                                                    type="text" name="Spouse’s Employer or Business Name"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Employer or Business Street Address</div><input
-                                                    type="text" name="se_bsa"
+                                                    type="text" name="Spouse’s Employer or Business Street Address"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -469,22 +467,22 @@
                                         <tr>
                                             <td colspan="2">
                                                 <div class="small_text">City</div><input type="text"
-                                                    name="se_city"
+                                                    name="Spouse’s City 2"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">County</div><input type="text"
-                                                    name="se_county"
+                                                    name="Spouse’s County 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">State</div><input type="text"
-                                                    name="se_state"
+                                                    name="Spouse’s State 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Zip Code</div><input type="text"
-                                                    name="se_zc"
+                                                    name="Spouse’s Zip Code 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
@@ -492,25 +490,25 @@
                                         <tr>
                                             <td>
                                                 <div class="small_text">Business Phone Number</div><input
-                                                    type="number" min="0" name="se_phn"
+                                                    type="number" min="0" name="Spouse’s Business Phone Number"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Occupation</div><input type="text"
-                                                    name="se_oc"
+                                                    name="Spouse’s Occupation"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Payday</div><input type="text"
-                                                    name="se_pd"
+                                                    name="Spouse’s Payday"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="3">
                                                 <div class="small_text">Fill In Appropriate Oval</div>
                                                 <div class="row">
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box2" id="" value="Wage Earner" > Wage Earner</span></div>
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box2" id="" value="Partner"> Partner</span></div>
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="ei_box2" id="" value="Sole Proprietor"> Sole Proprietor</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Wage Earner 2" id="" value="Wage Earner" > Wage Earner</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Partner 2" id="" value="Partner"> Partner</span></div>
+                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Sole Proprietor 2" id="" value="Sole Proprietor"> Sole Proprietor</span></div>
                                             </div>
                                             </td>
                                         </tr>
@@ -523,41 +521,41 @@
                                         <tr>
                                             <td colspan="4">
                                                 <div class="small_text">Name of Next of Kin or Other Reference</div>
-                                                <input type="text" name="p_nr"
+                                                <input type="text" name="Next of Kin or Other Reference"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">Phone Number</div><input type="number" min="0"
-                                                    name="p_phn"
+                                                    name="Next of Kin or Other Reference Phone Number"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="6">
                                                 <div class="small_text">Next of Kin or Other Reference Street Address
-                                                </div><input type="text" name="p_sa"
+                                                </div><input type="text" name="Next of Kin or Other Reference Street Address"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
                                                 <div class="small_text">City</div><input type="text"
-                                                    name="p_city"
+                                                    name="Next of Kin or Other Reference City"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="2">
                                                 <div class="small_text">County</div><input type="text"
-                                                    name="p_county"
+                                                    name="Next of Kin or Other Reference County"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">State</div><input type="text"
-                                                    name="p_state"
+                                                    name="Next of Kin or Other Reference State"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td>
                                                 <div class="small_text">Zip Code</div><input type="number" min="0"
-                                                    name="p_zc"
+                                                    name="Next of Kin or Other Reference ZIP Code"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
@@ -572,50 +570,50 @@
                                             <td colspan="2" class="text-center"><small>RELATIONSHIP</small> </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="age_1"
+                                            <td class="text-center"><input type="text" name="Dependent Age 1"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_1"
+                                                    name="Dependent Relationship 1"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="age_2"
+                                            <td class="text-center"><input type="text" name="Dependent Age 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_2"
+                                                    name="Dependent Relationship 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="age_3"
+                                            <td class="text-center"><input type="text" name="Dependent Age 3"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_3"
+                                                    name="Dependent Relationship 3"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="age_4"
+                                            <td class="text-center"><input type="text" name="Dependent Age 4"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_4"
+                                                    name="Dependent Relationship 4"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="age_5"
+                                            <td class="text-center"><input type="text" name="Dependent Age 5"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_5"
+                                                    name="Dependent Relationship 5"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="age_6"
+                                            <td class="text-center"><input type="text" name="Dependent Age 6"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
-                                                    name="rel_6"
+                                                    name="Dependent Relationship 6"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                         </tr>
@@ -629,10 +627,7 @@
                         </div>
                     </div>
                 </section>
-
-
-                <section
-                    class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5  m-3 mt-4  pt-lg-5 pt-4" id="latest_pa_income">
+                <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5  m-3 mt-4  pt-lg-5 pt-4" id="second_section">
                     <div class="col-lg-10 mx-auto" id="second_section">
                         <div class="mb-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
 
@@ -652,12 +647,12 @@
                                         <tr>
                                             <td colspan="3">
                                                 <div class="small_text">Latest PA Income Tax Return Filed (Tax Year)
-                                                </div><input type="text" name="g_lp"
+                                                </div><input type="text" name="Latest PA Income Tax Return Filed (Tax Year)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td colspan="3">
                                                 <div class="small_text">Adjusted Gross Income on Return</div><input
-                                                    type="text" name="g_agi"
+                                                    type="text" name="Adjusted Gross Income on Return"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -674,78 +669,79 @@
                                             <td class="small_text text-center"> BALANCE </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"> <input type="text" name="ins_1"
+                                            <td colspan="2"> <input type="text" name="Name of Institution 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="adr_1"
+                                            <td> <input type="text" name="Address of Institution 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="toa_1"
+                                            <td> <input type="text" name="Type of Account 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="number" min="0" name="ac_1"
+                                            <td> <input type="number" min="0" name="Account Number 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="blc_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="Balance 1"
+                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2"> <input type="text" name="Name of Institution 2"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </td>
+                                            <td> <input type="text" name="Address of Institution 2"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </td>
+                                            <td> <input type="text" name="Type of Account 2"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </td>
+                                            <td> <input type="number" min="0" name="Account Number 2"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </td>
+                                            <td>
+                                                <div class="d-flex">$<input type="number" min="0" name="Balance 2"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"> <input type="text" name="ins_2"
+                                            <td colspan="2"> <input type="text" name="Name of Institution 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="adr_2"
+                                            <td> <input type="text" name="Address of Institution 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="toa_2"
+                                            <td> <input type="text" name="Type of Account 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="number" min="0" name="ac_2"
+                                            <td> <input type="number" min="0" name="Account Number 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="blc_2"
+                                                <div class="d-flex">$<input type="number" min="0" name="Balance 3"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"> <input type="text" name="ins_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="2"> <input type="text" name="Name of Institution 4"
+                                                    class="border-0 expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="adr_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td> <input type="text" name="Address of Institution 4"
+                                                    class="border-0 expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="text" name="toa_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td> <input type="text" name="Type of Account 4"
+                                                    class="border-0 expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td> <input type="number" min="0" name="ac_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="blc_3"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"> <input type="text" name="ins_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="adr_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="toa_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="number" min="0" name="ac_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td> <input type="number" min="0" name="Account Number 4"
+                                                    class="border-0 expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="blc_4"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="Balance 4"
+                                                        class="border-0 expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
@@ -753,7 +749,7 @@
                                             <td colspan="5" class="text-end small_text">TOTAL (Enter in Section V,
                                                 Line 2) </td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="g_total"
+                                                <div class="d-flex">$<input type="text" name="Total Balance"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -778,136 +774,127 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input type="text" name="toc_1"
+                                            <td><input type="text" name="Type of Account or Card 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"> <input type="text" name="nad_1"
+                                            <td colspan="3"> <input type="text" name="Name and Address of Financial Institution 1"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="mp_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="Monthly Payment 1"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cl_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Limit 1"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ao_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="Amount Owed 1"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ca_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Available 1"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
 
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="toc_2"
+                                            <td><input type="text" name="Type of Account or Card 2"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"> <input type="text" name="nad_2"
+                                            <td colspan="3"> <input type="text" name="Name and Address of Financial Institution 2"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="mp_2"
+                                                <div class="d-flex">$<input type="number" min="0" name="Monthly Payment 2"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cl_2"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Limit 2"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ao_2"
+                                                <div class="d-flex">$<input type="number" min="0" name="Amount Owed 2"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ca_2"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Available 2"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
 
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="toc_3"
+                                            <td><input type="text" name="Type of Account or Card 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"> <input type="text" name="nad_3"
+                                            <td colspan="3"> <input type="text" name="Name and Address of Financial Institution 3"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="mp_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="Monthly Payment 3"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cl_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Limit 3"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ao_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="Amount Owed 3"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ca_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Available 3"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
 
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="toc_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td><input type="text" name="Type of Account or Card 4" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"> <input type="text" name="nad_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="3"> <input type="text" name="Name and Address of Financial Institution 4" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="mp_4"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" min="0" name="Monthly Payment 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cl_4"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Limit 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ao_4" class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" min="0" name="Amount Owed 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ca_4"  class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
+                                                <div class="d-flex">$<input type="number" min="0" name="Credit Available 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td colspan="4" class="text-end small_text"> TOTAL (Enter in Section V,
                                                 Line 8)</td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="mp_total" class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="Total Monthly Payment" class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cl_total" class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="Total Credit Limit" class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ao_total" class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="Total Amount Owed" class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ca_total" class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="Total Credit Available" class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
 
@@ -917,7 +904,7 @@
                                 <small>Safe Deposit Boxes Rented or Accessed (list all locations, box numbers and
                                     contents)</small>
                                 <table class="  table-bordered mt-1 border-black table  my-lg-1">
-                                    <thead>
+                                    <tbody>
                                         <tr>
                                             <td class="small_text text-center">BOX NUMBER</td>
 
@@ -927,39 +914,31 @@
                                             <td colspan="3" class="small_text text-center">CONTENTS</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="bx_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td><input type="text" name="Box Number 1" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="sd_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="4"><input type="text" name="Safe Deposit Box Location 1" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"><input type="text" name="c_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="3"><input type="text" name="Contents 1" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="bx_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td><input type="text" name="Box Number 2" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="sd_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="4"><input type="text" name="Safe Deposit Box Location 2" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"><input type="text" name="c_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="3"><input type="text" name="Contents 2" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name="bx_3" class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td><input type="text" name="Box Number 3" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="sd_3"  class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="4"><input type="text" name="Safe Deposit Box Location 3" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="3"><input type="text" name="c_3"  class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            <td colspan="3"><input type="text" name="Contents 3" class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
-                                    </thead>
-                                    <tbody>
 
-                                    </tbody>
+                                    <tbody>
                                 </table>
                                 <small>Real Estate Property</small>
                                 <table class="  table-bordered mt-1 border-black table  my-lg-1">
@@ -977,13 +956,13 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">a.</div>
                                             </td>
-                                            <td colspan="2"><input type="text" name="rp_1"
+                                            <td colspan="2"><input type="text" name="a. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td><input type="text" name="too_1"
+                                            <td><input type="text" name="a. Type of Ownership"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="ai_1"
+                                            <td colspan="4"><input type="text" name="a. Address (Include County and State)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -991,13 +970,13 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">b.</div>
                                             </td>
-                                            <td colspan="2"><input type="text" name="rp_2"
+                                            <td colspan="2"><input type="text" name="b. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td><input type="text" name="too_2"
+                                            <td><input type="text" name="b. Type of Ownership"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="ai_2"
+                                            <td colspan="4"><input type="text" name="b. Address (Include County and State)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -1005,13 +984,13 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">c.</div>
                                             </td>
-                                            <td colspan="2"><input type="text" name="rp_3"
+                                            <td colspan="2"><input type="text" name="c. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td><input type="text" name="too_3"
+                                            <td><input type="text" name="c. Type of Ownership"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="ai_3"
+                                            <td colspan="4"><input type="text" name="c. Address (Include County and State)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -1019,13 +998,13 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">d.</div>
                                             </td>
-                                            <td colspan="2"><input type="text" name="rp_4"
+                                            <td colspan="2"><input type="text" name="d. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td><input type="text" name="aoo_4"
+                                            <td><input type="text" name="d. Type of Ownership"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
-                                            <td colspan="4"><input type="text" name="ai_4"
+                                            <td colspan="4"><input type="text" name="d. Address (Include County and State)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                         </tr>
@@ -1050,88 +1029,32 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td colspan="3"> <input type="text" name="lic_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="number" min="0" name="pl_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="it_1"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="fv_1"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lv_1"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td colspan="3"> <input type="text" name="Name of Life Insurance Company 1" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="number" min="0" name="Poicy Number 1" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="text" name="Type 1" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td>  <div class="d-flex">$<input type="number" min="0" name="Face Value 1" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" min="0" name="Available Loan Value 1" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3"> <input type="text" name="lic_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="number" min="0" name="pl_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="it_2"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="fv_2"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lv_2"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td colspan="3"> <input type="text" name="Name of Life Insurance Company 2" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="number" min="0" name="Poicy Number 2" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="text" name="Type 2" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td>  <div class="d-flex">$<input type="number" min="0" name="Face Value 2" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" min="0" name="Available Loan Value 2" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3"> <input type="text" name="lic_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="number" min="0" name="pl_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="it_3"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="fv_3"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lv_3"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td colspan="3"> <input type="text" name="Name of Life Insurance Company 3" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="number" min="0" name="Poicy Number 3" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="text" name="Type 3" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td>  <div class="d-flex">$<input type="number" min="0" name="Face Value 3" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" min="0" name="Available Loan Value 3" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3"> <input type="text" name="lic_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="number" min="0" name="pl_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td> <input type="text" name="it_4"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="fv_4"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lv_4"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
-                                                </div>
-                                            </td>
+                                            <td colspan="3"> <input type="text" name="Name of Life Insurance Company 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="number" min="0" name="Poicy Number 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td> <input type="text" name="Type 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </td>
+                                            <td>  <div class="d-flex">$<input type="number" min="0" name="Face Value 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" min="0" name="Available Loan Value 4" class="border-0  expires_input bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
 
                                     </tbody>
@@ -1189,11 +1112,11 @@
                                     <tbody>
                                         <tr>
                                             <td>1. Cash</td>
-                                            <td colspan="3"> <input type="text" name="d_1"
+                                            <td colspan="3"> <input type="text" name="1. Cash Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_1"
+                                                <div class="d-flex">$<input type="number" min="0" name="1. Cash Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1201,54 +1124,53 @@
                                         </tr>
                                         <tr>
                                             <td>2. Bank Accounts</td>
-                                            <td colspan="3"> <input type="yrcy" name="d_2"
+                                            <td colspan="3"> <input type="yrcy" name="2. Bank Accounts Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_2"
-                                                        class="border-0  expires_input bg-transparent border outline-none form-control">
+                                                <div class="d-flex">$<input type="number" min="0" name="2. Bank Accounts Current Market Value" class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td colspan="2" class="bg-secondary"> </td>
                                         </tr>
                                         <tr>
                                             <td>3. Stocks, bonds, investments</td>
-                                            <td colspan="3"> <input type="text" name="d_3"
+                                            <td colspan="3"> <input type="text" name="3. Stocks, Bonds, Investments Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="3. Stocks, Bonds, Investments Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="3. Stocks, Bonds, Investments Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_3"
+                                                <div class="d-flex">$<input type="number" min="0" name="3. Stocks, Bonds, Investments Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>4. Cash or loan value of insurance</td>
-                                            <td colspan="3"> <input type="text" name="d_4"
+                                            <td colspan="3"> <input type="text" name="4. Cash or Loan Value or Insurance Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_4"
+                                                <div class="d-flex">$<input type="number" min="0" name="4. Cash or Loan Value or Insurance Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd_4"
+                                                <div class="d-flex">$<input type="number" min="0" name="4. Cash or Loan Value or Insurance Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_4"
+                                                <div class="d-flex">$<input type="number" min="0" name="4. Cash or Loan Value or Insurance Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1258,21 +1180,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">a.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d1_5"
+                                            <td colspan="2"> <input type="text" name="5a. Vehicles Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv1_5"
+                                                <div class="d-flex">$<input type="number" min="0" name="5a. Vehicles Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd1_5"
+                                                <div class="d-flex">$<input type="number" min="0" name="5a. Vehicles Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp1_5"
+                                                <div class="d-flex">$<input type="number" min="0" name="5a. Vehicles Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1281,21 +1203,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">b.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d2_6"
+                                            <td colspan="2"> <input type="text" name="5b. Vehicles Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv2_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="5b. Vehicles Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd2_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="5b. Vehicles Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp2_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="5b. Vehicles Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1305,21 +1227,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">a.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d1_6"
+                                            <td colspan="2"> <input type="text" name="6a. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv1_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6a. Real Property Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd1_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6a. Real Property Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp1_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6a. Real Property Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1328,21 +1250,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">b.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d21_6"
+                                            <td colspan="2"> <input type="text" name="6b. Real Property Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv21_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6b. Real Property Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd21_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6b. Real Property Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp21_6"
+                                                <div class="d-flex">$<input type="number" min="0" name="6b. Real Property Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1352,21 +1274,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">a.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d1_7"
+                                            <td colspan="2"> <input type="text" name="7a. Other Assets Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv1_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7a. Other Assets Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd1_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7a. Other Assets Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp1_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7a. Other Assets Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1375,42 +1297,42 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">b.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d2_7"
+                                            <td colspan="2"> <input type="text" name="7b. Other Assets Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv2_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7b. Other Assets Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd2_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7b. Other Assets Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp2_7"
+                                                <div class="d-flex">$<input type="number" min="0" name="7b. Other Assets Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>8. Bank Revolving Credit</td>
-                                             <td colspan="3"> <input type="text" name="d_8"
+                                             <td colspan="3"> <input type="text" name="8. Bank Revolving Credit Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_8"
+                                                <div class="d-flex">$<input type="number" min="0" name="8. Bank Revolving Credit Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd_8"
+                                                <div class="d-flex">$<input type="number" min="0" name="8. Bank Revolving Credit Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_8"
+                                                <div class="d-flex">$<input type="number" min="0" name="8. Bank Revolving Credit Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1422,21 +1344,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">a.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d1_9"
+                                            <td colspan="2"> <input type="text" name="9a. Other Liabilities Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv1_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9a. Other Liabilities Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd1_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9a. Other Liabilities Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp1_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9a. Other Liabilities Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1445,21 +1367,21 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">b.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d2_9"
+                                            <td colspan="2"> <input type="text" name="9b. Other Liabilities Amount of Monthly Payment"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv2_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9b. Other Liabilities Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd2_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9b. Other Liabilities Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp2_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9b. Other Liabilities Description"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1468,84 +1390,84 @@
                                             <td class="" style="width:1px;">
                                                 <div class=" px-2">c.</div>
                                             </td>
-                                            <td colspan="2"> <input type="text" name="d3_9"
+                                            <td colspan="2"> <input type="text" name="9c. Other Liabilities Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv3_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9c. Other Liabilities Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd3_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9c. Other Liabilities Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp3_9"
+                                                <div class="d-flex">$<input type="number" min="0" name="9c. Other Liabilities Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>10. Federal Taxes Owed</td>
-                                            <td colspan="3"> <input type="text" name="d_10"
+                                            <td colspan="3"> <input type="text" name="10. Federal Taxes Owed Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_10"
+                                                <div class="d-flex">$<input type="number" min="0" name="10. Federal Taxes Owed Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="lbd_10"
+                                                <div class="d-flex">$<input type="number" min="0" name="10. Federal Taxes Owed Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_10"
+                                                <div class="d-flex">$<input type="number" min="0" name="10. Federal Taxes Owed Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>11. State Taxes Owed</td>
-                                            <td colspan="3"> <input type="text" name="d_11"
+                                            <td colspan="3"> <input type="text" name="11. Sales Taxes Owed Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_11"
+                                                <div class="d-flex">$<input type="number" min="0" name="11. Sales Taxes Owed Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ldb_11"
+                                                <div class="d-flex">$<input type="number" min="0" name="11. Sales Taxes Owed Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_11"
+                                                <div class="d-flex">$<input type="number" min="0" name="11. Sales Taxes Owed Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>12. TOTALS</td>
-                                            <td colspan="3"> <input type="text" name="d_12"
+                                            <td colspan="3"> <input type="text" name="12. Total Description"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="cmv_12"
+                                                <div class="d-flex">$<input type="number" min="0" name="12. Total Current Market Value"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="ldb_12"
+                                                <div class="d-flex">$<input type="number" min="0" name="12. Total Liability Balance Due"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="number" min="0" name="amp_12"
+                                                <div class="d-flex">$<input type="number" min="0" name="12. Total Amount of Monthly Payment"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>
@@ -1560,7 +1482,7 @@
                     </div>
                 </section>
                 <section class="section_area row page1 bg-white pt-5 p-5 pe-2 pe-lg-5 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
-                <div class="col-lg-10 mx-auto">
+                    <div class="col-lg-10 mx-auto">
                     <div class="mb-5" style="height:30px; width:60px;border-right: 5px solid black; border-bottom: 5px solid black"></div>
 
                     <div class="table_area">
@@ -1587,12 +1509,12 @@
                                     <tr>
                                         <td colspan="5">13. Wages/Salary (Taxpayer)</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_1"
+                                            <div class="d-flex">$<input type="number" min="0" name="13. Wages/Salary (Taxpayer) Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_1"
+                                            <div class="d-flex">$<input type="number" min="0" name="13. Wages/Salary (Taxpayer) Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1603,12 +1525,12 @@
                                             This information is necessary in order for the Department of Revenue to
                                             calculate household income and expenses.</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_2"
+                                            <div class="d-flex">$<input type="number" min="0" name="14. Wages/Salary (Spouse) Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_2"
+                                            <div class="d-flex">$<input type="number" min="0" name="14. Wages/Salary (Spouse) Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1616,12 +1538,12 @@
                                     <tr>
                                         <td colspan="5">15. Interest - Dividends</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_3"
+                                            <div class="d-flex">$<input type="number" min="0" name="15. Interest - Dividends Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_3"
+                                            <div class="d-flex">$<input type="number" min="0" name="15. Interest - Dividends Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1630,12 +1552,12 @@
                                         <td colspan="5">16. Net business Income (from Form REV-484 or REV-488)
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_4"
+                                            <div class="d-flex">$<input type="number" min="0" name="16. Net Business Income Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_4"
+                                            <div class="d-flex">$<input type="number" min="0" name="16. Net Business Income Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1643,38 +1565,42 @@
                                     <tr>
                                         <td colspan="5">17. Rental Income</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_5"
+                                            <div class="d-flex">$<input type="number" min="0" name="17. Rental Income Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_5"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5">18. Pension (Taxpayer) Source:</td>
-                                        <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_6"
-                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_6"
+                                            <div class="d-flex">$<input type="number" min="0" name="17. Rental Income Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="5">19. Pension (Spouse) Source:</td>
+                                        <td colspan="5"><div class="d-flex">18. Pension (Taxpayer) Source: <input type="text"  name="18. Pension (Taxpayer) Source"
+                                            class="border-0  expires_input bg-transparent border outline-none  ">
+                                    </div></td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_7"
+                                            <div class="d-flex">$<input type="number" min="0" name="18. Pension (Taxpayer) Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_7"
+                                            <div class="d-flex">$<input type="number" min="0" name="18. Pension (Taxpayer) Net"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                         <td colspan="5"><div class="d-flex">19. Pension (Spouse) Source: <input type="text"  name="19. Pension (Spouse) Source"
+                                            class="border-0  expires_input bg-transparent border outline-none  ">
+                                    </div></td>
+                                        <td>
+                                            <div class="d-flex">$<input type="number" min="0" name="19. Pension (Spouse) Gross"
+                                                    class="border-0  expires_input bg-transparent border outline-none form-control">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex">$<input type="number" min="0" name="19. Pension (Spouse) Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1682,12 +1608,12 @@
                                     <tr>
                                         <td colspan="5">20. TOTAL</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="g_8"
+                                            <div class="d-flex">$<input type="number" min="0" name="20. Total Gross"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_8"
+                                            <div class="d-flex">$<input type="number" min="0" name="20. Total Net"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1698,7 +1624,7 @@
                                     <tr>
                                         <td colspan="6">21. Rent/House Payment</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_9"
+                                            <div class="d-flex">$<input type="number" min="0" name="21. Rent/House Payment"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1706,7 +1632,7 @@
                                     <tr>
                                         <td colspan="6">22. Groceries</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_10"
+                                            <div class="d-flex">$<input type="number" min="0" name="22. Groceries"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1714,7 +1640,7 @@
                                     <tr>
                                         <td colspan="6">23. Allowable Installment Payments</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_11"
+                                            <div class="d-flex">$<input type="number" min="0" name="23. Allowable Installment Payments"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1722,7 +1648,7 @@
                                     <tr>
                                         <td colspan="6">24. Utilities</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_12"
+                                            <div class="d-flex">$<input type="number" min="0" name="24. Utilities"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1730,7 +1656,7 @@
                                     <tr>
                                         <td colspan="6">25. Transportation</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_13"
+                                            <div class="d-flex">$<input type="number" min="0" name="25. Transportation"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1738,7 +1664,7 @@
                                     <tr>
                                         <td colspan="6">26. Insurance</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_14"
+                                            <div class="d-flex">$<input type="number" min="0" name="26. Insurance"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1746,7 +1672,7 @@
                                     <tr>
                                         <td colspan="6">27. Medical</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_15"
+                                            <div class="d-flex">$<input type="number" min="0" name="27. Medical"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1754,7 +1680,7 @@
                                     <tr>
                                         <td colspan="6">28. Estimated Tax Payments (federal-state)</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_16"
+                                            <div class="d-flex">$<input type="number" min="0" name="28. Estimated Tax Payments (federal-state)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1762,7 +1688,7 @@
                                     <tr>
                                         <td colspan="6">29. Other Expenses (specify)</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_17"
+                                            <div class="d-flex">$<input type="number" min="0" name="29. Other Expenses (specifiy)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1770,7 +1696,7 @@
                                     <tr>
                                         <td colspan="6">30. TOTAL</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_18"
+                                            <div class="d-flex">$<input type="number" min="0" name="30. Total"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1779,7 +1705,7 @@
                                         <td colspan="6">31. Net Difference (income less necessary living
                                             expenses)</td>
                                         <td>
-                                            <div class="d-flex">$<input type="number" min="0" name="n_19"
+                                            <div class="d-flex">$<input type="number" min="0" name="31. Net Difference (income less necessary living expenses)"
                                                     class="border-0  expires_input bg-transparent border outline-none form-control">
                                             </div>
                                         </td>
@@ -1796,26 +1722,23 @@
                                             and complete.</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">Print Name<input type="text" name="prnt"
-                                                class="border-0  expires_input bg-transparent border outline-none form-control">
+                                        <td colspan="2">Print Name<input type="text" name="Print Name" class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
-                                        <td colspan="4">Signature <input type="text" name="sgn"
-                                                class="border-0  expires_input bg-transparent border outline-none form-control">
+                                        <td colspan="4">Signature <input type="text" name="SIGN AFTER PRINTING" class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
-                                        <td>Date<input type="date" name="dt"
-                                                class="border-0  expires_input bg-transparent border outline-none form-control">
+                                        <td>Date<input type="date" name="Certification Date 1" class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">Spouse, Attorney or Accountant Print Name<input
-                                                type="text" name="saapn"
+                                                type="text" name="Spouse, Attorney or Accountant Print Name"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
                                         <td colspan="4">Spouse, Attorney or Accountant Signature (POA Attached)
-                                            <input type="text" name="saas"
+                                            <input type="text" name="Spouse, Attorney or Accountant Signature (POA Attached)"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
-                                        <td>Date<input type="date" name="dte"
+                                        <td>Date<input type="date" name="Certification Date 2"
                                                 class="border-0  expires_input bg-transparent border outline-none form-control">
                                         </td>
                                     </tr>
@@ -1827,8 +1750,8 @@
                         @include('layouts.footer3', ['page' => 4])
 
                     </div>
-                </div>
-            </section>
+                     </div>
+                </section>
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-5 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="row border-bottom">
@@ -1993,8 +1916,16 @@
 
                     </div>
                 </section>
-            </form>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
         <select name="" id="" class="sectionSelect form-select  mx-auto ">
@@ -2007,6 +1938,7 @@
             <option value="#sixth_section">Sixth Section</option>
         </select>
     </div>
+
      <script>
         document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {
             selectElement.addEventListener('change', function() {

@@ -5,11 +5,11 @@
            <button  onclick="window.print()" class="bg-transparent  ">Print Form</button>
        </div>
       <div class="{{$page == 4 ? ' text-center col':' col-lg-3 col-6'}}"> Page {{$page}} of 4</div>
-    @if($page == 4 )
+    {{-- @if($page == 4 )
     <div class="col">
        <button type="submit" class="bg-transparent">Submit</button>
     </div>
-   @endif
+   @endif --}}
     <div class="{{$page == 4 ? ' col':' col-lg-3 col-6'}}">
         <button type="reset" class="bg-transparent px-4">Reset Form</button>
     </div>

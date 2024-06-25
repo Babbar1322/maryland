@@ -6,11 +6,11 @@
        </div>
       <div class="{{$page == 6 ? ' text-center col':' col-lg-3 col-6'}}"> Page {{$page}} of 6</div>
 
-    @if($page == 6 )
+    {{-- @if($page == 6 )
     <div class="col">
         <button type="submit" class=" bg-body-secondary">Submit</button>
     </div>
-   @endif
+   @endif --}}
     <div class="{{$page == 6 ? ' col':' col-lg-3 col-6'}}  ">
         <button type="reset" class=" px-4 bg-body-secondary">Reset Form</button>
     </div>

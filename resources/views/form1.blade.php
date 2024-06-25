@@ -183,7 +183,7 @@
 <body>
     <div class="container-fluid  bg_color py-1 py-lg-3">
 
-        <form action="{{ route('form1.submit') }}" class="mb-5" method="post">
+        <form action="{{ route('form1.submit') }}"  method="post">
             @csrf
 
             <section class="section_area page1 pt-5 pe-2 pe-lg-5 p-lg-0 ps-2 pt-lg-5 pt-4" id="first_section">
@@ -2581,7 +2581,14 @@
                 </div>
 
             </section>
-
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
         </form>
 
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
@@ -2596,6 +2603,7 @@
                 <option value="#last_section">Seventh Section</option>
             </select>
         </div>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         document.querySelectorAll('.sectionSelect').forEach(function(selectElement) {

@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-         .backdrop_filter{
+        .backdrop_filter {
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
-         a{
+
+        a {
             color: black !important;
         }
+
         td {
             padding: 0px !important;
             padding-left: 5px !important;
@@ -41,9 +43,11 @@
             background-color: transparent !important;
 
         }
+
         input[type='checkbox'] {
-    accent-color:  #8c8a8a !important;
-}
+            accent-color: #8c8a8a !important;
+        }
+
         body {
             font-family: "unset";
         }
@@ -244,10 +248,12 @@
         .tdata textarea:focus {
             border-bottom: none !important;
         }
+
         @media screen and (max-width : 1600px) {
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
@@ -257,23 +263,21 @@
 
 <body>
     <div class="container-fluid   py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-
-
-
-            <form action="{{ route('form8.submit') }}" class="mb-5" method="post">
-                @csrf
+        <form action="{{ route('form8.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1  ">
                 <section class="section_area" id="first_section">
 
                     <div class="row px-lg-5 px-2 py-5 pt-2">
                         @if (session('success'))
-                        <div class="alert alert-success alert-dismissible fade show">{{ session('success') }} <button
-                                type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
-                    <div class="text-center py-4"><a href="#" class="text-dark">Click here</a> to get more
-                        information
-                        about the fields on this form.</div>
+                            <div class="alert alert-success alert-dismissible fade show">{{ session('success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
+                        <div class="text-center py-4"><a href="#" class="text-dark">Click here</a> to get more
+                            information
+                            about the fields on this form.</div>
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6 lh-1 py-2">
@@ -291,10 +295,11 @@
                             <div>
                                 <h4 class="fw-bold">Instructions</h4>
                                 <p class="small_text pe-5 ps-1 fst-italic">Use this long version if either your <span
-                                    class="fw-bold ">gross annual income is more than $75,000 </span> (see
-                                    Section I. Income) or your <span
-                                    class="fw-bold ">total net assets are more than $75,000 </span> (see Section IV. Assets),
-                                    or if both are more than $75,000. Otherwise, use the short version, form JD-FM-6-SHORT.</p>
+                                        class="fw-bold ">gross annual income is more than $75,000 </span> (see
+                                    Section I. Income) or your <span class="fw-bold ">total net assets are more than
+                                        $75,000 </span> (see Section IV. Assets),
+                                    or if both are more than $75,000. Otherwise, use the short version, form
+                                    JD-FM-6-SHORT.</p>
                                 {{-- <p class="small_text pe-5 ps-1 fst-italic">Use this short version if your <span
                                         class="fw-bold ">gross annual income is
                                         less than $75,000 </span> (see Section I.
@@ -318,7 +323,7 @@
                                 </div>
                                 <div class="col">
                                     {{-- <div>bar code</div> --}}
-                                    <img src="{{asset('assets/images/bar_code.png')}}" alt="">
+                                    <img src="{{ asset('assets/images/bar_code.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="border border-2 border-dark lh-1">
@@ -532,7 +537,8 @@
                                         Total of base pay from salary and wages of all jobs
                                     </div>
                                     <div class="responsive_input">
-                                        ....    .................................................................................................................
+                                        ....
+                                        .................................................................................................................
                                     </div>
                                 </div>
                                 <div class="col-lg-2" col-sm-12>
@@ -1511,7 +1517,8 @@
                                             </td>
                                             <td>
                                                 <div style="width:430px;">T.V./Internet
-                                                    ..................................................................</div>
+                                                    ..................................................................
+                                                </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="tv_int" value="trash">
@@ -1700,8 +1707,6 @@
 
 
                 </section>
-
-
                 <section class="section_area p-5" id="third_section">
                     <div>
                         <div class="text-center mx-auto">Insert an ("x") in the box if you are not currently paying the
@@ -2704,8 +2709,6 @@
 
                     </div>
                 </section>
-
-
                 <section class="section_area p-5" id="fourth_section">
 
                     <div>
@@ -2738,19 +2741,23 @@
                                         <td class="py-2" colspan="2">Home</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center tdata"><input type="text" name="a_a1" class="border-0 w-100"> </td>
+                                        <td class="text-center tdata"><input type="text" name="a_a1"
+                                                class="border-0 w-100"> </td>
                                         <td class="tdata">
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                    <input class="mx-auto text-center"  type="checkbox" name="a_o1" style=""  value="S">
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="a_o1" style="" value="S">
                                                 </div>
                                                 <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                    <input  class="p-1" type="checkbox" name="a_o1" style="" value="JTS">
+                                                    <input class="p-1" type="checkbox" name="a_o1"
+                                                        style="" value="JTS">
                                                 </div>
                                                 <div class=" border-dark  p-1 mx-auto text-center">
-                                                <input class="p-1"  type="checkbox" name="a_o1" style="" value="JTO">
-                                            </div>
+                                                    <input class="p-1" type="checkbox" name="a_o1"
+                                                        style="" value="JTO">
+                                                </div>
 
 
                                             </div>
@@ -2782,22 +2789,25 @@
                                     <tr>
                                         <td class="text-center tdata"><input type="text" name="a_a2"
                                                 class="border-0 w-100"> </td>
-                                                <td class="tdata">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
+                                        <td class="tdata">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="checkbox" name="a_o2" style=""  value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="checkbox" name="a_o2" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="checkbox" name="a_o2" style="" value="JTO">
-                                                    </div>
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="a_o2" style="" value="S">
+                                                </div>
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="a_o2"
+                                                        style="" value="JTS">
+                                                </div>
+                                                <div class=" border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="a_o2"
+                                                        style="" value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="  tdata"> <input type="text" name="a_fmv2"
                                                     class="text-center border-0 w-100"></div>
@@ -2822,22 +2832,25 @@
                                     <tr>
                                         <td class="text-center tdata"><input type="text" name="a_a3"
                                                 class="border-0 w-100"> </td>
-                                                <td class="tdata">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
+                                        <td class="tdata">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="checkbox" name="a_o3" style=""  value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="checkbox" name="a_o3" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="checkbox" name="a_o3" style="" value="JTO">
-                                                    </div>
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="a_o3" style="" value="S">
+                                                </div>
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="a_o3"
+                                                        style="" value="JTS">
+                                                </div>
+                                                <div class=" border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="a_o3"
+                                                        style="" value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="  tdata"> <input type="text" name="a_fmv3"
                                                     class="text-center border-0 w-100"></div>
@@ -2901,23 +2914,26 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model1"
                                                 class="border-0 w-100 text-center"></td>
-                                                <td class="tdata">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
+                                        <td class="tdata">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership1" style=""  value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="checkbox" name="MV_ownership1" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="checkbox" name="MV_ownership1" style="" value="JTO">
-                                                    </div>
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="MV_ownership1" style="" value="S">
+                                                </div>
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership1"
+                                                        style="" value="JTS">
+                                                </div>
+                                                <div class=" border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership1"
+                                                        style="" value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
-                                                <td>
+                                            </div>
+                                        </td>
+                                        <td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="MV_avalue1"
                                                     class="border-0 w-100 text-end"></div>
@@ -2940,20 +2956,23 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model2"
                                                 class="border-0 w-100 text-center"></td>
-                                                <td class="tdata">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
+                                        <td class="tdata">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership2" style=""  value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="checkbox" name="MV_ownership2" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark  p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="checkbox" name="MV_ownership2" style="" value="JTO">
-                                                    </div>
-                                                    </div>
-                                                <td>
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="MV_ownership2" style="" value="S">
+                                                </div>
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership2"
+                                                        style="" value="JTS">
+                                                </div>
+                                                <div class=" border-dark  p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership2"
+                                                        style="" value="JTO">
+                                                </div>
+                                            </div>
+                                        <td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="MV_avalue2"
                                                     class="border-0 w-100 text-end"></div>
@@ -2976,20 +2995,23 @@
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata"><input type="text" name="MV_model3"
                                                 class="border-0 w-100 text-center"></td>
-                                                <td class="tdata">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark  p-1 mx-auto text-center">
+                                        <td class="tdata">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark  p-1 mx-auto text-center">
 
-                                                            <input class="mx-auto text-center"  type="checkbox" name="MV_ownership3" style=""  value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark p-1 mx-auto text-center">
-                                                            <input  class="p-1" type="checkbox" name="MV_ownership3" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark p-1 mx-auto text-center">
-                                                        <input class="p-1"  type="checkbox" name="MV_ownership3" style="" value="JTO">
-                                                    </div>
-                                                    </div>
-                                                <td>
+                                                    <input class="mx-auto text-center" type="checkbox"
+                                                        name="MV_ownership3" style="" value="S">
+                                                </div>
+                                                <div class="border-end border-dark p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership3"
+                                                        style="" value="JTS">
+                                                </div>
+                                                <div class=" border-dark p-1 mx-auto text-center">
+                                                    <input class="p-1" type="checkbox" name="MV_ownership3"
+                                                        style="" value="JTO">
+                                                </div>
+                                            </div>
+                                        <td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="MV_avalue3"
                                                     class="border-0 w-100 text-end"></div>
@@ -3043,43 +3065,55 @@
                                     </tr>
                                     <tr>
                                         <td class="tdata mx-3" style="width:400px">
-                                            <input type="text" name="C_ pinstitution1" class="border-0 w-100"></td>
+                                            <input type="text" name="C_ pinstitution1" class="border-0 w-100">
+                                        </td>
                                         <td class="tdata p">
-                                            <input type="text" name="C_an1" class="border-0 w-100 text-center"></td>
+                                            <input type="text" name="C_an1"
+                                                class="border-0 w-100 text-center">
+                                        </td>
                                         <td class="tdata p">
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="checkbox" name="C_ownership1" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership1" style=""
+                                                        value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="checkbox" name="C_ownership1" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership1" style=""
+                                                        value="JTS">
                                                 </div>
                                                 <div class=" border-dark px-2">
-                                                  <input type="checkbox" name="C_ownership1" style="" value="JTO">
+                                                    <input type="checkbox" name="C_ownership1" style=""
+                                                        value="JTO">
                                                 </div>
                                             </div>
                                         <td>
-                                            <div class="d-flex tdata">$<input type="C_cb1" name="base_pay1" class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$<input type="C_cb1" name="base_pay1"
+                                                    class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$<input type="C_voyi1" name="base_pay1" class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$<input type="C_voyi1" name="base_pay1"
+                                                    class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
-                                        <td class="tdata" style="width:400px"><input type="text"   name="C_institution11" class="border-0 w-100"></td>
+                                        <td class="tdata" style="width:400px"><input type="text"
+                                                name="C_institution11" class="border-0 w-100"></td>
                                         <td class="tdata"><input type="text" name="C_an11"
                                                 class="border-0 w-100 text-center"></td>
                                         <td class="tdata">
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="checkbox" name="C_ownership11" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership11" style=""
+                                                        value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="checkbox" name="C_ownership11" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership11" style=""
+                                                        value="JTS">
                                                 </div>
                                                 <div class=" border-dark  px-2">
-                                                <input type="checkbox" name="C_ownership11" style="" value="JTO">
-                                            </div>
+                                                    <input type="checkbox" name="C_ownership11" style=""
+                                                        value="JTO">
+                                                </div>
                                             </div>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="C_cb11" name="base_pay1"
@@ -3097,14 +3131,17 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="checkbox" name="C_ownership111" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership111" style=""
+                                                        value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="checkbox" name="C_ownership111" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership111" style=""
+                                                        value="JTS">
                                                 </div>
                                                 <div class=" border-dark px-2">
-                                                <input type="checkbox" name="C_ownership111" style="" value="JTO">
-                                            </div>
+                                                    <input type="checkbox" name="C_ownership111" style=""
+                                                        value="JTO">
+                                                </div>
 
 
                                             </div>
@@ -3129,14 +3166,17 @@
                                             <div class="d-flex justify-content-center">
                                                 <div class="border-end border-dark px-2">
 
-                                                    <input type="checkbox" name="C_ownership2" style="" value="S">
+                                                    <input type="checkbox" name="C_ownership2" style=""
+                                                        value="S">
                                                 </div>
                                                 <div class="border-end border-dark px-2">
-                                                    <input type="checkbox" name="C_ownership2" style="" value="JTS">
+                                                    <input type="checkbox" name="C_ownership2" style=""
+                                                        value="JTS">
                                                 </div>
                                                 <div class="  border-dark px-2">
-                                                <input type="checkbox" name="C_ownership2" style="" value="JTO">
-                                            </div>
+                                                    <input type="checkbox" name="C_ownership2" style=""
+                                                        value="JTO">
+                                                </div>
 
 
                                             </div>
@@ -3154,23 +3194,26 @@
                                                 name="C_institution3" class="border-0 w-100"></td>
                                         <td class="tdata"><input type="text" name="C_an3"
                                                 class="border-0 w-100 text-center"></td>
-                                                <td class="tdata">
+                                        <td class="tdata">
 
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark px-2">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark px-2">
 
-                                                            <input type="checkbox" name="C_ownership31" style="" value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark px-2">
-                                                            <input type="checkbox" name="C_ownership31" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark px-2">
-                                                        <input type="checkbox" name="C_ownership31" style="" value="JTO">
-                                                    </div>
+                                                    <input type="checkbox" name="C_ownership31" style=""
+                                                        value="S">
+                                                </div>
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="checkbox" name="C_ownership31" style=""
+                                                        value="JTS">
+                                                </div>
+                                                <div class=" border-dark px-2">
+                                                    <input type="checkbox" name="C_ownership31" style=""
+                                                        value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="C_cb3"
                                                     class="border-0 w-100 text-end"></div>
@@ -3188,23 +3231,26 @@
                                         <td class="tdata"><input type="text" name="Cod_an2"
                                                 class="border-0 w-100 text-center"></td>
 
-                                                <td class="tdata">
+                                        <td class="tdata">
 
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark px-2">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark px-2">
 
-                                                            <input type="checkbox" name="cod_ownership2" style="" value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark px-2">
-                                                            <input type="checkbox" name="cod_ownership2" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark px-2">
-                                                        <input type="checkbox" name="cod_ownership2" style="" value="JTO">
-                                                    </div>
+                                                    <input type="checkbox" name="cod_ownership2" style=""
+                                                        value="S">
+                                                </div>
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="checkbox" name="cod_ownership2" style=""
+                                                        value="JTS">
+                                                </div>
+                                                <div class=" border-dark px-2">
+                                                    <input type="checkbox" name="cod_ownership2" style=""
+                                                        value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="cod_cb2"
                                                     class="border-0 w-100 text-end"></div>
@@ -3223,23 +3269,26 @@
                                                 class="border-0 w-100 text-center"></td>
 
 
-                                                <td class="tdata">
+                                        <td class="tdata">
 
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark px-2">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark px-2">
 
-                                                            <input type="checkbox" name="cu_ownership1" style="" value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark px-2">
-                                                            <input type="checkbox" name="cu_ownership1" style="" value="JTS">
-                                                        </div>
-                                                        <div class=" border-dark px-2">
-                                                        <input type="checkbox" name="cu_ownership1" style="" value="JTO">
-                                                    </div>
+                                                    <input type="checkbox" name="cu_ownership1" style=""
+                                                        value="S">
+                                                </div>
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="checkbox" name="cu_ownership1" style=""
+                                                        value="JTS">
+                                                </div>
+                                                <div class=" border-dark px-2">
+                                                    <input type="checkbox" name="cu_ownership1" style=""
+                                                        value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="cu_cb1"
                                                     class="border-0 w-100 text-end"></div>
@@ -3258,23 +3307,26 @@
                                         <td class="tdata"><input type="text" name="C_an3"
                                                 class="border-0 w-100 text-center"></td>
 
-                                                <td class="tdata">
+                                        <td class="tdata">
 
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="border-end border-dark px-2">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="border-end border-dark px-2">
 
-                                                            <input type="checkbox" name="C_ownership3" style="" value="S">
-                                                        </div>
-                                                        <div class="border-end border-dark px-2">
-                                                            <input type="checkbox" name="C_ownership3" style="" value="JTS">
-                                                        </div>
-                                                        <div class="  border-dark px-2">
-                                                        <input type="checkbox" name="C_ownership3" style="" value="JTO">
-                                                    </div>
+                                                    <input type="checkbox" name="C_ownership3" style=""
+                                                        value="S">
+                                                </div>
+                                                <div class="border-end border-dark px-2">
+                                                    <input type="checkbox" name="C_ownership3" style=""
+                                                        value="JTS">
+                                                </div>
+                                                <div class="  border-dark px-2">
+                                                    <input type="checkbox" name="C_ownership3" style=""
+                                                        value="JTO">
+                                                </div>
 
 
-                                                    </div>
-                                                </td>
+                                            </div>
+                                        </td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="C_cb3"
                                                     class="border-0 w-100 text-end"></div>
@@ -3465,12 +3517,12 @@
                         @include('layouts.footer6', ['page' => 4])
                     </div>
                 </section>
-
                 <section class="section_area p-5" id="fifth_section">
 
                     <div>
                         <div class="row">
-                            <div class="mt-lg-2">F. <b>Retirement Plans </b>(Pensions on Interest, Individual IRA, 401K,
+                            <div class="mt-lg-2">F. <b>Retirement Plans </b>(Pensions on Interest, Individual IRA,
+                                401K,
                                 Keogh, etc.)</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
@@ -3608,7 +3660,8 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb5" class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb5"
+                                                    class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
                                         <td colspan="1"></td>
@@ -3638,14 +3691,32 @@
 
                                 </tr>
                                 <tr>
-                                    <td> <div class=" tdata"> <input type="text" name="BI_nob1"  class="border-0 w-100 text-end"></div></td>
-                                    <td>  <div class="d-flex tdata"> <input type="text" name="BI_po1" class="border-0 w-100 text-end">%</div></td>
-                                    <td>  <div class="d-flex tdata">$ <input type="text" name="BI_v1"  class="border-0 w-100 text-end"></div>  </td>
+                                    <td>
+                                        <div class=" tdata"> <input type="text" name="BI_nob1"
+                                                class="border-0 w-100 text-end"></div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex tdata"> <input type="text" name="BI_po1"
+                                                class="border-0 w-100 text-end">%</div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex tdata">$ <input type="text" name="BI_v1"
+                                                class="border-0 w-100 text-end"></div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td> <div class=" tdata"> <input type="text" name="BI_nob2"  class="border-0 w-100 text-end"></div></td>
-                                    <td>  <div class="d-flex tdata"> <input type="text" name="BI_po2" class="border-0 w-100 text-end">%</div></td>
-                                    <td>  <div class="d-flex tdata">$ <input type="text" name="BI_v2"  class="border-0 w-100 text-end"></div>  </td>
+                                    <td>
+                                        <div class=" tdata"> <input type="text" name="BI_nob2"
+                                                class="border-0 w-100 text-end"></div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex tdata"> <input type="text" name="BI_po2"
+                                                class="border-0 w-100 text-end">%</div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex tdata">$ <input type="text" name="BI_v2"
+                                                class="border-0 w-100 text-end"></div>
+                                    </td>
                                 </tr>
                                 <tr>
 
@@ -3692,47 +3763,99 @@
                                     </tr>
                                     <tr>
                                         <td rowspan="2">Cash in Brokerage Account(s)</td>
-                                        <td> <div class=" tdata"> <input type="text" name="OA_noa3" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa3"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
 
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="OA_cb3" class="border-0 w-100 text-end"></div></td>
-                                        <td><div class=" tdata"> <input type="text" name="OA_noa4"  class="border-0 w-100 text-end"></div></td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="OA_cb5" class="border-0 w-100 text-end"></div> </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb3"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa4"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
 
                                     <tr>
-                                        <td> <div class=" tdata"> <input type="text" name="OA_noa5" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa5"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
 
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="OA_cb5" class="border-0 w-100 text-end"></div></td>
-                                        <td> <div class=" tdata"> <input type="text" name="OA_noa6" class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="OA_cb6"  class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa6"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb6"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td>Funds Held in Escrow
                                             Including Money Held
                                             by Attorney</td>
-                                        <td> <div class=" tdata"> <input type="text" name="OA_noa7" class="border-0 w-100 text-end"></div></td>
-                                        <td><div class="d-flex tdata">$ <input type="text" name="OA_cb7"  class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class=" tdata"> <input type="text" name="OA_noa8" class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="OA_cb8" class="border-0 w-100 text-end"></div> </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa7"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb7"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa8"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb8"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Profit Sharing</td>
-                                        <td> <div class=" tdata"> <input type="text" name="OA_noa9" class="border-0 w-100 text-end"></div></td>
-                                        <td><div class="d-flex tdata">$ <input type="text" name="OA_cb9"  class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class=" tdata"> <input type="text" name="OA_noa10" class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="OA_cb10" class="border-0 w-100 text-end"></div> </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa9"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb9"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="OA_noa10"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb10"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
 
-                                        <td colspan="2" class="text-end  tdata">Total Net Value of Institutional Held Assets:</td>
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="OA_tnv"  class="border-0 w-100 text-end"></div>  </td>
+                                        <td colspan="2" class="text-end  tdata">Total Net Value of Institutional
+                                            Held Assets:</td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_tnv"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                         <div class="pt-5 lh-1">
-                             <div class="fw-bold">I. Other Assets</div>
+                            <div class="fw-bold">I. Other Assets</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
@@ -3745,10 +3868,12 @@
 
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> Arts and Antiques <td>
+                                            <div class=" tdata"> Arts and Antiques
+                                        <td>
                                             <div class="d-flex tdata">$ <input type="text" name="OA_cb1"
                                                     class="border-0 w-100 text-end"></div>
-                                        <td>Firearms <td>
+                                        <td>Firearms
+                                        <td>
                                             <div class="d-flex tdata">$ <input type="text" name="OA_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
@@ -3771,7 +3896,7 @@
                                             <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         <td> Jewelry</td>
-                                         <td>
+                                        <td>
                                             <div class="d-flex tdata">$ <input type="text" name="OA_cb6"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
@@ -3794,7 +3919,8 @@
                                                     class="border-0 w-100 text-end"></div>
                                         <td>Tools/Equipment</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb10" class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb10"
+                                                    class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -3805,28 +3931,44 @@
                                     </tr>
                                     <tr>
                                         <td>Inheritances</td>
-                                        <td colspan="2">  <div class="  tdata"> <input type="text" name="OA_nob1"
-                                            class="border-0 w-100 text-end"></div></td>                                        <td>  <div class=" d-flex tdata">$ <input type="text" name="OA_cb11"
-                                            class="border-0 w-100 text-end"></div></td>
+                                        <td colspan="2">
+                                            <div class="  tdata"> <input type="text" name="OA_nob1"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" d-flex tdata">$ <input type="text" name="OA_cb11"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Other (specify)</td>
-                                        <td colspan="2">  <div class="  tdata"> <input type="text" name="OA_nob2"
-                                            class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class="d-flex tdata"> $ <input type="text" name="OA_cb12"
-                                            class="border-0 w-100 text-end"></div></td>
+                                        <td colspan="2">
+                                            <div class="  tdata"> <input type="text" name="OA_nob2"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata"> $ <input type="text" name="OA_cb12"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>  <div class="  tdata">  <input type="text" name="OA_otheds"
-                                            class="border-0 w-100 text-end"></div></td>
-                                        <td colspan="2">  <div class="  tdata"> <input type="text" name="OA_nob3"
-                                            class="border-0 w-100 text-end"></div></td>
-                                        <td>  <div class="d-flex tdata"> $ <input type="text" name="OA_cb13"
-                                            class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="  tdata"> <input type="text" name="OA_otheds"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="  tdata"> <input type="text" name="OA_nob3"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata"> $ <input type="text" name="OA_cb13"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
 
-                                        <td colspan="2" class="text-end  tdata">Total Net Value of Other Assets:</td>
+                                        <td colspan="2" class="text-end  tdata">Total Net Value of Other Assets:
+                                        </td>
                                         <td>
                                             <div class="d-flex tdata">$ <input type="text" name="OA_tnv"
                                                     class="border-0 w-100 text-end"></div>
@@ -3839,7 +3981,9 @@
                             <div class="d-flex pt-lg-3 d_sm_block">
 
 
-                                <div class="responsive_input">J. <b> Total Net Value All Assets</b> (add items A through I)........................................................................................................................
+                                <div class="responsive_input">J. <b> Total Net Value All Assets</b> (add items A
+                                    through
+                                    I)........................................................................................................................
                                 </div>
                                 <div class="d-flex border ms-lg-3">$ <input type="text" name="h_tnv"
                                         class="border-0 w-100 text-end"></div>
@@ -3848,7 +3992,8 @@
                             <div class="pt-lg-3">
                                 <h4> V. <b> Child(ren)'s Assets</b></h4>
 
-                                <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College Accounts/529 Account, Custodial Account,
+                                <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College
+                                    Accounts/529 Account, Custodial Account,
                                     etc.</div>
                             </div>
 
@@ -3856,48 +4001,125 @@
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
                                         <td class="text-center"> Institution</td>
-                                        <td class="text-center">Account Number <br><small>(last 4 numbers only)</small>
+                                        <td class="text-center">Account Number <br><small>(last 4 numbers
+                                                only)</small>
                                         </td>
                                         <td class="text-center">Listed Beneficiary</td>
                                         <td class="text-center">Person Who Controls the Account <br>
-                                            <small>(Fiduciary)</small> </td>
+                                            <small>(Fiduciary)</small>
+                                        </td>
                                         <td class="text-center">Current Balance/ Value</td>
                                     </tr>
 
                                     <tr>
-                                        <td>  <div class=" tdata"> <input type="text" name="cld_i1"  class="border-0 w-100 "></div>  </td>
-                                        <td>  <div class=" tdata"> <input type="text" name="cld_an1" class="border-0 w-100 text-center"></div></td>
-                                        <td> <div class=" tdata"> <input type="text" name="cld_an1" class="border-0 w-100  "></div></td>
-                                        <td> <div class=" tdata"> <input type="text" name="cld_pwc1"  class="border-0 w-100  "></div></td>
-                                        <td>  <div class="d-flex tdata">$ <input type="text" name="cld_cb1"  class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_i1"
+                                                    class="border-0 w-100 "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_an1"
+                                                    class="border-0 w-100 text-center"></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_an1"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc1"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb1"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><div class="tdata"> <input type="text" name="cld_i2"  class="border-0 w-100  "></div> </td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an2"  class="border-0 w-100 text-center"></div></td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an2" class="border-0 w-100  "></div></td>
-                                        <td><div class=" tdata"> <input type="text" name="cld_pwc2"  class="border-0 w-100  "></div></td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="cld_cb2" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_i2"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an2"
+                                                    class="border-0 w-100 text-center"></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an2"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc2"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb2"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><div class="tdata"> <input type="text" name="cld_i3"  class="border-0 w-100  "></div> </td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an3"  class="border-0 w-100 text-center"></div></td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an3" class="border-0 w-100  "></div></td>
-                                        <td><div class=" tdata"> <input type="text" name="cld_pwc3"  class="border-0 w-100  "></div></td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="cld_cb3" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_i3"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an3"
+                                                    class="border-0 w-100 text-center"></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an3"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc3"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb3"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><div class="tdata"> <input type="text" name="cld_i4"  class="border-0 w-100  "></div> </td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an4"  class="border-0 w-100 text-center"></div></td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an4" class="border-0 w-100  "></div></td>
-                                        <td><div class=" tdata"> <input type="text" name="cld_pwc4"  class="border-0 w-100  "></div></td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="cld_cb4" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_i4"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an4"
+                                                    class="border-0 w-100 text-center"></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an4"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc4"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb4"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><div class="tdata"> <input type="text" name="cld_i5"  class="border-0 w-100  "></div> </td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an5"  class="border-0 w-100 text-center"></div></td>
-                                        <td><div class="tdata"> <input type="text" name="cld_an5" class="border-0 w-100  "></div></td>
-                                        <td><div class=" tdata"> <input type="text" name="cld_pwc5"  class="border-0 w-100  "></div></td>
-                                        <td> <div class="d-flex tdata">$ <input type="text" name="cld_cb5" class="border-0 w-100 text-end"></div></td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_i5"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an5"
+                                                    class="border-0 w-100 text-center"></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdata"> <input type="text" name="cld_an5"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc5"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb5"
+                                                    class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
 
                                     <tr>
@@ -3919,257 +4141,265 @@
                         @include('layouts.footer6', ['page' => 5])
                     </div>
                 </section>
-                    <section class="section_area p-5" id="sixth_section">
+                <section class="section_area p-5" id="sixth_section">
 
+
+                    <div>
+                        <div class="row">
+                            <div class="pt-lg-3">
+                                <h4>VI. <b> Health Insurance</b> (Medical and/or Dental Insurance)</h4>
+
+                            </div>
+                            <div class="table-responsive">
+
+                                <table class="table-bordered border border-1 border-dark w-100">
+                                    <tr>
+                                        <td class="text-center">Company</td>
+                                        <td class="text-center">Name of Insured Person(s) Covered by the Policy
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_com1"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_noi1"
+                                                    class="border-0 w-100 text-center"></div>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_com2"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_noi2"
+                                                    class="border-0 w-100 text-center"></div>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_com3"
+                                                    class="border-0 w-100  "></div>
+                                        </td>
+                                        <td>
+                                            <div class=" tdata"> <input type="text" name="H_noi3"
+                                                    class="border-0 w-100 text-center"></div>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="d-flex pt-1">
+                                <div>Do you or any member of your family have HUSKY Health Insurance Coverage?</div>
+                                <div class=" ps-3 gap-2">
+                                    <input type="checkbox" name="h_type" value="Yes">
+                                    <label for="">Yes</label>
+                                </div>
+                                <div class=" ps-3 gap-2">
+                                    <input type="checkbox" name="h_type" value="No">
+                                    <label for="">No</label>
+                                </div>
+                                <div class=" ps-3 gap-2">
+                                    <input type="checkbox" name="h_type" value="I Don't Know">
+                                    <label for="">I Don't Know</label>
+                                </div>
+                            </div>
+                            <div>If Yes, whom?</div>
+                            <div class=" tdata">
+                                <textarea type="text" name="h_whom" class="border-0 w-100 border-dark  " rows="4"></textarea>
+                            </div>
+
+                            <div class="pt-2">
+                                <div> <strong>Important:</strong></div>
+                                <div> <strong>If you have other financial information that has not yet been
+                                        disclosed, you have an affirmative duty to disclose that
+                                        information. List additional information below:</strong></div>
+                                <div class=" tdata">
+                                    <textarea type="text" name="h_ib" class="border-0 w-100 border-dark  " rows="4"></textarea>
+                                </div>
+
+                            </div>
 
                             <div>
+                                <div><strong>Summary</strong> (Use the amounts shown in Sections I. through IV.)
+                                </div>
+
                                 <div class="row">
-                                    <div class="pt-lg-3">
-                                        <h4>VI. <b> Health Insurance</b> (Medical and/or Dental Insurance)</h4>
-
-                                    </div>
-                                    <div class="table-responsive">
-
-                                        <table class="table-bordered border border-1 border-dark w-100">
-                                            <tr>
-                                                <td class="text-center">Company</td>
-                                                <td class="text-center">Name of Insured Person(s) Covered by the Policy
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_com1"
-                                                            class="border-0 w-100  "></div>
-                                                </td>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_noi1"
-                                                            class="border-0 w-100 text-center"></div>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_com2"
-                                                            class="border-0 w-100  "></div>
-                                                </td>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_noi2"
-                                                            class="border-0 w-100 text-center"></div>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_com3"
-                                                            class="border-0 w-100  "></div>
-                                                </td>
-                                                <td>
-                                                    <div class=" tdata"> <input type="text" name="H_noi3"
-                                                            class="border-0 w-100 text-center"></div>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="d-flex pt-1">
-                                        <div>Do you or any member of your family have HUSKY Health Insurance Coverage?</div>
-                                        <div class=" ps-3 gap-2">
-                                            <input type="checkbox" name="h_type" value="Yes">
-                                            <label for="">Yes</label>
-                                        </div>
-                                        <div class=" ps-3 gap-2">
-                                            <input type="checkbox" name="h_type" value="No">
-                                            <label for="">No</label>
-                                        </div>
-                                        <div class=" ps-3 gap-2">
-                                            <input type="checkbox" name="h_type" value="I Don't Know">
-                                            <label for="">I Don't Know</label>
+                                    <div class="col-lg-9 responsive_input">
+                                        <div class="pt-2"><strong>Total Net Weekly Income </strong>(See Section
+                                            I.
+                                            3).........................................................................................................................
                                         </div>
                                     </div>
-                                    <div>If Yes, whom?</div>
-                                    <div class=" tdata">
-                                        <textarea type="text" name="h_whom" class="border-0 w-100 border-dark  " rows="4"></textarea>
-                                    </div>
-
-                                    <div class="pt-2">
-                                        <div> <strong>Important:</strong></div>
-                                        <div> <strong>If you have other financial information that has not yet been
-                                                disclosed, you have an affirmative duty to disclose that
-                                                information. List additional information below:</strong></div>
-                                        <div class=" tdata">
-                                            <textarea type="text" name="h_ib" class="border-0 w-100 border-dark  " rows="4"></textarea>
-                                        </div>
-
-                                    </div>
-
-                                    <div>
-                                        <div><strong>Summary</strong> (Use the amounts shown in Sections I. through IV.)
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-9 responsive_input">
-                                                <div class="pt-2"><strong>Total Net Weekly Income </strong>(See Section
-                                                    I.
-                                                    3).........................................................................................................................
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="d-flex w-100 gap-2">
-                                                    <div>$</div> <input type="text" name="S_tnwi"
-                                                        class="border-0 border-bottom text-end" value="0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-9 responsive_input">
-                                                <div class="pt-2"><strong>Total Weekly Expenses and Liabilities
-                                                    </strong>(Total From Section II. + III.(B))
-                                                    ..........................................................................
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="d-flex w-100 gap-2">
-                                                    <div>$</div> <input type="text" name="S_twel"
-                                                        class="border-0 border-bottom text-end" value="0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-9 responsive_input ">
-                                                <div class="pt-2"><strong>Total Cash Value of Assets </strong>(See
-                                                    Section IV. I.)
-                                                    ....................................................................................................................
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="d-flex w-100 gap-2">
-                                                    <div>$</div> <input type="text" name="S_tcva"
-                                                        class="border-0 border-bottom text-end" value="0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-9 responsive_input">
-                                                <div class="pt-2  responsive_input"><strong>Total Liabilities </strong>
-                                                    (Total Balance Due on Debts) (See Section III.
-                                                    (A))...................................................................................
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="d-flex w-100 gap-2">
-                                                    <div>$</div> <input type="text" name="S_tl"
-                                                        class="border-0 border-bottom text-end" value="0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="pt-3"> <strong>Certification</strong> </div>
-                                        <div>I certify under the penalties of perjury that the information stated on this
-                                            Financial Statement and the attached Schedules, if
-                                            any, is complete, true, and accurate. <strong> I understand that willful
-                                                misrepresentation of any of the information provided will
-                                                subject me to sanctions and may result in criminal charges being filed
-                                                against me. </strong></div>
-                                    </div>
-
-                                    <div>
-                                        <div class="d-flex d_sm_block">
-                                            <div class="d-flex d_sm_block gap-2 responsive_input" style="width:450px;">
-                                                <div class="pt-2">I,</div> <input type="text" name="S_tcv"
-                                                    class="border-0 w-100 border-bottom responsive_input" >
-                                                <div class="pt-2">The</div>
-                                            </div>
-                                            <div class=" pt-2 ps-3  ">
-                                                <input type="checkbox" name="S_tcvt" value="plaintiff">
-                                                <label for="">Plaintiff</label>
-                                            </div>
-                                            <div class=" pt-2 ps-3  ">
-                                                <input type="checkbox" name="S_tcvt" value="Defendant">
-                                                <label for="">Defendant herein, residing at</label>
-                                            </div>
-                                            <div class="pt-2 ps-3">
-                                                <input type="text" name="S_tcvat"
-                                                    class="border-0  responsive_input border-bottom text-end"
-                                                    style="width:350px;">
-                                            </div>
-
-                                        </div>
-                                        <div class="d-flex w-100">
-                                            <div class="d-flex  w-50 gap-2"> <span class="pt-2">telephone
-                                                    number</span> <input type="text" name="S_residing"
-                                                    class="border-0 w-75 border-bottom"> </div>
-                                            <div class="d-flex  w-50 gap-2"> <input type="text" name="S_tn"
-                                                    class="border-0 w-50 border-bottom">
-                                                <div class="pt-2"> being duly sworn, depose and say that </div>
-                                            </div>
-
-
-                                        </div>
-                                        <div>the following is an accurate statement of my income from all sources, my
-                                            liabilities, my assets
-                                            and my net worth, from whatever sources, and whatever kind and nature, and
-                                            wherever situated.</div>
-                                    </div>
-                                    <div class="pb-2 border-bottom border-dark">
-
-                                        <div class="d-flex lh-4 border-top border-dark">
-                                            <div class="fs-6 ps-2 pe-4 w-75">
-                                                <div>Signed (Affiant)</div>
-                                                <div class="tdata w-100">
-                                                    <input type="text" name="signed_affiant1"
-                                                        class="border-0 w-100">
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
-                                            </div>
-                                            <div class="fs-6 ps-2 pe-4 w-25">
-                                                <div> Date signed <br>
-                                                    <small>Total Cash Value of Assets (See Section IV. I.)</small>
-                                                </div>
-                                                <div class="tdata w-100">
-                                                    <input type="text" name="date_signed1" class="border-0 w-100">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex lh-4 border-top border-bottom  border-dark">
-                                            <div class="fs-6 ps-2 pe-4 w-50 ">
-                                                <div>Signed (Notary, Commissioner of Superior Court, Assistant Clerk, Other
-                                                    Proper Officer under Section 1-24 of the Connecticut General Statutes)
-                                                </div>
-                                                <div class="tdata w-100">
-                                                    <input type="text" name="signed" class="border-0 w-100">
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
-                                            </div>
-                                            <div class="fs-6 ps-2 pe-4 w-25">
-                                                <div> Print name and title of person signing at left</div>
-                                                <div class="tdata w-100">
-                                                    <input type="text" name="print_name_title"
-                                                        class="border-0 w-100">
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
-                                            </div>
-                                            <div class="fs-6 ps-2 pe-4 w-25 ">
-                                                <div> Date signed</div>
-                                                <div class="tdata w-100">
-                                                    <input type="text" name="date_signed2" class="border-0 w-100">
-                                                </div>
-                                            </div>
+                                    <div class="col-lg-3">
+                                        <div class="d-flex w-100 gap-2">
+                                            <div>$</div> <input type="text" name="S_tnwi"
+                                                class="border-0 border-bottom text-end" value="0">
                                         </div>
                                     </div>
                                 </div>
-                                @include('layouts.footer6', ['page' => 6])
-
-
-                                {{-- @include('layouts.pagination', ['page' => 8 ]) --}}
-
+                                <div class="row">
+                                    <div class="col-lg-9 responsive_input">
+                                        <div class="pt-2"><strong>Total Weekly Expenses and Liabilities
+                                            </strong>(Total From Section II. + III.(B))
+                                            ..........................................................................
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="d-flex w-100 gap-2">
+                                            <div>$</div> <input type="text" name="S_twel"
+                                                class="border-0 border-bottom text-end" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9 responsive_input ">
+                                        <div class="pt-2"><strong>Total Cash Value of Assets </strong>(See
+                                            Section IV. I.)
+                                            ....................................................................................................................
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="d-flex w-100 gap-2">
+                                            <div>$</div> <input type="text" name="S_tcva"
+                                                class="border-0 border-bottom text-end" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9 responsive_input">
+                                        <div class="pt-2  responsive_input"><strong>Total Liabilities </strong>
+                                            (Total Balance Due on Debts) (See Section III.
+                                            (A))...................................................................................
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="d-flex w-100 gap-2">
+                                            <div>$</div> <input type="text" name="S_tl"
+                                                class="border-0 border-bottom text-end" value="0">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </section>
-            </form>
-        </div>
+
+                            <div>
+                                <div class="pt-3"> <strong>Certification</strong> </div>
+                                <div>I certify under the penalties of perjury that the information stated on this
+                                    Financial Statement and the attached Schedules, if
+                                    any, is complete, true, and accurate. <strong> I understand that willful
+                                        misrepresentation of any of the information provided will
+                                        subject me to sanctions and may result in criminal charges being filed
+                                        against me. </strong></div>
+                            </div>
+
+                            <div>
+                                <div class="d-flex d_sm_block">
+                                    <div class="d-flex d_sm_block gap-2 responsive_input" style="width:450px;">
+                                        <div class="pt-2">I,</div> <input type="text" name="S_tcv"
+                                            class="border-0 w-100 border-bottom responsive_input">
+                                        <div class="pt-2">The</div>
+                                    </div>
+                                    <div class=" pt-2 ps-3  ">
+                                        <input type="checkbox" name="S_tcvt" value="plaintiff">
+                                        <label for="">Plaintiff</label>
+                                    </div>
+                                    <div class=" pt-2 ps-3  ">
+                                        <input type="checkbox" name="S_tcvt" value="Defendant">
+                                        <label for="">Defendant herein, residing at</label>
+                                    </div>
+                                    <div class="pt-2 ps-3">
+                                        <input type="text" name="S_tcvat"
+                                            class="border-0  responsive_input border-bottom text-end"
+                                            style="width:350px;">
+                                    </div>
+
+                                </div>
+                                <div class="d-flex w-100">
+                                    <div class="d-flex  w-50 gap-2"> <span class="pt-2">telephone
+                                            number</span> <input type="text" name="S_residing"
+                                            class="border-0 w-75 border-bottom"> </div>
+                                    <div class="d-flex  w-50 gap-2"> <input type="text" name="S_tn"
+                                            class="border-0 w-50 border-bottom">
+                                        <div class="pt-2"> being duly sworn, depose and say that </div>
+                                    </div>
+
+
+                                </div>
+                                <div>the following is an accurate statement of my income from all sources, my
+                                    liabilities, my assets
+                                    and my net worth, from whatever sources, and whatever kind and nature, and
+                                    wherever situated.</div>
+                            </div>
+                            <div class="pb-2 border-bottom border-dark">
+
+                                <div class="d-flex lh-4 border-top border-dark">
+                                    <div class="fs-6 ps-2 pe-4 w-75">
+                                        <div>Signed (Affiant)</div>
+                                        <div class="tdata w-100">
+                                            <input type="text" name="signed_affiant1" class="border-0 w-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
+                                    </div>
+                                    <div class="fs-6 ps-2 pe-4 w-25">
+                                        <div> Date signed <br>
+                                            <small>Total Cash Value of Assets (See Section IV. I.)</small>
+                                        </div>
+                                        <div class="tdata w-100">
+                                            <input type="text" name="date_signed1" class="border-0 w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex lh-4 border-top border-bottom  border-dark">
+                                    <div class="fs-6 ps-2 pe-4 w-50 ">
+                                        <div>Signed (Notary, Commissioner of Superior Court, Assistant Clerk, Other
+                                            Proper Officer under Section 1-24 of the Connecticut General Statutes)
+                                        </div>
+                                        <div class="tdata w-100">
+                                            <input type="text" name="signed" class="border-0 w-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
+                                    </div>
+                                    <div class="fs-6 ps-2 pe-4 w-25">
+                                        <div> Print name and title of person signing at left</div>
+                                        <div class="tdata w-100">
+                                            <input type="text" name="print_name_title" class="border-0 w-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
+                                    </div>
+                                    <div class="fs-6 ps-2 pe-4 w-25 ">
+                                        <div> Date signed</div>
+                                        <div class="tdata w-100">
+                                            <input type="text" name="date_signed2" class="border-0 w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @include('layouts.footer6', ['page' => 6])
+
+
+                        {{-- @include('layouts.pagination', ['page' => 8 ]) --}}
+
+                    </div>
+                </section>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+
+
+        </form>
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter  px-3">
             <select name="" id="" class="sectionSelect form-select  mx-auto ">
                 <option value="" disabled selected>Select a section</option>

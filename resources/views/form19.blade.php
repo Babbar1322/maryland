@@ -150,10 +150,10 @@
 
 <body>
     <div class="container-fluid   py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
 
-            <form action="{{ route('form19.submit') }}" method="post">
-                @csrf
+        <form action="{{ route('form19.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1  ">
                 <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
                     id="first_section">
 
@@ -1801,8 +1801,16 @@
 
                     </div>
                 </section>
-            </form>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
         <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
             <select name="" id="" class="sectionSelect form-select  mx-auto ">
                 <option value="" disabled selected>Select a section</option>

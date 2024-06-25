@@ -4,9 +4,9 @@
         <div>/ Revised November 21, 2022</div>  </h6>
       <div class="{{$page == 14 ? 'col':'col-lg-4 col-4 '}} text-center fw-bold">Financial Declaration</div>
       @if($page == 14 )
-        <div class="col">
+        {{-- <div class="col">
             <button type="submit" class="bg-transparent px-4">Submit</button>
-        </div>
+        </div> --}}
         <div class="col">
             <button type="reset" class="bg-transparent px-4">Reset</button>
         </div>

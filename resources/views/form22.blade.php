@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <style>
-        .backdrop_filter{
+        .backdrop_filter {
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
+
         a {
             color: black !important;
         }
@@ -41,7 +42,7 @@
         input,
         table {
             background-color: transparent !important;
-            height : 100% !important;
+            height: 100% !important;
 
         }
 
@@ -142,10 +143,12 @@
         .small_text {
             font-size: 15px;
         }
+
         @media screen and (max-width : 1600px) {
             .d_sm_block {
                 display: block !important;
             }
+
             .responsive_input {
                 width: 100% !important;
             }
@@ -155,9 +158,9 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-        <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form22.submit') }}" method="post">
-                @csrf
+        <form action="{{ route('form22.submit') }}" method="post">
+            @csrf
+            <div class="container bg_color p-lg-3 p-1  ">
 
                 <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
                     id="first_section">
@@ -370,20 +373,26 @@
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  150px !important"></div>Social Security Number <div>Número
                                     de Seguro Social</div>
-                                <div><input type="text" min="0" name="gi_ssnumber1" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width:  150px !important"></div>
+                                <div><input type="text" min="0" name="gi_ssnumber1"
+                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
+                                        style="min-width:  150px !important"></div>
                             </div>
                         </div>
                         <div class="row mt-1">
-                            <div class="col-lg-2 small_text">Occupation <div>Ocupación</div> </div>
+                            <div class="col-lg-2 small_text">Occupation <div>Ocupación</div>
+                            </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_occupation1" class="border-0 p-0 m-0 border-bottom footer_field responsive_input" style="min-width: 150px !important">
+                                <input type="text" min="0" name="gi_occupation1"
+                                    class="border-0 p-0 m-0 border-bottom footer_field responsive_input"
+                                    style="min-width: 150px !important">
                             </div>
                         </div>
 
                         @include('layouts.footer17', ['page' => 1])
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="second_section">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="second_section">
                     <div class="border-bottom border-dark">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -399,32 +408,39 @@
                         </div>
                     </div>
                     <div class="col-lg-10 mx-auto">
-                         <div class="row mt-1">
+                        <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Employer
                                 <div>Empleador</div>
                             </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_employer1" class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_employer1"
+                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Address / Dirección</div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_address3" class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_address3"
+                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text fw-bold">Address / Dirección</div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <input type="text" min="0" name="gi_address4" class="border-0 p-0 m-0 border-bottom footer_field w-100">
+                                <input type="text" min="0" name="gi_address4"
+                                    class="border-0 p-0 m-0 border-bottom footer_field w-100">
                             </div>
                         </div>
                         <div class="row mt-1">
                             <div class="col-lg-2">City / Ciudad</div>
                             <div class="col-lg-10 d-flex d_sm_block">
                                 {{-- <div> <input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div>State <div><input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div>Zip<div><input type="text" min="0" name="mgs_wages" class="border-0 p-0 m-0 border-bottom footer_field w-100"></div> --}}
-                                <div><input type="text" min="0" name="git_city2" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width: 241px !important"> </div>State
-                                <div><input type="text" min="0" name="gi_state2" class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input" style="min-width: 241px !important"> </div>Zip
+                                <div><input type="text" min="0" name="git_city2"
+                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
+                                        style="min-width: 241px !important"> </div>State
+                                <div><input type="text" min="0" name="gi_state2"
+                                        class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
+                                        style="min-width: 241px !important"> </div>Zip
                                 <div><input type="text" min="0" name="gi_zip2"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width: 241px   !important"></div>
@@ -676,7 +692,9 @@
                         @include('layouts.footer17', ['page' => 2])
                     </div>
                 </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="third_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="third_section">
                     <div class="col-lg-10 mx-auto">
                         <div class="border-bottom">
                             <div class="">
@@ -1029,7 +1047,9 @@
                     </div>
 
                 </section>
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fourth_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="fourth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -1290,7 +1310,8 @@
                         @include('layouts.footer17', ['page' => 4])
                     </div>
                 </section>
-                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="fifth_section">
+                <section class="section_area row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="fifth_section">
                     <div class="border-bottom">
                         <div>
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -1895,7 +1916,9 @@
                     </div>
 
                 </section>
-                <section  class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="sixth_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="sixth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -2207,7 +2230,8 @@
                                             tasación</td>
                                         <td colspan="3" class="text-center bg-secondary small_text">Value Today
                                             <br>Valor al día
-                                            actual</td>
+                                            actual
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -2297,7 +2321,9 @@
                     </div>
 
                 </section>
-                <section   class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="seventh_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="seventh_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -2731,7 +2757,9 @@
                         @include('layouts.footer17', ['page' => 7])
 
                 </section>
-                <section  class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="eighth_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="eighth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3124,7 +3152,9 @@
                         @include('layouts.pagination', ['page' => 22])
                 </section>
 
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id='ninth_section'>
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id='ninth_section'>
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3369,7 +3399,8 @@
                                             enajenación</td>
                                         <td class="text-center bg-secondary">Fair Market Value on Date of Disposal
                                             <br> Valor justo de mercado a la
-                                            fecha de enajenación</td>
+                                            fecha de enajenación
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">
@@ -3473,7 +3504,9 @@
                     </div>
                 </section>
 
-                <section class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4" id="tenth_section">
+                <section
+                    class="section_area  row page1 bg-white pt-5 p-lg-5 pe-2 pe-lg-5 p-lg-3 m-3 mt-4  pt-lg-5 pt-4"
+                    id="tenth_section">
                     <div class="border-bottom">
                         <div class="">
                             <div class="small_text d-flex d_sm_block">Petitioner/Joint Petitioner A: <input
@@ -3564,23 +3597,31 @@
                         @include('layouts.pagination', ['page' => 22])
                     </div>
                 </section>
-            </form>
-        </div>
-        <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
-            <select name="" id="" class="sectionSelect form-select  mx-auto ">
-                <option value="" disabled selected>Select a section</option>
-                    <option value="#first_section">First Section</option>
-                    <option value="#second_section">Second Section</option>
-                    <option value="#third_section">Third Section</option>
-                    <option value="#fourth_section">Fourth Section</option>
-                    <option value="#fifth_section">Fifth Section</option>
-                    <option value="#sixth_section">Sixth Section</option>
-                    <option value="#seventh_section">Seventh Section</option>
-                    <option value="#eighth_section">Eighth Section</option>
-                    <option value="#ninth_section">Ninth Section</option>
-                    <option value="#tenth_section">Tenth Section</option>
-            </select>
-        </div>
+            </div>
+            <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                </div>
+                <div class="pt-3">
+                    <button type="button" class="btn btn-dark px-4">Back</button>
+                </div>
+            </div>
+        </form>
+    <div class="position-absolute position-fixed bottom-0 py-2 backdrop_filter px-3">
+        <select name="" id="" class="sectionSelect form-select  mx-auto ">
+            <option value="" disabled selected>Select a section</option>
+            <option value="#first_section">First Section</option>
+            <option value="#second_section">Second Section</option>
+            <option value="#third_section">Third Section</option>
+            <option value="#fourth_section">Fourth Section</option>
+            <option value="#fifth_section">Fifth Section</option>
+            <option value="#sixth_section">Sixth Section</option>
+            <option value="#seventh_section">Seventh Section</option>
+            <option value="#eighth_section">Eighth Section</option>
+            <option value="#ninth_section">Ninth Section</option>
+            <option value="#tenth_section">Tenth Section</option>
+        </select>
+    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
