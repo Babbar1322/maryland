@@ -258,6 +258,16 @@
                   </div>
                 </a>
             </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form25')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 25</h5>
+                      <span>NH financial affidavit nhjb-2065-f.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

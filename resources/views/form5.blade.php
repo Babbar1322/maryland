@@ -415,7 +415,7 @@
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
                                     <small class="small_text pe-4">Date(s) of Prior Statement(s)</small> <input
-                                        type="Text6" name="dateofproir"
+                                        type="text" name="dateofproir"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:247px">
 

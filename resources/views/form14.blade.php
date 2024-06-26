@@ -1047,8 +1047,8 @@
                                         <td>Date of last payment</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="ip_paid1" class="border-0 form-control "></td>
-                                        <td><input type="text" name="ip_for1" class="border-0 form-control "></td>
+                                        <td><input type="text" name="ip_paid1" class="border-0 form-control"></td>
+                                        <td><input type="text" name="ip_for1" class="border-0 form-control"></td>
                                         <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount1" class="border-0 w-100">  </div></td>
                                         <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance1" class="border-0 w-100">  </div></td>
                                         <td><input type="text" name="ip_date_last_payment1" class="border-0 form-control "></td>

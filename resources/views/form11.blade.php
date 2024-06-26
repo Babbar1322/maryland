@@ -370,22 +370,19 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">MAILING ADDRESS:</div>
-                                        <div> <input type="text" name="mailing_address"
-                                                class="border-0 table_input "></div>
+                                        <div><input type="text" name="mailing_address" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">CITY AND ZIP CODE:</div>
-                                        <div> <input type="text" name="zip_code" class="border-0 table_input ">
-                                        </div>
+                                        <div><input type="text" name="zip_code" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">BRANCH NAME:</div>
-                                        <div> <input type="text" name="branch_name" class="border-0 table_input ">
-                                        </div>
+                                        <div><input type="text" name="branch_name" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                             </div>
@@ -394,34 +391,28 @@
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">PETITIONER:</div>
-                                        <div> <input type="text" name="petitioner" class="border-0 table_input ">
-                                        </div>
+                                        <div><input type="text" name="petitioner" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">RESPONDENT:</div>
-                                        <div> <input type="text" name="respondent" class="border-0 table_input ">
-                                        </div>
+                                        <div><input type="text" name="respondent" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">OTHER PARENT/PARTY:</div>
-                                        <div> <input type="text" name="other_party" class="border-0 table_input ">
-                                        </div>
+                                        <div><input type="text" name="other_party" class="border-0 table_input"></div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="col-lg-4 border border-dark"></div>
                     </div>
                     <div class="row px-lg-5 px-2 py-2 pt-0">
                         <div class="col-lg-8 border border-dark">
-                            <div class="d-flex  pt-3 ">
-
+                            <div class="d-flex pt-3">
                                 <div class="d-flex gap-2">
                                     <input type="checkbox" value="petitioner" name="petitioner">
                                     <label for="" class="">PETITIONER’S</label>
@@ -431,7 +422,7 @@
                                     <label for="" class=""> RESPONDENT'S</label>
                                 </div>
                             </div>
-                            <div class="d-flex gap-2   pb-3">
+                            <div class="d-flex gap-2 pb-3">
                                 <input type="checkbox" value="community_prop" name="community_prop"
                                     value="COMMUNITY AND QUASI-COMMUNITY PROPERTY DECLARATION">
                                 <label for="" class="">COMMUNITY AND QUASI-COMMUNITY PROPERTY
@@ -453,8 +444,7 @@
                         <div class="p-2">
                             <div class="lh-1"> See Instructions on page 5 for information about completing this form.
                                 For additional space , use Continuation of Property Declaration</div>
-                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl160.pdf">form
-                                    FL-160</a> )</div>
+                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl160.pdf">form FL-160</a> )</div>
                         </div>
 
                         <div class="table-responsive">

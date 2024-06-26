@@ -1,4 +1,4 @@
-{{-- KY Disclosure statement 238-239.pdf --}}
+{{-- ME financial statement MJB-Form-fm-043 .pdf  --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,23 +21,19 @@
             backdrop-filter: blur(5px) !important;
             -webkit-backdrop-filter: blur(5px) !important;
         }
-
         .blue_border {
             border: 2px solid #4e4ed8;
         }
-
         td {
             padding: 0px !important;
             padding-left: 5px !important;
             background-color: transparent !important;
         }
-
         input:focus {
             border: none !important;
             border-bottom: 1px solid black !important;
             box-shadow: none !important;
         }
-
         input,
         table {
             background-color: transparent !important;
@@ -2463,4 +2459,4 @@
 </body>
 
 </html>
-3179
+

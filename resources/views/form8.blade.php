@@ -337,13 +337,13 @@
                                 <div class="border border-1 border-dark px-2 border-bottom-0 border-top-0">
                                     <div class="fs-6">Docket number</div>
                                     <div class="tdata d-flex gap-2">
-                                        <input type="text" name="dn1" class="border-0" style="width: 29px"
+                                        <input type="text" name="Docket location" class="border-0" style="width: 29px"
                                             maxlength="3">
                                         <div class="fw-bold">- FA -</div>
-                                        <input type="text" name="dn2" class="border-0 " style="width: 29px"
+                                        <input type="text" name="Docket year" class="border-0 " style="width: 29px"
                                             maxlength="2">
                                         <div class="fw-bold">-</div>
-                                        <input type="text" name="dn3" class="border-0 " style="width: 45px"
+                                        <input type="text" name="Docket number" class="border-0 " style="width: 45px"
                                             maxlength="7">
                                         <div class="fw-bold">- S</div>
                                     </div>
@@ -356,7 +356,7 @@
                                 <div class="fs-6 ps-2 pe-4 w-25">
                                     <div>For the Judicial District of</div>
                                     <div class="tdata w-100">
-                                        <input type="text" name="jud_dist" class="border-0 w-100">
+                                        <input type="text" name="For the Judicial District of" class="border-0 w-100">
                                     </div>
                                 </div>
                                 <div class="border border-1 border-dark border-start-0 border-bottom-0 border-top-0">
@@ -364,7 +364,7 @@
                                 <div class="fs-6 ps-2 pe-4 w-75">
                                     <div> At (Address of Court) </div>
                                     <div class="tdata w-100">
-                                        <input type="text" name="court_address" class="border-0 w-100">
+                                        <input type="text" name="At (Address of Court)" class="border-0 w-100">
                                     </div>
                                 </div>
                             </div>
@@ -372,20 +372,20 @@
                             <div class="ps-2 pe-4">
                                 <div class="fs-6">Name of case</div>
                                 <div class="tdata w-100">
-                                    <input type="text" name="case_name" class="border-0 w-100">
+                                    <input type="text" name="form1[0].PAGE1[0].HEADER[0].NAMECASE[0]" class="border-0 w-100">
                                 </div>
                             </div>
                             <div class="border border-1 border-dark border-end-0 border-start-0 border-top-0"></div>
                             <div class="ps-2 pe-4">
                                 <div class="fs-6">Name of affiant (Person submitting this form)</div>
                                 <div class="tdata d-flex gap-5 ">
-                                    <input type="text" name="affiant_name" class="border-0 w-100">
+                                    <input type="text" name="form1[0].PAGE1[0].HEADER[0].NAMEAFFIANT[0]" class="border-0 w-100">
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="affiant_type" value="plaintiff">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].HEADER[0].PLTFDEF[0]" value="Yes">
                                         <label for="">Plaintiff</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="affiant_type" value="defendant">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].HEADER[0].PLTFDEF[1]" value="Yes">
                                         <label for="">Defendant</label>
                                     </div>
                                 </div>
@@ -396,11 +396,8 @@
                         <div class="col-md-12 pt-5">
                             <h4 class="fw-bold">Certification</h4>
                             <div class="pt-3">
-                                <div>I understand that the information stated on this Financial Statement and the
-                                    attached Schedules, if any, is complete, true, and
-                                    accurate. <span class="fw-bold ">I understand that willful misrepresentation of any
-                                        of the information provided will subject me to sanctions
-                                        and may result in criminal charges being filed against me.</span></div>
+                                <div>I understand that the information stated on this Financial Statement and the attached Schedules, if any, is complete, true, and accurate. <span class="fw-bold ">I understand that willful misrepresentation of any
+                                        of the information provided will subject me to sanctions and may result in criminal charges being filed against me.</span></div>
                             </div>
                         </div>
 
@@ -412,31 +409,30 @@
                                     is based on less than 13 weeks or if
                                     your computations are not reflective of current wages, explain:</div>
                                 <div class="tdata">
-                                    <textarea name="I_gwi" id="" rows="2" class="border-0 w-100"></textarea>
+                                    <textarea name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].LESSTHAN13[0]" id="" rows="2" class="border-0 w-100"></textarea>
                                 </div>
                                 <div class="d-flex gap-3 d_sm_block">
                                     <div>Paid:</div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="paid_type" value="Weekly">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].PAID[0]" value="Yes">
                                         <label for="">Weekly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="paid_type" value="Bi-weekly">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].PAID[1]" value="Yes">
                                         <label for="">Bi-weekly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="paid_type" value="Monthly">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].PAID[2]" value="Yes">
                                         <label for="">Monthly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="paid_type" value="Semi-monthly">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].PAID[3]" value="Yes">
                                         <label for="">Semi-monthly</label>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <input type="checkbox" name="paid_type" value="Annually">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].#area[0].PAID[4]" value="Yes">
                                         <label for="">Annually</label>
                                     </div>
-
                                 </div>
 
                                 <div class="py-2">If income is not paid weekly, adjust the rate of pay to weekly as
@@ -469,27 +465,27 @@
                             <div>Employer</div>
                             <div class="d-flex pt-3">
                                 <div style="width: 50px;">Job 1</div>
-                                <input type="text" name="job1" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].EMPLOYER[0]" class="w-100  border-0 border-bottom">
                             </div>
                             <div class="d-flex pt-3">
                                 <div style="width: 50px;">Job 2</div>
-                                <input type="text" name="job2" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].EMPLOYER[0]" class="w-100  border-0 border-bottom">
                             </div>
                             <div class="d-flex pt-3">
                                 <div style="width: 50px;">Job 3</div>
-                                <input type="text" name="job3" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].EMPLOYER[0]" class="w-100  border-0 border-bottom">
                             </div>
                         </div>
                         <div class="col pt-3">
                             <div>Address</div>
                             <div class="pt-3">
-                                <input type="text" name="address1" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].EMPLOYERADDR[0]" class="w-100  border-0 border-bottom">
                             </div>
                             <div class="pt-3">
-                                <input type="text" name="address2" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].EMPLOYERADDR[0]" class="w-100  border-0 border-bottom">
                             </div>
                             <div class="pt-3">
-                                <input type="text" name="address3" class="w-100  border-0 border-bottom">
+                                <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].EMPLOYERADDR[0]" class="w-100  border-0 border-bottom">
                             </div>
                         </div>
 
@@ -497,33 +493,33 @@
                             <div class="text-center">Base Pay:</div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="checkbox" name="job1_salary" value="salary1">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].BASESALARY[0]" value="Yes">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="job1_wages" value="wages1">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].BASEWAGES[0]" value="Yes">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay1" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="checkbox" name="job2_salary" value="salary2">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].BASESALARY[0]" value="Yes">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="job2_wages" value="wages2">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].BASEWAGES[0]" value="Yes">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay2" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
-                                    <input type="checkbox" name="job3_salary" value="salary3">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].BASESALARY[0]" value="salary3">
                                     <label for=""> Salary</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="job3_wages" value="wages3">
+                                    <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].BASEWAGES[0]" value="wages3">
                                     <label for=""> Wages</label>
                                 </div>
                                 <div>$ <input type="text" name="base_pay3" class="border-0 border-bottom"></div>
@@ -905,7 +901,7 @@
                         <div class="col-md-12">
                             <div class="  d-flex d_sm_block">
                                 <div>Hours worked per week</div>
-                                <input type="text" name="hours_per_week" class="border-0 border-bottom">
+                                <input type="text" name="orm1[0].PAGE1[0].GROSSINCOME[0].HOURSWORKED[0]" class="border-0 border-bottom">
                             </div>
                         </div>
 
@@ -918,7 +914,7 @@
                                     </span></div>
                                 <div>
                                     <span>$</span>
-                                    <input type="text" name="total_weekly_gross" class="border-0 border-bottom">
+                                    <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].GROSSPRIORINCOME[0]" class="border-0 border-bottom">
                                 </div>
                             </div>
                         </div>
@@ -1343,7 +1339,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex mx-auto  d_sm_block w-25 justify-content-center">
-                                    <span>$</span><input type="text" name="nwi"
+                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].TOTALOTHERDEDUCT[0]"
                                         class="border-0 border-bottom w-50 text-end" value="0">
                                 </div>
                             </div>
@@ -1392,8 +1388,8 @@
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Property taxes and assessments
-                                                    ....................................</div>
+                                                <div style="width:430px;">2nd Mortgage/Home Equity Line of Credit
+                                                    or Other Lien .</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="pta" value="pta">
@@ -1412,15 +1408,10 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="property_tax_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].HOUSEHOLDIMPROVEMENTS[0]" class="border-0 border-bottom w-100">
                                             </td>
-                                            <td>
-                                                <div style="width:430px;">Household Improvements </div>
-                                            </td>
-
+                                            <td><div style="width:430px;">Household Improvements </div></td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
@@ -1430,18 +1421,15 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="nwi"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="text" name="nwi" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">(Specify) <input type="text"
-                                                        name="pta_val" class="border-0 border-bottom w-75"></div>
+                                                <div style="width:430px;">(Specify) <input type="text" name="pta_val" class="border-0 border-bottom w-75"></div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="Specify" value="pta">
                                                 <div>$</div>
-                                                <input type="text" name="Specify_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="Specify_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                     </table>
@@ -1454,77 +1442,58 @@
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Oil
-                                                        ............................................................
-                                                    </div>
-                                                    <input type="checkbox" name="oil" value="oil">
+                                                    <div style="width:320px;"> Oil............................................................ </div>
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].FUEL[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
-                                                <div>$</div>
-                                                <input type="text" name="oil_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <div>$</div> <input type="text" name="oil_val" class="border-0 border-bottom w-100">
                                             </td>
-                                            <td>
-                                                <div style="width:430px;">Telephone/Cell/Internet
-                                                    ................................................</div>
+                                            <td><div style="width:430px;"> Telephone/Cell/Internet ................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="tel" value="tel">
-                                                <div>$</div>
-                                                <input type="text" name="tel_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TELEPHONE[0]" value="Yes"> <div>$</div> <input type="text" name="tel_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Electricity
-                                                        ................................................
-                                                    </div>
-                                                    <input type="checkbox" name="electricity" value="electricity">
+                                                    <div style="width:320px;"> Electricity ................................................ </div>
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].ELECTRICTY[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oil_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="text" name="oil_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Trash Collection
-                                                    ...........................................................</div>
+                                                <div style="width:430px;">Trash Collection ...........................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="trash" value="trash">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TRASH[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="trash_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="trash_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Gas
-                                                        ...........................................................
-                                                    </div>
-                                                    <input type="checkbox" name="gas" value="gas">
+                                                    <div style="width:320px;"> Gas ........................................................... </div>
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].GAS[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="gas_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="text" name="gas_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">T.V./Internet
-                                                    ..................................................................
+                                                <div style="width:430px;">T.V./Internet ..................................................................
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="tv_int" value="trash">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TV[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="tv_int_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="tv_int_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1533,7 +1502,7 @@
                                                     <div style="width:320px;">Water and Sewer
                                                         .....................................
                                                     </div>
-                                                    <input type="checkbox" name="sewar" value="sewar">
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].WATER[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1551,10 +1520,9 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="groceries_type" value="groceries">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[1].GROCERIES[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="groceries_value"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="groceries_value" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1568,7 +1536,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="restaurants" value="restaurants">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].RESTAURANTS[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="restaurants_value"
                                                     class="border-0 border-bottom w-50">
@@ -1601,7 +1569,7 @@
                                                     .......................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="auto_loan" value="trash">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].AUTOLOAN[0]" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="auto_loan_val"
                                                     class="border-0 border-bottom w-50">
@@ -1613,7 +1581,7 @@
                                                     <div style="width:320px;">Repairs/Maintenance
                                                         ..................................
                                                     </div>
-                                                    <input type="checkbox" name="repairs" value="repairs">
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL1[0].REPAIRS[0]" value="repairs">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1626,7 +1594,7 @@
                                                     ....................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="pub_trans" value="trash">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].PUBLICTRANSPORT[0]" value="trash">
                                                 <div>$</div>
                                                 <input type="text" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
@@ -1638,7 +1606,7 @@
                                                     <div style="width:320px;">Automobile Insurance/Tax/Registration
                                                         ....
                                                     </div>
-                                                    <input type="checkbox" name="auto_ins" value="auto_ins">
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL1[0].AUTOINSURANCE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1674,7 +1642,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="life" value="life">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIFEPREMIUMS[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="life_val"
                                                     class="border-0 border-bottom w-50">
@@ -1687,7 +1655,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="unins_med" value="unins_med">
+                                                <input type="checkbox" name="ofrm1[0].PAGE1[0].NOTDEDUCTED[0].UNINSURED[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
@@ -1721,7 +1689,7 @@
                                             <div style="width:320px;">Personal Care (e.g., haircuts,
                                                 etc.)...............
                                             </div>
-                                            <input type="checkbox" name="personal_care" value="med_ins">
+                                            <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].PERSONALCARE[0]" value="Yes">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1735,10 +1703,9 @@
                                         </div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="checkbox" name="ins_clothing" value="Insurance clothing">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CLOTHING[0]" value="Yes">
                                         <div>$</div>
-                                        <input type="text" name="ins_clothing_val"
-                                            class="border-0 border-bottom w-50">
+                                        <input type="text" name="ins_clothing_val" class="border-0 border-bottom w-50">
                                     </td>
                                 </tr>
 
@@ -1749,7 +1716,7 @@
                                             <div style="width:320px;">Dry
                                                 Cleaning...............................................
                                             </div>
-                                            <input type="checkbox" name="personal_care" value="dry_cleanning">
+                                            <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].DRYCLEANING[0]" value="Yes">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1762,7 +1729,7 @@
                                             .....................................................................</div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="checkbox" name="ins_entertainment1" value="Entertainment">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].ENTERTAINMENT[0]" value="Yes">
                                         <div>$</div>
                                         <input type="text" name="ins_entertainment_val1"
                                             class="border-0 border-bottom w-50">
@@ -1773,7 +1740,7 @@
                                         <div class="d-flex gap-2">
                                             <div style="width:320px;">Alcohol, Smoking Products........................
                                             </div>
-                                            <input type="checkbox" name="personal_care" value="dry_cleanning">
+                                            <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].ALCOHOL[0]" value="Yes">
                                         </div>
                                     </td>
                                     <td class="d-flex w-100">
@@ -1787,7 +1754,7 @@
                                         </div>
                                     </td>
                                     <td class="d-flex w-100 gap-2 w-50">
-                                        <input type="checkbox" name="ins_entertainment" value="Entertainment">
+                                        <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].VACATION[0]" value="Yes">
                                         <div>$</div>
                                         <input type="text" name="ins_entertainment_val"
                                             class="border-0 border-bottom w-50">
@@ -1811,7 +1778,7 @@
                                                     <div style="width:320px;">Child Support of this case
                                                         ...........................
                                                     </div>
-                                                    <input type="checkbox" name="child_supp" value="child_supp">
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].CHILDSUPPORTTHISCASE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1826,7 +1793,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="child_care" value="child_care">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].EDUCATION[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="child_care_val"
                                                     class="border-0 border-bottom w-50">
@@ -1838,8 +1805,8 @@
                                                     <div style="width:320px;">Child Care Expense (after deductions,
                                                         credits and subsidies)...................................
                                                     </div>
-                                                    <input type="checkbox" name="oth_child_care"
-                                                        value="oth_child_supp">
+                                                    <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[0].CHILDCAREEXPENSES[0]"
+                                                        value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1855,7 +1822,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="child_acts1" value="child_acts">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].ACTIVITIES[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1883,7 +1850,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="child_acts" value="child_acts">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].CAMP[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1899,32 +1866,26 @@
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Child(ren)'s clothing and footwear
-                                                    ....................................</div>
+                                                <div style="width:430px;">Child(ren)'s clothing and footwear ....................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="oth_alimin_pay"
-                                                    value="oth_alimin_pay">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].FOOTWEAR[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="oth_alimin_pay_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="oth_alimin_pay_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div> <input type="checkbox" name="extord_trav_exp"
-                                                        value="extord_trav_exp"> Check here if any part is court
-                                                    ordered </div>
+                                                <div> <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].COURTORDERED[0]" value="Yes"> Check here if any part is court ordered </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div> Education (self)
-                                                    ......................................................................................................................................................................................
+                                                <div> Education (self) ......................................................................................................................................................................................
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="education_self" value="Education">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EDUCATIONSELF[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="education_self_val"
                                                     class="border-0 border-bottom w-50">
@@ -1937,7 +1898,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="alimony_pts" value="Alimony">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[3].ALIMONYTHISSPOUSE[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="alimony_pts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1950,8 +1911,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="alimony_ptas"
-                                                    value="Alimony another">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[4].ALIMONYANOTHERSPOUSE[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="alimony_ptas_val"
                                                     class="border-0 border-bottom w-50">
@@ -1968,7 +1928,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="uniforms" value="Uniforms">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UNIFORMS[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="uniforms_val"
                                                     class="border-0 border-bottom w-50">
@@ -1981,7 +1941,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="travel" value="Travel">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRAVEL[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="travel_val"
                                                     class="border-0 border-bottom w-50">
@@ -1994,11 +1954,10 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="re_ce"
-                                                    value="Required continuing education ">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CONTINUINGED[0]"
+                                                    value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="re_ce_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="re_ce_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -2008,8 +1967,8 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="employment_oth_type"
-                                                    value="employment_oth_type">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[0]"
+                                                    value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="employment_oth_val"
                                                     class="border-0 border-bottom w-50">
@@ -2025,8 +1984,8 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="charitable_contributions"
-                                                    value="Charitable Contributions">
+                                                <input type="checkbox" name="orm1[0].PAGE1[0].NOTDEDUCTED[0].CHARITY[0]"
+                                                    value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="charitable_contributions_val"
                                                     class="border-0 border-bottom w-50">
@@ -2039,8 +1998,8 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="child_allowance"
-                                                    value="Child(ren)'s allowance">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].ALLOWANCE[0]"
+                                                    value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="child_allowance_val"
                                                     class="border-0 border-bottom w-50">
@@ -2053,8 +2012,8 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="extraordinary_travel"
-                                                    value="Extraordinary travel expenses for">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EXTRAORDINARY[0]"
+                                                    value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="extraordinary_travel_val"
                                                     class="border-0 border-bottom w-50">
@@ -2066,10 +2025,10 @@
                                                         name="child_oth" class="border-0 border-bottom w-100"></div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="child_oth_type"
-                                                    value="child_oth_type">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[1]"
+                                                    value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_oth_type_val"
+                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSEBOX[0]"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -2081,7 +2040,7 @@
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <div>$</div>
-                                                <input type="text" name="total_we_exp_val"
+                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[1]"
                                                     class="border-0 border-bottom w-50 text-end">
                                             </td>
                                         </tr>
@@ -2098,8 +2057,7 @@
                                         <div class="table-responsive">
                                             <table class="table-bordered border border-1 border-dark w-100">
                                                 <tr>
-                                                    <td class="py-2 text-center" colspan="5">Creditor Name /Type
-                                                        of Debt</td>
+                                                    <td class="py-2 text-center" colspan="5">Creditor Name /Type of Debt</td>
                                                     <td class="py-2 text-center">Balance Due</td>
                                                     <td class="p-2 text-center"> Date Debt Incurred/Revolving</td>
                                                     <td class="py-2 text-center">Weekly Payment</td>
@@ -2108,79 +2066,38 @@
                                                     <td class="py-2" colspan="4">Credit Card Debt</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center tdata" colspan="3">
-                                                        <input type="text" name="L_cn1"
-                                                            class="border-0 w-100">
-                                                    </td>
+                                                    <td class="text-center tdata" colspan="3"> <input type="text" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].KIND[0]" class="border-0 w-100">  </td>
                                                     <td class="text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="checkbox" name="L_cntype1"
-                                                                    value="Sole"> <label
-                                                                    for="">Sole</label> </div>
-                                                            <div> <input type="checkbox" name="L_cntype1"
-                                                                    value="Joint"> <label
-                                                                    for="">Joint</label> </div>
+                                                            <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].SOLE[0]" value="Yes"> <label for="">Sole</label> </div>
+                                                            <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].JOINT[0]" value="Yes"> <label for="">Joint</label> </div>
                                                         </div>
                                                     </td>
-                                                    <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
-                                                                name="L_blcdue1" class="border-0 w-100 text-end">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="  tdata"> <input type="text" name="L_ddi1"
-                                                                class="text-center border-0 w-100"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
-                                                                name="L_wp1" class="border-0 w-100 text-end">
-                                                        </div>
-                                                    </td>
+                                                    <td> <div class="d-flex tdata">$ <input type="text" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].DATE[0]" class="border-0 w-100 text-end"> </div> </td>
+                                                    <td> <div class="tdata"> <input type="text" name="L_ddi1" class="text-center border-0 w-100"></div> </td>
+                                                    <td> <div class="d-flex tdata">$ <input type="text" name="L_wp1" class="border-0 w-100 text-end"> </div> </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center tdata" colspan="3">
-                                                        <input type="text" name="L_cn2"
-                                                            class="border-0 w-100">
-                                                    </td>
+                                                    <td class="text-center tdata" colspan="3"> <input type="text" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[1].KIND[0]" class="border-0 w-100"> </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="checkbox" name="L_cntype2"
-                                                                    value="Sole"> <label
-                                                                    for="">Sole</label> </div>
-                                                            <div> <input type="checkbox" name="L_cntype2"
-                                                                    value="Joint"> <label
-                                                                    for="">Joint</label> </div>
+                                                            <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[1].SOLE[0]" value="Yes"> <label for="">Sole</label> </div>
+                                                            <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[1].JOINT[0]" value="Yes"> <label for="">Joint</label> </div>
                                                         </div>
                                                     </td>
-                                                    <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
-                                                                name="L_blcdue2" class="border-0 w-100 text-end">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="tdata"> <input type="text" name="L_ddi2"
-                                                                class="text-center border-0 w-100"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
-                                                                name="L_wp2" class="border-0 w-100 text-end">
-                                                        </div>
-                                                    </td>
+                                                    <td><div class="d-flex tdata">$ <input type="text" name="L_blcdue2" class="border-0 w-100 text-end"></div></td>
+                                                    <td><div class="tdata"> <input type="text" name="L_ddi2" class="text-center border-0 w-100"></div></td>
+                                                    <td><div class="d-flex tdata">$ <input type="text" name="L_wp2" class="border-0 w-100 text-end"> </div></td>
                                                 </tr>
 
                                                 <tr>
                                                     <td class="text-center tdata" colspan="3">
-                                                        <input type="text" name="L_cn3"
-                                                            class="border-0 w-100">
+                                                        <input type="text" name="L_cn3" class="border-0 w-100">
                                                     </td>
                                                     <td class=" text-center" colspan="2">
                                                         <div class="d-flex gap-2">
-                                                            <div> <input type="checkbox" name="L_cntype3"
-                                                                    value="Sole"> <label
-                                                                    for="">Sole</label> </div>
-                                                            <div> <input type="checkbox" name="L_cntype3"
-                                                                    value="Joint"> <label
-                                                                    for="">Joint</label> </div>
+                                                            <div><input type="checkbox" name="L_cntype3" value="Sole"><label for="">Sole</label></div>
+                                                            <div><input type="checkbox" name="L_cntype3" value="Joint"><label for="">Joint</label></div>
                                                         </div>
                                                     </td>
                                                     <td>

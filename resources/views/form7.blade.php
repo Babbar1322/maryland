@@ -814,7 +814,7 @@
                                             <td>
                                                 <div class="lh-1 pt-2">(1) Federal income tax deductions <div
                                                         class="ps-4">(claiming <input type="text"
-                                                            name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].FEDERALEXEMPTIONS[0]" class="border-0 border-bottom"
+                                                            name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[0]" class="border-0 border-bottom"
                                                             style="width: 30px;" maxlength="4"> exemptions)</div>
                                                 </div>
                                             </td>
@@ -877,8 +877,7 @@
                                             <td>
                                                 <div class="lh-1 pt-2">(3) State income tax deductions <div
                                                         class="ps-4">(claiming <input type="text"
-                                                            name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].STATEEXEMPTIONS[0]" class="border-0 border-bottom"
-                                                            style="width: 30px;" maxlength="4"> exemptions)</div>
+                                                            name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].STATEEXEMPTIONS[0]" class="border-0 border-bottom" style="width: 30px;" maxlength="4"> exemptions)</div>
                                                 </div>
                                             </td>
                                             <td>
@@ -888,9 +887,8 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flexPrior court order - child support o w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]"
-                                                        class="border-0 border-bottom w-100 text-end">
+                                                <div class="d-flex  w-75 mx-auto">
+                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
@@ -1000,7 +998,7 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job1"
+                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -1032,14 +1030,12 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job1"
-                                                        class="border-0 border-bottom w-100 text-end" value="0">
+                                                    <span>$</span><input type="text" name="pc_job1" class="border-0 border-bottom w-100 text-end" value="0">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job2"
-                                                        class="border-0 border-bottom w-100 text-end" value="0">
+                                                    <span>$</span><input type="text" name="pc_job2" class="border-0 border-bottom w-100 text-end" value="0">
                                                 </div>
                                             </td>
                                             <td>
@@ -1143,7 +1139,7 @@
                                             <td>
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Oil............................................................... </div>
-                                                    <input type="radio" name="oil" value="oil">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].FUEL[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1156,7 +1152,7 @@
                                                     ...................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="tel" value="tel">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TELEPHONE[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="tel_val"
                                                     class="border-0 border-bottom w-50">
@@ -1168,7 +1164,7 @@
                                                     <div style="width:320px;">Electricity
                                                         ...................................................
                                                     </div>
-                                                    <input type="radio" name="electricity" value="electricity">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].ELECTRICTY[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1182,7 +1178,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="trash" value="trash">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TRASH[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="trash_val"
                                                     class="border-0 border-bottom w-50">
@@ -1194,7 +1190,7 @@
                                                     <div style="width:320px;">Gas
                                                         .............................................................
                                                     </div>
-                                                    <input type="radio" name="gas" value="gas">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].GAS[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1208,7 +1204,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="tv_int" value="trash">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TV[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="tv_int_val"
                                                     class="border-0 border-bottom w-50">
@@ -1220,7 +1216,7 @@
                                                     <div style="width:320px;">Water and Sewer
                                                         ........................................
                                                     </div>
-                                                    <input type="radio" name="sewar" value="sewar">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL1[0].WATER[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1244,7 +1240,7 @@
                                                     <div style="width:320px;">Gas/Oil
                                                         .......................................................
                                                     </div>
-                                                    <input type="radio" name="trans" value="oil">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL1[0].AUTOGAS[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1257,7 +1253,7 @@
                                                     ..........................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="auto_loan" value="trash">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].AUTOLOAN[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="auto_loan_val"
                                                     class="border-0 border-bottom w-50">
@@ -1269,7 +1265,7 @@
                                                     <div style="width:320px;">Repairs/Maintenance
                                                         .................................
                                                     </div>
-                                                    <input type="radio" name="repairs" value="repairs">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL1[0].REPAIRS[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1282,7 +1278,7 @@
                                                     .......................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="pub_trans" value="trash">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].PUBLICTRANSPORT[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
@@ -1293,7 +1289,7 @@
                                                 <div class="d-flex gap-2">
                                                     <div style="width:320px;">Automobile Insurance/Tax/Registration ...
                                                     </div>
-                                                    <input type="radio" name="auto_ins" value="auto_ins">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL1[0].AUTOINSURANCE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1342,10 +1338,9 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="unins_med" value="unins_med">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UNINSURED[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="pub_trans_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="pub_trans_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1355,7 +1350,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="unins_cloth" value="unins_cloth">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CLOTHING[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="unins_cloth_val"
                                                     class="border-0 border-bottom w-50">
@@ -1374,7 +1369,7 @@
                                                     <div style="width:320px;">Child Support of this case
                                                         ...........................
                                                     </div>
-                                                    <input type="radio" name="child_supp" value="child_supp">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[0].CHILDSUPPORTTHISCASE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1389,10 +1384,9 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_care" value="child_care">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[1].CHILDCAREEXPENSES[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_care_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="text" name="child_care_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1402,8 +1396,8 @@
                                                         than
                                                         this case (attach a copy of the order) ...........
                                                     </div>
-                                                    <input type="radio" name="oth_child_supp"
-                                                        value="oth_child_supp">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[2].CHILDSUPPORTOTHER[0]"
+                                                        value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1419,7 +1413,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_acts" value="child_acts">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].ACTIVITIES[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
@@ -1431,7 +1425,7 @@
                                                     <div style="width:320px;">Alimony: Payable to this spouse
                                                         .................
                                                     </div>
-                                                    <input type="radio" name="alim_pay" value="alim_pay">
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[3].ALIMONYTHISSPOUSE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
@@ -1444,7 +1438,7 @@
                                                     .................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="oth_alimin_pay" value="oth_alimin_pay">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[4].ALIMONYANOTHERSPOUSE[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="oth_alimin_pay_val"
                                                     class="border-0 border-bottom w-50">
@@ -1457,7 +1451,7 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="extord_trav_exp" value="extord_trav_exp">
+                                                <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EXTRAORDINARY[0]" value="Yes">
                                                 <div>$</div>
                                                 <input type="text" name="extord_trav_exp_val"
                                                     class="border-0 border-bottom w-50">
@@ -1482,9 +1476,9 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="radio" name="child_oth_type" value="child_oth_type">
+                                                <input type="radio" name=" form1[0].PAGE1[0].NOTDEDUCTED[0].#area[2].OTHERWEEKLYEXPENSEBOX[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="total_we_exp"
+                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[2].OTHERWEEKLYEXPENSE[0]"
                                                     class="border-0 border-bottom w-50 text-end">
                                             </td>
                                         </tr>
@@ -1522,17 +1516,8 @@
 
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td class="border border-dark py-2"></td>
-                                            <td>
-                                                <div>
-                                                    <input type="text" name="child_oth"
-                                                        class="border-0 border-bottom w-100">
-                                                    <label for=""></label>
-                                                </div>
-                                            </td>
-                                            <td></td>
-                                        </tr>
+
+
                                     </table>
                                 </div>
                             </div>
@@ -1547,6 +1532,66 @@
                             <div class="ps-3">
                                 <div class="table-responsive">
                                     <table class="table-bordered border border-1 border-dark w-100">
+                                        <tr>
+                                            <td class="  text-center tdata" colspan="3">
+                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITCARD[0]" class="border-0 w-100">
+                                            </td>
+                                            <td class=" text-center" colspan="2">
+                                                <div class="d-flex gap-2">
+                                                    <div>
+                                                        <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITSOLE[0]" value="Yes">
+                                                        <label for="">Sole</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITJOINT[0]" value="Yes">
+                                                        <label for="">Joint</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="  ">
+                                                <div class="d-flex tdata">$ <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITCARDDATE[0]"
+                                                        class="border-0 w-100 text-end"></div>
+                                            </td>
+                                            <td>
+                                                <div class="  tdata"> <input type="text" name="L_ddi3"
+                                                        class="text-center border-0 w-100"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex tdata">$ <input type="text" name="L_wp3"
+                                                        class="border-0 w-100 text-end"></div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="  text-center tdata" colspan="3">
+                                                <input type="text" name="L_cn3" class="border-0 w-100">
+                                            </td>
+                                            <td class=" text-center" colspan="2">
+                                                <div class="d-flex gap-2">
+                                                    <div>
+                                                        <input type="radio" name="L_cntype3" value="Sole">
+                                                        <label for="">Sole</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="L_cntype3" value="Joint">
+                                                        <label for="">Joint</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="  ">
+                                                <div class="d-flex tdata">$ <input type="text" name="L_blcdue3"
+                                                        class="border-0 w-100 text-end"></div>
+                                            </td>
+                                            <td>
+                                                <div class="  tdata"> <input type="text" name="L_ddi3"
+                                                        class="text-center border-0 w-100"></div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex tdata">$ <input type="text" name="L_wp3"
+                                                        class="border-0 w-100 text-end"></div>
+
+                                            </td>
+                                        </tr>
                                         <tr>
                                             <td class="  text-center tdata" colspan="3">
                                                 <input type="text" name="L_cn3" class="border-0 w-100">
@@ -2524,24 +2569,13 @@
                                         <td class="text-center">Company</td>
                                         <td class="text-center">Name of Insured Person(s) Covered by the Policy</td>
                                     </tr>
-
                                     <tr>
-                                        <td>
-                                            <div class=" tdata"> <input type="text" name="H_com1"
-                                                    class="border-0 w-100  "></div>
-                                        </td>
-                                        <td>
-                                            <div class=" tdata"> <input type="text" name="H_noi1"
-                                                    class="border-0 w-100 text-center"></div>
+                                        <td><div class="tdata"> <input type="text" name="H_com1" class="border-0 w-100"></div> </td>
+                                        <td><div class="tdata"> <input type="text" name="H_noi1" class="border-0 w-100 text-center"></div>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class=" tdata"> <input type="text" name="H_com2"
-                                                    class="border-0 w-100  "></div>
-                                        </td>
-                                        <td>
-                                            <div class=" tdata"> <input type="text" name="H_noi2"
-                                                    class="border-0 w-100 text-center"></div>
+                                        <td><div class="tdata"> <input type="text" name="H_com2" class="border-0 w-100"></div></td>
+                                        <td><div class="tdata"> <input type="text" name="H_noi2" class="border-0 w-100 text-center"></div>
                                     </tr>
                                 </table>
                             </div>

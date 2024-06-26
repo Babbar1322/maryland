@@ -1230,8 +1230,7 @@
                                             <tr>
                                                 <td>Gasoline and Oil</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_gao"
-                                                            class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="text" name="ov_gao" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>

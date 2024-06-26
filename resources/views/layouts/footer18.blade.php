@@ -11,8 +11,8 @@
     <div class="row  m-0">
         <div class="border border-dark small_text mb-2">
             <div><b>ADA Notice: </b>The Maine Judicial Branch complies with the Americans with Disabilities Act (ADA). If you need a reasonable</div>
-            <div>accommodation contact the Court Access Coordinator, <a href="#" target="_blank">accessibility@courts.maine.gov</a>, or a court clerk.</div>
-            <div><b>Language Services:</b> For language assistance and interpreters, contact a court clerk or <a href="#" target="_blank">interpreters@courts.maine.gov.</a></div>
+            <div>accommodation contact the Court Access Coordinator, <a href="#">accessibility@courts.maine.gov</a>, or a court clerk.</div>
+            <div><b>Language Services:</b> For language assistance and interpreters, contact a court clerk or <a  >interpreters@courts.maine.gov.</a></div>
         </div>
         <div class="col-lg-4  mt-3 mt-lg-0 small_text text-dark fw-bold ">
             <div class=""  >

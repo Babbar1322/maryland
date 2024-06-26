@@ -34,6 +34,8 @@ use App\Models\form2;
 use App\Models\form3;
 use App\Models\ga_form;
 use App\Models\form4;
+use App\Models\me_financial_form;
+use App\Models\me_financial_form_data;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
@@ -715,7 +717,26 @@ class FormController extends Controller
 
     public function form24_post(Request $request) {
         // ME financial statement MJB-Form-fm-043 .pdf
-        dd('comming soon');
+        $me_financial = new me_financial_form();
+        $me_financial->save();
+
+        foreach($request->all() as $key=>$req) {
+            if($key == "_token") {
+                continue;
+            }
+            $me_financial_data = new me_financial_form_data();
+            $me_financial_data->me_financial_id = $me_financial->id;
+            $me_financial_data->keyss = $key;
+            $me_financial_data->valuess = $req;
+            $me_financial_data->save();
+        }
+
+        return redirect()->back()->with('success', 'Data Submitted Successfully');
+    }
+
+
+    public function form25() {
+        return view('form25');
     }
 
 }
