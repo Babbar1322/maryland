@@ -273,8 +273,8 @@
 
 <body>
     <div class="container-fluid py-1 py-lg-3">
-                    <form action="{{ route('form13.submit') }}" method="post">
-                        @csrf
+    <form action="{{ route('form13.submit') }}" method="post">
+      @csrf
         <div class="container bg_color p-lg-3 p-1">
                 <section class="section_area" id="first_section">
 
@@ -912,7 +912,7 @@
                     <div class=" pt-1">
                         <div class="d-flex d_sm_block">
                             <span>27.</span> <input type="checkbox" class="mx-2" name="FL-142[0].Page4[0].Choice2[0]"
-                                value="On"> (Specify number): <input type="text"
+                                value="On"> (Specify number): <input type="number"
                                 class="border-0 border-bottom footer_field" name="FL-142[0].Page4[0].FillText1[0]"> <span>pages are attached as continuation
                                 sheets.</span>
                         </div>

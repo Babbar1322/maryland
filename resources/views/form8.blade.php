@@ -500,7 +500,7 @@
                                     <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].BASEWAGES[0]" value="Yes">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="base_pay1" class="border-0 border-bottom"></div>
+                                <div>$ <input type="number" name="base_pay1" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
@@ -511,7 +511,7 @@
                                     <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].BASEWAGES[0]" value="Yes">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="base_pay2" class="border-0 border-bottom"></div>
+                                <div>$ <input type="number" name="base_pay2" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
@@ -522,7 +522,7 @@
                                     <input type="checkbox" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].BASEWAGES[0]" value="wages3">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="base_pay3" class="border-0 border-bottom"></div>
+                                <div>$ <input type="number" name="base_pay3" class="border-0 border-bottom"></div>
                             </div>
                         </div>
 
@@ -1384,7 +1384,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="nwi"
+                                                <input type="number" name="nwi"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1394,7 +1394,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="pta" value="pta">
                                                 <div>$</div>
-                                                <input type="text" name="pta_val"
+                                                <input type="number" name="pta_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1408,7 +1408,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].HOUSEHOLDIMPROVEMENTS[0]" class="border-0 border-bottom w-100">
+                                                <input type="number" name="form1[0].PAGE1[0].NOTDEDUCTED[0].HOUSEHOLDIMPROVEMENTS[0]" class="border-0 border-bottom w-100">
                                             </td>
                                             <td><div style="width:430px;">Household Improvements </div></td>
                                         </tr>
@@ -1421,7 +1421,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="nwi" class="border-0 border-bottom w-100">
+                                                <input type="number" name="nwi" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">(Specify) <input type="text" name="pta_val" class="border-0 border-bottom w-75"></div>
@@ -1429,7 +1429,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="Specify" value="pta">
                                                 <div>$</div>
-                                                <input type="text" name="Specify_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="Specify_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                     </table>
@@ -1447,12 +1447,12 @@
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
-                                                <div>$</div> <input type="text" name="oil_val" class="border-0 border-bottom w-100">
+                                                <div>$</div> <input type="number" name="oil_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td><div style="width:430px;"> Telephone/Cell/Internet ................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
-                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TELEPHONE[0]" value="Yes"> <div>$</div> <input type="text" name="tel_val" class="border-0 border-bottom w-50">
+                                                <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TELEPHONE[0]" value="Yes"> <div>$</div> <input type="number" name="tel_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1464,7 +1464,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oil_val" class="border-0 border-bottom w-100">
+                                                <input type="number" name="oil_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">Trash Collection ...........................................................</div>
@@ -1472,7 +1472,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TRASH[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="trash_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="trash_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1484,7 +1484,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="gas_val" class="border-0 border-bottom w-100">
+                                                <input type="number" name="gas_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">T.V./Internet ..................................................................
@@ -1493,7 +1493,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TV[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="tv_int_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="tv_int_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1507,7 +1507,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="sewar_val"
+                                                <input type="number" name="sewar_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
 
@@ -1522,7 +1522,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[1].GROCERIES[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="groceries_value" class="border-0 border-bottom w-50">
+                                                <input type="number" name="groceries_value" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1538,7 +1538,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].RESTAURANTS[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="restaurants_value"
+                                                <input type="number" name="restaurants_value"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1561,7 +1561,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="trans_oil_val"
+                                                <input type="number" name="trans_oil_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1571,7 +1571,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].AUTOLOAN[0]" value="trash">
                                                 <div>$</div>
-                                                <input type="text" name="auto_loan_val"
+                                                <input type="number" name="auto_loan_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1586,7 +1586,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="repairs_val"
+                                                <input type="number" name="repairs_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1596,7 +1596,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].PUBLICTRANSPORT[0]" value="trash">
                                                 <div>$</div>
-                                                <input type="text" name="pub_trans_val"
+                                                <input type="number" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1611,7 +1611,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="auto_ins_val"
+                                                <input type="number" name="auto_ins_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                         </tr>
@@ -1633,7 +1633,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="med_ins_val"
+                                                <input type="number" name="med_ins_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1644,7 +1644,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIFEPREMIUMS[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="life_val"
+                                                <input type="number" name="life_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1657,7 +1657,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="ofrm1[0].PAGE1[0].NOTDEDUCTED[0].UNINSURED[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="pub_trans_val"
+                                                <input type="number" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1783,7 +1783,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="child_supp_val"
+                                                <input type="number" name="child_supp_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1795,7 +1795,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].EDUCATION[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_care_val"
+                                                <input type="number" name="child_care_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1811,7 +1811,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oth_child_supp_val"
+                                                <input type="number" name="oth_child_supp_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1824,7 +1824,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].ACTIVITIES[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_acts_val"
+                                                <input type="number" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1841,7 +1841,7 @@
                                             </td>
                                             <td class="d-flex w-100 invisible">
                                                 <div>$</div>
-                                                <input type="text" name="oth_child_supp_val"
+                                                <input type="number" name="oth_child_supp_val"
                                                     class="border-0 border-bottom w-100 ">
                                             </td>
                                             <td>
@@ -1852,7 +1852,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].CAMP[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_acts_val"
+                                                <input type="number" name="child_acts_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1862,7 +1862,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="alim_pay_val"
+                                                <input type="number" name="alim_pay_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1871,7 +1871,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL2[0].FOOTWEAR[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="oth_alimin_pay_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="oth_alimin_pay_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1887,7 +1887,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EDUCATIONSELF[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="education_self_val"
+                                                <input type="number" name="education_self_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1900,7 +1900,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[3].ALIMONYTHISSPOUSE[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="alimony_pts_val"
+                                                <input type="number" name="alimony_pts_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1913,7 +1913,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[4].ALIMONYANOTHERSPOUSE[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="alimony_ptas_val"
+                                                <input type="number" name="alimony_ptas_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1930,7 +1930,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UNIFORMS[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="uniforms_val"
+                                                <input type="number" name="uniforms_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1943,7 +1943,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRAVEL[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="travel_val"
+                                                <input type="number" name="travel_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1957,7 +1957,7 @@
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CONTINUINGED[0]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="re_ce_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="re_ce_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1970,7 +1970,7 @@
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[0]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="employment_oth_val"
+                                                <input type="number" name="employment_oth_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1987,7 +1987,7 @@
                                                 <input type="checkbox" name="orm1[0].PAGE1[0].NOTDEDUCTED[0].CHARITY[0]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="charitable_contributions_val"
+                                                <input type="number" name="charitable_contributions_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -2001,7 +2001,7 @@
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].ALLOWANCE[0]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_allowance_val"
+                                                <input type="number" name="child_allowance_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -2015,7 +2015,7 @@
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EXTRAORDINARY[0]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="extraordinary_travel_val"
+                                                <input type="number" name="extraordinary_travel_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -2028,7 +2028,7 @@
                                                 <input type="checkbox" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[1]"
                                                     value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSEBOX[0]"
+                                                <input type="number" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSEBOX[0]"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -2040,7 +2040,7 @@
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <div>$</div>
-                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[1]"
+                                                <input type="number" name="form1[0].PAGE1[0].NOTDEDUCTED[0].OTHERWEEKLYEXPENSE[1]"
                                                     class="border-0 border-bottom w-50 text-end">
                                             </td>
                                         </tr>
@@ -2073,9 +2073,9 @@
                                                             <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].JOINT[0]" value="Yes"> <label for="">Joint</label> </div>
                                                         </div>
                                                     </td>
-                                                    <td> <div class="d-flex tdata">$ <input type="text" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].DATE[0]" class="border-0 w-100 text-end"> </div> </td>
+                                                    <td> <div class="d-flex tdata">$ <input type="number" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[0].DATE[0]" class="border-0 w-100 text-end"> </div> </td>
                                                     <td> <div class="tdata"> <input type="text" name="L_ddi1" class="text-center border-0 w-100"></div> </td>
-                                                    <td> <div class="d-flex tdata">$ <input type="text" name="L_wp1" class="border-0 w-100 text-end"> </div> </td>
+                                                    <td> <div class="d-flex tdata">$ <input type="number" name="L_wp1" class="border-0 w-100 text-end"> </div> </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center tdata" colspan="3"> <input type="text" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[1].KIND[0]" class="border-0 w-100"> </td>
@@ -2085,9 +2085,9 @@
                                                             <div> <input type="checkbox" name="form1[0].PAGE1[0].LIABILITIES[0].CREDITCARDS[1].JOINT[0]" value="Yes"> <label for="">Joint</label> </div>
                                                         </div>
                                                     </td>
-                                                    <td><div class="d-flex tdata">$ <input type="text" name="L_blcdue2" class="border-0 w-100 text-end"></div></td>
+                                                    <td><div class="d-flex tdata">$ <input type="number" name="L_blcdue2" class="border-0 w-100 text-end"></div></td>
                                                     <td><div class="tdata"> <input type="text" name="L_ddi2" class="text-center border-0 w-100"></div></td>
-                                                    <td><div class="d-flex tdata">$ <input type="text" name="L_wp2" class="border-0 w-100 text-end"> </div></td>
+                                                    <td><div class="d-flex tdata">$ <input type="number" name="L_wp2" class="border-0 w-100 text-end"> </div></td>
                                                 </tr>
 
                                                 <tr>
@@ -2101,7 +2101,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_blcdue3" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2110,7 +2110,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_wp3" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2131,7 +2131,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_blcdue4" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2140,7 +2140,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_wp4" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2161,7 +2161,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_blcdue5" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2170,7 +2170,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_wp5" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2195,7 +2195,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ocb_blcdue1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2204,7 +2204,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ocb_wp1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2226,7 +2226,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ocb_blcdue2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2235,7 +2235,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ocb_wp2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2259,7 +2259,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="td_blcdue1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2268,7 +2268,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="td_wp1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2289,7 +2289,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="td_blcdue2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2298,7 +2298,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="td_wp2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2323,7 +2323,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="hcd_blcdue1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2332,7 +2332,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="hcd_wp1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2353,7 +2353,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="hcd_blcdue2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2362,7 +2362,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="hcd_wp2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2387,7 +2387,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2396,7 +2396,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp1" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2417,7 +2417,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2426,7 +2426,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp2" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2448,7 +2448,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue3" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2457,7 +2457,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp3" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2479,7 +2479,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue4" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2488,7 +2488,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp4" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2510,7 +2510,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue5" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2519,7 +2519,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp5" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2541,7 +2541,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue6" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2550,7 +2550,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp6" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2572,7 +2572,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_blcdue7" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2581,7 +2581,7 @@
                                                                 class="text-center border-0 w-100"></div>
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="ob_wp7" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2594,7 +2594,7 @@
                                                         ................. </td>
 
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_tl" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2608,7 +2608,7 @@
                                                         .............................................................................................................................................
                                                     </td>
                                                     <td>
-                                                        <div class="d-flex tdata">$ <input type="text"
+                                                        <div class="d-flex tdata">$ <input type="number"
                                                                 name="L_twle" class="border-0 w-100 text-end">
                                                         </div>
                                                     </td>
@@ -2684,19 +2684,19 @@
                                                     class="text-center border-0 w-100"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_mcpb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_mcpb1"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_elc1"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_elc1"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_em1"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_em1"
                                                     class="border-0 w-100 text-end" value="0"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_voyi1"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_voyi1"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -2730,19 +2730,19 @@
                                                     class="text-center border-0 w-100"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_mcpb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_mcpb2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_elc2"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_elc2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_em2"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_em2"
                                                     class="border-0 w-100 text-end" value="0"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_voyi2"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_voyi2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -2773,19 +2773,19 @@
                                                     class="text-center border-0 w-100"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_mcpb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_mcpb3"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_elc3"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_elc3"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_em3"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_em3"
                                                     class="border-0 w-100 text-end" value="0"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_voyi3"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_voyi3"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -2794,7 +2794,7 @@
                                         <td colspan="3" class="text-center tdata">Total Net Value of Real Estate:
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="a_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="a_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -2852,16 +2852,16 @@
                                         </td>
                                         <td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_avalue1"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_avalue1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_lb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_lb1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_em1"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_em1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_voyi1"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_voyi1"
                                                     class="border-0 w-100 text-end"></div>
 
                                     </tr>
@@ -2891,16 +2891,16 @@
                                             </div>
                                         <td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_avalue2"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_avalue2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_lb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_lb2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_em2"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_em2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_voyi2"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_voyi2"
                                                     class="border-0 w-100 text-end"></div>
 
                                     </tr>
@@ -2930,16 +2930,16 @@
                                             </div>
                                         <td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_avalue3"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_avalue3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_lb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_lb3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_em3"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_em3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_voyi3"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_voyi3"
                                                     class="border-0 w-100 text-end"></div>
 
                                     </tr>
@@ -2949,7 +2949,7 @@
                                         <td colspan="3" class="text-center tdata">Total Net Value of Motor
                                             Vehicles</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="MV_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="MV_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3005,10 +3005,10 @@
                                                 </div>
                                             </div>
                                         <td>
-                                            <div class="d-flex tdata">$<input type="C_cb1" name="base_pay1"
+                                            <div class="d-flex tdata">$<input type="number" name="C_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$<input type="C_voyi1" name="base_pay1"
+                                            <div class="d-flex tdata">$<input type="number" name="C_voyi1"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3033,10 +3033,10 @@
                                                 </div>
                                             </div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_cb11" name="base_pay1"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_cb11"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_voyi11" name="base_pay1"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_voyi11"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3063,10 +3063,10 @@
 
                                             </div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_cb111" name="base_pay1"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_cb111"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="C_voyi111" name="base_pay1"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_voyi111"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3099,10 +3099,10 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_voyi2"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_voyi2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3132,10 +3132,10 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_voyi3"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_voyi3"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3169,10 +3169,10 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cod_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="cod_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cod_voyi2"
+                                            <div class="d-flex tdata">$ <input type="number" name="cod_voyi2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3207,10 +3207,10 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cu_cb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="cu_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cu_voyi1"
+                                            <div class="d-flex tdata">$ <input type="number" name="cu_voyi1"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3245,17 +3245,17 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_voyi3"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_voyi3"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
                                         <td colspan="2"></td>
                                         <td colspan="2" class="  tdata">Total Net Value of Bank Accounts:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="C_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="C_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3287,7 +3287,7 @@
                                         <td class="tdata"><input type="text" name="SMB_lb1"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="SMB_cbv1"
+                                            <div class="d-flex tdata">$ <input type="number" name="SMB_cbv1"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3299,7 +3299,7 @@
                                         <td class="tdata"><input type="text" name="SMB_lb2"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="SMB_cbv2"
+                                            <div class="d-flex tdata">$ <input type="number" name="SMB_cbv2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3311,7 +3311,7 @@
                                         <td class="tdata"><input type="text" name="SMB_lb3"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="SMB_cbv3"
+                                            <div class="d-flex tdata">$ <input type="number" name="SMB_cbv3"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3323,7 +3323,7 @@
                                         <td class="tdata"><input type="text" name="SMB_lb4"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="SMB_cbv4"
+                                            <div class="d-flex tdata">$ <input type="number" name="SMB_cbv4"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3331,7 +3331,7 @@
                                         <td colspan="4" class="text-end  tdata">Total Net Value of Stocks, Bonds,
                                             Mutual Funds, Bond Funds:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="SMB_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="SMB_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3373,7 +3373,7 @@
                                         <td class="tdata"><input type="text" name="I_lb1"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="I_cbv1"
+                                            <div class="d-flex tdata">$ <input type="number" name="I_cbv1"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3390,7 +3390,7 @@
                                         <td class="tdata"><input type="text" name="I_lb2"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="I_cbv2"
+                                            <div class="d-flex tdata">$ <input type="number" name="I_cbv2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3407,7 +3407,7 @@
                                         <td class="tdata"><input type="text" name="I_lb3"
                                                 class="border-0 w-100 text-center"></td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="I_cbv3"
+                                            <div class="d-flex tdata">$ <input type="number" name="I_cbv3"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3415,7 +3415,7 @@
                                         <td colspan="3" class="text-end  tdata">Total Net Value of Insurance:
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="I_tna"
+                                            <div class="d-flex tdata">$ <input type="number" name="I_tna"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3477,7 +3477,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3502,7 +3502,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3527,7 +3527,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3552,7 +3552,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb4"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_cb4"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3577,7 +3577,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
                                     <tr>
@@ -3585,7 +3585,7 @@
                                         <td colspan="4" class="text-end  tdata">Total Net Value of Retirement
                                             Plans:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="RP_tnv1"
+                                            <div class="d-flex tdata">$ <input type="number" name="RP_tnv1"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3617,7 +3617,7 @@
                                                 class="border-0 w-100 text-end">%</div>
                                     </td>
                                     <td>
-                                        <div class="d-flex tdata">$ <input type="text" name="BI_v1"
+                                        <div class="d-flex tdata">$ <input type="number" name="BI_v1"
                                                 class="border-0 w-100 text-end"></div>
                                     </td>
                                 </tr>
@@ -3631,7 +3631,7 @@
                                                 class="border-0 w-100 text-end">%</div>
                                     </td>
                                     <td>
-                                        <div class="d-flex tdata">$ <input type="text" name="BI_v2"
+                                        <div class="d-flex tdata">$ <input type="number" name="BI_v2"
                                                 class="border-0 w-100 text-end"></div>
                                     </td>
                                 </tr>
@@ -3640,7 +3640,7 @@
                                     <td colspan="2" class="text-end  tdata">Total Net Value of Business
                                         Interest/Self-Employment:</td>
                                     <td>
-                                        <div class="d-flex tdata">$ <input type="text" name="BI_tnv"
+                                        <div class="d-flex tdata">$ <input type="number" name="BI_tnv"
                                                 class="border-0 w-100 text-end"></div>
                                     </td>
                                 </tr>
@@ -3668,13 +3668,13 @@
                                                     class="border-0 w-100 text-end"></div>
 
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
                                             <div class=" tdata"> <input type="text" name="OA_noa2"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3686,7 +3686,7 @@
                                         </td>
 
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
@@ -3694,7 +3694,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3706,7 +3706,7 @@
                                         </td>
 
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
@@ -3714,7 +3714,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb6"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb6"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
 
@@ -3728,7 +3728,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb7"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb7"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
@@ -3736,7 +3736,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb8"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb8"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3747,7 +3747,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb9"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb9"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
@@ -3755,7 +3755,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb10"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb10"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3764,7 +3764,7 @@
                                         <td colspan="2" class="text-end  tdata">Total Net Value of Institutional
                                             Held Assets:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3787,11 +3787,11 @@
                                         <td>
                                             <div class=" tdata"> Arts and Antiques
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>Firearms
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3799,44 +3799,44 @@
                                         <td>Cash on hand</td>
 
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                         <td> Home Furnishings</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td> Collections</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         <td> Jewelry</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb6"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb6"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Contents of Safe or Safe Deposit Box</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb7"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb7"
                                                     class="border-0 w-100 text-end"></div>
                                         <td> Money Owed to You</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb8"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb8"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Crops/Livestock</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb9"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb9"
                                                     class="border-0 w-100 text-end"></div>
                                         <td>Tools/Equipment</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb10"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_cb10"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3853,7 +3853,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class=" d-flex tdata">$ <input type="text" name="OA_cb11"
+                                            <div class=" d-flex tdata">$ <input type="number" name="OA_cb11"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3864,7 +3864,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata"> $ <input type="text" name="OA_cb12"
+                                            <div class="d-flex tdata"> $ <input type="number" name="OA_cb12"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3878,7 +3878,7 @@
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata"> $ <input type="text" name="OA_cb13"
+                                            <div class="d-flex tdata"> $ <input type="number" name="OA_cb13"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3887,7 +3887,7 @@
                                         <td colspan="2" class="text-end  tdata">Total Net Value of Other Assets:
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="OA_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3902,8 +3902,8 @@
                                     through
                                     I)........................................................................................................................
                                 </div>
-                                <div class="d-flex border ms-lg-3">$ <input type="text" name="h_tnv"
-                                        class="border-0 w-100 text-end"></div>
+                                <div class="d-flex   ms-lg-3">$ <input type="number" name="h_tnv"
+                                        class="border-0 border-bottom w-100 text-end"></div>
                             </div>
 
                             <div class="pt-lg-3">
@@ -3946,7 +3946,7 @@
                                                     class="border-0 w-100  "></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb1"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb1"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3968,7 +3968,7 @@
                                                     class="border-0 w-100  "></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -3990,7 +3990,7 @@
                                                     class="border-0 w-100  "></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb3"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb3"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -4012,7 +4012,7 @@
                                                     class="border-0 w-100  "></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb4"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb4"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -4034,7 +4034,7 @@
                                                     class="border-0 w-100  "></div>
                                         </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb5"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb5"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -4044,7 +4044,7 @@
                                         <td colspan="4" class="text-end  tdata">Total Net Value of
                                             Child(ren)'s Assets:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -4149,7 +4149,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="d-flex w-100 gap-2">
-                                            <div>$</div> <input type="text" name="S_tnwi"
+                                            <div>$</div> <input type="number" name="S_tnwi"
                                                 class="border-0 border-bottom text-end" value="0">
                                         </div>
                                     </div>
@@ -4163,7 +4163,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="d-flex w-100 gap-2">
-                                            <div>$</div> <input type="text" name="S_twel"
+                                            <div>$</div> <input type="number" name="S_twel"
                                                 class="border-0 border-bottom text-end" value="0">
                                         </div>
                                     </div>
@@ -4177,7 +4177,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="d-flex w-100 gap-2">
-                                            <div>$</div> <input type="text" name="S_tcva"
+                                            <div>$</div> <input type="number" name="S_tcva"
                                                 class="border-0 border-bottom text-end" value="0">
                                         </div>
                                     </div>
@@ -4191,7 +4191,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="d-flex w-100 gap-2">
-                                            <div>$</div> <input type="text" name="S_tl"
+                                            <div>$</div> <input type="number" name="S_tl"
                                                 class="border-0 border-bottom text-end" value="0">
                                         </div>
                                     </div>
@@ -4232,7 +4232,7 @@
                                 </div>
                                 <div class="d-flex w-100">
                                     <div class="d-flex  w-50 gap-2"> <span class="pt-2">telephone
-                                            number</span> <input type="text" name="S_residing"
+                                            number</span> <input type="number" name="S_residing"
                                             class="border-0 w-75 border-bottom"> </div>
                                     <div class="d-flex  w-50 gap-2"> <input type="text" name="S_tn"
                                             class="border-0 w-50 border-bottom">
@@ -4263,7 +4263,7 @@
                                             <small>Total Cash Value of Assets (See Section IV. I.)</small>
                                         </div>
                                         <div class="tdata w-100">
-                                            <input type="text" name="date_signed1" class="border-0 w-100">
+                                            <input type="date" name="date_signed1" class="border-0 w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -4292,7 +4292,7 @@
                                     <div class="fs-6 ps-2 pe-4 w-25 ">
                                         <div> Date signed</div>
                                         <div class="tdata w-100">
-                                            <input type="text" name="date_signed2" class="border-0 w-100">
+                                            <input type="date" name="date_signed2" class="border-0 w-100">
                                         </div>
                                     </div>
                                 </div>

@@ -286,8 +286,7 @@
 
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
-                                        <div class="small_text">PETITIONER
-                                            :</div>
+                                        <div class="small_text">PETITIONER :</div>
                                         <div> <input type="text" name="form1[0].#subform[0].#area[0].P2Header_gp[0].CaseName[0].Petitioner_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
@@ -309,7 +308,7 @@
 
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="form1[0].#subform[0].#area[0].P2Header_gp[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
+                            <input type="number" name="form1[0].#subform[0].#area[0].P2Header_gp[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
                         </div>
                     </div>
                     <div class="    d-flex    pt-3 ">
@@ -357,23 +356,23 @@
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> $ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> $ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> $ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> $ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> $ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">$ <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> $ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> $ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> $ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> $ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> $ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">$ <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem1_rw[0].Item1_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem2_rw[0].Item2_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
 
@@ -381,367 +380,367 @@
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem3_rw[0].Item3_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem4_rw[0].Item4_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem5_rw[0].Item5_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem6_rw[0].Item6_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem7_rw[0].Item7_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem8_rw[0].Item8_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem9_rw[0].Item9_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem10_rw[0].Item10_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem11_rw[0].Item11_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem12_rw[0].Item12_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem13_rw[0].Item13_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem14_rw[0].Item14_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem15_rw[0].Item15_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>              <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_GrossFMV_dc[0]"  class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"><input type="text" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_GrossFMV_dc[0]"  class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"><input type="number" name="form1[0].#subform[0].Table5[0].AssetItem16_rw[0].Item16_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem17_rw[0].Item17_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem18_rw[0].Item18_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_Desc_ft[0]" class="w-100  border-0"></td>
 
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem19_rw[0].Item19_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem20_rw[0].Item20_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem21_rw[0].Item21_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem22_rw[0].Item22_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem23_rw[0].Item23_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem24_rw[0].Item24_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem25_rw[0].Item25_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem26_rw[0].Item26_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem27_rw[0].Item27_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem28_rw[0].Item28_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem29_rw[0].Item29_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem30_rw[0].Item30_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                  <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem31_rw[0].Item31_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem32_rw[0].Item32_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem33_rw[0].Item33_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr><tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem34_rw[0].Item34_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem35_rw[0].Item35_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem36_rw[0].Item36_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem37_rw[0].Item37_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem38_rw[0].Item38_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DateAcq_dt[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_Debt_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_NetFMV_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DivRes_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DateAcq_dt[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_GrossFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_Debt_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_NetFMV_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[0].Table5[0].AssetItem39_rw[0].Item39_DivRes_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                             </thead>
                         </table>
@@ -788,336 +787,336 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem1_rw[0].Debt_Item1_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem2_rw[0].Debt_Item2_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem3_rw[0].Debt_Item3_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem4_rw[0].Debt_Item4_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem5_rw[0].Debt_Item5_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem6_rw[0].Debt_Item6_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem7_rw[0].Debt_Item7_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem8_rw[0].Debt_Item8_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem9_rw[0].Debt_Item9_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem10_rw[0].Debt_Item10_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 {{-- 10 --}}
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem11_rw[0].Debt_Item11_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem12_rw[0].Debt_Item12_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem13_rw[0].Debt_Item13_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem14_rw[0].Debt_Item14_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem15_rw[0].Debt_Item15_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem16_rw[0].Debt_Item16_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem17_rw[0].Debt_Item17_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem18_rw[0].Debt_Item18_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem19_rw[0].Debt_Item19_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem20_rw[0].Debt_Item20_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                                 {{-- 20 --}}
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem21_rw[0].Debt_Item21_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem22_rw[0].Debt_Item22_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem23_rw[0].Debt_Item23_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem24_rw[0].Debt_Item24_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem25_rw[0].Debt_Item25_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem26_rw[0].Debt_Item26_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem27_rw[0].Debt_Item27_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem28_rw[0].Debt_Item28_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem29_rw[0].Debt_Item29_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem30_rw[0].Debt_Item30_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem31_rw[0].Debt_Item31_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                    <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem32_rw[0].Debt_Item32_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                   <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem33_rw[0].Debt_Item33_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem34_rw[0].Debt_Item34_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                   <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem35_rw[0].Debt_Item35_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem36_rw[0].Debt_Item36_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem37_rw[0].Debt_Item37_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem38_rw[0].Debt_Item38_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem39_rw[0].Debt_Item39_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem40_rw[0].Debt_Item40_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem41_rw[0].Debt_Item41_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem42_rw[0].Debt_Item42_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem43_rw[0].Debt_Item43_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem44_rw[0].Debt_Item44_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem45_rw[0].Debt_Item45_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem46_rw[0].Debt_Item46_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_Desc_ft[0]" class="w-100  border-0"></td>
-                                    <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_Date_dt[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex">  <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_Amount_dc[0]" class="w-100  border-0"></div></td>
-                                    <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_DivPet_ft[0]" class="w-100  border-0"></div></td>
-                                     <td> <div class="d-flex"> <input type="text" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_DivResp_ft[0]" class="w-100  border-0"></div> </td>
+                                    <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_Date_dt[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex">  <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_Amount_dc[0]" class="w-100  border-0"></div></td>
+                                    <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_DivPet_ft[0]" class="w-100  border-0"></div></td>
+                                     <td> <div class="d-flex"> <input type="number" name="form1[0].#subform[4].Table4[0].DebtItem47_rw[0].Debt_Item47_DivResp_ft[0]" class="w-100  border-0"></div> </td>
                                 </tr>
 
                             </thead>

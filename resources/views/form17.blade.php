@@ -631,7 +631,7 @@
 
                                     <div class="row mt-1">
                                         <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">1.</span>
-                                            <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                            <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                     name="monthly gross salary or wages"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                             </div>
@@ -729,7 +729,7 @@
 
                                     <div class="ms-5 mt-2 ps-5 d-flex d_sm_block"><span class="me-3">9a.</span>From
                                         this
-                                        case: <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                        case: <div class="d-flex d_sm_block ms-1 ">$<input type="number"
                                                 min="0" name="alimony from this case"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -737,7 +737,7 @@
 
                                     <div class="ms-5  ps-5 d-flex d_sm_block"><span class="me-3">9b.</span>From
                                         other
-                                        case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                        case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="number"
                                                 min="0" name="alimony From other cases"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -828,7 +828,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">17.</span>
-                                        <div class="d-flex   ">$<input type="text" min= "0"
+                                        <div class="d-flex   ">$<input type="number" min= "0"
                                                 name="total present monthly gross income"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -844,7 +844,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">18.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="monthly federal, state, and local income tax"
                                                 class="border-0 p-0 m-0 mb-4 border-bottom footer_field w-100">
                                         </div>
@@ -937,7 +937,7 @@
                                 </div>
                                 <div class="ms-lg-5 mt-2 ps-lg-5 d-flex  "><span class="me-3">25a.</span>From this
                                     case:
-                                    <div class="d-flex d_sm_block ms-1 ">$<input type="text" min="0"
+                                    <div class="d-flex d_sm_block ms-1 ">$<input type="number" min="0"
                                             name="25b"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
                                     </div>
@@ -945,7 +945,7 @@
 
                                 <div class="ms-lg-5  ps-lg-5 d-flex d_sm_block"><span class="me-3">25b.</span>From
                                     other
-                                    case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="text"
+                                    case(s): <div class="d-flex d_sm_block ms-1 ">$<input type="number"
                                             min="0" name="25b from other cases"
                                             class="border-0 p-0 m-0 border-bottom responsive_input footer_field w-100">
 
@@ -953,7 +953,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">26.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="total deductions allowable under section 61.3" class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -966,7 +966,7 @@
                                         </div>
                                         <div class="row mt-1" style="padding-bottom: 250px">
                                             <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">27.</span>
-                                                <div class="d-flex d_sm_block ">$<input type="text" min="0" name="present net monthly income"
+                                                <div class="d-flex d_sm_block ">$<input type="number" min="0" name="present net monthly income"
                                                         class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                                 </div>
                                             </div>
@@ -1003,14 +1003,14 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">Mortgage or rent</div>
                                     <div class="col-lg-2 col-md-2 col-sm-2">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="mortgage or rent" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field responsive_input">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Clothing</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="clothing 2"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="clothing 2"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1019,14 +1019,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Property taxes</div>
                                     <div class="col-lg-2 justify-content-end">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="property taxes" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Medical/Dental (uninsured)</div>
                                     <div class="col-lg-2 justify-content-end">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="medical/dental2" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1036,14 +1036,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Utilitiest</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="utilities" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Grooming</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="grooming"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="grooming"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1052,14 +1052,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Telephone</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="telephone" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Entertainment</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="entertainment" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1069,14 +1069,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Food</div>
                                     <div class="col-lg-2">
-                                        <div class="d-flex">$<input type="text" min="0" name="food"
+                                        <div class="d-flex">$<input type="number" min="0" name="food"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Gifts</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="gifts"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="gifts"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1086,14 +1086,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Meals outside home</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="meals outside home" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Religious organizations</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="religious_org" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1103,14 +1103,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">Maintenance/Repairs</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="maintenance repairs" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">Miscellaneous</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="miscellaneous" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1122,7 +1122,7 @@
                                             style="width:100px" class="border-0 p-0 m-0 border-bottom footer_field ">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 3"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 3"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1131,7 +1131,7 @@
                                             style="width:175px" class="border-0 p-0 m-0 border-bottom footer_field ">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 3"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 3"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1147,7 +1147,7 @@
                                             class="border-0 p-0 m-0 border-bottom footer_field w-75">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 4"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 4"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1169,7 +1169,7 @@
                                             </div>
 
                                             <div class="col-lg-4 d-flex">
-                                                $<input type="text" min="0" name="other amount 5"
+                                                $<input type="number" min="0" name="other amount 5"
                                                     class="border-0 p-0 m-0 border-bottom footer_field w-75">
                                             </div>
                                         </div>
@@ -1181,7 +1181,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Gasoline</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="gasoline"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="gasoline"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1190,7 +1190,7 @@
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 6"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 6"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1199,7 +1199,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Repairs</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="repairs"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="repairs"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1208,7 +1208,7 @@
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 7"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 7"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1217,7 +1217,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 ">Insurance</div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0"
+                                        <div class="d-flex  ">$<input type="number" min="0"
                                                 name="insurance" style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1226,7 +1226,7 @@
                                             class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <div class="d-flex  ">$<input type="text" min="0" name="other amount 8"
+                                        <div class="d-flex  ">$<input type="number" min="0" name="other amount 8"
                                                 style="width:100px"
                                                 class="border-0 p-0 m-0 border-bottom footer_field ">
                                         </div>
@@ -1241,7 +1241,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Day care</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="day care" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1250,7 +1250,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Lunch money</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="lunch money" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1259,7 +1259,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Clothing</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="clothing" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1268,7 +1268,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Grooming</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex">$<input type="text" min="0"
+                                                <div class="d-flex">$<input type="number" min="0"
                                                         name="grooming 2" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1277,7 +1277,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Gifts for holidays</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="gifts for holidays" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1286,7 +1286,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Medical/Dental (uninsured)</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="medical/dental" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1298,7 +1298,7 @@
                                                     class="border-0 p-0 m-0 border-bottom footer_field ">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="c_other2" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1311,7 +1311,7 @@
                                             <div class="col-lg-8">Medical/Dental (if not listed on
                                                 lines 23 or 45)</div>
                                             <div class="col-lg-4 mt-3 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="medical/dental insurance amount" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1320,7 +1320,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Child(ren)’s medical/dental</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="childrens medical/dental insurance amount" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1329,7 +1329,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">Life</div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="life insurance amount" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1341,7 +1341,7 @@
                                                     class="border-0 p-0 m-0 border-bottom footer_field ">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="other insurance amount" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1363,7 +1363,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 1" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1376,7 +1376,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 2" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1389,7 +1389,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="d-flex">$<input type="text" min="0"
+                                                <div class="d-flex">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 3" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1402,7 +1402,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 4" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1415,7 +1415,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 5" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1428,7 +1428,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 6" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1441,7 +1441,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 7" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1452,7 +1452,7 @@
                                                     name="creditor 8" class="border-0 p-0 m-0 border-bottom footer_field" style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 8" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1465,7 +1465,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 9" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1478,7 +1478,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 10" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1491,7 +1491,7 @@
                                                     style="width: 225px">
                                             </div>
                                             <div class="col-lg-4 ">
-                                                <div class="d-flex  ">$<input type="text" min="0"
+                                                <div class="d-flex  ">$<input type="number" min="0"
                                                         name="creditor monthly payment amount 11" style="width:100px"
                                                         class="border-0 p-0 m-0 border-bottom footer_field ">
                                                 </div>
@@ -1522,7 +1522,7 @@
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">28.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="total monthly expenses 1"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -1535,7 +1535,7 @@
 
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">29.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="total present monthly net income"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -1545,7 +1545,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">30.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="total monthly expenses 2"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -1554,7 +1554,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">31.</span>
-                                        <div class="d-flex d_sm_block ">$<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">$<input type="number" min="0"
                                                 name="surplus"
                                                 class="border-0 p-0 m-0 border-bottom footer_field w-100">
                                         </div>
@@ -1565,7 +1565,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col-lg-2 d-flex d_sm_block"><span class="me-3">32.</span>
-                                        <div class="d-flex d_sm_block ">($<input type="text" min="0"
+                                        <div class="d-flex d_sm_block ">($<input type="number" min="0"
                                                 name="deficit"
                                                 class="border-0 mb-5 m-0 border-bottom footer_field w-100">)
                                         </div>
@@ -1624,7 +1624,7 @@
                                                     <div>Cash (on hand) <span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
+                                                    <div class="d-flex d_sm_block ">$<input type="number"
                                                             min="0" name="cash on hand current fair market value"
                                                             class="border-0 text-center w-100"> </div>
                                                 </td>
@@ -1794,7 +1794,7 @@
                                                     column)
                                                 </td>
                                                 <td class="bg-secondary">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="total assets current fair market value" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -1852,7 +1852,7 @@
                                                     <div>Mortgages on real estate: First mortgage on home <span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
+                                                    <div class="d-flex d_sm_block ">$<input type="number"
                                                             min="0" name="ca_owed1"
                                                             class="border-0 text-center w-100"> </div>
                                                 </td>
@@ -2023,7 +2023,7 @@
                                                     column)
                                                 </td>
                                                 <td class="bg-secondary">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="t_ca_owed" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -2080,7 +2080,7 @@
                                                                 name="ca_val1"></span></div>
                                                 </td>
                                                 <td class="">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="ca_possible1" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -2106,7 +2106,7 @@
                                                     Assets
                                                 </td>
                                                 <td class="">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="t_ca_poss" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -2151,7 +2151,7 @@
                                                                 name="cl_val1"></span></div>
                                                 </td>
                                                 <td class="">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="cl_pao1" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -2177,7 +2177,7 @@
                                                     Liabilities
                                                 </td>
                                                 <td class="">
-                                                    <div class="d-flex ">$<input type="text" min="0"
+                                                    <div class="d-flex ">$<input type="number" min="0"
                                                             name="t_cl_pao" class="border-0 text-center w-100">
                                                     </div>
                                                 </td>
@@ -2226,7 +2226,7 @@
                                     <span>(<input type="checkbox" name="mailed">)</span> mailed <span>(<input
                                             type="checkbox" name="faxed">)</span>faxed <span>(<input
                                             type="checkbox" name="hand_d">)</span> hand delivered to the person(s)
-                                    listed below on {date} <span><input type="text" name="bo_date"
+                                    listed below on {date} <span><input type="date" name="bo_date"
                                             class="border-0 border-bottom footer_field" id=""></span> <span
                                         class="">.</span>
                                 </div>
@@ -2246,7 +2246,7 @@
                                                 name="csz1" id=""
                                                 class="border-0 border-bottom footer_field"
                                                 style="width:220px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text"
+                                    <div class="">Telephone Number: <span><input type="number"
                                                 name="number1" id=""
                                                 class="border-0 border-bottom footer_field"></span></div>
                                     <div class="">Fax Number: <span><input type="text" name="fax_numbe1"
@@ -2264,7 +2264,7 @@
 
                             <div class="row px-lg-5 px-2 py-2 pt-0">
                                 <div class="col-lg-6 ">
-                                    <div class="">Dated: <span><input type="text" name="dated"
+                                    <div class="">Dated: <span><input type="date" name="dated"
                                                 id=""
                                                 class="border-0 border-bottom footer_field  responsive_input"
                                                 style="width:334px  !important"></span></div>
@@ -2288,7 +2288,7 @@
                                                 name="csz2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width:325px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text"
+                                    <div class="">Telephone Number: <span><input type="number"
                                                 name="number2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width: 295px !important;"></span></div>

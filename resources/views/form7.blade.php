@@ -491,7 +491,7 @@
                                     <input type="radio" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[0].BASEWAGES[0]" value="wages1">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].TOTALJOBS[0]" class="border-0 border-bottom responsive_input"></div>
+                                <div>$ <input type="number" name="form1[0].PAGE1[0].GROSSINCOME[0].TOTALJOBS[0]" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
@@ -502,7 +502,7 @@
                                     <input type="radio" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[1].BASEWAGES[0]" value="wages2">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].BASEWAGES[0]" class="border-0 border-bottom"></div>
+                                <div>$ <input type="number" name="form1[0].PAGE1[0].GROSSINCOME[0].EMPLOYERS[2].BASEWAGES[0]" class="border-0 border-bottom"></div>
                             </div>
                             <div class="d-flex gap-3 pt-3 d_sm_block">
                                 <div>
@@ -513,7 +513,7 @@
                                     <input type="radio" name="job3_wages" value="wages3">
                                     <label for=""> Wages</label>
                                 </div>
-                                <div>$ <input type="text" name="base_pay3" class="border-0 border-bottom"></div>
+                                <div>$ <input type="number" name="base_pay3" class="border-0 border-bottom"></div>
                             </div>
                         </div>
 
@@ -529,7 +529,7 @@
                                 </div>
                                 <div class="col-lg-2" col-sm-12>
                                     <div class="d-flex">$
-                                        <input type="text" name="base_pay4"
+                                        <input type="number" name="base_pay4"
                                             class="border-0 border-bottom text-end fw-bold" value="0" readonly>
                                     </div>
                                 </div>
@@ -544,7 +544,7 @@
                                     <div>...........................................</div>
                                 </div>
                                 <div class="d-flex w-100">$
-                                    <input type="text" name="overtime"
+                                    <input type="number" name="overtime"
                                         class="border-0 border-bottom responsive_input text-end fw-bold w-100">
                                 </div>
                             </div>
@@ -557,8 +557,7 @@
                                     <div>...........</div>
                                 </div>
                                 <div class="d-flex col-lg-5 col-sm-12 d_sm_block justify-content-center">$
-                                    <input type="text" name="child_spt"
-                                        class="border-0 responsive_input border-bottom text-end fw-bold">
+                                    <input type="number" name="child_spt" class="border-0 responsive_input border-bottom text-end fw-bold">
                                 </div>
                             </div>
                         </div>
@@ -570,15 +569,14 @@
                                     <div>...............................</div>
                                 </div>
                                 <div class="d-flex w-100">$
-                                    <input type="text" name="self_emp"
-                                        class="border-0 border-bottom text-end fw-bold w-100">
+                                    <input type="number" name="self_emp" class="border-0 border-bottom text-end fw-bold w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 d-flex ps-3">
                             <div>(k)</div>
                             <div class="  ps-3 d-flex w-100 d_sm_block">
-                                <div class="d-flex col-lg-7 d_sm_block   col-sm-12 ">
+                                <div class="d-flex col-lg-7 d_sm_block col-sm-12 ">
                                     <div>Alimony (Actually received) </div>
                                     <div>...................</div>
                                 </div>
@@ -750,7 +748,7 @@
                                     <h5 class="fw-bold col">(q) Total Gross Weekly Income/Monies and Benefits From All Sources </h5><span>(Add items a through p)</span>
                                 </div>
                                 <div class="col-md-3  ps-lg-5"><span>$</span>
-                                    <input type="text" name="total_weekly_gross"
+                                    <input type="number" name="total_weekly_gross"
                                         class="border-0 border-bottom text-end fw-bold">
                                 </div>
                             </div>
@@ -769,7 +767,7 @@
                                 </div>
                                 <div>
                                     <span>$</span>
-                                    <input type="text" name="total_weekly_gross" class="border-0 border-bottom">
+                                    <input type="number" name="total_weekly_gross" class="border-0 border-bottom">
                                 </div>
                             </div>
                         </div>
@@ -820,25 +818,25 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="FI_job1"
+                                                    <span>$</span><input type="number" name="FI_job1"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="FI_job2"
+                                                    <span>$</span><input type="number" name="FI_job2"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="FI_job3"
+                                                    <span>$</span><input type="number" name="FI_job3"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="FI_totals"
+                                                    <span>$</span><input type="number" name="FI_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -850,57 +848,52 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SS_job1"
+                                                    <span>$</span><input type="number" name="SS_job1"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SS_job2"
+                                                    <span>$</span><input type="number" name="SS_job2"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SS_job3"
+                                                    <span>$</span><input type="number" name="SS_job3"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SS_totals"
+                                                    <span>$</span><input type="number" name="SS_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="lh-1 pt-2">(3) State income tax deductions <div
-                                                        class="ps-4">(claiming <input type="text"
-                                                            name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].STATEEXEMPTIONS[0]" class="border-0 border-bottom" style="width: 30px;" maxlength="4"> exemptions)</div>
-                                                </div>
+                                                <div class="lh-1 pt-2">(3) State income tax deductions <div class="ps-4">(claiming <input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].STATEEXEMPTIONS[0]" class="border-0 border-bottom" style="width: 30px;" maxlength="4"> exemptions)</div> </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SI_job1"
+                                                    <span>$</span><input type="number" name="SI_job1"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex  w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]" class="border-0 border-bottom w-100 text-end">
+                                                    <span>$</span><input type="number" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SI_job3"
-                                                        class="border-0 border-bottom w-100 text-end">
+                                                    <span>$</span><input type="number" name="SI_job3" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="SI_totals"
-                                                        value="0" class="border-0 border-bottom w-100 text-end">
+                                                    <span>$</span><input type="number" name="SI_totals" value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                         </tr>
@@ -910,7 +903,7 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[1]"
+                                                    <span>$</span><input type="number" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[1]"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -922,13 +915,13 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[3]"
+                                                    <span>$</span><input type="number" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[3]"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="med_totals"
+                                                    <span>$</span><input type="number" name="med_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -939,25 +932,25 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="hi_job1"
+                                                    <span>$</span><input type="number" name="hi_job1"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="hi_job2"
+                                                    <span>$</span><input type="number" name="hi_job2"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="hi_job3"
+                                                    <span>$</span><input type="number" name="hi_job3"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="hi_totals"
+                                                    <span>$</span><input type="number" name="hi_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -968,25 +961,25 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="ud_job1"
+                                                    <span>$</span><input type="number" name="ud_job1"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="ud_job2"
+                                                    <span>$</span><input type="number" name="ud_job2"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="ud_job3"
+                                                    <span>$</span><input type="number" name="ud_job3"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="ud_totals"
+                                                    <span>$</span><input type="number" name="ud_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -998,25 +991,25 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]"
+                                                    <span>$</span><input type="number" name="form1[0].PAGE1[0].DEDUCTIONS[0].#area[0].DEDUCTIONS[6]"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job2"
+                                                    <span>$</span><input type="number" name="pc_job2"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job3"
+                                                    <span>$</span><input type="number" name="pc_job3"
                                                         class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_totals"
+                                                    <span>$</span><input type="number" name="pc_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -1030,23 +1023,23 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job1" class="border-0 border-bottom w-100 text-end" value="0">
+                                                    <span>$</span><input type="number" name="pc_job1" class="border-0 border-bottom w-100 text-end" value="0">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job2" class="border-0 border-bottom w-100 text-end" value="0">
+                                                    <span>$</span><input type="number" name="pc_job2" class="border-0 border-bottom w-100 text-end" value="0">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_job3"
+                                                    <span>$</span><input type="number" name="pc_job3"
                                                         class="border-0 border-bottom w-100 text-end" value="0">
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex w-75 mx-auto">
-                                                    <span>$</span><input type="text" name="pc_totals"
+                                                    <span>$</span><input type="number" name="pc_totals"
                                                         value="0" class="border-0 border-bottom w-100 text-end">
                                                 </div>
                                             </td>
@@ -1066,7 +1059,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex mx-auto  d_sm_block w-25 justify-content-center">
-                                        <span>$</span><input type="text" name="nwi"
+                                        <span>$</span><input type="number" name="nwi"
                                             class="border-0 border-bottom w-50 text-end" value="0">
                                     </div>
                                 </div>
@@ -1117,7 +1110,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="nwi" class="border-0 border-bottom w-100">
+                                                <input type="number" name="nwi" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">Property taxes and assessments.........................................</div>
@@ -1125,7 +1118,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].PROPERTYTAXES[0]" value="Off">
                                                 <div>$</div>
-                                                <input type="text" name="pta_val"  class="border-0 border-bottom w-50">
+                                                <input type="number" name="pta_val"  class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                     </table>
@@ -1144,8 +1137,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oil_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="number" name="oil_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
                                                 <div style="width:430px;">Telephone/Cell/Internet
@@ -1154,8 +1146,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TELEPHONE[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="tel_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="number" name="tel_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1169,7 +1160,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oil_val"
+                                                <input type="number" name="oil_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1180,7 +1171,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TRASH[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="trash_val"
+                                                <input type="number" name="trash_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1195,7 +1186,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="gas_val"
+                                                <input type="number" name="gas_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1206,7 +1197,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UTILITIESCOL2[0].TV[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="tv_int_val"
+                                                <input type="number" name="tv_int_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1221,7 +1212,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="sewar_val"
+                                                <input type="number" name="sewar_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
 
@@ -1245,7 +1236,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="trans_oil_val"
+                                                <input type="number" name="trans_oil_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1255,7 +1246,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].AUTOLOAN[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="auto_loan_val"
+                                                <input type="number" name="auto_loan_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1270,7 +1261,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="repairs_val"
+                                                <input type="number" name="repairs_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1280,7 +1271,7 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].TRANSPORTATIONCOL2[0].PUBLICTRANSPORT[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="pub_trans_val"
+                                                <input type="number" name="pub_trans_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
@@ -1294,8 +1285,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="auto_ins_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="number" name="auto_ins_val" class="border-0 border-bottom w-100">
                                             </td>
                                         </tr>
                                     </table>
@@ -1308,52 +1298,42 @@
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Medical/Dental (Out-of-pocket expense
-                                                        after Health Savings Account/Plan).......
-                                                    </div>
+                                                    <div style="width:320px;">Medical/Dental (Out-of-pocket expense after Health Savings Account/Plan).......</div>
                                                     <input type="radio" name="med_ins" value="med_ins">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="med_ins_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="number" name="med_ins_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Life
-                                                    ...................................................................................
-                                                </div>
+                                                <div style="width:430px;">Life ...................................................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="life" value="life">
                                                 <div>$</div>
-                                                <input type="text" name="life_val"
+                                                <input type="number" name="life_val"
                                                     class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div>Uninsured Medical/Dental not paid by
-                                                    insurance...................................................................................................................................
-                                                </div>
+                                                <div>Uninsured Medical/Dental not paid by insurance...................................................................................................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].UNINSURED[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="pub_trans_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="pub_trans_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div>Clothing
-                                                    ..................................................................................................................................................................................................
-                                                </div>
+                                                <div>Clothing ..................................................................................................................................................................................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CLOTHING[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="unins_cloth_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="number" name="unins_cloth_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                     </table>
@@ -1374,7 +1354,7 @@
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="child_supp_val"
+                                                <input type="number" name="child_supp_val"
                                                     class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
@@ -1386,31 +1366,22 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[1].CHILDCAREEXPENSES[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="child_care_val" class="border-0 border-bottom w-50">
+                                                <input type="number" name="child_care_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Child Support of other children other
-                                                        than
-                                                        this case (attach a copy of the order) ...........
-                                                    </div>
-                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[2].CHILDSUPPORTOTHER[0]"
-                                                        value="Yes">
+                                                    <div style="width:320px;">Child Support of other children other than this case (attach a copy of the order)........... </div>
+                                                    <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[2].CHILDSUPPORTOTHER[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="oth_child_supp_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="number" name="oth_child_supp_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Child(ren)'s activities (e.g., lessons,
-                                                    sports,
-                                                    etc.)
-                                                    ............................................................................................
-                                                </div>
+                                                <div style="width:430px;">Child(ren)'s activities (e.g., lessons, sports, etc.) ............................................................................................ </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].ACTIVITIES[0]" value="Yes">
@@ -1422,39 +1393,31 @@
                                         <tr>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <div style="width:320px;">Alimony: Payable to this spouse
-                                                        .................
-                                                    </div>
+                                                    <div style="width:320px;">Alimony: Payable to this spouse .................</div>
                                                     <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[3].ALIMONYTHISSPOUSE[0]" value="Yes">
                                                 </div>
                                             </td>
                                             <td class="d-flex w-100">
                                                 <div>$</div>
-                                                <input type="text" name="alim_pay_val"
-                                                    class="border-0 border-bottom w-100">
+                                                <input type="number" name="alim_pay_val" class="border-0 border-bottom w-100">
                                             </td>
                                             <td>
-                                                <div style="width:430px;">Alimony: Payable to another spouse
-                                                    .................................</div>
+                                                <div style="width:430px;">Alimony: Payable to another spouse .................................</div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].CHILDRENCOL1[0].#area[4].ALIMONYANOTHERSPOUSE[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="oth_alimin_pay_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="number" name="oth_alimin_pay_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div>Extraordinary travel expenses for visitation with child(ren)
-                                                    ..................................................................................................................
-                                                </div>
+                                                <div>Extraordinary travel expenses for visitation with child(ren) .................................................................................................................. </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="form1[0].PAGE1[0].NOTDEDUCTED[0].EXTRAORDINARY[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="extord_trav_exp_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="number" name="extord_trav_exp_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
@@ -1465,21 +1428,17 @@
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name="child_oth_type" value="child_oth_type">
                                                 <div>$</div>
-                                                <input type="text" name="child_oth_type_val"
-                                                    class="border-0 border-bottom w-50">
+                                                <input type="number" name="child_oth_type_val" class="border-0 border-bottom w-50">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
-                                                <div><span class="fw-bold">Total Weekly Expenses Not Deducted From
-                                                        Pay</span>................................................................................................................................
-                                                </div>
+                                                <div><span class="fw-bold">Total Weekly Expenses Not Deducted From Pay</span>................................................................................................................................ </div>
                                             </td>
                                             <td class="d-flex w-100 gap-2 w-50">
                                                 <input type="radio" name=" form1[0].PAGE1[0].NOTDEDUCTED[0].#area[2].OTHERWEEKLYEXPENSEBOX[0]" value="Yes">
                                                 <div>$</div>
-                                                <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[2].OTHERWEEKLYEXPENSE[0]"
-                                                    class="border-0 border-bottom w-50 text-end">
+                                                <input type="number" name="form1[0].PAGE1[0].NOTDEDUCTED[0].#area[2].OTHERWEEKLYEXPENSE[0]" class="border-0 border-bottom w-50 text-end">
                                             </td>
                                         </tr>
                                     </table>
@@ -1489,21 +1448,14 @@
                         <div class="pt-5 lh-1">
                             <h3 class="fw-bold">III. Liabilities (Debts)</h3>
                             <div class="ps-3">
-                                <div>Do not include expenses listed above. Do not include mortgage current principal
-                                    balance or loan balances that are listed
-                                    under "Assets."
-                                </div>
+                                <div>Do not include expenses listed above. Do not include mortgage current principal balance or loan balances that are listed under "Assets." </div>
                                 <div class="table-responsive">
                                     <table class="w-100">
                                         <tr>
-                                            <td class="py-2 text-center border border-dark" style="width: 700px;">
-                                                Creditor Name /Type of Debt</td>
-                                            <td class="py-2 text-center border border-dark" style="">Balance Due
-                                            </td>
-                                            <td class="p-2 text-center border border-dark" style="width: 50px;">Date
-                                                Debt Incurred/Revolving</td>
-                                            <td class="py-2 text-center border border-dark" style="width: 100px;">
-                                                Weekly Payment</td>
+                                            <td class="py-2 text-center border border-dark" style="width: 700px;"> Creditor Name /Type of Debt</td>
+                                            <td class="py-2 text-center border border-dark" style="">Balance Due </td>
+                                            <td class="p-2 text-center border border-dark" style="width: 50px;">Date Debt Incurred/Revolving</td>
+                                            <td class="py-2 text-center border border-dark" style="width: 100px;"> Weekly Payment</td>
                                         </tr>
                                         <tr>
                                             <td class="border border-dark">
@@ -1512,18 +1464,12 @@
                                             <td colspan="3"></td>
                                         </tr>
                                         <tr>
-                                            <td class="border border-dark">
-
-                                            </td>
+                                            <td class="border border-dark"> </td>
                                         </tr>
-
-
                                     </table>
                                 </div>
                             </div>
                             @include('layouts.footer5', ['page' => 2])
-
-
                         </div>
                 </section>
                 <section class="section_area p-5" id="third_section">
@@ -1549,15 +1495,15 @@
                                                 </div>
                                             </td>
                                             <td class="  ">
-                                                <div class="d-flex tdata">$ <input type="text" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITCARDDATE[0]"
+                                                <div class="d-flex tdata">$ <input type="number" name="form1[0].PAGE1[0].NOTDEDUCTED[0].LIABILITIES[0].CREDITCARDS[0].CREDITCARDDATE[0]"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="  tdata"> <input type="text" name="L_ddi3"
+                                                <div class="tdata"> <input type="text" name="L_ddi3"
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_wp3"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_wp3"
                                                         class="border-0 w-100 text-end"></div>
 
                                             </td>
@@ -1579,7 +1525,7 @@
                                                 </div>
                                             </td>
                                             <td class="  ">
-                                                <div class="d-flex tdata">$ <input type="text" name="L_blcdue3"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_blcdue3"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
@@ -1587,7 +1533,7 @@
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_wp3"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_wp3"
                                                         class="border-0 w-100 text-end"></div>
 
                                             </td>
@@ -1609,7 +1555,7 @@
                                                 </div>
                                             </td>
                                             <td class="  ">
-                                                <div class="d-flex tdata">$ <input type="text" name="L_blcdue3"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_blcdue3"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
@@ -1617,7 +1563,7 @@
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_wp3"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_wp3"
                                                         class="border-0 w-100 text-end"></div>
 
                                             </td>
@@ -1639,25 +1585,21 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="  ">
-                                                <div class="d-flex tdata">$ <input type="text" name="L_blcdue4"
-                                                        class="border-0 w-100 text-end"></div>
+                                            <td class="">
+                                                <div class="d-flex tdata">$ <input type="number" name="L_blcdue4" class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="  tdata"> <input type="text" name="L_ddi4"
-                                                        class="text-center border-0 w-100"></div>
+                                                <div class="tdata"> <input type="text" name="L_ddi4" class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_wp4"
-                                                        class="border-0 w-100 text-end"></div>
-
+                                                <div class="d-flex tdata">$ <input type="number" name="L_wp4" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="  text-center tdata" colspan="3">
+                                            <td class="text-center tdata" colspan="3">
                                                 <input type="text" name="L_cn5" class="border-0 w-100">
                                             </td>
-                                            <td class=" text-center" colspan="2">
+                                            <td class="text-center" colspan="2">
                                                 <div class="d-flex gap-2">
                                                     <div>
                                                         <input type="radio" name="L_cntype5" value="Sole">
@@ -1670,27 +1612,19 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_blcdue5"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="L_blcdue5" class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="tdata"> <input type="text" name="L_ddi5"
-                                                        class="text-center border-0 w-100"></div>
+                                                <div class="tdata"> <input type="text" name="L_ddi5" class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_wp5"
-                                                        class="border-0 w-100 text-end"></div>
-
+                                                <div class="d-flex tdata">$ <input type="number" name="L_wp5" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="  text-center tdata" colspan="5">
-                                                (A). Total Liabilities (Total Balance Due on Debts)
-                                                ................................... </td>
-
+                                            <td class="  text-center tdata" colspan="5">(A). Total Liabilities (Total Balance Due on Debts)................................... </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_tl"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="L_tl" class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
                                                 <div class="d-flex tdata border-0"> </div>
@@ -1701,7 +1635,7 @@
                                                 Expense....................................................................................................................................................
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="L_twle"
+                                                <div class="d-flex tdata">$ <input type="number" name="L_twle"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -1764,19 +1698,19 @@
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_mcpb1"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_mcpb1"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_elc1"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_elc1"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_em1"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_em1"
                                                         class="border-0 w-100 text-end" value="0"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_voyi1"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_voyi1"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -1810,19 +1744,19 @@
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_mcpb2"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_mcpb2"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_elc2"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_elc2"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_em2"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_em2"
                                                         class="border-0 w-100 text-end" value="0"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_voyi2"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_voyi2"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -1853,19 +1787,19 @@
                                                         class="text-center border-0 w-100"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_mcpb3"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_mcpb3"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_elc3"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_elc3"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_em3"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_em3"
                                                         class="border-0 w-100 text-end" value="0"></div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_voyi3"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_voyi3"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -1874,7 +1808,7 @@
                                             <td colspan="3" class="text-center tdata">Total Net Value of Real
                                                 Estate:</td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="a_tnv"
+                                                <div class="d-flex tdata">$ <input type="number" name="a_tnv"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -1934,16 +1868,16 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text"
+                                                <div class="d-flex tdata">$ <input type="number"
                                                         name="MV_avalue1" class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_lb1"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_lb1"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_em1"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_em1"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_voyi1"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_voyi1"
                                                         class="border-0 w-100 text-end"></div>
 
                                         </tr>
@@ -1976,16 +1910,16 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text"
+                                                <div class="d-flex tdata">$ <input type="number"
                                                         name="MV_avalue2" class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_lb2"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_lb2"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_em2"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_em2"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_voyi2"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_voyi2"
                                                         class="border-0 w-100 text-end"></div>
 
                                         </tr>
@@ -1995,7 +1929,7 @@
                                             <td colspan="3" class="text-center tdata">Total Net Value of Motor
                                                 Vehicles</td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="MV_tnv"
+                                                <div class="d-flex tdata">$ <input type="number" name="MV_tnv"
                                                         class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
@@ -2054,10 +1988,10 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="C_cb1" name="base_pay1"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_cb1"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="C_voyi1" name="base_pay1"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_voyi1"
                                                         class="border-0 w-100 text-end"></div>
                                         </tr>
                                         <tr>
@@ -2091,10 +2025,10 @@
                                             </td>
 
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="C_cb2"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_cb2"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="C_voyi2"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_voyi2"
                                                         class="border-0 w-100 text-end"></div>
                                         </tr>
                                         <tr>
@@ -2127,10 +2061,10 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="C_cb3"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_cb3"
                                                         class="border-0 w-100 text-end"></div>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="C_voyi3"
+                                                <div class="d-flex tdata">$ <input type="number" name="C_voyi3"
                                                         class="border-0 w-100 text-end"></div>
                                         </tr>
                                         <tr>
@@ -2138,8 +2072,7 @@
                                             <td colspan="2" class="  tdata">Total Net Value of Bank Accounts:
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="C_tnv"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="C_tnv" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
 
@@ -2161,43 +2094,30 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="tdata" style="width:600px"><input type="text"
-                                                    name="SBM_company1" class="border-0 w-100"></td>
-                                            <td class="tdata"><input type="text" name="SBM_an1"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="SMB_lb1"
-                                                    class="border-0 w-100 text-center"></td>
+                                            <td class="tdata" style="width:600px"><input type="text" name="SBM_company1" class="border-0 w-100"></td>
+                                            <td class="tdata"><input type="text" name="SBM_an1" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="SMB_lb1" class="border-0 w-100 text-center"></td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="SMB_cbv1"
-                                                        class="border-0 w-100 text-end"></div>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdata" style="width:600px"><input type="text"
-                                                    name="SBM_company2" class="border-0 w-100"></td>
-                                            <td class="tdata"><input type="text" name="SBM_an2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="SMB_lb2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="SMB_cbv2"
-                                                        class="border-0 w-100 text-end"></div>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" class="text-end  tdata">Total Net Value of Stocks,
-                                                Bonds, Mutual Funds:</td>
-                                            <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="SMB_tnv"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="SMB_cbv1" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
-
-
+                                        <tr>
+                                            <td class="tdata" style="width:600px"><input type="text" name="SBM_company2" class="border-0 w-100"></td>
+                                            <td class="tdata"><input type="text" name="SBM_an2" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="SMB_lb2" class="border-0 w-100 text-center"></td>
+                                            <td>
+                                                <div class="d-flex tdata">$ <input type="number" name="SMB_cbv2" class="border-0 w-100 text-end"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="text-end  tdata">Total Net Value of Stocks, Bonds, Mutual Funds:</td>
+                                            <td>
+                                                <div class="d-flex tdata">$ <input type="number" name="SMB_tnv" class="border-0 w-100 text-end"></div>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
-
-
-                                <div class="mt-lg-2"><b>E. Insurance </b> (exclude children) D = Disability L = Life
-                                </div>
+                                <div class="mt-lg-2"><b>E. Insurance </b> (exclude children) D = Disability L = Life</div>
                                 <div class="table-responsive">
                                     <table class="table-bordered border border-1 border-dark w-100">
                                         <tr>
@@ -2210,8 +2130,7 @@
                                                 <span>(last 4 numbers only)</span>
                                             </td>
                                             <td class="py-2 text-center">Listed Beneficiary</td>
-                                            <td class="py-2 text-center">Current Balance/
-                                                Value</td>
+                                            <td class="py-2 text-center">Current Balance / Value</td>
                                         </tr>
 
                                         <tr>
@@ -2228,49 +2147,37 @@
                                             <td class="tdata"><input type="text" name="I_lb1"
                                                     class="border-0 w-100 text-center"></td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="I_cbv1"
+                                                <div class="d-flex tdata">$ <input type="number" name="I_cbv1"
                                                         class="border-0 w-100 text-end"></div>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="tdata" style="width:600px"><input type="text"
-                                                    name="I_noi2" class="border-0 w-100"></td>
-                                            <td class="tdata"><input type="text" name="I_d2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="I_l2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="I_c2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="I_an2"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="I_lb2"
-                                                    class="border-0 w-100 text-center"></td>
+                                            <td class="tdata" style="width:600px"><input type="text" name="I_noi2" class="border-0 w-100"></td>
+                                            <td class="tdata"><input type="text" name="I_d2" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="I_l2" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="I_c2" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="I_an2" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="I_lb2" class="border-0 w-100 text-center"></td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="I_cbv2"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="I_cbv2" class="border-0 w-100 text-end"></div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td colspan="3"></td>
-                                            <td colspan="3" class="text-end  tdata">Total Net Value of Insurance:
-                                            </td>
+                                            <td colspan="3" class="text-end  tdata">Total Net Value of Insurance:</td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="I_tna"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="I_tna" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
-
-
                                     </table>
-
                                 </div>
 
-                                <div class="mt-lg-2"><b>F. Retirement Plans</b> (Pensions on Interest, Individual IRA,
-                                    401K, Keogh, etc.)</div>
+                                <div class="mt-lg-2"><b>F. Retirement Plans</b> (Pensions on Interest, Individual IRA, 401K, Keogh, etc.)</div>
                                 <div class="table-responsive">
                                     <table class="table-bordered border border-1 border-dark w-100">
                                         <tr>
                                             <td class="py-2 text-center" style="width:300px">Type of Plan</td>
                                             <td class="p-2 text-center">Name of Plan/Bank/Company</td>
-
                                             <td class="py-2 text-center">Account Number <br>
                                                 <span>(last 4 numbers only)</span>
                                             </td>
@@ -2278,16 +2185,11 @@
                                             <td class="py-2 text-center">Receiving Payments</td>
                                             <td class="py-2 text-center">Current Balance/Value</td>
                                         </tr>
-
                                         <tr>
-                                            <td class="tdata" style="width:600px"><input type="text"
-                                                    name="RP_top1" class="border-0 w-100"></td>
-                                            <td class="tdata"><input type="text" name="RP_nop1"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="RP_an1"
-                                                    class="border-0 w-100 text-center"></td>
-                                            <td class="tdata"><input type="text" name="RP_lb1"
-                                                    class="border-0 w-100 text-center"></td>
+                                            <td class="tdata" style="width:600px"><input type="text" name="RP_top1" class="border-0 w-100"></td>
+                                            <td class="tdata"><input type="text" name="RP_nop1" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="RP_an1" class="border-0 w-100 text-center"></td>
+                                            <td class="tdata"><input type="text" name="RP_lb1" class="border-0 w-100 text-center"></td>
                                             <td class="tdata">
                                                 <div class="d-flex">
                                                     <div class="d-flex gap-2">
@@ -2301,8 +2203,9 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="RP_cb1"
+                                                <div class="d-flex tdata">$ <input type="number" name="RP_cb1"
                                                         class="border-0 w-100 text-end"></div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="tdata" style="width:600px"><input type="text"
@@ -2326,16 +2229,15 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="RP_cb2"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="RP_cb2" class="border-0 w-100 text-end"></div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td colspan="1"></td>
                                             <td colspan="4" class="text-end  tdata">Total Net Value of Retirement
                                                 Plans:</td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="RP_tnv1"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="RP_tnv1" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
 
@@ -2357,28 +2259,21 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class=" tdata"> <input type="text" name="BI_nob"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class=" tdata"> <input type="text" name="BI_nob" class="border-0 w-100 text-end"></div>
+                                            </td>
+                                                <div class="d-flex tdata"> <input type="text" name="BI_po" class="border-0 w-100 text-end">%</div>
+                                            </td>
                                             <td>
-                                                <div class="d-flex tdata"> <input type="text" name="BI_po"
-                                                        class="border-0 w-100 text-end">%</div>
-
-                                            <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="BI_v"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="BI_v"  class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
                                         <tr>
 
-                                            <td colspan="2" class="text-end  tdata">Total Net Value of Business
-                                                Interest/Self-Employment:</td>
+                                            <td colspan="2" class="text-end  tdata">Total Net Value of Business Interest/Self-Employment:</td>
                                             <td>
-                                                <div class="d-flex tdata">$ <input type="text" name="BI_tnv"
-                                                        class="border-0 w-100 text-end"></div>
+                                                <div class="d-flex tdata">$ <input type="number" name="BI_tnv" class="border-0 w-100 text-end"></div>
                                             </td>
                                         </tr>
-
-
                                     </table>
                                 </div>
                             </div>
@@ -2387,143 +2282,102 @@
                 </section>
                 <section class="section_area p-5" id="fourth_section">
                     <div>
-
-
-
-
                         <div class="pt-5 lh-1">
                             <div class="fw-bold">H. Other Assets</div>
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
-                                        <th> Name of Asset</th>
+                                        <th>Name of Asset</th>
                                         <th>Current Balance/ Value</th>
-                                        <th> Name of Asset</th>
-                                        <th> Current Balance/ Value</th>
+                                        <th>Name of Asset</th>
+                                        <th>Current Balance/ Value</th>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa1"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="tdata"> <input type="text" name="OA_noa1" class="border-0 w-100 text-end"></div>
 
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb1"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb1" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa2"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="tdata"> <input type="text" name="OA_noa2" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb2"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb2" class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa3"
-                                                    class="border-0 w-100 text-end"></div>
-
+                                            <div class="tdata"> <input type="text" name="OA_noa3" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb3"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb3" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa4"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="tdata"> <input type="text" name="OA_noa4"  class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5" class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa5"
-                                                    class="border-0 w-100 text-end"></div>
-
+                                            <div class="tdata"> <input type="text" name="OA_noa5" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb5" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa6"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="tdata"> <input type="text" name="OA_noa6" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb6"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb6" class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa7"
-                                                    class="border-0 w-100 text-end"></div>
-
+                                            <div class="tdata"> <input type="text" name="OA_noa7" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb7"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb7" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="OA_noa8"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="tdata"> <input type="text" name="OA_noa8" class="border-0 w-100 text-end"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb8"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_cb8" class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
                                     <tr>
 
-                                        <td colspan="2" class="text-end  tdata">Total Net Value of Other Assets:
-                                        </td>
+                                        <td colspan="2" class="text-end  tdata">Total Net Value of Other Assets: </td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="OA_tnv"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="text" name="OA_tnv" class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
-
-
                                 </table>
                             </div>
                             <div class="d-flex pt-lg-3 d_sm_block">
-
-
-                                <div class="responsive_input">I. Total Net Value All Assets (add items A through
-                                    H)........................................................................................................................
+                                <div class="responsive_input">I. Total Net Value All Assets (add items A through H)........................................................................................................................
                                 </div>
-                                <div class="d-flex  d_sm_block ms-lg-3">$ <input type="text" name="h_tnv"
-                                        class="border-0 w-100 border-bottom text-end"></div>
+                                <div class="d-flex  d_sm_block ms-lg-3">$ <input type="text" name="h_tnv" class="border-0 w-100 border-bottom text-end"></div>
                             </div>
-
                             <div class="pt-lg-3">
                                 <h4 class="fw-bold"> V. Child(ren)'s Assets</h4>
-
-                                <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College
-                                    Accounts/529 Account, Custodial Account, etc.</div>
+                                <div>Include Uniform Gift to Minor Account, Uniform Trust to Minor Account, College Accounts/529 Account, Custodial Account, etc.</div>
                             </div>
-
                             <div class="table-responsive">
                                 <table class="table-bordered border border-1 border-dark w-100">
                                     <tr>
                                         <td class="text-center"> Institution</td>
-                                        <td class="text-center">Account Number <span>(last 4 numbers only)</span>
-                                        </td>
+                                        <td class="text-center">Account Number <span>(last 4 numbers only)</span> </td>
                                         <td class="text-center">Listed Beneficiary</td>
                                         <td class="text-center">Person Who Controls the Account (Fiduciary)</td>
                                         <td class="text-center">Current Balance/ Value</td>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="cld_i1"
-                                                    class="border-0 w-100  "></div>
+                                            <div class="tdata"> <input type="text" name="cld_i1" class="border-0 w-100"></div>
                                         </td>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="cld_an1"
-                                                    class="border-0 w-100 text-center"></div>
+                                            <div class="tdata"> <input type="text" name="cld_an1" class="border-0 w-100 text-center"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="cld_an1"
-                                                    class="border-0 w-100  "></div>
+                                            <div class="tdata"> <input type="text" name="cld_an1" class="border-0 w-100"></div>
                                         <td>
-                                            <div class=" tdata"> <input type="text" name="cld_pwc1"
-                                                    class="border-0 w-100  "></div>
+                                            <div class=" tdata"> <input type="text" name="cld_pwc1" class="border-0 w-100"></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb1"
-                                                    class="border-0 w-100 text-end"></div>
+                                            <div class="d-flex tdata">$ <input type="
+                                                " name="cld_cb1" class="border-0 w-100 text-end"></div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -2540,7 +2394,7 @@
                                             <div class=" tdata"> <input type="text" name="cld_pwc2"
                                                     class="border-0 w-100  "></div>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_cb2"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_cb2"
                                                     class="border-0 w-100 text-end"></div>
                                     </tr>
 
@@ -2549,7 +2403,7 @@
                                         <td colspan="4" class="text-end  tdata">Total Net Value of Child(ren)'s
                                             Assets:</td>
                                         <td>
-                                            <div class="d-flex tdata">$ <input type="text" name="cld_tnv"
+                                            <div class="d-flex tdata">$ <input type="number" name="cld_tnv"
                                                     class="border-0 w-100 text-end"></div>
                                         </td>
                                     </tr>
@@ -2738,7 +2592,7 @@
                                             <small>Total Cash Value of Assets (See Section IV. I.)</small>
                                         </div>
                                         <div class="tdata w-100">
-                                            <input type="text" name="date_signed1" class="border-0 w-100">
+                                            <input type="date" name="date_signed1" class="border-0 w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -2766,7 +2620,7 @@
                                     <div class="fs-6 ps-2 pe-4 w-25 ">
                                         <div> Date signed</div>
                                         <div class="tdata w-100">
-                                            <input type="text" name="date_signed2" class="border-0 w-100">
+                                            <input type="date" name="date_signed2" class="border-0 w-100">
                                         </div>
                                     </div>
                                 </div>

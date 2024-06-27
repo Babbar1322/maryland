@@ -197,7 +197,7 @@
                                     <div class="small_text">City, State, Zip</div>
                                 </div>
                                 <div>
-                                    <input type="text" name="basic_phone"
+                                    <input type="number" name="basic_phone"
                                         class="responsive_input form-control border-none border-0 border-bottom border-dotted shadow-none">
                                     <div class="small_text">Phone</div>
                                 </div>
@@ -727,7 +727,7 @@
                                                 <td class="small_text">Rental income</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="employment_rental1"
+                                                        <span>$</span><input type="number" name="employment_rental1"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -737,7 +737,7 @@
                                                 <td class="small_text">Business income</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_businessincome1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -747,7 +747,7 @@
                                                 <td class="small_text">Interest</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_interest1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -757,7 +757,7 @@
                                                 <td class="small_text">Dividends</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_dividends1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -768,7 +768,7 @@
                                                     IRA, etc.) </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_retirement1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -777,7 +777,7 @@
                                                 <td class="small_text">Worker’s compensation</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="employment_workers1"
+                                                        <span>$</span><input type="number" name="employment_workers1"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -786,7 +786,7 @@
                                                 <td class="small_text">Private disability insurance</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_pvt_inurance1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -796,7 +796,7 @@
                                                 <td class="small_text">Social Security Disability Income (SSDI)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_social_security_income1"
                                                             class="border-0 w-100">
                                                     </div>
@@ -807,7 +807,7 @@
                                                 <td class="small_text">Supplemental Security Income (SSI)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_supplemental1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -817,7 +817,7 @@
                                                 <td class="small_text">Social Security (Other than SSDI or SSI)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_social_security1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -827,7 +827,7 @@
                                                 <td class="small_text">Unemployment benefits</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_unemployment_benefit1"
                                                             class="border-0 w-100">
                                                     </div>
@@ -840,7 +840,7 @@
                                                     scholarships, etc.) </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_edu_benefit1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -850,7 +850,7 @@
                                                 <td class="small_text">Veteran’s benefits</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_veteran_benefits1"
                                                             class="border-0 w-100">
                                                     </div>
@@ -861,7 +861,7 @@
                                                 <td class="small_text">Alimony</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="employment_alimony1"
+                                                        <span>$</span><input type="number" name="employment_alimony1"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -871,7 +871,7 @@
                                                 <td class="small_text">Child support</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="employment_cld_support1" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -910,7 +910,7 @@
                                                 <td class="small_text">Payments from civil litigation </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="payment_civil"
+                                                        <span>$</span><input type="number" name="payment_civil"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -920,7 +920,7 @@
                                                 <td class="small_text">Victim restitution </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="victim_restitution"
+                                                        <span>$</span><input type="number" name="victim_restitution"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -932,7 +932,7 @@
                                                     etc.)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="public_assistance"
+                                                        <span>$</span><input type="number" name="public_assistance"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -942,7 +942,7 @@
                                                 <td class="small_text">Financial support from household members</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="finacial_support_household" class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -952,7 +952,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="finacial_support_nonhousehold"
                                                             class="border-0 w-100">
                                                     </div>
@@ -962,7 +962,7 @@
                                                 <td class="small_text">Trust income</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="trust_income"
+                                                        <span>$</span><input type="number" name="trust_income"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -971,7 +971,7 @@
                                                 <td class="small_text">Annuity income</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="annuity_income"
+                                                        <span>$</span><input type="number" name="annuity_income"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -980,7 +980,7 @@
                                                 <td class="small_text">Other (Describe) </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="other_describe1"
+                                                        <span>$</span><input type="number" name="other_describe1"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -989,7 +989,7 @@
                                                 <td class="small_text">Other (Describe) </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="other_describe2"
+                                                        <span>$</span><input type="number" name="other_describe2"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -999,7 +999,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto  ">
-                                                        <span>$</span><input type="text" name="total_gross_mi"
+                                                        <span>$</span><input type="number" name="total_gross_mi"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -1018,13 +1018,13 @@
                                                     <td class="w-75 text-center">Basis for estimation</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="text" name="estimated_item1"
+                                                    <td><input type="number" name="estimated_item1"
                                                             class="border-0 form-control"> </td>
                                                     <td><input type="text" name="estimated_basis1"
                                                             class="border-0 form-control"> </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><input type="text" name="estimated_item2"
+                                                    <td><input type="number" name="estimated_item2"
                                                             class="border-0 form-control"> </td>
                                                     <td><input type="text" name="estimated_basis2"
                                                             class="border-0 form-control"> </td>
@@ -1068,7 +1068,7 @@
                                                     <td class="small_text">Federal income tax</td>
                                                     <td>
                                                         <div class="d-flex w-100 mx-auto  ">
-                                                            <span>$</span><input type="text"
+                                                            <span>$</span><input type="number"
                                                                 name="federal_income_tax" class="border-0 w-100">
                                                         </div>
                                                     </td>
@@ -1077,7 +1077,7 @@
                                                     <td class="small_text">State income tax</td>
                                                     <td>
                                                         <div class="d-flex w-100 mx-auto">
-                                                            <span>$</span><input type="text"
+                                                            <span>$</span><input type="number"
                                                                 name="state_income_tax" class="border-0 w-100">
                                                         </div>
                                                     </td>
@@ -1086,7 +1086,7 @@
                                                     <td class="small_text">Municipal income tax</td>
                                                     <td>
                                                         <div class="d-flex w-100 mx-auto  ">
-                                                            <span>$</span><input type="text"
+                                                            <span>$</span><input type="number"
                                                                 name="muncipal_income_tax" class="border-0 w-100">
                                                         </div>
                                                     </td>
@@ -1095,7 +1095,7 @@
                                                     <td class="small_text">FICA</td>
                                                     <td>
                                                         <div class="d-flex w-100 mx-auto  ">
-                                                            <span>$</span><input type="text" name="fica"
+                                                            <span>$</span><input type="number" name="fica"
                                                                 class="border-0 w-100">
                                                         </div>
                                                     </td>
@@ -1104,7 +1104,7 @@
                                                     <td class="small_text">Medicare</td>
                                                     <td>
                                                         <div class="d-flex w-100 mx-auto">
-                                                            <span>$</span><input type="text" name="medicare"
+                                                            <span>$</span><input type="number" name="medicare"
                                                                 class="border-0 w-100">
                                                         </div>
                                                     </td>
@@ -1135,7 +1135,7 @@
                                                 <td class="small_text">Total monthly tax deductions</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="total_monthly_tax"
+                                                        <span>$</span><input type="number" name="total_monthly_tax"
                                                             class="border-0 w-100">
                                                     </div>
                                                 </td>
@@ -1181,14 +1181,14 @@
                                         <div>My monthly income is:</div>
                                         <div class="ps-lg-5">
                                             <div class="d-flex d_sm_block ms-2 w-100 mx-auto">
-                                                <span>$</span><input type="text" name="ati_gmi"
+                                                <span>$</span><input type="number" name="ati_gmi"
                                                     class="border-0  border-bottom footer_input ">
                                                 <div class="ps-lg-3 small_text"><small>Gross monthly income from
                                                         section
                                                         4</small></div>
                                             </div>
                                             <div class="d-flex d_sm_block w-100 mx-auto">
-                                                - <span>$</span><input type="text" name="ati_mmt"
+                                                - <span>$</span><input type="number" name="ati_mmt"
                                                     class="border-0  border-bottom footer_input ">
                                                 <div class="ps-lg-3 small_text"><small>Minus monthly tax deductions
                                                         from
@@ -1196,7 +1196,7 @@
                                             </div>
                                             <hr class="w-50 text-dark">
                                             <div class="d-flex d_sm_block w-100 mx-auto">
-                                                = <span>$</span><input type="text" name="ati_eatm"
+                                                = <span>$</span><input type="number" name="ati_eatm"
                                                     class="border-0  border-bottom footer_input">
                                                 <div class="ps-lg-3 small_text"><small>Equals after-tax monthly
                                                         income</small>
@@ -1248,13 +1248,13 @@
                                                 <td class="small_text">Rent or mortgage</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount1"
+                                                        <span>$</span><input type="number" name="me_current_amount1"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses1" class="border-0">
                                                     </div>
                                                 </td>
@@ -1265,13 +1265,13 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount2"
+                                                        <span>$</span><input type="number" name="me_current_amount2"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses2" class="border-0">
                                                     </div>
                                                 </td>
@@ -1282,13 +1282,13 @@
                                                     mortgage)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount3"
+                                                        <span>$</span><input type="number" name="me_current_amount3"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses3" class="border-0">
                                                     </div>
                                                 </td>
@@ -1298,13 +1298,13 @@
                                                 <td class="small_text">Real estate maintenance</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount4"
+                                                        <span>$</span><input type="number" name="me_current_amount4"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses4" class="border-0">
                                                     </div>
                                                 </td>
@@ -1313,13 +1313,13 @@
                                                 <td class="small_text">Food and household supplies</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount5"
+                                                        <span>$</span><input type="number" name="me_current_amount5"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses5" class="border-0">
                                                     </div>
                                                 </td>
@@ -1328,13 +1328,13 @@
                                                 <td class="small_text">Clothing</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount6"
+                                                        <span>$</span><input type="number" name="me_current_amount6"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses6" class="border-0">
                                                     </div>
                                                 </td>
@@ -1343,13 +1343,13 @@
                                                 <td class="small_text">Automobile payments</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount7"
+                                                        <span>$</span><input type="number" name="me_current_amount7"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses7" class="border-0">
                                                     </div>
                                                 </td>
@@ -1393,13 +1393,13 @@
                                                 <td class="small_text">Automobile insurance</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount8"
+                                                        <span>$</span><input type="number" name="me_current_amount8"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses8" class="border-0">
                                                     </div>
                                                 </td>
@@ -1409,13 +1409,13 @@
                                                 <td class="small_text">Automobile fuel</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount9"
+                                                        <span>$</span><input type="number" name="me_current_amount9"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses9" class="border-0">
                                                     </div>
                                                 </td>
@@ -1425,13 +1425,13 @@
                                                 <td class="small_text">Automobile maintenance</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount10"
+                                                        <span>$</span><input type="number" name="me_current_amount10"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses10" class="border-0">
                                                     </div>
                                                 </td>
@@ -1443,13 +1443,13 @@
                                                     parking, etc.)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount11"
+                                                        <span>$</span><input type="number" name="me_current_amount11"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses11" class="border-0">
                                                     </div>
                                                 </td>
@@ -1460,13 +1460,13 @@
                                                     garbage)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount12"
+                                                        <span>$</span><input type="number" name="me_current_amount12"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses12" class="border-0">
                                                     </div>
                                                 </td>
@@ -1475,13 +1475,13 @@
                                                 <td class="small_text">Telephone</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount13"
+                                                        <span>$</span><input type="number" name="me_current_amount13"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses13" class="border-0">
                                                     </div>
                                                 </td>
@@ -1490,13 +1490,13 @@
                                                 <td class="small_text">Paid television, cable, satellite</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount14"
+                                                        <span>$</span><input type="number" name="me_current_amount14"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses14" class="border-0">
                                                     </div>
                                                 </td>
@@ -1505,13 +1505,13 @@
                                                 <td class="small_text">Internet</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount15"
+                                                        <span>$</span><input type="number" name="me_current_amount15"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses15" class="border-0">
                                                     </div>
                                                 </td>
@@ -1520,13 +1520,13 @@
                                                 <td class="small_text">Credit card payments</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount16"
+                                                        <span>$</span><input type="number" name="me_current_amount16"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses16" class="border-0">
                                                     </div>
                                                 </td>
@@ -1535,13 +1535,13 @@
                                                 <td class="small_text">Loans and other debt payments</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount17"
+                                                        <span>$</span><input type="number" name="me_current_amount17"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses17" class="border-0">
                                                     </div>
                                                 </td>
@@ -1550,13 +1550,13 @@
                                                 <td class="small_text">Alimony</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount18"
+                                                        <span>$</span><input type="number" name="me_current_amount18"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses18" class="border-0">
                                                     </div>
                                                 </td>
@@ -1565,13 +1565,13 @@
                                                 <td class="small_text">Child support</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount20"
+                                                        <span>$</span><input type="number" name="me_current_amount20"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses20" class="border-0">
                                                     </div>
                                                 </td>
@@ -1580,13 +1580,13 @@
                                                 <td class="small_text">Child care</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount21"
+                                                        <span>$</span><input type="number" name="me_current_amount21"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses21" class="border-0">
                                                     </div>
                                                 </td>
@@ -1595,13 +1595,13 @@
                                                 <td class="small_text">Extracurricular activities for children</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount22"
+                                                        <span>$</span><input type="number" name="me_current_amount22"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses22" class="border-0">
                                                     </div>
                                                 </td>
@@ -1610,13 +1610,13 @@
                                                 <td class="small_text">Education (children)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount23"
+                                                        <span>$</span><input type="number" name="me_current_amount23"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses23" class="border-0">
                                                     </div>
                                                 </td>
@@ -1625,13 +1625,13 @@
                                                 <td class="small_text">Education (self)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount24"
+                                                        <span>$</span><input type="number" name="me_current_amount24"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses24" class="border-0">
                                                     </div>
                                                 </td>
@@ -1640,13 +1640,13 @@
                                                 <td class="small_text">Health care insurance</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount25"
+                                                        <span>$</span><input type="number" name="me_current_amount25"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses25" class="border-0">
                                                     </div>
                                                 </td>
@@ -1657,13 +1657,13 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount26"
+                                                        <span>$</span><input type="number" name="me_current_amount26"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses26" class="border-0">
                                                     </div>
                                                 </td>
@@ -1672,13 +1672,13 @@
                                                 <td class="small_text">Other insurance (describe)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="me_current_amount27"
+                                                        <span>$</span><input type="number" name="me_current_amount27"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses27" class="border-0">
                                                     </div>
                                                 </td>
@@ -1687,13 +1687,13 @@
                                                 <td class="small_text">Entertainment</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount28" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses28" class="border-0">
                                                     </div>
                                                 </td>
@@ -1702,13 +1702,13 @@
                                                 <td class="small_text">Laundry and dry cleaning</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount29" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses29" class="border-0">
                                                     </div>
                                                 </td>
@@ -1717,13 +1717,13 @@
                                                 <td class="small_text">Donations</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount30" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses30" class="border-0">
                                                     </div>
                                                 </td>
@@ -1732,13 +1732,13 @@
                                                 <td class="small_text">Gifts</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount31" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses31" class="border-0">
                                                     </div>
                                                 </td>
@@ -1747,13 +1747,13 @@
                                                 <td class="small_text">Union and other dues</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount32" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses32" class="border-0">
                                                     </div>
                                                 </td>
@@ -1762,13 +1762,13 @@
                                                 <td class="small_text">Garnishment or income withholding order</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount33" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses33" class="border-0">
                                                     </div>
                                                 </td>
@@ -1779,13 +1779,13 @@
                                                     etc.)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount34" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses34" class="border-0">
                                                     </div>
                                                 </td>
@@ -1794,13 +1794,13 @@
                                                 <td class="small_text"> Other (describe)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount35" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses35" class="border-0">
                                                     </div>
                                                 </td>
@@ -1809,13 +1809,13 @@
                                                 <td class="small_text">Other (describe)</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount36" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses36" class="border-0">
                                                     </div>
                                                 </td>
@@ -1824,13 +1824,13 @@
                                                 <td class="small_text text-end pe-lg-3">Total monthly expenses</td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_current_amount37" class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="bg-secondary">
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text"
+                                                        <span>$</span><input type="number"
                                                             name="me_marital_expenses37" class="border-0">
                                                     </div>
                                                 </td>
@@ -1928,7 +1928,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="small_text w-25">Address & phone</td>
-                                                <td class="small_text" colspan="2"><input type="text"
+                                                <td class="small_text" colspan="2"><input type="number"
                                                         name="gross_value1" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
@@ -1940,13 +1940,13 @@
                                                 <td class="small_text w-25">
                                                     <div>Current value of the business</div>
                                                     <div class="d-flex w-100 mx-auto">
-                                                        <span>$</span><input type="text" name="gross_value1"
+                                                        <span>$</span><input type="number" name="gross_value1"
                                                             class="border-0">
                                                     </div>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div>Date of formation:</div>
-                                                    <input type="text" name="gross_value1" class="border-0">
+                                                    <input type="date" name="gross_value1" class="border-0">
 
                                                 </td>
                                                 <td class="small_text" colspan="2">
@@ -2038,7 +2038,7 @@
                                                     <div><input type="text" name="fa_account_no1"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened1"
+                                                    <div><input type="date" name="fa_date_opened1"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Type:</div>
                                                     <div class="small_text">[ <input type="checkbox"
@@ -2053,17 +2053,17 @@
 
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address1" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address1" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name1" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name1" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
 
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance1" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea  name="fa_current_balance1" class="border-0 form-control " rows="11"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2076,7 +2076,7 @@
                                                     <div><input type="text" name="fa_account_no2"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened2"
+                                                    <div><input type="date" name="fa_date_opened2"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Type:</div>
                                                     <div class="small_text">[ <input type="checkbox"
@@ -2091,16 +2091,16 @@
 
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address2" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address2" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name2" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name2" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance2" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance2" class="border-0 form-control " rows="11"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2113,20 +2113,20 @@
                                                     <div><input type="text" name="fa_account_no3"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened3"
+                                                    <div><input type="date" name="fa_date_opened3"
                                                             class="border-0 form-control border-bottom w-75 mb-1">
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address3" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address3" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name3" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name3" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance3" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance3" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2137,7 +2137,7 @@
                                                     <div><input type="text" name="fa_account_no4"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened4"
+                                                    <div><input type="date" name="fa_date_opened4"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Plan name:</div>
                                                     <div><input type="text" name="fa_plan_name1"
@@ -2148,15 +2148,15 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address4" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address4" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name4" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name4" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance4" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance4" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2191,7 +2191,7 @@
                                                     <div><input type="text" name="fa_account_no5"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened5"
+                                                    <div><input type="date" name="fa_date_opened5"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Plan name:</div>
                                                     <div><input type="text" name="fa_plan_name2"
@@ -2203,15 +2203,15 @@
 
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address5" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address5" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name5" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name5" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance5" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance5" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2222,7 +2222,7 @@
                                                     <div><input type="text" name="fa_account_no6"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened6"
+                                                    <div><input type="date" name="fa_date_opened6"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Plan name:</div>
                                                     <div><input type="text" name="fa_plan_name3"
@@ -2233,15 +2233,15 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address6" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address6" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name6" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name6" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance6" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance6" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2252,7 +2252,7 @@
                                                     <div><input type="text" name="fa_account_no7"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Date opened:</div>
-                                                    <div><input type="text" name="fa_date_opened7"
+                                                    <div><input type="date" name="fa_date_opened7"
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                     <div class="small_text">Plan name:</div>
                                                     <div><input type="text" name="fa_plan_name4"
@@ -2263,15 +2263,15 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address7" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address7" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name7" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name7" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance7" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance7" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2281,21 +2281,20 @@
                                                     <div class="fw-bold">Money owed to me</div>
                                                     <div class="small_text">Date of loan:</div>
 
-                                                    <div><input type="text" name="fa_date_of_loan1"
-                                                            class="border-0 form-control border-bottom w-75 mb-1">
+                                                    <div><input type="date" name="fa_date_of_loan1" class="border-0 form-control border-bottom w-75 mb-1">
                                                     </div>
 
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address8" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address8" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name8" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name8" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance8" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance8" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2308,15 +2307,15 @@
 
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address9" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address9" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name9" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name9" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance9" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance9" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2327,15 +2326,15 @@
                                                         etc.)</div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address10" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address10" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name10" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name10" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance10" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance10" class="border-0 form-control " rows="11"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -2370,15 +2369,15 @@
                                                             class="border-0 form-control border-bottom w-75"></div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_name_address11" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_name_address11" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="fa_account_name11" class="border-0 form-control " rows="11"></textarea>
+                                                    <textarea name="fa_account_name11" class="border-0 form-control " rows="11"></textarea>
                                                 </td>
                                                 <td class="small_text w-25">
                                                     <div class="d-flex w-100 mx-auto">
                                                         <span>$</span>
-                                                        <textarea type="text" name="fa_current_balance11" class="border-0 form-control " rows="11"></textarea>
+                                                        <textarea name="fa_current_balance11" class="border-0 form-control " rows="11"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2434,7 +2433,7 @@
                                             <div class="small_text">Address</div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="text" name="re_date_acquired1"
+                                            <input type="date" name="re_date_acquired1"
                                                 class="border-0 form-control w-100 border-bottom">
                                             <div class="small_text">Date acquired</div>
                                         </div>
@@ -2858,12 +2857,8 @@
                                     <table class="table table-bordered border-dark">
                                         <tbody>
                                             <tr>
-                                                <td class="small_text text-center w-25">Type of debt (such as credit
-                                                    card,
-                                                    cash loan, or installment payment and account number, if any)</td>
-                                                <td class="small_text text-center">Debt owed to (name and address and
-                                                    phone
-                                                    number)</td>
+                                                <td class="small_text text-center w-25">Type of debt (such as credit card, cash loan, or installment payment and account number, if any)</td>
+                                                <td class="small_text text-center">Debt owed to (name and address and phone number)</td>
                                                 <td class="small_text text-center">Names on debt</td>
                                                 <td class="small_text text-center">Amount owed</td>
                                                 <td class="small_text text-center">Minimum monthly payments</td>
@@ -2878,24 +2873,24 @@
                                                             class="border-0 form-control w-75"> </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to1" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to1" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt1" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt1" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed1" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed1" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments1" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments1" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2910,24 +2905,24 @@
                                                             class="border-0 form-control w-75"> </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to2" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to2" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt2" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt2" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed2" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed2" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments2" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments2" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2942,24 +2937,24 @@
                                                             class="border-0 form-control w-75"> </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to3" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to3" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt3" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt3" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed3" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed3" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments3" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments3" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
@@ -2975,24 +2970,24 @@
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt4" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt4" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed4" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed4" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments4" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments4" class="border-0 form-control " rows="5"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -3006,23 +3001,23 @@
                                                             class="border-0 form-control w-75"> </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to5" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to5" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt5" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt5" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed5" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed5" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments5" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments5" class="border-0 form-control " rows="5"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -3036,24 +3031,24 @@
                                                             class="border-0 form-control w-75"> </div>
                                                 </td>
                                                 <td>
-                                                    <textarea type="text" name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="debt_owed_to6" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
-                                                    <textarea type="text" name="names_on_debt6" class="border-0 form-control " rows="5"></textarea>
+                                                    <textarea name="names_on_debt6" class="border-0 form-control " rows="5"></textarea>
                                                 </td>
 
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="amount_owed6" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="amount_owed6" class="border-0 form-control " rows="5"></textarea>
 
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="d-flex w-100 mx-auto">
                                                         <small>$</small>
-                                                        <textarea type="text" name="minimum_monthly_payments6" class="border-0 form-control " rows="5"></textarea>
+                                                        <textarea name="minimum_monthly_payments6" class="border-0 form-control " rows="5"></textarea>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -3140,7 +3135,7 @@
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="col-lg-12 ">
                                         <div class="">
-                                            <input type="text" name="date1"
+                                            <input type="date" name="date1"
                                                 class="form-control  border-none w-100 border-0 border-bottom footer_field shadow-none">
                                             <label for="">Date</label>
                                         </div>
@@ -3149,8 +3144,7 @@
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="col-lg-12 d-flex d_sm_block">
                                         <div class="">Signature of </div>
-                                        <input type="text" name="signature1"
-                                            class="ms-lg-3 w-75 border-none  border-0 border-bottom footer_field shadow-none responsive_input">
+                                        <input type="text" name="signature1" class="ms-lg-3 w-75 border-none  border-0 border-bottom footer_field shadow-none responsive_input">
                                     </div>
                                     <div class="col-lg-12 d-flex d_sm_block">
                                         <div class="">Printed Name </div>
@@ -3167,7 +3161,7 @@
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="col-lg-12 ">
                                         <div>
-                                            <input type="text" name="date2"
+                                            <input type="date" name="date2"
                                                 class="form-control  border-none w-100 border-0 border-bottom footer_field shadow-none">
                                             <label for="">Date</label>
                                         </div>

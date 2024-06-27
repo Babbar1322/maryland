@@ -2538,7 +2538,7 @@
                             <div class="col-lg-6 col-sm-6"></div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="col-lg-12 ">
-                                    <input type="text" name="phn" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
+                                    <input type="number" name="phn" class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                     <div class="text-center">Telephone Number</div>
                                 </div>
                             </div>

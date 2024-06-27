@@ -5,8 +5,8 @@
         <div>Disclosure of<input type="text" name="disclosure_page_{{$page}}" id="" class=" border-0 border-bottom responsive_input" style="width:220px;"></div>
     </div>
     <div class="small_text d-flex d_sm_block justify-content-between">
-        <div>Page {{$page}} of 10 </div>
-        <div>Case No.<input type="text" name="case_number_page_{{$page}}" id="" class=" border-0 border-bottom responsive_input" style="width:250px;"></div>
+        <div>Page {{$page}} of 10</div>
+        <div>Case No.<input type="number" name="case_number_page_{{$page}}" id="" class=" border-0 border-bottom responsive_input" style="width:250px;"></div>
     </div>
-    <div class="small_text">  </div>
+    <div class="small_text"></div>
 </div>

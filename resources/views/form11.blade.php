@@ -41,7 +41,6 @@
         input,
         table {
             background-color: transparent !important;
-            height: 100% !important;
 
         }
 
@@ -335,19 +334,19 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">TELEPHONE NO :</div>
-                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
+                                        <div> <input type="number" name="phone" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">EMAIL ADDRESS NO :</div>
-                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="email" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">ATTORNEY FOR (name):</div>
-                                        <div> <input type="text" name="phone" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="ATTORNEY FOR (name)" class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +435,7 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number" class="border-0 table_input w-100">
+                            <input type="number" name="case_number" class="border-0 table_input w-100">
                         </div>
                     </div>
 
@@ -599,7 +598,7 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_gross_val1"
+                                                    <div><input type="number" name="re_gross_val1"
                                                             class="w-100 border-0 table_input text-end"></div>
                                                     <div><input type="text" name="re_gross_val2"
                                                             class="w-100 border-0 table_input text-end"></div>
@@ -661,7 +660,7 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_debt_amt1"
+                                                    <div><input type="number" name="re_debt_amt1"
                                                             class="w-100  border-0 table_input text-end"></div>
                                                     <div><input type="text" name="re_debt_amt2"
                                                             class="w-100  border-0 table_input text-end"></div>
@@ -724,7 +723,7 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_mark_val1"
+                                                    <div><input type="number" name="re_mark_val1"
                                                             class="w-100  border-0 table_input text-end"></div>
                                                     <div><input type="text" name="re_mark_val2"
                                                             class="w-100  border-0 table_input text-end"></div>
@@ -787,7 +786,7 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_pio1"
+                                                    <div><input type="number" name="re_pio1"
                                                             class="w-100  border-0 table_input text-end"></div>
                                                     <div><input type="text" name="re_pio2"
                                                             class="w-100  border-0 table_input text-end"></div>
@@ -850,7 +849,7 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="text" name="re_resp1"
+                                                    <div><input type="number" name="re_resp1"
                                                             class="w-100  border-0 table_input text-end"></div>
                                                     <div><input type="text" name="re_resp2"
                                                             class="w-100  border-0 table_input text-end"></div>

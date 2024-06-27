@@ -215,7 +215,7 @@
 
         .small_text {
             height: 18px ;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .pb-500 {
@@ -444,7 +444,7 @@
                                                 <div class="small_text">Fill In Appropriate Oval</div>
                                                 <div class="row">
                                                 <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Wage Earner 1" id="" value="Wage Earner" > Wage Earner</span></div>
-                                                <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Partner 1" id="" value="Partner"> Partner</span></div>
+                                                <div class="col-lg-3"> <span class="small_text"> <input type="radio" name="Partner 1" id="" value="Partner"> Partner</span></div>
                                                 <div class="col-lg-4"> <span class="small_text"> <input type="radio" name="Sole Proprietor 1" id="" value="Sole Proprietor"> Sole Proprietor</span></div>
                                             </div>
 
@@ -570,14 +570,14 @@
                                             <td colspan="2" class="text-center"><small>RELATIONSHIP</small> </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="Dependent Age 1"
+                                            <td class="text-center"><input type="number" name="Dependent Age 1"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
                                                     name="Dependent Relationship 1"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="Dependent Age 2"
+                                            <td class="text-center"><input type="number" name="Dependent Age 2"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
@@ -586,14 +586,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="Dependent Age 3"
+                                            <td class="text-center"><input type="number" name="Dependent Age 3"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
                                                     name="Dependent Relationship 3"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="Dependent Age 4"
+                                            <td class="text-center"><input type="number" name="Dependent Age 4"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
@@ -602,14 +602,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><input type="text" name="Dependent Age 5"
+                                            <td class="text-center"><input type="number" name="Dependent Age 5"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
                                                     name="Dependent Relationship 5"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
-                                            <td class="text-center"><input type="text" name="Dependent Age 6"
+                                            <td class="text-center"><input type="number" name="Dependent Age 6"
                                                     class="border-0  expires_input bg-transparent border   outline-none form-control">
                                             </td>
                                             <td colspan="2" class="text-center"><input type="text"
@@ -749,7 +749,7 @@
                                             <td colspan="5" class="text-end small_text">TOTAL (Enter in Section V,
                                                 Line 2) </td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="Total Balance"
+                                                <div class="d-flex">$<input type="number" name="Total Balance"
                                                         class="border-0  expires_input bg-transparent border outline-none form-control">
                                                 </div>
                                             </td>

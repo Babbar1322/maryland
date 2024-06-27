@@ -321,13 +321,13 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="d-flex  ">
+                                        <div class="d-flex  d_sm_block">
                                             <div class="small_text">STATE:</div>
-                                            <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyState_ft[0]" class="border-0 table_input "></div>
+                                            <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyState_ft[0]" class="border-0 table_input responsive_input" style="width:140px;"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-5">
-                                        <div class="d-flex  ">
+                                        <div class="d-flex d_sm_block ">
                                             <div class="small_text">ZIP CODE:</div>
                                             <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].AttyZip_ft[0]" class="border-0 table_input "></div>
                                         </div>
@@ -339,12 +339,12 @@
                                         <div class="d-flex">
                                             <div class="d-flex d_sm_block">
                                                 <div class="small_text">TELEPHONE NO :</div>
-                                                <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Phone_ft[0]" class="border-0 table_input "></div>
+                                                <div> <input type="number" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Phone_ft[0]" class="border-0 table_input "></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="d-flex  ">
+                                        <div class="d-flex d_sm_block ">
                                             <div class="small_text">FAX NO:</div>
                                             <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Fax_ft[0]" class="border-0 table_input "></div>
                                         </div>
@@ -455,7 +455,7 @@
 
                                 <div class="d-flex d_sm_block">
                                     <small> c. Employer's phone number: </small>
-                                   <input type="text" name="FL-150[0].Page1[0].Employer_phone\.ft[0]" class="border-0  w-75 ">
+                                   <input type="number" name="FL-150[0].Page1[0].Employer_phone.ft[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> d. Occupation:</small>
@@ -463,11 +463,11 @@
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> e. Date job started:</small>
-                                   <input type="text" name="FL-150[0].Page1[0].Date_started_job_tf[0]" class="border-0  w-75 ">
+                                   <input type="date" name="FL-150[0].Page1[0].Date_started_job_tf[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> f. If unemployed, date job ended :</small>
-                                   <input type="text" name="FL-150[0].Page1[0].FillText1[0]" class="border-0  w-75 ">
+                                   <input type="date" name="FL-150[0].Page1[0].FillText1[0]" class="border-0  w-75 ">
                                 </div>
                                 <div class="d-flex d_sm_block">
                                     <small> g. I work about</small>
@@ -613,8 +613,8 @@
                         </div>
                         <div><small>I declare under penalty of perjury under the laws of the State of California that the information contained on all pages of this form and any attachments is true  and correct</small></div>
                         <div class="d-flex">
-                            <div class="  me-2">Date</div>
-                            <div> <input type="text" name="FL-150[0].Page1[0].FillText1140[0]" class="border-0 border-bottom responsive_input footer_field"></div>
+                            <div class="me-2">Date</div>
+                            <div> <input type="date" name="FL-150[0].Page1[0].FillText1140[0]" class="border-0 border-bottom responsive_input footer_field"></div>
                         </div>
                             <div class="row  ">
                                 <div class="col-lg-6">
@@ -658,7 +658,7 @@
                          </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number2" class="border-0 table_input w-100">
+                            <input type="number" name="case_number2" class="border-0 table_input w-100">
                         </div>
                     </div>
                     <div class="px-lg-5 px-2">
@@ -722,21 +722,21 @@
                             <div class="text-center">Last Month</div>
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="sallert_or_wages1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="sallert_or_wages1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="overtime1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="overtime1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="Commissions_bonuses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Commissions_bonuses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="public_assistance1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="public_assistance1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
@@ -746,37 +746,37 @@
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="partner_support1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="partner_support1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="pension1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="pension1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="social_security_retirement1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="social_security_retirement1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="disability1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="disability1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="unemployment1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="unemployment1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="workers_compensation1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="workers_compensation1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="other1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="other1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -836,26 +836,26 @@
                         <div class="col-lg-3">
                              <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="ii_dividends1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="ii_dividends1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="ii_rental_pi1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="ii_rental_pi1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="ii_trust_income1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="ii_trust_income1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
 
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="ii_other1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="ii_other1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="d-flex ">
                                 <div class="small_text">$</div>
-                                <input type="text" min="0" name="ii_sei1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="ii_sei1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -979,7 +979,7 @@
                          </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number3" class="border-0 table_input w-100">
+                            <input type="number" name="case_number3" class="border-0 table_input w-100">
                         </div>
                     </div>
                     <div class="px-lg-5">
@@ -997,35 +997,35 @@
                                     </tr>
                                     <tr>
                                         <td><div class="d-flex">a. <input type="text" name="name1" class="border-0 form-control ms-3"></div></td>
-                                        <td><input type="text" name="age1" class="border-0 form-control"></td>
+                                        <td><input type="number" name="age1" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_related1" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_gross_income1" class="border-0 form-control"></td>
                                         <td><input type="checkbox" name="household_expenses1" id="" class="me-2" value="Yes"> Yes <input type="checkbox" name="household_expenses1" class="ms-lg-4 ms-2 me-2" value="No">No</td>
                                     </tr>
                                     <tr>
                                         <td><div class="d-flex">b. <input type="text" name="name2" class="border-0 form-control ms-3"></div></td>
-                                        <td><input type="text" name="age2" class="border-0 form-control"></td>
+                                        <td><input type="number" name="age2" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_related2" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_gross_income2" class="border-0 form-control"></td>
                                         <td><input type="checkbox" name="household_expenses2" id="" class="me-2" value="Yes"> Yes <input type="checkbox" name="household_expenses2" class="ms-lg-4 ms-2 me-2" value="No">No</td>
                                     </tr>
                                     <tr>
                                         <td><div class="d-flex">c. <input type="text" name="name3" class="border-0 form-control ms-3"></div></td>
-                                        <td><input type="text" name="age3" class="border-0 form-control"></td>
+                                        <td><input type="number" name="age3" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_related3" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_gross_income3" class="border-0 form-control"></td>
                                         <td><input type="checkbox" name="household_expenses3" id="" class="me-2" value="Yes"> Yes <input type="checkbox" name="household_expenses3" class="ms-lg-4 ms-2 me-2" value="No">No</td>
                                     </tr>
                                     <tr>
                                         <td><div class="d-flex">d. <input type="text" name="name4" class="border-0 form-control ms-3"></div></td>
-                                        <td><input type="text" name="age4" class="border-0 form-control"></td>
+                                        <td><input type="number" name="age4" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_related4" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_gross_income4" class="border-0 form-control"></td>
                                         <td><input type="checkbox" name="household_expenses4" id="" class="me-2" value="Yes"> Yes <input type="checkbox" name="household_expenses4" class="ms-lg-4 ms-2 me-2" value="No">No</td>
                                     </tr>
                                     <tr>
                                         <td><div class="d-flex">e. <input type="text" name="name5" class="border-0 form-control ms-3"></div></td>
-                                        <td><input type="text" name="age5" class="border-0 form-control"></td>
+                                        <td><input type="number" name="age5" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_related5" class="border-0 form-control"></td>
                                         <td><input type="text" name="person_gross_income5" class="border-0 form-control"></td>
                                         <td><input type="checkbox" name="household_expenses5" id="" class="me-2" value="Yes"> Yes <input type="checkbox" name="household_expenses5" class="ms-lg-4 ms-2 me-2" value="No">No</td>
@@ -1049,51 +1049,51 @@
                                     <tr>
                                         <td><input type="text" name="ip_paid1" class="border-0 form-control"></td>
                                         <td><input type="text" name="ip_for1" class="border-0 form-control"></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount1" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance1" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment1" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount1" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance1" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment1" class="border-0 form-control "></td>
                                    </tr>
                                     <tr>
                                         <td><input type="text" name="ip_paid2" class="border-0 form-control "></td>
                                         <td><input type="text" name="ip_for2" class="border-0 form-control "></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount2" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance2" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment2" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount2" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance2" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment2" class="border-0 form-control "></td>
                                    </tr>
                                     <tr>
                                         <td><input type="text" name="ip_paid3" class="border-0 form-control "></td>
                                         <td><input type="text" name="ip_for3" class="border-0 form-control "></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount3" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance3" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment3" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount3" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance3" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment3" class="border-0 form-control "></td>
                                    </tr>
                                     <tr>
                                         <td><input type="text" name="ip_paid4" class="border-0 form-control "></td>
                                         <td><input type="text" name="ip_for4" class="border-0 form-control "></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount4" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance4" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment4" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount4" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance4" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment4" class="border-0 form-control "></td>
                                    </tr>
                                     <tr>
                                         <td><input type="text" name="ip_paid5" class="border-0 form-control "></td>
                                         <td><input type="text" name="ip_for5" class="border-0 form-control "></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount5" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance5" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment5" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount5" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance5" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment5" class="border-0 form-control "></td>
                                    </tr>
                                     <tr>
                                         <td><input type="text" name="ip_paid6" class="border-0 form-control "></td>
                                         <td><input type="text" name="ip_for6" class="border-0 form-control "></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_amount6" class="border-0 w-100">  </div></td>
-                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="text" name="ip_balance6" class="border-0 w-100">  </div></td>
-                                        <td><input type="text" name="ip_date_last_payment6" class="border-0 form-control "></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_amount6" class="border-0 w-100">  </div></td>
+                                        <td><div class="d-flex w-100 mx-auto"> <span>$</span><input type="number" name="ip_balance6" class="border-0 w-100">  </div></td>
+                                        <td><input type="date" name="ip_date_last_payment6" class="border-0 form-control "></td>
                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div>15. <b>Attorney fees</b> (This information is required if either party is requesting attorney fees):</div>
                         <div class="ps-lg-5">
-                            <div>a. To date, I have paid my attorney this amount for fees and costs (specify): $ <input type="text" name="af_todate1" class="border-0 "> </div>
+                            <div>a. To date, I have paid my attorney this amount for fees and costs (specify): $ <input type="date" name="af_todate1" class="border-0 "> </div>
                             <div>b. The source of this money was (specify): <input type="text" name="af_som" class="border-0 "> </div>
                             <div>c. I still owe the following fees and costs to my attorney (specify total owed): $ <input type="text" name="af_sotff" class="border-0 "> </div>
                             <div>d. My attorney's hourly rate is (specify): <input type="text" name="af_mah" class="border-0 "> </div>
@@ -1140,7 +1140,7 @@
                          </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="case_number4" class="border-0 table_input w-100">
+                            <input type="number" name="case_number4" class="border-0 table_input w-100">
                         </div>
                     </div>
                     <div class="px-lg-5">
@@ -1174,19 +1174,19 @@
                             <div class="col-lg-3">
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="ae_job_training" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="ae_job_training" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="ae_health_care" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="ae_health_care" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="ae_travel_expenses" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="ae_travel_expenses" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="ae_educational" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="ae_educational" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
                             </div>
                         </div>
@@ -1205,17 +1205,17 @@
                                 <div>Amount per month</div>
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="sh_extraordinary_health1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="sh_extraordinary_health1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
 
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="sh_major_losses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="sh_major_losses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
 
                                 <div class="d-flex pt-lg-5">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="sh_expenses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="sh_expenses1" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
 
                             </div>
@@ -1235,7 +1235,7 @@
                             <div class="col-lg-3">
                                 <div class="d-flex ">
                                     <div class="small_text">$</div>
-                                    <input type="text" min="0" name="sh_csir" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="sh_csir" class="border-bottom border-0 footer_field responsive_input bg-transparent border outline-none form-control">
                                 </div>
                             </div>
                             <div>The expenses listed in a, b, and c create an extreme financial hardship because (explain):</div>

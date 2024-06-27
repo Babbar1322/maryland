@@ -189,7 +189,7 @@
                             <div class="d-flex d_sm_block">
                                 <div class="pe-1 my-auto">Case No.</div>
                                 <div class=" ">
-                                    <input type="text" name="case_no"
+                                    <input type="number" name="case_no"
                                         class="responsive_input border-none border-0 border-bottom  shadow-none my-auto"
                                         style="width:293px;">
                                 </div>
@@ -397,7 +397,7 @@
                                     </div>
                                     <div class="pe-1 my-auto small_text ps-lg-4">Phone #: </div>
                                     <div class="">
-                                        <input type="text" name="p_phone"
+                                        <input type="number" name="p_phone"
                                             class="border-none border-0 border-bottom  shadow-none my-auto responsive_input"
                                             style="width:378px;">
                                     </div>
@@ -438,7 +438,7 @@
                                     </div>
                                     <div class="pe-1 my-auto small_text ps-lg-4">Phone #: </div>
                                     <div class="">
-                                        <input type="text" name="r_phone"
+                                        <input type="number" name="r_phone"
                                             class="border-none border-0 border-bottom  shadow-none my-auto responsive_input"
                                             style="width:378px;">
                                     </div>
@@ -461,13 +461,13 @@
                                 </div>
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Gross monthly income: $</div>
-                                    <div class=""> <input type="text" name="p_gmi"
+                                    <div class=""> <input type="number" name="p_gmi"
                                             class="border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:382px"> </div>
                                 </div>
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Other income: $ </div>
-                                    <div class=""> <input type="text" name="p_oi"
+                                    <div class=""> <input type="number" name="p_oi"
                                             class="border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:441px"> </div>
                                 </div>
@@ -485,7 +485,7 @@
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Gross monthly income: $ </div>
                                     <div class="">
-                                        <input type="text" name="r_gmi"
+                                        <input type="number" name="r_gmi"
                                             class=" border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:382px">
                                     </div>
@@ -493,7 +493,7 @@
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Other income: $ </div>
                                     <div class="">
-                                        <input type="text" name="r_oi"
+                                        <input type="number" name="r_oi"
                                             class=" border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:441px">
                                     </div>
@@ -508,7 +508,7 @@
                             <div class="col-lg-6">
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Date of Marriage:</div>
-                                    <div> <input type="text" name="mi_dom"
+                                    <div> <input type="date" name="mi_dom"
                                             class="border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:430px"> </div>
                                 </div>
@@ -516,7 +516,7 @@
                             <div class="col-lg-6 pt-2">
                                 <div class="d-flex d_sm_block pt-2">
                                     <div class="pe-1 my-auto small_text">Date of separation:</div>
-                                    <div class=""> <input type="text" name="mi_dos"
+                                    <div class=""> <input type="date" name="mi_dos"
                                             class="border-none border-0 border-bottom responsive_input shadow-none my-auto"
                                             style="width:420px"> </div>
                                 </div>
@@ -564,12 +564,12 @@
                         </table>
                     </div>
                     <div>
-                        <div class="small_text"> B. Monthly child care/day care expenses: Cost $ <input type="text"
+                        <div class="small_text"> B. Monthly child care/day care expenses: Cost $ <input type="number"
                                 name="ci_mcc" id="" class="border-0 border-bottom responsive_input"> <span
                                 class="ps-lg-5">Paid by <input type="text" name="ci_paidb" id=""
                                     class="border-0 border-bottom responsive_input"></span> </div>
                         <div class="small_text"> C. Monthly medical, dental and vision insurance for children: Cost $
-                            <input type="text" name="ci_mmd" id=""
+                            <input type="number" name="ci_mmd" id=""
                                 class="border-0 border-bottom responsive_input"> <span class="ps-lg-5">Paid by <input
                                     type="text" name="ci_paidc" id=""
                                     class="border-0 border-bottom responsive_input"></span> </div>
@@ -580,7 +580,7 @@
                                     id=" "> No</span> </div>
                         <div class="small_text"> Paying party <input type="text" name="ci_pp" id=""
                                 class="border-0 border-bottom responsive_input" style="width:600px;"> <span
-                                class="ps-lg-5">Amount: $ <input type="text" name="ci_amount" id=""
+                                class="ps-lg-5">Amount: $ <input type="number" name="ci_amount" id=""
                                     class="border-0 border-bottom responsive_input" style="width:355px;"></span>
                         </div>
                         <div class="small_text"> Children: (List names and ages) <input type="text"
@@ -617,7 +617,7 @@
                                 style="width:438px;"></div>
                         <div class="small_text"> <span>Fair Market Value:</span> <input type="text" name="p1_fmv"
                                 id="" class="border-0 border-bottom responsive_input"
-                                style="width:295px;"><span>Valuation Date:</span> <input type="text"
+                                style="width:295px;"><span>Valuation Date:</span> <input type="date"
                                 name="p1_vd" id="" class="border-0 border-bottom responsive_input"
                                 style="width:295px;"> <span>Equity: </span> <input type="text" name="p1_equity"
                                 id="" class="border-0 border-bottom responsive_input" style="width:295px;">
@@ -641,7 +641,7 @@
                                 style="width:438px;"></div>
                         <div class="small_text"> <span>Fair Market Value:</span> <input type="text" name="p2_fmv"
                                 id="" class="border-0 border-bottom responsive_input"
-                                style="width:295px;"><span>Valuation Date:</span> <input type="text"
+                                style="width:295px;"><span>Valuation Date:</span> <input type="date"
                                 name="p2_vd" id="" class="border-0 border-bottom responsive_input"
                                 style="width:295px;"> <span>Equity: </span> <input type="text" name="p2_equity"
                                 id="" class="border-0 border-bottom responsive_input" style="width:295px;">
@@ -678,7 +678,7 @@
                             style="width:520px"></div>
                     <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v1_nada_v1"
                             id="" class="border-0 border-bottom responsive_input"
-                            style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v1_v_date1"
+                            style="width:293px;"><span>Valuation Date:</span> <input type="date" name="v1_v_date1"
                             id="" class="border-0 border-bottom responsive_input" style="width:293px;">
                         <span>Debt Owed: </span> <input type="text" name="v1_d_owed1" id=""
                             class="border-0 border-bottom responsive_input" style="width:293px;"></div>
@@ -705,7 +705,7 @@
                             style="width:520px"></div>
                     <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v2_nada_v1"
                             id="" class="border-0 border-bottom responsive_input"
-                            style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v2_v_date1"
+                            style="width:293px;"><span>Valuation Date:</span> <input type="date" name="v2_v_date1"
                             id="" class="border-0 border-bottom responsive_input" style="width:293px;">
                         <span>Debt Owed: </span> <input type="text" name="v2_d_owed1" id=""
                             class="border-0 border-bottom responsive_input" style="width:293px;"></div>
@@ -731,7 +731,7 @@
                             style="width:520px"></div>
                     <div class="small_text"> <span>NADA Value:</span> <input type="text" name="v3_nada_v1"
                             id="" class="border-0 border-bottom responsive_input"
-                            style="width:293px;"><span>Valuation Date:</span> <input type="text" name="v3_v_date1"
+                            style="width:293px;"><span>Valuation Date:</span> <input type="date" name="v3_v_date1"
                             id="" class="border-0 border-bottom responsive_input" style="width:293px;">
                         <span>Debt Owed: </span> <input type="text" name="v3_d_owed1" id=""
                             class="border-0 border-bottom responsive_input" style="width:293px;"></div>
@@ -782,7 +782,7 @@
                                 </td>
                                 <td><input type="text" name="ba_type_of_account1" class="border-0 form-control">
                                 </td>
-                                <td><input type="text" name="ba_value_date1" class="border-0 form-control"></td>
+                                <td><input type="date" name="ba_value_date1" class="border-0 form-control"></td>
                                 <td><input type="text" name="ba_balance1" class="border-0 form-control"></td>
                             </tr>
                             <tr>
@@ -791,7 +791,7 @@
                                 </td>
                                 <td><input type="text" name="ba_type_of_account2" class="border-0 form-control">
                                 </td>
-                                <td><input type="text" name="ba_value_date2" class="border-0 form-control"></td>
+                                <td><input type="date" name="ba_value_date2" class="border-0 form-control"></td>
                                 <td><input type="text" name="ba_balance2" class="border-0 form-control"></td>
                             </tr>
                             <tr>
@@ -800,17 +800,14 @@
                                 </td>
                                 <td><input type="text" name="ba_type_of_account3" class="border-0 form-control">
                                 </td>
-                                <td><input type="text" name="ba_value_date3" class="border-0 form-control"></td>
+                                <td><input type="date" name="ba_value_date3" class="border-0 form-control"></td>
                                 <td><input type="text" name="ba_balance3" class="border-0 form-control"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">More BANK ACCOUNTS attached? <input type="checkbox"
-                                        name="more_ba_attached_checkbox" value="Yes" id=""> Yes <input
-                                        type="checkbox" name="more_ba_attached_checkbox" value="Yes"
-                                        id=""> No</td>
+                                        name="more_ba_attached_checkbox" value="Yes" id=""> Yes <input type="checkbox" name="more_ba_attached_checkbox" value="Yes" id=""> No</td>
                                 <td colspan="2">Total Current Balances:</td>
-                                <td><input type="text" name="ba_total_current_balances"
-                                        class="border-0 form-control"></td>
+                                <td><input type="text" name="ba_total_current_balances" class="border-0 form-control"></td>
                             </tr>
                         </table>
                     </div>
@@ -834,7 +831,7 @@
                                 </td>
                                 <td colspan="2"><input type="text" name="sb_stock_name1"
                                         class="border-0 form-control"></td>
-                                <td><input type="text" name="sb_valuation_date1" class="border-0 form-control">
+                                <td><input type="date" name="sb_valuation_date1" class="border-0 form-control">
                                 </td>
                                 <td><input type="text" name="sb_current_value1" class="border-0 form-control">
                                 </td>
@@ -844,7 +841,7 @@
                                 </td>
                                 <td colspan="2"><input type="text" name="sb_stock_name2"
                                         class="border-0 form-control"></td>
-                                <td><input type="text" name="sb_valuation_date2" class="border-0 form-control">
+                                <td><input type="date" name="sb_valuation_date2" class="border-0 form-control">
                                 </td>
                                 <td><input type="text" name="sb_current_value2" class="border-0 form-control">
                                 </td>
@@ -854,7 +851,7 @@
                                 </td>
                                 <td colspan="2"><input type="text" name="sb_stock_name3"
                                         class="border-0 form-control"></td>
-                                <td><input type="text" name="sb_valuation_date3" class="border-0 form-control">
+                                <td><input type="date" name="sb_valuation_date3" class="border-0 form-control">
                                 </td>
                                 <td><input type="text" name="sb_current_value3" class="border-0 form-control">
                                 </td>
@@ -900,7 +897,7 @@
                                     <td><input type="text" name="rb_vested1" class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_pay_status1" class="border-0 form-control">
                                     </td>
-                                    <td><input type="text" name="rb_valuation_date1"
+                                    <td><input type="date" name="rb_valuation_date1"
                                             class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_balance1" class="border-0 form-control"></td>
                                 </tr>
@@ -913,7 +910,7 @@
                                     <td><input type="text" name="rb_vested2" class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_pay_status2" class="border-0 form-control">
                                     </td>
-                                    <td><input type="text" name="rb_valuation_date2"
+                                    <td><input type="date" name="rb_valuation_date2"
                                             class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_balance2" class="border-0 form-control"></td>
                                 </tr>
@@ -926,7 +923,7 @@
                                     <td><input type="text" name="rb_vested3" class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_pay_status3" class="border-0 form-control">
                                     </td>
-                                    <td><input type="text" name="rb_valuation_date3"
+                                    <td><input type="date" name="rb_valuation_date3"
                                             class="border-0 form-control"></td>
                                     <td><input type="text" name="rb_balance3" class="border-0 form-control">
                                     </td>
@@ -972,7 +969,7 @@
                         </div>
                         <div class="small_text">Policy #: <input type="text" name="p1_policy" id=""
                                 class="border-0 border-bottom border-dark responsive_input" style="width:281px">
-                            <span>Valuation Date:</span> <input type="text" name="p1_valuation_date"
+                            <span>Valuation Date:</span> <input type="date" name="p1_valuation_date"
                                 id="" class="border-0 border-bottom border-dark responsive_input"
                                 style="width:280px"> <span>Cash Surrender Value:</span> <input type="text"
                                 name="p1_csv" id=""
@@ -993,7 +990,7 @@
                         </div>
                         <div class="small_text">Policy #: <input type="text" name="p2_policy" id=""
                                 class="border-0 border-bottom border-dark responsive_input" style="width:281px">
-                            <span>Valuation Date:</span> <input type="text" name="p2_valuation_date"
+                            <span>Valuation Date:</span> <input type="date" name="p2_valuation_date"
                                 id="" class="border-0 border-bottom border-dark responsive_input"
                                 style="width:280px"> <span>Cash Surrender Value:</span> <input type="text"
                                 name="p2_csv" id=""
@@ -1014,7 +1011,7 @@
                         </div>
                         <div class="small_text">Policy #: <input type="text" name="p3_policy" id=""
                                 class="border-0 border-bottom border-dark responsive_input" style="width:281px">
-                            <span>Valuation Date:</span> <input type="text" name="p3_valuation_date"
+                            <span>Valuation Date:</span> <input type="date" name="p3_valuation_date"
                                 id="" class="border-0 border-bottom border-dark responsive_input"
                                 style="width:280px"> <span>Cash Surrender Value:</span> <input type="text"
                                 name="p3_csv" id=""
@@ -1048,7 +1045,7 @@
                     <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.: <input
                             type="text" name="bi_csppe1" id=""
                             class="border-0 border-bottom border-dark responsive_input" style="width:831px"> </div>
-                    <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd1"
+                    <div class="small_text pt-1">Valuation Date: <input type="date" name="bi_vd1"
                             id="" class="border-0 border-bottom border-dark responsive_input"
                             style="width:253px"> <span>Business Loan(s) Balance:</span> <input type="text"
                             name="bi_blb1" id=""
@@ -1065,7 +1062,7 @@
                     <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.: <input
                             type="text" name="bi_csppe2" id=""
                             class="border-0 border-bottom border-dark responsive_input" style="width:831px"> </div>
-                    <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd2"
+                    <div class="small_text pt-1">Valuation Date: <input type="date" name="bi_vd2"
                             id="" class="border-0 border-bottom border-dark responsive_input"
                             style="width:253px"> <span>Business Loan(s) Balance:</span> <input type="text"
                             name="bi_blb2" id=""
@@ -1085,7 +1082,7 @@
                     <div class="pt-1 small_text">Corporation, Sole Proprietorship, Partnership, Etc.: <input
                             type="text" name="bi_csppe3" id=""
                             class="border-0 border-bottom border-dark responsive_input" style="width:831px"> </div>
-                    <div class="small_text pt-1">Valuation Date: <input type="text" name="bi_vd3"
+                    <div class="small_text pt-1">Valuation Date: <input type="date" name="bi_vd3"
                             id="" class="border-0 border-bottom border-dark responsive_input"
                             style="width:253px"> <span>Business Loan(s) Balance:</span> <input type="text"
                             name="bi_blb3" id=""
@@ -1134,7 +1131,7 @@
                             style="width:1054px;"></div>
                     <div class="small_text">Who Holds Possession: <input type="text"
                             class="border-0 border-bottom responsive_input" name="i1_hold_possession"
-                            style="width:448px;"> Valuation Date: <input type="text"
+                            style="width:448px;"> Valuation Date: <input type="date"
                             class="border-0 border-bottom responsive_input" name="i1_valuation_date"
                             style="width:448px;"></div>
                     <div class="small_text">Fair Market Value: <input type="text"
@@ -1151,7 +1148,7 @@
                             style="width:1054px;"></div>
                     <div class="small_text">Who Holds Possession: <input type="text"
                             class="border-0 border-bottom responsive_input" name="i2_hold_possession"
-                            style="width:448px;"> Valuation Date: <input type="text"
+                            style="width:448px;"> Valuation Date: <input type="date"
                             class="border-0 border-bottom responsive_input" name="i2_valuation_date"
                             style="width:448px;"></div>
                     <div class="small_text">Fair Market Value: <input type="text"
@@ -1168,7 +1165,7 @@
                             style="width:1054px;"></div>
                     <div class="small_text">Who Holds Possession: <input type="text"
                             class="border-0 border-bottom responsive_input" name="i3_hold_possession"
-                            style="width:448px;"> Valuation Date: <input type="text"
+                            style="width:448px;"> Valuation Date: <input type="date"
                             class="border-0 border-bottom responsive_input" name="i3_valuation_date"
                             style="width:448px;"></div>
                     <div class="small_text">Fair Market Value: <input type="text"
@@ -1185,7 +1182,7 @@
                             style="width:1054px;"></div>
                     <div class="small_text">Who Holds Possession: <input type="text"
                             class="border-0 border-bottom responsive_input" name="i4_hold_possession"
-                            style="width:448px;"> Valuation Date: <input type="text"
+                            style="width:448px;"> Valuation Date: <input type="date"
                             class="border-0 border-bottom responsive_input" name="i4_valuation_date"
                             style="width:448px;"></div>
                     <div class="small_text">Fair Market Value: <input type="text"
@@ -1202,7 +1199,7 @@
                             style="width:1054px;"></div>
                     <div class="small_text">Who Holds Possession: <input type="text"
                             class="border-0 border-bottom responsive_input" name="i5_hold_possession"
-                            style="width:448px;"> Valuation Date: <input type="text"
+                            style="width:448px;"> Valuation Date: <input type="date"
                             class="border-0 border-bottom responsive_input" name="i5_valuation_date"
                             style="width:448px;"></div>
                     <div class="small_text">Fair Market Value: <input type="text"
@@ -1241,7 +1238,7 @@
                                 style="width:613px"> Premarital Account? <input type="text" name="c1_pa"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:250px"></div>
-                        <div class="small_text">Valuation Date: <input type="text" name="c1_vd"
+                        <div class="small_text">Valuation Date: <input type="date" name="c1_vd"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:273px;"> Monthly Payment: <input type="text" name="c1_mp"
                                 id="" class="border-0 border-bottom responsive_input"
@@ -1258,7 +1255,7 @@
                                 style="width:613px"> Premarital Account? <input type="text" name="c2_pa"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:250px"></div>
-                        <div class="small_text">Valuation Date: <input type="text" name="c2_vd"
+                        <div class="small_text">Valuation Date: <input type="date" name="c2_vd"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:273px;"> Monthly Payment: <input type="text" name="c2_mp"
                                 id="" class="border-0 border-bottom responsive_input"
@@ -1275,7 +1272,7 @@
                                 style="width:613px"> Premarital Account? <input type="text" name="c3_pa"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:250px"></div>
-                        <div class="small_text">Valuation Date: <input type="text" name="c3_vd"
+                        <div class="small_text">Valuation Date: <input type="date" name="c3_vd"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:273px;"> Monthly Payment: <input type="text" name="c3_mp"
                                 id="" class="border-0 border-bottom responsive_input"
@@ -1292,7 +1289,7 @@
                                 style="width:613px"> Premarital Account? <input type="text" name="c4_pa"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:250px"></div>
-                        <div class="small_text">Valuation Date: <input type="text" name="c4_vd"
+                        <div class="small_text">Valuation Date: <input type="date" name="c4_vd"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:273px;"> Monthly Payment: <input type="text" name="c4_mp"
                                 id="" class="border-0 border-bottom responsive_input"
@@ -1309,7 +1306,7 @@
                                 style="width:613px"> Premarital Account? <input type="text" name="c5_pa"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:250px"></div>
-                        <div class="small_text">Valuation Date: <input type="text" name="c5_vd"
+                        <div class="small_text">Valuation Date: <input type="date" name="c5_vd"
                                 id="" class="border-0 border-bottom responsive_input"
                                 style="width:273px;"> Monthly Payment: <input type="text" name="c5_mp"
                                 id="" class="border-0 border-bottom responsive_input"
@@ -1425,12 +1422,12 @@
                                         </tr>
                                         <tr>
                                             <td class="small_text">Telephone</td>
-                                            <td><input type="text" name="cef_telephone"
+                                            <td><input type="number" name="cef_telephone"
                                                     class="border-0 form-control"></td>
                                         </tr>
                                         <tr>
                                             <td class="small_text ps-lg-4">Mobile phone</td>
-                                            <td><input type="text" name="cef_mobile_phone"
+                                            <td><input type="number" name="cef_mobile_phone"
                                                     class="border-0 form-control"></td>
                                         </tr>
                                         <tr>
@@ -1863,36 +1860,22 @@
                                     <td class="small_text">Documentation of benefits accrued in pension, profit
                                         sharing, 401(k) or other retirement plans, including most recent statements of
                                         each such plan and the name, address and phone number of plan administrator</td>
-
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="as_auna7" id=""
-                                            class="border-0 w-100 responsive_input"></td>
+                                    <td><input type="text" name="as_auna7" id="" class="border-0 w-100 responsive_input"></td>
                                     <td class="small_text">7.</td>
                                     <td class="small_text">For each vehicle, provide amount of payoff of any
                                         indebtedness (including date payoff amount obtained) and copy of title</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="as_auna8" id=""
-                                            class="border-0 w-100 responsive_input"></td>
+                                    <td><input type="text" name="as_auna8" id="" class="border-0 w-100 responsive_input"></td>
                                     <td class="small_text">8.</td>
-                                    <td class="small_text">For each business interest, list name of business, extent
-                                        of interest or title in business (i.e.
-                                        owner, shareholder, partner, etc.), provide a copy of last income tax return
-                                        filed by business
-                                        and documentation of income earned (or portion received) through business during
-                                        last
-                                        twenty-four (24) months</td>
+                                    <td class="small_text">For each business interest, list name of business, extent of interest or title in business (i.e. owner, shareholder, partner, etc.), provide a copy of last income tax return filed by business and documentation of income earned (or portion received) through business during last twenty-four (24) months</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="as_auna9" id=""
-                                            class="border-0 w-100 responsive_input"></td>
+                                    <td><input type="text" name="as_auna9" id="" class="border-0 w-100 responsive_input"></td>
                                     <td class="small_text">9.</td>
-                                    <td class="small_text">Provide a list describing any other assets you have an
-                                        interest in, including any documentation
-                                        as to the value of the non-marital interest, date asset was acquired, and source
-                                        of non-marital
-                                        interest (trace and document non-marital funds used to acquire each asset)</td>
+                                    <td class="small_text">Provide a list describing any other assets you have an interest in, including any documentation as to the value of the non-marital interest, date asset was acquired, and source of non-marital interest (trace and document non-marital funds used to acquire each asset)</td>
                                 </tr>
                                 <tr>
                                     <td><input type="text" name="as_auna10" id=""
@@ -2011,7 +1994,7 @@
                                         class="border-0 border-bottom responsive_input w-100"></div>
                                 <div><input type="text" name="cos_address3"
                                         class="border-0 border-bottom responsive_input w-100"></div>
-                                <div>Phone: ( ) <input type="text" name="cos_phone"
+                                <div>Phone: ( ) <input type="number" name="cos_phone"
                                         class="border-0 border-bottom responsive_input" style="width:292px;"></div>
                                 <div> Fax: ( ) <input type="text" name="cos_fax"
                                         class="border-0 border-bottom responsive_input" style="width:316px;"></div>

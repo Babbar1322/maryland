@@ -269,8 +269,8 @@
                         </div>
                         <div class="col-md-4 border border-2 border-start-0 border-end-0 border-dark">
                             <h4 class="fw-bold">CASE NO. and JUDGE</h4>
-                            <input type="text" name="CASE NO" class="border-0 border-bottom responsive_input">
-                            <input type="text" name="Judge" class="border-0 border-bottom responsive_input">
+                            <input type="number" name="CASE NO" class="border-0 border-bottom responsive_input">
+                            <input type="number" name="Judge" class="border-0 border-bottom responsive_input">
                         </div>
 
                         <div class="row mt-4">
@@ -338,7 +338,7 @@
                                 <div class="col-md-5">
                                     <div class="d-flex">
                                         <div class="px-2 my-auto ">Phone:</div>
-                                        <input type="text" name="Phone"
+                                        <input type="number" name="Phone"
                                             class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                     </div>
                                 </div>
@@ -448,7 +448,7 @@
                                         <div class="my-auto responsive_input" style="width:395px;">Gross income <span class="fs-6">
                                                 (before taxes and other deductions)</span>:</div>
                                         <span>$</span>
-                                        <input type="text" name="Gross income before taxes and other deductions"
+                                        <input type="number" name="Gross income before taxes and other deductions"
                                             class="w-50 border-none border-0 border-bottom  shadow-none my-auto">
                                     </div>
                                 </div>
@@ -498,7 +498,7 @@
                                     <div class="d-flex d_sm_block">
                                         <div class="responsive_input my-auto" style="width:660px;">Total amount of owner’s draws during the
                                             past twelve months (if self-employed):</div>
-                                        <input type="text" name="Total amount of owners draws during the past twelve months if selfemployed" style="width:300px;"
+                                        <input type="number" name="Total amount of owners draws during the past twelve months if selfemployed" style="width:300px;"
                                             class="responsive_input border-none border-0 border-bottom  shadow-none my-auto">
                                     </div>
                                 </div>
@@ -563,7 +563,7 @@
                                 <input type="checkbox" name="car allowance" value="car allowance">
                                 <label for="">car allowance</label>
                             </div>
-                            <div class="w-25"><input type="text" name="Amount" class="border-none border-0 border-bottom  shadow-none w-100">
+                            <div class="w-25"><input type="number" name="Amount" class="border-none border-0 border-bottom  shadow-none w-100">
                                 <div class="fs-6">Amount</div>
                             </div>
                         </div>
@@ -912,7 +912,7 @@
                             <div class="col-md-6">
                                 <div class="d-flex justify-content-end">
                                     <div>Case No.</div>
-                                    <input type="text" name="CASE NO#2"
+                                    <input type="number" name="CASE NO#2"
                                         class="border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -961,7 +961,7 @@
                                 <div class="d-flex">
                                     <div class="pe-1 my-auto" style="width: 245px">Estimated value:</div>
                                     <span>$</span>
-                                    <input type="text" name="Estlmated value"
+                                    <input type="number" name="Estlmated value"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -969,7 +969,7 @@
                                 <div class="d-flex">
                                     <div class="pe-1 my-auto">SEV:</div>
                                     <span>$</span>
-                                    <input type="text" name="SEV"
+                                    <input type="number" name="SEV"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -977,14 +977,14 @@
                                 <div class="d-flex">
                                     <div class="pe-1 my-auto" style="width:295px">Balance on mortgage/land contract:</div>
                                     <span>$</span>
-                                    <input type="text" name="Balance on mortgageland contract" class="border-none border-0 border-bottom  shadow-none my-auto">
+                                    <input type="number" name="Balance on mortgageland contract" class="border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
                             <div class="col-md-6 pt-4">
                                 <div class="d-flex">
                                     <div class="pe-1 my-auto" style="width:200px">Monthly payment:</div>
                                     <span>$</span>
-                                    <input type="text" name="Monthly payment" class="w-75 border-none border-0 border-bottom  shadow-none my-auto">
+                                    <input type="number" name="Monthly payment" class="w-75 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
                             <div class="col-md-6 pt-4">
@@ -1038,7 +1038,7 @@
                                     <div class="pe-1 my-auto" style="width:735px">Balance of equity loan or line of
                                         credit:</div>
                                     <span>$</span>
-                                    <input type="text" name="Balance of equity loan or line of credit"
+                                    <input type="number" name="Balance of equity loan or line of credit"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -1046,7 +1046,7 @@
                                 <div class="d-flex">
                                     <div class="pe-1 my-auto" style="width:250px">Monthly payment:</div>
                                     <span>$</span>
-                                    <input type="text" name="Monthly payment_2"
+                                    <input type="number" name="Monthly payment_2"
                                         class="w-100 border-none border-0 border-bottom  shadow-none my-auto">
                                 </div>
                             </div>
@@ -1107,8 +1107,8 @@
 
                                         </td>
                                         <td rowspan="3">
-                                            <div class="tdata ">
-                                                <div>$</div><input type="text" name="filL17"
+                                            <div class="tdata">
+                                                <div>$</div><input type="number" name="filL17"
                                                     class="w-100 border-none border-0 shadow-none my-auto ">
                                             </div>
                                         </td>
@@ -2422,7 +2422,7 @@
                                 <div class="d-flex">
                                     <div class="pe-1" style="width:150px;">Payment amount:</div>
                                     <div class="">$</div>
-                                    <input type="text" name="Payment amount"
+                                    <input type="number" name="Payment amount"
                                         class="border-none border-0 border-bottom  shadow-none h-100 ">
                                     <div class="">per</div>
                                     <div class="">
@@ -2441,7 +2441,7 @@
                             <div class="col-md-6 pt-2">
                                 <div class="d-flex">
                                     <div class="" style="width:600px;">Estimated end date (if applicable):</div>
-                                    <div>$</div>
+                                    {{-- <div>$</div> --}}
                                     <div class="w-100">
                                         <input type="date" name="Estimated end date if applicable"
                                             class="w-100 border-none border-0 border-bottom  shadow-none ">
@@ -2459,7 +2459,7 @@
                             <div class="col-md-6">
                                 <div class="d-flex">
                                     <div style="width:100px;">Case No.:</div>
-                                    <input type="text" name="case_no"
+                                    <input type="number" name="case_no"
                                         class="w-100 border-none border-0 border-bottom  shadow-none ">
                                 </div>
                             </div>

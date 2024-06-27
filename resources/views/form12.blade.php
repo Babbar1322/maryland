@@ -490,15 +490,15 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="text-center">Birth Date</div>
-                                    <div class=""> <input type="text" name="birth_date1"
+                                    <div class=""> <input type="date" name="birth_date1"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="birth_date2"
+                                    <div class=""> <input type="date" name="birth_date2"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="birth_date3"
+                                    <div class=""> <input type="date" name="birth_date3"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="birth_date4"
+                                    <div class=""> <input type="date" name="birth_date4"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
-                                    <div class=""> <input type="text" name="birth_date5"
+                                    <div class=""> <input type="date" name="birth_date5"
                                             class="border-0 border-bottom w-100 footer_field"> </div>
 
                                 </div>
@@ -627,7 +627,7 @@
                                     </div>
                                 </span>
                                 <span> the due date is:</span>
-                                <span><input type="text" name="pregnant_due_date"
+                                <span><input type="date" name="pregnant_due_date"
                                         class="border-0 border-bottom w-100 footer_field"></span>
                             </div>
 
@@ -682,7 +682,7 @@
                                     <td class="small_text">Salary and Wages (before deductions) </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="salary_and_wages" class="border-0 w-100">
+                                        <input type="number" name="salary_and_wages" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Social Security Received (social security disability,
                                         retirement, survivors' benefit) </td>
@@ -698,50 +698,50 @@
                                     <td class="small_text">Self-Employment</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="self_employment" class="border-0 w-100">
+                                        <input type="number" name="self_employment" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Child's Derivative Social Security or Veteran's Benefits
                                     </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="child_derivative_social" class="border-0 w-100">
+                                        <input type="number" name="child_derivative_social" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Unemployment Benefits</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="unemployment_benefits" class="border-0 w-100">
+                                        <input type="number" name="unemployment_benefits" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Workers' Compensation</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="workers_compensation" class="border-0 w-100">
+                                        <input type="number" name="workers_compensation" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Commissions - Average</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="commissions_average" class="border-0 w-100">
+                                        <input type="number" name="commissions_average" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Pension or Annuity Payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="pension_annuity_payments" class="border-0 w-100">
+                                        <input type="number" name="pension_annuity_payments" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Spousal Maintenance Received</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="spousal_maintenance_received"
+                                        <input type="number" name="spousal_maintenance_received"
                                             class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Military and Naval Retirement </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="military_and_naval_Retirement"
+                                        <input type="number" name="military_and_naval_Retirement"
                                             class="border-0 w-100">
                                     </td>
                                 </tr>
@@ -749,7 +749,7 @@
                                     <td class="small_text">Bonus income - Average</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="bonus_income_average" class="border-0 w-100">
+                                        <input type="number" name="bonus_income_average" class="border-0 w-100">
                                     </td>
                                     <td colspan="2" class="small_text">Other source of income (list source below)
                                     </td>
@@ -758,20 +758,20 @@
                                     <td class="small_text">Supplemental Security (SSI) </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="supplemental_security" class="border-0 w-100">
+                                        <input type="number" name="supplemental_security" class="border-0 w-100">
                                     </td>
                                     <td class="small_text"><input type="text" name="other_source1"
                                             class="border-0 w-100"> </td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="other_source2" class="border-0 w-100">
+                                        <input type="number" name="other_source2" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" class="fw-bold">Total monthly income received:</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="total_monthly_income" class="border-0 w-100">
+                                        <input type="number" name="total_monthly_income" class="border-0 w-100">
                                     </td>
                                 </tr>
                             </tbody>
@@ -900,19 +900,19 @@
                                     <td class="small_text">Rent / Mortgage Payment </td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="rent_mortgage_payment" class="border-0 w-100">
+                                        <input type="number" name="rent_mortgage_payment" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Transportation (car payment, gasoline, bus, taxi)</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="transportation" class="border-0 w-100">
+                                        <input type="number" name="transportation" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Contract for Deed / 2nd Mortgage</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="contract_for_deed" class="border-0 w-100">
+                                        <input type="number" name="contract_for_deed" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Medical and Dental Expenses (not covered by insurance)</td>
                                     <td class="">
@@ -927,20 +927,20 @@
                                     <td class="small_text">Homeowner's / Rental Insurance</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="homeowner_rental_insurance"
+                                        <input type="number" name="homeowner_rental_insurance"
                                             class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Cable TV / Internet</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="cable_tv_internet" class="border-0 w-100">
+                                        <input type="number" name="cable_tv_internet" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Property Taxes (if not included in mortgage payment)</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="property_taxes" class="border-0 w-100">
+                                        <input type="number" name="property_taxes" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Car Insurance</td>
                                     <td class="">
@@ -954,24 +954,24 @@
                                     <td class="small_text">Heating & Electric</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="heating_electric" class="border-0 w-100">
+                                        <input type="number" name="heating_electric" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Clothing</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="clothing" class="border-0 w-100">
+                                        <input type="number" name="clothing" class="border-0 w-100">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="small_text">Food</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="food" class="border-0 w-100">
+                                        <input type="number" name="food" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Spousal Maintenance payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="other_spousal_maintenance_payments"
+                                        <input type="number" name="other_spousal_maintenance_payments"
                                             class="border-0 w-100">
                                     </td>
                                 </tr>
@@ -979,12 +979,12 @@
                                     <td class="small_text">Telephone / Cell Phone</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="telephone_cell_phone" class="border-0 w-100">
+                                        <input type="number" name="telephone_cell_phone" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Child support payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="other_child_support_payments"
+                                        <input type="number" name="other_child_support_payments"
                                             class="border-0 w-100">
                                     </td>
                                 </tr>
@@ -992,12 +992,12 @@
                                     <td class="small_text">Child Care Payments</td>
                                     <td class="d-flex w-100">
                                         <div>$</div>
-                                        <input type="text" name="child_care_payments" class="border-0 w-100">
+                                        <input type="number" name="child_care_payments" class="border-0 w-100">
                                     </td>
                                     <td class="small_text">Other Miscellaneous payments</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="other_miscellaneous_payments"
+                                        <input type="number" name="other_miscellaneous_payments"
                                             class="border-0 w-100">
                                     </td>
                                 </tr>
@@ -1005,7 +1005,7 @@
                                     <td colspan="3" class="fw-bold">Total monthly expenses:</td>
                                     <td class="d-flex w-100">
                                         <span>$</span>
-                                        <input type="text" name="total_monthly_expenses" class="border-0 w-100">
+                                        <input type="number" name="total_monthly_expenses" class="border-0 w-100">
                                     </td>
                                 </tr>
                             </tbody>
@@ -1033,53 +1033,53 @@
                             <div class="col-lg-5">
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="federal_income_tax_deductions"
+                                    <input type="number" name="federal_income_tax_deductions"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
 
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="state_tax_deductions"
+                                    <input type="number" name="state_tax_deductions"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="social_security"
+                                    <input type="number" name="social_security"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="retirement_contribution"
+                                    <input type="number" name="retirement_contribution"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="union_dues"
+                                    <input type="number" name="union_dues"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="other_paycheck_deductions"
+                                    <input type="number" name="other_paycheck_deductions"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="other_paycheck3"
+                                    <input type="number" name="other_paycheck3"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="other_paycheck4"
+                                    <input type="number" name="other_paycheck4"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="subtotal_deductions"
+                                    <input type="number" name="subtotal_deductions"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                                 <div class="d-flex">
                                     <span>$</span>
-                                    <input type="text" name="net_take_home_pay"
+                                    <input type="number" name="net_take_home_pay"
                                         class="border-0 border-bottom footer_field responsive_input">
                                 </div>
                             </div>
@@ -1133,36 +1133,36 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="text-center fw-bold">Homestead</div>
-                                <div><input type="text" name="date_acquired1"
+                                <div><input type="date" name="date_acquired1"
                                         class="border-0 w-100 border-bottom footer_field"></div>
-                                <div class="d-flex pt-1">$<input type="text" name="purchase_price1"
+                                <div class="d-flex pt-1">$<input type="number" name="purchase_price1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value1"
+                                <div class="d-flex pt-1">$<input type="number" name="present_fair_market_value1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage1"
+                                <div class="d-flex pt-1">$<input type="number" name="balance_due_on_mortgage1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_new_value1"
+                                <div class="d-flex pt-1">$<input type="number" name="present_new_value1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment1"
+                                <div class="d-flex pt-1">$<input type="number" name="monthly_payment1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="rental_income1"
+                                <div class="d-flex pt-1">$<input type="number" name="rental_income1"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="text-center fw-bold">Other Property</div>
-                                <div><input type="text" name="date_acquired2"
+                                <div><input type="date" name="date_acquired2"
                                         class="border-0 w-100 border-bottom footer_field"></div>
-                                <div class="d-flex pt-1">$<input type="text" name="purchase_price2"
+                                <div class="d-flex pt-1">$<input type="number" name="purchase_price2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_fair_market_value2"
+                                <div class="d-flex pt-1">$<input type="number" name="present_fair_market_value2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="balance_due_on_mortgage2"
+                                <div class="d-flex pt-1">$<input type="number" name="balance_due_on_mortgage2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="present_new_value2"
+                                <div class="d-flex pt-1">$<input type="number" name="present_new_value2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="monthly_payment2"
+                                <div class="d-flex pt-1">$<input type="number" name="monthly_payment2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
-                                <div class="d-flex pt-1">$<input type="text" name="rental_income2"
+                                <div class="d-flex pt-1">$<input type="number" name="rental_income2"
                                         class="border-0 w-100 border-bottom footer_field"> </div>
                             </div>
                         </div>
@@ -1188,17 +1188,17 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts2"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts4"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts6"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts8"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts10"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts10"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="chacking_saving_accounts12"
+                                    <div class="d-flex">$<input type="number" name="chacking_saving_accounts12"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1218,13 +1218,13 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="inverstment_accounts2"
+                                    <div class="d-flex">$<input type="number" name="inverstment_accounts2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="inverstment_accounts4"
+                                    <div class="d-flex">$<input type="number" name="inverstment_accounts4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="inverstment_accounts6"
+                                    <div class="d-flex">$<input type="number" name="inverstment_accounts6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="inverstment_accounts8"
+                                    <div class="d-flex">$<input type="number" name="inverstment_accounts8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1253,13 +1253,13 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing2"
+                                    <div class="d-flex">$<input type="number" name="iras_profit_sharing2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing4"
+                                    <div class="d-flex">$<input type="number" name="iras_profit_sharing4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing6"
+                                    <div class="d-flex">$<input type="number" name="iras_profit_sharing6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="iras_profit_sharing8"
+                                    <div class="d-flex">$<input type="number" name="iras_profit_sharing8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1275,9 +1275,9 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="annuities2"
+                                    <div class="d-flex">$<input type="number" name="annuities2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="annuities4"
+                                    <div class="d-flex">$<input type="number" name="annuities4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1297,13 +1297,13 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="household_goods2"
+                                    <div class="d-flex">$<input type="number" name="household_goods2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="household_goods4"
+                                    <div class="d-flex">$<input type="number" name="household_goods4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="household_goods6"
+                                    <div class="d-flex">$<input type="number" name="household_goods6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="household_goods8"
+                                    <div class="d-flex">$<input type="number" name="household_goods8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1325,15 +1325,15 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers2"
+                                    <div class="d-flex">$<input type="number" name="vehicles_boats_campers2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers4"
+                                    <div class="d-flex">$<input type="number" name="vehicles_boats_campers4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers6"
+                                    <div class="d-flex">$<input type="number" name="vehicles_boats_campers6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers8"
+                                    <div class="d-flex">$<input type="number" name="vehicles_boats_campers8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="vehicles_boats_campers10"
+                                    <div class="d-flex">$<input type="number" name="vehicles_boats_campers10"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1351,11 +1351,11 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment2"
+                                    <div class="d-flex">$<input type="number" name="farm_machinery_equipment2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment4"
+                                    <div class="d-flex">$<input type="number" name="farm_machinery_equipment4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="farm_machinery_equipment6"
+                                    <div class="d-flex">$<input type="number" name="farm_machinery_equipment6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1373,13 +1373,13 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text"
+                                    <div class="d-flex">$<input type="number"
                                             name="business_partnership_interests2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text"
+                                    <div class="d-flex">$<input type="number"
                                             name="business_partnership_interests4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text"
+                                    <div class="d-flex">$<input type="number"
                                             name="business_partnership_interests6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
@@ -1394,7 +1394,7 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="intellectual_property2"
+                                    <div class="d-flex">$<input type="number" name="intellectual_property2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1415,7 +1415,7 @@
                                             class="border-0 w-100 border-bottom footer_field"></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="d-flex">$<input type="text" name="other2"
+                                    <div class="d-flex">$<input type="number" name="other2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
                                 </div>
                             </div>
@@ -1453,11 +1453,11 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="text-center">Amount Claimed</div>
-                                    <div class="d-flex">$<input type="text" name="amount_claimed1"
+                                    <div class="d-flex">$<input type="number" name="amount_claimed1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="amount_claimed2"
+                                    <div class="d-flex">$<input type="number" name="amount_claimed2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="amount_claimed3"
+                                    <div class="d-flex">$<input type="number" name="amount_claimed3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1483,35 +1483,35 @@
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 1</div>
-                                    <div class="d-flex">$<input type="text" name="company1"
+                                    <div class="d-flex">$<input type="number" name="company1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="type1"
+                                    <div class="d-flex">$<input type="number" name="type1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="death_benefit1"
+                                    <div class="d-flex">$<input type="number" name="death_benefit1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="cash_value1"
+                                    <div class="d-flex">$<input type="number" name="cash_value1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="loan_balance1"
+                                    <div class="d-flex">$<input type="number" name="loan_balance1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="insured_under_policy1"
+                                    <div class="d-flex">$<input type="number" name="insured_under_policy1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="beneficiary1"
+                                    <div class="d-flex">$<input type="number" name="beneficiary1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="owner_of_policy1"
+                                    <div class="d-flex">$<input type="number" name="owner_of_policy1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 2</div>
-                                    <div class="d-flex">$<input type="text" name="company2"
+                                    <div class="d-flex">$<input type="number" name="company2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="type2"
+                                    <div class="d-flex">$<input type="number" name="type2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="death_benefit2"
+                                    <div class="d-flex">$<input type="number" name="death_benefit2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="cash_value2"
+                                    <div class="d-flex">$<input type="number" name="cash_value2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="loan_balance2"
+                                    <div class="d-flex">$<input type="number" name="loan_balance2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
                                     <div><input type="text" name="insured_under_policy2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
@@ -1523,15 +1523,15 @@
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Policy 3</div>
-                                    <div class="d-flex">$<input type="text" name="company3"
+                                    <div class="d-flex">$<input type="number" name="company3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="type3"
+                                    <div class="d-flex">$<input type="number" name="type3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="death_benefit3"
+                                    <div class="d-flex">$<input type="number" name="death_benefit3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="cash_value3"
+                                    <div class="d-flex">$<input type="number" name="cash_value3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="loan_balance3"
+                                    <div class="d-flex">$<input type="number" name="loan_balance3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
                                     <div><input type="text" name="insured_under_policy3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
@@ -1593,42 +1593,42 @@
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Minimum Monthly Payment</div>
-                                    <div class="d-flex pt-4">$<input type="text"
+                                    <div class="d-flex pt-4">$<input type="number"
                                             name="minimun_monthly_payment1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment2"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment3"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment4"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment5"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment5"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment6"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment7"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment7"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="minimun_monthly_payment8"
+                                    <div class="d-flex">$<input type="number" name="minimun_monthly_payment8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="text-center">Balance Due</div>
-                                    <div class="d-flex pt-4">$<input type="text" name="balance_due1"
+                                    <div class="d-flex pt-4">$<input type="number" name="balance_due1"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due2"
+                                    <div class="d-flex">$<input type="number" name="balance_due2"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due3"
+                                    <div class="d-flex">$<input type="number" name="balance_due3"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due4"
+                                    <div class="d-flex">$<input type="number" name="balance_due4"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due5"
+                                    <div class="d-flex">$<input type="number" name="balance_due5"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due6"
+                                    <div class="d-flex">$<input type="number" name="balance_due6"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due7"
+                                    <div class="d-flex">$<input type="number" name="balance_due7"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
-                                    <div class="d-flex">$<input type="text" name="balance_due8"
+                                    <div class="d-flex">$<input type="number" name="balance_due8"
                                             class="border-0 w-100 border-bottom footer_field"> </div>
 
                                 </div>
@@ -1694,7 +1694,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                         <label for="">Date:</label>
-                                        <input type="text" name="date"
+                                        <input type="date" name="date"
                                             class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                 </div>
@@ -1821,7 +1821,7 @@
                                 <div class="col-lg-12 ">
                                     <div class="d-flex">
                                         <label for="">Telephone:</label>
-                                        <input type="text" name="telephone"
+                                        <input type="number" name="telephone"
                                             class="form-control ms-auto  border-none w-75 border-0 border-bottom footer_field shadow-none">
                                     </div>
                                 </div>

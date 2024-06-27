@@ -325,10 +325,10 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Phone <span>[Day]</span></div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone_day1"
+                                <div> <input type="number" min="0" name="gi_phone_day1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width :328px !important"></div>Phone [Evening]
-                                <div><input type="text" min="0" name="gi_phone_evening1"
+                                <div><input type="number" min="0" name="gi_phone_evening1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:328px !important"></div>
                             </div>
@@ -336,7 +336,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Alternative Phone</div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_alternative_phone1"
+                                <div> <input type="number" min="0" name="gi_alternative_phone1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  300px !important"></div>Social Security Number
                                 <div><input type="text" min="0" name="gi_ssnumber1"
@@ -395,7 +395,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Phone </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone2"
+                                <div> <input type="number" min="0" name="gi_phone2"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  381px !important"></div>Fax
                                 <div><input type="text" min="0" name="gi_fax1"
@@ -444,7 +444,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Phone </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone3"
+                                <div> <input type="number" min="0" name="gi_phone3"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width: 381px !important"></div>Fax
                                 <div><input type="text" min="0" name="gi_fax2"
@@ -844,7 +844,7 @@
                                     <tr>
                                         <td>6.</td>
                                         <td>Telephone (local, long distance & cellular)</td>
-                                        <td class="w-25"><input type="text" name="nme_telephone"
+                                        <td class="w-25"><input type="number" name="nme_telephone"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                     <tr>
@@ -1783,7 +1783,7 @@
                                                 value="Yes"></td>
                                         <td><input type="text" name="pa_vik1" class="border-0 form-control">
                                         </td>
-                                        <td><input type="text" name="pa_dov1" class="border-0 form-control">
+                                        <td><input type="number" name="pa_dov1" class="border-0 form-control">
                                         </td>
                                         <td><input type="text" name="pa_vt1" class="border-0 form-control">
                                         </td>
@@ -1799,7 +1799,7 @@
                                                 value="Yes"></td>
                                         <td><input type="text" name="pa_vik2" class="border-0 form-control">
                                         </td>
-                                        <td><input type="text" name="pa_dov2" class="border-0 form-control">
+                                        <td><input type="number" name="pa_dov2" class="border-0 form-control">
                                         </td>
                                         <td><input type="text" name="pa_vt2" class="border-0 form-control">
                                         </td>
@@ -1815,7 +1815,7 @@
                                                 value="Yes"></td>
                                         <td><input type="text" name="pa_vik3" class="border-0 form-control">
                                         </td>
-                                        <td><input type="text" name="pa_dov3" class="border-0 form-control">
+                                        <td><input type="number" name="pa_dov3" class="border-0 form-control">
                                         </td>
                                         <td><input type="text" name="pa_vt3" class="border-0 form-control">
                                         </td>
@@ -1831,7 +1831,7 @@
                                                 value="Yes"></td>
                                         <td><input type="text" name="pa_vik4" class="border-0 form-control">
                                         </td>
-                                        <td><input type="text" name="pa_dov4" class="border-0 form-control">
+                                        <td><input type="number" name="pa_dov4" class="border-0 form-control">
                                         </td>
                                         <td><input type="text" name="pa_vt4" class="border-0 form-control">
                                         </td>
@@ -1847,7 +1847,7 @@
                                                 value="Yes"></td>
                                         <td><input type="text" name="pa_vik5" class="border-0 form-control">
                                         </td>
-                                        <td><input type="text" name="pa_dov5" class="border-0 form-control">
+                                        <td><input type="number" name="pa_dov5" class="border-0 form-control">
                                         </td>
                                         <td><input type="text" name="pa_vt5" class="border-0 form-control">
                                         </td>
@@ -2123,7 +2123,7 @@
                                                 value="Yes"></td>
                                         <td class="text-center"><input type="checkbox" name="a_t1"
                                                 value="Yes"></td>
-                                        <td><input type="text" name="date_acquired1"
+                                        <td><input type="date" name="date_acquired1"
                                                 class="border-0 form-control"></td>
                                         <td><input type="text" name="aa_vt1" class="border-0 form-control">
                                         </td>
@@ -2144,7 +2144,7 @@
                                                 value="Yes"></td>
                                         <td class="text-center"><input type="checkbox" name="a_t2"
                                                 value="Yes"></td>
-                                        <td><input type="text" name="date_acquired2"
+                                        <td><input type="date" name="date_acquired2"
                                                 class="border-0 form-control"></td>
                                         <td><input type="text" name="aa_vt2" class="border-0 form-control">
                                         </td>
@@ -2165,7 +2165,7 @@
                                                 value="Yes"></td>
                                         <td class="text-center"><input type="checkbox" name="a_t3"
                                                 value="Yes"></td>
-                                        <td><input type="text" name="date_acquired3"
+                                        <td><input type="date" name="date_acquired3"
                                                 class="border-0 form-control"></td>
                                         <td><input type="text" name="aa_vt3" class="border-0 form-control">
                                         </td>
@@ -2186,7 +2186,7 @@
                                                 value="Yes"></td>
                                         <td class="text-center"><input type="checkbox" name="a_t4"
                                                 value="Yes"></td>
-                                        <td><input type="text" name="date_acquired4"
+                                        <td><input type="date" name="date_acquired4"
                                                 class="border-0 form-control"></td>
                                         <td><input type="text" name="aa_vt4" class="border-0 form-control">
                                         </td>
@@ -2207,7 +2207,7 @@
                                                 value="Yes"></td>
                                         <td class="text-center"><input type="checkbox" name="a_t5"
                                                 value="Yes"></td>
-                                        <td><input type="text" name="date_acquired5"
+                                        <td><input type="date" name="date_acquired5"
                                                 class="border-0 form-control"></td>
                                         <td><input type="text" name="aa_vt5" class="border-0 form-control">
                                         </td>
@@ -2347,7 +2347,7 @@
                                                 class=""></td>
                                         <td class="text-center"><input type="text" name="mh_toi1"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="mh_di1"
+                                        <td class="text-center"><input type="date" name="mh_di1"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                     <tr>
@@ -2361,7 +2361,7 @@
                                                 class=""></td>
                                         <td class="text-center"><input type="text" name="mh_toi2"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="mh_di2"
+                                        <td class="text-center"><input type="date" name="mh_di2"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                     <tr>
@@ -2375,7 +2375,7 @@
                                                 class=""></td>
                                         <td class="text-center"><input type="text" name="mh_toi3"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="mh_di3"
+                                        <td class="text-center"><input type="date" name="mh_di3"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                     <tr>
@@ -2389,7 +2389,7 @@
                                                 class=""></td>
                                         <td class="text-center"><input type="text" name="mh_toi4"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="mh_di4"
+                                        <td class="text-center"><input type="date" name="mh_di4"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                     <tr>
@@ -2403,7 +2403,7 @@
                                                 class=""></td>
                                         <td class="text-center"><input type="text" name="mh_toi5"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="mh_di5"
+                                        <td class="text-center"><input type="date" name="mh_di5"
                                                 class="border-0 form-control"></td>
                                     </tr>
                                 </tbody>
@@ -2741,7 +2741,7 @@
                                     <tr>
                                         <td class="text-center"><input type="text" name="da_pa1"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="da_dod1"
+                                        <td class="text-center"><input type="date" name="da_dod1"
                                                 class="border-0 form-control"></td>
                                         <td class="text-center"><input type="text" name="da_fmv1"
                                                 class="border-0 form-control"></td>
@@ -2749,7 +2749,7 @@
                                     <tr>
                                         <td class="text-center"><input type="text" name="da_pa2"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="da_dod2"
+                                        <td class="text-center"><input type="date" name="da_dod2"
                                                 class="border-0 form-control"></td>
                                         <td class="text-center"><input type="text" name="da_fmv2"
                                                 class="border-0 form-control"></td>
@@ -2757,7 +2757,7 @@
                                     <tr>
                                         <td class="text-center"><input type="text" name="da_pa3"
                                                 class="border-0 form-control"></td>
-                                        <td class="text-center"><input type="text" name="da_dod3"
+                                        <td class="text-center"><input type="date" name="da_dod3"
                                                 class="border-0 form-control"></td>
                                         <td class="text-center"><input type="text" name="da_fmv3"
                                                 class="border-0 form-control"></td>
@@ -2792,7 +2792,7 @@
                             <div>If yes, identify the following:</div>
                             <div>Type of filing<input type="text" name="filing_type" id=""
                                     class="border-0 border-bottom responsive_input"></div>
-                            <div>Date of filing<input type="text" name="filing_date" id=""
+                            <div>Date of filing<input type="date" name="filing_date" id=""
                                     class="border-0 border-bottom responsive_input"></div>
                             <div>Current status<input type="text" name="current_status" id=""
                                     class="border-0 border-bottom responsive_input"></div>
@@ -2842,7 +2842,7 @@
                                         <div class=" ">Email Address</div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" name="telephone_no"
+                                        <input type="number" name="telephone_no"
                                             class="border-0 form-control border-bottom">
                                         <div class="text-end">Telephone Number</div>
                                     </div>
@@ -2850,7 +2850,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" name="date"
+                                        <input type="date" name="date"
                                             class="border-0 form-control border-bottom">
                                         <div class=" ">Date</div>
                                     </div>

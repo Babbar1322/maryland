@@ -32,11 +32,10 @@
         input,
         table {
             background-color: transparent !important;
-            height: 100% !important;
 
         }
 
-        input[type='radio'] {
+        input[type='checkbox'] {
             accent-color: #8c8a8a !important;
         }
 
@@ -281,7 +280,7 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">TELEPHONE NO.:</div>
-                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Phone_ft[0]" class="border-0 "></div>
+                                        <div> <input type="number" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Phone_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
@@ -370,21 +369,21 @@
                                 <div class="row mx-auto">
                                     <div class="col-lg-6 mx-auto text-center">
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[0].CheckBox61[0]">
+                                            <input type="checkbox" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[0].CheckBox61[0]">
                                             <label for="">Petitioner's</label>
                                         </div>
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[1].respondent_cb[0]">
+                                            <input type="checkbox" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[1].respondent_cb[0]">
                                             <label for="">Respondent's</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 mx-auto text-center">
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[2].preliminary_cb[0]">
+                                            <input type="checkbox" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[2].preliminary_cb[0]">
                                             <label for="">Preliminary</label>
                                         </div>
                                         <div class="d-flex gap-2">
-                                            <input type="radio" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[3].final_cb[0]">
+                                            <input type="checkbox" value="On" name="form1[0].Page1[0].StdP1Header_sf[0].FormTitle[0].caption_cb[3].final_cb[0]">
                                             <label for="">Final</label>
                                         </div>
                                     </div>
@@ -393,7 +392,7 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
+                            <input type="number" name="form1[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
                         </div>
                     </div>
                     <div class="px-lg-5 px-2  pt-0 row">
@@ -440,28 +439,28 @@
                         <div class="small_text fw-bold">Attached are the following:</div>
 
                         <ol class="ps-5">
-                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[2].Schedule_or_Prop_cb[0]" id=""
+                            <li><span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[2].Schedule_or_Prop_cb[0]" id=""
                                         class="me-3"></span> A completed Schedule of Assets and Debts (form FL-142)
-                                or<span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].caption_cb[0].petitioner_cb[0]" id=""
+                                or<span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].caption_cb[0].petitioner_cb[0]" id=""
                                         class="mx-3"></span> A Property Declaration (form FL-160) for (specify):
-                                <span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[7].CheckBox61[1]" id=""
-                                        class="mx-3"></span>Community and Quasi-Community Property<span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[8].CheckBox61[2]" id="" class="mx-3"></span>Separate Property.
+                                <span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[7].CheckBox61[1]" id=""
+                                        class="mx-3"></span>Community and Quasi-Community Property<span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[8].CheckBox61[2]" id="" class="mx-3"></span>Separate Property.
                             </li>
-                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Date_name_gp[0].IandE_cb[0]" id="" class="me-3"></span>A completed Income and Expense Declaration (form FL-150).
+                            <li><span><input type="checkbox" value="On" name="form1[0].Page1[0].Date_name_gp[0].IandE_cb[0]" id="" class="me-3"></span>A completed Income and Expense Declaration (form FL-150).
                             </li>
-                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox61[0]" id="" class="me-3"></span>All tax returns filed by the party in the two years
+                            <li><span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox61[0]" id="" class="me-3"></span>All tax returns filed by the party in the two years
                                 before the date that the party served the disclosure documents</li>
                             <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].TextField2[0]" class="border-0 form-control "></div>
-                            <li><span><input type="radio" value="Yes" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox62[0]" id="" class="me-3"></span>A statement of all material facts and information
+                            <li><span><input type="checkbox" value="Yes" name="form1[0].Page1[0].Disclose_cb[0].#area[6].CheckBox62[0]" id="" class="me-3"></span>A statement of all material facts and information
                                 regarding valuation of all assets that are community property or in which the
                                 community has an interest (not a form).</li>
                             <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].Mtl_facts_ft[0]" class="border-0 form-control "></div>
 
-                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].obligations_stmt_cb[0]" id="" class="me-3"></span>A statement of all material facts and information
+                            <li><span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].obligations_stmt_cb[0]" id="" class="me-3"></span>A statement of all material facts and information
                                 regarding obligations for which the community is liable (not a form).</li>
                             <div> <input type="text" name="form1[0].Page1[0].Disclose_cb[0].obligations_ft[0]" class="border-0 form-control "></div>
 
-                            <li><span><input type="radio" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].#area[5].investment_opp_db[0]" id="" class="me-3"></span>An accurate and complete written disclosure of any investment opportunity, business opportunity, or other income-producing opportunity presented since the date of separation that results from any investment,significant business, or other income- producing opportunity from the date of marriage to the date of separation (not a form).
+                            <li><span><input type="checkbox" value="On" name="form1[0].Page1[0].Disclose_cb[0].#area[4].#area[5].investment_opp_db[0]" id="" class="me-3"></span>An accurate and complete written disclosure of any investment opportunity, business opportunity, or other income-producing opportunity presented since the date of separation that results from any investment,significant business, or other income- producing opportunity from the date of marriage to the date of separation (not a form).
                             </li>
                             <div> <input type="text" name="form1[0].Page1[0].investmt_opp_ft[0]" class="border-0 form-control "></div>
 

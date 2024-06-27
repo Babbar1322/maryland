@@ -34,8 +34,6 @@ use App\Models\form2;
 use App\Models\form3;
 use App\Models\ga_form;
 use App\Models\form4;
-use App\Models\me_financial_form;
-use App\Models\me_financial_form_data;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
@@ -286,8 +284,11 @@ class FormController extends Controller
             $ct_short_data = new ct_short_form_data();
             $ct_short_data->ct_form_id = $ct_short->id;
             $ct_short_data->keyss = $key;
-            $ct_short_data->valuess= $req;
-            $ct_short_data->save();
+            if (is_array($req)) {
+                $ct_short_data->valuess = json_encode($req);
+            } else {
+                $ct_short_data->valuess = $req;
+            }             $ct_short_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -315,8 +316,11 @@ class FormController extends Controller
             $ct_long_data = new ct_long_form_data();
             $ct_long_data->cslong_form_id = $ct_long->id;
             $ct_long_data->keyss = $key;
-            $ct_long_data->valuess= $req;
-            $ct_long_data->save();
+            if (is_array($req)) {
+                $ct_long_data->valuess = json_encode($req);
+            } else {
+                $ct_long_data->valuess = $req;
+            }             $ct_long_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -344,8 +348,11 @@ class FormController extends Controller
             $fl140_data = new fl140_ca_form_data();
             $fl140_data->fl140_form_id = $fl140_ca->id;
             $fl140_data->keyss = $key;
-            $fl140_data->valuess= $req;
-            $fl140_data->save();
+            if (is_array($req)) {
+                $fl140_data->valuess = json_encode($req);
+            } else {
+                $fl140_data->valuess = $req;
+            }            $fl140_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
@@ -357,18 +364,22 @@ class FormController extends Controller
     }
 
 
-    public function form10_post(Request $request) {
-        // fl161 CA.pdf
+        public function form10_post(Request $request) {
+            // fl161 CA.pdf
 
 
         $fl161_ca = new fl161_ca_form();
         $fl161_ca->save();
-
         foreach($request->all() as $key=>$req){
             $fl161_ca_data = new fl161_ca_form_data();
             $fl161_ca_data->fl161_form_id = $fl161_ca->id;
             $fl161_ca_data->keyss = $key;
-            $fl161_ca_data->valuess= $req;
+            // $fl161_ca_data->valuess= $req;
+            if (is_array($req)) {
+                $fl161_ca_data->valuess = json_encode($req);
+            } else {
+                $fl161_ca_data->valuess = $req;
+            }
             $fl161_ca_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
@@ -389,13 +400,22 @@ class FormController extends Controller
         $fl160_ca = new fl160_ca_form();
         $fl160_ca->save();
 
-        foreach($request->all() as $key=>$req){
-            $fl160_ca_data = new fl160_ca_form_data();
-            $fl160_ca_data->fl160_form_id = $fl160_ca->id;
+        foreach ($request->all() as $key => $req) {
+            // Create a new instance of the form data model
+            $fl160_ca_data = new fl161_ca_form_data();
+            $fl160_ca_data->fl161_form_id = $fl160_ca->id;
             $fl160_ca_data->keyss = $key;
-            $fl160_ca_data->valuess= $req;
+
+            if (is_array($req)) {
+                $fl160_ca_data->valuess = json_encode($req);
+            } else {
+                $fl160_ca_data->valuess = $req;
+            }
+
+            // Save the form data
             $fl160_ca_data->save();
         }
+
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
@@ -434,7 +454,7 @@ class FormController extends Controller
     public function form13_post(Request $request) {
 
         // fl142  CA.pdf
-
+dd($request->all());
         $fl140_ca = new fl142_ca_form();
         $fl140_ca->save();
 
@@ -445,7 +465,11 @@ class FormController extends Controller
             $fl140_data = new fl142_ca_form_data();
             $fl140_data->fl142_form_id = $fl140_ca->id;
             $fl140_data->keyss = $key;
-            $fl140_data->valuess= $req;
+            if (is_array($req)) {
+                $fl140_data->valuess = json_encode($req);
+            } else {
+                $fl140_data->valuess = $req;
+            }
             $fl140_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
@@ -469,7 +493,12 @@ class FormController extends Controller
             $fl150_data = new fl150_ca_form_data();
             $fl150_data->fl150_form_id = $fl150_ca->id;
             $fl150_data->keyss = $key;
-            $fl150_data->valuess= $req;
+
+            if (is_array($req)) {
+                $fl150_data->valuess = json_encode($req);
+            } else {
+                $fl150_data->valuess = $req;
+            }
             $fl150_data->save();
         }
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
@@ -717,26 +746,7 @@ class FormController extends Controller
 
     public function form24_post(Request $request) {
         // ME financial statement MJB-Form-fm-043 .pdf
-        $me_financial = new me_financial_form();
-        $me_financial->save();
-
-        foreach($request->all() as $key=>$req) {
-            if($key == "_token") {
-                continue;
-            }
-            $me_financial_data = new me_financial_form_data();
-            $me_financial_data->me_financial_id = $me_financial->id;
-            $me_financial_data->keyss = $key;
-            $me_financial_data->valuess = $req;
-            $me_financial_data->save();
-        }
-
-        return redirect()->back()->with('success', 'Data Submitted Successfully');
-    }
-
-
-    public function form25() {
-        return view('form25');
+        dd('comming soon');
     }
 
 }

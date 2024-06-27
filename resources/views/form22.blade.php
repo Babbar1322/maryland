@@ -355,11 +355,11 @@
                                 <div>Teléfono [de día]</div>
                             </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone_day1"
+                                <div> <input type="number" min="0" name="gi_phone_day1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width :247px !important"></div>Phone [Evening] <div>Teléfono [de
                                     noche]</div>
-                                <div><input type="text" min="0" name="gi_phone_evening1"
+                                <div><input type="number" min="0" name="gi_phone_evening1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:247px !important"></div>
                             </div>
@@ -369,7 +369,7 @@
                                 <div>Teléfono alternativo</div>
                             </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_alternative_phone1"
+                                <div> <input type="number" min="0" name="gi_alternative_phone1"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  150px !important"></div>Social Security Number <div>Número
                                     de Seguro Social</div>
@@ -452,7 +452,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Phone / Teléfono </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone2"
+                                <div> <input type="number" min="0" name="gi_phone2"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width:  381px !important"></div>Fax
                                 <div><input type="text" min="0" name="gi_fax1"
@@ -508,7 +508,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-2 small_text">Phone / Teléfono </div>
                             <div class="col-lg-10 d-flex d_sm_block">
-                                <div> <input type="text" min="0" name="gi_phone3"
+                                <div> <input type="number" min="0" name="gi_phone3"
                                         class="border-0 p-0 m-0 border-bottom footer_field w-100 responsive_input"
                                         style="min-width: 381px !important"></div>Fax
                                 <div><input type="text" min="0" name="gi_fax2"
@@ -1003,7 +1003,7 @@
                                         <td>Telephone (local, long distance & cellular) / Teléfono (local, de larga
                                             distancia y celular)</td>
                                         <td class="w-25">
-                                            <textarea type="text" name="nme_telephone" class="border-0 form-control"></textarea>
+                                            <textarea type="number" name="nme_telephone" class="border-0 form-control"></textarea>
                                         </td>
                                     </tr>
                                     <tr>
@@ -2641,7 +2641,7 @@
                                                     <td class="text-center"><input type="checkbox" name="a_t1"
                                                             value="Yes"></td>
                                                     <td>
-                                                        <textarea type="text" name="date_acquired1" class="border-0 form-control"></textarea>
+                                                        <textarea type="date" name="date_acquired1" class="border-0 form-control"></textarea>
                                                     </td>
                                                     <td>
                                                         <textarea type="text" name="aa_vt1" class="border-0 form-control"></textarea>
@@ -2665,7 +2665,7 @@
                                                     <td class="text-center"><input type="checkbox" name="a_t2"
                                                             value="Yes"></td>
                                                     <td>
-                                                        <textarea type="text" name="date_acquired2" class="border-0 form-control"></textarea>
+                                                        <textarea type="date" name="date_acquired2" class="border-0 form-control"></textarea>
                                                     </td>
                                                     <td>
                                                         <textarea type="text" name="aa_vt2" class="border-0 form-control"></textarea>
@@ -2689,7 +2689,7 @@
                                                     <td class="text-center"><input type="checkbox" name="a_t3"
                                                             value="Yes"></td>
                                                     <td>
-                                                        <textarea type="text" name="date_acquired3" class="border-0 form-control"></textarea>
+                                                        <textarea type="date" name="date_acquired3" class="border-0 form-control"></textarea>
                                                     </td>
                                                     <td>
                                                         <textarea type="text" name="aa_vt3" class="border-0 form-control"></textarea>
@@ -2713,7 +2713,7 @@
                                                     <td class="text-center"><input type="checkbox" name="a_t4"
                                                             value="Yes"></td>
                                                     <td>
-                                                        <textarea type="text" name="date_acquired4" class="border-0 form-control"></textarea>
+                                                        <textarea type="date" name="date_acquired4" class="border-0 form-control"></textarea>
                                                     </td>
                                                     <td>
                                                         <textarea type="text" name="aa_vt4" class="border-0 form-control"></textarea>
@@ -2737,7 +2737,7 @@
                                                     <td class="text-center"><input type="checkbox" name="a_t5"
                                                             value="Yes"></td>
                                                     <td>
-                                                        <textarea type="text" name="date_acquired5" class="border-0 form-control"></textarea>
+                                                        <textarea type="date" name="date_acquired5" class="border-0 form-control"></textarea>
                                                     </td>
                                                     <td>
                                                         <textarea type="text" name="aa_vt5" class="border-0 form-control"></textarea>
@@ -3480,7 +3480,7 @@
                             <div>Type of filing<input type="text" name="filing_type" id=""
                                     class="border-0 border-bottom responsive_input"></div>
                             <div class="small_text">Tipo de caso</div>
-                            <div>Date of filing<input type="text" name="filing_date" id=""
+                            <div>Date of filing<input type="date" name="filing_date" id=""
                                     class="border-0 border-bottom responsive_input"></div>
                             <div class="small_text">Fecha de declararse en quiebra</div>
                             <div>Current status<input type="text" name="current_status" id=""
@@ -3572,14 +3572,14 @@
                                         <div class=" ">Email Address / Dirección de correo electrónico</div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" name="telephone_no"
+                                        <input type="number" name="telephone_no"
                                             class="border-0 form-control border-bottom">
                                         <div class="text-end">Telephone Number / Teléfono</div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" name="date"
+                                        <input type="date" name="date"
                                             class="border-0 form-control border-bottom">
                                         <div>Date / Fecha</div>
                                     </div>

@@ -251,25 +251,25 @@
                                     <tr>
                                         <td class="px-2">1.</td>
                                         <td>
-                                            <textarea name="aad_address1" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_address1" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_name1" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_name1" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_crb1" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_crb1" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_da1" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_da1" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_fmv1" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea type="number" name="aad_fmv1" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_do1" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_do1" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td class="small_text">
@@ -282,25 +282,25 @@
                                     <tr>
                                         <td class="px-2">2.</td>
                                         <td>
-                                            <textarea name="aad_address2" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_address2" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_name2" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_name2" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_crb2" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_crb2" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_da2" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_da2" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_fmv2" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_fmv2" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_do2" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_do2" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td class="small_text">
@@ -313,25 +313,25 @@
                                     <tr>
                                         <td class="px-2">3.</td>
                                         <td>
-                                            <textarea name="aad_address3" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_address3" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_name3" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_name3" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_crb3" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_crb3" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_da3" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_da3" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_fmv3" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_fmv3" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_do3" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_do3" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td class="small_text">
@@ -342,25 +342,25 @@
                                     <tr>
                                         <td class="px-2">4.</td>
                                         <td>
-                                            <textarea name="aad_address4" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_address4" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_name4" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_name4" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_crb4" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_crb4" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_da4" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_da4" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_fmv4" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_fmv4" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_do4" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_do4" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td class="small_text">
@@ -371,25 +371,25 @@
                                     <tr>
                                         <td class="px-2">5.</td>
                                         <td>
-                                            <textarea name="aad_address5" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_address5" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_name5" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_name5" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_crb5" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_crb5" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
-                                            <textarea name="aad_da5" class="border-0 form-control" rows="2s"></textarea>
+                                            <textarea name="aad_da5" class="border-0 form-control" rows="2"></textarea>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_fmv5" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_fmv5" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="d-flex   w-100 mx-auto"> <span>$</span>
-                                                <textarea name="aad_do5" class="border-0 form-control" rows="2s"></textarea>
+                                                <textarea name="aad_do5" class="border-0 form-control" rows="2"></textarea>
                                             </div>
                                         </td>
                                         <td class="small_text">

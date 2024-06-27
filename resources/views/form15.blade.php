@@ -600,7 +600,7 @@
                                         <td class="small_text" style="max-width: 300px">Gross Monthly Income (before taxes and deductions) from salary and wages, including commissions, bonuses, overtime, self- employment, business income, other jobs, and monthly reimbursed expenses.</td>
                                         <td class="small_text">
                                             <div class="">
-                                                <div class="d-flex">$<input type="text" min="0" name="gmi_before_taxes" class="border-0 footer_field w-100"> </div>
+                                                <div class="d-flex">$<input type="number" min="0" name="gmi_before_taxes" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
@@ -614,7 +614,7 @@
                                         </td>
                                         <td class="small_text">
                                             <div class="">
-                                                <div class="d-flex ">$<input type="text" min="0" name="ssa_value" class="border-0 footer_field w-100"> </div>
+                                                <div class="d-flex ">$<input type="number" min="0" name="ssa_value" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -653,7 +653,7 @@
                                         </td>
                                         <td class=" small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="total_monthly_income"
                                                         class="border-0 footer_field w-100"> </div>
                                             </div>
@@ -670,13 +670,13 @@
                                     <tr>
                                         <td class=" small_text">Royalties, Trusts, and Other Investments</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="royalties_trusts" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
                                         <td class=" small_text"> Contributions from Others</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="contributions_others" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
@@ -689,14 +689,14 @@
                                                         class="border-0 footer_field w-100"></span></div>
                                         </td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="dependent_children_income2"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
                                         <td class=" small_text">All other sources, i.e. personal injury settlement,
                                             non-reported income, etc.</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="all_others_ie" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -743,7 +743,7 @@
                                         <td colspan="3" class="bg-secondary text-end pe-2">Total Monthly
                                             Miscellaneous Income</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="tm_miscellaneous_income1"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
@@ -753,7 +753,7 @@
                                     <tr>
                                         <td colspan="3" class=" text-end pe-2">Total Income</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="tm_miscellaneous_income2"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
@@ -783,12 +783,12 @@
                                     <tr>
                                         <td class="small_text">Federal Income Tax</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="federal_income" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">State/Local Income Tax</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="state_local_income" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
@@ -821,7 +821,7 @@
                                             Deductions</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="total_mandatory_deductions"
                                                         class="border-0 footer_field w-100"> </div>
                                             </div>
@@ -838,13 +838,13 @@
                                     <tr>
                                         <td class=" small_text">Life and Disability Insurance</td>
                                         <td class=" small_text">
-                                            <div class="d-flex">$<input type="text" min="0"
+                                            <div class="d-flex">$<input type="number" min="0"
                                                     name="life_disability_insurance"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
                                         <td class=" small_text">Stocks/Bonds</td>
                                         <td class=" small_text">
-                                            <div class="d-flex">$<input type="text" min="0"
+                                            <div class="d-flex">$<input type="number" min="0"
                                                     name="stocks_bonds" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -855,13 +855,13 @@
                                                 of people covered on Plan -></div>
                                         </td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="health_dental_plan" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
                                         <td class=" small_text">Retirement & Deferred Compensation</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="retirement_deferred_compensation"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
@@ -898,7 +898,7 @@
                                         <td colspan="3" class="bg-secondary text-end pe-2">Total Voluntary
                                             Deductions</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="total_voluntary_deductions"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
@@ -906,7 +906,7 @@
                                     <tr>
                                         <td colspan="3" class=" text-end pe-2">Total Monthly Deductions</td>
                                         <td class=" small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="total_monthly_deductions"
                                                     class="border-0 footer_field w-100"> </div>
                                         </td>
@@ -932,12 +932,12 @@
                                     <tr>
                                         <td class="small_text">1<sup>st</sup> Mortgage</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="1st_mortgage" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">2<sup>st</sup> Mortgage</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="2st_mortgage" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -970,7 +970,7 @@
                                         <td colspan="3" class="text-end bg-secondary pe-2">Total Housing</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="total_housing" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -994,12 +994,12 @@
                                     <tr>
                                         <td class="small_text">Gas & Electricity</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="gas_electricity" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Water, Sewer, Trash Removal</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="water_sewer_tersh" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
@@ -1032,7 +1032,7 @@
                                             Miscellaneous Housing Services</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="tumh_services" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -1056,13 +1056,13 @@
                                     <tr>
                                         <td class="small_text">Groceries & Supplies</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="groceries_supplies" class="border-0 footer_field w-100">
                                             </div>
                                         </td>
                                         <td class="small_text">Dining Out</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="dining_out" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1073,7 +1073,7 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_food_s" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1097,12 +1097,12 @@
                                     <tr>
                                         <td class="small_text">Doctor & Vision Care</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="docter_vc" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Dentist and Orthodontist</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="dentist_orthod" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1133,7 +1133,7 @@
                                         <td colspan="3" class="text-end bg-secondary pe-2">Total Health Care </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_healthcare" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -1165,12 +1165,12 @@
                                     <tr>
                                         <td class="small_text">Primary Vehicle Payment</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="pv_payment" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Other Vehicle Payments</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="ov_payment" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1202,7 +1202,7 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_transportation" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -1225,12 +1225,12 @@
                                     <tr>
                                         <td class="small_text"> Clothing & Shoes</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="cloth_shoe" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Child Care</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="child_care" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1263,7 +1263,7 @@
                                             Miscellaneous Housing Services</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_u_m_service" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -1290,7 +1290,7 @@
                                     <tr>
                                         <td class="small_text">Tuition, Books, Supplies, Fees, etc.</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="t_b_s_f" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">
@@ -1300,7 +1300,7 @@
                                             </div>
                                         </td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="t_b_s_f_o2" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1310,7 +1310,7 @@
                                         <td colspan="3" class="text-end bg-secondary pe-2">Total Education</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_education" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1334,12 +1334,12 @@
                                     <tr>
                                         <td class="small_text">Spousal Maintenance</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="sp_maintenance" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Child Support</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="c_support" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1347,7 +1347,7 @@
                                         <td class="small_text"> <input type="checkbox" name="t_family_ch1"> This
                                             family</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="t_family_v1" class="border-0 footer_field w-100"> </div>
                                         </td>
                                         <td class="small_text"> <input name="t_family_ch2" type="checkbox"> This
@@ -1359,13 +1359,13 @@
                                         <td class="small_text"> <input name="o_family_c1" type="checkbox"> Other
                                             family</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="o_family_v1" class="border-0 footer_field w-100"> </div>
                                         </td>
                                         <td class="small_text"> <input name="o_family_c2" type="checkbox"> Other
                                             family</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="o_family_v2" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1374,7 +1374,7 @@
                                             Child Support </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="t_mc_support" class="border-0 footer_field w-100">
                                                 </div>
                                             </div>
@@ -1399,12 +1399,12 @@
                                     <tr>
                                         <td class="small_text">Recreation/Entertainment</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="recreation_e" class="border-0 footer_field w-100"></div>
                                         </td>
                                         <td class="small_text">Personal Care (Hair, Nail, Clothing, etc.)</td>
                                         <td class="small_text">
-                                            <div class="d-flex ">$<input type="text" min="0"
+                                            <div class="d-flex ">$<input type="number" min="0"
                                                     name="p_care" class="border-0 footer_field w-100"> </div>
                                         </td>
                                     </tr>
@@ -1522,7 +1522,7 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="tm_month" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1532,7 +1532,7 @@
                                             A – I)</td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="tme_ai" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1600,13 +1600,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="b_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="mmpr_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1648,13 +1648,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_2" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_2" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1696,13 +1696,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_3" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_3" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1744,13 +1744,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_4" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_4" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1791,13 +1791,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_5" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_5" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1839,13 +1839,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_6" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_6" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1887,13 +1887,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_7" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_7" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1935,13 +1935,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_8" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_8" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -1983,13 +1983,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_9" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_9" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2031,13 +2031,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_10" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_10" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2127,13 +2127,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="b_12" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex "><input type="text" min="0"
+                                                <div class="d-flex "><input type="number" min="0"
                                                         name="mmpr_12" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2150,13 +2150,13 @@
                                             Unsecured Debt Balance</td>
                                         <td class="small_text" rowspan="6">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="udb_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text " rowspan="6">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="udb_2" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2192,32 +2192,32 @@
                                 </div>
                                 <div class="col-lg-2">
                                     <div class=" ">
-                                        <div class="d-flex ">$<input type="text" min="0"
+                                        <div class="d-flex ">$<input type="number" min="0"
                                                 name="ti_p1" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class=" ">
-                                        <div class="d-flex ">$<input type="text" min="0"
+                                        <div class="d-flex ">$<input type="number" min="0"
                                                 name="tmd_p2" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class=" ">
-                                        <div class="d-flex ms-5">$<input type="text" min="0"
+                                        <div class="d-flex ms-5">$<input type="number" min="0"
                                                 name="tmni_ab" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class=" ">
-                                        <div class="d-flex ">$<input type="text" min="0"
+                                        <div class="d-flex ">$<input type="number" min="0"
                                                 name="tme_p3" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class=" ">
-                                        <div class="d-flex ">$<input type="text" min="0"
+                                        <div class="d-flex ">$<input type="number" min="0"
                                                 name="tmpr_p4" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
                                     <div class=" ">
-                                        <div class="d-flex ms-5">$<input type="text" min="0"
+                                        <div class="d-flex ms-5">$<input type="number" min="0"
                                                 name="tmep_cd" class="border-0 border-bottom footer_field w-100">
                                         </div>
                                     </div>
@@ -2242,7 +2242,7 @@
                                 <div class="col-lg-1">(+/-)</div>
                                 <div class="col-lg-2">
                                     <div class=" ">
-                                        <div class="d-flex ms-5">$<input type="text" min="0"
+                                        <div class="d-flex ms-5">$<input type="number" min="0"
                                                 name="nes_payments"
                                                 class="border-0 border-bottom footer_field w-100">
                                         </div>
@@ -2322,19 +2322,19 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_ao_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_ev_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_nve_1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2384,19 +2384,19 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_t_ao" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_t_ev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="a_t_nev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2574,19 +2574,19 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="b_t_aw" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="b_t_ev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="b_t_nv" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2640,7 +2640,7 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="c_bof1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2763,7 +2763,7 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="c_t_bof" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2813,13 +2813,13 @@
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="d_fap1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="d_cvt1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2905,13 +2905,13 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="d_t_fap" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="d_t_cvt" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -2981,7 +2981,7 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex ">$<input type="text" min="0"
+                                                <div class="d-flex ">$<input type="number" min="0"
                                                         name="e_ev1" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -3147,7 +3147,7 @@
 
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex pt-1 ">$<input type="text" min="0"
+                                                <div class="d-flex pt-1 ">$<input type="number" min="0"
                                                         name="e_t_ev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -3169,7 +3169,7 @@
                                         <td class="text-end bg-secondary pe-2 pt-2">Total </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex pt-2 ">$<input type="text" min="0"
+                                                <div class="d-flex pt-2 ">$<input type="number" min="0"
                                                         name="f_t_ev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -3190,7 +3190,7 @@
                                         <td class="text-end bg-secondary pe-2 pt-2">Total </td>
                                         <td class="small_text">
                                             <div class=" ">
-                                                <div class="d-flex pt-2 ">$<input type="text" min="0"
+                                                <div class="d-flex pt-2 ">$<input type="number" min="0"
                                                         name="g_t_ev" class="border-0 footer_field w-100"> </div>
                                             </div>
                                         </td>
@@ -3395,7 +3395,7 @@
                                             </td>
                                             <td class="small_text">
                                                 <div class=" ">
-                                                    <div class="d-flex  text-bottom mt-3">$<input type="text"
+                                                    <div class="d-flex  text-bottom mt-3">$<input type="number"
                                                             min="0" name="h_total"
                                                             class="border-0 footer_field w-100"> </div>
                                                 </div>
@@ -3416,7 +3416,7 @@
                                             <td class="text-end bg-secondary pe-2 pt-2 ">Total </td>
                                             <td class="small_text">
                                                 <div class=" ">
-                                                    <div class="d-flex mt-2 ">$<input type="text" min="0"
+                                                    <div class="d-flex mt-2 ">$<input type="number" min="0"
                                                             name="i_total" class="border-0 footer_field w-100"> </div>
                                                 </div>
                                             </td>
@@ -3429,7 +3429,7 @@
                                             </td>
                                             <td class="small_text">
                                                 <div class=" ">
-                                                    <div class="d-flex  text-end">$<input type="text"
+                                                    <div class="d-flex  text-end">$<input type="number"
                                                             min="0" name="tv_assets"
                                                             class="border-0 footer_field w-100"> </div>
                                                 </div>
@@ -3454,7 +3454,7 @@
                             <div class="row mt-3">
                                 <div class="col-lg-6">
                                     <div class=" d-flex d_sm_block">
-                                        <div class="d-flex d_sm_block">Date : <input type="text" min="0"
+                                        <div class="d-flex d_sm_block">Date : <input type="date" min="0"
                                                 name="date" class="border-0 border-bottom footer_field responsive_input"> </div>
                                     </div>
                                 </div>

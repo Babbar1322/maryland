@@ -27,7 +27,7 @@
         td {
             padding: 0px !important;
             padding-left: 5px !important;
-            background-color: transparent important;
+            background-color: transparent !important;
         }
 
         input:focus {
@@ -431,7 +431,7 @@
                                             <td>a.</td>
                                             <td class="w-75">Gross monthly income (item 3A)</td>
                                             <td class="w-25">
-                                                <div class="d-flex">$<input type="text" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="gross_monthly_income1" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
 
                                         </tr>
@@ -440,26 +440,26 @@
                                             <td> Net monthly income (item 3B) </td>
 
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="nmi" class="border-0 bg-transparent border outline-none form-control">  </div>
+                                                <div class="d-flex">$<input type="number" name="nmi" class="border-0 bg-transparent border outline-none form-control">  </div>
                                             </td>
 
                                         </tr>
                                         <tr>
                                             <td>c.</td>
                                             <td>Average monthly expenses (item 5A)</td>
-                                            <td> <div class="d-flex">$<input type="text" name="ami" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" name="ami" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td>d.</td>
                                             <td>Monthly payment to creditors (item 5B) + </td>
-                                            <td> <div class="d-flex">$<input type="text" name="mptc" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" name="mptc" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
 
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td>Total of (c.) and (d.) above:</td>
-                                            <td> <div class="d-flex">$<input type="text" name="ta"  class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td> <div class="d-flex">$<input type="number" name="ta"  class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -479,74 +479,74 @@
                                         </tr>
                                         <tr>
                                             <td>Commissions, Fees, Tips </td>
-                                            <td> <div class="d-flex">$<input type="text" name="cft" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                            <td> <div class="d-flex">$<input type="number" name="cft" class="border-0 bg-transparent border outline-none form-control"></div></td>
                                         </tr>
                                         <tr>
                                              <td> Income from self-employment, partnerships, close corporations and  independent contracts (gross receipts minus ordinary and necessary expenses required to produce income).
                                                 <span class="border-bottom">Attach sheet itemizing your calculations.</span>
                                             </td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="ifse" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="ifse" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Gross receipts minus ordinary and necessary expenses required to produce income. </td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="grm" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="grm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Bonuses</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="bonuses" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="bonuses" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Overtime Payments</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="op" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="op" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Severance Pay</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="sp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="sp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Recurring Income from Pensions or Retirement Plans</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="rifp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="rifp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Interest and Dividends</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="iad" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="iad" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Trust Income</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="ti" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="ti" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Income from Annuities</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="ifa" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="ifa" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Capital Gains</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="cg" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="cg" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Social Security Disability or Retirement Benefits</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="ssdr" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="ssdr" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -566,58 +566,58 @@
                                         <tr>
                                             <td>Workers’ Compensation Benefits</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="wcb" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="wcb" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
 
                                         </tr>
                                         <tr>
                                             <td>Unemployment Benefits</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="ub" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="ub" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Judgments from Personal Injury or other Civil Cases</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="jfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="jfp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Gifts (cash or other gifts that can be converted to cash)</td>
-                                            <td colspan="2"> <div class="d-flex">$<input type="text" name="gcoo" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td colspan="2"> <div class="d-flex">$<input type="number" name="gcoo" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Prizes/Lottery Winnings </td>
-                                            <td colspan="2"><div class="d-flex">$<input type="text" name="plw" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                            <td colspan="2"><div class="d-flex">$<input type="number" name="plw" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                         </tr>
                                         <tr>
                                             <td>Alimony and Maintenance from Persons not in this Case</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="amfp" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="amfp" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Assets which are used for support of family</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="awu" class="border-0 bg-transparent border outline-none form-control"></div>
+                                                <div class="d-flex">$<input type="number" name="awu" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                         <tr>
                                              <td>Fringe Benifits (if significantly reduce living expenses) </td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="fbis" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="fbis" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Any Other Income (do NOT include means-tested public assistance, such as TANF or food stamps) </td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="aoidin" class="border-0 bg-transparent border outline-none form-control"></div>
+                                                <div class="d-flex">$<input type="number" name="aoidin" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="h5">TOTAL GROSS MONTHLY INCOME:</td>
                                             <td colspan="2">
-                                                <div class="d-flex">$<input type="text" name="tgmi" class="border-0 bg-transparent border outline-none form-control"></div>
+                                                <div class="d-flex">$<input type="number" name="tgmi" class="border-0 bg-transparent border outline-none form-control"></div>
                                             </td>
                                         </tr>
                                     </table>
@@ -632,7 +632,7 @@
                                         <tr>
                                             <td>Gross Wage minus withheld federal, state and FICA taxes</td>
                                             <td>
-                                                <div class="d-flex">$<input type="text" name="gwm" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                <div class="d-flex">$<input type="number" name="gwm" class="border-0 bg-transparent border outline-none form-control"> </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -668,7 +668,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>Cash</td>
-                                                <td><div class="d-flex">$<input type="text" name="Cash Value" class="border-0 bg-transparent border outline-none form-control"></div></td>
+                                                <td><div class="d-flex">$<input type="number" name="Cash Value" class="border-0 bg-transparent border outline-none form-control"></div></td>
                                                 <td><input type="text" name="Separate Asset of Husband" class="border-0 bg-transparent border outline-none form-control"></td>
                                                 <td><input type="text" name="Separate Asset of Wife" class="border-0 bg-transparent border outline-none form-control"></td>
                                                 <td><input type="text" name="Basis of the Claim" class="border-0 bg-transparent border outline-none form-control"></td>
@@ -676,7 +676,7 @@
                                             <tr>
                                                 <td>Stocks, Bonds</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Stocks, Bonds Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Stocks, Bonds Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_2" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_2" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -685,7 +685,7 @@
                                             <tr>
                                                 <td>CD’s, Money Market</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="CD’s, Money Market Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="CD’s, Money Market Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_3" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_3" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -702,7 +702,7 @@
                                                 <td><input type="text" name="Bank Accounts" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Bank Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Bank Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_4" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_4" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -713,7 +713,7 @@
                                                 <td><input type="text" name="Bank Accounts_1" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Bank Accounts_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Bank Accounts_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_5" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_5" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -723,7 +723,7 @@
                                                 <td><input type="text" name="Bank Accounts_2" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Bank Accounts_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Bank Accounts_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_6" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_6" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -759,7 +759,7 @@
                                             <tr>
                                                 <td>Retirement/ Pensions</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Retirement/ Pensions Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Retirement/ Pensions Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_7" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_7" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -769,7 +769,7 @@
                                             <tr>
                                                 <td>401(K) Accounts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="401(K) Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="401(K) Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_8" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_8" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -778,7 +778,7 @@
                                             <tr>
                                                 <td>IRA Accounts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="IRA Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="IRA Accounts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_9" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_9" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -788,7 +788,7 @@
                                             <tr>
                                                 <td>Profit Sharing Accts</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Profit Sharing Accts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Profit Sharing Accts Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_10" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_10" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -797,7 +797,7 @@
                                             <tr>
                                                 <td>Money owed you: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Money owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Money owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_11" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_11" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -806,7 +806,7 @@
                                             <tr>
                                                 <td> Tax Refund owed you</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Tax Refund owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Tax Refund owed you Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_12" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_12" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -815,7 +815,7 @@
                                             <tr>
                                                 <td>Real Estate: Home </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Real Estate: Home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Real Estate: Home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_13" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_13" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -824,7 +824,7 @@
                                             <tr>
                                                 <td>Debt on home </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Debt on home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Debt on home Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_14" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_14" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -833,7 +833,7 @@
                                             <tr>
                                                 <td>Other Real Estate: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Other Real Estate Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Other Real Estate Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_15" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_15" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -842,7 +842,7 @@
                                             <tr>
                                                 <td>Debt owed</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Debt owed Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Debt owed Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_16" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_16" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -858,7 +858,7 @@
                                             <tr>
                                                 <td>Vehicle 1 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Vehicle 1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Vehicle 1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_17" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_17" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -867,7 +867,7 @@
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Debt owed_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Debt owed_1 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_18" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_18" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -876,7 +876,7 @@
                                             <tr>
                                                 <td>Vehicle 2 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Vehicle 2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Vehicle 2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_19" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_19" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -885,7 +885,7 @@
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Debt owed_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Debt owed_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_20" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_20" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -894,7 +894,7 @@
                                             <tr>
                                                 <td>Life Insurance (net cash value)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Life Insurance (net cash value) Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Life Insurance (net cash value) Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_21" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_21" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -903,7 +903,7 @@
                                             <tr>
                                                 <td>Furniture/Furnishings</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Furniture/Furnishings Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Furniture/Furnishings Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_22" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_22" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -912,7 +912,7 @@
                                             <tr>
                                                 <td>Debt owed: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Debt owed_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Debt owed_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_23" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_23" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -921,7 +921,7 @@
                                             <tr>
                                                 <td>Jewelry</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Jewelry Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Jewelry Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_24" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_24" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -930,7 +930,7 @@
                                             <tr>
                                                 <td>Collectibles </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Collectibles Value" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="Collectibles Value" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                                 <td><input type="text" name="Separate Asset of Husband_25" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_25" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -938,42 +938,42 @@
                                             </tr>
                                             <tr>
                                                 <td>Other Assets (list): </td>
-                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="Other Assets list Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_26" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_26" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_26" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> <input type="text" name="Other Assets list_2" class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="Other Assets list_2 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_27" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_27" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_27" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> <input type="text" name="Other Assets list_3" class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="Other Assets list_3 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_28" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_28" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_28" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> <input type="text" name="Other Assets list_4" class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_4 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="Other Assets list_4 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_29" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_29" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_29" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> <input type="text" name="Other Assets list_5" class="border-0 bg-transparent border outline-none form-control">  </td>
-                                                <td> <div class="d-flex">$<input type="text" name="Other Assets list_5 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="Other Assets list_5 Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_30" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_30" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_30" class="border-0 bg-transparent border outline-none form-control"> </td>
                                             </tr>
                                             <tr>
                                                 <td> TOTAL ASSETS:</td>
-                                                <td> <div class="d-flex">$<input type="text" name="TOTAL ASSETS Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td> <div class="d-flex">$<input type="number" name="TOTAL ASSETS Value" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="eparate Asset of Husband_31" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Separate Asset of Wife_31" class="border-0 bg-transparent border outline-none form-control"> </td>
                                                 <td><input type="text" name="Basis of the Claim_31" class="border-0 bg-transparent border outline-none form-control"> </td>
@@ -1004,14 +1004,14 @@
                                             <tr>
                                                 <td>Mortgage or Rent Payments</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_mrp" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="h_mrp" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Property Taxes</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_pt"
+                                                    <div class="d-flex">$<input type="number" name="h_pt"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1019,7 +1019,7 @@
                                             <tr>
                                                 <td>Homeowner/Renter Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_hri"
+                                                    <div class="d-flex">$<input type="number" name="h_hri"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1027,7 +1027,7 @@
                                             <tr>
                                                 <td>Electricity</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_electricity"
+                                                    <div class="d-flex">$<input type="number" name="h_electricity"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1035,7 +1035,7 @@
                                             <tr>
                                                 <td>Water</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_water"
+                                                    <div class="d-flex">$<input type="number" name="h_water"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1043,7 +1043,7 @@
                                             <tr>
                                                 <td>Garbage and Sewer</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_was"
+                                                    <div class="d-flex">$<input type="number" name="h_was"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1051,7 +1051,7 @@
                                             <tr>
                                                 <td>Residential Line Telephone</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_rlt"
+                                                    <div class="d-flex">$<input type="number" name="h_rlt"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1059,7 +1059,7 @@
                                             <tr>
                                                 <td>Cellular Telephone</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_ct"
+                                                    <div class="d-flex">$<input type="number" name="h_ct"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1067,7 +1067,7 @@
                                             <tr>
                                                 <td>Internet Service</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_is"
+                                                    <div class="d-flex">$<input type="number" name="h_is"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1075,7 +1075,7 @@
                                             <tr>
                                                 <td>Gas (natural or propane)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_gas"
+                                                    <div class="d-flex">$<input type="number" name="h_gas"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1083,7 +1083,7 @@
                                             <tr>
                                                 <td>Repairs and Maintenance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_ram"
+                                                    <div class="d-flex">$<input type="number" name="h_ram"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1091,7 +1091,7 @@
                                             <tr>
                                                 <td>Lawn Care</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_lc"
+                                                    <div class="d-flex">$<input type="number" name="h_lc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1099,7 +1099,7 @@
                                             <tr>
                                                 <td>Pest Control</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_pc"
+                                                    <div class="d-flex">$<input type="number" name="h_pc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1107,7 +1107,7 @@
                                             <tr>
                                                 <td>Cable or Satellite TV</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_cst"
+                                                    <div class="d-flex">$<input type="number" name="h_cst"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1115,7 +1115,7 @@
                                             <tr>
                                                 <td>Grocery & Misc. Household Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_gmhe"
+                                                    <div class="d-flex">$<input type="number" name="h_gmhe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1123,7 +1123,7 @@
                                             <tr>
                                                 <td>Meals Outside the Home</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_moh"
+                                                    <div class="d-flex">$<input type="number" name="h_moh"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1131,7 +1131,7 @@
                                             <tr>
                                                 <td>Retirement/ Pensions</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_rp"
+                                                    <div class="d-flex">$<input type="number" name="h_rp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1139,7 +1139,7 @@
                                             <tr>
                                                 <td>Other:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_other1"
+                                                    <div class="d-flex">$<input type="number" name="h_other1"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1149,7 +1149,7 @@
                                                         class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_other3"
+                                                    <div class="d-flex">$<input type="number" name="h_other3"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1157,7 +1157,7 @@
                                             <tr>
                                                 <td>TOTAL HOUSEHOLD EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="h_the"
+                                                    <div class="d-flex">$<input type="number" name="h_the"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1168,7 +1168,7 @@
                                             <tr>
                                                 <td>Gasoline and Oil</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="a_gao"
+                                                    <div class="d-flex">$<input type="number" name="a_gao"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1176,7 +1176,7 @@
                                             <tr>
                                                 <td>Repairs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="a_r"
+                                                    <div class="d-flex">$<input type="number" name="a_r"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1184,7 +1184,7 @@
                                             <tr>
                                                 <td>Auto Tags and License</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="a_atl"
+                                                    <div class="d-flex">$<input type="number" name="a_atl"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1192,7 +1192,7 @@
                                             <tr>
                                                 <td>Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="a_i"
+                                                    <div class="d-flex">$<input type="number" name="a_i"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1200,7 +1200,7 @@
                                             <tr>
                                                 <td>TOTAL AUTO EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="a_tae"
+                                                    <div class="d-flex">$<input type="number" name="a_tae"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1230,34 +1230,34 @@
                                             <tr>
                                                 <td>Gasoline and Oil</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_gao" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_gao" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Repairs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_r" class="border-0 bg-transparent border outline-none form-control"> </div>
+                                                    <div class="d-flex">$<input type="number" name="ov_r" class="border-0 bg-transparent border outline-none form-control"> </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tags and License</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_tal" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_tal" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_i" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_i" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>TOTAL OTHER VEHICLES EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_tove" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_tove" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1267,49 +1267,49 @@
                                             <tr>
                                                 <td>Child Care (total monthly cost)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_ce" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_ce" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>School Tuition</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_st" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_st" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Tutoring</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_t" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_t" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Private Lessons (e.g., music, dance)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_pl" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_pl" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>School Supplies/Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_sse" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_sse" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Lunch Money</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_lm" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_lm" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Other Educational Expenses:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_oee1" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_oee1" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1317,7 +1317,7 @@
                                                 <td><input type="text" name="ov_oee2" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_oee3" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_oee3" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1325,14 +1325,14 @@
                                                 <td><input type="text" name="ov_oee4" class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_oee5" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="ov_oee5" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>Allowance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_a"
+                                                    <div class="d-flex">$<input type="number" name="ov_a"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1340,7 +1340,7 @@
                                             <tr>
                                                 <td>Clothing</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_c"
+                                                    <div class="d-flex">$<input type="number" name="ov_c"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1348,7 +1348,7 @@
                                             <tr>
                                                 <td>Diapers</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_d"
+                                                    <div class="d-flex">$<input type="number" name="ov_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1358,7 +1358,7 @@
                                                     expenses)
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_mdp"
+                                                    <div class="d-flex">$<input type="number" name="ov_mdp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1366,7 +1366,7 @@
                                             <tr>
                                                 <td>Grooming, Hygiene</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_gh"
+                                                    <div class="d-flex">$<input type="number" name="ov_gh"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1375,7 +1375,7 @@
                                             <tr>
                                                 <td>Gifts from Children to Others</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_gfc"
+                                                    <div class="d-flex">$<input type="number" name="ov_gfc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1383,7 +1383,7 @@
                                             <tr>
                                                 <td>Entertainment</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_e"
+                                                    <div class="d-flex">$<input type="number" name="ov_e"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1392,7 +1392,7 @@
                                                 <td>Activities (extra-curricular, school, religious, $ cultural, etc.)
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_aec"
+                                                    <div class="d-flex">$<input type="number" name="ov_aec"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1400,7 +1400,7 @@
                                             <tr>
                                                 <td>Summer Camps</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_sc"
+                                                    <div class="d-flex">$<input type="number" name="ov_sc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1408,7 +1408,7 @@
                                             <tr>
                                                 <td>TOTAL CHILDREN’S EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="ov_tce"
+                                                    <div class="d-flex">$<input type="number" name="ov_tce"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1442,7 +1442,7 @@
                                             <tr>
                                                 <td>Dry Cleaning/Laundry</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_dcl"
+                                                    <div class="d-flex">$<input type="number" name="afe_dcl"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1450,7 +1450,7 @@
                                             <tr>
                                                 <td>Clothing</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_c"
+                                                    <div class="d-flex">$<input type="number" name="afe_c"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1460,7 +1460,7 @@
                                                 <td>Medical, Dental, Prescriptions<br> <span>(out of pocket/uncovered
                                                         expenses)</span></td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_mdp"
+                                                    <div class="d-flex">$<input type="number" name="afe_mdp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1469,7 +1469,7 @@
                                             <tr>
                                                 <td>Affiant’s Gifts (special holiday)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_ag"
+                                                    <div class="d-flex">$<input type="number" name="afe_ag"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1477,7 +1477,7 @@
                                             <tr>
                                                 <td>Entertainment</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_e"
+                                                    <div class="d-flex">$<input type="number" name="afe_e"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1488,7 +1488,7 @@
                                             <tr>
                                                 <td>Recreational Expenses (e.g., fitness)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_re"
+                                                    <div class="d-flex">$<input type="number" name="afe_re"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1496,7 +1496,7 @@
                                             <tr>
                                                 <td>Vacations</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_v"
+                                                    <div class="d-flex">$<input type="number" name="afe_v"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1504,7 +1504,7 @@
                                             <tr>
                                                 <td>Travel Expenses for Visitation</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_tev"
+                                                    <div class="d-flex">$<input type="number" name="afe_tev"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1512,7 +1512,7 @@
                                             <tr>
                                                 <td>Publications</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_p"
+                                                    <div class="d-flex">$<input type="number" name="afe_p"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1520,7 +1520,7 @@
                                             <tr>
                                                 <td>Dues, Clubs</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_dc"
+                                                    <div class="d-flex">$<input type="number" name="afe_dc"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1528,7 +1528,7 @@
                                             <tr>
                                                 <td>Religious and charities</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_rac"
+                                                    <div class="d-flex">$<input type="number" name="afe_rac"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1536,7 +1536,7 @@
                                             <tr>
                                                 <td>Pet Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_pe"
+                                                    <div class="d-flex">$<input type="number" name="afe_pe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1544,7 +1544,7 @@
                                             <tr>
                                                 <td> Alimony paid to former spouse</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_apfs"
+                                                    <div class="d-flex">$<input type="number" name="afe_apfs"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1552,7 +1552,7 @@
                                             <tr>
                                                 <td>Child Support paid for other children $ Date of Initial Order: </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_cspf"
+                                                    <div class="d-flex">$<input type="number" name="afe_cspf"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1560,7 +1560,7 @@
                                             <tr>
                                                 <td>Other (attach sheet)</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_oas"
+                                                    <div class="d-flex">$<input type="number" name="afe_oas"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1568,7 +1568,7 @@
                                             <tr>
                                                 <td>TOTAL OTHER EXPENSES:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_toe"
+                                                    <div class="d-flex">$<input type="number" name="afe_toe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1579,7 +1579,7 @@
                                             <tr>
                                                 <td> Health</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_h"
+                                                    <div class="d-flex">$<input type="number" name="afe_h"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1587,7 +1587,7 @@
                                             <tr>
                                                 <td>Health: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_hcp"
+                                                    <div class="d-flex">$<input type="number" name="afe_hcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1596,7 +1596,7 @@
                                             <tr>
                                                 <td>Dental</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_d"
+                                                    <div class="d-flex">$<input type="number" name="afe_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1604,7 +1604,7 @@
                                             <tr>
                                                 <td>Dental: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_dcp"
+                                                    <div class="d-flex">$<input type="number" name="afe_dcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1612,7 +1612,7 @@
                                             <tr>
                                                 <td>Vision</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_v"
+                                                    <div class="d-flex">$<input type="number" name="afe_v"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1620,7 +1620,7 @@
                                             <tr>
                                                 <td>Vision: Children’s portion</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_vcp"
+                                                    <div class="d-flex">$<input type="number" name="afe_vcp"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1629,7 +1629,7 @@
                                                 <td>Life<br>
                                                     Relationship of Beneficiary:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_lrb"
+                                                    <div class="d-flex">$<input type="number" name="afe_lrb"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1637,7 +1637,7 @@
                                             <tr>
                                                 <td>Disability</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="afe_d"
+                                                    <div class="d-flex">$<input type="number" name="afe_d"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1675,7 +1675,7 @@
                                                         class="border-0 bg-transparent border outline-none form-control">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_o2"
+                                                    <div class="d-flex">$<input type="number" name="aoe_o2"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1683,7 +1683,7 @@
                                             <tr>
                                                 <td colspan="2">TOTAL OTHER INSURANCE:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_toi"
+                                                    <div class="d-flex">$<input type="number" name="aoe_toi"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1694,7 +1694,7 @@
                                             <tr>
                                                 <td colspan="2">Total Household Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_the"
+                                                    <div class="d-flex">$<input type="number" name="aoe_the"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1702,7 +1702,7 @@
                                             <tr>
                                                 <td colspan="2">Total Other Vehicles Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_tove"
+                                                    <div class="d-flex">$<input type="number" name="aoe_tove"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1710,7 +1710,7 @@
                                             <tr>
                                                 <td colspan="2">Total Children’s Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_tce"
+                                                    <div class="d-flex">$<input type="number" name="aoe_tce"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1718,7 +1718,7 @@
                                             <tr>
                                                 <td colspan="2">Total Affiant’s Other Expenses</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_taoe"
+                                                    <div class="d-flex">$<input type="number" name="aoe_taoe"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1726,7 +1726,7 @@
                                             <tr>
                                                 <td colspan="2">Total Other Insurance</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_toi"
+                                                    <div class="d-flex">$<input type="number" name="aoe_toi"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1735,7 +1735,7 @@
                                                 <td colspan="2">GRAND TOTAL 5. A. <br> Average Monthly Expenses
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="aoe_ame"
+                                                    <div class="d-flex">$<input type="number" name="aoe_ame"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1778,10 +1778,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_48" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_48" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1791,10 +1791,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_49" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_49" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 2" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 2" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_2" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_2"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_2" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1804,10 +1804,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_50" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_50" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 3" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 3" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_3" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_3"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_3" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1817,10 +1817,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_51" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_51" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 4" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 4" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_4" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_4"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_4" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1830,10 +1830,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_52" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_52" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 5" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 5" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_5" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_5"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_5" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1843,10 +1843,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_53" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_53" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 6" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 6" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_6" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_6"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_6" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1856,10 +1856,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_54" class="border-0 bg-transparent border outline-none form-control">
+                                                    <div class="d-flex">$<input type="number" name="fill_54" class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
-                                                <td>  <div class="d-flex">$<input type="text" name="Monthly Payment 7" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
+                                                <td>  <div class="d-flex">$<input type="number" name="Monthly Payment 7" class="border-0 bg-transparent border outline-none form-control"> </div> </td>
                                                 <td><input type="text" name="J_7" class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="W_7"  class="border-0 bg-transparent border outline-none form-control">  </td>
                                                 <td><input type="text" name="H_7" class="border-0 bg-transparent border outline-none form-control" value="1"></td>
@@ -1867,7 +1867,7 @@
                                             <tr>
                                                 <td colspan="2"> Total Monthly Payments to Creditors:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="Monthly Payment 8"
+                                                    <div class="d-flex">$<input type="number" name="Monthly Payment 8"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1896,7 +1896,7 @@
                                             <tr>
                                                 <td> 5.A. Average Monthly Expenses:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_55"
+                                                    <div class="d-flex">$<input type="number" name="fill_55"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1904,7 +1904,7 @@
                                             <tr>
                                                 <td>5.B. Payments to Creditors:</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_56"
+                                                    <div class="d-flex">$<input type="number" name="fill_56"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>
@@ -1912,7 +1912,7 @@
                                             <tr>
                                                 <td> Total of 5. A & B =</td>
                                                 <td>
-                                                    <div class="d-flex">$<input type="text" name="fill_58"
+                                                    <div class="d-flex">$<input type="number" name="fill_58"
                                                             class="border-0 bg-transparent border outline-none form-control">
                                                     </div>
                                                 </td>

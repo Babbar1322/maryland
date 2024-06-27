@@ -693,7 +693,7 @@
                                             class="border-0  footer_field border-bottom responsive_input"
                                             style="width:410px; !important">
                                         <span>Telephone Number:</span>
-                                        <input type="text" min="0" name="Telephone Number"
+                                        <input type="number" min="0" name="Telephone Number"
                                             class="border-0 w-25 responsive_input footer_field border-bottom">
                                     </div>
                                     <div class="d-flex d_sm_block ms-lg-3">Pay rate: <div
@@ -767,7 +767,7 @@
                                     <input type="text" min="0" name="City State Zip code_2"
                                         class="border-0 w-25 footer_field border-bottom">
                                     <span>Telephone Number:</span>
-                                    <input type="text" min="0" name="Telephone Number_2"
+                                    <input type="number" min="0" name="Telephone Number_2"
                                         style="width: 410px !important;"
                                         class="border-0 responsive_input   footer_field border-bottom">
                                 </div>
@@ -2143,7 +2143,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="Check Box11" value="True"></td>
                                                 <td><div>Cash (on hand) <span><input type="text" class="border-0 w-75" name="Cash (on hand)"></span></div></td>
-                                                <td><div class="d-flex d_sm_block ">$<input type="text" min="0" name="Current fair market value1" class="border-0 text-center w-100"> </div> </td>
+                                                <td><div class="d-flex d_sm_block">$<input type="number" min="0" name="Current fair market value1" class="border-0 text-center w-100"> </div> </td>
                                                 <td><input type="checkbox" name="Check Box8.0" value='Yes'></td>
                                                 <td><input type="checkbox" name="Check Box8.1" value='Yes'></td>
                                             </tr>
@@ -2151,7 +2151,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="Check Box12" value="True"></td>
                                                 <td> <div>Cash (in banks or credit unions) <span><input type="text" class="border-0 w-50" name="Cash (in banks or credit unions)"></span></div> </td>
-                                                <td> <input type="text" min="0" name="Current fair market value" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="Current fair market value" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="Check Box8.0" value="Yes"></td>
                                                 <td><input type="checkbox" name="Check Box11" value="Yes"></td>
                                             </tr>
@@ -2159,21 +2159,21 @@
                                             <tr>
                                                 <td><input type="checkbox" name=""></td>
                                                 <td><div><span><input type="text" class="border-0 w-100" name="Cash2"></span></div> </td>
-                                                <td><input type="text" min="0" name="Current fair market value2" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="Current fair market value2" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="Check Box12" value="Yes"></td>
                                                 <td><input type="checkbox" name="Check Box12" value="Yes"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="Check Box13" value="True"></td>
                                                 <td><div> Stocks/Bonds<span><input type="text" class="border-0 w-75" name="Stocks/Bonds1"></span></div></td>
-                                                <td><input type="text" min="0" name="Current fair market value4" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="Current fair market value4" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="Check Box14" value="Yes"></td>
                                                 <td><input type="checkbox" name="Check Box14" value="Yes"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk5"></td>
                                                 <td><div><span><input type="text" class="border-0 w-100" name="Stocks/Bonds2"></span></div></td>
-                                                <td> <input type="text" min="0" name="Current fair market value5" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="Current fair market value5" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="Check Box15" value="Yes"></td>
                                                 <td><input type="checkbox" name="Check Box15" value="Yes"></td>
                                             </tr>
@@ -2181,7 +2181,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="Check Box15" value="Yes"></td>
                                                 <td><div> <span><input type="text" class="border-0 w-100" name="Stocks/Bonds3"></span></div> </td>
-                                                <td> <input type="text" min="0" name="Current fair market value6.0.0" class="border-0 text-center w-100"></td>
+                                                <td> <input type="number" min="0" name="Current fair market value6.0.0" class="border-0 text-center w-100"></td>
                                                 <td><input type="checkbox" name="c_p6"></td>
                                                 <td><input type="checkbox" name="c_r6"></td>
                                             </tr>
@@ -2196,28 +2196,28 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk7"></td>
                                                 <td> <div> <span><input type="text" class="border-0 w-100 text-center" name="a_val7"></span></div> </td>
-                                                <td> <input type="text" min="0" name="b_val7" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="b_val7" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p7"></td>
                                                 <td><input type="checkbox" name="c_r7"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk8"></td>
                                                 <td><div> <span><input type="text" class="border-0 w-100 text-center" name="a_val8"></span></div> </td>
-                                                <td> <input type="text" min="0" name="b_val8" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="b_val8" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p8"></td>
                                                 <td><input type="checkbox" name="c_r8"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk9"></td>
                                                 <td>Money owed to you (not evidenced by a note)</td>
-                                                <td> <input type="text" min="0" name="b_val9" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="b_val9" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p9"></td>
                                                 <td><input type="checkbox" name="c_r9"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk10"></td>
                                                 <td><div><span><input type="text" class="border-0 w-100 text-center" name="a_val9"></span></div> </td>
-                                                <td><input type="text" min="0" name="b_val10" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="b_val10" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p10"></td>
                                                 <td><input type="checkbox" name="c_r10"></td>
                                             </tr>
@@ -2225,7 +2225,7 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk11"></td>
                                                 <td><div> <span><input type="text" class="border-0 w-100 text-center" name="a_val10"></span></div> </td>
-                                                <td> <input type="text" min="0" name="b_val11" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="b_val7" min="0" name="b_val11" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p11"></td>
                                                 <td><input type="checkbox" name="c_r11"></td>
                                             </tr>
@@ -2234,7 +2234,7 @@
                                                 <td><input type="checkbox" name="a_chk12"></td>
                                                 <td class="d-flex">Real estate: (Home) <input type="text"
                                                         class="border-0 w-75" name="a_val11"></span></td>
-                                                <td> <input type="text" min="0" name="b_val12"
+                                                <td> <input type="number" min="0" name="b_val12"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p12"></td>
                                                 <td><input type="checkbox" name="c_r12"></td>
@@ -2244,7 +2244,7 @@
                                                 <td><input type="checkbox" name="a_chk13"></td>
                                                 <td>(Other) <input type="text" class="border-0 w-75"
                                                         name="a_val12"></span></td>
-                                                <td> <input type="text" min="0" name="b_val13"
+                                                <td> <input type="number" min="0" name="b_val13"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p13"></td>
                                                 <td><input type="checkbox" name="c_r13"></td>
@@ -2253,12 +2253,9 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk14"></td>
                                                 <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val13"></span></div>
+                                                    <div> <span><input type="text" class="border-0 w-100 text-center" name="a_val13"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val14"
-                                                        class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="b_val14" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p14"></td>
                                                 <td><input type="checkbox" name="c_r14"></td>
                                             </tr>
@@ -2266,12 +2263,9 @@
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk15"></td>
                                                 <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val14"></span></div>
+                                                    <div><span><input type="text" class="border-0 w-100 text-center" name="a_val14"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val15"
-                                                        class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="b_val15" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p15"></td>
                                                 <td><input type="checkbox" name="c_r15"></td>
                                             </tr>
@@ -2283,7 +2277,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val15"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val16"
+                                                <td> <input type="number" min="0" name="b_val16"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p16"></td>
                                                 <td><input type="checkbox" name="c_r16"></td>
@@ -2296,7 +2290,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val16"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val17"
+                                                <td> <input type="number" min="0" name="b_val17"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p17"></td>
                                                 <td><input type="checkbox" name="c_r17"></td>
@@ -2309,7 +2303,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val17"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val18"
+                                                <td> <input type="number" min="0" name="b_val18"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p18"></td>
                                                 <td><input type="checkbox" name="c_r18"></td>
@@ -2321,7 +2315,7 @@
                                                     <div>Business interests<span><input type="text"
                                                                 class="border-0 w-75" name="a_val18"></span></div>
                                                 </td>
-                                                <td><input type="text" min="0" name="b_val19"
+                                                <td><input type="number" min="0" name="b_val19"
                                                         class="border-0 text-center w-100"></td>
                                                 <td><input type="checkbox" name="c_p19"></td>
                                                 <td><input type="checkbox" name="c_r19"></td>
@@ -2333,7 +2327,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val19"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val20"
+                                                <td> <input type="number" min="0" name="b_val20"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p20"></td>
                                                 <td><input type="checkbox" name="c_r20"></td>
@@ -2346,7 +2340,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val20"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val21"
+                                                <td> <input type="number" min="0" name="b_val21"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p21"></td>
                                                 <td><input type="checkbox" name="c_r21"></td>
@@ -2358,7 +2352,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val21"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val22"
+                                                <td> <input type="number" min="0" name="b_val22"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p22"></td>
                                                 <td><input type="checkbox" name="c_r22"></td>
@@ -2371,7 +2365,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val22"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val23"
+                                                <td> <input type="number" min="0" name="b_val23"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p23"></td>
                                                 <td><input type="checkbox" name="c_r23"></td>
@@ -2384,7 +2378,7 @@
                                                     <div>Automobiles<span><input type="text"
                                                                 class="border-0 w-75" name="a_val23"></span></div>
                                                 </td>
-                                                <td><input type="text" min="0" name="b_val24"
+                                                <td><input type="number" min="0" name="b_val24"
                                                         class="border-0 text-center w-100"></td>
                                                 <td><input type="checkbox" name="c_p24"></td>
                                                 <td><input type="checkbox" name="c_r24"></td>
@@ -2397,7 +2391,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val24"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val25"
+                                                <td> <input type="number" min="0" name="b_val25"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p25"></td>
                                                 <td><input type="checkbox" name="c_r25"></td>
@@ -2409,7 +2403,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val25"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val26"
+                                                <td> <input type="number" min="0" name="b_val26"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p26"></td>
                                                 <td><input type="checkbox" name="c_r26"></td>
@@ -2422,7 +2416,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val26"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val27"
+                                                <td> <input type="number" min="0" name="b_val27"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p27"></td>
                                                 <td><input type="checkbox" name="c_r27"></td>
@@ -2435,7 +2429,7 @@
                                                     <div>Boats<span><input type="text" class="border-0 w-75"
                                                                 name="a_val27"></span></div>
                                                 </td>
-                                                <td><input type="text" min="0" name="b_val28"
+                                                <td><input type="number" min="0" name="b_val28"
                                                         class="border-0 text-center w-100"></td>
                                                 <td><input type="checkbox" name="c_p28"></td>
                                                 <td><input type="checkbox" name="c_r28"></td>
@@ -2447,7 +2441,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val28"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val29"
+                                                <td> <input type="number" min="0" name="b_val29"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p29"></td>
                                                 <td><input type="checkbox" name="c_r29"></td>
@@ -2460,7 +2454,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val29"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val30"
+                                                <td> <input type="number" min="0" name="b_val30"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p30"></td>
                                                 <td><input type="checkbox" name="c_r30"></td>
@@ -2487,39 +2481,23 @@
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk31" class="m-1"></td>
-                                                <td>
-                                                    <div>Other vehicles<span><input type="text"
-                                                                class="border-0 w-50" name="a_val30"></span></div>
-                                                </td>
-                                                <td><input type="text" min="0" name="b_val31"
-                                                        class="border-0 text-center w-100"></td>
-                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5 "
-                                                        style="margin-right: 75px !important"></td>
-                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5 "
-                                                        style="margin-right: 85px !important"></td>
+                                                <td><div>Other vehicles<span><input type="text" class="border-0 w-50" name="a_val30"></span></div></td>
+                                                <td><input type="number" min="0" name="b_val31" class="border-0 text-center w-100"></td>
+                                                <td><input type="checkbox" name="c_p31" class="my-1 me-5" style="margin-right: 75px !important"></td>
+                                                <td><input type="checkbox" name="c_r31" class="my-1 me-5" style="margin-right: 85px !important"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk32"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val31"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val32"
-                                                        class="border-0 text-center w-100"> </td>
+                                                <td><div><span><input type="text" class="border-0 w-100 text-center" name="a_val31"></span></div> </td>
+                                                <td> <input type="number" min="0" name="b_val32" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p32"></td>
                                                 <td><input type="checkbox" name="c_r32"></td>
                                             </tr>
 
                                             <tr>
                                                 <td><input type="checkbox" name="a_chk33"></td>
-                                                <td>
-                                                    <div> <span><input type="text"
-                                                                class="border-0 w-100 text-center"
-                                                                name="a_val32"></span></div>
-                                                </td>
-                                                <td> <input type="text" min="0" name="b_val33"
-                                                        class="border-0 text-center w-100"> </td>
+                                                <td> <div> <span><input type="text" class="border-0 w-100 text-center" name="a_val32"></span></div></td>
+                                                <td> <input type="number" min="0" name="b_val33" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p33"></td>
                                                 <td><input type="checkbox" name="c_r33"></td>
                                             </tr>
@@ -2532,7 +2510,7 @@
                                                         401(k)s, etc.)<span><input type="text"
                                                                 class="border-0 w-25" name="a_val33"></span></div>
                                                 </td>
-                                                <td><input type="text" min="0" name="b_val34"
+                                                <td><input type="number" min="0" name="b_val34"
                                                         class="border-0 text-center "></td>
                                                 <td><input type="checkbox" name="c_p34"></td>
                                                 <td><input type="checkbox" name="c_r34"></td>
@@ -2544,7 +2522,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val34"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val35"
+                                                <td> <input type="number" min="0" name="b_val35"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p35"></td>
                                                 <td><input type="checkbox" name="c_r35"></td>
@@ -2556,7 +2534,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val35"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val36"
+                                                <td> <input type="number" min="0" name="b_val36"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p36"></td>
                                                 <td><input type="checkbox" name="c_r36"></td>
@@ -2569,7 +2547,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val36"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val37"
+                                                <td> <input type="number" min="0" name="b_val37"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p37"></td>
                                                 <td><input type="checkbox" name="c_r37"></td>
@@ -2589,7 +2567,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val37"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val38"
+                                                <td> <input type="number" min="0" name="b_val38"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p38"></td>
                                                 <td><input type="checkbox" name="c_r38"></td>
@@ -2601,7 +2579,7 @@
                                                                 class="border-0  text-center" name="a_val38"></span>
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val39"
+                                                <td> <input type="number" min="0" name="b_val39"
                                                         class="border-0 text-center "> </td>
                                                 <td><input type="checkbox" name="c_p39"></td>
                                                 <td><input type="checkbox" name="c_r39"></td>
@@ -2614,7 +2592,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val39"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val40"
+                                                <td> <input type="number" min="0" name="b_val40"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p40"></td>
                                                 <td><input type="checkbox" name="c_r40"></td>
@@ -2627,7 +2605,7 @@
                                                                 class="border-0 text-center" name="a_val40"></span>
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val41"
+                                                <td> <input type="number" min="0" name="b_val41"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p41"></td>
                                                 <td><input type="checkbox" name="c_r41"></td>
@@ -2639,7 +2617,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val41"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val42"
+                                                <td> <input type="number" min="0" name="b_val42"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p42"></td>
                                                 <td><input type="checkbox" name="c_r42"></td>
@@ -2652,7 +2630,7 @@
                                                                 class="border-0  text-center" name="a_val42"></span>
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val43"
+                                                <td> <input type="number" min="0" name="b_val43"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p43"></td>
                                                 <td><input type="checkbox" name="c_r43"></td>
@@ -2664,7 +2642,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val43"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val44"
+                                                <td> <input type="number" min="0" name="b_val44"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p44"></td>
                                                 <td><input type="checkbox" name="c_r44"></td>
@@ -2676,7 +2654,7 @@
                                                                 type="text" class="border-0  text-center"
                                                                 name="a_val44"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val45"
+                                                <td> <input type="number" min="0" name="b_val45"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p45"></td>
                                                 <td><input type="checkbox" name="c_r45"></td>
@@ -2688,7 +2666,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val45"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val46"
+                                                <td> <input type="number" min="0" name="b_val46"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p46"></td>
                                                 <td><input type="checkbox" name="c_r46"></td>
@@ -2700,7 +2678,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val46"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val47"
+                                                <td> <input type="number" min="0" name="b_val47"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p47"></td>
                                                 <td><input type="checkbox" name="c_r47"></td>
@@ -2713,7 +2691,7 @@
                                                                 class="border-0 text-center" name="a_val47"></span>
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val48"
+                                                <td> <input type="number" min="0" name="b_val48"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p48"></td>
                                                 <td><input type="checkbox" name="c_r48"></td>
@@ -2725,7 +2703,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val48"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val49"
+                                                <td> <input type="number" min="0" name="b_val49"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p49"></td>
                                                 <td><input type="checkbox" name="c_r49"></td>
@@ -2737,7 +2715,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val49"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val50"
+                                                <td> <input type="number" min="0" name="b_val50"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p50"></td>
                                                 <td><input type="checkbox" name="c_r50"></td>
@@ -2749,7 +2727,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val50"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val51"
+                                                <td> <input type="number" min="0" name="b_val51"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p51"></td>
                                                 <td><input type="checkbox" name="c_r51"></td>
@@ -2761,7 +2739,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val51"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val52"
+                                                <td> <input type="number" min="0" name="b_val52"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p52"></td>
                                                 <td><input type="checkbox" name="c_r52"></td>
@@ -2773,7 +2751,7 @@
                                                                 class="border-0  text-center" name="a_val52"></span>
                                                     </div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b-val53"
+                                                <td> <input type="number" min="0" name="b-val53"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p53"></td>
                                                 <td><input type="checkbox" name="c_r53"></td>
@@ -2785,7 +2763,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val53"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val54"
+                                                <td> <input type="number" min="0" name="b_val54"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p54"></td>
                                                 <td><input type="checkbox" name="c_r54"></td>
@@ -2797,7 +2775,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val54"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val55"
+                                                <td> <input type="number" min="0" name="b_val55"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p55"></td>
                                                 <td><input type="checkbox" name="c_r55"></td>
@@ -2809,7 +2787,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val55"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val56"
+                                                <td> <input type="number" min="0" name="b_val56"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p56"></td>
                                                 <td><input type="checkbox" name="c_r56"></td>
@@ -2821,7 +2799,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val56"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val57"
+                                                <td> <input type="number" min="0" name="b_val57"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p57"></td>
                                                 <td><input type="checkbox" name="c_r57"></td>
@@ -2833,7 +2811,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val57"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val58"
+                                                <td> <input type="number" min="0" name="b_val58"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p58"></td>
                                                 <td><input type="checkbox" name="c_r58"></td>
@@ -2845,7 +2823,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val58"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val59"
+                                                <td> <input type="number" min="0" name="b_val59"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p59"></td>
                                                 <td><input type="checkbox" name="c_r59"></td>
@@ -2857,7 +2835,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="a_val59"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="b_val60"
+                                                <td> <input type="number" min="0" name="b_val60"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="c_p60"></td>
                                                 <td><input type="checkbox" name="c_r60"></td>
@@ -2957,21 +2935,21 @@
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk1"></td>
                                                 <td><div>Mortgages on real estate: First mortgage on home <span><input type="text" class="border-0 w-25" name="l_a1"></span></div></td>
-                                                <td> <div class="d-flex d_sm_block ">$<input type="text" min="0" name="l_b1" class="border-0 text-center w-100"> </div></td>
+                                                <td> <div class="d-flex d_sm_block ">$<input type="number" min="0" name="l_b1" class="border-0 text-center w-100"> </div></td>
                                                 <td><input type="checkbox" name="lc_p1"></td>
                                                 <td><input type="checkbox" name="lc_r1"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk2"></td>
                                                 <td><div>Second mortgage on home <span><input type="text" class="border-0 w-50" name="l_a2"></span></div> </td>
-                                                <td> <input type="text" min="0" name="l_b2" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="l_b2" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p2"></td>
                                                 <td><input type="checkbox" name="lc_r2"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk3"></td>
                                                 <td><div>Other mortgages <span><input type="text" class="border-0 w-50" name="l-a3"></span></div></td>
-                                                <td><input type="text" min="0" name="l_b3" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="l_b3" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p3"></td>
                                                 <td><input type="checkbox" name="lc_r3"></td>
                                             </tr>
@@ -2979,35 +2957,35 @@
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk4"></td>
                                                 <td> <div> <span><input type="text" class="border-0 w-100" name="l_a4"></span></div> </td>
-                                                <td> <input type="text" min="0" name="l_b4" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="l_b4" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p4"></td>
                                                 <td><input type="checkbox" name="lc_r4"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk5"></td>
                                                 <td><div>Charge/credit card accounts<span><input type="text" class="border-0 w-50" name="l_a5"></span></div></td>
-                                                <td><input type="text" min="0" name="l_b5" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="l_b5" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p5"></td>
                                                 <td><input type="checkbox" name="lc_r5"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk6"></td>
                                                 <td><div><span><input type="text" class="border-0 w-100" name="l_a6"></span></div></td>
-                                                <td><input type="text" min="0" name="l_b6" class="border-0 text-center w-100"> </td>
+                                                <td><input type="number" min="0" name="l_b6" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p6"></td>
                                                 <td><input type="checkbox" name="lc_r6"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk7"></td>
                                                 <td><div><span><input type="text" class="border-0 w-100" name="l_a7"></span></div> </td>
-                                                <td> <input type="text" min="0" name="l_b7" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="l_b7" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p7"></td>
                                                 <td><input type="checkbox" name="lc_r7"></td>
                                             </tr>
                                             <tr>
                                                 <td><input type="checkbox" name="l_chk8"></td>
                                                 <td><div> <span><input type="text" class="border-0 w-100" name="l_a8"></span></div></td>
-                                                <td> <input type="text" min="0" name="l_b8" class="border-0 text-center w-100"></td>
+                                                <td> <input type="number" min="0" name="l_b8" class="border-0 text-center w-100"></td>
                                                 <td><input type="checkbox" name="lc_p8"></td>
                                                 <td><input type="checkbox" name="lc_r8"></td>
                                             </tr>
@@ -3018,7 +2996,7 @@
                                                     <div> <span><input type="text" class="border-0 w-100"
                                                                 name="l_a9"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b9"
+                                                <td> <input type="number" min="0" name="l_b9"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p9"></td>
                                                 <td><input type="checkbox" name="lc_r9"></td>
@@ -3029,7 +3007,7 @@
                                                     <div> <span><input type="text" class="border-0 w-100"
                                                                 name="l_a10"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b10"
+                                                <td> <input type="number" min="0" name="l_b10"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p10"></td>
                                                 <td><input type="checkbox" name="lc_r10"></td>
@@ -3040,7 +3018,7 @@
                                                     <div> Auto loan<span><input type="text" class="border-0 w-75"
                                                                 name="l_a11"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b11"
+                                                <td> <input type="number" min="0" name="l_b11"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p11"></td>
                                                 <td><input type="checkbox" name="lc_r11"></td>
@@ -3051,7 +3029,7 @@
                                                     <div> Auto loan<span><input type="text" class="border-0 w-75"
                                                                 name="l_a12"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b12"
+                                                <td> <input type="number" min="0" name="l_b12"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p12"></td>
                                                 <td><input type="checkbox" name="lc_r12"></td>
@@ -3061,7 +3039,7 @@
                                                 <td>
                                                     <div> Bank/Credit Union loans<span><input type="text" class="border-0 w-50" name="l_a13"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b13" class="border-0 text-center w-100"> </td>
+                                                <td> <input type="number" min="0" name="l_b13" class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p13"></td>
                                                 <td><input type="checkbox" name="lc_r13"></td>
                                             </tr>
@@ -3070,7 +3048,7 @@
                                                 <td>
                                                     <div> <span><input type="text" class="border-0 w-100" name="l_a14"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b14"
+                                                <td> <input type="number" min="0" name="l_b14"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p14"></td>
                                                 <td><input type="checkbox" name="lc_r14"></td>
@@ -3081,7 +3059,7 @@
                                                     <div> <span><input type="text" class="border-0 w-100"
                                                                 name="l_a15"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b15"
+                                                <td> <input type="number" min="0" name="l_b15"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p15"></td>
                                                 <td><input type="checkbox" name="lc_r15"></td>
@@ -3092,7 +3070,7 @@
                                                     <div> <span><input type="text" class="border-0 w-100"
                                                                 name="l_a16"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b16"
+                                                <td> <input type="number" min="0" name="l_b16"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p16"></td>
                                                 <td><input type="checkbox" name="lc_r16"></td>
@@ -3104,7 +3082,7 @@
                                                                 type="text" class="border-0 w-25"
                                                                 name="l_a17"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b17"
+                                                <td> <input type="number" min="0" name="l_b17"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p17"></td>
                                                 <td><input type="checkbox" name="lc_r17"></td>
@@ -3117,7 +3095,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a18"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b18"
+                                                <td> <input type="number" min="0" name="l_b18"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_r18"></td>
                                             </tr>
@@ -3129,7 +3107,7 @@
                                                     <div>Judgments<span><input type="text" class="border-0 w-75"
                                                                 name="l_a19"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b19"
+                                                <td> <input type="number" min="0" name="l_b19"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p19"></td>
                                                 <td><input type="checkbox" name="lc_r19"></td>
@@ -3139,7 +3117,7 @@
                                                 <td><input type="checkbox" name="l_chk20"></td>
                                                 <td> <input type="text" min="0" name="l_a20"
                                                         class="border-0 text-center w-100"> </td>
-                                                <td> <input type="text" min="0" name="l_b20"
+                                                <td> <input type="number" min="0" name="l_b20"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p20"></td>
                                                 <td><input type="checkbox" name="lc_r20"></td>
@@ -3152,7 +3130,7 @@
                                                                 class="border-0 w-75 text-center"
                                                                 name="l_a21"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b21"
+                                                <td> <input type="number" min="0" name="l_b21"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p21"></td>
                                                 <td><input type="checkbox" name="lc_r21"></td>
@@ -3167,7 +3145,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a22"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b22"
+                                                <td> <input type="number" min="0" name="l_b22"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p22"></td>
                                                 <td><input type="checkbox" name="lc_r22"></td>
@@ -3180,7 +3158,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a23"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b23"
+                                                <td> <input type="number" min="0" name="l_b23"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p23"></td>
                                                 <td><input type="checkbox" name="lc_r23"></td>
@@ -3193,7 +3171,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a24"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b24"
+                                                <td> <input type="number" min="0" name="l_b24"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p24"></td>
                                                 <td><input type="checkbox" name="lc_r24"></td>
@@ -3206,7 +3184,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a25"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b25"
+                                                <td> <input type="number" min="0" name="l_b25"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p25"></td>
                                                 <td><input type="checkbox" name="lc_r25"></td>
@@ -3219,7 +3197,7 @@
                                                                 class="border-0 w-100 text-center"
                                                                 name="l_a26"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b26"
+                                                <td> <input type="number" min="0" name="l_b26"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p26"></td>
                                                 <td><input type="checkbox" name="lc_r26"></td>
@@ -3230,7 +3208,7 @@
                                                 <td>
                                                     <div> <span><input type="text" class="border-0 w-100 text-center" name="l_a27"></span></div>
                                                 </td>
-                                                <td> <input type="text" min="0" name="l_b27"
+                                                <td> <input type="number" min="0" name="l_b27"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="lc_p27"></td>
                                                 <td><input type="checkbox" name="lc_p28"></td>
@@ -3239,7 +3217,7 @@
                                                 <td colspan="2" class="bg-secondary">Total Debts (add column B)
                                                 </td>
                                                 <td class="bg-secondary">
-                                                    <div class="d-flex ">$ <input type="text" min="0" name="total_lb" class="border-0 text-center w-100"> </div>
+                                                    <div class="d-flex ">$ <input type="number" min="0" name="total_lb" class="border-0 text-center w-100"> </div>
                                                 </td>
                                                 <td></td>
                                                 <td></td>
@@ -3343,7 +3321,7 @@
                                                 <td> <span><input type="text" class="border-0 w-100" name="A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow1">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text" min="0" name="Row1.1" class="border-0 text-center w-100"> </div>
+                                                    <div class="d-flex d_sm_block ">$<input type="number" min="0" name="Row1.1" class="border-0 text-center w-100"> </div>
                                                 </td>
                                                 <td><input type="checkbox" name="dc_p1"></td>
                                                 <td><input type="checkbox" name="dc_r1"></td>
@@ -3353,7 +3331,7 @@
                                                 <td><input type="checkbox" name="Check Box67.1" value="Off"></td>
                                                 <td> <span><input type="text" class="border-0 w-100" name="A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow2_2">
                                                 </td>
-                                                <td> <input type="text" min="0" name="Row1.2"
+                                                <td> <input type="number" min="0" name="Row1.2"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dc_p2"></td>
                                                 <td><input type="checkbox" name="dc_r2"></td>
@@ -3362,7 +3340,7 @@
                                                 <td><input type="checkbox" name="Check Box67.2" value="Off"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow3_2">
                                                 </td>
-                                                <td> <input type="text" min="0" name="Row1.3"
+                                                <td> <input type="number" min="0" name="Row1.3"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dc_p3"></td>
                                                 <td><input type="checkbox" name="dc_r3"></td>
@@ -3371,7 +3349,7 @@
                                                 <td><input type="checkbox" name="Check Box67.3" value="Off"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow4_2">
                                                 </td>
-                                                <td> <input type="text" min="0" name="Row1.4"
+                                                <td> <input type="number" min="0" name="Row1.4"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dc_p4"></td>
                                                 <td><input type="checkbox" name="dc_r4"></td>
@@ -3380,7 +3358,7 @@
                                                 <td><input type="checkbox" name="Check Box67.4" value="Off"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow5_2">
                                                 </td>
-                                                <td> <input type="text" min="0" name="Row1.5"
+                                                <td> <input type="number" min="0" name="Row1.5"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dc_p5"></td>
                                                 <td><input type="checkbox" name="dc_r5"></td>
@@ -3391,7 +3369,7 @@
                                             <tr>
                                                 <td colspan="2">Total Contingent Assets</td>
                                                 <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
+                                                    <div class="d-flex">$ <input type="number" min="0"
                                                             name="d_total_assets"
                                                             class="border-0 text-center w-100">
                                                     </div>
@@ -3434,7 +3412,7 @@
                                                             name="dl_a1">
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex d_sm_block ">$<input type="text"
+                                                    <div class="d-flex d_sm_block ">$<input type="number"
                                                             min="0" name="dl_b1"
                                                             class="border-0 text-center w-100"> </div>
                                                 </td>
@@ -3446,7 +3424,7 @@
                                                 <td><input type="checkbox" name="dl_a_chk2"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="dl_a2">
                                                 </td>
-                                                <td> <input type="text" min="0" name="dl_b2"
+                                                <td> <input type="number" min="0" name="dl_b2"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dl_cp2"></td>
                                                 <td><input type="checkbox" name="dl_cr2"></td>
@@ -3455,7 +3433,7 @@
                                                 <td><input type="checkbox" name="dl_a_chk3"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="dl_a3">
                                                 </td>
-                                                <td> <input type="text" min="0" name="dl_b3"
+                                                <td> <input type="number" min="0" name="dl_b3"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dl_cp3"></td>
                                                 <td><input type="checkbox" name="dl_cr3"></td>
@@ -3464,7 +3442,7 @@
                                                 <td><input type="checkbox" name="dl_a_chk4"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="dl_a4">
                                                 </td>
-                                                <td> <input type="text" min="0" name="dl_b4"
+                                                <td> <input type="number" min="0" name="dl_b4"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dl_cp4"></td>
                                                 <td><input type="checkbox" name="dl_cr4"></td>
@@ -3473,7 +3451,7 @@
                                                 <td><input type="checkbox" name="dl_a_chk5"></td>
                                                 <td> <input type="text" class="border-0 w-100" name="dl_a5">
                                                 </td>
-                                                <td> <input type="text" min="0" name="dl_b5"
+                                                <td> <input type="number" min="0" name="dl_b5"
                                                         class="border-0 text-center w-100"> </td>
                                                 <td><input type="checkbox" name="dl_cp5"></td>
                                                 <td><input type="checkbox" name="dlcr5"></td>
@@ -3484,7 +3462,7 @@
                                             <tr>
                                                 <td colspan="2">Total Contingent Liabilities </td>
                                                 <td>
-                                                    <div class="d-flex">$ <input type="text" min="0"
+                                                    <div class="d-flex">$ <input type="number" min="0"
                                                             name="d_total_liabilities"
                                                             class="border-0 text-center w-100">
                                                     </div>
@@ -3552,7 +3530,7 @@
                                                 name="City State Zip" id=""
                                                 class="border-0 border-bottom footer_field"
                                                 style="width:220px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text"
+                                    <div class="">Telephone Number: <span><input type="number"
                                                 name="Phone Number" id=""
                                                 class="border-0 border-bottom footer_field"></span></div>
                                     <div class="">Fax Number: <span><input type="text" name="Fax Number"
@@ -3594,7 +3572,7 @@
                                                 name="City State Zip_2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width:325px !important"></span></div>
-                                    <div class="">Telephone Number: <span><input type="text"
+                                    <div class="">Telephone Number: <span><input type="number"
                                                 name="Fax Number_2" id=""
                                                 class="border-0 border-bottom footer_field responsive_input"
                                                 style="width: 295px !important;"></span></div>
@@ -3628,7 +3606,7 @@
                                             class="border-0 border-bottom footer_field " name="city nonlawyer"> </span>
                                     {state} <span> <input type="text"
                                             class="border-0 border-bottom footer_field " name="state nonlawyer"> </span>
-                                    {telephone number} <span> <input type="text"
+                                    {telephone number} <span> <input type="number"
                                             class="border-0 border-bottom footer_field " name="telephone number nonlawyer"
                                             style="width: 290px !important"> </span> </div>
                             </div>

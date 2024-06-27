@@ -150,6 +150,9 @@
         input[type='checkbox'] {
             accent-color: #8c8a8a !important;
         }
+        .w-96 {
+            width: 96% !important;
+        }
     </style>
 </head>
 
@@ -171,15 +174,51 @@
                         <div class=" ">
                             <div class="d-flex d_sm_block">
                                 <span>Court Name: </span>
-                                 <input type="text" class=" border-none border-0 border-bottom responsive_input  shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1070px;">
+                                {{-- <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1070px;"> --}}
+                                <select
+                                        class="form-select form-control border-0 border-bottom ms-lg-2"  name="plaintiff_name" style="width:1060px;">
+                                        <option selected=""> </option>
+                                        <option value="1st Circuit - Family Division - Berlin">1st Circuit - Family Division - Berlin</option>
+                                        <option value="1st Circuit - Family Division - Colebrook">1st Circuit - Family Division - Colebrook</option>
+                                        <option value="1st Circuit - Family Division - Lancaster">1st Circuit - Family Division - Lancaster</option>
+                                        <option value="2nd Circuit - Family Division - Haverhill">2nd Circuit - Family Division - Haverhill</option>
+                                        <option value="2nd Circuit - Family Division - Lebanon">2nd Circuit - Family Division - Lebanon</option>
+                                        <option value="2nd Circuit - Family Division -Littleton">2nd Circuit - Family Division - Littleton</option>
+                                        <option value="2nd Circuit - Family Division - Plymouth">2nd Circuit - Family Division - Plymouth</option>
+                                        <option value="3rd Circuit - Family Division - Conway">3rd Circuit - Family Division - Conway</option>
+                                        <option value="3rd Circuit - Family Division - Ossipee">3rd Circuit - Family Division - Ossipee</option>
+                                        <option value="4th Circuit - Family Division - Laconia">4th Circuit - Family Division - Laconia</option>
+                                        <option value="5th Circuit - Family Division - Claremont">5th Circuit - Family Division - Claremont</option>
+                                        <option value="5th Circuit - Family Division - Newport">5th Circuit - Family Division - Newport</option>
+                                        <option value="6th Circuit - Family Division - Concord">6th Circuit - Family Division - Concord</option>
+                                        <option value="6th Circuit - Family Division - Franklin">6th Circuit - Family Division - Franklin</option>
+                                        <option value="6th Circuit - Family Division - Hillsborough">6th Circuit - Family Division - Hillsborough</option>
+                                        <option value="6th Circuit - Family Division - Hooksett">6th Circuit - Family Division - Hooksett</option>
+                                        <option value="7th Circuit - Family Division - Dover">7th Circuit - Family Division - Dover</option>
+                                        <option value="7th Circuit - Family Division - Rochester at Rochester Courthouse">7th Circuit - Family Division - Rochester at Rochester Courthouse</option>
+                                        <option value="7th Circuit - Family Division - Rochester at Strafford County Building">7th Circuit - Family Division - Rochester at Strafford County Building</option>
+                                        <option value="8th Circuit - Family Division - Jaffrey">8th Circuit - Family Division - Jaffrey</option>
+                                        <option value="8th Circuit - Family Division - Keene">8th Circuit - Family Division - Keene</option>
+                                        <option value="9th circuit - Family Division - Goffstown">9th circuit - Family Division - Goffstown</option>
+                                        <option value="9th circuit - Family Division - Manchester">9th Circuit - Family Division - Manchester</option>
+                                        <option value="9th circuit - Family Division - Merrimack">9th Circuit - Family Division - Merrimack</option>
+                                        <option value="9th Circuit - Family Division - Milford">9th Circuit - Family Division - Milford</option>
+                                        <option value="9th Circuit - Family Division - Nashua">9th Circuit - Family Division - Nashua</option>
+                                        <option value="10th Circuit - Family Division - Brentwood">10th Circuit - Family Division - Brentwood</option>
+                                        <option value="10th Circuit - Family Division - Candia">10th Circuit - Family Division - Candia</option>
+                                        <option value="10th Circuit - Family Division - Derry">10th Circuit - Family Division - Derry</option>
+                                        <option value="10th Circuit - Family Division - Hampton">10th Circuit - Family Division - Hampton</option>
+                                        <option value="10th Circuit - Family Division - Portsmouth">10th Circuit - Family Division - Portsmouth</option>
+                                        <option value="10th Circuit - Family Division - Salem">10th Circuit - Family Division - Salem</option>
+                                    </select>
                             </div>
                             <div class="d-flex d_sm_block">
                                 <span>Case Name: </span>
-                                 <input type="text" class=" border-none border-0 border-bottom responsive_input  shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1075px;">
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1075px;">
                             </div>
                             <div class="d-flex d_sm_block">
                                 <span>Case Number:</span>
-                                 <input type="text" class=" border-none border-0 border-bottom responsive_input  shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1057px;">
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1057px;">
                             </div>
                             <div>
                                 <small>(if known)</small>
@@ -254,19 +293,177 @@
 
                         </div>
                     </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">7. Assets</div>
+                        <div class="col-lg-3">Fair Market Value</div>
+                        <div class="col-lg-3">Related Debt</div>
+                        <div class="col-lg-3">Additional Information</div>
+                    </div>
+
+                    <div class="row small_text">
+                        <div class="col-lg-2">Homestead</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+
+                    <div class="row small_text">
+                        <div class="col-lg-2">Other Real Estate</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+
+                    <div class="row small_text">
+                        <div class="col-lg-2">Primary Motor Vehicle</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+
+                    <div class="row small_text">
+                        <div class="col-lg-2">Other Motor Vehicles</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Furniture and Appliances</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Checking Accounts</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Investments</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Life Insurance</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Business Interests</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Pensions</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+                    <div class="row small_text">
+                        <div class="col-lg-2">Retirement Accounts</div>
+                        <div class="col-lg-3">
+                            <div class="w-100"> $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="w-100">  $<input type="text" name="" id="" class="border-0 border-bottom responsive_input w-96" > </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" >
+                        </div>
+                    </div>
+
                     @include('layouts.footer19', ['page' => 1])
 
 
 
                 </section>
-                <section class="section_area p-5" id="second_section">
+               <section class="section_area p-5" id="second_section">
 
                     <div class="pt-lg-5">
-
+                    <div class="row">
+                         <div class=" ">
+                            <div class="d-flex d_sm_block">
+                                <span>Case Name: </span>
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1075px;">
+                            </div>
+                            <div class="d-flex d_sm_block">
+                                <span>Case Number:</span>
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1057px;">
+                            </div>
+                            <div>
+                                <small>(if known)</small>
+                            </div>
+                            <div class="fw-bold text-center">FINANCIAL AFFIDAVIT</div>
+                        </div>
+                    </div>
                         @include('layouts.footer19', ['page' => 2])
                     </div>
                 </section>
-                <section class="section_area p-5" id="third_section">
+               {{--   <section class="section_area p-5" id="third_section">
 
                     <div class="pt-lg-5">
 
@@ -284,7 +481,7 @@
 
                     @include('layouts.footer19', ['page' => 5])
 
-                </section>
+                </section> --}}
 
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">

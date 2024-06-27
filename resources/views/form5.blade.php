@@ -319,7 +319,7 @@
                                     <h5 class="text-end"> COUNTY</h5>
                                 </div>
                                 <h5 class='d-flex d_sm_block justify-content-end pt-3'>
-                                    DOCKET NO. <input type="text" name="CaseDocket"
+                                    DOCKET NO. <input type="number" name="CaseDocket"
                                         class="w-75 form-control border-none border-0 border-bottom border-dotted shadow-none responsive_input ">
 
                                 </h5>
@@ -395,7 +395,7 @@
                                         class=" responsive_input form-control w-100 border-none border-0 border-bottom border-dotted shadow-none"> --}}
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text"> Date of Statement : </small> <input type="text"
+                                    <small class="small_text"> Date of Statement : </small> <input type="date"
                                         name="CisDt"
                                         class="responsive_input form-control  border-none border-0 border-bottom border-dotted shadow-none"
                                         style="width:333px">
@@ -1112,10 +1112,10 @@
                                                 <div class="small_text"><span class="me-lg-4">e.</span> Medicare</div>
                                                 <div class="small_text"><span class="me-lg-4">f.</span> S.U.I. / S.D.I.</div>
                                                 <div class="small_text"><span class="me-lg-4">g.</span> Estimated tax  payments in excess of withholding</div>
-                                                <div class="small_text d-flex"><span class="me-lg-4">h.</span> <input type="number" min="0" name="TexDeductH"
+                                                <div class="small_text d-flex"><span class="me-lg-4">h.</span> <input type="text" min="0" name="TexDeductH"
                                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                                 </div>
-                                                <div class="small_text d-flex"><span class="me-lg-4">i.</span> <input  type="number" min="0" name="TexDeductI" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                                <div class="small_text d-flex"><span class="me-lg-4">i.</span> <input  type="text" min="0" name="TexDeductI" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                                 </div>
                                                 <div class="small_text pt-lg-3 text-end"><span  class="text-end">TOTAL</span> </div>
                                             </div>
@@ -1291,7 +1291,7 @@
                                             name="item4jmand" id=""></div>
                                 </div>
                                 <div class="d-flex m-0 p-0"><small class="ms-3">$</small><input type="number"
-                                        min="0" name="Text68" style="width: 305px"
+                                        min="0" name="Text68" style="width: 365px"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
                             </div>
@@ -1305,15 +1305,15 @@
                                 <p class="p-0 m-0 ps-3">NET AVERAGE EARNED INCOME PER WEEK </h5>
                             </div>
                             <div class=" col-lg-6 ">
-                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                <div class="d-flex"><small class="ms-3">$</small><input type="number" min="0"
                                         name="Text69" style="width: 365px"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
-                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                <div class="d-flex"><small class="ms-3">$</small><input type="number" min="0"
                                         name="Text70" style="width: 365px"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
-                                <div class="d-flex"><small>$</small><input type="number" min="0"
+                                <div class="d-flex"><small class="ms-3">$</small><input type="number" min="0"
                                         name="netAvgEarnincomeWk" style="width: 365px"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                 </div>
@@ -1445,7 +1445,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="number" min="0" name="Text101" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ">
+                                    <input type="text" min="0" name="Text101" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ">
                                 </div>
                                 <div class='d-flex col-lg-1 my-auto '>
                                     <input type="checkbox" name="Check Box23" value="Yes" class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
@@ -1472,7 +1472,7 @@
                                 </div>
                             </div>
                             <div class="ms-lg-3 d-flex d_sm_block small_text">If yes, explain:
-                                <input type="number" min="0" name="Text102" style="width: 525px"
+                                <input type="text" min="0" name="Text102" style="width: 525px"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-lg-3">
                             </div>
                             <div class="d-flex d_sm_block my-auto  pt-3">
@@ -1491,7 +1491,7 @@
                                 </div>
                             </div>
                             <div class="ms-lg-3 small_text">If yes, explain:
-                                <input type="number" min="0" name="sec5q5" style="width: 625px"
+                                <input type="text" min="0" name="sec5q5" style="width: 625px"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control ms-lg-2">
                             </div>
 
@@ -1567,11 +1567,11 @@
                             <div class="col-lg-2">
                                 <div class='d-flex   my-auto ps-2 '>
                                     <div>
-                                        <input type="checkbox" name="Check Box26" value="Yes"
+                                        <input type="radio" name="Check Box26" value="Yes"
                                             class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                     </div>
                                     <div class="ms-lg-4 ms-2">
-                                        <input type="checkbox" name="Check Box26" value="No"
+                                        <input type="radio" name="Check Box26" value="No"
                                             class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                     </div>
                                 </div>
@@ -1593,11 +1593,11 @@
                             <div class="col-lg-2">
                                 <div class='d-flex   my-auto ps-2 '>
                                     <div>
-                                        <input type="checkbox" name="Check Box27" value="Yes"
+                                        <input type="radio" name="Check Box27" value="Yes"
                                             class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                     </div>
                                     <div class="ms-lg-4 ms-2">
-                                        <input type="checkbox" name="Check Box27" value="No"
+                                        <input type="radio" name="Check Box27" value="No"
                                             class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                     </div>
                                 </div>
@@ -1624,11 +1624,11 @@
                             <div class="col-lg-2">
                                 <div class='d-flex   my-auto ps-2 '>
                                     <div>
-                                        <input type="checkbox" name="Check Box28" value="Yes"
+                                        <input type="radio" name="Check Box28" value="Yes"
                                             class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                     </div>
                                     <div class="ms-lg-4">
-                                        <input type="checkbox" name="Check Box28" value="No"
+                                        <input type="radio" name="Check Box28" value="No"
                                             class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                     </div>
                                 </div>
@@ -1652,11 +1652,11 @@
                             <div class="col-lg-2">
                                 <div class='d-flex   my-auto ps-2 '>
                                     <div>
-                                        <input type="checkbox" name="Check Box29" value="Yes"
+                                        <input type="radio" name="Check Box29" value="Yes"
                                             class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                     </div>
                                     <div class="ms-lg-4">
-                                        <input type="checkbox" name="Check Box29" value="No"
+                                        <input type="radio" name="Check Box29" value="No"
                                             class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                     </div>
                                 </div>
@@ -1694,11 +1694,11 @@
                                 <div class="col-lg-2">
                                     <div class='d-flex   my-auto ps-2 '>
                                         <div>
-                                            <input type="checkbox" name="Check Box30" value="Yes"
+                                            <input type="radio" name="Check Box30" value="Yes"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                         </div>
                                         <div class="ms-lg-4">
-                                            <input type="checkbox" name="Check Box30" value="No"
+                                            <input type="radio" name="Check Box30" value="No"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                         </div>
                                     </div>
@@ -1721,11 +1721,11 @@
                                 <div class="col-lg-2">
                                     <div class='d-flex   my-auto ps-2 '>
                                         <div>
-                                            <input type="checkbox" name="Check Box31" value="Yes"
+                                            <input type="radio" name="Check Box31" value="Yes"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                         </div>
                                         <div class="ms-lg-4">
-                                            <input type="checkbox" name="Check Box31" value="No"
+                                            <input type="radio" name="Check Box31" value="No"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                         </div>
                                     </div>
@@ -1756,11 +1756,11 @@
                                 <div class="col-lg-2">
                                     <div class='d-flex   my-auto ps-2 '>
                                         <div>
-                                            <input type="checkbox" name="Check Box32" value="Yes"
+                                            <input type="radio" name="Check Box32" value="Yes"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                         </div>
                                         <div class="ms-lg-4">
-                                            <input type="checkbox" name="Check Box32" value="No"
+                                            <input type="radio" name="Check Box32" value="No"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                         </div>
                                     </div>
@@ -1782,11 +1782,11 @@
                                 <div class="col-lg-2">
                                     <div class='d-flex   my-auto ps-2 '>
                                         <div>
-                                            <input type="checkbox" name="Check Box33" value="Yes"
+                                            <input type="radio" name="Check Box33" value="Yes"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                         </div>
                                         <div class="ms-lg-4">
-                                            <input type="checkbox" name="Check Box33" value="No"
+                                            <input type="radio" name="Check Box33" value="No"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                         </div>
                                     </div>
@@ -1808,11 +1808,11 @@
                                 <div class="col-lg-2">
                                     <div class='d-flex   my-auto ps-2 '>
                                         <div>
-                                            <input type="checkbox" name="sec5q16_1" value="Yes"
+                                            <input type="radio" name="sec5q16_1" value="Yes"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none  me-2">Yes
                                         </div>
                                         <div class="ms-lg-4">
-                                            <input type="checkbox" name="sec5q16_2" value="No"
+                                            <input type="radio" name="sec5q16_1" value="No"
                                                 class="border-none border-0 border-bottom border-dotted shadow-none me-2 ">No
                                         </div>
                                     </div>

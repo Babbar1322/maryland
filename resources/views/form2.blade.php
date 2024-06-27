@@ -394,7 +394,7 @@
                                         <div>City, State, Zip</div>
                                     </div>
                                     <div class="col-lg-4 col-sm-6">
-                                        <input type="text" name="plaintiff_tel"
+                                        <input type="number" name="plaintiff_tel"
                                             class="form-control  border-none  border-0 border-bottom border-dotted shadow-none">
                                         <div>Telephone</div>
                                     </div>
