@@ -253,7 +253,7 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 24</h5>
-                      <span>ME financial statement MJB-Form-fm-043 .pdf</span>
+                      <span>ME financial statement MJB-Form-fm-043.pdf</span>
                     </div>
                   </div>
                 </a>
@@ -264,6 +264,46 @@
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 25</h5>
                       <span>NH financial affidavit nhjb-2065-f.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form26')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                      <h5 class="text-decoration-none text-dark">Form 26</h5>
+                      <span>MA Financial Statement Schedule A (CJ-D 301)_06-05-2024_1343.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form27')}}" class="text-decoration-none">
+                    <div class="card">
+                        <div class="card-body p-5">
+                        <h5 class="text-decoration-none text-dark">Form 27</h5>
+                        <span>MA Financial Statement Schedule B (CJ-D 301)_06-05-2024_1346.pdf</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form28')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                        <h5 class="text-decoration-none text-dark">Form 28</h5>
+                        <span>MA Financial statement (short form) (CJD-301S)_06-05-2024_1333.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form29')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                        <h5 class="text-decoration-none text-dark">Form 29</h5>
+                        <span>MA statement (long form) (CJD-301L)_06-05-2024_1332.pdf</span>
                     </div>
                   </div>
                 </a>

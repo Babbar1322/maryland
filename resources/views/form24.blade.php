@@ -1196,8 +1196,8 @@
                                     </td>
                                     <td>
                                         <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sr_val1" id="" class="border-0"></div>
-                                        <div class="small_text"> <input type="checkbox" name="it_sr1" id="" value="Refund received"> Refund received </div>
-                                        <div class="small_text"> <input type="checkbox" name="it_sr1" id="" value="Refund not yet received"> Refund not yet received</div>
+                                        <div class="small_text"> <input type="radio" name="it_sr1" id="" value="Refund received"> Refund received </div>
+                                        <div class="small_text"> <input type="radio" name="it_sr1" id="" value="Refund not yet received"> Refund not yet received</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1227,8 +1227,8 @@
                                     </td>
                                     <td>
                                         <div class="d-flex d_sm_block small_text">$<input type="text" name="it_sr_val2" id="" class="border-0"></div>
-                                        <div class="small_text"> <input type="checkbox" name="it_sr2" id="" value="Refund received"> Refund received </div>
-                                        <div class="small_text"> <input type="checkbox" name="it_sr2" id="" value="Refund not yet received"> Refund not yet received</div>
+                                        <div class="small_text"> <input type="radio" name="it_sr2" id="" value="Refund received"> Refund received </div>
+                                        <div class="small_text"> <input type="radio" name="it_sr2" id="" value="Refund not yet received"> Refund not yet received</div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1397,10 +1397,10 @@
                             </div>
                             <div class="small_text fw-bold">4. My employment:</div>
                             <div class="ps-lg-5"> a. I am
-                                <input type="checkbox" name="" id="" class="mx-2" value="unemployed">unemployed
-                                 <input type="checkbox" name="" id="" class="me-2" value="self-employed"> self-employed
-                                 <input type="checkbox" name="" id="" class="me-2" value="employed by someone else "> employed by someone else
-                                <input type="checkbox" name="" id="" class="me-2" value="retired"> retired
+                                <input type="checkbox" name="unemployed" id="" class="mx-2" value="unemployed">unemployed
+                                 <input type="checkbox" name="self-employed" id="" class="me-2" value="self-employed"> self-employed
+                                 <input type="checkbox" name="employed by someone else" id="" class="me-2" value="employed by someone else "> employed by someone else
+                                <input type="checkbox" name="retired" id="" class="me-2" value="retired"> retired
                             </div>
                             <div class="ps-lg-5 pt-lg-3">b. Employer name : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:665px;"> </div>
                             <div class="ps-lg-5 pt-lg-3">c. Employer address : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:645px;"> </div>
@@ -1868,12 +1868,12 @@
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Telephone (landline)</div>
-                                <div> $<input type="text" name="" id=""
+                                <div> $<input type="number" name="" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Cell phone</div>
-                                <div> $ <input type="text" name="" id=""
+                                <div> $ <input type="number" name="" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
@@ -2347,46 +2347,29 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <div>Date (mm/dd/yyyy): <input type="date" name=""
-                                    class="border-0 border-bottom responsive_input w-50" id=""></div>
-                            <div class="mt-lg-4">Attorney: <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input" style="width:420px;" id=""></div>
-                            <div>Bar No.: <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-75" id=""></div>
-                            <div>Address: <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
-                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
-                                    type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-100" id=""></div>
-                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
-                                    type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-100" id=""></div>
-                            <div>Telephone: <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input  " style="width:410px;" id=""></div>
-                            <div>Email: <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
+                            <div>Date (mm/dd/yyyy): <input type="date" name="" class="border-0 border-bottom responsive_input w-50" id=""></div>
+                            <div class="mt-lg-4">Attorney: <input type="text" name="" class="border-0 border-bottom responsive_input" style="width:420px;" id=""></div>
+                            <div>Bar No.: <input type="text" name="bar_no" class="border-0 border-bottom responsive_input w-75" id=""></div>
+                            <div>Address: <input type="text" name="address_2" class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
+                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input type="text" name="address_2.1" class="border-0 border-bottom responsive_input w-100" id=""></div>
+                            <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input type="text" name="address_2.2" class="border-0 border-bottom responsive_input w-100" id=""></div>
+                            <div>Telephone: <input type="number" name="Telephone" class="border-0 border-bottom responsive_input  " style="width:410px;" id=""></div>
+                            <div>Email: <input type="text" name="Email" class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
                         </div>
                         <div class="col-lg-6">
                             <div> <input type="text" name=""
                                     class="border-0 border-bottom responsive_input" style="width:495px;" id="">
-                                <div class="small_text "> Signature of <input type="checkbox" name=""
-                                        id="" value="Plaintiff"> Plaintiff <input type="checkbox"
-                                        name="" id="" value="Defendant"> Defendant</div>
+                                <div class="small_text "> Signature of <input type="checkbox" name="" id="" value="Plaintiff"> Plaintiff <input type="checkbox" name="" id="" value="Defendant"> Defendant</div>
                             </div>
-                            <div class="mt-lg-4">Name: <input type="text" name=""
-                                class="border-0 border-bottom responsive_input" style="width:440px;" id="">
+                            <div class="mt-lg-4">Name: <input type="name_2" name="" class="border-0 border-bottom responsive_input" style="width:440px;" id="">
                             <div class="small_text"> <input type="checkbox" name="" id="" value="Address is confidential"> Address is confidential (if so, leave blank below) </div></div>
 
-                        <div>Address: <input type="text" name=""
-                                class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
+                        <div>Address: <input type="text" name="address_2.3" class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
                         <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
-                                type="text" name=""
-                                class="border-0 border-bottom responsive_input w-100" id=""></div>
+                                type="text" name="address_2.4" class="border-0 border-bottom responsive_input w-100" id=""></div>
 
-                        <div>Telephone: <input type="text" name=""
-                                class="border-0 border-bottom responsive_input  " style="width:410px;" id=""></div>
-                        <div>Email: <input type="text" name=""
-                                class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
+                        <div>Telephone: <input type="text" name="Telephone_2" class="border-0 border-bottom responsive_input" style="width:410px;" id=""></div>
+                        <div>Email: <input type="text" name="Email_2" class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
                         </div>
                     </div>
                     <div class="text-center fw-bold py-lg-3">STATE OF MAINE</div>
@@ -2420,7 +2403,7 @@
                 </section>
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
-                        <button type="submit" class="btn btn-success px-4">Save</button>
+                        <button type="button" class="btn btn-success px-4">Save</button>
                     </div>
                     <div class="pt-3">
                         <button type="button" class="btn btn-dark px-4">Back</button>

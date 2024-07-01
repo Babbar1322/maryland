@@ -749,4 +749,31 @@ dd($request->all());
         dd('comming soon');
     }
 
+
+
+    public function form25() {
+        // NH financial affidavit nhjb-2065-f.pdf
+        return view('form25');
+    }
+
+
+
+    public function form26() {
+        // MA Financial Statement Schedule A (CJ-D 301)_06-05-2024_1343.pdf
+        return view('form26');
+    }
+
+    public function form27() {
+        // MA Financial Statement Schedule B (CJ-D 301)_06-05-2024_1346.pdf
+        return view('form27');
+    }
+
+    public function form28() {
+        // MA Financial statement (short form) (CJD-301S)_06-05-2024_1333.pdf
+        return view('form28');
+    }
+
+    public function form29() {
+        return view('form29');
+    }
 }
