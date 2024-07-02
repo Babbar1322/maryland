@@ -256,10 +256,10 @@
                             </div>
                             <div class="d-flex d_sm_block pt-lg-1 small_text">
                                 <div>Tel. No.</div>
-                                <div> <input type="text" name="" id=""
+                                <div> <input type="number" name="" id=""
                                         class="border-0 border-bottom responsive_input"style="width:332px;"></div>
                                 <div>Date of Birth</div>
-                                <div> <input type="text" name="" id=""
+                                <div> <input type="date" name="" id=""
                                         class="border-0 border-bottom responsive_input"style="width:332px;"></div>
                                 <div>No. of children living with you</div>
                                 <div> <input type="text" name="" id=""
@@ -301,7 +301,7 @@
 
                             <div class="d-flex d_sm_block pt-lg-1 small_text">
                                 <div>Tel. No.</div>
-                                <div><input type="text" name="" id=""
+                                <div><input type="number" name="" id=""
                                         class="border-0 border-bottom responsive_input" style="width:708px"></div>
                                 <div>Do you have health insurance coverage?</div>
                                 <div><input type="checkbox" name="" id="" class="mx-2">
@@ -1451,23 +1451,18 @@
                 <section class="section_area p-5" id="fourth_section">
 
                     <div class="row">
-                        <div class=" ">
+                        <div class="">
                             <div class="d-flex d_sm_block justify-content-between">
                                 <div class="d-flex d_sm_block my-auto">
                                     <span>Name: </span>
-                                    <input type="text"
-                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
-                                        name="plaintiff_name">
+                                    <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name">
                                 </div>
                                 <div class=" d_sm_block">
-                                    <div class="fw-bold text-center">Commonwealth of Massachusetts <br>The Trial Court
-                                        <br> Probate and Family Court Department <br> FINANCIAL STATEMENT </div>
+                                    <div class="fw-bold text-center">Commonwealth of Massachusetts <br>The Trial Court <br> Probate and Family Court Department <br> FINANCIAL STATEMENT </div>
                                 </div>
                                 <div class="d-flex d_sm_block  my-auto">
                                     <span>Docket No.</span>
-                                    <input type="text"
-                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
-                                        name="plaintiff_name">
+                                    <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name">
                                 </div>
                             </div>
                             <div class="text-center">(Long form)</div>
@@ -1481,8 +1476,7 @@
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
                                         <div>$</div>
-                                        <div class="responsive_input"><input type="number" name=""
-                                                class="border-0 border-bottom responsive_input"></div>
+                                        <div class="responsive_input"><input type="number" name="" class="border-0 border-bottom responsive_input"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1494,8 +1488,7 @@
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
                                         <div>$</div>
-                                        <div class="responsive_input"><input type="number" name=""
-                                                class="border-0 border-bottom responsive_input"></div>
+                                        <div class="responsive_input"><input type="number" name="" class="border-0 border-bottom responsive_input"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1507,8 +1500,7 @@
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
                                         <div>$</div>
-                                        <div class="responsive_input"><input type="number" name=""
-                                                class="border-0 border-bottom responsive_input"></div>
+                                        <div class="responsive_input"><input type="number" name="" class="border-0 border-bottom responsive_input"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1520,22 +1512,19 @@
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
                                         <div>$</div>
-                                        <div class="responsive_input"><input type="number" name=""
-                                                class="border-0 border-bottom responsive_input"></div>
+                                        <div class="responsive_input"><input type="number" name="" class="border-0 border-bottom responsive_input"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row small_text ps-lg-4">
                                 <div class="col-lg-8">
-                                    <div>Other (specify) <input type="text" name="" id=""
-                                            class="border-0 border-bottom"></div>
+                                    <div>Other (specify) <input type="text" name="" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
                                         <div>$</div>
-                                        <div class="responsive_input"><input type="number" name=""
-                                                class="border-0 border-bottom responsive_input"></div>
+                                        <div class="responsive_input"><input type="number" name=""  class="border-0 border-bottom responsive_input"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1595,7 +1584,7 @@
                             <div class="row small_text">
                                 <div class="col-lg-8">
                                     <div>Other (specify) <input type="text" name="" id=""
-                                            class="border-0 border-bottom"></div>
+                                            class="border-0 border-bottom responsive_input"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
@@ -1609,7 +1598,7 @@
                             <div class="row small_text">
                                 <div class="col-lg-8">
                                     <div> <input type="text" name="" id=""
-                                            class="border-0 border-bottom"></div>
+                                            class="border-0 border-bottom responsive_input"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
@@ -1623,7 +1612,7 @@
                             <div class="row small_text">
                                 <div class="col-lg-8">
                                     <div> <input type="text" name="" id=""
-                                            class="border-0 border-bottom"></div>
+                                            class="border-0 border-bottom responsive_input"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
@@ -1637,7 +1626,7 @@
                             <div class="row small_text">
                                 <div class="col-lg-8">
                                     <div> <input type="text" name="" id=""
-                                            class="border-0 border-bottom"></div>
+                                            class="border-0 border-bottom responsive_input"></div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="d-flex justify-content-md-end">
@@ -2561,6 +2550,261 @@
                         </div>
                     </div>
                 </section>
+                <section class="section_area p-5" id="eighth_section">
+
+                    <div class="row">
+                        <div class=" ">
+                            <div class="d-flex d_sm_block justify-content-between">
+                                <div class="d-flex d_sm_block my-auto">
+                                    <span>Name: </span>
+                                    <input type="text"
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
+                                        name="plaintiff_name">
+                                </div>
+                                <div class=" d_sm_block">
+                                    <div class="fw-bold text-center">Commonwealth of Massachusetts <br>The Trial Court
+                                        <br> Probate and Family Court Department <br> FINANCIAL STATEMENT </div>
+                                </div>
+                                <div class="d-flex d_sm_block  my-auto">
+                                    <span>Docket No.</span>
+                                    <input type="text"
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
+                                        name="plaintiff_name">
+                                </div>
+                            </div>
+                            <div class="text-center">(Long form)</div>
+                            <div><b>IX. <span class="border-bottom border-dark">LIABILITIES</span> : List Loans, credit card debt, consumer debt, installment debt, etc. which are NOT listed elsewhere.</b></div>
+
+                        </div>
+
+
+                        <div class="ps-lg-5 small_text">
+                                 <div class="table-responsive">
+                                    <table class="table table-bordered border-dark my-lg-3">
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-center"> CREDITOR</th>
+                                                <th class="text-center">NATURE OF DEBT</th>
+                                                <th class="text-center">DATE INCURRED</th>
+                                                <th class="text-center">AMOUNT DUE</th>
+                                                <th class="text-center">WEEKLY PAYMENT</th>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input  my-lg-2 w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input  my-lg-2 w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input  my-lg-2 w-100"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"> <div>$</div><input type="number" class="border-0 responsive_input w-100 my-lg-2 "></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"> <div>$</div><input type="number" class="border-0 responsive_input w-100 my-lg-2 "></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><input type="text" name="" id="" class="border-0 my-lg-2 responsive_input w-100"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input my-lg-2 w-100"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><input type="text" name="" id="" class="border-0 responsive_input w-100 my-lg-2"></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                                <td><div class="d-flex d_sm_block align-items-center"><div>$</div><input type="number" name="" class="border-0 responsive_input w-100 my-lg-2"></div></td>
+                                            </tr>
+
+                                         </tbody>
+
+
+                                    </table>
+                                </div>
+                                <div class="d-flex justify-content-between pt-lg-3 pb-lg-5">
+                                    <div class="fw-bold">TOTAL LIABILITIES</div>
+                                    <div class="d-flex d_sm_block">
+                                    <div class="border border-dark me-lg-5"><div class="d-flex">$<input type="text" name="" id="" class="border-0 w-100"></div></div>
+                                    <div class="border border-dark"><div class="d-flex">$<input type="text" name="" id="" class="border-0 w-100"></div></div>
+                                </div>
+                                </div>
+
+                            @include('layouts.footer22', ['page' => 8])
+                        </div>
+                    </div>
+                </section>
+                <section class="section_area p-5" id="ninth_section">
+
+                    <div class="row">
+                        <div class=" ">
+                            <div class="d-flex d_sm_block justify-content-between">
+                                <div class="d-flex d_sm_block my-auto">
+                                    <span>Name: </span>
+                                    <input type="text"
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
+                                        name="plaintiff_name">
+                                </div>
+                                <div class=" d_sm_block">
+                                    <div class="fw-bold text-center">Commonwealth of Massachusetts <br>The Trial Court
+                                        <br> Probate and Family Court Department <br> FINANCIAL STATEMENT </div>
+                                </div>
+                                <div class="d-flex d_sm_block  my-auto">
+                                    <span>Docket No.</span>
+                                    <input type="text"
+                                        class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input"
+                                        name="plaintiff_name">
+                                </div>
+                            </div>
+                            <div class="text-center">(Long form)</div>
+                            <div class="text-center"><b class="border-bottom border-dark">CERTIFICATION BY AFFIANT</b></div>
+                            <div class="small_text">I certify under the penalties of perjury that the information stated on this Financial Statement and the attached Schedules, if any, is complete, true, and accurate. <b>I UNDERSTAND THAT WILLFUL MISREPRESENTATION OF ANY OF THE INFORMATION PROVIDED WILL SUBJECT ME TO SANCTIONS AND MAY RESULT IN CRIMINAL CHARGES BEING FILED AGAINST ME </b> .</div>
+                            <div class="row py-lg-4">
+
+                                <div class="col-lg-6">
+                                    <div>
+                                        <input type="date" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <div class="small_text">Date</div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div>
+                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <div class="small_text">Signature</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="h4 fw-bold text-center pb-4">COMMONWEALTH OF MASSACHUSETTS</div>
+                            <div class="small_text"><span>County of</span> <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50"> </div>
+                            <div class="small_text py-3" style=" text-indent: 50px;">Then personally appeared the above <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-25"> and declared the foregoing to be true and correct, before me this <input type="text" name="" class="border-0 border-bottom responsive_input"> day of <input type="text" name="" class="border-0 border-bottom responsive_input"></div>
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6  ">
+                                <input type="text" name="" class="border-0 border-bottom responsive_input w-100">
+                                <div class="small_text text-center">Notary Public</div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6 d-flex d_sm_block ">
+                                    My Commission Expires:<input type="text" name="" class="border-0 border-bottom responsive_input" style="width:378px;">
+                             </div>
+                            </div>
+                            <div class="pt-lg-5 pb-lg-2">
+                                <b class="border-bottom">INSTRUCTIONS</b>: In any case where an attorney is appearing for a party, said attorney
+MUST complete the Statement by Attorney.
+                            </div>
+                            <div class="mt-2 text-center"><b class="border-bottom">STATEMENT BY ATTORNEY</b></div>
+                                <div class="py-1 small_text">
+                                     I, the undersigned attorney, am admitted to practice law in the Commonwealth of Massachusetts-am admitted pro hoc vice for the purposes of this case-and am an officer of the court. As the attorney for the party on whose behalf this Financial Statement is submitted, I hereby state to the court that I have no knowledge that any of the information contained herein is false.
+                                </div>
+                                <div class="row small_text mb-lg-5">
+                                    <div class="col-lg-4">Date <input type="date" name="" id="" class="border-0 border-bottom responsive_input" style="width:335px;"></div>
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-5">
+                                        <div clas>
+                                            <input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input">
+                                            <div class="small_text text-center">(Signature of attorney)</div>
+                                        </div>
+                                        <div class="pt-lg-2">
+                                            <input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input">
+                                            <div class="small_text text-center">(Signature of attorney)</div>
+                                        </div>
+                                        <div class="pt-lg-2">
+                                            <input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input">
+                                            <div class="small_text text-center">(Print name)</div>
+                                        </div>
+                                        <div class="pt-lg-2">
+                                            <input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input">
+                                            <div class="small_text text-center">(Street address)</div>
+                                        </div>
+                                        <div class="d-flex d_sm_block pt-lg-1 small_text">
+
+                                            <div class="">
+                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:203px;">
+                                                <div class="text-center">(City/Town)</div>
+                                            </div>
+                                            <div class="ms-lg-3">
+                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input"  style="width:120px;">
+                                                <div class="text-center">(State)</div>
+                                            </div>
+                                            <div class="ms-lg-3">
+                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input"style="width:120px;" >
+                                                <div class="text-center">(Zip)</div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-lg-2">Tel. No.<input type="number" name="" id="" class="border-0 border-bottom responsive_input" style="width:424px;">
+                                        <div class="pt-lg-2">B.B.O. #<input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:420px;">
+                                        </div>
+                                    </div>
+                                 </div>
+
+                        </div>
+                            @include('layouts.footer22', ['page' => 9])
+                    </div>
+                </section>
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
                         <button type="button" class="btn btn-success px-4">Save</button>
@@ -2581,6 +2825,9 @@
             <option value="#fourth_section">Fourth Section</option>
             <option value="#fifth_section">Fifth Section</option>
             <option value="#sixth_section">Sixth Section</option>
+            <option value="#seventh_section">Sixth Section</option>
+            <option value="#eighth_section">Sixth Section</option>
+            <option value="#ninth_section">Sixth Section</option>
         </select>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

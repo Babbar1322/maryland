@@ -774,6 +774,12 @@ dd($request->all());
     }
 
     public function form29() {
+        // MA statement (long form) (CJD-301L)_06-05-2024_1332.pdf
         return view('form29');
+    }
+
+    public function form30() {
+        // TX divorceset1forms.pdf
+        return view('form30');
     }
 }

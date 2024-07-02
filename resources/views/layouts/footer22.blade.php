@@ -5,7 +5,7 @@
     }
 </style>
 
-@if($page == 9 || $page == 6)
+@if( $page == 6)
 <div class="pt-300"></div>
 @endif
     <div class="row  m-0 pt-3">

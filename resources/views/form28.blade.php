@@ -244,9 +244,9 @@
                                     </div>
                                     <div class="d-flex d_sm_block pt-lg-1 small_text">
                                         <div>Tel. No.</div>
-                                        <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input"style="width:332px;"></div>
+                                        <div> <input type="number" name="" id="" class="border-0 border-bottom responsive_input"style="width:332px;"></div>
                                         <div>Date of Birth</div>
-                                        <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input"style="width:332px;"></div>
+                                        <div> <input type="date" name="" id="" class="border-0 border-bottom responsive_input"style="width:332px;"></div>
                                         <div>No. of children living with you</div>
                                         <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input"style="width:135px;"></div>
                                     </div>
@@ -280,7 +280,7 @@
 
                                     <div class="d-flex d_sm_block pt-lg-1 small_text">
                                         <div>Tel. No.</div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:708px"></div>
+                                        <div><input type="number" name="" id="" class="border-0 border-bottom responsive_input" style="width:708px"></div>
                                         <div>Do you have health insurance coverage?</div>
                                         <div><input type="checkbox" name="" id="" class="mx-2"> <span>Yes</span></div>
                                         <div><input type="checkbox" name="" id="" class="mx-2"> <span>No</span></div>
@@ -1211,7 +1211,7 @@
                                                 <div class="text-center">(Zip)</div>
                                             </div>
                                         </div>
-                                        <div class="pt-lg-2">Tel. No.<input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:424px;">
+                                        <div class="pt-lg-2">Tel. No.<input type="number" name="" id="" class="border-0 border-bottom responsive_input" style="width:424px;">
                                         <div class="pt-lg-2">B.B.O. #<input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:420px;">
                                         </div>
                                     </div>

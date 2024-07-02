@@ -48,6 +48,7 @@ Route::get('form26', [FormController::class, 'form26'])->name('pdf_form26');
 Route::get('form27', [FormController::class, 'form27'])->name('pdf_form27');
 Route::get('form28', [FormController::class, 'form28'])->name('pdf_form28');
 Route::get('form29', [FormController::class, 'form29'])->name('pdf_form29');
+Route::get('form30', [FormController::class, 'form30'])->name('pdf_form30');
 
 
 
