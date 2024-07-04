@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\additional_fields_form;
+use App\Models\additional_fields_form_data;
 use App\Models\cc320_form;
 use App\Models\cc320_form_data;
 use App\Models\ct_long_form;
@@ -779,7 +781,33 @@ dd($request->all());
     }
 
     public function form30() {
-        // TX divorceset1forms.pdf
+        // 60 Additional Text Fields.pdf
         return view('form30');
     }
+
+
+    public function form30_post(Request $request) {
+
+        // KY Disclosure statement 238-239.pdf
+
+        $additional = new additional_fields_form();
+        $additional->save();
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $additional_data = new additional_fields_form_data();
+            $additional_data->additional_id = $additional->id;
+            $additional_data->keyss = $key;
+            $additional_data->valuess= $req;
+            $additional_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+    }
+
+    public function form31() {
+        // TX divorceset1forms.pdf
+        return view('form31');
+    }
+
 }

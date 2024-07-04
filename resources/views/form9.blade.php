@@ -280,7 +280,7 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">TELEPHONE NO.:</div>
-                                        <div> <input type="number" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Phone_ft[0]" class="border-0 "></div>
+                                        <div> <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].OtherContact[0].Phone_ft[0]" class="border-0 "></div>
                                     </div>
                                 </div>
                                 <div class="">
@@ -392,7 +392,7 @@
                         </div>
                         <div class="col-lg-4 border border-dark">
                             <div class="small_text">CASE NUMBER:</div>
-                            <input type="number" name="form1[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
+                            <input type="text" name="form1[0].Page1[0].StdP1Header_sf[0].CaseNumber[0].CaseNumber_ft[0]" class="border-0 w-100">
                         </div>
                     </div>
                     <div class="px-lg-5 px-2  pt-0 row">

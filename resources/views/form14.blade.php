@@ -339,7 +339,7 @@
                                         <div class="d-flex">
                                             <div class="d-flex d_sm_block">
                                                 <div class="small_text">TELEPHONE NO :</div>
-                                                <div> <input type="number" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Phone_ft[0]" class="border-0 table_input "></div>
+                                                <div> <input type="text" name="FL-150[0].Page1[0].StdP1Header_sf[0].AttyInfo[0].Phone_ft[0]" class="border-0 table_input "></div>
                                             </div>
                                         </div>
                                     </div>

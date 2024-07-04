@@ -278,7 +278,7 @@
     <div class="container-fluid   py-1 py-lg-3">
         <form action="{{ route('form11.submit') }}" method="post">
             @csrf
-        <div class="container bg_color p-lg-3 p-1  ">
+            <div class="container bg_color p-lg-3 p-1  ">
 
                 <section class="section_area" id="first_section">
 
@@ -346,7 +346,8 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">ATTORNEY FOR (name):</div>
-                                        <div> <input type="text" name="ATTORNEY FOR (name)" class="border-0 table_input "></div>
+                                        <div> <input type="text" name="ATTORNEY FOR (name)"
+                                                class="border-0 table_input "></div>
                                     </div>
                                 </div>
                             </div>
@@ -369,19 +370,22 @@
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">MAILING ADDRESS:</div>
-                                        <div><input type="text" name="mailing_address" class="border-0 table_input"></div>
+                                        <div><input type="text" name="mailing_address"
+                                                class="border-0 table_input"></div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">CITY AND ZIP CODE:</div>
-                                        <div><input type="text" name="zip_code" class="border-0 table_input"></div>
+                                        <div><input type="text" name="zip_code" class="border-0 table_input">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex">
                                         <div class="small_text">BRANCH NAME:</div>
-                                        <div><input type="text" name="branch_name" class="border-0 table_input"></div>
+                                        <div><input type="text" name="branch_name" class="border-0 table_input">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -390,19 +394,22 @@
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">PETITIONER:</div>
-                                        <div><input type="text" name="petitioner" class="border-0 table_input"></div>
+                                        <div><input type="text" name="petitioner" class="border-0 table_input">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">RESPONDENT:</div>
-                                        <div><input type="text" name="respondent" class="border-0 table_input"></div>
+                                        <div><input type="text" name="respondent" class="border-0 table_input">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="">
                                     <div class="d-flex ps-lg-5">
                                         <div class="small_text">OTHER PARENT/PARTY:</div>
-                                        <div><input type="text" name="other_party" class="border-0 table_input"></div>
+                                        <div><input type="text" name="other_party" class="border-0 table_input">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -443,7 +450,8 @@
                         <div class="p-2">
                             <div class="lh-1"> See Instructions on page 5 for information about completing this form.
                                 For additional space , use Continuation of Property Declaration</div>
-                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl160.pdf">form FL-160</a> )</div>
+                            <div class="lh-1">(<a href="http://www.courts.ca.gov/documents/fl160.pdf">form
+                                    FL-160</a> )</div>
                         </div>
 
                         <div class="table-responsive">
@@ -480,11 +488,9 @@
                                         <td rowspan="8" class="small_text">
                                             <div>
                                                 <div>1.REAL ESTATE</div>
-                                                <div><input type="text" name="brif_desc1"
-                                                        class="w-100 border-0 table_input">
+                                                <div><input type="text" name="brif_desc1"  class="w-100 border-0 table_input">
                                                 </div>
-                                                <div><input type="text" name="brif_desc2"
-                                                        class="w-100 border-0 table_input">
+                                                <div><input type="text" name="brif_desc2" class="w-100 border-0 table_input">
                                                 </div>
                                             </div>
                                             <div>
@@ -539,58 +545,60 @@
                                         </td>
                                         <td rowspan="8" class="small_text">
                                             <div>
-                                                <br>
-                                                <div><input type="text" name="re_date_a1"
+
+                                                <div><input type="date" name="re_date_a1"
                                                         class="w-100 border-0 table_input"></div>
-                                                <div><input type="text" name="re_date_a2"
+                                                <div><input type="date" name="re_date_a12"
+                                                        class="w-100 border-0 table_input"></div>
+                                                <div><input type="date" name="re_date_a3"
                                                         class="w-100 border-0 table_input"></div>
                                             </div>
                                             <br>
                                             <br>
                                             <div>
-                                                <input type="text" name="app_date1"
+                                                <input type="date" name="app_date1"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date2"
+                                                <input type="date" name="app_date2"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date3"
+                                                <input type="texdatet" name="app_date3"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date4"
+                                                <input type="date" name="app_date4"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="app_date5"
+                                                <input type="date" name="app_date5"
                                                     class=" w-100 border-0 table_input">
                                             </div>
                                             <br>
                                             <br>
                                             <div>
-                                                <input type="text" name="jew_date1"
+                                                <input type="date" name="jew_date1"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="jew_date2"
+                                                <input type="date" name="jew_date2"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="jew_date3"
+                                                <input type="date" name="jew_date3"
                                                     class="w-100 border-0 table_input">
                                             </div> <br><br>
                                             <div>
-                                                <input type="text" name="vech_date1"
+                                                <input type="date" name="vech_date1"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="vech_date2"
+                                                <input type="date" name="vech_date2"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="vech_date3"
+                                                <input type="date" name="vech_date3"
                                                     class="w-100 border-0 table_input">
                                             </div> <br>
                                             <div>
-                                                <input type="text" name="sav_date1"
+                                                <input type="date" name="sav_date1"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="sav_date2"
+                                                <input type="date" name="sav_date2"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="sav_date3"
+                                                <input type="date" name="sav_date3"
                                                     class="w-100 border-0 table_input">
                                             </div><br>
                                             <div>
-                                                <input type="text" name="ca_date1"
+                                                <input type="date" name="ca_date1"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="ca_date2"
+                                                <input type="date" name="ca_date2"
                                                     class="w-100 border-0 table_input">
-                                                <input type="text" name="ca_date3"
+                                                <input type="date" name="ca_date3"
                                                     class="w-100 border-0 table_input">
                                             </div>
                                         </td>
@@ -600,59 +608,59 @@
                                                 <div class="small_text">
                                                     <div><input type="number" name="re_gross_val1"
                                                             class="w-100 border-0 table_input text-end"></div>
-                                                    <div><input type="text" name="re_gross_val2"
+                                                    <div><input type="number" name="re_gross_val2"
                                                             class="w-100 border-0 table_input text-end"></div>
                                                 </div>
                                             </div> <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="app_gross_val1"
+                                                <input type="number" name="app_gross_val1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="app_gross_val2"
+                                                <input type="number" name="app_gross_val2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="app_gross_val3"
+                                                <input type="number" name="app_gross_val3"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="app_gross_val4"
+                                                <input type="number" name="app_gross_val4"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="app_gross_val5"
+                                                <input type="number" name="app_gross_val5"
                                                     class=" w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="jew_gross_val1"
+                                                <input type="number" name="jew_gross_val1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="jew_gross_val2"
+                                                <input type="number" name="jew_gross_val2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="jew_gross_val3"
+                                                <input type="number" name="jew_gross_val3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="vech_gross_val1"
+                                                <input type="number" name="vech_gross_val1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="vech_gross_val2"
+                                                <input type="number" name="vech_gross_val2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="vech_gross_val3"
+                                                <input type="number" name="vech_gross_val3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="sav_gross_val1"
+                                                <input type="number" name="sav_gross_val1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="sav_gross_val2"
+                                                <input type="number" name="sav_gross_val2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="sav_gross_val3"
+                                                <input type="number" name="sav_gross_val3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="ca_gross_val1"
+                                                <input type="number" name="ca_gross_val1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="ca_gross_val2"
+                                                <input type="number" name="ca_gross_val2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="ca_gross_val3"
+                                                <input type="number" name="ca_gross_val3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
@@ -662,60 +670,60 @@
                                                 <div class="small_text">
                                                     <div><input type="number" name="re_debt_amt1"
                                                             class="w-100  border-0 table_input text-end"></div>
-                                                    <div><input type="text" name="re_debt_amt2"
+                                                    <div><input type="number" name="re_debt_amt2"
                                                             class="w-100  border-0 table_input text-end"></div>
                                                 </div>
                                             </div>
                                             <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="app_debt_amt1"
+                                                <input type="number" name="app_debt_amt1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="app_debt_amt2"
+                                                <input type="number" name="app_debt_amt2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="app_debt_amt3"
+                                                <input type="number" name="app_debt_amt3"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="app_debt_amt4"
+                                                <input type="number" name="app_debt_amt4"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="app_debt_amt5"
+                                                <input type="number" name="app_debt_amt5"
                                                     class=" w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="jew_debt_amt1"
+                                                <input type="number" name="jew_debt_amt1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="jew_debt_amt2"
+                                                <input type="number" name="jew_debt_amt2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="jew_debt_amt3"
+                                                <input type="number" name="jew_debt_amt3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="vech_debt_amt1"
+                                                <input type="number" name="vech_debt_amt1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="vech_debt_amt2"
+                                                <input type="number" name="vech_debt_amt2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="vech_debt_amt3"
+                                                <input type="number" name="vech_debt_amt3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="sav_debt_amt1"
+                                                <input type="number" name="sav_debt_amt1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="sav_debt_amt2"
+                                                <input type="number" name="sav_debt_amt2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="sav_debt_amt3"
+                                                <input type="number" name="sav_debt_amt3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                             <br>
                                             <div class="small_text">
-                                                <input type="text" name="ca_debt_amt1"
+                                                <input type="number" name="ca_debt_amt1"
                                                     class="w-100 border-0 table_input text-end">
-                                                <input type="text" name="ca_debt_amt2"
+                                                <input type="number" name="ca_debt_amt2"
                                                     class="w-100  border-0 table_input text-end">
-                                                <input type="text" name="ca_debt_amt3"
+                                                <input type="number" name="ca_debt_amt3"
                                                     class="w-100 border-0 table_input text-end">
                                             </div>
                                         </td>
@@ -723,10 +731,8 @@
                                             <div>
                                                 <div>$</div>
                                                 <div class="small_text">
-                                                    <div><input type="number" name="re_mark_val1"
-                                                            class="w-100  border-0 table_input text-end"></div>
-                                                    <div><input type="text" name="re_mark_val2"
-                                                            class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="number" name="re_mark_val1" class="w-100  border-0 table_input text-end"></div>
+                                                    <div><input type="text" name="re_mark_val2" class="w-100  border-0 table_input text-end"></div>
                                                 </div>
                                             </div>
                                             <br>
@@ -1043,31 +1049,31 @@
                                         <div>
                                             <br>
                                             <br>
-                                            <div><input type="text" name="ca_date_a1"
+                                            <div><input type="date" name="ca_date_a1"
                                                     class="w-100 border-0 table_input"></div>
-                                            <div><input type="text" name="ca_date_a2"
-                                                    class=" border-0 table_input"></div>
-                                            <div><input type="text" name="ca_date_a2"
-                                                    class=" border-0 table_input"></div>
+                                            <div><input type="date" name="ca_date_a2"
+                                                    class="w-100 border-0 table_input"></div>
+                                            <div><input type="date" name="ca_date_a2"
+                                                    class="w-100 border-0 table_input"></div>
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="cash_date1"
+                                            <input type="date" name="cash_date1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="cash_date2"
+                                            <input type="date" name="cash_date2"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="tr_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="tr_date2"
+                                            <input type="date" name="tr_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="tr_date2"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="lv_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="lv_date2"
+                                            <input type="date" name="lv_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="lv_date2"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <br>
@@ -1081,8 +1087,8 @@
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="rp_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="rp_date2"
+                                            <input type="date" name="rp_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="rp_date2"
                                                 class="w-100  border-0 table_input">
                                             <input type="text" name="rp_date3" class="w-100 border-0 table_input">
                                         </div>
@@ -1090,38 +1096,38 @@
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ps_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="ps_date2"
+                                            <input type="date" name="ps_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="ps_date2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ps_date3" class="w-100 border-0 table_input">
+                                            <input type="date" name="ps_date3" class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ar_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="ar_date2"
+                                            <input type="date" name="ar_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="ar_date2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ar_date3" class="w-100 border-0 table_input">
+                                            <input type="date" name="ar_date3" class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="bi_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="bi_date2"
+                                            <input type="date" name="bi_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="bi_date2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="bi_date3" class="w-100 border-0 table_input">
+                                            <input type="date" name="bi_date3" class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="oa_date1" class="w-100 border-0 table_input">
-                                            <input type="text" name="oa_date2"
+                                            <input type="date" name="oa_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="oa_date2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="oa_date3" class="w-100 border-0 table_input">
+                                            <input type="date" name="oa_date3" class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="cs_date1" class="w-100 border-0 table_input">
+                                            <input type="date" name="cs_date1" class="w-100 border-0 table_input">
                                         </div>
                                     </td>
                                     <td rowspan="8" class="small_text">
@@ -1129,100 +1135,100 @@
                                             <div>$</div>
                                             <br>
                                             <div class="small_text">
-                                                <div><input type="text" name="ca_gross_val1"
+                                                <div><input type="number" name="ca_gross_val1"
                                                         class="w-100  border-0 table_input text-end"></div>
-                                                <div><input type="text" name="ca_gross_val2"
+                                                <div><input type="number" name="ca_gross_val2"
                                                         class="w-100  border-0 table_input text-end"></div>
-                                                <div><input type="text" name="ca_gross_val2"
+                                                <div><input type="number" name="ca_gross_val2"
                                                         class="w-100  border-0 table_input text-end"></div>
                                             </div>
                                         </div>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="cash_gross_val1"
+                                            <input type="number" name="cash_gross_val1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="cash_gross_val2"
+                                            <input type="number" name="cash_gross_val2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="tr_gross_val1"
+                                            <input type="number" name="tr_gross_val1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="tr_gross_val2"
+                                            <input type="number" name="tr_gross_val2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="lv_gross_val1"
+                                            <input type="number" name="lv_gross_val1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="lv_gross_val2"
+                                            <input type="number" name="lv_gross_val2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="mf_gross_val1"
+                                            <input type="number" name="mf_gross_val1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="mf_gross_val2"
+                                            <input type="number" name="mf_gross_val2"
                                                 class="w-100  border-0 table_input text-end">
-                                            <input type="text" name="mf_gross_val3"
+                                            <input type="number" name="mf_gross_val3"
                                                 class="w-100 border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="rp_gross_val1"
+                                            <input type="number" name="rp_gross_val1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="rp_gross_val2"
+                                            <input type="number" name="rp_gross_val2"
                                                 class="w-100  border-0 table_input text-end">
-                                            <input type="text" name="rp_gross_val3"
+                                            <input type="number" name="rp_gross_val3"
                                                 class="w-100 border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ps_gross1"
+                                            <input type="number" name="ps_gross1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="ps_gross2"
+                                            <input type="number" name="ps_gross2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ps_gross3"
+                                            <input type="number" name="ps_gross3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ar_gross1"
+                                            <input type="number" name="ar_gross1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="ar_gross2"
+                                            <input type="number" name="ar_gross2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ar_gross3"
+                                            <input type="number" name="ar_gross3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="bi_gross1"
+                                            <input type="number" name="bi_gross1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="bi_gross2"
+                                            <input type="number" name="bi_gross2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="bi_gross3"
+                                            <input type="number" name="bi_gross3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="oa_gross1"
+                                            <input type="number" name="oa_gross1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="oa_gross2"
+                                            <input type="number" name="oa_gross2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="oa_gross3"
+                                            <input type="number" name="oa_gross3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="cs_gross1"
+                                            <input type="number" name="cs_gross1"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                     </td>
@@ -1231,100 +1237,100 @@
                                             <div>$</div>
                                             <br>
                                             <div class="small_text">
-                                                <div><input type="text" name="ca_debt_amt1"
+                                                <div><input type="number" name="ca_debt_amt1"
                                                         class="w-100  border-0 table_input text-end"></div>
-                                                <div><input type="text" name="ca_debt_amt2"
+                                                <div><input type="number" name="ca_debt_amt2"
                                                         class="w-100  border-0 table_input text-end"></div>
-                                                <div><input type="text" name="ca_debt_amt2"
+                                                <div><input type="number" name="ca_debt_amt2"
                                                         class="w-100  border-0 table_input text-end"></div>
                                             </div>
                                         </div>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="cash_debt_amt1"
+                                            <input type="number" name="cash_debt_amt1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="cash_debt_amt2"
+                                            <input type="number" name="cash_debt_amt2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="tr_debt_amt1"
+                                            <input type="number" name="tr_debt_amt1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="tr_debt_amt2"
+                                            <input type="number" name="tr_debt_amt2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="lv_debt_amt1"
+                                            <input type="number" name="lv_debt_amt1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="lv_debt_amt2"
+                                            <input type="number" name="lv_debt_amt2"
                                                 class="w-100  border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="mf_debt_amt1"
+                                            <input type="number" name="mf_debt_amt1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="mf_debt_amt2"
+                                            <input type="number" name="mf_debt_amt2"
                                                 class="w-100  border-0 table_input text-end">
-                                            <input type="text" name="mf_debt_amt3"
+                                            <input type="number" name="mf_debt_amt3"
                                                 class="w-100 border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div class="small_text">
-                                            <input type="text" name="rp_debt_amt1"
+                                            <input type="number" name="rp_debt_amt1"
                                                 class="w-100 border-0 table_input text-end">
-                                            <input type="text" name="rp_debt_amt2"
+                                            <input type="number" name="rp_debt_amt2"
                                                 class="w-100  border-0 table_input text-end">
-                                            <input type="text" name="rp_debt_amt3"
+                                            <input type="number" name="rp_debt_amt3"
                                                 class="w-100 border-0 table_input text-end">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ps_debt_amt1"
+                                            <input type="number" name="ps_debt_amt1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="ps_debt_amt2"
+                                            <input type="number" name="ps_debt_amt2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ps_debt_amt3"
+                                            <input type="number" name="ps_debt_amt3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="ar_debt_amt1"
+                                            <input type="number" name="ar_debt_amt1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="ar_debt_amt2"
+                                            <input type="number" name="ar_debt_amt2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="ar_debt_amt3"
+                                            <input type="number" name="ar_debt_amt3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <br>
                                         <div>
-                                            <input type="text" name="bi_debt_amt1"
+                                            <input type="number" name="bi_debt_amt1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="bi_debt_amt2"
+                                            <input type="number" name="bi_debt_amt2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="bi_debt_amt3"
+                                            <input type="number" name="bi_debt_amt3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="oa_debt_amt1"
+                                            <input type="number" name="oa_debt_amt1"
                                                 class="w-100 border-0 table_input">
-                                            <input type="text" name="oa_debt_amt2"
+                                            <input type="number" name="oa_debt_amt2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="oa_debt_amt3"
+                                            <input type="number" name="oa_debt_amt3"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                         <br>
                                         <div>
-                                            <input type="text" name="cs_debt_amt1"
+                                            <input type="number" name="cs_debt_amt1"
                                                 class="w-100 border-0 table_input">
                                         </div>
                                     </td>
@@ -1649,7 +1655,7 @@
                                             class="w-100 border-0 table_input">
                                     </td>
                                     <td class="small_text">
-                                        <input type="text" name="ta_debt_amt"
+                                        <input type="number" name="ta_debt_amt"
                                             class="w-100 border-0 table_input">
                                     </td>
                                     <td class="small_text">
@@ -1786,87 +1792,87 @@
                                     <td rowspan="8" class="small_text">
                                         <div>
                                             <br>
-                                            <div><input type="text" name="sl_date_incured1"
+                                            <div><input type="date" name="sl_date_incured1"
                                                     class="w-100  border-0 table_input"></div>
-                                            <div><input type="text" name="sl_date_incured2"
+                                            <div><input type="date" name="sl_date_incured2"
                                                     class="w-100  border-0 table_input"> </div>
-                                            <div><input type="text" name="sl_date_incured3"
+                                            <div><input type="date" name="sl_date_incured3"
                                                     class="w-100  border-0 table_input"> </div>
-                                            <div><input type="text" name="sl_date_incured4"
+                                            <div><input type="date" name="sl_date_incured4"
                                                     class="w-100  border-0 table_input"> </div>
-                                            <div><input type="text" name="sl_date_incured5"
+                                            <div><input type="date" name="sl_date_incured5"
                                                     class="w-100  border-0 table_input"> </div>
                                         </div>
                                         <div>
                                             <br>
-                                            <input type="text" name="tax_date_incured1"
+                                            <input type="date" name="tax_date_incured1"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="tax_date_incured2"
+                                            <input type="date" name="tax_date_incured2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="tax_date_incured3"
+                                            <input type="date" name="tax_date_incured3"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="tax_date_incured4"
-                                                class="w-100  border-0 table_input">
-                                        </div>
-                                        <div>
-                                            <br>
-                                            <input type="text" name="sa_date_incured1"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="sa_date_incured2"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="sa_date_incured3"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="sa_date_incured4"
+                                            <input type="date" name="tax_date_incured4"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <div>
                                             <br>
-                                            <input type="text" name="lous_date_incured1"
+                                            <input type="date" name="sa_date_incured1"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="lous_date_incured2"
+                                            <input type="date" name="sa_date_incured2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="lous_date_incured3"
+                                            <input type="date" name="sa_date_incured3"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="lous_date_incured4"
-                                                class="w-100  border-0 table_input">
-                                        </div>
-                                        <div>
-                                            <br>
-                                            <input type="text" name="credit_card_date_incured1"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="credit_card_date_incured2"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="credit_card_date_incured3"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="credit_card_date_incured4"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="credit_card_date_incured5"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="credit_card_date_incured6"
+                                            <input type="date" name="sa_date_incured4"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <div>
                                             <br>
-                                            <input type="text" name="other_debt_date_incured1"
+                                            <input type="date" name="lous_date_incured1"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured2"
+                                            <input type="date" name="lous_date_incured2"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured3"
+                                            <input type="date" name="lous_date_incured3"
                                                 class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured4"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured5"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured6"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured7"
-                                                class="w-100  border-0 table_input">
-                                            <input type="text" name="other_debt_date_incured8"
+                                            <input type="date" name="lous_date_incured4"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                         <div>
                                             <br>
-                                            <input type="text" name="other_detb_sheet_date_incured"
+                                            <input type="date" name="credit_card_date_incured1"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="credit_card_date_incured2"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="credit_card_date_incured3"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="credit_card_date_incured4"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="credit_card_date_incured5"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="credit_card_date_incured6"
+                                                class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <br>
+                                            <input type="date" name="other_debt_date_incured1"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured2"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured3"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured4"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured5"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured6"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured7"
+                                                class="w-100  border-0 table_input">
+                                            <input type="date" name="other_debt_date_incured8"
+                                                class="w-100  border-0 table_input">
+                                        </div>
+                                        <div>
+                                            <br>
+                                            <input type="date" name="other_detb_sheet_date_incured"
                                                 class="w-100  border-0 table_input">
                                         </div>
                                     </td>
@@ -2164,7 +2170,7 @@
                                 listing of assets and obligations and the amounts shown are correct</div>
                             <div class="d-flex">
                                 <div class="small_text me-2">Date</div>
-                                <div> <input type="text" name="date" class="border-0 "></div>
+                                <div> <input type="date" name="date" class="border-0 "></div>
                             </div>
                             <div class="row  ">
                                 <div class="col-lg-6">

@@ -313,6 +313,16 @@
                  <div class="card">
                      <div class="card-body p-5">
                         <h5 class="text-decoration-none text-dark">Form 30</h5>
+                        <span>60 Additional Text Fields.pdf</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 mt-4">
+                <a href="{{route('pdf_form31')}}" class="text-decoration-none">
+                 <div class="card">
+                     <div class="card-body p-5">
+                        <h5 class="text-decoration-none text-dark">Form 31</h5>
                         <span>TX divorceset1forms.pdf</span>
                     </div>
                   </div>

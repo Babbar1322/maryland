@@ -426,7 +426,7 @@
 
                                 </div>
                                 <div class='d-flex d_sm_block pt-2'>
-                                    <small class="small_text pe-4">Your Birthdate</small> <input type="date"
+                                    <small class="small_text pe-4">Your Birthdate</small> <input type="text"
                                         name="Text7"
                                         class=" form-control responsive_input border-none border-0 border-bottom border-dotted shadow-none "
                                         style="width:343px">
@@ -1085,9 +1085,9 @@
                                         <div class="small_text text-center py-3">3. Your Current Year-to-Date Earned Income</div>
                                         <div class="d_flex d_sm_block justify-content-end text-end">
                                              <span>Provide Dates: From</span>
-                                            <input type="text"  name="Date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
+                                            <input type="date"  name="Date1" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
                                             <span class="px-lg-3">To</span>
-                                            <input type="text"  name="Date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
+                                            <input type="date"  name="Date2" class="border-bottom border-0  responsive_input bg-transparent border outline-none">
                                         </div>
                                         <div class="row  mt-lg-3">
                                             <div class="col-lg-7 small_text">
@@ -3078,21 +3078,21 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Property1Value"
+                                    <input type="number" min="0" name="Property1Value"
+                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="Property1exempt" id=""
+                                        class="mt-2">
+                                </div>
+                                <div class="d-flex">
+                                    <input type="number" min="0" name="Property2exempt"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Property2Value" id=""
                                         class="mt-2">
                                 </div>
-                                <div class="d-flex">
-                                    <input type="text" min="0" name="Property1exempt"
-                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                    <input type="checkbox" name="Property2exempt" id=""
-                                        class="mt-2">
-                                </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Property1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="PropertyI2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Property1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="PropertyI2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -3119,24 +3119,24 @@
                                 <input type="number" min="0" name="BankAcct4Desc" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
-                                <div class="d-flex"> <input type="text" min="0" name="BankAcct1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <div class="d-flex"> <input type="number" min="0" name="BankAcct1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="BankAcct1exempt" value="True" id="" class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="text" min="0" name="BankAcct2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <div class="d-flex"> <input type="number" min="0" name="BankAcct2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="BankAcct2exempt" value="True" id="" class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="text" min="0" name="BankAcct3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <div class="d-flex"> <input type="number" min="0" name="BankAcct3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="BankAcct3exempt" value="True" id="" class="mt-2">
                                 </div>
-                                <div class="d-flex"> <input type="text" min="0" name="BankAcct4Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <div class="d-flex"> <input type="number" min="0" name="BankAcct4Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="BankAcct4exempt" value="True" id="" class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="BankAcct1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="BankAcct2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="BankAcct3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="BankAcct4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="BankAcct1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="BankAcct2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="BankAcct3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="BankAcct4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -3162,18 +3162,18 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Vehicles1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="Vehicles1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Vehicles1exempt" id="" value="True" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Vehicles2Value" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="Vehicles2Value" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Vehicles2exempt" id="" value="True" class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Vehicles1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Vehicles2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Vehicles1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Vehicles2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -3200,28 +3200,28 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="TangProp1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="TangProp1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="TangProp1exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="TangProp2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="TangProp2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="TangProp2exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="TangProp3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="TangProp3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="TangProp3exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="TangProp4Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="TangProp4Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="TangProp4exempt" value="True" id="" class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="TangProp1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
 
@@ -3263,25 +3263,25 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Stocks1Value"
+                                    <input type="number" min="0" name="Stocks1Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Stocks1exempt" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Stocks2Value"
+                                    <input type="number" min="0" name="Stocks2Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Stocks2exempt" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Stocks3Value"
+                                    <input type="number" min="0" name="Stocks3Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Stocks3exempt" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Stocks4Value"
+                                    <input type="number" min="0" name="Stocks4Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Stocks4exempt" value="True" id=""
                                         class="mt-2">
@@ -3289,10 +3289,10 @@
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="TangProp1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="TangProp4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="TangProp4EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
 
 
                             </div>
@@ -3328,13 +3328,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Pension1Value"
+                                    <input type="number" min="0" name="Pension1Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Pension1exempt" id=""
                                         value="True" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Pension2Value"
+                                    <input type="number" min="0" name="Pension2Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Pension2exempt" id=""value="True"
                                         class="mt-2">
@@ -3342,9 +3342,9 @@
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Pension1EvalDt"
+                                <input type="date" min="0" name="Pension1EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Pension2EvalDt"
+                                <input type="date" min="0" name="Pension2EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
@@ -3384,24 +3384,24 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Ira1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="Ira1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Ira1exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Ira2Value" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="Ira2Value" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Ira2exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Ira3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="number" min="0" name="Ira3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                                     <input type="checkbox" name="Ira3exempt" value="True" id="" class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Ira1EvalDt"
+                                <input type="date" min="0" name="Ira1EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Ira2EvalDt"
+                                <input type="date" min="0" name="Ira2EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Ira3EvalDt"
+                                <input type="date" min="0" name="Ira3EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
@@ -3411,55 +3411,38 @@
                         <div class="row">
                             <div class="small_text">8. Businesses, Partnerships, Professional Practices</div>
                             <div class="col-lg-4">
-                                <input type="number" min="0" name="Partner1"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner2"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner3"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner1" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner2" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner3" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-1">
-                                <input type="number" min="0" name="Partner1Title"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner2Title"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner3Title"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-
-
+                                <input type="number" min="0" name="Partner1Title" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner2Title" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner3Title" class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-3">
-
-                                <input type="number" min="0" name="Partner1Desc"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner2Desc"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner3Desc"
-                                    class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-
+                                <input type="number" min="0" name="Partner1Desc" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner2Desc" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="number" min="0" name="Partner3Desc" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Partner1Value"
-                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
-                                        type="checkbox" name="Ira1exempt" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="Partner1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="Ira1exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Partner2Value"
-                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
-                                        type="checkbox" name="Ira2exempt" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="Partner2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                        <input type="checkbox" name="Ira2exempt" value="True" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Partner3Value"
-                                        class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
-                                        type="checkbox" name="Ira3exempt" value="True" id="" class="mt-2">
+                                    <input type="number" min="0" name="Partner3Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                    <input type="checkbox" name="Ira3exempt" value="True" id="" class="mt-2">
                                 </div>
-
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Partner1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Partner3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Partner1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Partner2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Partner3EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 9 --}}
@@ -3489,20 +3472,20 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Lifeins1Value"
+                                    <input type="number" min="0" name="Lifeins1Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="Lifeins1exempt" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Lifeins2Value"
+                                    <input type="number" min="0" name="Lifeins2Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="Lifeins2exempt" id="" class="mt-2">
                                 </div>
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Lifeins1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Lifeins2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Lifeins1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Lifeins2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 10 --}}
@@ -3527,15 +3510,15 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Loans1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="Loans1exempt" id="" class="mt-2">
+                                    <input type="number" min="0" name="Loans1Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="Loans1exempt" id="" class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Loans2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="Loans2exempt" id="" class="mt-2">
+                                    <input type="number" min="0" name="Loans2Value" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input type="checkbox" name="Loans2exempt" id="" class="mt-2">
                                 </div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Loans1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Loans2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Loans1EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
+                                <input type="date" min="0" name="Loans2EvalDt" class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
                         {{-- 11 --}}
@@ -3566,13 +3549,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Other1Value"
+                                    <input type="number" min="0" name="Other1Value"
                                         class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="Other1exempt" value="True" id=""
                                         class="mt-2">
                                 </div>
                                 <div class="d-flex">
-                                    <input type="text" min="0" name="Other2Value"
+                                    <input type="number" min="0" name="Other2Value"
                                         class="border-bottom border-0 responsive_input bg-transparent border outline-none form-control"><input
                                         type="checkbox" name="Other2exempt" value="True" id=""
                                         class="mt-2">
@@ -3580,9 +3563,9 @@
 
                             </div>
                             <div class="col-lg-2">
-                                <input type="number" min="0" name="Other1EvalDt"
+                                <input type="date" min="0" name="Other1EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
-                                <input type="number" min="0" name="Other2EvalDt"
+                                <input type="date" min="0" name="Other2EvalDt"
                                     class="border-bottom border-0  responsive_input bg-transparent border outline-none form-control">
                             </div>
                         </div>
