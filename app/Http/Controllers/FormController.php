@@ -45,6 +45,8 @@ use App\Models\md_form;
 use App\Models\md_form_data;
 use App\Models\md_partially_form;
 use App\Models\md_partially_form_data;
+use App\Models\me_financial_form;
+use App\Models\me_financial_form_data;
 use App\Models\pa_form;
 use App\Models\sfs_co_form;
 use App\Models\sfs_co_form_data;
@@ -748,8 +750,21 @@ dd($request->all());
 
     public function form24_post(Request $request) {
         // ME financial statement MJB-Form-fm-043 .pdf
-        dd('comming soon');
-    }
+
+        $me_financial = new me_financial_form();
+        $me_financial->save();
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+            $me_financial_data = new me_financial_form_data();
+            $me_financial_data->me_financial_id = $me_financial->id;
+            $me_financial_data->keyss = $key;
+            $me_financial_data->valuess= $req;
+            $me_financial_data->save();
+        }
+        return redirect()->back()->with('success', 'Data Submitted Successfully.');
+     }
 
 
 

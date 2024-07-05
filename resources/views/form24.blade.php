@@ -1135,8 +1135,8 @@
                                     <td><textarea name="cl_cpf4" class="border-0 form-control" rows="2"></textarea></td>
                                     <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar4" class="border-0 form-control" rows="2"></textarea></div></td>
                                     <td>
-                                        <div class="small_text"> <input type="checkbox" name="cl_nm4" id="" value="Yes"> Y </div>
-                                        <div class="small_text"> <input type="checkbox" name="cl_nm4" id="" value="No"> N </div>
+                                        <div class="small_text"><input type="checkbox" name="cl_nm4" id="" value="Yes"> Y </div>
+                                        <div class="small_text"><input type="checkbox" name="cl_nm4" id="" value="No"> N </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1147,8 +1147,8 @@
                                     <td><textarea name="cl_cpf5" class="border-0 form-control" rows="2"></textarea></td>
                                     <td><div class="d-flex w-100 mx-auto"> <span>$</span><textarea name="cl_ar5" class="border-0 form-control" rows="2"></textarea></div></td>
                                     <td>
-                                        <div class="small_text"> <input type="checkbox" name="cl_nm5" id="" value="Yes"> Y </div>
-                                        <div class="small_text"> <input type="checkbox" name="cl_nm5" id="" value="No"> N </div>
+                                        <div class="small_text"><input type="checkbox" name="cl_nm5" id="" value="Yes">Y</div>
+                                        <div class="small_text"><input type="checkbox" name="cl_nm5" id="" value="No">N</div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1402,20 +1402,20 @@
                                  <input type="checkbox" name="employed by someone else" id="" class="me-2" value="employed by someone else "> employed by someone else
                                 <input type="checkbox" name="retired" id="" class="me-2" value="retired"> retired
                             </div>
-                            <div class="ps-lg-5 pt-lg-3">b. Employer name : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:665px;"> </div>
-                            <div class="ps-lg-5 pt-lg-3">c. Employer address : <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:645px;"> </div>
+                            <div class="ps-lg-5 pt-lg-3">b. Employer name : <input type="text" name="Employer name" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:665px;"> </div>
+                            <div class="ps-lg-5 pt-lg-3">c. Employer address : <input type="text" name="Employer address" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:645px;"> </div>
                             <div style="padding-left:230px" class="small_text">Street Address, Apt.</div>
                             <div class="d-flex d_sm_block d_sm_block ps-lg-5">
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:420px;">
+                                    <input type="text" name="City_1" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:420px;">
                                     <div class="small_text">City</div>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input">
+                                    <input type="text" name="State_1" id="" class="border-0 border-bottom responsive_input responsive_input">
                                     <div class="small_text">State</div>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input">
+                                    <input type="text" name="Zip_1" id="" class="border-0 border-bottom responsive_input responsive_input">
                                     <div class="small_text">Zip</div>
                                 </div>
                             </div>
@@ -1424,16 +1424,16 @@
                                     <div class="small_text">d. Number of paychecks per year</div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <div class="small_text"> <input type="checkbox" name="" id="" value="12 (monthly)"> 12 (monthly) </div>
-                                    <div class="small_text"> <input type="checkbox" name="" id="" value="24 (two times a month)"> 24 (two times a month) </div>
-                                    <div class="small_text"> <input type="checkbox" name="" id="" value="26 (every two weeks)"> 26 (every two weeks) </div>
-                                    <div class="small_text"> <input type="checkbox" name="" id="" value="52 (weekly)"> 52 (weekly) </div>
-                                    <div class="small_text"> <input type="checkbox" name="" id="" value="I am paid in cash"> I am paid in cash </div>
+                                    <div class="small_text"> <input type="checkbox" name="12month1" id="" value="12 (monthly)"> 12 (monthly) </div>
+                                    <div class="small_text"> <input type="checkbox" name="24month1" id="" value="24 (two times a month)"> 24 (two times a month) </div>
+                                    <div class="small_text"> <input type="checkbox" name="26weekly1" id="" value="26 (every two weeks)"> 26 (every two weeks) </div>
+                                    <div class="small_text"> <input type="checkbox" name="52weekly1" id="" value="52 (weekly)"> 52 (weekly) </div>
+                                    <div class="small_text"> <input type="checkbox" name="paidincash1" id="" value="I am paid in cash"> I am paid in cash </div>
                                 </div>
                             </div>
 
-                            <div class="pt-lg-3 ps-lg-5">e. Gross income (before taxes and deductions) so far this year: <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:316px;"></div>
-                            <div class="ps-lg-5">as of <input type="text" name="" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:323px;"></div>
+                            <div class="pt-lg-3 ps-lg-5">e. Gross income (before taxes and deductions) so far this year: <input type="text" name="Gross income_1" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:316px;"></div>
+                            <div class="ps-lg-5">as of <input type="text" name="Gross income as of" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:323px;"></div>
                             <div style="padding-left:100px;" class="small_text responsive_input">Date (mm/dd/yyyy) </div>
                             <div class="fw-bold pt-lg-3">5. My gross income and taxes from last year:</div>
                             <div class="row  pt-lg-3 ps-lg-5">
@@ -1441,13 +1441,13 @@
                                     <div class="small_text">a. Tax filing status (check only one):</div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="small_text"><input type="checkbox" name="" id="" value="Married (Joint)"> Married (Joint) </div>
-                                    <div class="small_text"><input type="checkbox" name="" id="" value="Married (Separate)"> Married (Separate) </div>
-                                    <div class="small_text"><input type="checkbox" name="" id="" value="Head of Household"> Head of Household </div>
+                                    <div class="small_text"><input type="checkbox" name="Married (Joint)" id="" value="Married (Joint)"> Married (Joint) </div>
+                                    <div class="small_text"><input type="checkbox" name="Married (Separate)" id="" value="Married (Separate)"> Married (Separate) </div>
+                                    <div class="small_text"><input type="checkbox" name="Head of Household" id="" value="Head of Household"> Head of Household </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="small_text"><input type="checkbox" name="" id="" value="Single"> Single </div>
-                                    <div class="small_text"><input type="checkbox" name="" id="" value="Did not file"> Did not file </div>
+                                    <div class="small_text"><input type="checkbox" name="Single" id="" value="Single"> Single </div>
+                                    <div class="small_text"><input type="checkbox" name="Did not file" id="" value="Did not file"> Did not file </div>
                                 </div>
                             </div>
                         </div>
@@ -1480,166 +1480,162 @@
                         </div>
                         <div class="col-lg-9 small_text">
                             <div class=" ps-lg-3">b. Number of dependent exemptions claimed: <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input">
+                                    name="Number of dependent exemptions claimed" id="" class="border-0 border-bottom responsive_input">
                             </div>
                             <div class="  ps-lg-3 pt-lg-3">c. Total number of exemptions claimed: <input
-                                    type="text" name="" id=""
+                                    type="text" name="Total number of exemptions claimed" id=""
                                     class="border-0 border-bottom responsive_input">
                             </div>
                             <div class="  ps-lg-3 pt-lg-3">d. Gross income (before taxes and deductions) last year: $
-                                <input type="text" name="" id=""
+                                <input type="text" name="Gross income (before taxes and deductions) last year" id=""
                                     class="border-0 border-bottom responsive_input">
                             </div>
                             <div class=" p-0" style="padding-left:380px;">Year: <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input">
+                                    name="Year_2" id="" class="border-0 border-bottom responsive_input">
                             </div>
 
                             <div class="fw-bold  ">6. Bankruptcy in the last 5 years:</div>
                             <div class="ps-lg-3  ">I filed for bankruptcy in the last 5 years: <input
-                                    type="checkbox" name="" id="" value="Yes"> Yes <input
-                                    type="checkbox" name="" id="" value="No"> No</div>
-                            <div class="fw-bold  ">7. <input type="checkbox" name="" id=""
-                                    value="My gross"> My gross <input type="checkbox" name=""
-                                    id="" value="weekly"> weekly <input type="checkbox" name=""
+                                    type="checkbox" name="filed for bankruptcy1" id="" value="Yes"> Yes <input
+                                    type="checkbox" name="filed for bankruptcy2" id="" value="No"> No</div>
+                            <div class="fw-bold  ">7. <input type="checkbox" name="My gross_2" id=""
+                                    value="My gross"> My gross <input type="checkbox" name="weekly_2"
+                                    id="" value="weekly"> weekly <input type="checkbox" name="bi-weekly_2"
                                     id="" value="bi-weekly"> bi-weekly <input type="checkbox"
-                                    name="" id="" value="monthly other"> monthly other: <input
-                                    type="text" name="" id=""
+                                    name="monthly other_2" id="" value="monthly other"> monthly other: <input
+                                    type="text" name="income_2" id=""
                                     class="border-0 border-bottom responsive_input">
                                 income (before taxes and deductions) is:</div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Employment earnings (salary, wages, self-employed income, etc.)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Employment earnings" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Overtime</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Overtime" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Commission</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Overtime" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Tips</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Tips" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Bonus</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Bonus" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Pension and other retirement benefits</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Pension and other retirement benefits" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Annuity</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Annuity" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Interest income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Interest income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Dividend income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Dividend income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Trust income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Trust income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
-                                <div>Social Security (check all that apply): <input type="checkbox" name=""
-                                        id="" value="SSI"> SSI <input type="checkbox" name=""
+                                <div>Social Security (check all that apply): <input type="checkbox" name="ssi"
+                                        id="" value="SSI"> SSI <input type="checkbox" name="ssdi"
                                         id="" value="SSDI"> SSDI retirement</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Social Security" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Unemployment benefits</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Unemployment benefits" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Disability payment (not Social Security)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Disability payment" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Workers’ compensation</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Workers’ compensation" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Military allowances</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Military allowances" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Investment income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Investment income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Rental income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Rental income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Partnership income</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Partnership income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Distributions and draws </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Distributions and draws" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Royalty income </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Royalty income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Educational funds (include payments made directly to the school)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Educational funds" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Spousal support</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Spousal support" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Gifts of money</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Gifts of money" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
-                                <div>Other <input type="text" name="" id=""
+                                <div>Other <input type="text" name="Other" id=""
                                         class="border-0 border-bottom responsive_input"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other.1" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text">
-                                <div class="fw-bold  pe-lg-3">Total Gross <input type="checkbox" name=""
-                                        id="" value="Total Gross"> Weekly <input type="checkbox"
-                                        name="" id="" value="Weekly"> Bi-weekly <input
-                                        type="checkbox" name="" id="" value="Bi-weekly ">
-                                    Monthly <input type="checkbox" name="" id=""
-                                        value="Monthly"> Other Income:</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div class="fw-bold  pe-lg-3">Total Gross <input type="checkbox" name="Total Gross_3" id="" value="Total Gross"> Weekly <input type="checkbox"
+                                        name="Weekly_3" id="" value="Weekly"> Bi-weekly <input type="checkbox" name="Bi-weekly_3" id="" value="Bi-weekly ">
+                                    Monthly <input type="checkbox" name="Monthly_3" id="" value="Monthly"> Other Income:</div>
+                                <div>$<input type="text" name="Other Income_3" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                         </div>
@@ -1656,46 +1652,46 @@
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
-                                <div class="fw-bold  pe-lg-3">Other <input type="checkbox" name=""
+                                <div class="fw-bold  pe-lg-3">Other <input type="checkbox" name="Other_4"
                                         id="" value="Other"> Weekly <input type="checkbox"
-                                        name="" id="" value="Weekly"> Bi-weekly <input
-                                        type="checkbox" name="" id="" value="Bi-weekly ">
+                                        name="Weekly_4" id="" value="Weekly"> Bi-weekly <input
+                                        type="checkbox" name="Bi-weekly_4" id="" value="Bi-weekly ">
                                     monthly (not calculated as income):</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="monthly not calculated as income" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>TANF (Temporary assistance for needy families)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="TANF" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Child support for children of this relationship</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Child support for children of this relationship" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Child support for children not of this relationship</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Child support for children not of this relationship" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Foster care payments from DHHS</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Foster care payments from DHHS" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text">
                                 <div class="pe-3 fw-bold">Total</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Total_4" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
-                            <div class="fw-bold">8. My <input type="checkbox" name="" id=""
-                                    value="My"> weekly <input type="checkbox" name="" id=""
-                                    value="weekly"> bi-weekly <input type="checkbox" name=""
+                            <div class="fw-bold">8. My <input type="checkbox" name="My_5" id=""
+                                    value="My"> weekly <input type="checkbox" name="weekly_5" id=""
+                                    value="weekly"> bi-weekly <input type="checkbox" name="bi-weekly_5"
                                     id="" value="bi-weekly"> monthly <input type="checkbox"
-                                    name="" id="" value="monthly"> other: <input type="text"
-                                    class="border-0 border-bottom responsive_input responsive_input" name=""
+                                    name="monthly_5" id="" value="monthly"> other: <input type="text"
+                                    class="border-0 border-bottom responsive_input responsive_input" name="other_5"
                                     id="" style="width:430px">deductions are :</div>
                         </div>
                     </div>
@@ -1717,88 +1713,83 @@
                         <div class="col-lg-9 small_text">
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Federal tax</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Federal tax" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>State tax</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="State tax" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>FICA (or Social Security equivalent)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="FICA" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Medicare tax</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Medicare tax" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Mandatory retirement contributions (by law or condition of employment)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Mandatory retirement contributions" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Union dues </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Union dues" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Health insurance premiums (medical, dental, vision)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Health insurance premiums" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Child support actually paid under a court order in a different case</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Child support actually paid under a court order in a different case" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Spousal support actually paid under a court order in a different case </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Spousal support actually paid under a court order in a different case" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Spousal support actually paid or payable under a court order in this case </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Spousal support actually paid or payable under a court order in this case" id=""
                                         class="border-0 border-bottom responsive_input"></div>
+                            </div>
+ 
+                            <div class="d-flex d_sm_block justify-content-between small_text">
+                                <div>Expenditures for repayment of debts that represent reasonable and necessary expenses for the production of income including, but not limited to, student loans, medical expenditures necessary to preserve life or health, reasonable expenditures for the benefit of the child and other parent exclusive of gifts. </div>
+                                <div> <input type="text" name="Expenditures for repayment" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
-                                <div>Expenditures for repayment of debts that represent reasonable and necessary
-                                    expenses for the production of income including, but not limited to, student
-                                    loans, medical expenditures necessary to preserve life or health, reasonable
-                                    expenditures for the benefit of the child and other parent exclusive of gifts.
-                                </div>
-                                <div> <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
-                            </div>
-
-                            <div class="d-flex d_sm_block justify-content-between small_text">
-                                <div>Other: <input type="text" name="" id=""
+                                <div>Other: <input type="text" name="Other_5.2" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:635px;"> </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other_5.3" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text">
-                                <div class="fw-bold pe-lg-3">Total <input type="checkbox" name=""
+                                <div class="fw-bold pe-lg-3">Total <input type="checkbox" name="Total_checkbox"
                                         id="" value="Total"> Weekly Bi-weekly Monthly Other Deductions:
                                 </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Weekly Bi-weekly Monthly Other Deductions:" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                         </div>
@@ -1817,83 +1808,79 @@
                             <div>a. <b>Hsehld enses</b></div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Mortgage</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Mortgage" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Rent</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Rent" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Home equity (HELOC) and second mortgage</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Home equity (HELOC) and second mortgage" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Real estate taxes</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Real estate taxes" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div> Homeowners or condo association dues and assessments</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Homeowners or condo association dues and assessments" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Homeowner or renter insurance</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Homeowner or renter insurance" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Water and sewer line repair insurance</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Water and sewer line repair insurance" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Gas</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Gas" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Heating fuel or oil</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Heating fuel or oil" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Electric</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Electric" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Telephone (landline)</div>
-                                <div> $<input type="number" name="" id=""
+                                <div> $<input type="number" name="Telephone (landline)" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Cell phone</div>
-                                <div> $ <input type="number" name="" id=""
+                                <div> $ <input type="number" name="Cell phone" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Cable or satellite TV</div>
-                                <div> $ <input type="text" name="" id=""
+                                <div> $ <input type="text" name="Cable or satellite TV" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Streaming services</div>
-                                <div>$ <input type="text" name="" id=""
+                                <div>$ <input type="text" name="Streaming services" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Internet</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Internet" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text">
                                 <div>Water and sewer</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Water and sewer" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                         </div>
@@ -1927,109 +1914,104 @@
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Garbage removal</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Garbage removal" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Laundry and dry cleaning</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Laundry and dry cleaning" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>House cleaning service</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="House cleaning service" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Necessary repairs and maintenance to my property</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Necessary repairs and maintenance to my property" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Pet care</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Pet care" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Groceries, household supplies, and toiletries</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Groceries, household supplies, and toiletries" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div>Other: <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input responsive_input"
-                                        style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>Other: <input type="text" name="Other_6" id="" class="border-0 border-bottom responsive_input responsive_input" style="width:615px"></div>
+                                <div>$<input type="text" name="Other_6.1" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end fw-bold small_text">
                                 <div class="pe-lg-3">Subtotal Monthly Household Expenses:</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Subtotal Monthly Household Expenses" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class=" mt-lg-2">b. <b> Transportation Expenses</b></div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Vehicle payment</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Transportation Expenses" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Vehicle repairs</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Vehicle repairs" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Vehicle maintenance</div>
-                                <div> $<input type="text" name="" id=""
+                                <div> $<input type="text" name="Vehicle maintenance" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Insurance</div>
-                                <div> $ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div> $ <input type="text" name="Insurance" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>License</div>
-                                <div> $ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div> $ <input type="text" name="License" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Gasoline</div>
-                                <div>$ <input type="text" name="" id=""
+                                <div>$ <input type="text" name="Gasoline" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Taxi, ride share, bus, and train</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Taxi, ride share, bus, and train" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Parking</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Parking" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Registration</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Registration" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div>Other: <input type="text" name="" id=""
+                                <div>Other: <input type="text" name="Other_6.2" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other_6.3" id=""
                                         class="border-0 border-bottom responsive_input  "></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div>Other: <input type="text" name="" id=""
+                                <div>Other: <input type="text" name="Other_6.4" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other_6.5" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
                                 <div class="fw-bold pe-lg-3">Subtotal Monthly Transportation Expenses: </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Subtotal Monthly Transportation Expenses" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div>c. <b>Personal expenses</b></div>
@@ -2038,98 +2020,87 @@
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Doctor visits</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Doctor visits1" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Therapy and counseling</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Therapy and counseling" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Dental and orthodontia</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Dental and orthodontia" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Optical</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Optical1" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Medicine (including prescribed and over-the-counter)</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Medicine" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Life insurance</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Life insurance" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="ps-lg-3">
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Life (term)</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Life (term)" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Life (whole or annuity) </div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Life (whole or annuity)" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Clothing </div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Clothing" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Grooming (hair, nails, spa, etc.) </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Grooming (hair, nails, spa, etc.)" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Club membership dues</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Club membership dues" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Periodical/Newspaper subscription(s)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Periodical/Newspaper subscription(s)" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div class=" ">Other: <input type="text" name="" id=""
+                                <div class=" ">Other: <input type="text" name="Other_7" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"> </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other_7.2" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div class=" ">Other: <input type="text" name="" id=""
+                                <div class=" ">Other: <input type="text" name="Other_7.3" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other_7.4" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
                                 <div class="fw-bold pe-lg-3 ">Subtotal Monthly Personal Expenses:</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Subtotal Monthly Personal Expenses" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
-
                         </div>
                     </div>
                     @include('layouts.footer18', ['page' => 9])
@@ -2155,17 +2126,17 @@
                             <div>d. <b>Minor and Dependent Children Expenses</b></div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Child care (including before and after school care)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Child care (including before and after school care)" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Clothing</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Clothing_2" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div>Education</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Education" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
@@ -2173,119 +2144,117 @@
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Tuition</div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="Tuition" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Books, fees, and supplies</div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="Books, fees, and supplies" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">School lunch</div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="School lunch" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Tutoring</div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="Tutoring" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                    <div class=" ">Other education: <input type="text" name=""
+                                    <div class=" ">Other education: <input type="text" name="Other education"
                                             id=""
                                             class="border-0 border-bottom responsive_input responsive_input"
                                             style="width:535px"></div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="Other education_2" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Medical (out of pocket expenses)</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Medical (out of pocket expenses)" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="ps-lg-3">
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Doctor visits</div>
-                                    <div>$<input type="text" name="" id=""
-                                            class="border-0 border-bottom responsive_input"></div>
+                                    <div>$<input type="text" name="Doctor visits2" id="" class="border-0 border-bottom responsive_input"></div>
                                 </div>
 
                                 <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                     <div class=" ">Therapy or counseling </div>
-                                    <div>$<input type="text" name="" id=""
+                                    <div>$<input type="text" name="Therapy or counseling" id=""
                                             class="border-0 border-bottom responsive_input"></div>
                                 </div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Dental or orthodontia </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Dental or orthodontia" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Optical</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Optical2" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Medicine/prescriptions</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Medicine/prescriptions" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div class=" ">Other medical: <input type="text" name=""
+                                <div class=" ">Other medical: <input type="text" name="Other medical"
                                         id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:565px"></div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
+                                <div>$<input type="text" name="Other medical2" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
 
 
 
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
                                 <div class=" ">Extra-curricular activities/lessons/sports fees </div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Extra-curricular activities/lessons/sports fees" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div class=" ">Other: <input type="text" name="" id=""
+                                <div class=" ">Other: <input type="text" name="Other8" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other8.1" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3">
-                                <div class=" ">Other: <input type="text" name="" id=""
+                                <div class=" ">Other: <input type="text" name="Other8.2" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other8.3" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3">
                                 <div class="fw-bold pe-lg-3 ">Subtotal Monthly Children Expenses:</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Subtotal Monthly Children Expenses" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 ">
                                 <div class="fw-bold pe-lg-3 ">TOTAL MONTHLY LIVING EXPENSES:</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="TOTAL MONTHLY LIVING EXPENSES" id=""
                                         class="border-0 border-bottom responsive_input"></div>
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 mt-2 ">
                                 <div class="fw-bold pe-lg-3 ">(add together subtotals from subsections a – d)</div>
-                                <div> <input type="text" name="" id=""
+                                <div> <input type="text" id=""
                                         class="border-0 border-bottom responsive_input invisible"></div>
 
                             </div>
@@ -2293,29 +2262,27 @@
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3 ">
                                 <div class="fw-bold pe-lg-3 ">Vacation</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Vacation" id=""
                                         class="border-0 border-bottom responsive_input"></div>
 
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3  ">
                                 <div class=" ">Gifts</div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Gifts" id=""
                                         class="border-0 border-bottom responsive_input"></div>
 
                             </div>
                             <div class="d-flex d_sm_block justify-content-between small_text ps-lg-3  ">
-                                <div class=" ">Other <input type="text" name="" id=""
+                                <div class=" ">Other <input type="text" name="Other8.3" id=""
                                         class="border-0 border-bottom responsive_input responsive_input"
                                         style="width:615px;"></div>
-                                <div>$<input type="text" name="" id=""
+                                <div>$<input type="text" name="Other8.5" id=""
                                         class="border-0 border-bottom responsive_input"></div>
 
                             </div>
                             <div class="d-flex d_sm_block justify-content-end small_text ps-lg-3 ">
                                 <div class="fw-bold pe-lg-3 ">Total Miscellaneous Expenses for Past 12 Months:</div>
-                                <div>$<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input"></div>
-
+                                <div>$<input type="text" name="Total Miscellaneous Expenses for Past 12 Months" id="" class="border-0 border-bottom responsive_input"></div>
                             </div>
                         </div>
 
@@ -2329,16 +2296,16 @@
                 <section class="section_area p-5" id="eleventh_section">
 
                     <div class="text-center fw-bold">MAINE JUDICIAL BRANCH</div>
-                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I hereby certify
+                    <div class="pt-lg-3"><input type="checkbox" name="I hereby certify" id="" value="Yes"> I hereby certify
                         that the information in this Financial Statement is complete and is based on my personal
                         knowledge,
                         information, and belief.</div>
-                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I certify that I
+                    <div class="pt-lg-3"><input type="checkbox" name="I certify that" id="" value="Yes"> I certify that I
                         will send the opposing party complete copies of this Financial Statement, my federal tax returns
                         for the
                         last two years, and my three most recent paystubs,<b> not later than three days before
                             mediation.</b></div>
-                    <div class="pt-lg-3"><input type="checkbox" name="" id=""> I swear under
+                    <div class="pt-lg-3"><input type="checkbox" name=" I swear under" id="" value="Yes"> I swear under
                         penalty of perjury that the above statements are true and correct. I understand that these
                         statements
                         are made for use as evidence in court and that I am subject to prosecution for perjury
@@ -2347,8 +2314,8 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <div>Date (mm/dd/yyyy): <input type="date" name="" class="border-0 border-bottom responsive_input w-50" id=""></div>
-                            <div class="mt-lg-4">Attorney: <input type="text" name="" class="border-0 border-bottom responsive_input" style="width:420px;" id=""></div>
+                            <div>Date (mm/dd/yyyy): <input type="date" name="date" class="border-0 border-bottom responsive_input w-50" id=""></div>
+                            <div class="mt-lg-4">Attorney: <input type="text" name="Attorney" class="border-0 border-bottom responsive_input" style="width:420px;" id=""></div>
                             <div>Bar No.: <input type="text" name="bar_no" class="border-0 border-bottom responsive_input w-75" id=""></div>
                             <div>Address: <input type="text" name="address_2" class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
                             <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input type="text" name="address_2.1" class="border-0 border-bottom responsive_input w-100" id=""></div>
@@ -2357,12 +2324,12 @@
                             <div>Email: <input type="text" name="Email" class="border-0 border-bottom responsive_input "  style="width:450px;" id=""></div>
                         </div>
                         <div class="col-lg-6">
-                            <div> <input type="text" name=""
+                            <div> <input type="text" name="Signature of"
                                     class="border-0 border-bottom responsive_input" style="width:495px;" id="">
-                                <div class="small_text "> Signature of <input type="checkbox" name="" id="" value="Plaintiff"> Plaintiff <input type="checkbox" name="" id="" value="Defendant"> Defendant</div>
+                                <div class="small_text "> Signature of <input type="checkbox" name="Plaintiff" id="" value="Plaintiff"> Plaintiff <input type="checkbox" name="Defendant" id="" value="Defendant"> Defendant</div>
                             </div>
-                            <div class="mt-lg-4">Name: <input type="name_2" name="" class="border-0 border-bottom responsive_input" style="width:440px;" id="">
-                            <div class="small_text"> <input type="checkbox" name="" id="" value="Address is confidential"> Address is confidential (if so, leave blank below) </div></div>
+                            <div class="mt-lg-4">Name: <input type="name_2" name="Name_2" class="border-0 border-bottom responsive_input" style="width:440px;" id="">
+                            <div class="small_text"> <input type="checkbox" name="Address is confidential" id="" value="Address is confidential"> Address is confidential (if so, leave blank below) </div></div>
 
                         <div>Address: <input type="text" name="address_2.3" class="border-0 border-bottom responsive_input  " style="width:425px;" id=""></div>
                         <div class="responsive_input  ms_sm_0 w-75" style="margin-left:73px;"> <input
@@ -2373,25 +2340,22 @@
                         </div>
                     </div>
                     <div class="text-center fw-bold py-lg-3">STATE OF MAINE</div>
-                    <div><input type="text" name="" id=""
+                    <div><input type="text" name="County" id=""
                             class="border-0 border-bottom responsive_input">County</div>
                     <div class="mt-lg-3">Personally appeared the above-named party <input type="text"
-                            name="" id="" class="border-0 border-bottom responsive_input"> , and
+                            name="Personally appeared" id="" class="border-0 border-bottom responsive_input"> , and
                         made oath that
                         the foregoing statements are true under penalty of perjury.</div>
                     <div class="row mt-lg-3 mb-5">
                         <div class="col-lg-6">
-                            <div>Date (mm/dd/yyyy): <input type="date" name=""
-                                    class="border-0 border-bottom responsive_input w-50" id=""></div>
+                            <div>Date (mm/dd/yyyy): <input type="date" name="date_1" class="border-0 border-bottom responsive_input w-50" id=""></div>
 
                         </div>
                         <div class="col-lg-6">
-                            <div> <input type="text" name=""
+                            <div> <input type="text" name="Attorney at Law text"
                                     class="border-0 border-bottom responsive_input w-75" id="">
-                                <div class="small_text "> <input type="checkbox" name="" id=""
-                                        value="Attorney at Law"> Attorney at Law <input type="checkbox"
-                                        name="" id="" value="Notary Public"> Notary Public <input
-                                        type="checkbox" name="" id="" value="Clerk"> Clerk
+                                <div class="small_text "> <input type="checkbox" name="Attorney at Law" id=""
+                                        value="Attorney at Law"> Attorney at Law <input type="checkbox" name="Notary Public" id="" value="Notary Public"> Notary Public <input type="checkbox" name="Clerk" id="" value="Clerk"> Clerk
                                 </div>
                             </div>
                         </div>
@@ -2403,7 +2367,7 @@
                 </section>
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
-                        <button type="button" class="btn btn-success px-4">Save</button>
+                        <button type="submit" class="btn btn-success px-4">Save</button>
                     </div>
                     <div class="pt-3">
                         <button type="button" class="btn btn-dark px-4">Back</button>

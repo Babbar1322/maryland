@@ -132,8 +132,7 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 12</h5>
-                                             <span>FAM108_Current.pdf</span>
-
+                        <span>FAM108_Current.pdf</span>
                     </div>
                   </div>
                 </a>
@@ -253,7 +252,7 @@
                  <div class="card">
                      <div class="card-body p-5">
                       <h5 class="text-decoration-none text-dark">Form 24</h5>
-                      <span>ME financial statement MJB-Form-fm-043.pdf</span>
+                      <span> ME financial statement MJB-Form-fm-043.pdf   </span>
                     </div>
                   </div>
                 </a>
