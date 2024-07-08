@@ -167,7 +167,7 @@
 <body>
     <div class="container-fluid   py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form24.submit') }}" method="post">
+            <form action="{{ route('form26.submit') }}" method="post">
                 @csrf
                 <section class="section_area p-5" id="first_section">
                     @if (session('success'))
@@ -182,54 +182,54 @@
                             <div class="d-flex justify-content-between">
                             <div class="d-flex d_sm_block">
                                 <span>Name: </span>
-                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:475px;">
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="Name" style="width:475px;">
                             </div>
                             <div class="d-flex d_sm_block">
                                 <span>Docket No.</span>
-                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:457px;">
+                                <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="Docket No" style="width:457px;">
                             </div>
                         </div>
                         <div class="text-center fw-bold">MONTHLY SELF-EMPLOYMENT OR BUSINESS INCOME</div>
-                        <div class="d-flex justify-content-between d_sm_block">GROSS MONTHLY RECEIPTS<span> <input type="text" name="" id="" class="border border-dark input_box  " ></span></div>
+                        <div class="d-flex justify-content-between d_sm_block">GROSS MONTHLY RECEIPTS<span> <input type="text" name="GROSS MONTHLY RECEIPTS" id="" class="border border-dark input_box  " ></span></div>
 
                         </div>
 
                         <div class="fw-bold   py-lg-3">Monthly Business Expenses</div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Cost of goods sold<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Advertising<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Bad Debts<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Motor Vehicles:<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Gas<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Insurance<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Maintenance<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Registration<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Commissions<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Depletion<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Dues and Publications<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Employee Benefit Programs<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Freight<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Insurance (other than health), please specify type of insurance:<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Interest on mortgage to banks<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Interest on loans<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Legal and Professional services<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Office expenses<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Laundry and cleaning<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Pension and profit sharing<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Rent on leased equipment<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Machinery/Equipment<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Other business property<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Repairs<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Supplies<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Taxes<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Travel<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Meals and entertainment<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Utilities and phones<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Wages<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block">Other expenses (specify)<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Cost of goods sold<span>$<input type="text" name="Cost of goods sold" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Advertising<span>$<input type="text" name="Advertising" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Bad Debts<span>$<input type="text" name="Bad Debts" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Motor Vehicles:<span>$<input type="text" name="otor Vehicles" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Gas<span>$<input type="text" name="Gas" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Insurance<span>$<input type="text" name="Insurance" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Maintenance<span>$<input type="text" name="Maintenance" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5">Registration<span>$<input type="text" name="Registration" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Commissions<span>$<input type="text" name="Commissions" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Depletion<span>$<input type="text" name="Depletion" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Dues and Publications<span>$<input type="text" name="Dues and Publications" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Employee Benefit Programs<span>$<input type="text" name="Employee Benefit Programs" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Freight<span>$<input type="text" name="Freight" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Insurance (other than health), please specify type of insurance:<span>$<input type="text" name="Insurance (other than health), please specify type of insurance" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="Insurance (other than health), please specify type of insurance2" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="Insurance (other than health), please specify type of insurance3" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="Insurance (other than health), please specify type of insurance4" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="Insurance (other than health), please specify type of insurance5" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Interest on mortgage to banks<span>$<input type="text" name="Interest on mortgage to banks" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Interest on loans<span>$<input type="text" name="Interest on loans" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Legal and Professional services<span>$<input type="text" name="Legal and Professional services" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Office expenses<span>$<input type="text" name="Office expenses" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Laundry and cleaning<span>$<input type="text" name="Laundry and cleaning" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Pension and profit sharing<span>$<input type="text" name="Pension and profit sharing" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Rent on leased equipment<span>$<input type="text" name="Rent on leased equipment" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Machinery/Equipment<span>$<input type="text" name="Machinery/Equipment" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Other business property<span>$<input type="text" name="Other business property" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Repairs<span>$<input type="text" name="Repairs" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Supplies<span>$<input type="text" name="Supplies" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Taxes<span>$<input type="text" name="Taxes" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Travel<span>$<input type="text" name="Travel" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Meals and entertainment<span>$<input type="text" name="Meals and entertainment" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Utilities and phones<span>$<input type="text" name="Utilities and phones" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Wages<span>$<input type="text" name="Wages" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block">Other expenses (specify)<span>$<input type="text" name="Other expenses (specify)1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="Other expenses (specify)2" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="Other expenses (specify)3" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                        <div class="small_text d-flex justify-content-between d_sm_block ps-lg-5"><input type="text" name="Other expenses (specify)4" id="" class=" w-50 border-0 border-bottom responsive_input" ><span>$<input type="text" name="Other expenses (specify)5" id="" class="border-0 border-bottom responsive_input" ></span></div>
                     </div>
                     @include('layouts.footer20', ['page' => 1])
                 </section>
@@ -239,14 +239,14 @@
                     <div class="row">
                         <div class="fw-bold text-center">FINANCIAL STATEMENT SCHEDULE A</div>
 
-                        <div class="d-flex justify-content-between d_sm_block">TOTAL MONTHLY EXPENSES<span> <input type="text" name="" id="" class="border border-dark input_box input_box " ></span></div>
-                        <div class="d-flex justify-content-between d_sm_block pt-3"> WEEKLY BUSINESS INCOME  (Gross monthly receipts less total monthly expenses divided by 4.3.) Enter this amount in Section II, line (d) of CJ-D 301-L or Section 2(d) of CJ-D 301-S.<span> <input type="text" name="" id="" class="border border-dark input_box  " ></span></div>
+                        <div class="d-flex justify-content-between d_sm_block">TOTAL MONTHLY EXPENSES<span> <input type="text" name="TOTAL MONTHLY EXPENSES" id="" class="border border-dark input_box input_box " ></span></div>
+                        <div class="d-flex justify-content-between d_sm_block pt-3"> WEEKLY BUSINESS INCOME  (Gross monthly receipts less total monthly expenses divided by 4.3.) Enter this amount in Section II, line (d) of CJ-D 301-L or Section 2(d) of CJ-D 301-S.<span> <input type="text" name="WEEKLY BUSINESS INCOME" id="" class="border border-dark input_box  " ></span></div>
                         <div class="text-center fw-bold py-lg-2">NATURE OF SELF-EMPLOYMENT OR BUSINESS</div>
 
                         <div class="row small_text pt-2">
                             <div class="col-1" style="width: 30px;">1.</div>
                             <div class="col-11">
-                                <div class="d-flex d_sm_block">Is this business seasonal in nature? <div> <input type="checkbox" name="" class="me-2 ms-3">Yes</div>  <div> <input type="checkbox" name="" class="me-2 ms-3">No</div></div>
+                                <div class="d-flex d_sm_block">Is this business seasonal in nature? <div> <input type="checkbox" name="Is this business seasonal in nature" value="Yes" class="me-2 ms-3">Yes</div>  <div> <input type="checkbox" name="Is this business seasonal in nature" class="me-2 ms-3"  value="No">No</div></div>
 
                             </div>
                         </div>
@@ -266,64 +266,64 @@
                                             </tr>
                                             <tr>
                                                 <td>January</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"> </td>
+                                                <td><input type="text" name="January1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="January2" class="border-0 w-100"> </td>
                                             </tr>
                                             <tr>
                                                 <td>February</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"> </td>
+                                                <td><input type="text" name="February1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="February2" class="border-0 w-100"> </td>
                                             </tr>
                                             <tr>
                                                 <td>March</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="March1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="March2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>April</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="April1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="April2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>May</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="May1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="May2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>June</td>
-                                                <td> <input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td> <input type="text" name="June1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="June2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>July</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"> </td>
+                                                <td><input type="text" name="July1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="July2" class="border-0 w-100"> </td>
                                             </tr>
                                             <tr>
                                                 <td>August</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="August1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="August2" class="border-0 w-100"></td>
                                             </tr>
 
                                             <tr>
                                                 <td>September</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="September1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="September2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>October</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="October1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="October2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>November</td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="November1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="November2" class="border-0 w-100"></td>
                                             </tr>
                                             <tr>
                                                 <td>December</td>
-                                                <td><input type="" name="" class="border-0 w-100"></td>
-                                                <td><input type="text" name="" class="border-0 w-100"></td>
+                                                <td><input type="text" name="December1" class="border-0 w-100"></td>
+                                                <td><input type="text" name="December2" class="border-0 w-100"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -336,7 +336,7 @@
                         <div class="row small_text pt-2">
                             <div class="col-1" style="width: 30px;">3.</div>
                             <div class="col-11">
-                                <div class="d-flex d_sm_block"> State whether your business accounts on a calendar year basis or fiscal year basis: <div> <input type="checkbox" name="" class="me-2 ms-3">CALENDAR</div>  <div> <input type="checkbox" name="" class="me-2 ms-3">FISCAL</div></div>
+                                <div class="d-flex d_sm_block"> State whether your business accounts on a calendar year basis or fiscal year basis: <div> <input type="checkbox" name="State whether your business" class="me-2 ms-3"  value="Yes">CALENDAR</div>  <div> <input type="checkbox" name="CALENDAR" class="me-2 ms-3"  value="Yes">FISCAL</div></div>
 
                             </div>
                         </div>
@@ -352,22 +352,22 @@
                             <div class="col-lg-6">
 
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="starting" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div>starting</div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
 
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="ending" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div>ending</div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="d-flex justify-content-between d_sm_block pt-3">5. State your gross receipts, year to date:<span> $<input type="text" name="" id="" class="border border-dark  input_box " ></span></div>
-                        <div class="d-flex justify-content-between d_sm_block pt-2">6. State your gross expenses, year to date:<span> $<input type="text" name="" id="" class="border border-dark  input_box " ></span></div>
+                        <div class="d-flex justify-content-between d_sm_block pt-3">5. State your gross receipts, year to date:<span> $<input type="text" name="State your gross receipts" id="" class="border border-dark  input_box " ></span></div>
+                        <div class="d-flex justify-content-between d_sm_block pt-2">6. State your gross expenses, year to date:<span> $<input type="text" name="tate your gross expenses" id="" class="border border-dark  input_box " ></span></div>
 
 
                     </div>
@@ -379,7 +379,7 @@
 
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
-                        <button type="button" class="btn btn-success px-4">Save</button>
+                        <button type="submit" class="btn btn-success px-4">Save</button>
                     </div>
                     <div class="pt-3">
                         <button type="button" class="btn btn-dark px-4">Back</button>

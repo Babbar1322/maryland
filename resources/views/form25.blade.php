@@ -159,7 +159,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1  ">
-            <form action="{{ route('form24.submit') }}" method="post">
+            <form action="{{ route('form25.submit') }}" method="post">
                 @csrf
                 <section class="section_area p-5" id="first_section">
                     @if (session('success'))
@@ -171,7 +171,7 @@
                         <div class="fw-bold text-center">THE STATE OF NEW HAMPSHIRE</div>
                         <div class="fw-bold text-center">JUDICIAL BRANCH</div>
                         <h6 class="fw-bold text-center"><a href="https://www.courts.nh.gov/" class="text-dark" target="_blank">http://www.courts.state.nh.us</a></h6>
-                        <div class=" ">
+                        <div>
                             <div class="d-flex d_sm_block">
                                 <span>Court Name: </span>
                                 {{-- <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="plaintiff_name" style="width:1070px;"> --}}
@@ -228,35 +228,35 @@
                     <div class="border border-dark p-1 row">
                          <div class="col-lg-6 border-end border-dark p-3 small_text">
                             <div class=" fw-bold">1. General Information</div>
-                            <div class=" ">Name <input type="text" name="Name1" id="" class="border-0 border-bottom responsive_input"  style="width:512px;"></div>
-                            <div class=" ">Street Address <input type="text" name="Street Address" id="" class="border-0 border-bottom responsive_input"  style="width:452px;"></div>
-                            <div class=" ">Town/City, State, Zip <input type="text" name="Town/City, State, Zip" id="" class="border-0 border-bottom responsive_input"  style="width:413px;"></div>
-                            <div class=" ">Mailing Address, if different <input type="text" name="Mailing Address, if different" id="" class="border-0 border-bottom responsive_input"  style="width:365px;"></div>
-                            <div class=" ">Telephone Number: <input type="text" name="Telephone Number" id="" class="border-0 border-bottom responsive_input"  style="width:418px;"></div>
-                            <div class=" ">Date of Birth <input type="text" name="Date of Birth" id="" class="border-0 border-bottom responsive_input"  style="width:465px;"></div>
-                            <div class=" ">Social Security Number <input type="text" name="Social Security Number" id="" class="border-0 border-bottom responsive_input"  style="width:395px;"></div>
-                            <div class=" ">Highest Grade or Degree Completed <input type="text" name="Highest Grade or Degree Completed" id="" class="border-0 border-bottom responsive_input"  style="width:305px;"></div>
-                            <div class=" ">Date of Marriage <input type="text" name="Date of Marriage" id="" class="border-0 border-bottom responsive_input"  style="width:440px;"></div>
-                            <div class=" ">Date of Separation or Divorce <input type="text" name="Date of Separation or Divorce" id="" class="border-0 border-bottom responsive_input" style="width:352px;"></div>
-                            <div class=" ">2. Children born to, or adopted by, the Parties (Full Name, DOB, and SSN)</div>
-                            <div class=" "> <input type="text" name="Children born to1" id="" class="border-0 border-bottom w-100 responsive_input" ></div>
-                            <div class=" "> <input type="text" name="Children born to1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                            <div class=" "> <input type="text" name="Children born to1.3" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                            <div class=" "> <input type="text" name="Children born to1.4" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                            <div class=" d-flex d_sm_block">2a. Number of people currently living in household including self: <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:120px;"></div>
+                            <div>Name <input type="text" name="Name1" id="" class="border-0 border-bottom responsive_input"  style="width:512px;"></div>
+                            <div>Street Address <input type="text" name="Street Address" id="" class="border-0 border-bottom responsive_input"  style="width:452px;"></div>
+                            <div>Town/City, State, Zip <input type="text" name="Town/City, State, Zip" id="" class="border-0 border-bottom responsive_input"  style="width:413px;"></div>
+                            <div>Mailing Address, if different <input type="text" name="Mailing Address, if different" id="" class="border-0 border-bottom responsive_input"  style="width:365px;"></div>
+                            <div>Telephone Number: <input type="text" name="Telephone Number" id="" class="border-0 border-bottom responsive_input"  style="width:418px;"></div>
+                            <div>Date of Birth <input type="text" name="Date of Birth" id="" class="border-0 border-bottom responsive_input"  style="width:465px;"></div>
+                            <div>Social Security Number <input type="text" name="Social Security Number" id="" class="border-0 border-bottom responsive_input"  style="width:395px;"></div>
+                            <div>Highest Grade or Degree Completed <input type="text" name="Highest Grade or Degree Completed" id="" class="border-0 border-bottom responsive_input"  style="width:305px;"></div>
+                            <div>Date of Marriage <input type="text" name="Date of Marriage" id="" class="border-0 border-bottom responsive_input"  style="width:440px;"></div>
+                            <div>Date of Separation or Divorce <input type="text" name="Date of Separation or Divorce" id="" class="border-0 border-bottom responsive_input" style="width:352px;"></div>
+                            <div>2. Children born to, or adopted by, the Parties (Full Name, DOB, and SSN)</div>
+                            <div> <input type="text" name="Children born to1" id="" class="border-0 border-bottom w-100 responsive_input" ></div>
+                            <div> <input type="text" name="Children born to1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                            <div> <input type="text" name="Children born to1.3" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                            <div> <input type="text" name="Children born to1.4" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                            <div class=" d-flex d_sm_block">2a. Number of people currently living in household including self: <input type="text" name="Number of people currently living in household including self" id="" class="border-0 border-bottom responsive_input" style="width:120px;"></div>
                             <div class="  ">3. Employment Information
                                 Name, Address, and Phone Number of Employer</div>
-                                <div class=" "> <input type="text" name="Employment Information" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                                <div class=" "> <input type="text" name="Employment Information1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                                <div class=" "> <input type="text" name="Employment Information1.3" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Employment Information" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Employment Information1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Employment Information1.3" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div>Date and Place of Last Employment</div>
 
-                                <div class=" "> <input type="text" name="Date and Place" id="" class="border-0 border-bottom w-100 responsive_input"></div>
-                                <div class=" "> <input type="text" name="Date and Place1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Date and Place" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Date and Place1.2" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div>Job Skills</div>
 
-                                <div class=" "> <input type="text" name="" id="Job Skills" class="border-0 border-bottom w-100 responsive_input"></div>
-                                <div class=" "> <input type="text" name="" id="Job Skills1.2" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Job Skills" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div> <input type="text" name="Job Skills1.2" class="border-0 border-bottom w-100 responsive_input"></div>
                         </div>
                         <div class="col-lg-6  p-3 small_text">
 
@@ -444,7 +444,7 @@
 
                     <div class="pt-lg-5">
                     <div class="row">
-                         <div class=" ">
+                         <div>
                             <div class="d-flex d_sm_block">
                                 <span>Case Name: </span>
                                 <input type="text" class="border-none border-0 border-bottom responsive_input shadow-none my-auto responsive_input" name="Case Name2" style="width:1075px;">
@@ -463,63 +463,60 @@
                                 <div class=" d-flex d_sm_block">Single or joint return<span><input type="text" name="Single or joint return" id="" class="border-0 border-bottom responsive_input" style="width:435px;"></span></div>
                                 <div class=" d-flex d_sm_block">My Total W-2s and 1099s = <span> $ <input type="text" name="My Total W-2s and 1099" id="" class="border-0 border-bottom responsive_input" style="width:370px;"></span></div>
                                 <div class=" d-flex d_sm_block"><span><input type="checkbox" name="Self-employed" value="Yes" id="" class="me-2" ></span> If Self-employed, check here and attach copy of most recent IRS Schedule C.</div>
-                                {{-- <div class=" d-flex   d_sm_block">Year of last return filed <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div> --}}
-                                <div>10. Insurance</div>
+                                 <div>10. Insurance</div>
                                 <div class=" d-flex d_sm_block">Life Company<span><input type="text" name="ife Company" id="" class="border-0 border-bottom responsive_input" style="width:480px;"></span></div>
                                 <div class=" d-flex d_sm_block">Type and Face Amount <span><input type="text" name="Type and Face Amount" id="" class="border-0 border-bottom responsive_input"  style="width:415px;"></span></div>
                                 <div class=" d-flex d_sm_block">Beneficiaries <span><input type="text" name="Beneficiaries" id="" class="border-0 border-bottom responsive_input" style="width:485px;"></span></div>
                                 <div class=" d-flex d_sm_block">Health Company <span><input type="text" name="Health Company" id="" class="border-0 border-bottom responsive_input" style="width:458px;"></span></div>
                                 <div class=" d-flex d_sm_block">Type <span><input type="text" name="Type" id="" class="border-0 border-bottom responsive_input"  style="width:538px;"></span></div>
                                 <div>Description of Coverage</div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" ></div>
-                                 <div class=" d-flex d_sm_block">Dental Company <span><input type="text" name="" id="" class="border-0 border-bottom responsive_input"  style="width:460px;"></span></div>
+                                <div><input type="text" name="Description of Coverage1" id="" class="border-0 border-bottom responsive_input w-100" ></div>
+                                 <div class=" d-flex d_sm_block">Dental Company <span><input type="text" name="Dental Company" id="" class="border-0 border-bottom responsive_input"  style="width:460px;"></span></div>
                                 <div>Description of Coverage</div>
-                                <div class=""><input type="text" name="" id="" class="w-100 border-0 border-bottom responsive_inputw-100 " ></div>
-
+                                <div><input type="text" name="Description of Coverage2" id="" class="w-100 border-0 border-bottom responsive_inputw-100 " ></div>
                                 </div>
                                 <div class="col-lg-6 small_text">
-
                                     <div class="small_text">11. Debts</div>
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="small_text">Who is debt owed to?</div>
-                                            <div><input type="text" name="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div><input type="text" name="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div><input type="text" name="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who is debt owed to1" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who is debt owed to2" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who is debt owed to3" class="border-0 border-bottom responsive_input" ></div>
 
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="small_text">Who owes debt?</div>
-                                            <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who owes debt1" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who owes debt2" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div><input type="text" name="Who owes debt3" id="" class="border-0 border-bottom responsive_input" ></div>
 
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="small_text">Balance</div>
-                                            <div class="d-flex">$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div class="d-flex">$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
-                                            <div class="d-flex">$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div class="d-flex">$<input type="text" name="Balance1" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div class="d-flex">$<input type="text" name="Balance2" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div class="d-flex">$<input type="text" name="Balance3" id="" class="border-0 border-bottom responsive_input" ></div>
                                         </div>
                                         <div>12. Retirement Plans</div>
-                                        <div class=" d-flex d_sm_block">Plan or Account Name<span><input type="text" name="" id="" class="border-0 border-bottom responsive_input"  style="width:420px;"></span></div>
-                                        <div class=" d-flex d_sm_block">Type <span><input type="text" name="" id="" class="border-0 border-bottom responsive_input"  style="width:538px;"></span></div>
-                                        <div class=" d-flex d_sm_block">Most Recent Value <span class="ms-lg-4">$<input type="text" name="" id="" class="border-0 border-bottom responsive_input"></span></div>
-                                         <div class=" d-flex d_sm_block">Value at Filing <span class="ms-lg-5">$<input type="text" name="" id="" class="border-0 border-bottom responsive_input"></span></div>
+                                        <div class=" d-flex d_sm_block">Plan or Account Name<span><input type="text" name="Plan or Account Name" id="" class="border-0 border-bottom responsive_input"  style="width:420px;"></span></div>
+                                        <div class=" d-flex d_sm_block">Type <span><input type="text" name="Type2" id="" class="border-0 border-bottom responsive_input"  style="width:538px;"></span></div>
+                                        <div class=" d-flex d_sm_block">Most Recent Value <span class="ms-lg-4">$<input type="text" name="Most Recent Value1" id="" class="border-0 border-bottom responsive_input"></span></div>
+                                         <div class=" d-flex d_sm_block">Value at Filing <span class="ms-lg-5">$<input type="text" name="Value at Filing1" id="" class="border-0 border-bottom responsive_input"></span></div>
                                         <div class="sm_text">If Defined Benefit, status of vesting and description of Benefit</div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" ></div>
+                                        <div><input type="text" name="If Defined Benefit, status of vesting and description of Benefit" id="" class="border-0 border-bottom responsive_input w-100" ></div>
                                         <div>13. Attachments:</div>
                                         <div class="d-flex d_sm_block ms-lg-3">
-                                            <div class="me-lg-5"><input type="checkbox" name="" id="" class="me-1">Pay Stub</div>
-                                            <div><input type="checkbox" name="" id="" class="me-1">Monthly Expenses</div>
+                                            <div class="me-lg-5"><input type="checkbox" name="Pay Stub" id=""  value="Yes" class="me-1">Pay Stub</div>
+                                            <div><input type="checkbox" name="Monthly Expenses" id=""  value="Yes" class="me-1">Monthly Expenses</div>
                                         </div>
 
                                         <div class="d-flex d_sm_block ms-lg-3">
-                                            <div class="me-lg-4"><input type="checkbox" name="" id="" class="me-1" >Schedule C</div>
-                                            <div><input type="checkbox" name="" id="" class="me-1">Other (describe) <input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></div>
+                                            <div class="me-lg-4"><input type="checkbox" name="Schedule C"  value="Yes" id="" class="me-1" >Schedule C</div>
+                                            <div><input type="checkbox" name="Other_checkbox" value="Yes" id="" class="me-1">Other (describe) <input type="text" name="Other_val" id="" class="border-0 border-bottom responsive_input" ></div>
                                         </div>
                                         <div class="d-flex ms-lg-3">
-                                             <div><input type="checkbox" name="" id="" class="me-1">Check here if parties agree to waive Monthly Expenses form.</div>
+                                             <div><input type="checkbox" name="Check here if parties agree to waive Monthly Expenses form" value="Yes" id="" class="me-1">Check here if parties agree to waive Monthly Expenses form.</div>
                                         </div>
 
 
@@ -528,8 +525,8 @@
 
 
                                 <div>14. Additional Information</div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" ></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100" ></div>
+                                <div><input type="text" name="Additional Information1" id="" class="border-0 border-bottom responsive_input w-100" ></div>
+                                <div><input type="text" name="Additional Information2" id="" class="border-0 border-bottom responsive_input w-100" ></div>
 
                                 <div>
                                     <div>I swear (affirm) that:</div>
@@ -538,49 +535,49 @@
                                     <div>C. I understand that I have a duty to update the information provided in this financial affidavit for each court hearing; and</div>
                                     <div>D. I understand that if a support order is issued in this case obligating me to pay support, it shall be my responsibility to immediately provide the Court with any change of address in writing. If I fail to do so, I may be held in default, found in contempt of court and a warrant may be issued for my arrest. (See USO Standing Order SO-4C.)</div>
                                     <div>E <b> Rule 1.25-A Compliance -- Family Division Only: (Initial one)</b></div>
-                                    <div class="ms-lg-3"><input type="text" name="" id="" class="border-0 border-bottom">I have complied with Rule 1.25-A regarding mandatory disclosure; OR</div>
-                                    <div class="ms-lg-3"><input type="text" name="" id="" class="border-0 border-bottom">I understand my obligation to comply with Rule 1.25-A regarding mandatory disclosure. I have not fully complied with Rule 1.25-A due to: <input type="text" name="" id="" class="border-0 border-bottom w-100"></div>
+                                    <div class="ms-lg-3"><input type="text" name="I have complied with Rule 1.25-A regarding mandatory disclosure" id="" class="border-0 border-bottom">I have complied with Rule 1.25-A regarding mandatory disclosure; OR</div>
+                                    <div class="ms-lg-3"><input type="text" name="I understand my obligation to comply with Rule1" id="" class="border-0 border-bottom">I understand my obligation to comply with Rule 1.25-A regarding mandatory disclosure. I have not fully complied with Rule 1.25-A due to: <input type="text" name="I understand my obligation to comply with Rule2" id="" class="border-0 border-bottom w-100"></div>
                                     <div class="d-flex d_sm_block justify-content-between w-100">
                                         <div class="w-25 responsive_input">
-                                            <input type="text" name="" id="" class="border-bottom  border-0 w-100 responsive_input">
+                                            <input type="text" name="Date" id="" class="border-bottom  border-0 w-100 responsive_input">
                                             <div class="small_text">Date</div>
                                         </div>
                                         <div class="w-25 responsive_input">
-                                            <input type="text" name="" id="" class="border-bottom  border-0 w-100  responsive_input">
+                                            <input type="text" name="Signature" id="" class="border-bottom border-0 w-100 responsive_input">
                                             <div class="small_text">Signature</div>
                                         </div>
                                     </div>
                                     <div class="d-flex  d_sm_block justify-content-around w-100">
                                         <div class="w-25 d-flex responsive_input d_sm_block">
-                                            State of <input type="text" name="" id="" class="border-bottom  border-0 w-75 responsive_input">
+                                            State of <input type="text" name="State of" id="" class="border-bottom  border-0 w-75 responsive_input">
                                          </div>
                                         <div class="w-25 d-flex responsive_input d_sm_block">
-                                            County of<input type="text" name="" id="" class="border-bottom  border-0 w-75  responsive_input">
+                                            County of<input type="text" name="County of" id="" class="border-bottom  border-0 w-75  responsive_input">
                                          </div>
                                     </div>
                                     <div class="small_text">The person signing this financial affidavit appeared and signed this before me and took oath that the statements set forth in this Financial Affidavit, together with any attachments listed in section 13 above, are true to the best of his or her knowledge and belief.</div>
-                                    <div>This instrument was acknowledged before me on <input type="text" name="" id="" class="border-bottom  border-0  responsive_input w-25"> by <input type="text" name="" id="" class="border-bottom  border-0   w-25 responsive_input"> </div>
+                                    <div>This instrument was acknowledged before me on <input type="text" name="This instrument was acknowledged before me on" id="" class="border-bottom  border-0  responsive_input w-25"> by <input type="text" name="by" id="" class="border-bottom  border-0   w-25 responsive_input"> </div>
 
                                     <div class="d-flex justify-content-between d_sm_block  w-100">
                                         <div class="w-100">
-                                           <div class="d-flex d_sm_block"> My commission expires:<input type="text" name="" id="" class="border-bottom  border-0 w-25 responsive_input"></div>
+                                           <div class="d-flex d_sm_block"> My commission expires:<input type="text" name="My commission expires" id="" class="border-bottom  border-0 w-25 responsive_input"></div>
                                             <div class="small_text">Affix seal, if any</div>
                                         </div>
                                         <div class="w-25 responsive_input">
-                                            <input type="text" name="" id="" class="border-bottom  border-0 w-100  responsive_input">
+                                            <input type="text" name="Signature of Notarial Officer" id="" class="border-bottom  border-0 w-100  responsive_input">
                                             <div class="small_text">Signature of Notarial Officer / Title</div>
                                         </div>
                                     </div>
 
-                                    <div>I certify that on this date I provided a copy of this document to <input type="text" name="" id="" class="border-0 border-bottom border-dark"> (other party) or to <input type="text" name="" id="" class="border-0 border-bottom border-dark">(other party’s attorney) by: <input type="checkbox" name="" id="" class="mx-2"> Hand-delivery OR  <input type="checkbox" name="" id="" class="mx-2"> US Mail OR <input type="checkbox" name="" id="" class="mx-2"> E-mail (E-mail only by prior agreement of the parties based on Circuit Court Administrative Order). </div>
+                                    <div>I certify that on this date I provided a copy of this document to <input type="text" name="I certify that on this date I provided" id="" class="border-0 border-bottom border-dark"> (other party) or to <input type="text" name="other party" id="" class="border-0 border-bottom border-dark">(other party’s attorney) by: <input type="checkbox" name="other party’s attorney" id="" class="mx-2"  value="Yes"> Hand-delivery OR  <input type="checkbox" name="Hand-delivery" id="" class="mx-2"  value="Yes"> US Mail OR <input type="checkbox" name="US Mail" id="" class="mx-2"  value="Yes"> E-mail (E-mail only by prior agreement of the parties based on Circuit Court Administrative Order). </div>
 
                                     <div class="d-flex justify-content-between w-100 d_sm_block">
                                         <div class="w-25 responsive_input">
-                                            <input type="text" name="" id="" class="border-bottom  border-0 w-100 responsive_input">
+                                            <input type="text" name="Date1" id="" class="border-bottom  border-0 w-100 responsive_input">
                                             <div class="small_text">Date</div>
                                         </div>
                                         <div class="w-25 responsive_input">
-                                            <input type="text" name="" id="" class="border-bottom  border-0 w-100  responsive_input">
+                                            <input type="text" name="Signature1" id="" class="border-bottom  border-0 w-100  responsive_input">
                                             <div class="small_text">Signature</div>
                                         </div>
                                     </div>
@@ -612,96 +609,96 @@
                                 <div class="row small_text">
                                     <div class="col-lg-6 border-end border-dark">
                                         <div>1. Housing</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Rent <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Mortgage Payment <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Property Tax <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Condo Fee <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Home Maintenance <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Snow Removal and Lawn Care <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Rent <span>$<input type="text" name="Rent" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Mortgage Payment <span>$<input type="text" name="Mortgage Payment" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Property Tax <span>$<input type="text" name="Property Tax" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Condo Fee <span>$<input type="text" name="Condo Fee" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Home Maintenance <span>$<input type="text" name="Home Maintenance" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Snow Removal and Lawn Care <span>$<input type="text" name="Snow Removal and Lawn Care" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Snow Removal and Lawn Care1" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Snow Removal and Lawn Care2" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">2. Utilities</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Heating Oil <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Wood and Coal <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Propane and Natural Gas <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Telephone<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Electricity<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Cable Television<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Water and Sewer<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Trash Collection<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Heating Oil <span>$<input type="text" name="Heating Oil" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Wood and Coal <span>$<input type="text" name="Wood and Coal" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Propane and Natural Gas <span>$<input type="text" name="Propane and Natural Gas" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Telephone<span>$<input type="text" name="Telephone" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Electricity<span>$<input type="text" name="Electricity" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Cable Television<span>$<input type="text" name="able Television" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Water and Sewer<span>$<input type="text" name="Water and Sewer" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Trash Collection<span>$<input type="text" name="Trash Collection1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Trash Collection2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Trash Collection3" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">3. Insurance</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Homeowner<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Renter<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Vehicle<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Health<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Dental<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Life<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Disability<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Homeowner<span>$<input type="text" name="Homeowner" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Renter<span>$<input type="text" name="Renter" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Vehicle<span>$<input type="text" name="Vehicle" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Health<span>$<input type="text" name="Health" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Dental<span>$<input type="text" name="Dental" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Life<span>$<input type="text" name="Life" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Disability<span>$<input type="text" name="Disability" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">4. Uninsured Health Care</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Medical<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Dental<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Orthodontics<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Medical<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Eye Care/Glasses/Contacts <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Prescription Drugs<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Therapy and Counseling<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Medical<span>$<input type="text" name="Medical1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Dental<span>$<input type="text" name="Dental" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Orthodontics<span>$<input type="text" name="Orthodontics" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Medical<span>$<input type="text" name="Medical2" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Eye Care/Glasses/Contacts <span>$<input type="text" name="Eye Care/Glasses/Contacts" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Prescription Drugs<span>$<input type="text" name="Prescription Drugs" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Therapy and Counseling<span>$<input type="text" name="Therapy and Counseling1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Therapy and Counseling2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Therapy and Counseling3" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">5. Transportation</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Primary Vehicle Payment<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Other Vehicle Payments<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Vehicle Maintenance<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Gas and Oil<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Registration and Tax<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Primary Vehicle Payment<span>$<input type="text" name="Primary Vehicle Payment" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Other Vehicle Payments<span>$<input type="text" name="Other Vehicle Payments" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Vehicle Maintenance<span>$<input type="text" name="Vehicle Maintenance" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Gas and Oil<span>$<input type="text" name="Gas and Oil" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Registration and Tax<span>$<input type="text" name="Registration and Tax1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Registration and Tax2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Registration and Tax3" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Registration and Tax4" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Registration and Tax5" id="" class="border-0 border-bottom responsive_input" ></span></div>
 
                                     </div>
                                     <div class="col-lg-6">
                                         <div>6. General and Personal</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Groceries<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Meals Eaten Out<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Tobacco/Alcohol Products<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Clothing and Shoes<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Hair Care<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Toiletries and Cosmetics<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Pet Food and Care<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Church and Charities<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Laundry and Dry Cleaning<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Gifts<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Newspapers and Magazines<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Education (personal)<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Dues and Memberships<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Vacations<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Entertainment and Recreation<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Visitation Expenses<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Groceries<span>$<input type="text" name="Groceries" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Meals Eaten Out<span>$<input type="text" name="Meals Eaten Out" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Tobacco/Alcohol Products<span>$<input type="text" name="Tobacco/Alcohol Products" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Clothing and Shoes<span>$<input type="text" name="Clothing and Shoes" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Hair Care<span>$<input type="text" name="Hair Care" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Toiletries and Cosmetics<span>$<input type="text" name="Toiletries and Cosmetics" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Pet Food and Care<span>$<input type="text" name="Pet Food and Care" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Church and Charities<span>$<input type="text" name="Church and Charities" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Laundry and Dry Cleaning<span>$<input type="text" name="Laundry and Dry Cleaning" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Gifts<span>$<input type="text" name="Gifts" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Newspapers and Magazines<span>$<input type="text" name="Newspapers and Magazines<" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Education (personal)<span>$<input type="text" name="Education (personal)" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Dues and Memberships<span>$<input type="text" name="Dues and Memberships" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Vacations<span>$<input type="text" name="Vacations" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Entertainment and Recreation<span>$<input type="text" name="Entertainment and Recreation" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Visitation Expenses<span>$<input type="text" name="isitation Expenses1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="isitation Expenses2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="isitation Expenses3" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">7. Children's Expenses and Activities</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Children's Clothing and Shoes<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Diapers<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Day Care<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">School Supplies<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">School Lunches<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Tuition and Lessons<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Sports and Camp<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Children's Clothing and Shoes<span>$<input type="text" name="Children's Clothing and Shoes" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Diapers<span>$<input type="text" name="Diapers" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Day Care<span>$<input type="text" name="Day Care" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">School Supplies<span>$<input type="text" name="School Supplies" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">School Lunches<span>$<input type="text" name="School Lunches" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Tuition and Lessons<span>$<input type="text" name="Tuition and Lessons" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Sports and Camp<span>$<input type="text" name="Sports and Camp1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Sports and Camp2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Sports and Camp3" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">8. Financial</div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Federal Income Tax <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Social Security and Medicare<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Loan Payments<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Other Debts<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Savings<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">401(k)<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">IRA<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block">Other Retirement Plans<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Federal Income Tax <span>$<input type="text" name="Federal Income Tax" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Social Security and Medicare<span>$<input type="text" name="Social Security and Medicare" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Loan Payments<span>$<input type="text" name="Loan Payments" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Other Debts<span>$<input type="text" name="Other Debts" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Savings<span>$<input type="text" name="Savings" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">401(k)<span>$<input type="text" name="401(k)" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">IRA<span>$<input type="text" name="IRA" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block">Other Retirement Plans<span>$<input type="text" name="Other Retirement Plans1" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Retirement Plans2" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Retirement Plans3" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Retirement Plans4" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Retirement Plans5" id="" class="border-0 border-bottom responsive_input" ></span></div>
                                         <div class="pt-lg-2">9. Other Expenses</div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
-                                        <div class=" d-flex justify-content-between d_sm_block fw-bold">TOTAL MONTHLY EXPENSES<span>$<input type="text" name="" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Expenses1" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Expenses2" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Expenses3" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Expenses4" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Expenses5" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Expenses6" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Expenses7" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Expenses8" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block"><input type="text" name="Other Expenses9" id="" class="border-0 border-bottom responsive_input w-50" > <span>$<input type="text" name="Other Expenses10" id="" class="border-0 border-bottom responsive_input" ></span></div>
+                                        <div class=" d-flex justify-content-between d_sm_block fw-bold">TOTAL MONTHLY EXPENSES<span>$<input type="text" name="TOTAL MONTHLY EXPENSES" id="" class="border-0 border-bottom responsive_input" ></span></div>
 
                                     </div>
                                 </div>
@@ -925,7 +922,7 @@
 
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
-                        <button type="button" class="btn btn-success px-4">Save</button>
+                        <button type="submit" class="btn btn-success px-4">Save</button>
                     </div>
                     <div class="pt-3">
                         <button type="button" class="btn btn-dark px-4">Back</button>

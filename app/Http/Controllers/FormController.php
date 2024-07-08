@@ -36,17 +36,27 @@ use App\Models\form2;
 use App\Models\form3;
 use App\Models\ga_form;
 use App\Models\form4;
+use App\Models\ma_financial_statement_a_form_data;
+use App\Models\ma_financial_statement_b_form;
+use App\Models\ma_financial_statement_b_form_data;
+use App\Models\ma_short_form;
+use App\Models\nh_financial_affidavit_form_data;
 use App\Models\nj_form;
 use App\Models\nj_form_data;
 use App\Models\judicial;
 use App\Models\ky_disclosure_statement_form;
 use App\Models\ky_disclosure_statement_form_data;
+use App\Models\ma_financial_statement_a_form;
+use App\Models\ma_long_form;
+use App\Models\ma_long_form_data;
+use App\Models\ma_short_form_data;
 use App\Models\md_form;
 use App\Models\md_form_data;
 use App\Models\md_partially_form;
 use App\Models\md_partially_form_data;
 use App\Models\me_financial_form;
 use App\Models\me_financial_form_data;
+use App\Models\nh_financial_affidavit_form;
 use App\Models\pa_form;
 use App\Models\sfs_co_form;
 use App\Models\sfs_co_form_data;
@@ -774,10 +784,51 @@ dd($request->all());
     }
 
 
+    public function form25_post(Request $request) {
+        // NH financial affidavit nhjb-2065-f.pdf
+
+        $nh_financial = new nh_financial_affidavit_form();
+        $nh_financial->save();
+
+
+        foreach($request->all() as $key=>$req) {
+            if($key == "_token"){
+                continue;
+            }
+            $nh_financial_data = new nh_financial_affidavit_form_data();
+            $nh_financial_data->financial_id = $nh_financial->id;
+            $nh_financial_data->keyss = $key;
+            $nh_financial_data->valuess = $req;
+            $nh_financial_data->save();
+        }
+        return redirect()->back()->with('success', "Data Submitted Successfully");
+    }
 
     public function form26() {
         // MA Financial Statement Schedule A (CJ-D 301)_06-05-2024_1343.pdf
         return view('form26');
+    }
+
+    public function form26_post(Request $request) {
+        // MA Financial Statement Schedule A (CJ-D 301)_06-05-2024_1343.pdf
+
+        $ma_financial_a = new ma_financial_statement_a_form();
+        $ma_financial_a->save();
+
+        foreach($request->all() as $key=>$req) {
+
+            if($key == "_token") {
+                continue;
+            }
+
+            $ma_financial_a_data = new ma_financial_statement_a_form_data();
+            $ma_financial_a_data->a_financial_id = $ma_financial_a->id;
+            $ma_financial_a_data->keyss = $key;
+            $ma_financial_a_data->valuess = $req;
+            $ma_financial_a_data->save();
+        }
+
+        return redirect()->back()->with('success', "Data Submitted Successfully");
     }
 
     public function form27() {
@@ -785,15 +836,83 @@ dd($request->all());
         return view('form27');
     }
 
+    public function form27_post(Request $request) {
+        // MA Financial Statement Schedule B (CJ-D 301)_06-05-2024_1346.pdf
+
+        // b_financial_id
+        $ma_financial_b = new ma_financial_statement_b_form();
+        $ma_financial_b->save();
+
+        foreach($request->all() as $key=>$req){
+            if($key == "_token"){
+                continue;
+            }
+
+            $ma_financial_b_data = new ma_financial_statement_b_form_data();
+            $ma_financial_b_data->b_financial_id = $ma_financial_b->id;
+            $ma_financial_b_data->keyss = $key;
+            $ma_financial_b_data->valuess = $req;
+            $ma_financial_b_data->save();
+
+        }
+
+        return redirect()->back()->with('success', 'Data Submitted Successfully');
+
+    }
+
     public function form28() {
         // MA Financial statement (short form) (CJD-301S)_06-05-2024_1333.pdf
         return view('form28');
+    }
+
+    public function form28_post(Request $request) {
+        // MA Financial statement (short form) (CJD-301S)_06-05-2024_1333.pdf
+        // na_short_id
+
+        $ma_short = new ma_short_form();
+        $ma_short->save();
+
+        foreach($request->all() as $key=>$req) {
+            $ma_short_data = new ma_short_form_data();
+            $ma_short_data->ma_short_id = $ma_short->id;
+            $ma_short_data->keyss = $key;
+            $ma_short_data->valuess = $req;
+            $ma_short_data->save();
+        }
+
+        return redirect()->back()->with('success', "Data submitted Successfully");
+
+
+
+
     }
 
     public function form29() {
         // MA statement (long form) (CJD-301L)_06-05-2024_1332.pdf
         return view('form29');
     }
+
+    public function form29_post(Request $request) {
+        // MA statement (long form) (CJD-301L)_06-05-2024_1332.pdf
+
+        $ma_long = new ma_long_form();
+        $ma_long->save();
+
+        foreach($request->all() as $key=>$req) {
+            $ma_long_data = new ma_long_form_data();
+            $ma_long_data->ma_long_id = $ma_long->id;
+            $ma_long_data->keyss = $key;
+            $ma_long_data->valuess = $req;
+            $ma_long_data->save();
+        }
+
+        return redirect()->back()->with('success', "Data submitted Successfully");
+
+
+
+
+    }
+
 
     public function form30() {
         // 60 Additional Text Fields.pdf

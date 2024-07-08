@@ -77,6 +77,11 @@ Route::post('form21_submit', [FormController::class, 'form21_post'])->name('form
 Route::post('form22_submit', [FormController::class, 'form22_post'])->name('form22.submit');
 Route::post('form23_submit', [FormController::class, 'form23_post'])->name('form23.submit');
 Route::post('form24_submit', [FormController::class, 'form24_post'])->name('form24.submit');
+Route::post('form25_submit', [FormController::class, 'form25_post'])->name('form25.submit');
+Route::post('form26_submit', [FormController::class, 'form26_post'])->name('form26.submit');
+Route::post('form27_submit', [FormController::class, 'form27_post'])->name('form27.submit');
+Route::post('form28_submit', [FormController::class, 'form28_post'])->name('form28.submit');
+Route::post('form29_submit', [FormController::class, 'form29_post'])->name('form29.submit');
 
 
 
