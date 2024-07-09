@@ -184,7 +184,7 @@
 <body>
     <div class="container-fluid py-1 py-lg-3">
         <div class="container bg_color p-lg-3 p-1">
-            <form action="{{ route('form24.submit') }}" method="post">
+            <form action="{{ route('form31.submit') }}" method="post">
                 @csrf
                 <section class="section_area p-5" id="first_section">
                     @if (session('success'))
@@ -693,32 +693,25 @@
                             or legal help from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673.
                         </div>
                         <div>Print your answers in blue ink)</div>
-                        <div class="text-center">Cause Number: <input type="text" name="" id=""
+                        <div class="text-center">Cause Number: <input type="text" name="Cause Number" id=""
                                 class="border-0 border-bottom responsive_input w-50"></div>
-                        <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
-                            file this form)</div>
+                        <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you file this form)</div>
                         <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div>Petitioner:<input type="text" name=""
-                                        class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
-                                    spouse filing for divorce)</div>
+                                <div>Petitioner:<input type="text" name="Petitioner" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the spouse filing for divorce)</div>
                                 <div class="text-center fw-bold">And</div>
-                                <div>Respondent:<input type="text" name=""
-                                        class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
-                                    spouse)</div>
+                                <div>Respondent:<input type="text" name="Respondent" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other spouse)</div>
                             </div>
                             <div class="col-lg-6">
                                 <div>In the (check one):</div>
-                                <div><input type="text" name=""
-                                        class="border-0 border-bottom responsive_input "><input type="radio"
-                                        name="" class=" me-lg-1">District Court <input type="radio"
-                                        name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                <div><input type="text" name="Court Number" class="border-0 border-bottom responsive_input ">
+                                    <input type="radio" name="District Court" class="me-lg-1">District Court
+                                    <input type="radio" name="County Court at Law of" class="mx-lg-1"> County Court at Law of:</div>
                                 <div class="small_text">(Court Number)</div>
-                                <div><input type="text" name=""
-                                        class="border-0 border-bottom responsive_input w-75">County, Texas</div>
+                                <div><input type="text" name="County" class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                 <div class="small_text">(County)</div>
 
                             </div>
@@ -731,11 +724,11 @@
 
                         <div class="fw-bold">The person who signed this affidavit appeared, in person, before me, the
                             undersigned notary, and stated under oath:</div>
-                        <div>“My name is <input type="text" name="" id=""
+                        <div>“My name is <input type="text" name="My name is" id=""
                                 class="border-0 border-bottom responsive_input w-50"> My phone number is: <input
-                                type="text" name="" id=""
+                                type="text" name="My phone number is_7" id=""
                                 class="border-0 border-bottom responsive_input w-25"></div>
-                        <div>“My mailing address is:<input type="text" name="" id=""
+                        <div>“My mailing address is:<input type="text" name="My mailing address is" id=""
                                 class="border-0 border-bottom responsive_input" style="width:83%;"> </div>
                         <div>“I am above the age of eighteen (18) years, and I am fully competent to make this
                             affidavit. I am unable to pay court costs. The nature and amount of my income, resources,
@@ -743,126 +736,103 @@
                         <div class="">Check ALL boxes that apply and fill in the blanks describing the amounts
                             and sources of your income.</div>
                         <div>“I receive these public benefits/government entitlements that are based on indigency: <span
-                                class="mx-lg-3"><input type="checkbox" name=""> SSI</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> WIC</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> Food stamps/SNAP</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> TANF</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> Medicaid</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> CHIP</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> Needs-based VA Pension</span>
-                            <span class="ms-lg-3"><input type="checkbox" name=""> County Assistance, County
+                                class="mx-lg-3"><input type="checkbox" value="Yes" name="SSI"> SSI</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="WIC"> WIC</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="Food stamps/SNAP"> Food stamps/SNAP</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="TANF"> TANF</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="Medicaid"> Medicaid</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="CHIP"> CHIP</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="Needs-based VA Pension"> Needs-based VA Pension</span>
+                            <span class="ms-lg-3"><input type="checkbox" value="Yes" name="County Assistance"> County Assistance, County
                                 Health Care, or General Assistance (GA)</span> <span class="ms-lg-3"><input
-                                    type="checkbox" name=""> Community Care via DADS</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> AABD</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> Public Housing</span> <span
-                                class="ms-lg-3"><input type="checkbox" name=""> Low-Income Energy
-                                Assistance</span> <span class="ms-lg-3"><input type="checkbox" name=""> LIS in
-                                Medicare ("Extra Help")</span> <span class="ms-lg-3"><input type="checkbox"
-                                    name=""> Emergency Assistance</span> <span class="ms-lg-3"><input
-                                    type="checkbox" name=""> Child Care Assistance under Child Care and
-                                Development Block Grant</span> <span class="ms-lg-3"><input type="checkbox"
-                                    name=""> Other: <input type="text" name=""
+                                    type="checkbox"  value="Yes" name=" Community Care via DADS"> Community Care via DADS</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="AABD"> AABD</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="Public Housin"> Public Housing</span> <span
+                                class="ms-lg-3"><input type="checkbox" value="Yes" name="Low-Income Energy Assistance"> Low-Income Energy
+                                Assistance</span> <span class="ms-lg-3"><input type="checkbox" value="Yes" name="LIS in Medicare"> LIS in
+                                Medicare ("Extra Help")</span> <span class="ms-lg-3"><input type="checkbox" value="Yes"
+                                    name="Emergency Assistance"> Emergency Assistance</span> <span class="ms-lg-3"><input
+                                    type="checkbox" value="Yes" name="Child Care Assistance under Child Care"> Child Care Assistance under Child Care and
+                                Development Block Grant</span> <span class="ms-lg-3"><input type="checkbox" value="Yes"
+                                    name="Other"> Other: <input type="text" name="Other_7"
                                     class="border-0 border-bottom responsive_input" style="width:43%"> </span></div>
 
                         <div class="py-lg-2">If you receive any of the above public benefits, you may attach proof to
                             this form and label it “Exhibit: Proof of Public Benefits.”</div>
-                        <div><input type="checkbox" name="" id=""> Unemployed since: <input
-                                type="text" name="" id=""
+                        <div><input type="checkbox" value="Yes" name="Unemployed since" id=""> Unemployed since: <input
+                                type="text" name="Unemployed since_val7" id=""
                                 class="border-0 border-bottom responsive_input" ></div>
                         <small class="me-lg-5 small_text">-or-</small>
 
                         <small  class="small_text" class="p_sm_0" style="padding-left:100px;">Date</small>
-                        <div><input type="checkbox" name="" id=""> Wages: I work as a <input
-                                type="text" name="" id=""
+                        <div><input type="checkbox" value="Yes" name="Wages: I work as a" id=""> Wages: I work as a <input
+                                type="text" name=" Wages: I work as a_val" id=""
                                 class="border-0 border-bottom responsive_input" style="width:480px;"> for<input type="text"
-                                name="" id="" class="border-0 border-bottom responsive_input" style="width:480px;"></div>
+                                name="Your employer" id="" class="border-0 border-bottom responsive_input" style="width:480px;"></div>
                        <div class="small_text"> <span  class="p_sm_0" style="padding-left:220px;">Your Job Title</span> <span class="p_sm_0" style="padding-left:430px;">Your employer</span></div>
 
                         <div>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id="">
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Child/spousal support" id="">
                                 Child/spousal support </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> My spouse’s
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="My spouse’s" id=""> My spouse’s
                                 income or income from another member of my household (if available) </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Tips,
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Tips bonuses" id=""> Tips,
                                 bonuses </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Military
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Military Housing" id=""> Military
                                 Housing </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Worker’s
-                                Comp </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Disability
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Worker’s Comp" id=""> Worker’s Comp </span>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Disability_7" id=""> Disability
                             </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Unemployment
-                            </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Social
-                                Security </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id="">
-                                Retirement/Pension </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> Dividends,
-                                interest, royalties </span>
-                            <span class="ms-lg-1"><input type="checkbox" name="" id=""> 2
-                                <sup>nd</sup> job or other income <input type="text" name=""
-                                    class="border-0 border-bottom responsive_input" id=""> </span>
-                                    <div></div>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Unemployment" id=""> Unemployment </span>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Social Security" id=""> Social Security </span>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Retirement/Pension" id=""> Retirement/Pension </span>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="Dividends, interest, royalties" id=""> Dividends, interest, royalties </span>
+                            <span class="ms-lg-1"><input type="checkbox" value="Yes" name="job or other income_7" id=""> 2 <sup>nd</sup> job or other income <input type="text" name="job or other income" class="border-0 border-bottom responsive_input" id=""> </span> <div></div>
                         </div>
                         <div class="d-flex justify-content-between d_sm_block">
                             <div class="pt-lg-2">“My income amounts are stated below.</div>
-
                             <div class="pt-lg-2">Describe</div>
-
                         </div>
                          <div class="d-flex justify-content-between d_sm_block">
                             <div>(A) My monthly take-home wages:</div>
                             <div class="d-flex">
-
                                 <small> Total amount received →</small>
-                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text"
-                                        name="" id="" class="border-0 border-bottom"></div>
+                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text" name="A Total amount received" id="" class="border-0 border-bottom"></div>
                             </div>
                         </div>
-
-
                         <div class="d-flex justify-content-between d_sm_block">
                             <div>(B) The amount I receive each month in public benefits is:</div>
                             <div class="d-flex">
                                 <small> Total amount received →</small>
-                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text"
-                                        name="" id="" class="border-0 border-bottom"></div>
+                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text" name="B Total amount received" id="" class="border-0 border-bottom"></div>
                             </div>
                         </div>
-
-
                         <div class="d-flex justify-content-between d_sm_block">
                             <div>(C) The amount of income from other people in my household:</div>
                             <div class="d-flex">
                                 <small> Total amount received →</small>
-                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text"
-                                        name="" id="" class="border-0 border-bottom"></div>
+                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text" name="C Total amount received" id="" class="border-0 border-bottom"></div>
                             </div>
                         </div>
-                        <div class="small_text">(list this income only if other members contribute to your household
-                            income )</div>
+                        <div class="small_text">(list this income only if other members contribute to your household income )</div>
 
                         <div class="d-flex justify-content-between d_sm_block">
                             <div>(D) The amount I receive each month from other sources is:</div>
                             <div class="d-flex">
                                 <small> Total amount received → </small>
-                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text"
-                                        name="" id="" class="border-0 border-bottom"></div>
+                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text" name="D Total amount received" id="" class="border-0 border-bottom"></div>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between d_sm_block">
                             <div>(E) My TOTAL monthly income</div>
                             <div class="d-flex">
                                 <small> Add all sources of income above →</small>
-                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text"
-                                        name="" id="" class="border-0 border-bottom"></div>
+                                <div class="d-flex border border-dark ms-lg-3"><span>$</span> <input type="text" name="E My TOTAL monthly income" id="" class="border-0 border-bottom"></div>
                             </div>
                         </div>
                     </div>
-
                     @include('layouts.footer24', ['page' => 1])
                 </section>
-
                 <section class="section_area p-5" id="eighth_section">
                     <div class="small_text pb-lg-5">
                         <div>About my <b>dependents</b>:</div>
@@ -870,50 +840,31 @@
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="ps-lg-4">Name</div>
-                                <div class="d-flex">1.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">2.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">3.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">4.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">5.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">6.<input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">1.<input type="text" name="Name1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">2.<input type="text" name="Name2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">3.<input type="text" name="Name3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">4.<input type="text" name="Name4" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">5.<input type="text" name="Name5" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">6.<input type="text" name="Name6" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="text-center">Age</div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age4" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age5" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Age6" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                             </div>
                             <div class="col-lg-3">
                                 <div class="text-center">Relationship to Me</div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class=""><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-
+                                <div class=""><input type="text" name="Relationship to Me1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Relationship to Me2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Relationship to Me3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Relationship to Me4" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Relationship to Me5" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class=""><input type="text" name="Relationship to Me6" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -921,56 +872,35 @@
                                 <div>“My property includes:</div>
                                 <div>Cash</div>
                                 <div>Bank accounts, other financial assets</div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Bank accounts, other financial assets1" id=""  class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Bank accounts, other financial assets2" id=""  class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Bank accounts, other financial assets3" id=""  class="border-0 border-bottom responsive_input w-100"></div>
                                 <div>Vehicles (cars, boats) </div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Vehicles1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Vehicles2" id=""  class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Vehicles3" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div>Other property (like jewelry, stocks, etc.) </div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Other property1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Other property2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Other property3" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div class="fw-bold mt-lg-3">Total value of property →</div>
                             </div>
                             <div class="col-lg-2">
                                 <div>Value*</div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Cash_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div> (List)</div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Bank accounts, other financial assets1_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Bank accounts, other financial assets2_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Bank accounts, other financial assets3_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div>(List make and year)</div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Vehicles1_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Vehicles2_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Vehicles3_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div>(Describe)</div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex p-1 border border-dark border-3 mt-lg-3">=$ <input type="text"
-                                        name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Other property1_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Other property2_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Other property3_value" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex p-1 border border-dark border-3 mt-lg-3">=$ <input type="text" name="Total value of property" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             </div>
                             <div class="col-lg-4">
                                 <div>“My monthly expenses are:</div>
@@ -990,31 +920,18 @@
                             </div>
                             <div class="col-lg-2">
                                 <div>Amount</div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex">$ <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
-                                <div class="d-flex p-1 border border-dark border-3 mt-lg-3">=$ <input type="text"
-                                        name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Rent/house payments/maintenance" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Food and household supplies" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Utilities and telephone" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Clothing and laundry" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Medical and dental expenses" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Insurance (life, health, auto, etc.)" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="School and child care" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Transportation, auto repair, gas" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Child / spousal support" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Wages withheld by court order" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex">$ <input type="text" name="Debt payment paid to" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex p-1 border border-dark border-3 mt-lg-3">=$ <input type="text" name="Total Monthly Expenses" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
 
                             </div>
@@ -1023,61 +940,46 @@
                             anything.</div>
 
                         <div class="pt-lg-3">“My <b>debts</b> include: (List debt and amount owed)</div>
-                        <div><input type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input w-100"></div>
-                        <div><input type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input w-100"></div>
-                        <div><input type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input w-100"></div>
-                        <div class="fw-bold">“I am unable to pay court costs. I verify that the statements made in this
-                            affidavit are true and correct.”</div>
-                        <div>To list any other facts you want the court to know, such as unusual medical expenses,
-                            family emergencies, etc., attach another page to this form and label it “Exhibit: Additional
-                            Supporting Facts.” Check here if you attach another page.
-                            <input type="checkbox" name="" id="">
+                        <div><input type="text" name="My debts include1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="My debts include2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="My debts include3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div class="fw-bold">“I am unable to pay court costs. I verify that the statements made in this affidavit are true and correct.”</div>
+                        <div>To list any other facts you want the court to know, such as unusual medical expenses, family emergencies, etc., attach another page to this form and label it “Exhibit: Additional Supporting Facts.” Check here if you attach another page.
+                            <input type="checkbox"  value="Yes" name="I am unable to pay" id="">
                         </div>
                         <div class="fw-bold">Do not sign until you are in front of a notary.</div>
                         <div class="row">
                             <div class="col-lg-8">
-                                <input type="text" name="" id=""
-                                    class="border-0 border-bottom responsive_input w-100">
+                                <input type="text" name="Signature of Person Signing Affidavit" id="" class="border-0 border-bottom responsive_input w-100">
                                 <div class="small_text">Signature of Person Signing Affidavit</div>
                             </div>
                             <div class="col-lg-2">
-                                <input type="date" name="" id=""
-                                    class="border-0 border-bottom responsive_input w-100">
+                                <input type="date" name="Date" id="" class="border-0 border-bottom responsive_input w-100">
                                 <div class="small_text">Date</div>
                             </div>
                         </div>
                         <div class="fw-bold">Notary fills out below.</div>
-                        <div class="">State of Texas, County of <input type="text" name=""
-                                id="" class="border-0 border-bottom responsive_input w-50"></div>
+                        <div class="">State of Texas, County of <input type="text" name="State of Texas, County of" id="" class="border-0 border-bottom responsive_input w-50"></div>
                         <div class="p_sm_0" style="padding-left:170px;">(Print the name of county where this Affidavit is notarized)</div>
                         <div>Sworn to and subscribed before me, the undersigned notary, on this date:<input
-                                type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input" style="width:50px;">/<input type="text" name=""
-                                id="" class="border-0 border-bottom responsive_input" style="width:50px;">/20<input
-                                type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input" style="width:50px;"> at
-                               <input type="text"
-                                name="" id=""
-                                class="border-0 border-bottom responsive_input ">a.m./p.m. </div>
+                                type="text" name="month" id=""
+                                class="border-0 border-bottom responsive_input" style="width:50px;">/<input type="text" name="day"
+                                id="" class="border-0 border-bottom responsive_input" style="width:50px;">/20<input type="text" name="year" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> at
+                               <input type="text" name="time" id="" class="border-0 border-bottom responsive_input ">a.m./p.m. </div>
 
-                         <div class="small_text"><span class="p_sm_0" style="padding-left:595px;">month   </span > <span style="padding-left:15px;"> day</span> <span class="p_sm_0" style="padding-left:50px;">year</span> <span class="p_sm_0" style="padding-left:40px;">time</span><span class="p_sm_0" style="padding-left:170px;">(circle one)</span></div>
+                         <div class="small_text"><span class="p_sm_0" style="padding-left:495px;">month   </span > <span style="padding-left:15px;"> day</span> <span class="p_sm_0" style="padding-left:50px;">year</span> <span class="p_sm_0" style="padding-left:40px;">time</span><span class="p_sm_0" style="padding-left:170px;">(circle one)</span></div>
 
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="d-flex"> by <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div class="d-flex"> by <input type="text" name="Print name of person who is signing this Affidavit. NOT the notary’s name" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div class="text-center small_text">(Print name of person who is signing this Affidavit. NOT the notary’s name.)</div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
-                                <div> <input type="text" name="" id=""
-                                        class="border-0 border-bottom responsive_input w-100"></div>
+                                <div> <input type="text" name="Notary’s Signature" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 <div>Notary’s Signature</div>
                             </div>
                         </div>
@@ -1092,33 +994,26 @@
                         confidential help from the National Domestic Violence Hotline at 1-800-799-7233 or legal help
                         from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673.</div>
                     <div>Print your answers in blue ink)</div>
-                    <div class="text-center">Cause Number: <input type="text" name="" id=""
-                            class="border-0 border-bottom responsive_input w-50"></div>
-                    <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you file
-                        this form)</div>
+                    <div class="text-center">Cause Number: <input type="text" name="The Clerk’s office will fill in the Cause Number when you file this form" id="" class="border-0 border-bottom responsive_input w-50"></div>
+                    <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you file this form)</div>
                     <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div>Petitioner:<input type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                            <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the spouse
-                                filing for divorce)</div>
+                            <div>Petitioner:<input type="text" name="Petitioner_9" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                            <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the spouse filing for divorce)</div>
                             <div class="text-center fw-bold">And</div>
-                            <div>Respondent:<input type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                            <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
-                                spouse)</div>
+                            <div>Respondent:<input type="text" name="Respondent_9" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                            <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other spouse)</div>
                         </div>
                         <div class="col-lg-6">
                             <div>In the (check one):</div>
-                            <div><input type="text" name=""
-                                    class="border-0 border-bottom responsive_input "><input type="radio"
-                                    name="" class=" me-lg-1">District Court <input type="radio"
-                                    name="" class=" mx-lg-1"> County Court at Law of:</div>
+                            <div>
+                            <input type="text" name="Court Number_9" class="border-0 border-bottom responsive_input "><input type="radio" name="District Court" class=" me-lg-1">District Court
+                            <input type="radio" name="County Court at Law of" class=" mx-lg-1"> County Court at Law of:</div>
                             <div class="small_text">(Court Number)</div>
-                            <div><input type="text" name=""
-                                    class="border-0 border-bottom responsive_input w-75">County, Texas</div>
+                            <div><input type="text" name="County" class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                             <div class="small_text">(County)</div>
+
 
                         </div>
                     </div>
@@ -1131,58 +1026,44 @@
                     <div class="fw-bold  ps-lg-3">Petitioner</div>
                     <div class="ps-lg-3">
                         <div class="ps-lg-3 small_text">
-                            <div>My name is: <input type="text" name="" id=""
+                            <div>My name is: <input type="text" name="First Name" id=""
                                     class="border-0 border-bottom responsive_input"> <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input">
-                                <input type="text" name="" id=""
+                                    name="Middle Name" id="" class="border-0 border-bottom responsive_input">
+                                <input type="text" name="Last Name" id=""
                                     class="border-0 border-bottom responsive_input"></div>
                                     <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:140px">First</span> <span  class="p_sm_0" style="padding-left:120px">Middle</span> <span  class="p_sm_0" style="padding-left:130px">Last</span></div>
 
                             <div>The last three numbers of my driver’s license number are: <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                                <input type="text" name="" id=""
+                                    name="The last three numbers1" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                                <input type="text" name="The last three numbers2" id=""
                                     class="border-0 border-bottom responsive_input" style="width:50px;"> <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> .
-                                My driver’s license was issued in <input type="text" name="" id=""
+                                    name="The last three numbers3" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> .
+                                My driver’s license was issued in <input type="text" name="My driver’s license was issued in" id=""
                                     class="border-0 border-bottom responsive_input" > .
                                 <div><small class="p_sm_0" style="padding-left:850px;">State</small></div>
                             </div>
-                            <div class="py-2  ps-lg-4 "><b>Or</b> <input type="checkbox" name=""
-                                    id=""> I do not have a driver’s license number.</div>
-                            <div>The last three numbers of my social security number are: <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                                <input type="text" name="" id=""
-                                    class="border-0 border-bottom responsive_input" style="width:50px;"> <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> .
+                            <div class="py-2  ps-lg-4 "><b>Or</b> <input type="checkbox"  value="Yes" name="I do not have a driver’s license number" id=""> I do not have a driver’s license number.</div>
+                            <div>The last three numbers of my social security number are: <input type="text" name="The last three numbers of my social security1" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                                <input type="text" name="The last three numbers of my social security2" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> <input type="text" name="The last three numbers of my social security3" id="" class="border-0 border-bottom responsive_input" style="width:50px;"> .
                             </div>
-                            <div class="py-2  ps-lg-4 "><b>Or</b> <input type="checkbox" name=""
+                            <div class="py-2  ps-lg-4 "><b>Or</b> <input type="checkbox"  value="Yes" name="I do not have a social security number"
                                     id=""> I do not have a social security number.</div>
                         </div>
                         <div class="fw-bold">Respondent</div>
-                        <div class="ps-lg-3 small_text">My spouse’s name is: <input type="text" name=""
-                                id="" class="border-0 border-bottom responsive_input"> <input type="text"
-                                name="" id="" class="border-0 border-bottom responsive_input"> <input
-                                type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input"></div>
+                        <div class="ps-lg-3 small_text">My spouse’s name is: <input type="text" name="spouse’s name First" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="spouse’s name Middle" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="spouse’s name Last" id="" class="border-0 border-bottom responsive_input"></div>
                         <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:220px">First</span> <span  class="p_sm_0" style="padding-left:120px">Middle</span> <span  class="p_sm_0" style="padding-left:130px">Last</span></div>
 
                     </div>
                     <div class="fw-bold">2. Discovery</div>
                     <div class="ps-lg-3 small_text">The discovery level in this case is Level 2.</div>
-                    <div class="fw-bold">3. LegalNotice</div>
+                    <div class="fw-bold">3. Legal Notice</div>
                     <div class="ps-lg-3 small_text pb-lg-3">
                         <small>(Check one box)</small>
-                        <div><input type="checkbox" name="" id=""> I do not think my spouse will sign
-                            a Waiver of Service. I will have a sheriff, constable, process server, or the clerk serve my
-                            spouse with this Original Petition at this address:</div>
-                        <div><input type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input"> <input type="text" name=""
-                                id="" class="border-0 border-bottom responsive_input"> <input type="text"
-                                name="" id="" class="border-0 border-bottom responsive_input"> <input
-                                type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input"></div>
+                        <div><input type="checkbox"  value="Yes" name="I do not think my spouse" id=""> I do not think my spouse will sign
+                            a Waiver of Service. I will have a sheriff, constable, process server, or the clerk serve my spouse with this Original Petition at this address:</div>
+                        <div><input type="text" name="Legal Street Address " id="" class="border-0 border-bottom responsive_input"> <input type="text" name="LegalCity" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="Legal State" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="Legal Zip" id="" class="border-0 border-bottom responsive_input"></div>
                                 <div><span >Street Address</span> <span class="p_sm_0" style="padding-left:140px;">City</span> <span class="p_sm_0" style="padding-left:140px;">State</span> <span class="p_sm_0" style="padding-left:140px;">Zip</span></div>
-                                <div>If this is a work address, name of business: <input type="text" name=""
+                                <div>If this is a work address, name of business: <input type="text" name="Legal If this is a work address, name of business"
                                 id="" class="border-0 border-bottom responsive_input" style="width:72%"></div>
                         <div class="py-2">I ask the clerk to issue a Citation of Service (the form necessary to
                             provide legal notice to my spouse). I understand that I will need to <b>pay the fee </b> (or
@@ -1192,29 +1073,29 @@
                     @include('layouts.footer25', ['page' => 1])
                 </section>
                 <section class="section_area p-5" id="tenth_section">
-
                     <div class="small_text">
                         <div class="ps-lg-3">
 
-                            <input type="checkbox" name="" id=""> I think my spouse will sign a
+                            <input type="checkbox" name="Legal I think my spouse will sign a
+                            Waiver of Service" id=""> I think my spouse will sign a
                             Waiver of Service. Do not send a sheriff, constable, or process server to serve my spouse
                             with this Original Petition.
                             <div>If my spouse does not sign a Waiver of Service, I will ask a sheriff, constable,
                                 process server, or the clerk to serve my spouse with this Original Petition at this
                                 address:</div>
-                            <div> <input type="text" name="" id=""
+                            <div> <input type="text" name="Legal Street Address_2" id=""
                                     class="border-0 border-bottom responsive_input"> <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input">
-                                <input type="text" name="" id=""
+                                    name="Legal City_2" id="" class="border-0 border-bottom responsive_input">
+                                <input type="text" name="Legal State_2" id=""
                                     class="border-0 border-bottom responsive_input"> <input type="text"
-                                    name="" id="" class="border-0 border-bottom responsive_input">.
+                                    name="Legal Zip_2" id="" class="border-0 border-bottom responsive_input">.
                             </div>
                             <div><span >Street Address</span> <span class="p_sm_0" style="padding-left:140px;">City</span> <span class="p_sm_0" style="padding-left:140px;">State</span> <span class="p_sm_0" style="padding-left:140px;">Zip</span></div>
-                            <div>If this is a work address, name of business: <input type="text" name=""
+                            <div>If this is a work address, name of business: <input type="text" name="Legal If this is a work address, name of business"
                                     id="" class="border-0 border-bottom responsive_input" style="width:72%">.</div>
-                            <div class="p_sm_0" style="padding-left:10px;">Name of business</div>
+                            <div class="p_sm_0" style="padding-left:310px;">Name of business </div>
                             <div class="py-3">IwillasktheclerktoissuetheCitationofService
-                                (theformnecessarytoprovidelegalnoticeto my spouse). I understand that I will need to
+                                (the form necessary to provide legal notice to my spouse). I understand that I will need to
                                 <b>pay the fee </b>(or file an Affidavit of Indigency form to show the Court that I am
                                 unable to pay the fee) and <b>arrange for service</b>.</div>
                         </div>
@@ -1223,35 +1104,34 @@
                     <div class="ps-lg-3 small_text">
                         <div>County of Residence: (<small>Check all boxes that apply</small>)</div>
                         <div class="ps-lg-3">
-                            <div> <input type="checkbox" name="" id=""> I have lived in this county
+                            <div> <input type="checkbox" value="Yes" name="I have lived in this county for the last 90 days" id=""> I have lived in this county
                                 for the last 90 days.</div>
-                            <div> <input type="checkbox" name="" id=""> My spouse has lived in this
+                            <div> <input type="checkbox" value="Yes" name="My spouse has lived in this" id=""> My spouse has lived in this
                                 county for the last 90 days.</div>
-                            <div> <input type="checkbox" name="" id=""> I am serving in the armed
+                            <div> <input type="checkbox" value="Yes" name="I am serving in the armed" id=""> I am serving in the armed
                                 forces outside of Texas, but this county has been the home county of either my spouse or
                                 me for at least 90 days.</div>
-                            <div> <input type="checkbox" name="" id=""> I have accompanied my spouse
+                            <div> <input type="checkbox" value="Yes" name="I have accompanied my spouse" id=""> I have accompanied my spouse
                                 who is serving in the armed forces outside of Texas, but this county has been the home
                                 county of either my spouse or me for at least 90 days.</div>
-                            <div> <input type="checkbox" name="" id=""> None of the above apply.
+                            <div> <input type="checkbox" value="Yes" name="None of the above apply" id=""> None of the above apply.
                             </div>
                         </div>
                         <div>State of Residence: ( <small>Check all boxes that apply</small> )</div>
                         <div class="ps-lg-3">
-                            <div> <input type="checkbox" name="" id=""> I have lived in Texas for the
+                            <div> <input type="checkbox" value="Yes" name="I have lived in Texas for the last six months" id=""> I have lived in Texas for the
                                 last six months.</div>
-                            <div> <input type="checkbox" name="" id=""> My spouse has lived in Texas
+                            <div> <input type="checkbox" value="Yes" name="My spouse has lived in Texas for the last six months" id=""> My spouse has lived in Texas
                                 for the last six months.</div>
-                            <div> <input type="checkbox" name="" id=""> My spouse does not reside in
-                                Texas but Texas is the last state where we lived together as a married couple. This
+                            <div> <input type="checkbox" value="Yes" name="My spouse does not reside in Texas" id=""> My spouse does not reside in Texas but Texas is the last state where we lived together as a married couple. This
                                 petition is filed less than two years after we separated.</div>
-                            <div> <input type="checkbox" name="" id=""> I am serving in the armed
+                            <div> <input type="checkbox" value="Yes" name="I am serving in the armed" id=""> I am serving in the armed
                                 forces outside of Texas, but Texas is the home state of either my spouse or me and has
                                 been for at least six months.</div>
-                            <div> <input type="checkbox" name="" id=""> I have accompanied my spouse
+                            <div> <input type="checkbox" value="Yes" name="I have accompanied my spouse" id=""> I have accompanied my spouse
                                 who is serving in the armed forces outside of Texas, but Texas is the home state of
                                 either my spouse or me and has been for at least six months.</div>
-                            <div> <input type="checkbox" name="" id=""> None of the above apply.
+                            <div> <input type="checkbox" value="Yes" name="None of the above apply_2" id=""> None of the above apply.
                             </div>
                         </div>
                     </div>
@@ -1260,18 +1140,18 @@
                     <div class="ps-lg-3 pb-lg-3">
                         <div class="fw-bold">A. NoProtectiveOrder–</div>
                         <div class="ps-lg-3">
-                            <div><input type="checkbox" name="" id=""> I do not have a Protective
+                            <div><input type="checkbox" value="Yes" name="I do not have a Protective" id=""> I do not have a Protective
                                 Order against my spouse and I have not asked for one.</div>
                             <div>AND</div>
-                            <div><input type="checkbox" name="" id=""> My spouse does not have a
+                            <div><input type="checkbox" value="Yes" name="My spouse does not have a" id=""> My spouse does not have a
                                 Protective Order against me and has not asked for one.</div>
                         </div>
-                        <div class="fw-bold pt-lg-3">B. PendingProtectiveOrder–
+                        <div class="fw-bold pt-lg-3">B. Pending Protective Order–
                             <div class="ps-lg-3 small_text">
-                                <div><input type="checkbox" name="" id=""> I have filed paperwork
+                                <div><input type="checkbox" value="Yes" name="I have filed paperwork" id=""> I have filed paperwork
                                     asking for a Protective Order against my spouse, but a judge has not
                                     decided if I should get it. I asked for a Protective Order on <input type="text"
-                                        name="" id=""
+                                        name="I asked for a Protective Order" id=""
                                         class="border-0 border-bottom responsive_input"> in</div>
                                 <div>Date Filed</div>
                             </div>
@@ -1286,33 +1166,33 @@
                 <section class="section_area p-5" id="eleventh_section">
                     <div class="ps-lg-3">
                     <div class="small_text ps-lg-3">
-                        <div class=""><input type="text" name="" id="" class="border-0 border-bottom responsive_input">, <input type="text" name="" id="" class="border-0 border-bottom responsive_input">. The cause number is <input type="text" name="" id="" class="border-0 border-bottom responsive_input"> </div>
+                        <div class=""><input type="text" name="County_11" id="" class="border-0 border-bottom responsive_input">, <input type="text" name="State_11" id="" class="border-0 border-bottom responsive_input">. The cause number is <input type="text" name="The cause number_11" id="" class="border-0 border-bottom responsive_input"> </div>
                         <div><span class="p_sm_0" style="padding-left:50px;">County</span> <span class="p_sm_0" style="padding-left:135px;">State</span> <span class="p_sm_0" style="padding-left:255px;">Cause Number</span></div>
                         <div>If I get the Protective Order, I will file a copy of it before any hearings in this divorce.</div>
-                        <div><input type="checkbox" name="" id=""> My spouse has filed paperwork asking to get a Protective Order against me, but a judge has not decided if my spouse will get it. My spouse asked for a Protective Order on</div>
-                        <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input">in<input type="text" name="" id="" class="border-0 border-bottom responsive_input">,<input type="text" name="" id="" class="border-0 border-bottom responsive_input">. The cause number is <input type="text" name="" id="" class="border-0 border-bottom responsive_input">. If my spouse gets the Protective Order, I </div>
+                        <div><input type="checkbox"  value="Yes" name="My spouse has filed paperwork asking" id=""> My spouse has filed paperwork asking to get a Protective Order against me, but a judge has not decided if my spouse will get it. My spouse asked for a Protective Order on</div>
+                        <div> <input type="text" name="Date Filed_11.1" id="" class="border-0 border-bottom responsive_input">in<input type="text" name="County_11.1" id="" class="border-0 border-bottom responsive_input">,<input type="text" name="State_11.1" id="" class="border-0 border-bottom responsive_input">. The cause number is <input type="text" name="Cause Number_11.1" id="" class="border-0 border-bottom responsive_input">. If my spouse gets the Protective Order, I </div>
                         <div><span class="p_sm_0" style="padding-left:50px;">Date Filed</span>  <span class="p_sm_0" style="padding-left:130px;">County</span> <span class="p_sm_0" style="padding-left:130px;">State</span> <span  class="p_sm_0" style="padding-left:245px;">Cause Number</span></div>
                         <div> will file a copy of it before any hearings in this divorce.  </div>
                     </div>
-                    <div class="fw-bold pt-lg-3">C. ProtectiveOrderinPlace–</div>
+                    <div class="fw-bold pt-lg-3">C. Protective Order in Place–</div>
 
                     <div class="ps-lg-3 small_text">
-                        <div><input type="checkbox" name="" id=""> I <b>do have </b>a Protective Order against my spouse. I got the Protective Order in <input type="text" name="" id="" class="border-0 border-bottom responsive_input">, <input type="text" name="" id="" class="border-0 border-bottom responsive_input">on<input type="text" name="" id="" class="border-0 border-bottom responsive_input">. The </div>
+                        <div><input type="checkbox" value="Yes" name="I do have a Protective Order against my spouse" id=""> I <b>do have </b>a Protective Order against my spouse. I got the Protective Order in <input type="text" name="County_11.2" id="" class="border-0 border-bottom responsive_input">, <input type="text" name="State_11.2" id="" class="border-0 border-bottom responsive_input">on<input type="text" name="Cause Number_11.2" id="" class="border-0 border-bottom responsive_input">. The </div>
                         <div><span class="p_sm_0" style="padding-left:600px;">County</span> <span class="p_sm_0" style="padding-left:120px;">State</span> <span class="p_sm_0" style="padding-left:120px;">Date Ordered</span></div>
-                           <div> cause number for the Protective Order is <input type="text" name="" id="" class="border-0 border-bottom responsive_input">. Either I have attached a copy of the Protetive Order to this Original Petition or I will file a copy of it </div>
+                           <div> cause number for the Protective Order is <input type="text" name="Protective Order in Place Cause Number" id="" class="border-0 border-bottom responsive_input">. Either I have attached a copy of the Protetive Order to this Original Petition or I will file a copy of it </div>
                            <div class="p_sm_0" style="padding-left:310px;"> <span>Cause Number</span></div>
                            <div> with the court before any hearings in this divorce.   </div>
-                        <div><input type="checkbox" name="" id=""> My spouse does have a Protective Order against me. The Order was made in <input type="text" name="" id="" class="border-0 border-bottom responsive_input">,<input type="text" name="" id="" class="border-0 border-bottom responsive_input">on<input type="text" name="" id="" class="border-0 border-bottom responsive_input">. The
+                        <div><input type="checkbox" value="Yes" name="My spouse does have_11" id=""> My spouse does have a Protective Order against me. The Order was made in <input type="text" name="My spouse County" id="" class="border-0 border-bottom responsive_input">,<input type="text" name="My spouse State" id="" class="border-0 border-bottom responsive_input">on<input type="text" name="My spouse Date Ordered" id="" class="border-0 border-bottom responsive_input">. The
                         </div>
                         <div><span class="p_sm_0" style="padding-left:600px;">County</span> <span class="p_sm_0" style="padding-left:120px;">State</span> <span class="p_sm_0" style="padding-left:120px;">Date</span> <span>Ordered</span></div>
-                        <div> cause number for the Protective order is <input type="text" name="" id="" class="border-0 border-bottom responsive_input">. Either I have attached a  copy of the Protective Order to this Original Petition or I will file a copy of it</div>
+                        <div> cause number for the Protective order is <input type="text" name="My spouse Cause Number" id="" class="border-0 border-bottom responsive_input">. Either I have attached a  copy of the Protective Order to this Original Petition or I will file a copy of it</div>
                         <div> <span class="p_sm_0" style="padding-left:300px;">Cause Number</span></div>
                         <div> with the court before any hearings in this divorce. </div>
                     </div>
                     </div>
-                    <div class="fw-bold pt-lg-3">6. MarriageandGroundsforDivorce</div>
+                    <div class="fw-bold pt-lg-3">6. Marriage and Grounds for Divorce</div>
                     <div class="small_text ps-lg-3">
-                        <div> My spouse and I got married on or about: <input type="text" name="" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="" id="" class="border-0 border-bottom responsive_input">.</div>
+                        <div> My spouse and I got married on or about: <input type="text" name="Marriage and Grounds for Divorce Month" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="Marriage and Grounds for Divorce Day" id="" class="border-0 border-bottom responsive_input"> <input type="text" name="Marriage and Grounds for Divorce Year" id="" class="border-0 border-bottom responsive_input">.</div>
                         <div><span class="p_sm_0" style="padding-left:330px;">Month</span> <span  class="p_sm_0" style="padding-left:150px;">Day</span> <span class="p_sm_0" style="padding-left:150px;"> Year</span></div>
                         <div>The marriage has become insupportable due to discord or conflict of personalities that destroys the legitimate ends of the marital relationship and prevents any reasonable expectation of reconciliation.</div>
                     </div>
@@ -1339,25 +1219,25 @@
                                 <div>I owned these vehicles before marriage:</div>
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Year1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Year2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Make1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Make2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Model1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Model2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Vehicle Identification No1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Vehicle Identification No2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="pt-lg-4">I received these vehicles as a gift or inheritance:</div>
@@ -1365,25 +1245,25 @@
                             <div class="row ps-lg-3">
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Year3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Year4" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Make3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Make4" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Model3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Model4" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Vehicle Identification No3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts Vehicle Identification No4" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                             </div>
@@ -1392,23 +1272,23 @@
                                 <div class="fw-bold">2. Other Money or Personal Property</div>
                                 <div class="  ps-lg-3">
                                     <div>I owned the following money or personal property before my marriage:</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I owned the following money or personal property before my marriage1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I owned the following money or personal property before my marriage2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I owned the following money or personal property before my marriage3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I owned the following money or personal property before my marriage4" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I owned the following money or personal property before my marriage5" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3">I inherited or received as a gift the following money or personal property during my marriage:</div>
 
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I inherited or received as a gift1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I inherited or received as a gift2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I inherited or received as a gift3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I inherited or received as a gift4" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3">I received the following money recovery for personal injuries that occurred during the marriage that is not for lost wages or medical expenses:</div>
 
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I received the following money recovery1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Property and Debts I received the following money recovery2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-2 pb-lg-3">I ask the Court to confirm this personal property as my separate personal property in my Final Decree of Divorce.</div>
 
@@ -1424,22 +1304,22 @@
                     <div class="ps-lg-3">
                         <div class="border border-dark p-1">Note: You cannot use this form to change your name to anything other than a name that you used before you got married.</div>
                         <div class="small">(Check only one)</div>
-                        <div><input type="checkbox" name="" id=""> I am NOT asking the court to change my name.</div>
-                        <div><input type="checkbox" name="" id=""> I ask the Court to change my name back to a name I had before my marriage. I am not asking the court to change my name to avoid criminal prosecution or creditors.</div>
+                        <div><input type="checkbox" value="Yes" name="Name Change I am NOT asking" id=""> I am NOT asking the court to change my name.</div>
+                        <div><input type="checkbox" value="Yes" name="Name Change I ask the Court to change my name" id=""> I ask the Court to change my name back to a name I had before my marriage. I am not asking the court to change my name to avoid criminal prosecution or creditors.</div>
 
                         <div class="row">
                             <div class="col-lg-4">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change First" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">First</div>
                             </div>
 
                             <div class="col-lg-4">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Middle" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Middle</div>
                             </div>
 
                             <div class="col-lg-4">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Last" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Last</div>
                             </div>
 
@@ -1452,41 +1332,41 @@
                         <div>I also ask the Court to make the other orders I have asked for in this Original Petition for Divorce and any other orders to which I am entitled.</div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Petitioner’s Name" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Petitioner’s Name (Print)</div>
                             </div>
                             <div class="col-lg-6">
-                                <div><input type="date" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="date" name="Name Change Date" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Date</div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Petitioner’s Signature" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Petitioner’s Signature</div>
                             </div>
                             <div class="col-lg-6">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Phone Number" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Phone Number</div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                <div><input type="text" name="Name Change Petitioner’s Mailing Address" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                 <div class="small">Petitioner’s Mailing Address</div>
                             </div>
                             <div class="col-lg-6">
                                <div class="row">
                                 <div class="col-lg-4">
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                    <div><input type="text" name="Name Change City" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                     <div class="small">City</div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                    <div><input type="text" name="Name Change State" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                     <div class="small">State</div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                    <div><input type="text" name="Name Change Zip" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                     <div class="small">Zip</div>
                                 </div>
                                </div>
@@ -1503,31 +1383,30 @@
                         <div class="border border-dark p-1"><b>WARNING</b>: Without the advice and help of an attorney, you may be putting yourself, your personal property, and your money at risk. To get a referral to an attorney, call the State Bar of Texas Lawyer Referral Information Service at 1-800-252-9690. If you are a victim of domestic violence, or if at any time you feel unsafe, you can get confidential help from the National Domestic Violence Hotline at 1-800-799-7233 or legal help from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673.</div>
                         <div class="text-center">Print court information exactly as it appears on your Original Petition for Divorce.</div>
                         <div>Print your answers in blue ink)</div>
-                        <div class="text-center">Cause Number: <input type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input w-50"></div>
+                        <div class="text-center">Cause Number: <input type="text" name="Cause Number_14" id="" class="border-0 border-bottom responsive_input w-50"></div>
                         <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
                             file this form)</div>
                         <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div>Petitioner:<input type="text" name=""
+                                <div>Petitioner:<input type="text" name="Petitioner_14"
                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
                                     spouse filing for divorce)</div>
                                 <div class="text-center fw-bold">And</div>
-                                <div>Respondent:<input type="text" name=""
+                                <div>Respondent:<input type="text" name="Respondent_14"
                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
                                     spouse)</div>
                             </div>
                             <div class="col-lg-6">
                                 <div>In the (check one):</div>
-                                <div><input type="text" name=""
+                                <div><input type="text" name="Court Number_14"
                                         class="border-0 border-bottom responsive_input "><input type="radio"
-                                        name="" class=" me-lg-1">District Court <input type="radio"
-                                        name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                        name="District Court_14" class=" me-lg-1">District Court <input type="radio"
+                                        name="County Court_14" class=" mx-lg-1"> County Court at Law of:</div>
                                 <div class="small_text">(Court Number)</div>
-                                <div><input type="text" name=""
+                                <div><input type="text" name="County_14"
                                         class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                 <div class="small_text">(County)</div>
 
@@ -1574,80 +1453,80 @@
                         </div>
                         <div class="fw-bold">The person who signed this affidavit appeared, in person, before me, the undersigned notary, and stated under oath:</div>
                         <div>“I am the Respondent in this case.</div>
-                        <div>My name is: <input type="text" name="" id=""
+                        <div>My name is: <input type="text" name="First Name_14" id=""
                             class="border-0 border-bottom responsive_input"> <input type="text"
-                            name="" id="" class="border-0 border-bottom responsive_input">
-                        <input type="text" name="" id=""
+                            name="Middle Name_14" id="" class="border-0 border-bottom responsive_input">
+                        <input type="text" name="Last Name_14" id=""
                             class="border-0 border-bottom responsive_input"></div>
                             <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:140px">First</span> <span class="p_sm_0" style="padding-left:120px">Middle</span> <span  class="p_sm_0" style="padding-left:130px">Last</span></div>
                              <div>“My mailing address is:
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input">
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input">
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input">
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input"></div>
+                            <input type="text" name="Mailing Address_14" id="" class="border-0 border-bottom responsive_input">
+                            <input type="text" name="City_14" id="" class="border-0 border-bottom responsive_input">
+                            <input type="text" name="State_14" id="" class="border-0 border-bottom responsive_input">
+                            <input type="text" name="ZIP_14" id="" class="border-0 border-bottom responsive_input"></div>
                             <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:220px">Mailing Address</span> <span class="p_sm_0" style="padding-left:130px">City</span> <span  class="p_sm_0" style="padding-left:180px">State</span> <span  class="p_sm_0" style="padding-left:170px">ZIP</span></div>
                     </div>
 
                     @include('layouts.footer26', ['page' => 1])
                 </section>
                 <section class="section_area p-5" id="fifteen_section">
-                        <div>“My phone number is:  <input type="text" name="" id="" class="border-0 border-bottom responsive_input">“The last three numbers of my driver’s license number are:
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                        <div>“My phone number is:  <input type="text" name="My phone number_15" id="" class="border-0 border-bottom responsive_input">“The last three numbers of my driver’s license number are:
+                            <input type="text" name="license number are_15.1" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                            <input type="text" name="license number are_15.2" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                            <input type="text" name="license number are_15.3" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
                             My driver’s license was issued in
-                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input"  >(State).
+                            <input type="text" name="My driver’s license was issued in_15" id="" class="border-0 border-bottom responsive_input"  >(State).
                         </div>
-                    <div>Or “<input type="checkbox" name="" id=""> I do not have a driver’s license number. “The last three numbers of my social security number are: <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
-                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input" style="width:50px;"></div>
-                       <div> Or “<input type="checkbox" name="" id=""> I do not have a social security number.</div>
-                       <div>“<input type="checkbox" name="" id=""> I have been given a copy of the Original Petition for Divorce filed in this case. I have read the Original Petition for Divorce and understand what it says. I do not give up my right to review a different Petition for Divorce if it gets changed (amended).</div>
-                       <div>“<input type="checkbox" name="" id=""> I understand that I have the right to be given a copy of the Original Petition for Divorce by a constable, sheriff or other official process server (legal notice). I do not want to be given legal notice. I give up my right to legal notice.</div>
-                       <div>“<input type="checkbox" name="" id=""> I request that the Court not enter any orders or judgment if they are not signed by me or if I have not received prior written notice of the date, time, and place of any hearings.</div>
-                       <div>“<input type="checkbox" name="" id=""> If I reach an agreement and sign a Decree of Divorce, the court can enter the Decree without giving me notice.</div>
-                       <div>“<input type="checkbox" name="" id=""> I understand that I must let the Court and my spouse (or my spouse’s attorney) know in writing if my mailing address or phone number changes during this case. If I don’t, then I understand that any notices about this case will be sent to me at the address on this form.</div>
-                       <div>“<input type="checkbox" name="" id=""> I understand that by signing this form I am entering an appearance and am not required to go to Court to tell the judge my side of the case. I agree that a Judge or Associate Judge in the county and state where this case is filed may make decisions about my divorce, even if the divorce should have been filed in another county. I do not want a court reporter to make a record of the testimony.</div>
+                    <div>Or “<input type="checkbox" value="Yes" name="I do not have a driver’s license number_15" id=""> I do not have a driver’s license number. “The last three numbers of my social security number are: <input type="text" name="I do not have a driver’s license number_val15.1" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                        <input type="text" name="I do not have a driver’s license number_val15.2" id="" class="border-0 border-bottom responsive_input" style="width:50px;">
+                        <input type="text" name="I do not have a driver’s license number_val15.3" id="" class="border-0 border-bottom responsive_input" style="width:50px;"></div>
+                       <div> Or “<input type="checkbox" value="Yes" name="I do not have a social security number." id=""> I do not have a social security number.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I have been given a copy of the Original Petition" id=""> I have been given a copy of the Original Petition for Divorce filed in this case. I have read the Original Petition for Divorce and understand what it says. I do not give up my right to review a different Petition for Divorce if it gets changed (amended).</div>
+                       <div>“<input type="checkbox" value="Yes" name="I understand that I have the right" id=""> I understand that I have the right to be given a copy of the Original Petition for Divorce by a constable, sheriff or other official process server (legal notice). I do not want to be given legal notice. I give up my right to legal notice.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I request that the Court not enter" id=""> I request that the Court not enter any orders or judgment if they are not signed by me or if I have not received prior written notice of the date, time, and place of any hearings.</div>
+                       <div>“<input type="checkbox" value="Yes" name="If I reach an agreement" id=""> If I reach an agreement and sign a Decree of Divorce, the court can enter the Decree without giving me notice.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I understand that I must let the Court" id=""> I understand that I must let the Court and my spouse (or my spouse’s attorney) know in writing if my mailing address or phone number changes during this case. If I don’t, then I understand that any notices about this case will be sent to me at the address on this form.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I understand that by signing" id=""> I understand that by signing this form I am entering an appearance and am not required to go to Court to tell the judge my side of the case. I agree that a Judge or Associate Judge in the county and state where this case is filed may make decisions about my divorce, even if the divorce should have been filed in another county. I do not want a court reporter to make a record of the testimony.</div>
 
 
                        <div class="pt-lg-3">Military Status</div>
                        <div class="small">(Check only one)</div>
-                       <div>“<input type="checkbox" name="" id=""> I am not in the military.</div>
-                       <div>“<input type="checkbox" name="" id=""> I am in the military. I agree to the provisions stated above and I waive only the rights, privileges, and exemptions I have under the Servicemembers Civil Relief Act that are contrary to those provisions.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I am not in the military" id=""> I am not in the military.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I am in the military" id=""> I am in the military. I agree to the provisions stated above and I waive only the rights, privileges, and exemptions I have under the Servicemembers Civil Relief Act that are contrary to those provisions.</div>
                        <div class="pt-lg-3">Name Change</div>
                        <div class="small">(Check only one)</div>
                        <div class="border border-dark">Note: You cannot use this form to change your name to anything other than a name that you used before you got married.</div>
-                       <div>“<input type="checkbox" name="" id=""> I am NOT asking the court to change my name.</div>
-                       <div>“<input type="checkbox" name="" id=""> I  ask the Court to change my name back to a name I had before my marriage. I am not asking the court to change my name to avoid criminal prosecution or creditors.”</div>
+                       <div>“<input type="checkbox" value="Yes" name="I am NOT asking the court to change my name" id=""> I am NOT asking the court to change my name.</div>
+                       <div>“<input type="checkbox" value="Yes" name="I  ask the Court to change my name back" id=""> I  ask the Court to change my name back to a name I had before my marriage. I am not asking the court to change my name to avoid criminal prosecution or creditors.”</div>
                        <div class="row">
                         <div class="col-lg-4">
-                            <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                            <div> <input type="text" name="First Name Change_15" id="" class="border-0 border-bottom responsive_input w-100"> </div>
                             <div class="small">First</div>
                         </div>
                         <div class="col-lg-4">
-                            <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                            <div> <input type="text" name="Middle Name Change_15" id="" class="border-0 border-bottom responsive_input w-100"> </div>
                             <div class="small text-center">Middle</div>
                         </div>
                         <div class="col-lg-4">
-                            <div> <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                            <div> <input type="text" name="Last Name Change_15" id="" class="border-0 border-bottom responsive_input w-100"> </div>
                             <div class="small text-center">Last</div>
                         </div>
                        </div>
                        <div class="row">
                         <div class="col-lg-8">
-                            <input type="text" name="" id=""
+                            <input type="text" name="Signature of Person Signing Affidavit_15" id=""
                                 class="border-0 border-bottom responsive_input w-100">
                             <div class="small_text">Signature of Person Signing Affidavit</div>
                         </div>
                         <div class="col-lg-2">
-                            <input type="date" name="" id=""
+                            <input type="date" name="Date_15" id=""
                                 class="border-0 border-bottom responsive_input w-100">
                             <div class="small_text">Date</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-7">
-                            <div class="d-flex"> by <input type="text" name="" id=""
+                            <div class="d-flex"> by <input type="text" name="Print name of person who is signing this Affidavit_15" id=""
                                     class="border-0 border-bottom responsive_input w-100"></div>
                             <div class="text-center small_text">(Print name of person who is signing this Affidavit. NOT the notary’s name.)</div>
                         </div>
@@ -1655,8 +1534,7 @@
                     <div class="row pb-lg-3">
                         <div class="col-lg-6"></div>
                         <div class="col-lg-6">
-                            <div> <input type="text" name="" id=""
-                                    class="border-0 border-bottom responsive_input w-100"></div>
+                            <div> <input type="text" name="Notary’s Signature_15" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             <div class="small_text">Notary’s Signature</div>
                         </div>
                     </div>
@@ -1664,35 +1542,34 @@
                     @include('layouts.footer26', ['page' => 2])
                 </section>
                 <section class="section_area p-5" id="sixteenth_section">
-
                     <div class="border border-dark p-1"><b>WARNING</b>: Without the advice and help of an attorney, you may be putting yourself, your personal property, and your money at risk. To get a referral to an attorney, call the State Bar of Texas Lawyer Referral Information Service at 1-800- 252-9690. If you are a victim of domestic violence, or if at any time you feel unsafe, you can get confidential help from the National Domestic Violence Hotline at 1-800-799-7233 or legal help from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673</div>
                     <div class="text-center">Print court information exactly as it appears on your Original Petition for Divorce.</div>
                         <div>Print your answers in blue ink)</div>
-                        <div class="text-center">Cause Number: <input type="text" name="" id=""
+                        <div class="text-center">Cause Number: <input type="text" name="Cause Number_16" id=""
                                 class="border-0 border-bottom responsive_input w-50"></div>
                         <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
                             file this form)</div>
                         <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div>Petitioner:<input type="text" name=""
+                                <div>Petitioner:<input type="text" name="Petitioner_16"
                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
                                     spouse filing for divorce)</div>
                                 <div class="text-center fw-bold">And</div>
-                                <div>Respondent:<input type="text" name=""
+                                <div>Respondent:<input type="text" name="Respondent_16"
                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
                                     spouse)</div>
                             </div>
                             <div class="col-lg-6">
                                 <div>In the (check one):</div>
-                                <div><input type="text" name=""
+                                <div><input type="text" name="Court Number_16"
                                         class="border-0 border-bottom responsive_input "><input type="radio"
-                                        name="" class=" me-lg-1">District Court <input type="radio"
-                                        name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                        name="District Court_16" class=" me-lg-1">District Court <input type="radio"
+                                        name="County Court_16" class=" mx-lg-1"> County Court at Law of:</div>
                                 <div class="small_text">(Court Number)</div>
-                                <div><input type="text" name=""
+                                <div><input type="text" name="County_16"
                                         class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                 <div class="small_text">(County)</div>
 
@@ -1704,64 +1581,55 @@
                             <b>WARNING</b>: Read all of the Instructions for Divorce Set 1 before filling out this form.
                         </div>
 
-                        <div class="pt-lg-3">A hearing took place on <input type="text" name="" class="border-0 border-bottom">. There was no jury. Neither the husband nor wife asked for a jury.</div>
+                        <div class="pt-lg-3">A hearing took place on <input type="text" name="A hearing took place on_16" class="border-0 border-bottom">. There was no jury. Neither the husband nor wife asked for a jury.</div>
                         <div class="py-lg-2 fw-bold">1. Appearances</div>
 
                         <div class="fw-bold">Petitioner</div>
-                        {{-- <div>The Petitioner’s name is: <input type="text" name="" id=""
-                            class="border-0 border-bottom responsive_input"> <input type="text"
-                            name="" id="" class="border-0 border-bottom responsive_input">
-                        <input type="text" name="" id=""
-                            class="border-0 border-bottom responsive_input">.</div>
-                            <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:270px">First</span> <span  class="p_sm_0" style="padding-left:160px">Middle</span> <span  class="p_sm_0" style="padding-left:160px">Last</span></div> --}}
-                            <div class="row">
+                          <div class="row">
                                 <div class="col-lg-3">
-                                    The Petitioner’s name is :                                </div>
+                                    The Petitioner’s name is : </div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                    <input type="text" name="Petitioner’s First_16" id=""  class="border-0 border-bottom responsive_input">
                                     <div class="small_text">First</div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                    <input type="text" name="Petitioner’s Middle_16" id=""  class="border-0 border-bottom responsive_input">
                                     <div class="small_text">Middle</div>
 
                                 </div>
                                 <div class="col-lg-3 ">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">.
+                                    <input type="text" name="Petitioner’s Last_16" id=""  class="border-0 border-bottom responsive_input">.
                                     <div class="small_text">Last</div>
 
                                 </div>
                              </div>
                             <div class="pt-lg-3 small">(Check one box)</div>
-                            <div><input type="radio" name="" id=""> The Petitioner was present, representing him/herself, and has agreed to the terms of this Final Decree of Divorce (called “Decree” throughout this document).</div>
-                            <div><input type="radio" name="" id=""> The Petitioner was not present but has signed below, agreeing to the terms of this Decree.</div>
+                            <div><input type="radio" name="The Petitioner was present_16" id=""> The Petitioner was present, representing him/herself, and has agreed to the terms of this Final Decree of Divorce (called “Decree” throughout this document).</div>
+                            <div><input type="radio" name="The Petitioner was not present_16" id=""> The Petitioner was not present but has signed below, agreeing to the terms of this Decree.</div>
                             <div class="pt-lg-3 fw-bold">Respondent</div>
                             <div>
                              <div class="row">
                                 <div class="col-lg-3">
-                                    The Respondent’s name is :                                </div>
+                                    The Respondent’s name is :</div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                    <input type="text" name="Respondent’s First_16" id=""  class="border-0 border-bottom responsive_input">
                                     <div class="small_text">First</div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                    <input type="text" name="Respondent’s Middle_16" id=""  class="border-0 border-bottom responsive_input">
                                     <div class="small_text">Middle</div>
-
                                 </div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">.
+                                    <input type="text" name="Respondent’s Last_16" id=""  class="border-0 border-bottom responsive_input">.
                                     <div class="small_text">Last</div>
-
                                 </div>
                              </div>
                                  </div>
-                                {{-- <div class="ps-lg-3 small_text"><span class="p_sm_0" style="padding-left:330px">First</span> <span  class="p_sm_0" style="padding-left:280px">Middle</span> <span  class="p_sm_0" style="padding-left:280px">Last</span></div> --}}
-                                <div class="small pt-lg-2">(Check one box)</div>
+                                 <div class="small pt-lg-2">(Check one box)</div>
 
-                                <div><input type="radio" name="" id=""> The Respondent was present and agrees to the terms in this Decree.</div>
-                                <div><input type="radio" name="" id=""> The Respondent was not present but has signed below, agreeing to the terms in this Decree.</div>
-                                <div class="pb-lg-3"><input type="radio" name="" id=""> The Respondent was not present and has defaulted. The Petitioner has filed a Certificate of Last Known Address and a Military Status Affidavit. The Petitioner has also arranged for a court reporter to record the hearing.</div>
+                                <div><input type="radio" name="The Respondent was present_16" id=""> The Respondent was present and agrees to the terms in this Decree.</div>
+                                <div><input type="radio" name="The Respondent was not present_16" id=""> The Respondent was not present but has signed below, agreeing to the terms in this Decree.</div>
+                                <div class="pb-lg-3"><input type="radio" name="The Respondent was not present and has defaulted_16" id=""> The Respondent was not present and has defaulted. The Petitioner has filed a Certificate of Last Known Address and a Military Status Affidavit. The Petitioner has also arranged for a court reporter to record the hearing.</div>
 
 
                     @include('layouts.footer27', ['page' => 1])
@@ -1771,8 +1639,8 @@
                             <div class="text-center court_fills"><span  class="text-center  bg-secondary  ">The Court fills out this box.</span></div>
                             <div class="bg-secondary_1 p-2">
                                 <div class="fw-bold">2. Record</div>
-                                <div><input type="checkbox" name="" id=""> A court reporter did not record today’s hearing because the husband, wife, and judge agreed not to make a record.</div>
-                                <div><input type="checkbox" name="" id=""> A court reporter recorded today’s hearing.</div>
+                                <div><input type="checkbox" value="Yes" name="A court reporter did not record_17" id=""> A court reporter did not record today’s hearing because the husband, wife, and judge agreed not to make a record.</div>
+                                <div><input type="checkbox" value="Yes" name="A court reporter recorded_17" id=""> A court reporter recorded today’s hearing.</div>
                             </div>
                             <div class="pt-lg-3 fw-bold">3. Jurisdiction</div>
                             <div>The Court heard evidence and finds that it has jurisdiction over this case and the parties, that the residency and notice requirements have been met, and that the Original Petition for Divorce meets all legal requirements.</div>
@@ -1807,55 +1675,54 @@
                           <div>
                             <div class="fw-bold">1. Cars, trucks, motorcycles or other vehicles</div>
                             <div class="row ps-lg-3">
-                                <div>1. Cars, trucks, motorcycles or other vehicles</div>
-                                <div class="ps-lg-3"> <input type="checkbox" name="" id=""> He owned these vehicles before marriage:</div>
+                                 <div class="ps-lg-3"> <input type="checkbox" value="Yes" name="He owned these_18" id=""> He owned these vehicles before marriage:</div>
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Year1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Year2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Make1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Make2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Model1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Model2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Vehicle Identification No1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He owned these vehicles before marriage Vehicle Identification No2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
-                                <div class="pt-lg-4"><input type="checkbox" name="" id=""> He received these vehicles as a gift or inheritance during the marriage:</div>
+                                <div class="pt-lg-4"><input type="checkbox" value="Yes" name="He received these vehicles_19" id=""> He received these vehicles as a gift or inheritance during the marriage:</div>
                             </div>
                             <div class="row ps-lg-3">
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Year1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Year2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Make1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Make2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Model1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriage Model2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriageVehicle Identification No1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="He received these vehicles as a gift or inheritance during the marriageVehicle Identification No2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                             </div>
@@ -1864,20 +1731,20 @@
                                 <div class="fw-bold">2. Other Money or Personal Property ( <span>not real property, such as a house or piece of land</span> )</div>
                                 <div class="  ps-lg-3">
                                     <div>Husband owned the following money or personal property before marriage:</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                      <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband owned the following money or personal property before marriage1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband owned the following money or personal property before marriage2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                      <div><input type="text" name="Husband owned the following money or personal property before marriage3" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3"> Husband inherited or received as a gift the following money or personal property during the marriage:</div>
 
-                                     <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                     <div><input type="text" name="Husband inherited or received as a gift1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband inherited or received as a gift2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband inherited or received as a gift3" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3">Husband received the following money recovery for personal injuries that occurred during the marriage that is not for lost wages or medical expenses:</div>
 
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband received the following money1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband received the following money2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="fw-bold">Community Property</div>
                                 <div>The Court ORDERS that Husband gets the following property as his sole and separate property, and Wife conveys (gives) to Husband her interest in such property, and Wife is divested of (loses) all right, title, interest and claim in and to that property. </div>
@@ -1899,40 +1766,40 @@
                              <div class="row ps-lg-3">
                                  <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year1_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year2_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make1_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make2_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model1_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model2_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Vehicle Identification No1_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Vehicle Identification No2_19" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                              </div>
                              <div>
                                 <div class="fw-bold">2. Husband will keep the following personal property still held jointly:   <small>(For example, a bank account, but not real property such as a house or land.)</small> </div>
                                 <div class="  ps-lg-3">
-                                     <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                      <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                      <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                     <div><input type="text" name="Husband will keep the following1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Husband will keep the following2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                      <div><input type="text" name="Husband will keep the following3" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                      <div><input type="text" name="Husband will keep the following4" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                              </div>
                                 <div class="fw-bold mt-lg-3"><b>Husband’s Retirement Funds</b> <small>(For example, pension, profit-sharing, and stock option plans, 401ks, and IRAs)</small></div>
-                                <div><input type="checkbox" name="" id=""> Husband does not have any retirement funds. </div>
-                                <div><input type="checkbox" name="" id=""> Husband has the following retirement funds: </div>
+                                <div><input type="checkbox" value="Yes" name="Husband’s Retirement Funds1" id=""> Husband does not have any retirement funds. </div>
+                                <div><input type="checkbox" value="Yes" name="Husband’s Retirement Funds2" id=""> Husband has the following retirement funds: </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered border-dark w-50">
                                         <tbody>
@@ -1941,16 +1808,16 @@
                                                 <td>State Current Value of Fund</td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund1" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund1" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund2" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund2" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund3" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund3" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1958,18 +1825,15 @@
                                 <div>If Husband has retirement funds, the funds:</div>
 
                             </div>
-
-
-
                         </div>
                     </div>
                     @include('layouts.footer27', ['page' => 4])
                 </section>
                 <section class="section_area p-5" id="twentieth_section">
                      <div class="ps-lg-3 pb-lg-3">
-                        <div><input type="checkbox" name="" id=""> accrued between the date of the marriage and the date this Decree is signed by the Court are awarded 50% to Husband and 50% to Wife.</div>
-                        <div><input type="checkbox" name="" id=""> are awarded <input type="text" name="" id="" class="border-0 border-bottom" style="width: 100px"> to Husband and <input type="text" name="" id="" class="border-0 border-bottom" style="width: 100px"> to Wife. <small>(List dollar amount or percentage.)</small></div>
-                        <div><input type="checkbox" name="" id=""> are awarded 100% to Husband.</div>
+                        <div><input type="checkbox" value="Yes" name="accrued between the date_20" id=""> accrued between the date of the marriage and the date this Decree is signed by the Court are awarded 50% to Husband and 50% to Wife.</div>
+                        <div><input type="checkbox" value="Yes" name="are awarded_20" id=""> are awarded <input type="text" name="are awarded_val20" id="" class="border-0 border-bottom" style="width: 100px"> to Husband and <input type="text" name="to Husband and_20" id="" class="border-0 border-bottom" style="width: 100px"> to Wife. <small>(List dollar amount or percentage.)</small></div>
+                        <div><input type="checkbox" value="Yes" name="are awarded_20" id=""> are awarded 100% to Husband.</div>
                         <div class="text-decoration-underline"> If you divide the retirement funds above by awarding any of Husband’s retirement funds to Wife, you will need to obtain an additional court order, usually called a “qualified domestic relations order” (QDRO), to make the division effective. A QDRO form is not included in this Divorce Set. It is recommended that you hire a lawyer to prepare a QDRO. If you award all of Husband’s retirement funds to Husband or if Husband has no retirement funds, you do not need a QDRO.</div>
                         <div class="py-lg-3 fw-bold  "><span class=" border-bottom">Wife’s Property</span></div>
 
@@ -1984,25 +1848,25 @@
                                 <div>She owned these vehicles before marriage:</div>
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Year1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Year2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Make1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Make2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Model1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Model2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Vehicle Identification No1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="She owned these vehicles before marriage Vehicle Identification No2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="pt-lg-4">I received these vehicles as a gift or inheritance:</div>
@@ -2010,25 +1874,25 @@
                             <div class="row ps-lg-3">
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Year1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Year2" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Make1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Make2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Model1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Model2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Vehicle Identification No1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="I received these vehicles as a gift or inheritance Vehicle Identification No2" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                             </div>
@@ -2037,19 +1901,19 @@
                                 <div class="fw-bold">2. Other Money or Personal Property <small>(not real property, such as a house or piece of land.)</small></div>
                                 <div class="ps-lg-3">
                                     <div>Wife owned the following money or personal property before marriage:</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                      <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Wife owned the following money or personal property before marriage1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Wife owned the following money or personal property before marriage2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                      <div><input type="text" name="Wife owned the following money or personal property before marriage3" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3">Wife inherited or received as a gift the following money or personal property during the marriage:</div>
 
-                                     <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                     <div><input type="text" name="Wife inherited or received as a gift1" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Wife inherited or received as a gift2" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Wife inherited or received as a gift3" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                     <div class="pt-lg-1 pb-lg-3">Wife received the following money recovery for personal injuries that occurred during the marriage that is not for lost wages or medical expenses.</div>
 
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Wife received the following money1" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                             </div>
                         </div>
@@ -2058,66 +1922,65 @@
                     </div>
                     @include('layouts.footer27', ['page' => 5])
                 </section>
-                <section class="section_area p-5" id="twenty-first_section">
+                <section class="section_area p-5" id="twenty-one_section">
                      <div class="ps-lg-3 pb-lg-5">
                         <div>
                              <div class="row ps-lg-3">
                                  <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Vehicle Identification No1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Vehicle Identification No2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                              </div>
                             <div class="row ps-lg-3">
                                 <div class="col-lg-2">
                                     <div>Year</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year3_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Year4_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Make</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make3_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Make4_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-3">
                                     <div>Model</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model3_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Model4_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                                 </div>
                                 <div class="col-lg-4">
                                     <div>Vehicle Identification No. [VIN]</div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                    <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-
+                                    <div><input type="text" name="Vehicle Identification No1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                    <div><input type="text" name="Vehicle Identification No2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
                                 </div>
                             </div>
                             <div class="fw-bold">5. Husband will keep the following personal property still held jointly: <small>(For example, a bank account, but not real property such as a house or land.)
                             </small></div>
                             <div class="ps-lg-3">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep the following personal1_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep the following personal2_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep the following personal3_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep the following personal4_21" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             </div>
                             <div class="fw-bold">Husband’s Debts  <span>(If you do not want Husband to pay these debts, do NOT use this form.) </span></div>
                             <div>Husband shall pay and shall indemnify and hold the wife and her property harmless for any failure to
@@ -2125,22 +1988,22 @@
                                 <ol>
                                     <li>All taxes, bills, liens, and other charges, present and future, that are in Husband’s name alone or that this Order gives to Husband alone, unless this Order requires otherwise.</li>
                                     <li>Any debt Husband incurred after separation. Date of separation:
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="All taxes_month_21" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="All taxes_Day_21" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="All taxes_Year_21" id="" class="border-0 border-bottom" style="width:100px;">
                                     </li>
                                     <div class="small"><span class="p_sm_0" style="margin-left:530px;">Month</span> <span class="p_sm_0" style="margin-left:60px;">Day</span> <span class="p_sm_0" style="margin-left:70px;">Year</span></div>
                                     <li>The balance due on any loan for any vehicles that this Order gives to Husband alone.</li>
                                     <li>The other debts listed below which are not in Husband’s name alone (such as credit cards, student loans, medical bills, income taxes):
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts listed below1_21" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts listed below2_21" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts listed below3_21" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts listed below4_21" id="" class="border-0 border-bottom responsive_input w-100">
                                     </li>
                                 </ol>
                                 <div class="fw-bold">Husband’s Retirement Funds <small>(For example, pension, profit-sharing, and stock option plans, 401ks, and IRAs)</small></div>
-                                <div><input type="checkbox" name="" id=""> Husband does not have any retirement funds.</div>
-                                <div><input type="checkbox" name="" id=""> Husband has the following retirement funds: </div>
+                                <div><input type="checkbox" value="Yes" name="Husband does not_21" id=""> Husband does not have any retirement funds.</div>
+                                <div><input type="checkbox" value="Yes" name="Husband has the following_21" id=""> Husband has the following retirement funds: </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered border-dark w-50">
                                         <tbody>
@@ -2149,16 +2012,16 @@
                                                 <td>State Current Value of Fund</td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund1_21" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund1_21" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund2_21" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund2_21" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
-                                                <td><input type="text" name="" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="Identify or Describe Retirement Fund3_21" id="" class="border-0  responsive_input w-100"></td>
+                                                <td><input type="text" name="State Current Value of Fund3_21" id="" class="border-0  responsive_input w-100"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2168,17 +2031,17 @@
                     </div>
                     @include('layouts.footer27', ['page' => 6])
                 </section>
-                <section class="section_area p-5" id="twenty-second_section">
+                <section class="section_area p-5" id="twenty-two_section">
                      <div class="">
                         <div>
 
                             <div class="fw-bold">5. Husband will keep the following personal property still held jointly: <small>(For example, a bank account, but not real property such as a house or land.)
                             </small></div>
                             <div class="ps-lg-3">
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                                <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep1_22" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep2_22" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep3_22" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                                <div><input type="text" name="Husband will keep4_22" id="" class="border-0 border-bottom responsive_input w-100"></div>
                             </div>
                             <div class="fw-bold">Wife’s Debts <small>(If you do not want Wife to pay these debts, do NOT use this form.)</small></div>
                             <div>Wife shall pay and shall indemnify and hold the husband and his property harmless for any failure to
@@ -2186,17 +2049,17 @@
                                 <ol>
                                     <li>All taxes, bills, liens, and other charges, present and future, that are in Wife’s name alone or that this Order gives to Wife alone, unless this Order requires otherwise.</li>
                                     <li>Any debt Wife incurred after separation. Date of separation
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
-                                        <input type="text" name="" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="Any debt Month_22" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="Any debt Day_22" id="" class="border-0 border-bottom" style="width:100px;">
+                                        <input type="text" name="Any debt Year_22" id="" class="border-0 border-bottom" style="width:100px;">
                                     </li>
                                     <div class="small"><span class="p_sm_0" style="margin-left:530px;">Month</span> <span class="p_sm_0" style="margin-left:60px;">Day</span> <span class="p_sm_0" style="margin-left:70px;">Year</span></div>
                                     <li>The balance due on any loan for any vehicles that this Order gives to Wife alone. </li>
                                     <li>The other debts listed below, which are not in Wife’s name alone (such as credit cards, student loans, medical bills, income taxes):
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts1_22" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts2_22" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts3_22" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="The other debts4_22" id="" class="border-0 border-bottom responsive_input w-100">
                                     </li>
                                 </ol>
 
@@ -2205,38 +2068,38 @@
                                 <div class="fw-bold pt-lg-3">8. Name Change</div>
                                 <div>The Court changes the name of the:</div>
                                 <div class="small">(Check all boxes that apply)</div>
-                                <div><input type="checkbox" name="" id=""> Husband back to a name used before marriage, as it appears below.</div>
+                                <div><input type="checkbox" value="Yes" name="Husband back to a name_22" id=""> Husband back to a name used before marriage, as it appears below.</div>
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Husband back First_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">First</div>
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Husband back Middle_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">Middle</div>
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Husband back Last_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">Last</div>
                                     </div>
 
                                 </div>
-                                <div><input type="checkbox" name="" id=""> Wife back to a name used before marriage, as it appears below.</div>
+                                <div><input type="checkbox" value="Yes" name="Wife back_7" id=""> Wife back to a name used before marriage, as it appears below.</div>
                                 <div class="row">
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Wife back First_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">First</div>
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Wife back Middle_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">Middle</div>
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom w-100 responsive_input"></div>
+                                        <div><input type="text" name="Wife back Last_22" id="" class="border-0 border-bottom w-100 responsive_input"></div>
                                         <div class="small">Last</div>
                                     </div>
 
@@ -2257,79 +2120,79 @@
                         <div class="pt-lg-5">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Judge’s Name_23" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small pb-lg-2">Judge’s Name </div>
                                     <div class="pt-lg-5">
                                         <div class="fw-bold">By signing below, the Petitioner agrees to the form and substance of this Decree.</div>
 
                                         <div class="row">
                                             <div class="col-lg-8">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <input type="text" name="Petitioner’s Name_23" id="" class="border-0 border-bottom responsive_input w-100">
                                                 <div class="small pb-lg-2">Petitioner’s Name (print) </div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <input type="text" name="Phone Number_23" id="" class="border-0 border-bottom responsive_input w-100">
                                                 <div class="small pb-lg-2">Phone Number</div>
 
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-8">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                                <div class="small pb-lg-2">Petitioner’s Name (print) </div>
+                                                <input type="text" name="Respondent’s Name_23" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <div class="small pb-lg-2">Petitioner’s Signature </div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                                <div class="small pb-lg-2">Phone Number</div>
+                                                <input type="text" name="Date_23" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <div class="small pb-lg-2"> Date</div>
 
                                             </div>
                                         </div>
                                         <div class="small">Mailing Address:</div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address1_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address2_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address3_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address4_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Judge’s signature_23" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small">  Judge’s signature </div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Date of Judgment_23" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small">  Date of Judgment </div>
 
                                     <div>
                                         <div class="fw-bold">By signing below, the Respondent agrees to the form and substance of this Decree.</div>
                                         <div class="row">
                                             <div class="col-lg-8">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <input type="text" name="Respondent’s Name" id="" class="border-0 border-bottom responsive_input w-100">
                                                 <div class="small pb-lg-2">Respondent’s Name (print) </div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <input type="text" name="Phone Number_8" id="" class="border-0 border-bottom responsive_input w-100">
                                                 <div class="small pb-lg-2">Phone Number</div>
 
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-8">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                                <div class="small pb-lg-2">Respondent’s Name (print) </div>
+                                                <input type="text" name="Respondent’s Signature" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <div class="small pb-lg-2"> Respondent’s Signature</div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
-                                                <div class="small pb-lg-2">Phone Number</div>
+                                                <input type="text" name="Date_23.2" id="" class="border-0 border-bottom responsive_input w-100">
+                                                <div class="small pb-lg-2">Date</div>
 
                                             </div>
                                         </div>
                                         <div class="small">Mailing Address:</div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
-                                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address5_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address6_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address7_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
+                                        <div><input type="text" name="Mailing Address8_23" id="" class="border-0 border-bottom responsive_input w-100"> </div>
 
                                     </div>
                                 </div>
@@ -2346,83 +2209,71 @@
                          </div>
                          <div class="small_text text-center">Print court information exactly as it appears on your Original Petition for Divorce.</div>
                          <div>(Print your answers in blue ink)</div>
-                         <div class="text-center">Cause Number: <input type="text" name="" id=""
-                                 class="border-0 border-bottom responsive_input w-50"></div>
-                         <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
-                             file this form)</div>
+                         <div class="text-center">Cause Number: <input type="text" name="Cause Number_24" id="" class="border-0 border-bottom responsive_input w-50"></div>
+                         <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you file this form)</div>
                          <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                          <div class="row">
                              <div class="col-lg-6">
-                                 <div>Petitioner:<input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
-                                     spouse filing for divorce)</div>
+                                 <div>Petitioner:<input type="text" name="Petitioner_24" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the spouse filing for divorce)</div>
                                  <div class="text-center fw-bold">And</div>
-                                 <div>Respondent:<input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
-                                     spouse)</div>
+                                 <div>Respondent:<input type="text" name="Respondent_24" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other spouse)</div>
                              </div>
                              <div class="col-lg-6">
                                  <div>In the (check one):</div>
-                                 <div><input type="text" name=""
-                                         class="border-0 border-bottom responsive_input "><input type="radio"
-                                         name="" class=" me-lg-1">District Court <input type="radio"
-                                         name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                 <div><input type="text" name="Court Number_24" class="border-0 border-bottom responsive_input "><input type="radio" name="In the (check one)_24" class=" me-lg-1">District Court <input type="radio" name="District Court_24" class=" mx-lg-1"> County Court at Law of:</div>
                                  <div class="small_text">(Court Number)</div>
-                                 <div><input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75">County, Texas</div>
+                                 <div><input type="text" name="County_24" class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                  <div class="small_text">(County)</div>
-
                              </div>
-
                          </div>
                          <div class="h4 fw-bold pt-lg-3 text-center">Certificate of Last Known Mailing Address</div>
                          <div class="h4 fw-bold  text-center">(Divorce Set 1 - Uncontested, No Minor Children, No Real Property)</div>
                          <div class="mx-auto border border-dark px-2"><b>WARNING</b>: Read all of the Instructions for Divorce Set 1 before filling out this form.</div>
-                         <div>I, <input type="text" name="" id="" class="border-0 border-bottom"> certify that the last known mailing address that I have for Respondent, <input type="text" name="" id="" class="border-0 border-bottom responsive_input">is:</div>
+                         <div>I, <input type="text" name="Your full name_24" id="" class="border-0 border-bottom"> certify that the last known mailing address that I have for Respondent, <input type="text" name="Spouse’s full name_24" id="" class="border-0 border-bottom responsive_input">is:</div>
                          <div class="small_text"><span class="p_sm_0" style="margin-left:30px;">Your full name</span>  <span class="p_sm_0" style="margin-left:680px;">Spouse’s full name</span></div>
 
                          <div class="row">
                             <div class="col-lg-6 mx-auto">
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Spouse’s Mailing Address_24" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Spouse’s Mailing Address    </div>
                                 </div>
                                 <div>
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="City_24" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">City</div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="State_24" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">State</div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="Zip_24" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">Zip</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Telephone_24" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Telephone </div>
                                 </div>
                                 <div class="pb-lg-5">
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Fax_24" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Fax </div>
                                 </div>
                             </div>
                             <div class="py-lg-5">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name=">Party’s Signature_24" id="" class="border-0 border-bottom responsive_input w-100">
                                         <div class="small_text ms-lg-4">Party’s Signature <small>(Sign your name)</small> </div>
 
                                     </div>
                                     <div class="col-lg-4">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="Date_24" id="" class="border-0 border-bottom responsive_input w-100">
                                         <div class="small_text ms-lg-4">Date </div>
 
                                     </div>
@@ -2451,74 +2302,73 @@
                             <b>WARNING</b>: Without the advice and help of an attorney, you may be putting yourself, your personal property, and your money at risk. To get a referral to an attorney, call the State Bar of Texas Lawyer Referral Information Service at 1-800- 252-9690. If you are a victim of domestic violence, or if at any time you feel unsafe, you can get confidential help from the National Domestic Violence Hotline at 1-800-799-7233 or legal help from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673.</div>
                          <div class="small_text text-center">Print court information exactly as it appears on your Original Petition for Divorce.</div>
                          <div>(Print your answers in blue ink)</div>
-                         <div class="text-center">Cause Number: <input type="text" name="" id=""
+                         <div class="text-center">Cause Number: <input type="text" name="Cause Number_25" id=""
                                  class="border-0 border-bottom responsive_input w-50"></div>
                          <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
                              file this form)</div>
                          <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                          <div class="row">
                              <div class="col-lg-6">
-                                 <div>Petitioner:<input type="text" name=""
+                                 <div>Petitioner:<input type="text" name="Petitioner_25"
                                          class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                  <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
                                      spouse filing for divorce)</div>
                                  <div class="text-center fw-bold">And</div>
-                                 <div>Respondent:<input type="text" name=""
+                                 <div>Respondent:<input type="text" name="Respondent_25"
                                          class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
                                  <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
                                      spouse)</div>
                              </div>
                              <div class="col-lg-6">
                                  <div>In the (check one):</div>
-                                 <div><input type="text" name=""
+                                 <div><input type="text" name="Court Number_25"
                                          class="border-0 border-bottom responsive_input "><input type="radio"
-                                         name="" class=" me-lg-1">District Court <input type="radio"
-                                         name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                         name="District Court_25" class=" me-lg-1">District Court <input type="radio"
+                                         name="County Court_25" class=" mx-lg-1"> County Court at Law of:</div>
                                  <div class="small_text">(Court Number)</div>
-                                 <div><input type="text" name=""
+                                 <div><input type="text" name="County_25"
                                          class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                  <div class="small_text">(County)</div>
-
                              </div>
-
                          </div>
                          <div class="h4 fw-bold pt-lg-3 text-center">Notice of Change of Address</div>
                          <div class="h4 fw-bold  text-center">(Divorce Set 1 - Uncontested, No Minor Children, No Real Property)</div>
                          <div class="mx-auto border border-dark px-2"><b>WARNING</b>: Read all of the Instructions for Divorce Set 1 before filling out this form.</div>
-                         <div>I, <input type="text" name="" id="" class="border-0 border-bottom"> certify that i am party to the above-styled cause. My address has changed. I request that the Court’s records be updated accordingly.</div>
-                         <div class="small_text"><span class="p_sm_0" style="margin-left:30px;">print Your full name</span>  </div>
-                         <div>cause. My address has changed. I request that the Court’s records be updated accordingly.</div>
-                         <div class="pt-lg-4">My new address is as follows:</div>
+                         <div>I, <input type="text" name="certify that i am party_25" id="" class="border-0 border-bottom"> certify that i am party to the above-styled cause. My address has changed. I request that the Court’s records be </div>
 
+                         <div class="small_text"><span class="p_sm_0" style="margin-left:30px;">print Your full name</span>  </div>
+                         <div>updated accordingly.</div>
+                          <div>cause. My address has changed. I request that the Court’s records be updated accordingly.</div>
+                         <div class="pt-lg-4">My new address is as follows:</div>
                          <div class="row">
                             <div class="col-lg-6 mx-auto">
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Mailing Address_25" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Mailing Address    </div>
                                 </div>
                                 <div>
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="City_25" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">City</div>
 
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="State_25" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">State</div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                            <input type="text" name="Zip_25" id="" class="border-0 border-bottom responsive_input w-100">
                                             <div class="small_text ms-lg-4">Zip</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Telephone_25" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Telephone </div>
                                 </div>
                                 <div>
-                                    <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                    <input type="text" name="Facsimile_25" id="" class="border-0 border-bottom responsive_input w-100">
                                     <div class="small_text ms-lg-4">Facsimile </div>
                                 </div>
                             </div>
@@ -2526,7 +2376,7 @@
                                 <div class="col-lg-7"></div>
                                 <div class="col-lg-4">
                                     <div class="pb-lg-5">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="Party’s Signature_25" id="" class="border-0 border-bottom responsive_input w-100">
                                         <div class="small_text ms-lg-4">Party’s Signature <small>(Sign your name)</small> </div>
                                     </div>
                                 </div>
@@ -2537,30 +2387,30 @@
                             <div class="py-lg-5">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="Party’s Signature_25.2" id="" class="border-0 border-bottom responsive_input w-100">
                                         <div class="small_text ms-lg-4">Party’s Signature <small>(Sign your name)</small> </div>
 
                                     </div>
                                     <div class="col-lg-4">
-                                        <input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100">
+                                        <input type="text" name="Date_25" id="" class="border-0 border-bottom responsive_input w-100">
                                         <div class="small_text ms-lg-4">Date </div>
 
                                     </div>
                                 </div>
                             </div>
                          </div>
-                   </div>
+                    </div>
 
                    {{-- @include('layouts.footer22', ['page' => 25]) --}}
-                   <div class="row m-0 pt-lg-3">
-                    <div class="col-lg-10 mt-3 mt-lg-0">
-                        <div>© Form Approved by the Supreme Court of Texas by order in Misc. Docket No. 13-9085 (June 17, 2013)
-                            Notice of Change of Address (Divorce Set 1 - Uncontested, No Minor Children, No Real Property)</div>
+                    <div class="row m-0 pt-lg-3">
+                        <div class="col-lg-10 mt-3 mt-lg-0">
+                            <div>© Form Approved by the Supreme Court of Texas by order in Misc. Docket No. 13-9085 (June 17, 2013)
+                                Notice of Change of Address (Divorce Set 1 - Uncontested, No Minor Children, No Real Property)</div>
+                        </div>
+                        <div class="col-lg-2 my-3 my-lg-0 text-center mx-auto">
+                            <div>Page 1 of 1 </div>
+                        </div>
                     </div>
-                    <div class="col-lg-2 my-3 my-lg-0 text-center mx-auto">
-                        <div>Page 1 of 1 </div>
-                    </div>
-                </div>
                </section>
                 <section class="section_area p-5" id="twenty-sixth_section">
                     <div class="pb-lg-3">
@@ -2568,83 +2418,72 @@
                             <b>WARNING</b>: Without the advice and help of an attorney, you may be putting yourself, your personal property, and your money at risk. To get a referral to an attorney, call the State Bar of Texas Lawyer Referral Information Service at 1-800- 252-9690. If you are a victim of domestic violence, or if at any time you feel unsafe, you can get confidential help from the National Domestic Violence Hotline at 1-800-799-7233 or legal help from the Texas Advocacy Project Family Violence Legal Line at 1-800-374-4673.</div>
                          <div class="small_text text-center">Print court information exactly as it appears on your Original Petition for Divorce.</div>
                          <div>(Print your answers in blue ink)</div>
-                         <div class="text-center">Cause Number: <input type="text" name="" id=""
+                         <div class="text-center">Cause Number: <input type="text" name="Cause Number_26" id=""
                                  class="border-0 border-bottom responsive_input w-50"></div>
                          <div class="small_text text-center">The Clerk’s office will fill in the Cause Number when you
                              file this form)</div>
                          <div class="pt-lg-2 fw-bold">IN THE MATTER OF THE MARRIAGE OF</div>
                          <div class="row">
-                             <div class="col-lg-6">
-                                 <div>Petitioner:<input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the
-                                     spouse filing for divorce)</div>
+                            <div class="col-lg-6">
+                                 <div>Petitioner:<input type="text" name="Petitioner_26" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of the spouse filing for divorce)</div>
                                  <div class="text-center fw-bold">And</div>
-                                 <div>Respondent:<input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
-                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other
-                                     spouse)</div>
-                             </div>
-                             <div class="col-lg-6">
+                                 <div>Respondent:<input type="text" name="Respondent_26" class="border-0 border-bottom responsive_input w-75 ms-lg-3"></div>
+                                 <div class="small_text text-end me-lg-5">(Print first, middle, and last name of other spouse)</div>
+                            </div>
+                            <div class="col-lg-6">
                                  <div>In the (check one):</div>
-                                 <div><input type="text" name=""
-                                         class="border-0 border-bottom responsive_input "><input type="radio"
-                                         name="" class=" me-lg-1">District Court <input type="radio"
-                                         name="" class=" mx-lg-1"> County Court at Law of:</div>
+                                 <div><input type="text" name="Court Number_26" class="border-0 border-bottom responsive_input "><input type="radio" name="District Court_26" class=" me-lg-1">District Court <input type="radio" name="County Court_26" class=" mx-lg-1"> County Court at Law of:</div>
                                  <div class="small_text">(Court Number)</div>
-                                 <div><input type="text" name=""
-                                         class="border-0 border-bottom responsive_input w-75">County, Texas</div>
+                                 <div><input type="text" name="County_26" class="border-0 border-bottom responsive_input w-75">County, Texas</div>
                                  <div class="small_text">(County)</div>
-
-                             </div>
+                            </div>
 
                          </div>
                          <div class="h4 fw-bold pt-lg-3 text-center">Military Status Affidavit</div>
                          <div class="h4 fw-bold  text-center">(Divorce Set 1 - Uncontested, No Minor Children, No Real Property)</div>
                          <div class="mx-auto border border-dark px-2"><b>WARNING</b>: Read all of the Instructions for Divorce Set 1 before filling out this form.</div>
-                         <div>I, <input type="text" name="" id="" class="border-0 border-bottom"> certify that i am party to the above-styled cause. My address has changed. I request that the Court’s records be updated accordingly.</div>
+                         <div>I, <input type="text" name="certify that i am party_26" id="" class="border-0 border-bottom"> certify that i am party to the above-styled cause. My address has changed. I request that the Court’s records be updated accordingly.</div>
                          <div class="fw-bold">State of Texas,</div>
-                         <div class="fw-bold">County of <input type="text" name="" id="" class="border-0 border-bottom"></div>
+                         <div class="fw-bold">County of <input type="text" name="County of_26" id="" class="border-0 border-bottom"></div>
                          <div class="small_text ms-lg-5">(Print the name of county where this Affidavit is notarized)</div>
                          <div class="pt-lg-3">The person who signed this affidavit appeared, in person, before me, the undersigned notary, and stated under oath:</div>
 
                          <ol>
                             <li>
-                                {{-- “My name is: <input type="text" name="" id="" class="border-0 border-bottom w-75"> --}}
-                                <div class="row">
+                                 <div class="row">
                                     <div class="col-lg-3"> My name is :</div>
                                     <div class="col-lg-3">
-                                        <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                        <input type="text" name="First Name_26" id=""  class="border-0 border-bottom responsive_input">
                                         <div class="small_text">First</div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                        <input type="text" name="Middle Name_26" id=""  class="border-0 border-bottom responsive_input">
                                         <div class="small_text">Middle</div>
 
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <div class="d-flex"><input type="text" name="" id=""  class="border-0 border-bottom responsive_input">.</div>
+                                        <div class="d-flex"><input type="text" name="Last Name_26" id=""  class="border-0 border-bottom responsive_input">.</div>
                                         <div class="small_text">Last</div>
 
                                     </div>
                                  </div>
                             </li>
                             <li>
-                                {{-- “My name is: <input type="text" name="" id="" class="border-0 border-bottom w-75"> --}}
-                                <div class="row">
+                                 <div class="row">
                                     <div class="col-lg-3"> “The Respondent’s name is: </div>
                                     <div class="col-lg-3">
-                                        <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                        <input type="text" name="Respondent’s First Name_26" id=""  class="border-0 border-bottom responsive_input">
                                         <div class="small_text">First</div>
 
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">
+                                        <input type="text" name="Respondent’s Middle Name_26" id=""  class="border-0 border-bottom responsive_input">
                                         <div class="small_text">Middle</div>
 
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <div class="d-flex"> <input type="text" name="" id=""  class="border-0 border-bottom responsive_input">.</div>
+                                        <div class="d-flex"> <input type="text" name="Respondent’s Last Name_26" id=""  class="border-0 border-bottom responsive_input">.</div>
                                         <div class="small_text">Last</div>
 
                                     </div>
@@ -2657,11 +2496,11 @@
                             </li>
                          </ol>
                          <div class="small_text">(Check all boxes that apply)</div>
-                         <div class="pt-lg-3"><input type="checkbox" name="" id=""> “I know that the Respondent is not in the military because I asked the U.S. Department of Defense to check their Defense Manpower Data Center (DMDC) database. DMDC notified me that the Respondent is not on active duty in any of the armed forces.</div>
+                         <div class="pt-lg-3"><input type="checkbox" value="Yes" name="I know that the Respondent_26.1" id=""> “I know that the Respondent is not in the military because I asked the U.S. Department of Defense to check their Defense Manpower Data Center (DMDC) database. DMDC notified me that the Respondent is not on active duty in any of the armed forces.</div>
                          <div class="pt-lg-3">“I attached a true copy of the DMDC verification.
                            <small> (If you check this box, you must attach a copy of the DMDC verification. You can print a copy of the DMDC verification from this web address: <a href="https://www.dmdc.osd.mil/appj/scra/scraHome.do"></a>.)</small></div>
 
-                           <div class="pt-lg-3"><input type="checkbox" name="" id=""> “I know that the Respondent is not now in the military because:
+                           <div class="pt-lg-3"><input type="checkbox" value="Yes" name="I know that the Respondent_26.2" id=""> “I know that the Respondent is not now in the military because:
                             <small>(List facts that you know would make your spouse ineligible for military service, such as being in prison, having a serious disability, etc.)</small>
                             </div>
 
@@ -2673,46 +2512,46 @@
                </section>
                 <section class="section_area p-5" id="twenty-seventh_section">
                     <div class="ps-lg-5">
-                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
-                        <div><input type="text" name="" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="text1_27" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="text2_27" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="text3_27" id="" class="border-0 border-bottom responsive_input w-100"></div>
+                        <div><input type="text" name="text4_27" id="" class="border-0 border-bottom responsive_input w-100"></div>
 
                     </div>
-                    <div><input type="checkbox" name="" id=""> “I do not know if the Respondent is in the military now.</div>
-                    <div><input type="checkbox" name="" id=""> “The Respondent is in the military now.</div>
+                    <div><input type="checkbox" value="Yes" name="I do not know_27" id=""> “I do not know if the Respondent is in the military now.</div>
+                    <div><input type="checkbox" value="Yes" name="The Respondent_27" id=""> “The Respondent is in the military now.</div>
                     <div class="fw-bold pt-lg-3">Do not sign until you are in front of a notary.</div>
                     <div class="row">
                         <div class="col-lg-8">
-                            <input type="text" name="" id=""
+                            <input type="text" name="Signature of Person Signing Affidavit_27" id=""
                                 class="border-0 border-bottom responsive_input w-75 ">
                             <div class="small_text">Signature of Person Signing Affidavit</div>
                         </div>
                         <div class="col-lg-2">
-                            <input type="date" name="" id=""
+                            <input type="date" name="Date_27" id=""
                                 class="border-0 border-bottom responsive_input w-100">
                             <div class="small_text">Date</div>
                         </div>
                     </div>
                     <div class="fw-bold">Notary fills out below.</div>
-                        <div class="">State of Texas, County of <input type="text" name=""
+                        <div class="">State of Texas, County of <input type="text" name="State of Texas_27"
                                 id="" class="border-0 border-bottom responsive_input w-50"></div>
                         <div class="p_sm_0" style="padding-left:170px;">(Print the name of county where this Affidavit is notarized)</div>
                         <div>Sworn to and subscribed before me, the undersigned notary, on this date:<input
-                                type="text" name="" id=""
-                                class="border-0 border-bottom responsive_input" style="width:50px;">/<input type="text" name=""
+                                type="text" name="month_27" id=""
+                                class="border-0 border-bottom responsive_input" style="width:50px;">/<input type="text" name="day_27"
                                 id="" class="border-0 border-bottom responsive_input" style="width:50px;">/20<input
-                                type="text" name="" id=""
+                                type="text" name="year_27" id=""
                                 class="border-0 border-bottom responsive_input" style="width:50px;"> at
                                <input type="text"
-                                name="" id=""
+                                name="time_27" id=""
                                 class="border-0 border-bottom responsive_input ">a.m./p.m. </div>
 
                         <div class="small_text"><span class="p_sm_0" style="padding-left:595px;">month   </span > <span style="padding-left:15px;"> day</span> <span class="p_sm_0" style="padding-left:50px;">year</span> <span class="p_sm_0" style="padding-left:40px;">time</span><span class="p_sm_0" style="padding-left:170px;">(circle one)</span></div>
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="d-flex"> by <input type="text" name="" id=""
+                                <div class="d-flex"> by <input type="text" name="Print name of person_27" id=""
                                         class="border-0 border-bottom responsive_input w-100"></div>
                                 <div class="text-center small_text">(Print name of person who is signing this Affidavit. NOT the notary’s name.)</div>
                             </div>
@@ -2720,7 +2559,7 @@
                         <div class="row pb-lg-3">
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
-                                <div> <input type="text" name="" id=""
+                                <div> <input type="text" name="Notary’s Signature_27" id=""
                                         class="border-0 border-bottom responsive_input w-100"></div>
                                 <div class="small_text">Notary’s Signature</div>
                             </div>
@@ -2730,7 +2569,7 @@
 
                 <div class="position-absolute position-fixed top-0 py-3 backdrop_filter end-0 px-3">
                     <div class="col">
-                        <button type="button" class="btn btn-success px-4">Save</button>
+                        <button type="submit" class="btn btn-success px-4">Save</button>
                     </div>
                     <div class="pt-3">
                         <button type="button" class="btn btn-dark px-4">Back</button>
@@ -2762,8 +2601,8 @@
             <option value="#eighteenth_section">Eighteenth Section</option>
             <option value="#nineteenth_section">Nineteenth Section</option>
             <option value="#twentieth_section">Twentieth Section</option>
-            <option value="#twenty-first_section">Twenty-First Section</option>
-            <option value="#twenty-second_section">Twenty-Second Section</option>
+            <option value="#twenty-one_section">twenty-one Section</option>
+            <option value="#twenty-two_section">twenty-two Section</option>
             <option value="#twenty-three_section">Twenty-Three Section</option>
             <option value="#twenty-fourth_section">Twenty-Fourth Section</option>
             <option value="#twenty-fifth_section">Twenty-Fifth Section</option>

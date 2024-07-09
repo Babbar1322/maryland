@@ -62,6 +62,8 @@ use App\Models\sfs_co_form;
 use App\Models\sfs_co_form_data;
 use App\Models\spanish_form;
 use App\Models\spanish_form_data;
+use App\Models\tx_divorceset_form;
+use App\Models\tx_divorceset_form_data;
 use App\Models\wi_spanish_form;
 use App\Models\wi_spanish_form_data;
 use Illuminate\Http\Request;
@@ -905,12 +907,7 @@ dd($request->all());
             $ma_long_data->valuess = $req;
             $ma_long_data->save();
         }
-
         return redirect()->back()->with('success', "Data submitted Successfully");
-
-
-
-
     }
 
 
@@ -939,9 +936,34 @@ dd($request->all());
         return redirect()->back()->with('success', 'Data Submitted Successfully.');
     }
 
+
+
     public function form31() {
         // TX divorceset1forms.pdf
         return view('form31');
     }
+
+    public function form31_post(Request $request){
+        // TX divorceset1forms.pdf
+
+
+        $tx_divorces = new tx_divorceset_form();
+        $tx_divorces->save();
+
+
+        foreach($request->all() as $key=>$req) {
+            if($key == "_token") {
+                continue;
+            }
+
+            $tx_divorces_data = new tx_divorceset_form_data();
+            $tx_divorces_data->tx_divorce_id = $tx_divorces->id;
+            $tx_divorces_data->keyss = $key;
+            $tx_divorces_data->valuess = $req;
+            $tx_divorces_data->save();
+        }
+
+        return redirect()->back()->with('success', "Data Submitted Successfully");
+     }
 
 }
